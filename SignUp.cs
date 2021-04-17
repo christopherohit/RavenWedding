@@ -28,6 +28,22 @@ namespace Raven
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+           /* if (checkBox1.Checked == false)
+            {
+                bunifuFlatButton1.Enabled = false;
+            }
+            else
+            {
+                bunifuFlatButton1.Enabled = true;
+            }*/
+            if (IsDirty == false)
+            {
+                bunifuFlatButton1.Enabled = false;
+            }
+            else if (IsDirty == true)
+            {
+                bunifuFlatButton1.Enabled = true;
+            }
         }
         #endregion
 
@@ -57,17 +73,12 @@ namespace Raven
             dragging = false;
         }
         #endregion
+        SignIn zo = new SignIn();
+        bool IsDirty { get; set; }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == false)
-            {
-                bunifuFlatButton1.Enabled = false;
-            }
-            else
-            {
-                bunifuFlatButton1.Enabled = true;
-            }
+            
         }
 
         private void Mailsbox_OnValueChanged(object sender, EventArgs e)
@@ -78,10 +89,13 @@ namespace Raven
                 if (!rmails.IsMatch(Mailsbox.Text))
                 {
                     labelControl1.Text = "Invalid e-mails.";
+                    IsDirty = false;
+                    
                 }
                 else
                 {
                     labelControl1.Text = string.Empty;
+                    IsDirty = true;
                 }
             }
         }
@@ -90,11 +104,61 @@ namespace Raven
         {
             if (repassbox.Text != passbox.Text)
             {
-                labelControl2.Text = "Password doesn't match. Please re-check ";
+                labelControl2.Text = "Password doesn't match.";
+                IsDirty = false;
             }
             else
             {
                 labelControl2.Text = string.Empty;
+                IsDirty = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res == DialogResult.Yes)
+            {
+                this.Hide();
+                System.Windows.Forms.Form io = System.Windows.Forms.Application.OpenForms["SignIn"];
+                io.Enabled = true;
+
+            }
+            else
+            {
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                IsDirty = true;
+            }
+            else
+            {
+                IsDirty = false;
+            }
+        }
+
+        private void bunifuFlatButton1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (bunifuFlatButton1.Enabled == false)
+            {
+                toolTip1.SetToolTip(bunifuFlatButton1, "You have some mistake onto fill in information. Please re-check it");
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Invalidate();
+            name.Text = string.Empty;
+            Mailsbox.Text = string.Empty;
+            passbox.Text = string.Empty;
+            repassbox.Text = string.Empty;
+            if (checkBox1.Checked == true)
+            {
+                checkBox1.Checked = false;
             }
         }
     }

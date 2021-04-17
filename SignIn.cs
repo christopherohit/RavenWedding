@@ -38,6 +38,8 @@ namespace Raven
             {
                 bunifuMaterialTextbox2.isPassword = true;
             }
+            this.carousel1.TransitionSpeed = 1f;
+            
         }
         #endregion
 
@@ -115,6 +117,16 @@ namespace Raven
             {
                 this.Enabled = true;
             }
+        }
+
+        private void carousel1_Click(object sender, EventArgs e)
+        {
+            carousel1.RotateAlways = false;
+        }
+
+        private void carousel1_DoubleClick(object sender, EventArgs e)
+        {
+            carousel1.RotateAlways = true;
         }
     }
 }

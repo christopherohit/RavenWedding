@@ -66,17 +66,18 @@ namespace Raven
         {
             if (textBox1.Text != passcode || string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrEmpty(textBox1.Text))
             {
-                if(textBox1.Text != passcode)
-                {
-                    MessageBox.Show("Please re-check your code", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (string.IsNullOrEmpty(textBox1.Text))
+                
+                if (string.IsNullOrEmpty(textBox1.Text))
                 {
                     MessageBox.Show("Please fill code in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (string.IsNullOrWhiteSpace(textBox1.Text))
                 {
                     MessageBox.Show("Please fill code in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBox1.Text != passcode)
+                {
+                    MessageBox.Show("Please re-check your code", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if ( textBox1.Text == passcode)
