@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace Raven
 {
     public partial class SignIn : Form
     {
+        Authical form = new Authical();
         #region
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -68,6 +70,7 @@ namespace Raven
         private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
         {
             bunifuMaterialTextbox2.isPassword = true;
+            bunifuMaterialTextbox2.ForeColor = Color.Black;
         }
 
         private void bunifuMaterialTextbox2_Click(object sender, EventArgs e)
@@ -80,7 +83,38 @@ namespace Raven
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res == DialogResult.Yes)
+            {
+                Environment.Exit(1);
+            }
+            else
+            {
+            }
+        }
 
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox1.ForeColor = Color.Black;
+        }
+
+        private void labelControl3_Click(object sender, EventArgs e)
+        {
+            form.Show();
+            this.Enabled = false;
+        }
+
+        private void SignIn_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<Authical>().Count() == 1)
+            {
+                this.Enabled = false;
+                SystemSounds.Beep.Play();
+            }
+            else if (Application.OpenForms.OfType<Authical>().Count() < 1)
+            {
+                this.Enabled = true;
+            }
         }
     }
 }
