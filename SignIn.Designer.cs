@@ -235,6 +235,7 @@ namespace Raven
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl4.Location = new System.Drawing.Point(64, 642);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(124, 18);
@@ -258,6 +259,7 @@ namespace Raven
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl6.Location = new System.Drawing.Point(198, 642);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(92, 18);
