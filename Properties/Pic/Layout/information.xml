@@ -1,0 +1,29 @@
+﻿<XtraSerializer version="1.0" application="AccordionControl">
+  <property name="#LayoutVersion" />
+  <property name="ItemHeight">0</property>
+  <property name="GroupHeight">0</property>
+  <property name="ExpandElementMode">SingleItem</property>
+  <property name="AnimationType">Default</property>
+  <property name="Elements" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Group</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="VisibleInFooter">true</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">false</property>
+      <property name="Visible">true</property>
+      <property name="Text">Element1</property>
+      <property name="Name">accordionControlElement1</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="0" />
+    </property>
+  </property>
+</XtraSerializer>

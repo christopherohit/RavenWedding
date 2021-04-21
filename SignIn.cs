@@ -38,7 +38,7 @@ namespace Raven
             {
                 bunifuMaterialTextbox2.isPassword = true;
             }
-            this.carousel1.TransitionSpeed = 1f;
+            this.carousel1.TransitionSpeed = 1.1f;
             
         }
         #endregion
@@ -106,7 +106,7 @@ namespace Raven
             this.Enabled = false;
         }
 
-        private void SignIn_Click(object sender, EventArgs e)
+        private void SignIn_Click(object sender, EventArgs e) //Check Form Sign Open? if yes disable it and say beep
         {
             if (Application.OpenForms.OfType<Authical>().Count() == 1)
             {
