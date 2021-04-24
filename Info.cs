@@ -64,23 +64,52 @@ namespace Raven
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            var mss = MessageBox.Show("We're recognise that You have not completed filling out information yet \nIf you log out, you will need to enter your information for the first time\nDo you want exit", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (mss == DialogResult.Yes)
+            {
+                SignIn restore = new SignIn();
+                restore.Show();
+                this.Hide();
+            }
+            else
+            {
 
+            }
         }
 
         private void toggleSwitch1_Toggled(object sender, EventArgs e)
         {
-            if (toggleSwitch1.IsOn == true)
+            
+
+        }
+
+        private void Info_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox5_OnValueChanged(object sender, EventArgs e)
+        {
+            int check;
+            if(bunifuMaterialTextbox5.Text == string.Empty)
             {
-                this.BackColor = Color.Black;
-                pictureBox2.Image = Image.FromFile(@"D:\Lesson\RIT\C #\Winform\Raven\Pic\x-mark-48.ico");
-                pictureBox2.BackColor = Color.Black;
+                bunifuMaterialTextbox5.LineIdleColor = Color.Gray;
+                bunifuMaterialTextbox5.LineFocusedColor = Color.White;
             }
-            else if (toggleSwitch1.IsOn == false)
+            else if (!int.TryParse(bunifuMaterialTextbox5.Text, out check))
             {
-                this.BackColor = Color.White;
-                pictureBox2.Image = Image.FromFile(@"D:\Lesson\RIT\C #\Winform\Raven\Pic\cancel.png");
-                pictureBox2.BackColor = Color.White;
+                bunifuMaterialTextbox5.LineFocusedColor = Color.Red;
+                bunifuMaterialTextbox5.LineIdleColor = Color.Red;
             }
+            else
+            {
+                bunifuMaterialTextbox5.LineFocusedColor = Color.White;
+                bunifuMaterialTextbox5.LineIdleColor = Color.Gray;
+            }
+        }
+
+        private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        {
 
         }
     }
