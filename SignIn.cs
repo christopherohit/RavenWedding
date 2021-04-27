@@ -128,5 +128,13 @@ namespace Raven
         {
             carousel1.RotateAlways = true;
         }
+
+        private void bunifuMaterialTextbox1_Click(object sender, EventArgs e)
+        {
+            if (bunifuButton1.Text == "Emails")
+            {
+                bunifuButton1.Text = string.Empty;
+            }
+        }
     }
 }

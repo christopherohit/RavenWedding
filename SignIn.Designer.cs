@@ -100,6 +100,7 @@ namespace Raven
             this.bunifuMaterialTextbox1.Text = "Emails";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuMaterialTextbox1.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
+            this.bunifuMaterialTextbox1.Click += new System.EventHandler(this.bunifuMaterialTextbox1_Click);
             // 
             // bunifuMaterialTextbox2
             // 

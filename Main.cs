@@ -12,9 +12,11 @@ namespace Raven
 {
     public partial class Main : Form
     {
+        Timer t1 = new Timer();
         public Main()
         {
             InitializeComponent();
+            
         }
         #region
         private bool dragging = false;
@@ -48,6 +50,45 @@ namespace Raven
 
         }
 
+        private void Main_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            DashPanel.Show();
+            Opacity = 0;      //first the opacity is 0
+            t1.Interval = 10;  //we'll increase the opacity every 10ms
+            t1.Tick += new EventHandler(fadeIn);  //this calls the function that changes opacity 
+            t1.Start();
+            
+            
+           
+        }
+        void fadeIn(object sender, EventArgs e)
+        {
+            if (Opacity >= 1)
+                t1.Stop();   //this stops the timer if the form is completely displayed
+            else
+                Opacity += 0.05;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res == DialogResult.Yes)
+            {
+                this.Hide();
+            }
+            else
+            {
+            }
+        }
     }
 }
