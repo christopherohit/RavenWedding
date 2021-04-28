@@ -30,6 +30,7 @@ namespace Raven
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             /*tabControl1.DrawItem += new DrawItemEventHandler(tabControl1_DrawItem);
             ((Control)this.tabPage2).Enabled = false;*/
+            sfComboBox1.Region = new Region(new Rectangle(3, 3, sfComboBox1.Width - 3, sfComboBox1.Height - 7));
         }
 
 

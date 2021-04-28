@@ -10,7 +10,16 @@ namespace Raven.DAO
 {
     public class DataProvider
     {
+        private static DataProvider instance;
         private string cStr = "Data Source=DESKTOP-7CBSM7T\\MSSQLSERVER1;Initial Catalog=Restaurant;Integrated Security=True";
+
+        public static DataProvider Instance 
+        {
+             get {if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
+            private set { DataProvider.instance = value; } 
+        }
+        private DataProvider() { }
+        
 
         public DataTable ExcuteQuery (string query, object[] parameter)
         {
