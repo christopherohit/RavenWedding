@@ -378,6 +378,7 @@ namespace Raven
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SignUp_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SignUp_MouseMove);

@@ -109,6 +109,7 @@
     <Compile Include="Authical.Designer.cs">
       <DependentUpon>Authical.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="Info.cs">
       <SubType>Form</SubType>

@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Raven.DAO;
 
 namespace Raven
 {
@@ -30,13 +26,13 @@ namespace Raven
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            if (bunifuMaterialTextbox2.Text == "Password")
+            if (pass.Text == "Password")
             {
-                bunifuMaterialTextbox2.isPassword = false;
+                pass.isPassword = false;
             }
             else
             {
-                bunifuMaterialTextbox2.isPassword = true;
+                pass.isPassword = true;
             }
             this.carousel1.TransitionSpeed = 1.1f;
             
@@ -71,15 +67,15 @@ namespace Raven
 
         private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
         {
-            bunifuMaterialTextbox2.isPassword = true;
-            bunifuMaterialTextbox2.ForeColor = Color.Black;
+            pass.isPassword = true;
+            pass.ForeColor = Color.Black;
         }
 
         private void bunifuMaterialTextbox2_Click(object sender, EventArgs e)
         {
-            if (bunifuMaterialTextbox2.Text == "Password") 
+            if (pass.Text == "Password") 
             {
-                bunifuMaterialTextbox2.Text = string.Empty;
+                pass.Text = string.Empty;
             }
         }
 
@@ -97,7 +93,7 @@ namespace Raven
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
         {
-            bunifuMaterialTextbox1.ForeColor = Color.Black;
+            name.ForeColor = Color.Black;
         }
 
         private void labelControl3_Click(object sender, EventArgs e)
@@ -131,10 +127,45 @@ namespace Raven
 
         private void bunifuMaterialTextbox1_Click(object sender, EventArgs e)
         {
-            if (bunifuButton1.Text == "Emails")
+            string username = name.Text;
+            if (username == "Emails")
             {
-                bunifuButton1.Text = string.Empty;
+                name.Text = string.Empty;
             }
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            string username = name.Text;
+            string password = pass.Text;
+            if (string.IsNullOrWhiteSpace(name.Text) || string.IsNullOrWhiteSpace(pass.Text))
+            {
+                if (string.IsNullOrWhiteSpace(name.Text))
+                {
+                    MessageBox.Show("We discovered that you have not entered emails in the box", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (string.IsNullOrWhiteSpace(pass.Text))
+                {
+                    MessageBox.Show("We discovered that you have not entered password in the box", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else if (Login(username , password))
+            {
+                Main main = new Main();
+                this.Hide();
+                main.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("The username or password was incorrect, please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        bool Login(string username, String password)
+        {
+            AccountDAO.Instance.Login(username , password);
+            return false;
+        }
+        
     }
 }

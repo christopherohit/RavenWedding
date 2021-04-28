@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -30,7 +31,9 @@ namespace Raven
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             /*tabControl1.DrawItem += new DrawItemEventHandler(tabControl1_DrawItem);
             ((Control)this.tabPage2).Enabled = false;*/
-            sfComboBox1.Region = new Region(new Rectangle(3, 3, sfComboBox1.Width - 3, sfComboBox1.Height - 7));
+            gender.Region = new Region(new Rectangle(3, 3, gender.Width - 3, gender.Height - 7));
+            pictureBox1.Hide();
+            pictureBox3.Hide();
         }
 
 
@@ -92,26 +95,45 @@ namespace Raven
         private void bunifuMaterialTextbox5_OnValueChanged(object sender, EventArgs e)
         {
             int check;
-            if(bunifuMaterialTextbox5.Text == string.Empty)
+            if(phone.Text == string.Empty)
             {
-                bunifuMaterialTextbox5.LineIdleColor = Color.Gray;
-                bunifuMaterialTextbox5.LineFocusedColor = Color.White;
+                phone.LineIdleColor = Color.Gray;
+                phone.LineFocusedColor = Color.White;
             }
-            else if (!int.TryParse(bunifuMaterialTextbox5.Text, out check))
+            else if (!int.TryParse(phone.Text, out check))
             {
-                bunifuMaterialTextbox5.LineFocusedColor = Color.Red;
-                bunifuMaterialTextbox5.LineIdleColor = Color.Red;
+                phone.LineFocusedColor = Color.Red;
+                phone.LineIdleColor = Color.Red;
             }
             else
             {
-                bunifuMaterialTextbox5.LineFocusedColor = Color.White;
-                bunifuMaterialTextbox5.LineIdleColor = Color.Gray;
+                phone.LineFocusedColor = Color.White;
+                phone.LineIdleColor = Color.Gray;
             }
         }
 
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuMaterialTextbox4_OnValueChanged(object sender, EventArgs e)
+        {
+            if (ICM.Text.Length > 0)
+            {
+                if (!Regex.IsMatch(ICM.Text, "^[a-zA-Z]+$"))
+                {
+                    pictureBox3.Show();
+                }
+                else
+                {
+                    pictureBox3.Hide();
+                }
+            }
+            else
+            {
+                pictureBox3.Hide();
+            }
         }
     }
 }

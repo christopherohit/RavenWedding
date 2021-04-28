@@ -21,7 +21,7 @@ namespace Raven.DAO
         private DataProvider() { }
         
 
-        public DataTable ExcuteQuery (string query, object[] parameter)
+        public DataTable ExecuteQuery (string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
             using (SqlConnection con = new SqlConnection(cStr))
@@ -47,8 +47,8 @@ namespace Raven.DAO
             }
                 
             return data;
-        }
-        public int ExcuteNonQuery(string query, object[] parameter = null)
+        } // Return Rows And Result
+        public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;
             using(SqlConnection con = new SqlConnection(cStr))
@@ -72,8 +72,8 @@ namespace Raven.DAO
                 con.Close();
             }
             return data;
-        }
-        public object ExcuteScalar(string query , object[] parameter = null)
+        } // Return Number Of Row
+        public object ExecuteScalar(string query , object[] parameter = null)
         {
             object data = 0;
             using (SqlConnection con = new SqlConnection(cStr))
