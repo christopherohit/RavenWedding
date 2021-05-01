@@ -37,7 +37,7 @@ namespace Raven
                 pass.isPassword = true;
             }
             this.carousel1.TransitionSpeed = 1.1f;
-            
+            panel1.Visible = false;
         }
         #endregion
 
@@ -106,6 +106,7 @@ namespace Raven
 
         private void SignIn_Click(object sender, EventArgs e) //Check Form Sign Open? if yes disable it and say beep
         {
+            panel1.Hide();
             if (Application.OpenForms.OfType<Authical>().Count() == 1)
             {
                 this.Enabled = false;
@@ -194,5 +195,30 @@ namespace Raven
         {
             pass.Text = string.Empty;
         }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+            panel1.Show();
+        }
+        #region Panel Move
+        Point PanelMouseDownLocation;
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) PanelMouseDownLocation = e.Location;
+        }
+
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+
+            {
+
+                panel1.Left += e.X - PanelMouseDownLocation.X;
+
+                panel1.Top += e.Y - PanelMouseDownLocation.Y;
+
+            }
+        }
+        #endregion
     }
 }
