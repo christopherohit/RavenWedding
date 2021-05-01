@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Media;
@@ -10,6 +11,7 @@ namespace Raven
 {
     public partial class SignIn : Form
     {
+        public Bunifu.Framework.UI.BunifuMaterialTextbox TextBox { get { return this.name; } }
         Authical form = new Authical();
         #region
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -153,19 +155,44 @@ namespace Raven
             {
                 Main main = new Main();
                 this.Hide();
+                main.GetName.Text = GetName(username).ToString();
+                main.GetCareer.Text = GetCareer(username).ToString();
+                /*main.GetImage.Image;*/
                 main.ShowDialog();
-                this.Show();
+
             }
             else
             {
                 MessageBox.Show("The username or password was incorrect, please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        #region Methoddddddddddddddddddddddddddddd
         bool Login(string username, String password)
         {
-            AccountDAO.Instance.Login(username , password);
-            return false;
+            return AccountDAO.Instance.Login(username , password);
+            
         }
-        
+        string GetCareer(string username)
+        {
+            return AccountDAO.Instance.GetCareer(username);
+        }
+        string GetImage(string username)
+        {
+            return AccountDAO.Instance.Image(username);
+        }
+        string GetName(string username)
+        {
+            return AccountDAO.Instance.GetName(username);
+        }
+        #endregion
+        private void name_DoubleClick(object sender, EventArgs e)
+        {
+            name.Text = string.Empty;
+        }
+
+        private void pass_DoubleClick(object sender, EventArgs e)
+        {
+            pass.Text = string.Empty;
+        }
     }
 }

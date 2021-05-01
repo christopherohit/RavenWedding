@@ -30,15 +30,15 @@ namespace Raven
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage13 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
-            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage14 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
-            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage15 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
-            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage16 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
-            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage17 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
-            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage18 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage31 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
+            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage32 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
+            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage33 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
+            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage34 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
+            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage35 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
+            Syncfusion.Windows.Forms.Tools.CarouselImage carouselImage36 = new Syncfusion.Windows.Forms.Tools.CarouselImage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -101,6 +101,7 @@ namespace Raven
             this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.name.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
             this.name.Click += new System.EventHandler(this.bunifuMaterialTextbox1_Click);
+            this.name.DoubleClick += new System.EventHandler(this.name_DoubleClick);
             // 
             // pass
             // 
@@ -127,6 +128,7 @@ namespace Raven
             this.pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.pass.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged);
             this.pass.Click += new System.EventHandler(this.bunifuMaterialTextbox2_Click);
+            this.pass.DoubleClick += new System.EventHandler(this.pass_DoubleClick);
             // 
             // bunifuButton1
             // 
@@ -142,11 +144,11 @@ namespace Raven
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges3;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges6;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -167,24 +169,24 @@ namespace Raven
             this.bunifuButton1.IndicateFocus = false;
             this.bunifuButton1.Location = new System.Drawing.Point(34, 443);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties5.BorderRadius = 3;
-            stateProperties5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties5.BorderThickness = 1;
-            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties5.ForeColor = System.Drawing.Color.White;
-            stateProperties5.IconLeftImage = null;
-            stateProperties5.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.BorderRadius = 3;
-            stateProperties6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties6.BorderThickness = 1;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.ForeColor = System.Drawing.Color.White;
-            stateProperties6.IconLeftImage = null;
-            stateProperties6.IconRightImage = null;
-            this.bunifuButton1.OnPressedState = stateProperties6;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.BorderRadius = 3;
+            stateProperties11.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties11.BorderThickness = 1;
+            stateProperties11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.ForeColor = System.Drawing.Color.White;
+            stateProperties11.IconLeftImage = null;
+            stateProperties11.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties12.BorderRadius = 3;
+            stateProperties12.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties12.BorderThickness = 1;
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties12.ForeColor = System.Drawing.Color.White;
+            stateProperties12.IconLeftImage = null;
+            stateProperties12.IconRightImage = null;
+            this.bunifuButton1.OnPressedState = stateProperties12;
             this.bunifuButton1.Size = new System.Drawing.Size(144, 52);
             this.bunifuButton1.TabIndex = 5;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,18 +274,18 @@ namespace Raven
             // 
             this.carousel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.carousel1.HighlightColor = System.Drawing.Color.White;
-            carouselImage13.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage13.ItemImage")));
-            carouselImage14.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage14.ItemImage")));
-            carouselImage15.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage15.ItemImage")));
-            carouselImage16.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage16.ItemImage")));
-            carouselImage17.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage17.ItemImage")));
-            carouselImage18.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage18.ItemImage")));
-            this.carousel1.ImageListCollection.Add(carouselImage13);
-            this.carousel1.ImageListCollection.Add(carouselImage14);
-            this.carousel1.ImageListCollection.Add(carouselImage15);
-            this.carousel1.ImageListCollection.Add(carouselImage16);
-            this.carousel1.ImageListCollection.Add(carouselImage17);
-            this.carousel1.ImageListCollection.Add(carouselImage18);
+            carouselImage31.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage31.ItemImage")));
+            carouselImage32.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage32.ItemImage")));
+            carouselImage33.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage33.ItemImage")));
+            carouselImage34.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage34.ItemImage")));
+            carouselImage35.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage35.ItemImage")));
+            carouselImage36.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage36.ItemImage")));
+            this.carousel1.ImageListCollection.Add(carouselImage31);
+            this.carousel1.ImageListCollection.Add(carouselImage32);
+            this.carousel1.ImageListCollection.Add(carouselImage33);
+            this.carousel1.ImageListCollection.Add(carouselImage34);
+            this.carousel1.ImageListCollection.Add(carouselImage35);
+            this.carousel1.ImageListCollection.Add(carouselImage36);
             this.carousel1.ImageshadeColor = System.Drawing.Color.Black;
             this.carousel1.ImageSlides = true;
             this.carousel1.Location = new System.Drawing.Point(478, 56);
@@ -308,9 +310,9 @@ namespace Raven
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1157, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1164, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 21);
+            this.pictureBox2.Size = new System.Drawing.Size(15, 18);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
