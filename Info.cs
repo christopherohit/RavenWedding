@@ -14,6 +14,7 @@ namespace Raven
 {
     public partial class Info : Form
     {
+        public Bunifu.Framework.UI.BunifuMaterialTextbox SetName { get { return this.name; } }
         #region
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -110,6 +111,19 @@ namespace Raven
                 phone.LineFocusedColor = Color.White;
                 phone.LineIdleColor = Color.Gray;
             }
+            Regex reg = new Regex("^[0-9]+$");
+            if (string.IsNullOrEmpty(phone.Text))
+            {
+                pictureBox1.Hide();
+            }
+            else if (!reg.IsMatch(phone.Text))
+            {
+                pictureBox1.Show();
+            }
+            else
+            {
+                pictureBox1.Hide();
+            }
         }
 
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
@@ -119,21 +133,24 @@ namespace Raven
 
         private void bunifuMaterialTextbox4_OnValueChanged(object sender, EventArgs e)
         {
-            if (ICM.Text.Length > 0)
+            Regex reg = new Regex("^[0-9]+$");
+            if (string.IsNullOrEmpty(ICM.Text))
             {
-                if (!Regex.IsMatch(ICM.Text, "^[a-zA-Z]+$"))
-                {
-                    pictureBox3.Show();
-                }
-                else
-                {
-                    pictureBox3.Hide();
-                }
+                pictureBox3.Hide();
+            }
+            else if (!reg.IsMatch(ICM.Text))
+            {
+                pictureBox3.Show();
             }
             else
             {
                 pictureBox3.Hide();
             }
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

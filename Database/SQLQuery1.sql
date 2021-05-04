@@ -1,6 +1,5 @@
 
 CREATE database OnYourWeddingDay
-
 USE OnYourWeddingDay
 go
 
@@ -231,8 +230,8 @@ END
 
 BEGIN -- Insert Data 
 	BEGIN --INSERT DATA NHANVIEN
-		INSERT INTO dbo.nhanvien (Hoten,Email,Pass,Gender,Phone,Addre,CMND,Birth,Descrip, MaChucVu,Regency,Salary,MessageI,Pic)
-		SELECT N'Emma Wattson', N'hermomie05@cs.kaviert.com' , N'emmawat0412112' , N'Female' , 083441564 , N'Pa-ri, France' , 196461313 ,'1990-4-15', N'I am a Good Girl' , '1', N'Designer', '', ,
+		INSERT INTO dbo.nhanvien (Hoten,Email,Pass,Gender,Phone,Addre,CMND,Birth,Descrip, MaChucVu,Regency,Salary,is_blocked,is_reported,create_at,Pic)
+		SELECT N'Emma Wattson', N'hermomie05@cs.kaviert.com' , N'emmawat0412112' , N'Female' , 083441564 , N'Pa-ri, France' , 196461313 ,'1990-4-15', N'I am a Good Girl' , '1', N'Designer', '45000000',0,0,'2017-7-10', BulkColumn FROM OPENROWSET(BULK 'D:\Lesson\RIT\C #\Winform\Raven\Database\Used\HuongDanVien\Emma2.jpg', SINGLE_BLOB) AS PICTURE
 	END
 	BEGIN --INSERT DATA CHUCVU
 		INSERT INTO dbo.ChucVu

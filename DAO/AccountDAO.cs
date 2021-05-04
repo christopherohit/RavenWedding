@@ -39,6 +39,21 @@ namespace Raven.DAO
             string career = ExportCareer.Rows[0].ItemArray[12].ToString();
             return career;
         }
+        public string GetICM(string username)
+        {
+            string getICM = "select * from nhanvien where Email = N'" + username + "'";
+            DataTable exportICM = DataProvider.Instance.ExecuteQuery(getICM);
+            string ICM = exportICM.Rows[0].ItemArray[8].ToString();
+            return ICM;
+
+        }
+        public string Getame(string username)
+        {
+            string getName = "select * from nhanvien where Email = N'" + username + "'";
+            DataTable exportName = DataProvider.Instance.ExecuteQuery(getName);
+            string name = exportName.Rows[0].ItemArray[1].ToString();
+            return name;
+        }
         public string Image(string username)
         {
             string getImage = "Select * From nhanvien where Email = N'" + username + "'";

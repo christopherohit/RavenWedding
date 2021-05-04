@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Raven.DAO;
 
@@ -37,7 +38,8 @@ namespace Raven
                 pass.isPassword = true;
             }
             this.carousel1.TransitionSpeed = 1.1f;
-            panel1.Visible = false;
+            panel2.Hide();
+            pictureBox4.Hide();
         }
         #endregion
 
@@ -106,7 +108,7 @@ namespace Raven
 
         private void SignIn_Click(object sender, EventArgs e) //Check Form Sign Open? if yes disable it and say beep
         {
-            panel1.Hide();
+            panel2.Hide();
             if (Application.OpenForms.OfType<Authical>().Count() == 1)
             {
                 this.Enabled = false;
@@ -154,12 +156,25 @@ namespace Raven
             }
             else if (Login(username , password))
             {
-                Main main = new Main();
-                this.Hide();
-                main.GetName.Text = GetName(username).ToString();
-                main.GetCareer.Text = GetCareer(username).ToString();
-                /*main.GetImage.Image;*/
-                main.ShowDialog();
+                if (!string.IsNullOrEmpty(getICM(username)))
+                {
+                    Main main = new Main();
+                    this.Hide();
+                    main.GetName.Text = GetName(username).ToString();
+                    main.GetCareer.Text = GetCareer(username).ToString();
+                    /*main.GetImage.Image;*/
+                    main.ShowDialog();
+                }
+                else
+                {
+                    var ez = MessageBox.Show("We recognize that you are't complete all your personal information \n Do you want to complete it", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (ez == DialogResult.Yes)
+                    {
+                        Info retype = new Info();
+                        retype.Show();
+                        retype.SetName.Text = Getame(username);
+                    }
+                }
 
             }
             else
@@ -167,11 +182,16 @@ namespace Raven
                 MessageBox.Show("The username or password was incorrect, please check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         #region Methoddddddddddddddddddddddddddddd
         bool Login(string username, String password)
         {
             return AccountDAO.Instance.Login(username , password);
             
+        }
+        string Getame(string username)
+        {
+            return AccountDAO.Instance.Getame(username);
         }
         string GetCareer(string username)
         {
@@ -185,7 +205,12 @@ namespace Raven
         {
             return AccountDAO.Instance.GetName(username);
         }
+        string getICM(string username)
+        {
+            return AccountDAO.Instance.GetICM(username);
+        }
         #endregion
+
         private void name_DoubleClick(object sender, EventArgs e)
         {
             name.Text = string.Empty;
@@ -198,8 +223,9 @@ namespace Raven
 
         private void labelControl1_Click(object sender, EventArgs e)
         {
-            panel1.Show();
+            panel2.Show();
         }
+
         #region Panel Move
         Point PanelMouseDownLocation;
         private void panel2_MouseDown(object sender, MouseEventArgs e)
@@ -213,12 +239,49 @@ namespace Raven
 
             {
 
-                panel1.Left += e.X - PanelMouseDownLocation.X;
+                panel2.Left += e.X - PanelMouseDownLocation.X;
 
-                panel1.Top += e.Y - PanelMouseDownLocation.Y;
+                panel2.Top += e.Y - PanelMouseDownLocation.Y;
 
             }
         }
         #endregion
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+        }
+
+        private void pictureBox4_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureBox4, "This field just contain number \n Do you sure what you are typing, is right your phone ? ");
+        }
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            Regex reg = new Regex("^[0-9]+$");
+            if (string.IsNullOrEmpty(bunifuTextBox1.Text) == true)
+            {
+                pictureBox4.Hide();
+            }
+            else if (!reg.IsMatch(bunifuTextBox1.Text))
+            {
+                pictureBox4.Show();
+            }
+            else
+            {
+                pictureBox4.Hide();
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
