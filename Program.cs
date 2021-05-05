@@ -16,7 +16,7 @@ namespace Raven
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LastStep());
+            Application.Run(new SignIn());
         }
     }
 }

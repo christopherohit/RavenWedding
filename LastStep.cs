@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,10 +18,12 @@ namespace Raven
     {
         string FullPath = Path.GetFullPath(@"C:\");
         string FullSelect = Path.GetFullPath(@"D:\");
+ 
         public LastStep()
         {
             InitializeComponent();
             cameraControl1.Hide();
+            pictureBox3.Hide();
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -126,9 +129,34 @@ namespace Raven
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            ClassImage
-            Directory.CreateDirectory()
-            string filepath = Path.Combine()
+            System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["Info"];
+            int i = 1;
+            try
+            {
+                Directory.CreateDirectory(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text) ;
+                if (Directory.Exists(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text))
+                {
+                sudunglai:
+                    i++;
+                    Directory.CreateDirectory(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i);
+                    if (Directory.Exists(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i))
+                    {
+                        goto sudunglai;
+                    }
+                    else
+                    {
+                        string SetFull = FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i;
+                        string SavePic = Path.Combine(SetFull, DateTime.Now.Year.ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Day.ToString() + "--" +
+                        DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-" + DateTime.Now.Second.ToString() +
+                        ".jpg");
+                        cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
+                    }
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
         }
     }
 }

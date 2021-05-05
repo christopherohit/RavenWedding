@@ -90,7 +90,8 @@ namespace Raven
 
         private void Info_Load(object sender, EventArgs e)
         {
-
+            System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["SignUp"];
+            
         }
 
         private void bunifuMaterialTextbox5_OnValueChanged(object sender, EventArgs e)
@@ -149,6 +150,11 @@ namespace Raven
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void name_OnValueChanged(object sender, EventArgs e)
         {
 
         }

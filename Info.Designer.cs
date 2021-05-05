@@ -166,6 +166,7 @@ namespace Raven
             this.name.Size = new System.Drawing.Size(282, 29);
             this.name.TabIndex = 12;
             this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.name.OnValueChanged += new System.EventHandler(this.name_OnValueChanged);
             // 
             // address
             // 

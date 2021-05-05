@@ -156,6 +156,7 @@
       <DependentUpon>Authical.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\CheckBlock.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\MainDAO.cs" />
     <Compile Include="DTO\cameraControl.cs" />

@@ -13,6 +13,7 @@ namespace Raven
 {
     public partial class SignUp : Form
     {
+        public Bunifu.Framework.UI.BunifuMetroTextbox Setname { get { return this.name; } }
         #region
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -62,20 +63,16 @@ namespace Raven
         
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(passbox.Text))
+            if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(passbox.Text) || string.IsNullOrEmpty(Mailsbox.Text))
             {
-
+                bunifuFlatButton1.Enabled = false;
             }
             else
             {
-                if (!string.IsNullOrEmpty(labelControl1.Text) && !string.IsNullOrEmpty(labelControl2.Text))
-                {
-
-                }
-                else
-                {
-                    bunifuFlatButton1.Enabled = false;
-                }
+                Info StepForm = new Info();
+                StepForm.Show();
+                StepForm.SetName.Text = name.Text;
+                this.Hide();
             }
         }
 
