@@ -47,6 +47,12 @@ namespace Raven.DAO
             return ICM;
 
         }
+        public bool GetPhone(string username)
+        {
+            string getPhone = "Select Phone from nhanvien where Email = N'" + username + "'";
+            DataTable exportPhone = DataProvider.Instance.ExecuteQuery(getPhone);
+            return  exportPhone.Rows.Count > 0;
+        }
         public string Getame(string username)
         {
             string getName = "select * from nhanvien where Email = N'" + username + "'";
@@ -62,6 +68,17 @@ namespace Raven.DAO
             var Image = (Byte[])(catchs);
             var stream = new MemoryStream(Image);
             return stream.ToString() ;
+        }
+        public bool ICMCheck(string username)
+        {
+            string checkICM = "select cmnd from nhanvien where Email = N'" + username + "'";
+            DataTable exportICM = DataProvider.Instance.ExecuteQuery(checkICM);
+            return exportICM.Rows.Count > 0;
+        }
+        public bool ChangePass(string Username , string password)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("EXEC CapNhapPass @Emails , @pass", new object[] { Username, password });
+            return result > 0;
         }
     }
 }
