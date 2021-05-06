@@ -93,7 +93,7 @@ namespace Raven
             var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (res == DialogResult.Yes)
             {
-                Environment.Exit(1);
+                this.Hide();
             }
             else
             {
