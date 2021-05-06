@@ -80,6 +80,7 @@ namespace Raven
         {
             cameraControl1.Show();
             pictureBox1.Hide();
+            pictureBox3.Show();
             bunifuButton1.Visible = false;
             bunifuButton2.Visible = false;
         }
@@ -130,7 +131,7 @@ namespace Raven
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["Info"];
-            int i = 1;
+            int i = 0;
             try
             {
                 Directory.CreateDirectory(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text) ;
