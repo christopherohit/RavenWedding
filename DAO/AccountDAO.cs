@@ -21,7 +21,7 @@ namespace Raven.DAO
         public bool Login(string username , string password)
         {
             //string query1 = "SELECT * FROM dbo.nhanvien WHERE Email = N'" + username + "' AND Pass = N'" + password + "'";
-            string query = "Exec dbo.getaccount @emails , @pass ";
+            string query = "Exec dbo.getaccount @emails , @pass";
             DataTable result = DataProvider.Instance.ExecuteQuery(query , new object[] { username , password }) ;
             return result.Rows.Count > 0;
         }
