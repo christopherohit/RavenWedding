@@ -96,6 +96,7 @@ namespace Raven
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(218, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "78Q21D3QDF1D12DFS3FSS";
             this.textBox1.UseSystemPasswordChar = true;
             // 
             // labelControl6
