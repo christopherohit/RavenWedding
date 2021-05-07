@@ -38,7 +38,7 @@ namespace Raven
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.address = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Address = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ICM = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -51,13 +51,15 @@ namespace Raven
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.desc = new System.Windows.Forms.TextBox();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.gender = new Syncfusion.WinForms.ListView.SfComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.onYourWeddingDayDataSet = new Raven.OnYourWeddingDayDataSet();
+            this.gender = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gender)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gender.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -168,28 +170,28 @@ namespace Raven
             this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.name.OnValueChanged += new System.EventHandler(this.name_OnValueChanged);
             // 
-            // address
+            // Address
             // 
-            this.address.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.address.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.address.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.address.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.address.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.address.ForeColor = System.Drawing.Color.White;
-            this.address.HintForeColor = System.Drawing.Color.Empty;
-            this.address.HintText = "";
-            this.address.isPassword = false;
-            this.address.LineFocusedColor = System.Drawing.Color.White;
-            this.address.LineIdleColor = System.Drawing.Color.Gray;
-            this.address.LineMouseHoverColor = System.Drawing.Color.White;
-            this.address.LineThickness = 3;
-            this.address.Location = new System.Drawing.Point(31, 296);
-            this.address.Margin = new System.Windows.Forms.Padding(4);
-            this.address.MaxLength = 32767;
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(282, 29);
-            this.address.TabIndex = 12;
-            this.address.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Address.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Address.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Address.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Address.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Address.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Address.ForeColor = System.Drawing.Color.White;
+            this.Address.HintForeColor = System.Drawing.Color.Empty;
+            this.Address.HintText = "";
+            this.Address.isPassword = false;
+            this.Address.LineFocusedColor = System.Drawing.Color.White;
+            this.Address.LineIdleColor = System.Drawing.Color.Gray;
+            this.Address.LineMouseHoverColor = System.Drawing.Color.White;
+            this.Address.LineThickness = 3;
+            this.Address.Location = new System.Drawing.Point(31, 296);
+            this.Address.Margin = new System.Windows.Forms.Padding(4);
+            this.Address.MaxLength = 32767;
+            this.Address.Name = "Address";
+            this.Address.Size = new System.Drawing.Size(282, 29);
+            this.Address.TabIndex = 12;
+            this.Address.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // ICM
             // 
@@ -383,16 +385,6 @@ namespace Raven
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // gender
-            // 
-            this.gender.BackColor = System.Drawing.Color.DimGray;
-            this.gender.Location = new System.Drawing.Point(362, 184);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(282, 29);
-            this.gender.Style.EditorStyle.BackColor = System.Drawing.Color.DimGray;
-            this.gender.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gender.TabIndex = 17;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -413,15 +405,33 @@ namespace Raven
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
+            // onYourWeddingDayDataSet
+            // 
+            this.onYourWeddingDayDataSet.DataSetName = "OnYourWeddingDayDataSet";
+            this.onYourWeddingDayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gender
+            // 
+            this.gender.Location = new System.Drawing.Point(362, 193);
+            this.gender.Name = "gender";
+            this.gender.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
+            this.gender.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.gender.Properties.Appearance.Options.UseBackColor = true;
+            this.gender.Properties.Appearance.Options.UseForeColor = true;
+            this.gender.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.gender.Size = new System.Drawing.Size(282, 20);
+            this.gender.TabIndex = 22;
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(990, 568);
+            this.Controls.Add(this.gender);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.gender);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.desc);
             this.Controls.Add(this.birth);
@@ -434,7 +444,7 @@ namespace Raven
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.phone);
             this.Controls.Add(this.ICM);
-            this.Controls.Add(this.address);
+            this.Controls.Add(this.Address);
             this.Controls.Add(this.name);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl6);
@@ -454,9 +464,10 @@ namespace Raven
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Info_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Info_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gender)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gender.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,7 +483,7 @@ namespace Raven
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private Bunifu.Framework.UI.BunifuMaterialTextbox name;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox address;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Address;
         private Bunifu.Framework.UI.BunifuMaterialTextbox ICM;
         private Bunifu.Framework.UI.BunifuMaterialTextbox phone;
         private DevExpress.XtraEditors.LabelControl labelControl7;
@@ -485,8 +496,9 @@ namespace Raven
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private System.Windows.Forms.TextBox desc;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Syncfusion.WinForms.ListView.SfComboBox gender;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private OnYourWeddingDayDataSet onYourWeddingDayDataSet;
+        private DevExpress.XtraEditors.ComboBoxEdit gender;
     }
 }
