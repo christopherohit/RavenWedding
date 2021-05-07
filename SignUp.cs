@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Raven.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,8 @@ namespace Raven
     public partial class SignUp : Form
     {
         public Bunifu.Framework.UI.BunifuMetroTextbox Setname { get { return this.name; } }
-        #region
+        public Bunifu.Framework.UI.BunifuMetroTextbox SetMails { get { return this.Mailsbox; } }
+        #region Round Corner
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
             (
@@ -33,7 +35,7 @@ namespace Raven
         }
         #endregion
 
-        #region
+        #region Move Form
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
@@ -59,24 +61,38 @@ namespace Raven
             dragging = false;
         }
         #endregion
+
         SignIn zo = new SignIn();
         
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            string sname = name.Text;
+            string smail = Mailsbox.Text;
+            string spass = passbox.Text;
             if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(passbox.Text) || string.IsNullOrEmpty(Mailsbox.Text))
             {
                 bunifuFlatButton1.Enabled = false;
             }
             else
             {
-                Info StepForm = new Info();
-                StepForm.Show();
-                StepForm.SetName.Text = name.Text;
-                this.Hide();
+                if (InsertUser(sname , smail , spass))
+                {
+                    Info StepForm = new Info();
+                    StepForm.Show();
+                    StepForm.SetName.Text = name.Text;
+                    this.Hide();
+                }
             }
         }
 
-        private void Mailsbox_OnValueChanged(object sender, EventArgs e)
+        #region Method
+        bool InsertUser(string fullname , string mails , string pass)
+        {
+            return AccountDAO.Instance.InsertUser(fullname, mails, pass);
+        }
+        #endregion
+
+        private void Mailsbox_OnValueChanged(object sender, EventArgs e) // Check Mails
         {
             System.Text.RegularExpressions.Regex rmails = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
             if (string.IsNullOrEmpty(Mailsbox.Text))
@@ -99,7 +115,7 @@ namespace Raven
             }
         }
 
-        private void repassbox_OnValueChanged(object sender, EventArgs e)
+        private void repassbox_OnValueChanged(object sender, EventArgs e) // Check Pass is Match
         {
             if (string.IsNullOrEmpty(repassbox.Text))
             {
@@ -118,7 +134,7 @@ namespace Raven
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e) // Exit SignUp
         {
             var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (res == DialogResult.Yes)
@@ -133,7 +149,7 @@ namespace Raven
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) // Check Box With Agreed With Term
         {
             if (checkBox1.Checked == true)
             {
@@ -145,7 +161,7 @@ namespace Raven
             }
         }
 
-        private void bunifuFlatButton1_MouseMove(object sender, MouseEventArgs e)
+        private void bunifuFlatButton1_MouseMove(object sender, MouseEventArgs e) // Show Tip For User
         {
             if (bunifuFlatButton1.Enabled == false)
             {
@@ -153,7 +169,7 @@ namespace Raven
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e) // Refresh Form
         {
             if (string.IsNullOrWhiteSpace(name.Text) && string.IsNullOrWhiteSpace(Mailsbox.Text) && string.IsNullOrWhiteSpace(passbox.Text))
             {
