@@ -14,7 +14,8 @@ namespace Raven
     {
         public Bunifu.Framework.UI.BunifuMaterialTextbox TextBox { get { return this.name; } }
         Authical form = new Authical();
-        #region
+        int i = 4;
+        #region Eclipse Corner Form
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
             (
@@ -48,7 +49,7 @@ namespace Raven
         }
         #endregion
 
-        #region
+        #region Move Form Not Need Border
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
@@ -74,13 +75,13 @@ namespace Raven
         }
         #endregion
 
-        private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
+        private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e) //Change Color when type password or Emails
         {
             pass.isPassword = true;
             pass.ForeColor = Color.Black;
         }
 
-        private void bunifuMaterialTextbox2_Click(object sender, EventArgs e)
+        private void bunifuMaterialTextbox2_Click(object sender, EventArgs e) //Enpty string when click on it
         {
             if (pass.Text == "Password") 
             {
@@ -88,24 +89,24 @@ namespace Raven
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e) // Exit Form
         {
             var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (res == DialogResult.Yes)
             {
-                this.Hide();
+                Environment.Exit(-1);
             }
             else
             {
             }
         }
 
-        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e) // Change Color when type password or Emails
         {
             name.ForeColor = Color.Black;
         }
 
-        private void labelControl3_Click(object sender, EventArgs e)
+        private void labelControl3_Click(object sender, EventArgs e) // Disable Form when open Authical
         {
             form.Show();
             this.Enabled = false;
@@ -125,17 +126,17 @@ namespace Raven
             }
         }
 
-        private void carousel1_Click(object sender, EventArgs e)
+        private void carousel1_Click(object sender, EventArgs e) // Stop carouse
         {
             carousel1.RotateAlways = false;
         }
 
-        private void carousel1_DoubleClick(object sender, EventArgs e)
+        private void carousel1_DoubleClick(object sender, EventArgs e) //Restart Carousel
         {
             carousel1.RotateAlways = true;
         }
 
-        private void bunifuMaterialTextbox1_Click(object sender, EventArgs e)
+        private void bunifuMaterialTextbox1_Click(object sender, EventArgs e) // //Enpty string when click on it
         {
             string username = name.Text;
             if (username == "Emails")
@@ -144,7 +145,7 @@ namespace Raven
             }
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void bunifuButton1_Click(object sender, EventArgs e) // Button For Login
         {
             string username = name.Text;
             string password = pass.Text;
@@ -196,14 +197,14 @@ namespace Raven
         }
 
         #region Methoddddddddddddddddddddddddddddd
-        bool Login(string username, String password)
+        bool Login(string username, string password)
         {
             return AccountDAO.Instance.Login(username , password);
             
         }
-        bool GetPhone(string username)
+        bool GetPhone(string Phone)
         {
-            return AccountDAO.Instance.GetPhone(username);
+            return AccountDAO.Instance.GetPhone(Phone);
         }
         string Getame(string username)
         {
@@ -225,26 +226,38 @@ namespace Raven
         {
             return AccountDAO.Instance.GetICM(username);
         }
-        bool ChecKICM(string username)
+        bool ChecKICM(string ICM)
         {
-            return AccountDAO.Instance.ICMCheck(username);
+            return AccountDAO.Instance.ICMCheck(ICM);
         }
+        
 
         #endregion
 
-        private void name_DoubleClick(object sender, EventArgs e)
+        private void name_DoubleClick(object sender, EventArgs e) // //Enpty string when click on it
         {
             name.Text = string.Empty;
         }
 
-        private void pass_DoubleClick(object sender, EventArgs e)
+        private void pass_DoubleClick(object sender, EventArgs e)// //Enpty string when click on it
         {
             pass.Text = string.Empty;
         }
 
-        private void labelControl1_Click(object sender, EventArgs e)
+        private void labelControl1_Click(object sender, EventArgs e) // create Panel form Recovery password
         {
             panel2.Show();
+            label2.Show();
+            bunifuTextBox1.Show();
+            bunifuTextBox1.Text = string.Empty;
+            label3.Show();
+            label4.Show();
+            label5.Show();
+            button2.Show();
+            label6.Hide();
+            bunifuTextBox2.Hide();
+            pictureBox5.Hide();
+            button1.Hide();
         }
 
         #region Panel Move
@@ -268,17 +281,17 @@ namespace Raven
         }
         #endregion
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e) // Hide Panel recovery password
         {
             panel2.Hide();
         }
 
-        private void pictureBox4_MouseHover(object sender, EventArgs e)
+        private void pictureBox4_MouseHover(object sender, EventArgs e) // Show tooltip when mouse hover
         {
             toolTip1.SetToolTip(pictureBox4, "This field just contain number \n Do you sure what you are typing, is right your phone ? ");
         }
 
-        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e) // check text which tying
         {
             Regex reg = new Regex("^[0-9]+$");
             if (string.IsNullOrEmpty(bunifuTextBox1.Text) == true)
@@ -293,50 +306,50 @@ namespace Raven
             {
                 pictureBox4.Hide();
             }
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string username = name.Text;
-            if (string.IsNullOrEmpty(bunifuTextBox1.Text))
+            if (pictureBox4.Visible == true)
             {
-                MessageBox.Show("Please fill in your phone number to recover password");
+                button2.Enabled = false;
             }
             else
             {
-                if (GetPhone(username))
-                {
-                    label2.Visible = false;
-                    bunifuTextBox1.Visible = false;
-                    pictureBox4.Visible = false;
-                    button2.Visible = false;
-                    label6.Visible = true;
-                    bunifuTextBox2.Visible = true;
-                    pictureBox5.Visible = true;
-                    button1.Visible = true;
-                    label4.Text = "4";
+                button2.Enabled = true;
+            }
+        }
 
+        private void button2_Click(object sender, EventArgs e) //Check Number was fill in
+        {
+            string username = name.Text;
+            string phone = bunifuTextBox1.Text;
+            try
+            {
+                if (string.IsNullOrEmpty(bunifuTextBox1.Text))
+                {
+                    MessageBox.Show("Please fill in your phone number to recover password");
                 }
                 else
                 {
-                    MessageBox.Show("This phone isn't available in my system \nPlease try again", "404 Error Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    for (int i = 3; i >= 0 ; i--)
+                    if (GetPhone(phone))
                     {
+                        label2.Visible = false;
+                        bunifuTextBox1.Visible = false;
+                        pictureBox4.Visible = false;
+                        button2.Visible = false;
+                        label6.Visible = true;
+                        bunifuTextBox2.Visible = true;
+                        pictureBox5.Visible = false ;
+                        button1.Visible = true;
+                        label4.Text = "4";
+
+                    }
+                    else
+                    {
+                        i++;
+                        MessageBox.Show("This phone isn't available in my system \nPlease try again", "404 Error Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         label4.Text = i.ToString();
                         if (label4.Text == "0")
                         {
                             bool isblock = true;
-                            if (CheckBlock.instance.Block(username, isblock))
+                            if (AccountDAO.Instance.Block(username, isblock))
                             {
                                 MessageBox.Show("Your Account was block please contact with admintrator");
                             }
@@ -344,42 +357,58 @@ namespace Raven
                     }
                 }
             }
+            catch (Exception CA)
+            {
+                if (pictureBox5.Visible == true)
+                {
+                    MessageBox.Show(CA.Message);
+                }
+            }
         }
 
-        private void pictureBox5_MouseHover(object sender, EventArgs e)
+        private void pictureBox5_MouseHover(object sender, EventArgs e) // Show Tooltip
         {
             toolTip1.SetToolTip(pictureBox5, "This field just contain number \n Do you sure what you are typing, is right your phone ? ");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // Check ICM 
         {
             string username = name.Text;
-            if (string.IsNullOrEmpty(bunifuTextBox2.Text))
+            string ICM = bunifuTextBox2.Text;
+            try
             {
-                MessageBox.Show("Please fill in your identificate number to recover password");
-            }
-            else
-            {
-                if (ChecKICM(username))
+                if (string.IsNullOrEmpty(bunifuTextBox2.Text))
                 {
-                    bunifuGradientPanel1.Hide();
-                    panel2.Show();
+                    MessageBox.Show("Please fill in your identificate number to recover password");
                 }
                 else
                 {
-                    MessageBox.Show("This phone isn't available in my system \nPlease try again", "404 Error Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    for (int i = 3; i >= 0; i--)
+                    if (ChecKICM(ICM))
                     {
+                        bunifuGradientPanel1.Hide();
+                        panel2.Show();
+                    }
+                    else
+                    {
+                        i++;
+                        MessageBox.Show("This phone isn't available in my system \nPlease try again", "404 Error Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         label4.Text = i.ToString();
                         if (label4.Text == "0")
                         {
                             bool isblock = true;
-                            if (CheckBlock.instance.Block(username, isblock))
+                            if (AccountDAO.Instance.Block(username, isblock))
                             {
                                 MessageBox.Show("Your Account was block please contact with admintrator");
                             }
                         }
                     }
+                }
+            }
+            catch (Exception er)
+            {
+                if (pictureBox4.Visible == true)
+                {
+                    MessageBox.Show(er.Message);
                 }
             }
         }
@@ -404,7 +433,7 @@ namespace Raven
         }
         #endregion
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) //Update password
         {
             string username = name.Text;
             string pass = bunifuTextBox3.Text;
@@ -422,11 +451,37 @@ namespace Raven
             }
         }
 
-        private void bunifuTextBox4_TextChanged(object sender, EventArgs e)
+        private void bunifuTextBox4_TextChanged(object sender, EventArgs e) // check password is match
         {
             if (bunifuTextBox4.Text != bunifuTextBox3.Text)
             {
                 pictureBox7.Show();
+            }
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e) // check ICM
+        {
+
+            Regex reg = new Regex("^[0-9]+$");
+            if (string.IsNullOrEmpty(bunifuTextBox2.Text) == true)
+            {
+                pictureBox5.Hide();
+            }
+            else if (!reg.IsMatch(bunifuTextBox2.Text))
+            {
+                pictureBox5.Show();
+            }
+            else
+            {
+                pictureBox5.Hide();
+            }
+            if (pictureBox5.Visible == true)
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
             }
         }
     }
