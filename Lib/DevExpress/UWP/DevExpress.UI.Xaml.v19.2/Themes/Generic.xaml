@@ -1,0 +1,28 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxcore="using:DevExpress.Core">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/DialogButton.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/ProgressBarSplashScreenView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/ProgressRingSplashScreenView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/DialogContentControl.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/RangeControlBrushContainers.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/Popup.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/Flyout.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/NestedMenu.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/Gallery.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/DXListView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/ViewLayoutControl.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/IconView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SelectorControl.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/ImageButton.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/ImageRadioButton.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/PathButton.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/PathRadioButton.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/PathToggleButton.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/SettingsBarView.xaml"/>        
+    </ResourceDictionary.MergedDictionaries>
+
+    <dxcore:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader"/> 
+</ResourceDictionary>

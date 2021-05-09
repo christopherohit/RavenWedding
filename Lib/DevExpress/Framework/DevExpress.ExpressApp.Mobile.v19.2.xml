@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Mobile.v19.2</name>
+  </assembly>
+  <members>
+    <member name="T:DevExpress.ExpressApp.Actions.ActionBaseExtensions">
+      <summary>
+        <para>Provides extension methods providing client script registration  in Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Actions.ActionBaseExtensions.GetClientScriptOnExecute(DevExpress.ExpressApp.Actions.ActionBase)">
+      <summary>
+        <para>Returns the scripts that are registered for a specified Action.</para>
+      </summary>
+      <param name="action">An Action for which the returned scripts are registered.</param>
+      <returns>A Dictionary&lt;String, String&gt; of scripts that are registered for a specified Action.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Actions.ActionBaseExtensions.GetProcessActionOnServerScript(DevExpress.ExpressApp.Actions.ActionBase)">
+      <summary>
+        <para>Returns a script to be processed on an Action execution on the server-side.</para>
+      </summary>
+      <param name="action">An Action on whose execution, a client script will be executed.</param>
+      <returns>A string that is a script to be processed on an Action execution on the server-side.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Actions.ActionBaseExtensions.GetProcessActionOnServerScript(DevExpress.ExpressApp.Actions.ActionBase,System.String)">
+      <summary>
+        <para>Returns a script to be processed on an Action execution on the server-side and runs an additional script on client-side.</para>
+      </summary>
+      <param name="action">An Action on whose execution, a client script will be executed.</param>
+      <param name="onActionProcessedClientScript"></param>
+      <returns>A string that is a script to be processed on an Action execution on the server-side.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Actions.ActionBaseExtensions.MobileRender(DevExpress.ExpressApp.Actions.ActionBase)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="action"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Actions.ActionBaseExtensions.RegisterClientScriptOnExecute(DevExpress.ExpressApp.Actions.ActionBase,System.String,System.String)">
+      <summary>
+        <para>Register a client script to be executed on an Action execute.</para>
+      </summary>
+      <param name="action">An Action on whose execution a client script will be executed.</param>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is the script to be executed on an Action execution.</param>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Mobile">
+      <summary>
+        <para>Contains classes that are specific to XAF Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.ClientModelManager">
+      <summary>
+        <para>Provides the base functionality for the  and  classes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.#ctor(System.String)">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Mobile.ClientModelManager"/> class.</para>
+      </summary>
+      <param name="modelVariableName">A string that is the $model (for View Model) or $global (for Global Model) JavaScript variable.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.BindToModel(System.String)">
+      <summary>
+        <para>Returns the client-side binding string (e.g., $global.CurrentObject or $model.CurrentObject).</para>
+      </summary>
+      <param name="propertyPath">A string that is a path of a property for which the client-side binding string is generated.</param>
+      <returns>A string that is the client-side binding string.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.BindToModel(System.String,System.Object)">
+      <summary>
+        <para>Updates the client-side View Model properties on the server-side and returns the client-side binding string (e.g., $global.CurrentObject or $model.CurrentObject).</para>
+      </summary>
+      <param name="propertyPath">A string that is a path to a property for which the client-side binding string is generated.</param>
+      <param name="value">An object specifying the new property value.</param>
+      <returns>A string that is the client-side binding string.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.BindToModelCheckForNull(System.String)">
+      <summary>
+        <para>For internal use only.</para>
+      </summary>
+      <param name="propertyPath"></param>
+      <returns></returns>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.ClientModelManager.ClientModelRestored">
+      <summary>
+        <para>Occurs after the View Model is restored.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.ClientModelManager.Functions">
+      <summary>
+        <para>Provides access to a collection of functions registered in a View Model.</para>
+      </summary>
+      <value>A Dictionary&lt;string, ModelFunction&gt; list that contains functions registered in a View Model.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.GetCheckForNullPropertiesScript(System.String)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="propertyPath"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.GetPropertyValue(System.String)">
+      <summary>
+        <para>Returns a value of the specified client-side View Model property on the server-side.</para>
+      </summary>
+      <param name="propertyPath">A string that is a path to a property whose value should be retrieved.</param>
+      <returns>An object that is the specified property&#39;s value.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.GetUsedProperties">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.ClientModelManager.Properties">
+      <summary>
+        <para>Provides access to a collection of properties registered in a View Model.</para>
+      </summary>
+      <value>A Dictionary&lt;string, ModelProperty&gt; list that contains properties registered in a View Model.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.RegisterFunction(System.String,System.String)">
+      <summary>
+        <para>Register a Java Script function in a View Model</para>
+      </summary>
+      <param name="name">A string that is the name of a script to be registered.</param>
+      <param name="script">A string that is a script to be registered.</param>
+      <returns>A ModelFunction object that is a script that you can use in other scripts.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.RegisterProperty(DevExpress.ExpressApp.Mobile.MobileModel.ModelProperty)">
+      <summary>
+        <para>Add the specified property in a View Model.</para>
+      </summary>
+      <param name="modelProperty">An ModelProperty object to be added to a View Model.</param>
+      <returns>An ModelProperty object that is added to a View Model.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.RegisterProperty(System.String)">
+      <summary>
+        <para>Adds a property with the specified name in a View Model.</para>
+      </summary>
+      <param name="name">A string that is the name of a new property.</param>
+      <returns>A ModelProperty object that is a property with the specified name and script body.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.UpdatePropertyValue(System.String,System.Object)">
+      <summary>
+        <para>Updates the specified client-side View Model property on the server-side. After processing a client request, the updated property values are transferred to the client-side and applied to the View Model.</para>
+      </summary>
+      <param name="propertyPath">A string that is a property path.</param>
+      <param name="value">An object specifying a new property value.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ClientModelManager.UpdatePropertyValue(System.String,System.Object,System.Object)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="propertyPath"></param>
+      <param name="value"></param>
+      <param name="parentObjectForCheck"></param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.ClientModelManager.Values">
+      <summary>
+        <para>This property is obsolete. Use the  property instead.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.ClientModelManager.ViewModelRestored">
+      <summary>
+        <para>This event is obsolete. Use the  event instead.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.DevExtremeModule">
+      <summary>
+        <para>Contains values specifying the DevExtreme modules that can be added to the XAF Mobile application.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Mobile.DevExtremeModule.Viz">
+      <summary>
+        <para>The viz DevExtreme module that can be used in an XAF Mobile application.</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Mobile.Editors">
+      <summary>
+        <para>Contains base classes for Mobile Editors used in the eXpressApp Framework, to display business object properties in a UI.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem">
+      <summary>
+        <para>Represents the Action Container View Item used in XAF Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.#ctor(DevExpress.ExpressApp.Model.IModelActionContainerViewItem,System.Type)">
+      <summary>
+        <para>Creates and initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem"/> class.</para>
+      </summary>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelActionContainerViewItem"/> object that represents the Application Model&#39;s Views | &lt;DetailView&gt; | Items | ActionContainerViewItem node that defines the current View Item.</param>
+      <param name="objectType">A <see cref="T:System.Type"/> object that represents the type of the object for which the current View Item&#39;s View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.ViewItem.ObjectType"/> property.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.Actions">
+      <summary>
+        <para>Provides access to a collection of Actions which are displayed by the Mobile Action Container View Item.</para>
+      </summary>
+      <value>An object that represents a ReadOnlyCollection&lt;<see cref="T:DevExpress.ExpressApp.Actions.ActionBase"/>&gt; collection that contains Actions of the current Mobile Action Container View Item.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.BeginUpdate">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.ClientModelManager">
+      <summary>
+        <para>Gets the ClientModelManager object providing the View Model and Global Model&#39;s base functionality.</para>
+      </summary>
+      <value>A ClientModelManager object providing the View Model and Global Model&#39;s base functionality.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.ContainerId">
+      <summary>
+        <para>Specifies the Mobile Action Container View Item&#39;s Action Container identifier.</para>
+      </summary>
+      <value>A string value that represents the Mobile Action Container View Item&#39;s Action Container identifier.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.Control">
+      <summary>
+        <para>Provides access to settings of the widget used by the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem"/>.</para>
+      </summary>
+      <value>The Dictionary&lt;<see cref="T:System.String"/>,<see cref="T:System.Object"/>&gt; object that contains settings of the widget used by the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem"/>.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.EndUpdate">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.Register(DevExpress.ExpressApp.Actions.ActionBase)">
+      <summary>
+        <para>Adds a specified Action to a Mobile Action Container View Item&#39;s <see cref="P:DevExpress.ExpressApp.Editors.ActionContainerViewItem.Actions"/> collection and creates its control.</para>
+      </summary>
+      <param name="action">An <see cref="T:DevExpress.ExpressApp.Actions.ActionBase"/> object that represents the Action to be registered within the current Mobile Action Container View Item.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem.Setup(DevExpress.ExpressApp.Mobile.ClientModelManager)">
+      <summary>
+        <para>Passes the <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object to the current <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileActionContainerViewItem"/>.</para>
+      </summary>
+      <param name="clientModelManager">A ViewModelManager object containing the model information on the current View.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor">
+      <summary>
+        <para>Represents the List Editor used by default in XAF Mobile applications to display List Views in a UI.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.#ctor">
+      <summary>
+        <para>Creates and initializes an instance of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.#ctor(DevExpress.ExpressApp.Model.IModelListView)">
+      <summary>
+        <para>Creates and initializes an instance of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/> class.</para>
+      </summary>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object representing the Application Model&#39;s node, which contains information on the View that will use the instantiated List Editor.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.ContextMenuTemplate">
+      <summary>
+        <para>Provides access to the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/>&#39;s Context Menu Template.</para>
+      </summary>
+      <value>A control which implements the IContextMenuTemplate interface and represents a List Editor&#39;s Context Menu Template.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.Control">
+      <summary>
+        <para>Provides access to the widget that is used by the current List Editor to represent a List View in a UI.</para>
+      </summary>
+      <value>A Dictionary&lt;<see cref="T:System.String"/>,<see cref="T:System.Object"/>&gt; object that provides access to properties of the current List Editor&#39;s widget.</value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.CustomizeLocalizedValue">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.Dispose">
+      <summary>
+        <para>Releases all resources used by the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.GetIndexByObject(System.Object)">
+      <summary>
+        <para>Returns the index of an object.</para>
+      </summary>
+      <param name="obj">An object to get the index.</param>
+      <returns>An index of an object.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.GetObjectByIndex(System.Int32)">
+      <summary>
+        <para>Returns an object with the specified index.</para>
+      </summary>
+      <param name="index">The index of an object.</param>
+      <returns>An object with the specified index.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.GetOrderedObjects">
+      <summary>
+        <para>Returns an ordered list of objects.</para>
+      </summary>
+      <returns>An ordered list of objects.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.GetSelectedObjects">
+      <summary>
+        <para>Provides access to the collection of objects that are currently selected.</para>
+      </summary>
+      <returns>A list of the selected objects.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.GroupItem">
+      <summary>
+        <para>The View Item displayed in the group row.</para>
+      </summary>
+      <value>A View Item displayed in the group row.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.Refresh">
+      <summary>
+        <para>Refreshes the bound data source of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/>&#39;s control.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.RowItem">
+      <summary>
+        <para>The View Item displayed in a RowLayout&#39;s row.</para>
+      </summary>
+      <value>A View Item displayed in a RowLayout&#39;s row.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.SelectionType">
+      <summary>
+        <para>Returns the selection type supported by the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/>.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.SelectionType"/> enumeration value that represents the selection type supported by the current List Editor.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.Setup(DevExpress.ExpressApp.CollectionSourceBase,DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Performs additional initialization of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/>.</para>
+      </summary>
+      <param name="collectionSource">A <see cref="T:DevExpress.ExpressApp.CollectionSourceBase"/> object that represent the Collection Source of the List View that the current List Editor represents in a UI.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that can be used to manage the current application.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor.Setup(DevExpress.ExpressApp.Mobile.ViewModelManager)">
+      <summary>
+        <para>Performs additional initialization of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditor"/>.</para>
+      </summary>
+      <param name="viewModel">A ViewModelManager object containing the model information on the List View.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper">
+      <summary>
+        <para>Provides helper methods to provide sorting in a List View and create a Data Source.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper.AssignSort(DevExpress.ExpressApp.Mobile.MobileModel.DataSource,DevExpress.ExpressApp.Model.IModelListView)">
+      <summary>
+        <para>Adjusts and assigns a sort to a List View data source based on the corresponding model settings.</para>
+      </summary>
+      <param name="modelDataSource">A DataSource object whose content should be sorted.</param>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object that provides settings from the Application Model&#39;s ListView node.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper.CalculatePropertyDataSourceUrl(DevExpress.ExpressApp.PropertyCollectionSource,DevExpress.ExpressApp.Mobile.ClientModelManager,System.String)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="collectionSource"></param>
+      <param name="clientModelManager"></param>
+      <param name="currentObjectParameter"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper.CreateDataSource(DevExpress.ExpressApp.CollectionSourceBase,System.String,DevExpress.ExpressApp.Mobile.MobileApplication,DevExpress.ExpressApp.Mobile.ViewModelManager,DevExpress.ExpressApp.Model.IModelObjectView,System.String)">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.CollectionSourceBase"/> class and creates a data source based on the Collection Source.</para>
+      </summary>
+      <param name="collectionSource">A CollectionSourceBase object to be extended.</param>
+      <param name="sourceId">A string that is a List View data source ID.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.Mobile.MobileApplication"/> object that manages the current XAF Mobile application.</param>
+      <param name="viewModelManager">A <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object containing the model information on a List View.</param>
+      <param name="objectView">An <see cref="T:DevExpress.ExpressApp.Model.IModelObjectView"/> object representing the current View&#39;s Application Model node.</param>
+      <param name="url">A string that is a List View url.</param>
+      <returns>A DataSource object that is created based on the Collection Source.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper.CreateDataSourceWithLookupDataStore(DevExpress.ExpressApp.CollectionSourceBase,System.String,DevExpress.ExpressApp.Mobile.MobileApplication,DevExpress.ExpressApp.Mobile.ViewModelManager,DevExpress.ExpressApp.Model.IModelObjectView,System.String)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="collectionSource"></param>
+      <param name="sourceId"></param>
+      <param name="application"></param>
+      <param name="viewModelManager"></param>
+      <param name="objectView"></param>
+      <param name="url"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper.CreateUrlProperty(DevExpress.ExpressApp.Model.IModelObjectView,DevExpress.ExpressApp.Mobile.MobileApplication)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectView"></param>
+      <param name="application"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper.CreateUrlPropertyLocally(DevExpress.ExpressApp.Model.IModelObjectView,DevExpress.ExpressApp.Mobile.ViewModelManager,System.String,System.String)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectView"></param>
+      <param name="viewModelManager"></param>
+      <param name="url"></param>
+      <param name="dataSourceId"></param>
+      <returns></returns>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Mobile.Editors.MobileListEditorsHelper.ListViewDataSourceKey">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor">
+      <summary>
+        <para>The base class for Property Editors that use DevExtreme Widgets and their XAF Mobile Wrappers.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor.#ctor(System.Type,DevExpress.ExpressApp.Model.IModelMemberViewItem)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor"/> class.</para>
+      </summary>
+      <param name="objectType">A <see cref="T:System.Type"/> of the property edited by <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor"/>.</param>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelMemberViewItem"/> object.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor.ClientModelManager">
+      <summary>
+        <para>Gets the ClientModelManager object providing the View Model and Global Model&#39;s base functionality.</para>
+      </summary>
+      <value>A ClientModelManager object providing the View Model and Global Model&#39;s base functionality.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor.Control">
+      <summary>
+        <para>Provides access to the DevExtreme widget that represents the current Property Editor in a UI.</para>
+      </summary>
+      <value>A Dictionary&lt;<see cref="T:System.String"/>,<see cref="T:System.Object"/>&gt; object provided access to properties of a widget used to display the current Property Editor in a UI.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor.GetStreamUri">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor.Setup(DevExpress.ExpressApp.IObjectSpace,DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Passes the <see cref="T:DevExpress.ExpressApp.XafApplication"/> and <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> objects to the current <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor"/>.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object that provides methods to access the application database.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the current application.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor.Setup(DevExpress.ExpressApp.Mobile.ClientModelManager)">
+      <summary>
+        <para>Passes the <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object to the current <see cref="T:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor"/>.</para>
+      </summary>
+      <param name="clientModelManager">A ViewModelManager object used to register properties.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.MobilePropertyEditor.ViewEditMode">
+      <summary>
+        <para>Specifies the mode for displaying the Property Editor&#39;s widget.</para>
+      </summary>
+      <value>A ViewEditMode enumeration value that represents the current Property Editor&#39;s widget display mode.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.Editors.StaticImageViewItem">
+      <summary>
+        <para>The Static Image View Item used in XAF Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.StaticImageViewItem.#ctor(DevExpress.ExpressApp.Model.IModelStaticImage,System.Type)">
+      <summary>
+        <para>Creates and initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.StaticImageViewItem"/> class.</para>
+      </summary>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelStaticImage"/> object that represents the Application Model&#39;s Views | &lt;DetailView&gt; | Items | DetailViewItem node that defines the current View Item. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.StaticImage.Model"/> property.</param>
+      <param name="objectType">A <see cref="T:System.Type"/> object that represents the type of the object for which the current View Item&#39;s View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.ViewItem.ObjectType"/> property.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.StaticImageViewItem.Control">
+      <summary>
+        <para>Provides access to settings of the current View Item&#39;s widget that displays an image in a UI.</para>
+      </summary>
+      <value>A Dictionary&lt;<see cref="T:System.String"/>,<see cref="T:System.Object"/>&gt; object that contains settings of the current View Item&#39;s widget that displays an image in a UI.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.Editors.StaticTextViewItem">
+      <summary>
+        <para>The Static Text View Item used in XAF Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Editors.StaticTextViewItem.#ctor(DevExpress.ExpressApp.Model.IModelStaticText,System.Type)">
+      <summary>
+        <para>Creates and initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.Editors.StaticTextViewItem"/> class.</para>
+      </summary>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelStaticText"/> object that is the Application Model&#39;s Views | &lt;DetailView&gt; | Items | DetailViewItem node that defines the current View Item. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.StaticText.Model"/> property.</param>
+      <param name="objectType">A <see cref="T:System.Type"/> object that is the type of the object for which the current View Item&#39;s View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.ViewItem.ObjectType"/> property.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Editors.StaticTextViewItem.Control">
+      <summary>
+        <para>Provides access to settings of the current View Item&#39;s widget that displays text in a UI.</para>
+      </summary>
+      <value>A Dictionary&lt;<see cref="T:System.String"/>,<see cref="T:System.Object"/>&gt; object that contains settings of the current View Item&#39;s widget that displays text in a UI.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.GlobalModelManager">
+      <summary>
+        <para>Manages client-side application-wide properties and functions.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.GlobalModelManager.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Mobile.GlobalModelManager"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.IViewModelAware">
+      <summary>
+        <para>Declares methods to supply the <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object used to bind data to a control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.IViewModelAware.Setup(DevExpress.ExpressApp.Mobile.ViewModelManager)">
+      <summary>
+        <para>Supplies the information on the <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object used to bind data to a control.</para>
+      </summary>
+      <param name="viewModelManager"></param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.MobileApplication">
+      <summary>
+        <para>Manages a hybrid client-side Mobile XAF application.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.MobileApplication"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.AdditionalDevExtremeModules">
+      <summary>
+        <para>Specifies a list of DevExtreme modules used in an XAF Mobile application.</para>
+      </summary>
+      <value>A HashSet&lt;DevExtremeModule&gt; object that is a list of DevExtreme modules used in XAF Mobile applications.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.AdditionalPhoneGapPlugins">
+      <summary>
+        <para>Allows to register additional PhoneGap Plugins in your Mobile application.</para>
+      </summary>
+      <value>A List&lt;String&gt; object with additional registered PhoneGap plugins.</value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileApplication.ApplicationConfigCustomized">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.ClientApplicationCreating">
+      <summary>
+        <para>Indicates whether or not a client-side Mobile application is currently building.</para>
+      </summary>
+      <value>true, if a client-side Mobile application is currently building, otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.ConfigureForAspNetCore">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.CreateDetailView(DevExpress.ExpressApp.IObjectSpace,System.String,System.Boolean,System.Object,System.Boolean,System.Collections.IEnumerable)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <param name="detailViewID"></param>
+      <param name="isRoot"></param>
+      <param name="obj"></param>
+      <param name="isDelayedObjectLoading"></param>
+      <param name="objectsToPrefetch"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.CreateMainWindow">
+      <summary>
+        <para>Creates a new Window.</para>
+      </summary>
+      <returns>The created <see cref="T:DevExpress.ExpressApp.Window"/>.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.CurrentActiveWindow">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileApplication.CustomizeApplicationConfig">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileApplication.CustomizeMobileResourcesReadersList">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileApplication.CustomizePhoneGapConfig">
+      <summary>
+        <para>Occurs before the PhoneGap configuration file is processed.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileApplication.CustomizeResourcesHandlerFileDownloaderMappings">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.DataStoreManager">
+      <summary>
+        <para>Returns an object that is a list of DevExtreme Stores used by a client-side mobile application.</para>
+      </summary>
+      <value>The DataStoreManager object that is a list of DevExtreme Stores used by a client-side mobile application.</value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Mobile.MobileApplication.EnableExtendedDetailViewLayout">
+      <summary>
+        <para>Specifies if the Extended Detail View Layout is enabled for a Mobile application.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.EnsurePhoneGapPlugin(System.String)">
+      <summary>
+        <para>Checks whether the <see cref="P:DevExpress.ExpressApp.Mobile.MobileApplication.AdditionalPhoneGapPlugins"/> list contains the specified PhoneGap plugin, and adds this plugin if not.</para>
+      </summary>
+      <param name="plugin">A string with the &lt;plugin&gt; tag containing the plugin details (e.g., name, version, etc.).</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.FindAction(System.Collections.Generic.IEnumerable{DevExpress.ExpressApp.Controller},System.String)">
+      <summary>
+        <para>Returns an <see cref="T:DevExpress.ExpressApp.Actions.ActionBase"/> object having the specified <see cref="P:DevExpress.ExpressApp.Actions.ActionBase.Id"/> identifier.</para>
+      </summary>
+      <param name="controllers">An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Controller"/>&gt; collection containing Controllers that can contain an Action with specified actionId identifier.</param>
+      <param name="actionId">A string representing the Action identifier.</param>
+      <returns>An <see cref="T:DevExpress.ExpressApp.Actions.ActionBase"/> object having the specified <see cref="P:DevExpress.ExpressApp.Actions.ActionBase.Id"/> identifier.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.FunctionsManager">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.GetClientApplicationModel(System.String,DevExpress.ExpressApp.DeviceTypes)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="serviceUrl"></param>
+      <param name="targetDevices"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.GetLogonAction">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.GlobalModelManager">
+      <summary>
+        <para>Returns an object that manages client-side application-wide properties and functions.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.ExpressApp.Mobile.GlobalModelManager"/> object that manages client-side application-wide properties and functions.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.HandleException(System.Exception)">
+      <summary>
+        <para>Shows the details on the specified exception.</para>
+      </summary>
+      <param name="exception">A <see cref="T:System.Exception"/> object representing an exception that occurred.</param>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileApplication.InternalCustomizeLanguage">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.LogOff">
+      <summary>
+        <para>Closes a window and displays the logon dialog.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.MainWindow">
+      <summary>
+        <para>Gets the application&#39;s main Window.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Window"/> object which is the application&#39;s main Window.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.MaxLogonAttemptCount">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileApplication.ModifyMobileResource">
+      <summary>
+        <para>Occurs when the Mobile application is setup.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.ProcessRequest(System.Collections.Generic.IDictionary{System.String,System.Object})">
+      <summary>
+        <para>Processes client requests.</para>
+      </summary>
+      <param name="windowState">An IDictionary&lt;string, Object&gt; list, representing View Models of the a client View.</param>
+      <returns>An IDictionary&lt;string, Object&gt; list, representing an updated View Model of the client view.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.RegisterClientScriptBeforeSendRequest(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed before a request is sent to the DataService.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed before a request is sent to the DataService.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileApplication.RegisterClientScriptOnApplicationStart(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on application startup.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A script to be executed on application startup.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.ShowAllNavigationGroupsAsFlatList">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.ShowViewStrategy">
+      <summary>
+        <para>Specifies the Show View Strategy used in a Mobile application.</para>
+      </summary>
+      <value>A DevExpress.ExpressApp.Mobile.ShowViewStrategy object, specifying the Show View Strategy used in a Mobile application.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.TabletLayoutType">
+      <summary>
+        <para>Specifies the Navigation control&#39;s display type for tablet devices.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Mobile.TabletLayoutType"/> object specifying the Navigation control&#39;s display type for tablet devices.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileApplication.WindowManager">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Mobile.MobileModel">
+      <summary>
+        <para>Contains classes that provide functionality of Mobile UI elements.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.MobileModel.CalculatedField">
+      <summary>
+        <para>Provides the functionality for calculated fields.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileModel.CalculatedField.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.MobileModel.CalculatedField"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileModel.CalculatedField.Getter">
+      <summary>
+        <para>Specifies a function that returns a property value.</para>
+      </summary>
+      <value>A calculated property value.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileModel.CalculatedField.Name">
+      <summary>
+        <para>Specifies a property name.</para>
+      </summary>
+      <value>A string that is a property name.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileModel.CalculatedField.Setter">
+      <summary>
+        <para>Specifies a function that set a property value.</para>
+      </summary>
+      <value>A calculated property value.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.MobileModel.LinkComponent">
+      <summary>
+        <para>A text editor with hyperlink functionality.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileModel.LinkComponent.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.MobileModel.LinkComponent"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileModel.LinkComponent.Link">
+      <summary>
+        <para>Specifies a URL that provides the destination of the link.</para>
+      </summary>
+      <value>A string that is a URL that provides the destination of the link.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileModel.LinkComponent.Text">
+      <summary>
+        <para>Specifies a custom text displayed instead of the URL.</para>
+      </summary>
+      <value>A string that is a custom text displayed instead of the URL.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1">
+      <summary>
+        <para>Performs a Mobile resources search and allows adding custom resources.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1.IsReusable">
+      <summary>
+        <para>Gets a value indicating whether or not another request can use the <see cref="T:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1"/> instance.</para>
+      </summary>
+      <value>true, if another request can use the <see cref="T:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1"/> instance; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1.MobileApplication">
+      <summary>
+        <para>Provides access to an <see cref="T:DevExpress.ExpressApp.Mobile.MobileApplication"/> object that can be used to manage the current application.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.ExpressApp.Mobile.MobileApplication"/> object that provides methods and properties to manage an application.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1.NeedRedirect(System.String,System.String@)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="path"></param>
+      <param name="redirectPath"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileResourcesHttpHandler`1.ProcessRequest(System.Web.HttpContext)">
+      <summary>
+        <para>Enables request processing.</para>
+      </summary>
+      <param name="context">An HttpContext object that provides references to the intrinsic server objects used to service requests.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.MobileWindow">
+      <summary>
+        <para>A Window used in Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.#ctor(DevExpress.ExpressApp.XafApplication,DevExpress.ExpressApp.TemplateContext,System.Collections.Generic.ICollection{DevExpress.ExpressApp.Controller},System.Boolean,System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.MobileWindow"/> class.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Frame.Application"/> property.</param>
+      <param name="context">A <see cref="T:DevExpress.ExpressApp.TemplateContext"/> object representing the created Window&#39;s context. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Frame.Context"/> property.</param>
+      <param name="controllers">A ICollection&lt;<see cref="T:DevExpress.ExpressApp.Controller"/>&gt; Controllers collection.</param>
+      <param name="isMain">true, if the created Window is main; otherwise, false. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Window.IsMain"/> property.</param>
+      <param name="activateControllersImmediately">true if Controllers are created immediately after the Window has been created and before the Window&#39;s <see cref="P:DevExpress.ExpressApp.Window.Template"/> is created; false if Controllers are created after the Window&#39;s <see cref="P:DevExpress.ExpressApp.Window.Template"/> has been created.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileWindow.ClientSideIsRoot">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileWindow.ClientSideTarget">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.Close(System.Boolean)">
+      <summary>
+        <para>Closes the <see cref="T:DevExpress.ExpressApp.Mobile.MobileWindow"/>.</para>
+      </summary>
+      <param name="isForceRefresh">true if the parent Window must be refreshed; otherwise, false.</param>
+      <returns>true, if the Window has been successfully closed; otherwise, false.</returns>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Mobile.MobileWindow.Closed">
+      <summary>
+        <para>Occurs when the <see cref="T:DevExpress.ExpressApp.Mobile.MobileWindow"/> is closed.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.CreateControls">
+      <summary>
+        <para>Creates a new ViewConfig object that represents the MobileWindowTemplate&#39;s parameters.</para>
+      </summary>
+      <returns>The object that is a new ViewConfig object represented the MobileWindowTemplate&#39;s parameters.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileWindow.Id">
+      <summary>
+        <para>Returns the current MobileWindow&#39;s MobileWindowTemplate identifier.</para>
+      </summary>
+      <value>A string value that is the MobileWindowTemplate&#39;s ID.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileWindow.IsClosed">
+      <summary>
+        <para>Indicates whether the <see cref="T:DevExpress.ExpressApp.Mobile.MobileWindow"/> is successfully closed.</para>
+      </summary>
+      <value>true, if a MobileWindow is successfully closed, otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.RegisterClientScriptOnDispose(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View dispose.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View dispose.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.RegisterClientScriptOnHide(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View hide.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View hide.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.RegisterClientScriptOnLoad(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View load.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View load.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.RegisterClientScriptOnShow(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View show.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View show.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.MobileWindow.RestoreState(System.Collections.Generic.IDictionary{System.String,System.Object})">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="windowState"></param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.MobileWindow.ViewModelManager">
+      <summary>
+        <para>Returns an <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object for the current MobileWindow.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object for the current MobileWindow.</value>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Mobile.SystemModule">
+      <summary>
+        <para>Contains classes and interfaces used by default in eXpressApp Framework Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelActionMobile">
+      <summary>
+        <para>Used to extend the Application Model&#39;s <see cref="T:DevExpress.ExpressApp.Model.IModelAction"/> node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelActionMobile.Kind">
+      <summary>
+        <para>Specifies a kind of an Action.</para>
+      </summary>
+      <value>An ActionKind enumeration value that specifies a kind of an Action.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutCollapsibleGroupMobile">
+      <summary>
+        <para>Used to extend the Application Model&#39;s layout item node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutCollapsibleGroupMobile.IsCollapsed">
+      <summary>
+        <para>Specifies whether or not the layout group is collapsed in the Mobile Detail View layout by default.</para>
+      </summary>
+      <value>true if the layout group is collapsed by default; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutCollapsibleGroupMobile.IsCollapsible">
+      <summary>
+        <para>Specifies whether or not the layout group can be collapsed in the Mobile Detail View layout.</para>
+      </summary>
+      <value>true if the layout group can be collapsed; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutElementStyle">
+      <summary>
+        <para>Used to extend the Application Model&#39;s <see cref="T:DevExpress.ExpressApp.Model.IModelViewLayoutElement"/> node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutElementStyle.FontColor">
+      <summary>
+        <para>Specifies a font color for a UI element.</para>
+      </summary>
+      <value>A System.Drawing.Color object that specifies a font color.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutElementStyle.FontSize">
+      <summary>
+        <para>Specifies a font size for a UI element in pixels.</para>
+      </summary>
+      <value>A string that specifies a font size in pixels.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutElementStyle.FontWeight">
+      <summary>
+        <para>Specifies the weight of the text font of a layout element.</para>
+      </summary>
+      <value>A string that specifies the weight of the text font of a layout element.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelListViewMobile">
+      <summary>
+        <para>Used to extend the Application Model&#39;s List Views node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelListViewMobile.RowLayout">
+      <summary>
+        <para>Returns a List View RowLayout node.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelListViewRowLayout"/> object that is a List View RowLayout node.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelListViewRowLayout">
+      <summary>
+        <para>The RowLayout node defines a row layout for a target List View.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelOptionsMobile">
+      <summary>
+        <para>Used to extend the Application Model&#39;s Options node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelOptionsMobile.DataAccessMode">
+      <summary>
+        <para>Specifies the default mode used to access the collection of business objects in List Views when the <see cref="P:DevExpress.ExpressApp.Model.IModelListView.DataAccessMode"/> property is not initialized.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.CollectionSourceDataAccessMode"/> enumeration value that specifies the mode used to access a collection of business objects in List Views.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelViewItemMobile">
+      <summary>
+        <para>Used to extend the <see cref="T:DevExpress.ExpressApp.Model.IModelMemberViewItem"/> node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelViewItemMobile.VariantShowItem">
+      <summary>
+        <para>Specifies a view item display style.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.ExpressApp.Templates.ActionItemPaintStyle"/> enumeration value that specifies a view item display style.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelViewMobile">
+      <summary>
+        <para>Used to extend the Application Model&#39;s <see cref="T:DevExpress.ExpressApp.Model.IModelView"/> node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.IModelViewMobile.MobileVisible">
+      <summary>
+        <para>Specifies whether the List View or Detail View is displayed in a Mobile application, or not.</para>
+      </summary>
+      <value>A Boolean value that specifies whether the List View or Detail View is displayed in a Mobile application, or not.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.MobileModificationsController">
+      <summary>
+        <para>Inherits from the <see cref="T:DevExpress.ExpressApp.SystemModule.ModificationsController"/> to implement Mobile specific behavior.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.SystemModule.MobileModificationsController.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.MobileModificationsController"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.SystemModule.MobileModificationsController.EditAction">
+      <summary>
+        <para>Provides access to the SwitchToEditMode Action.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object representing the SwitchToEditMode Action.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Mobile.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+      <summary>
+        <para>Registers the MobileModelListViewNodesGeneratorUpdater Generator Updater.</para>
+      </summary>
+      <param name="updaters">A ModelNodesGeneratorUpdaters object providing access to the list of Generator Updaters.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule.ConvertXml(DevExpress.ExpressApp.Updating.ConvertXmlParameters)">
+      <summary>
+        <para>Converts legacy Application Model differences containing SystemMobileModule related data.</para>
+      </summary>
+      <param name="parameters">A ConvertXmlParameters object, representing an Application Model node&#39;s differences.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+      <summary>
+        <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelViewMobile"/>, <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelListViewMobile"/>, <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutElementStyle"/>, <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelActionMobile"/>, <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelViewItemMobile"/>, <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelOptionsMobile"/> and <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.IModelLayoutCollapsibleGroupMobile"/> interfaces.</para>
+      </summary>
+      <param name="extenders">A ModelInterfaceExtenders object that is a collection of Application Model interface extenders.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.SystemModule.SystemMobileModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up a module after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.TabletLayoutType">
+      <summary>
+        <para>Contains values specifying the the Navigation control display type for tablet devices.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Mobile.TabletLayoutType.SlideOut">
+      <summary>
+        <para>Specifies that a Mobile application displays and hides the Navigation control on tapping the hamburger button.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Mobile.TabletLayoutType.Split">
+      <summary>
+        <para>Specifies that a Mobile application displays the Navigation control to the left of the current View.</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Mobile.Templates">
+      <summary>
+        <para>Contains base classes that are used for implementing the built-in Template and Action Containers in Mobile applications.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate">
+      <summary>
+        <para>The template used to display Mobile Windows and Frames in accordance with the SPA technology.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.CreateControls(DevExpress.ExpressApp.Mobile.GlobalModelManager)">
+      <summary>
+        <para>Creates controls for the current Template.</para>
+      </summary>
+      <param name="globalModel">A GlobalModelManager object that is the application&#39;s Global Model.</param>
+      <returns>An Object that is a Template with created controls.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.DefaultContainer">
+      <summary>
+        <para>Provides access to a Template toolbar&#39;s Action Container that contains the Actions with the <see cref="P:DevExpress.ExpressApp.Actions.ActionBase.Category"/> property set to Unspecified.</para>
+      </summary>
+      <value>An instance of the class that implements the <see cref="T:DevExpress.ExpressApp.Templates.IActionContainer"/> interface.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.FocusFindEditor">
+      <summary>
+        <para>Focuses an editor used for searching.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.GetContainers">
+      <summary>
+        <para>Provides access to a Template&#39;s Action Containers in an Mobile application.</para>
+      </summary>
+      <returns>An instance of the ICollection&lt;<see cref="T:DevExpress.ExpressApp.Templates.IActionContainer"/>&gt; collection that contains the current Template&#39;s Action Containers.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.GetViewModelState">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.IsSearchEnabled">
+      <summary>
+        <para>Specifies whether an editor used for searching is enabled.</para>
+      </summary>
+      <value>true if an editor used for searching is enabled; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.IsSizeable">
+      <summary>
+        <para>Indicates whether a Window Template represents a resizable control.</para>
+      </summary>
+      <value>true, if the Template is resizable; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.RegisterClientScriptOnDispose(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View dispose.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View dispose.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.RegisterClientScriptOnHide(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View hide.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View hide.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.RegisterClientScriptOnLoad(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View load.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View load.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.RegisterClientScriptOnShow(System.String,System.String)">
+      <summary>
+        <para>Registers a client script to be executed on a View show.</para>
+      </summary>
+      <param name="scriptName">A string that is a script name.</param>
+      <param name="script">A string that is a script to be executed on a View show.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.RestoreViewModelState(System.Collections.Generic.IDictionary{System.String,System.Object})">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="viewModel"></param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.SetCaption(System.String)">
+      <summary>
+        <para>Sets the specified caption to a Window Template.</para>
+      </summary>
+      <param name="caption">A string value that represents a caption to be set to the current Window Template.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.SetStartSearchString(System.String)">
+      <summary>
+        <para>Sets the text of an editor used for searching to the specified string.</para>
+      </summary>
+      <param name="searchString">A string that is the text of an editor used for searching.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.SetStatus(System.Collections.Generic.ICollection{System.String})">
+      <summary>
+        <para>Displays the specified status messages on a Template (e.g., in its status bar).</para>
+      </summary>
+      <param name="statusMessages">An object representing the ICollection&lt;string&gt; collection of status messages.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.SetView(DevExpress.ExpressApp.View)">
+      <summary>
+        <para>Assigns the specified View to the Template&#39;s View site.</para>
+      </summary>
+      <param name="view">A <see cref="T:DevExpress.ExpressApp.View"/> object to be assigned to the Template&#39;s View site.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.Templates.MobileWindowTemplate.ViewModelManager">
+      <summary>
+        <para>Returns an <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object for the current MobileWindowTemplate.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> object for the current MobileWindowTemplate.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Mobile.ViewModelManager">
+      <summary>
+        <para>Manages client-side View Model properties, functions, parameters and data sources.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ViewModelManager.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Mobile.ViewModelManager"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ViewModelManager.BindToDataSource(System.String)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="dataSourceId"></param>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Mobile.ViewModelManager.DataSources">
+      <summary>
+        <para>Provides access to the data sources available in a View Model.</para>
+      </summary>
+      <value>A Dictionary&lt;string, DataSource&gt; list that contains data sources available in a ViewModel.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ViewModelManager.RegisterDataSource(System.String,System.Object)">
+      <summary>
+        <para>Adds a DataSource object to a View Model.</para>
+      </summary>
+      <param name="id">A string that is a DataSource identifier.</param>
+      <param name="store">An object that is a DevExtreme Store used to access data.</param>
+      <returns>A DataSource object that provides access to a data web service or local data storage.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Mobile.ViewModelManager.RegisterParameter(System.String,DevExpress.ExpressApp.Mobile.MobileModel.DataStore)">
+      <summary>
+        <para>Adds a MobileModel.Parameter object to a View Model.</para>
+      </summary>
+      <param name="name">A string that is a name of a Parameter.</param>
+      <param name="dataStore">A DataStore object that is a DevExtreme Store.</param>
+      <returns>A Parameter object that is a property whose value is propagated from a previous View.</returns>
+    </member>
+  </members>
+</doc>

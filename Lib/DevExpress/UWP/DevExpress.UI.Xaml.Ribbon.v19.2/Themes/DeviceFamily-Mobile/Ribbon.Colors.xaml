@@ -1,0 +1,38 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="RibbonControlMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonControlMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonControlMobileForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlMobileColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonControlMobileShowBackstageButtonIconFillBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlMobileColors.ShowBackstageButtonIconFill.Light"/>
+            <SolidColorBrush x:Key="RibbonControlMobileHeaderContentBackgroundBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonControlMobileColors.HeaderContentBackground.Light"/>
+
+            <SolidColorBrush x:Key="RibbonContentHostMobileBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonControlMobileColors.TabsBorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonContentHostMobileBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlMobileColors.TabsBackground.Light"/>
+
+            <SolidColorBrush x:Key="RibbonGroupSeparatorMobileBackground" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonControlMobileColors.GroupSeparator.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RibbonControlMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonControlMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonControlMobileForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlMobileColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonControlMobileShowBackstageButtonIconFillBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonControlMobileColors.ShowBackstageButtonIconFill.Default" />
+            <SolidColorBrush x:Key="RibbonControlMobileHeaderContentBackgroundBrush" Color="#FF1A1A1A" Core:ColorKey.Id="RibbonControlMobileColors.HeaderContentBackground.Default" />
+
+            <SolidColorBrush x:Key="RibbonContentHostMobileBorderBrush" Color="#FF818181" Core:ColorKey.Id="RibbonControlMobileColors.TabsBorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonContentHostMobileBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonControlMobileColors.TabsBackground.Default" />
+
+            <SolidColorBrush x:Key="RibbonGroupSeparatorMobileBackground" Color="#FF818181" Core:ColorKey.Id="RibbonControlMobileColors.GroupSeparator.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+

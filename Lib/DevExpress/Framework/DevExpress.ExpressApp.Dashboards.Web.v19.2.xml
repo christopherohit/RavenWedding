@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Dashboards.Web.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Dashboards.Web">
+      <summary>
+        <para>Contains classes that are specific to the ASP.NET Dashboards Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Web.DashboardsAspNetModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Dashboards.Web.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Web.DashboardsAspNetModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Web.DashboardsAspNetModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.DashboardsAspNetModule.DataSourceStorage">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.DashboardsAspNetModule.DesignerDisplayMode">
+      <summary>
+        <para>Specifies if the dashboard designer is displayed in a popup window within the current browser tab, or in a separate tab.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Dashboards.Web.DesignerDisplayMode"/> value specifying if the dashboard designer is displayed in a popup window within the current browser tab, or in a separate tab.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Web.DashboardsAspNetModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.Dashboards.Web.DashboardsAspNetModule"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Web.DesignerDisplayMode">
+      <summary>
+        <para>Contains values specifying if the dashboard designer is displayed in a popup window within the current browser tab, or in a separate tab.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.Web.DesignerDisplayMode.NewTab">
+      <summary>
+        <para>The designer is displayed in a popup window within the current browser tab.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.Web.DesignerDisplayMode.Popup">
+      <summary>
+        <para>The designer is displayed in a popup window in a separate browser tab.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController">
+      <summary>
+        <para>A <see cref="T:DevExpress.ExpressApp.ViewController"/> that provides the ShowDashboardInSeparateTab, ExportDashboard and SetDashboardParameters Actions.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.DashboardParametersAction">
+      <summary>
+        <para>Gets the SetDashboardParameters Action which invokes the Dashboard Parameters dialog.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object which is the SetDashboardParameters Action.</value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.EnabledInDashboard">
+      <summary>
+        <para>Gets the name of the key which is used by the <see cref="M:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.UpdateActionState(DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem)"/> method to specify the enabled/disabled state for <see cref="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.ShowDashboardInSeparateTabAction"/> and <see cref="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.DashboardParametersAction"/> Actions.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.ExportDashboardAction">
+      <summary>
+        <para>Gets the ExportDashboard Action which exports the current dashboard to the image, PDF, XLSX or XML file.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SingleChoiceAction"/> object which is the ExportDashboard Action.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.ShowDashboardInSeparateTabAction">
+      <summary>
+        <para>Gets the ShowDashboardInSeparateTab Action which opens the current dashboard in a new browser tab.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.UpdateActionState(DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem)">
+      <summary>
+        <para>Updates the enabled/disabled state for <see cref="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.ExportDashboardAction"/> and <see cref="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardActionsController.DashboardParametersAction"/> Actions.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem"/> object.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardSeparateTabController">
+      <summary>
+        <para>The <see cref="T:DevExpress.ExpressApp.ViewController"/> that opens a dashboard in a separate browser tab when a user holds the CONTROL key and clicks a row in the Dashboards List View.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Web.WebDashboardSeparateTabController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardSeparateTabController"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem">
+      <summary>
+        <para>A View Item that displays the <see cref="T:DevExpress.DashboardWeb.ASPxDashboard"/> control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem.#ctor(System.String,System.Type)">
+      <summary>
+        <para>Creates a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem"/> class.</para>
+      </summary>
+      <param name="id">A <see cref="T:System.Type"/> object specifying the type of object for which the current View Item&#39;s View is created.</param>
+      <param name="objectType">A string specifying the identifier of the View Item.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem.DashboardControl">
+      <summary>
+        <para>Gets the <see cref="T:DevExpress.DashboardWeb.ASPxDashboard"/> control used by the Dashboards Module to display and modify dashboards in ASP.NET applications.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.DashboardWeb.ASPxDashboard"/> control.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem.DashboardDesigner">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem.HasDashboardParameters">
+      <summary>
+        <para>Gets a value indicating whether or not the currently displayed dashboard has parameters.</para>
+      </summary>
+      <value>true, if the dashboard has parameters; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem.IsDashboardExportAllowed">
+      <summary>
+        <para>Gets a value indicating whether or not the user is allowed to export the currently displayed dashboard.</para>
+      </summary>
+      <value>true, if the user is allowed to export the currently displayed dashboard; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem.Setup(DevExpress.ExpressApp.IObjectSpace,DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Passes the <see cref="T:DevExpress.ExpressApp.XafApplication"/> and <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> objects to the current <see cref="T:DevExpress.ExpressApp.Dashboards.Web.WebDashboardViewerViewItem"/>.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object that provides methods to access the application database.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the current application.</param>
+    </member>
+  </members>
+</doc>

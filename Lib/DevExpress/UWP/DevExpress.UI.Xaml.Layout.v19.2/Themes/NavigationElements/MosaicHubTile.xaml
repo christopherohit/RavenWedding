@@ -1,0 +1,148 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxcore="using:DevExpress.Core"
+    xmlns:local="using:DevExpress.UI.Xaml.Layout"
+    xmlns:ve="using:DevExpress.UI.Xaml.Layout.VisualElements">
+
+    <ve:TileSizeConverter x:Key="TileSizeConverter"/>
+    <Style TargetType="local:MosaicDecorator">
+        <Style.Setters>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="local:MosaicDecorator">
+                        <Grid x:Name="LayoutRoot">
+                            <Grid.Resources>
+                                <CubicEase EasingMode="EaseOut" x:Key="HubTileEaseOut"/>
+                            </Grid.Resources>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver"/>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="PointerOverPressed"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To="0.5" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="LayoutRoot"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid>
+                                <Grid Opacity="0">
+                                    <ContentPresenter Content="{x:Null}" ContentTemplate="{x:Null}" ContentTemplateSelector="{x:Null}" x:Name="PART_ControlHolder"/>
+                                </Grid>
+                                <StackPanel x:Name="Viewport"
+                                                    Width="{Binding ElementName=sizeManager, Path=ActualWidth}"
+                                                    Height="{Binding ElementName=sizeManager, Path=ActualHeight}">
+                                    <Grid x:Name="TitlePanel" Margin="{TemplateBinding Padding}"
+                                            RenderTransformOrigin="0.5,0.5"
+                                            Width="{Binding ElementName=sizeManager, Path=ActualWidth}"
+                                            Height="{Binding ElementName=sizeManager, Path=ActualHeight}">
+                                        <Grid.RenderTransform>
+                                            <CompositeTransform/>
+                                        </Grid.RenderTransform>
+
+                                        <Border x:Name="Image" Grid.Row="1" Background="{TemplateBinding Background}">
+                                            <Grid Margin="{TemplateBinding Padding}">
+                                                <Grid.Resources>
+                                                    <ve:TilePresenterSizeManager x:Key="SizeManager" x:Name="sizeManager" Element="{Binding ElementName=LayoutRoot}"/>
+                                                </Grid.Resources>
+                                                <ItemsControl ItemsSource="{Binding ActualItems, RelativeSource={RelativeSource TemplatedParent}}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <ve:MosaicPanel/>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <ve:FlippingSubTile Front="{Binding Front}" Back="{Binding Back}"/>
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
+                                            </Grid>
+                                        </Border>
+
+                                    </Grid>
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <TransitionCollection>
+                        <EntranceThemeTransition/>
+                    </TransitionCollection>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+    <Style TargetType="ve:FlippingSubTile">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ve:FlippingSubTile">
+                        <Grid>
+                            <Border>
+                                <Border.RenderTransform>
+                                    <CompositeTransform/>
+                                </Border.RenderTransform>
+                                <Border.Projection>
+                                    <PlaneProjection CenterOfRotationY="0.5" x:Name="ViewportProjectionFront"/>
+                                </Border.Projection>
+                                <ContentPresenter Content="{TemplateBinding Front}" ContentTemplate="{TemplateBinding FrontItemTemplate}" x:Name="FrontPresenter"/>
+                            </Border>
+                            <Border>
+                                <Border.RenderTransform>
+                                    <CompositeTransform/>
+                                </Border.RenderTransform>
+                                <Border.Projection>
+                                    <PlaneProjection CenterOfRotationY="0.5" x:Name="ViewportProjectionBack" RotationX="90"/>
+                                </Border.Projection>
+                                <ContentPresenter Content="{TemplateBinding Back}" ContentTemplate="{TemplateBinding BackItemTemplate}" x:Name="BackPresenter"/>
+                            </Border>
+
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="FlipStates">
+                                    <VisualState x:Name="FrontFlip">
+                                        <Storyboard x:Name="FrontStoryboard">
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="RotationX"
+                                                                           Storyboard.TargetName="ViewportProjectionFront" BeginTime="0:0:0.5">
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.0" Value="90.0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="RotationX"
+                                                                           Storyboard.TargetName="ViewportProjectionBack">
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.0" Value="0.0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="90.0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="BackFlip">
+                                        <Storyboard x:Name="BackStoryboard">
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="RotationX"
+                                                                           Storyboard.TargetName="ViewportProjectionFront">
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.0" Value="0.0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="90.0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="RotationX"
+                                                                           Storyboard.TargetName="ViewportProjectionBack" BeginTime="0:0:0.5">
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.0" Value="90.0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>
+

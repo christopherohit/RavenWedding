@@ -1,0 +1,56 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="GridControlHeaderBorderThemeBrush" Color="#1A000000" Core:ColorKey.Id="GridColors.HeaderBorderBrush.Light"/>
+            <SolidColorBrush x:Key="GridControlHeaderBackgroundThemeBrush" Color="Transparent" Core:ColorKey.Id="GridColors.HeaderBackground.Light"/>
+            <SolidColorBrush x:Key="GridControlHeaderBackgroundHoverThemeBrush" Color="#0A000000" Core:ColorKey.Id="GridColors.ColumnHeaderBackgroundHover.Light"/>
+            <SolidColorBrush x:Key="GridControlHeaderBackgroundPressedThemeBrush" Color="#1A000000" Core:ColorKey.Id="GridColors.ColumnHeaderBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="GridPopupContentContainerBorderBrush" Color="#FFF2F2F2" Core:ColorKey.Id="GridColors.PopupContentContainerBorderBrush.Light"/>
+            <SolidColorBrush x:Key="GridPopupContentContainerBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="GridColors.PopupContentContainerBackground.Light"/>
+            <SolidColorBrush x:Key="GridControlSortIndicatorThemeBrush" Color="#FF969696" Core:ColorKey.Id="GridColors.SortIndicatorFill.Light"/>
+            <SolidColorBrush x:Key="GridControlSortIndicatorHoverThemeBrush" Color="#FF969696"  Core:ColorKey.Id="GridColors.SortIndicatorFillHover.Light" />
+            <SolidColorBrush x:Key="GridControlSortIndicatorPressedThemeBrush" Color="#FF969696"  Core:ColorKey.Id="GridColors.SortIndicatorFillPressed.Light" />
+            <SolidColorBrush x:Key="GridControlFilterThemeBrush" Color="#FF969696" Core:ColorKey.Id="GridColors.FilterForeground.Light"/>
+            <SolidColorBrush x:Key="GridControlFilterHeaderHoverThemeBrush" Color="#FF969696" Core:ColorKey.Id="GridColors.FilterForegroundHeaderHover.Light"/>
+            <SolidColorBrush x:Key="GridControlFilterHeaderPressedThemeBrush" Color="#FF969696" Core:ColorKey.Id="GridColors.FilterForegroundHeaderPressed.Light"/>
+            <SolidColorBrush x:Key="GridControlHeaderForegroundThemeBrush" Color="#FF969696" Core:ColorKey.Id="GridColors.HeaderForeground.Light"/>
+            <SolidColorBrush x:Key="GridControlHeaderForegroundHoverThemeBrush" Color="#FF969696" Core:ColorKey.Id="GridColors.HeaderForegroundHover.Light"/>
+            <SolidColorBrush x:Key="GridControlHeaderForegroundPressedThemeBrush" Color="#FF969696"  Core:ColorKey.Id="GridColors.HeaderForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="GridControlDragColumnHeaderRowBackgroundThemeBrush" Color="#FFF9F9F9" Core:ColorKey.Id="GridColors.DragHeaderBackground.Light"/>
+            <SolidColorBrush x:Key="GridControlDragColumnHeaderShadowBrush" Color="#1A000000" Core:ColorKey.Id="GridColors.DragHeaderShadow.Light"/>
+            <SolidColorBrush x:Key="GridControlHeaderResizerBackgroundThemeBrush" Color="Transparent" Core:ColorKey.Id="GridColors.HeaderResizerBackground.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="GridControlHeaderBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.HeaderBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridPopupContentContainerBorderBrush" Color="#FF5D5D5D" Core:ColorKey.Id="GridColors.PopupContentContainerBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridPopupContentContainerBackgroundBrush" Color="#FF505050" Core:ColorKey.Id="GridColors.PopupContentContainerBackground.Default" />
+            <SolidColorBrush x:Key="GridControlSortIndicatorThemeBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="GridColors.SortIndicatorFill.Default" />
+            <SolidColorBrush x:Key="GridControlSortIndicatorHoverThemeBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="GridColors.SortIndicatorFillHover.Default" />
+            <SolidColorBrush x:Key="GridControlSortIndicatorPressedThemeBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="GridColors.SortIndicatorFillPressed.Default" />
+            <SolidColorBrush x:Key="GridControlFilterThemeBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="GridColors.FilterForeground.Default" />
+            <SolidColorBrush x:Key="GridControlFilterHeaderHoverThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.FilterForegroundHeaderHover.Default"/>
+            <SolidColorBrush x:Key="GridControlFilterHeaderPressedThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.FilterForegroundHeaderPressed.Default"/>
+            <SolidColorBrush x:Key="GridControlHeaderBackgroundThemeBrush" Color="Transparent"  Core:ColorKey.Id="GridColors.HeaderBackground.Default" />
+            <SolidColorBrush x:Key="GridControlHeaderBackgroundHoverThemeBrush" Color="#0AFFFFFF" Core:ColorKey.Id="GridColors.ColumnHeaderBackgroundHover.Default"/>
+            <SolidColorBrush x:Key="GridControlHeaderBackgroundPressedThemeBrush" Color="#1AFFFFFF"  Core:ColorKey.Id="GridColors.ColumnHeaderBackgroundPressed.Default"/>
+            <SolidColorBrush x:Key="GridControlHeaderForegroundThemeBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="GridColors.HeaderForeground.Default" />
+            <SolidColorBrush x:Key="GridControlHeaderForegroundHoverThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.HeaderForegroundHover.Default"/>
+            <SolidColorBrush x:Key="GridControlHeaderForegroundPressedThemeBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="GridColors.HeaderForegroundPressed.Default"/>
+            <SolidColorBrush x:Key="GridControlDragColumnHeaderRowBackgroundThemeBrush" Color="#FFA2A2A2" Core:ColorKey.Id="GridColors.DragHeaderBackground.Default" />
+            <SolidColorBrush x:Key="GridControlDragColumnHeaderShadowBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.DragHeaderShadow.Default" />
+            <SolidColorBrush x:Key="GridControlHeaderResizerBackgroundThemeBrush" Color="Transparent" Core:ColorKey.Id="GridColors.HeaderResizerBackground.Default"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+

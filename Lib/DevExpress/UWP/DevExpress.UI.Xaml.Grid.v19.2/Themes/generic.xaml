@@ -1,0 +1,282 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxg="using:DevExpress.UI.Xaml.Grid"
+    xmlns:dx="using:DevExpress.Core"
+    xmlns:dxgn="using:DevExpress.UI.Xaml.Grid.Native" 
+    xmlns:mvvmui="using:DevExpress.Mvvm.UI"
+    xmlns:mvvmi="using:DevExpress.Mvvm.UI.Interactivity">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/Rows.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/GroupRow.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/Headers.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/DefaultGridViewStyles.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/StandardStyles.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/FilterPanel.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/SearchPanel.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/CalendarFilterControl.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/ColumnChooser.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/ConditionalFormatting.xaml"/>
+        <dxgn:ContextMenuTemplates/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <dx:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader"/>
+
+    <Thickness x:Key="TableViewThemeKey_HorizontalScrollbarMargin">0</Thickness>
+    <Thickness x:Key="TableViewThemeKey_IndicatorMargin">0</Thickness>
+    <Thickness x:Key="TableViewThemeKey_RowPresenterGridMargin">0</Thickness>
+
+    <dx:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    <dx:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverterInverted" Invert="True" />
+
+    <ControlTemplate x:Key="DropIndicatorControl_Template" TargetType="dxg:DropIndicatorControl">
+        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" />
+    </ControlTemplate>
+    <Style TargetType="dxg:DropIndicatorControl">
+        <Setter Property="Template" Value="{StaticResource DropIndicatorControl_Template}" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Background" Value="{ThemeResource GridControlDropIndicatorBackgroundThemeBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource GridControlDropIndicatorBorderThemeBrush}" />
+        <Setter Property="BorderThickness" Value="{ThemeResource DropIndicatorBorderThickness}" />
+        <Setter Property="Width" Value="5" />
+        <Setter Property="IsHitTestVisible" Value="False" />
+    </Style>
+    <ControlTemplate x:Name="GroupPanelSearchButtonTemplate">
+        <Border Background="Transparent" Padding="10,0">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="PointerOver">
+                        <VisualState.Setters>
+                            <Setter Target="PART_Icon.Fill" Value="{ThemeResource MagnifyingGlassButtonForegroundHoverBrush}"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Target="PART_Icon.Fill" Value="{ThemeResource MagnifyingGlassButtonForegroundHoverBrush}"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Disabled"/>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Path Opacity="0.5"
+                  x:Name="PART_Icon"
+                  Stretch="Fill" 
+                  Fill="{ThemeResource MagnifyingGlassButtonForegroundBrush}"
+                  Data="F1 M 9.4739e-015,29L 12.1426,16.8574C 10.7982,15.0928 10,12.8896 10,10.5C 10,4.70101 14.701,5.72205e-006 20.5,5.72205e-006C 26.299,5.72205e-006 31,4.70101 31,10.5C 31,16.299 26.299,21 20.5,21C 18.1104,21 15.9072,20.2018 14.1426,18.8574L 2,31L 9.4739e-015,29 Z M 20.5,3C 16.3579,3 13,6.35787 13,10.5C 13,14.6421 16.3579,18 20.5,18C 24.6421,18 28,14.6421 28,10.5C 28,6.35787 24.6421,3 20.5,3 Z" 
+                  Width="31" 
+                  Height="31">
+            </Path>
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="GridControl_Template" TargetType="dxg:GridControl">
+        <Grid Background="{Binding Path=Background, RelativeSource={RelativeSource Mode=TemplatedParent}}" Name="PART_MainGrid">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="GroupModeStates">
+                    <VisualState x:Name="GroupPanelShown">
+                        <VisualState.StateTriggers>
+                            <StateTrigger IsActive="{Binding IsGroupPanelVisible, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="PART_GroupRowPanel.Visibility" Value="Visible"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="GroupPanelHidden"/>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid Name="PART_GroupPanelBorder"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch"
+                    Background="Transparent"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{ThemeResource GroupPanelBorderThickness}"
+                    ManipulationMode="All"
+                    dxg:GridControl.CurrentGrid="{Binding RelativeSource={RelativeSource TemplatedParent}}">
+
+                <dxg:GroupPanelColumnItemsControl x:Name="PART_GroupRowPanel"
+                                                    Visibility="Collapsed"
+                                                    x:Load="False"
+                                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                                    Grid="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}">
+                    <dx:DragManager.DropTargetFactory>
+                        <dxg:GroupPanelDropTargetFactory />
+                    </dx:DragManager.DropTargetFactory>
+                </dxg:GroupPanelColumnItemsControl>
+
+                <dxg:SearchPanel x:Name="PART_SearchPanel"
+                                    x:Load="False"
+                                    Visibility="Collapsed"
+                                    Grid="{Binding RelativeSource={RelativeSource TemplatedParent}}"
+                                    BorderBrush="{Binding BorderBrush, RelativeSource={RelativeSource TemplatedParent}}"
+                                    BorderThickness="{Binding BorderThickness, RelativeSource={RelativeSource TemplatedParent}}"
+                                    HorizontalAlignment="Right"/>
+                <ToggleButton x:Name="PART_MagnifyingGlassButton"
+                                x:Load="False"
+                                Template="{StaticResource GroupPanelSearchButtonTemplate}"
+                                Command="{Binding Commands.ShowSearchPanel, RelativeSource={RelativeSource TemplatedParent}}"
+                                Visibility="Collapsed"
+                                HorizontalAlignment="Right"/>
+            </Grid>
+
+            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Grid.Row="1" x:Name="RootBorder">
+                <dxg:GridControlMeasurePanel dxg:GridControl.CurrentGrid="{Binding RelativeSource={RelativeSource TemplatedParent}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <ScrollViewer x:Name="PART_ScrollViewer" 
+                                  ZoomMode="Disabled"
+                                  VerticalScrollBarVisibility="{Binding Path=(ScrollViewer.VerticalScrollBarVisibility), RelativeSource={RelativeSource TemplatedParent}}" 
+                                  HorizontalScrollBarVisibility="{Binding Path=(ScrollViewer.HorizontalScrollBarVisibility), RelativeSource={RelativeSource TemplatedParent}}">
+                        <mvvmi:Interaction.BehaviorsTemplate>
+                            <DataTemplate>
+                                <ContentControl>
+                                    <dxg:VerticalScrollBarBehavior AdditionalRowsHeight="{Binding AdditionalRowsHeight, RelativeSource={RelativeSource TemplatedParent}}"
+                                                                   HeaderRowHeight="{Binding HeadersData.WholeRowElement.ActualRowHeight, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                </ContentControl>
+                            </DataTemplate>
+                        </mvvmi:Interaction.BehaviorsTemplate>
+                        <ScrollViewer.TopHeader>
+                            <StackPanel HorizontalAlignment="Stretch" 
+                                        VerticalAlignment="Stretch">
+                                <mvvmi:Interaction.BehaviorsTemplate>
+                                    <DataTemplate>
+                                        <ContentControl>
+                                            <dxg:InterceptKeyDownBehavior DataControl="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                                        </ContentControl>
+                                    </DataTemplate>
+                                </mvvmi:Interaction.BehaviorsTemplate>
+                                <ContentPresenter Name="PART_HeadersPanel" Margin="{StaticResource HeaderPanelMargin}" 
+                                                      Content="{Binding Path=HeadersData.WholeRowElement, RelativeSource={RelativeSource TemplatedParent}}" 
+                                                      MinHeight="{Binding Path=HeaderPanelMinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+                                                      Visibility="{Binding Path=ShowColumnHeaders, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}" 
+                                                      dxg:GridControl.CurrentGrid="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                                <dxgn:AdditionalRowItemsControl Name="PART_AdditionalRows" 
+                                                                Background="{TemplateBinding Background}"
+                                                                Grid.Row="1"
+                                                                dxg:GridControl.CurrentGrid="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </StackPanel>
+                        </ScrollViewer.TopHeader>
+                        <Grid HorizontalAlignment="Left" 
+                                x:Name="DXVirtualizingPanelContainer" 
+                                VerticalAlignment="Top">
+                            <mvvmi:Interaction.BehaviorsTemplate>
+                                <DataTemplate>
+                                    <ContentControl>
+                                        <dxg:InterceptKeyDownBehavior DataControl="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                                    </ContentControl>
+                                </DataTemplate>
+                            </mvvmi:Interaction.BehaviorsTemplate>
+                            <dxgn:DXVirtualizingPanel Owner="{Binding RelativeSource={RelativeSource TemplatedParent}}" 
+                                                      Container="{Binding ElementName=DXVirtualizingPanelContainer}"
+                                                      dx:FrameworkElementHelper.IsClipped="True"/>
+                            <dxg:FocusRectPresenter DataControl="{Binding RelativeSource={RelativeSource TemplatedParent}}"/>
+                        </Grid>
+                    </ScrollViewer>
+                    <dxg:DropIndicatorControl x:Name="PART_DropIndicator" Grid.RowSpan="4" Visibility="Collapsed" Grid="{Binding RelativeSource={RelativeSource TemplatedParent}}" />
+                    <Border Background="Transparent" 
+                            BorderBrush="{ThemeResource TotalSummaryRowSeparatorBrush}" 
+                            BorderThickness="0,1,0,0" 
+                            Grid.Row="1"
+                            x:Name="PART_TotalSummaryPanelContainer" 
+                            Visibility="{Binding Path=ShowTotalSummary, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <Border Margin="{StaticResource TotalSummaryPanelMargin}"
+                                Child="{Binding Path=TotalSummaryData.WholeRowElement, RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </Border>
+                    <dxg:FixedTotalSummaryControl Grid.Row="2" 
+                                                  x:Name="PART_FixedTotalSummary"
+                                                  Visibility="{Binding Path=ShowFixedTotalSummary, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                                  FixedSummariesLeft="{Binding Path=FixedSummariesLeft, RelativeSource={RelativeSource TemplatedParent}}"
+                                                  FixedSummariesRight="{Binding Path=FixedSummariesRight, RelativeSource={RelativeSource TemplatedParent}}"/>
+                    <dxg:FilterPanelControl x:Name="PART_FilterPanel" 
+                                            Grid.Row="3"
+                                            DataContext="{Binding RelativeSource={RelativeSource TemplatedParent}}"
+                                            Visibility="{Binding Path=ActualShowFilterPanel, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                </dxg:GridControlMeasurePanel>
+            </Border>
+            <dxg:PopupContainer x:Name="PART_PopupContainer" />
+            <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  Grid.RowSpan="2"
+                  Visibility="{Binding ShowLoadingPanel, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}">
+                <ProgressRing Width="50"
+                              Height="50"
+                              VerticalAlignment="Center"
+                              HorizontalAlignment="Center"
+                              IsActive="True"/>
+            </Grid>
+            <dxg:CellErrorFlyout x:Name="PART_ValidationErrorFlyout" x:Load="False" />
+        </Grid>
+    </ControlTemplate>
+    <DataTemplate x:Key="ColumnHeaderTemplate">
+        <TextBlock Text="{Binding}" TextTrimming="CharacterEllipsis" />
+    </DataTemplate>
+    <Style TargetType="dxg:GridControl">
+        <Setter Property="AlternationCount" Value="0"/>
+        <Setter Property="AlternateRowBackground" Value="{ThemeResource GridAlternateBackgroundBrush}"/>
+        <Setter Property="Template" Value="{StaticResource GridControl_Template}" />
+        <Setter Property="ItemTemplate" Value="{StaticResource RowControl_ItemTemplate}"/>
+        <Setter Property="Background" Value="{ThemeResource GridControlBackgroundThemeBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource GridControlBorderThemeBrush}"/>
+        <Setter Property="FixedTotalSummaryItemTemplate" Value="{StaticResource FixedTotalSummaryItemTemplate}"/>
+        <Setter Property="Foreground" Value="{ThemeResource GridControlForegroundBrush}" />
+        <Setter Property="BorderThickness" Value="{ThemeResource GridControlBorderThickness}"/>
+        <Setter Property="RightDataAreaIndent" Value="1"/>
+        <Setter Property="LeftGroupAreaIndent" Value="{StaticResource LeftGroupAreaIndent}"/>
+        <Setter Property="GroupValueTemplate" Value="{StaticResource GroupValue_Template}"/>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="TotalSummaryItemTemplate" Value="{StaticResource TotalSummary_ItemTemplate}"/>
+        <Setter Property="GroupSummaryItemTemplate" Value="{StaticResource GroupSummary_ItemTemplate}"/>
+        <Setter Property="ColumnMenu" Value="{StaticResource GridColumnContextMenuTemplate}"/>
+        <Setter Property="GroupPanelMenu" Value="{StaticResource GridGroupPanelContextMenuTemplate}"/>
+        <Setter Property="ColumnHeaderTemplate" Value="{StaticResource ColumnHeaderTemplate}" />
+        <Setter Property="FocusedBorderTemplate">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Grid>
+                        <Rectangle StrokeDashOffset=".5" StrokeEndLineCap="Square" Stroke="{ThemeResource GridControlFocusVisualWhiteThemeBrush}" StrokeDashArray="1,1"/>
+                        <Rectangle StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource GridControlFocusVisualBlackThemeBrush}" StrokeDashArray="1,1"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="mvvmi:Interaction.BehaviorsTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <ItemsControl>
+                        <mvvmui:MessageBoxService />
+                        <!--<dxg:InterceptKeyDownBehavior/>-->
+                    </ItemsControl>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="dx:StyleHelper.BindableSetters">
+            <Setter.Value>
+                <dx:BindableSetterCollection>
+                    <dx:BindableSetter Property="PredefinedFormats" Binding="{Binding Source={StaticResource ConditionalFormatting_PredefinedFormatsTemplate}, Converter={dx:TemplateInstanceConverter}, Mode=OneTime}"/>
+                </dx:BindableSetterCollection>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="dxg:GridTextColumn"/>
+    <Style TargetType="dxg:GridCheckBoxColumn"/>
+    <Style TargetType="dxg:GridTemplateColumn"/>
+    <Style TargetType="dxg:GridMaskColumn"/>
+    <Style TargetType="dxg:GridDateColumn"/>
+    <Style TargetType="dxg:GridComboBoxColumn"/>
+    <Style TargetType="dxg:GridSpinEditColumn"/>
+
+    <!--<dxg:CalendarFilterControl x:Key="ThisIsADummyNeededToBeAbleToCreateCalendarFilterControlInCode"/>-->
+</ResourceDictionary>

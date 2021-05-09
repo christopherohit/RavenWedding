@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Office.Win.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Office.Win">
+      <summary>
+        <para>Contains types and interfaces providing the WinForms Rich Text Editor and Spreadsheet support in the Office Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType">
+      <summary>
+        <para>Contains values specifying the menu type used by the Rich Text Property Editor.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType.Bars">
+      <summary>
+        <para>The editor uses the bars menu.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType.Default">
+      <summary>
+        <para>The menu type is selected based on the <see cref="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.FormStyle"/> value.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Win.DefaultMenuManagerType.None">
+      <summary>
+        <para>The editor does not use a menu.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.IModelRichTextColumn">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelColumn"/> node with properties specifying the RichEdit editor behavior in List Views.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.IModelRichTextColumn.CustomHeight">
+      <summary>
+        <para>Specifies the Rich Text Editor cell height in pixels. When set to -1, the editor&#39;s height is calculated automatically based on the editor&#39;s contents.</para>
+      </summary>
+      <value>An integer value that specifies the editor height in pixels.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.IModelWinOfficeMenuManagerSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelPropertyEditor"/> node with properties specifying the Rich Text and Spreadsheet Property Editors menu behavior.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.IModelWinOfficeMenuManagerSettings.MenuManagerType">
+      <summary>
+        <para>Specifies the menu type used by the Rich Text and Spreadsheet Property Editors.</para>
+      </summary>
+      <value>An enumeration value specifying the menu type used by the Rich Text and Spreadsheet Property Editors.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.InplaceDocumentCacheStorage">
+      <summary>
+        <para>Provides methods used to manage the in-place mail merge documents cache.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.InplaceDocumentCacheStorage.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Office.Win.InplaceDocumentCacheStorage"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.IRichTextValueStorage">
+      <summary>
+        <para>Declares members of the Rich Text editor&#39;s value storage.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.IRichTextValueStorage.GetValue(DevExpress.XtraRichEdit.RichEditControl)">
+      <summary>
+        <para>Returns a document the Rich Text editor displays.</para>
+      </summary>
+      <param name="control">A <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/> that displays the returned document.</param>
+      <returns>A document the Rich Text editor displays.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.IRichTextValueStorage.SetValue(DevExpress.XtraRichEdit.RichEditControl,System.Object)">
+      <summary>
+        <para>Specifies a document to be displayed in the Rich Text editor.</para>
+      </summary>
+      <param name="control">A <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/> to display the specified document.</param>
+      <param name="propertyValue">A document to be displayed in the Rich Text editor.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.ISpreadsheetValueStorage">
+      <summary>
+        <para>Declares members of the Spreadsheet editor&#39;s value storage.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.ISpreadsheetValueStorage.GetValue(DevExpress.XtraSpreadsheet.SpreadsheetControl)">
+      <summary>
+        <para>Returns a document the Spreadsheet editor displays.</para>
+      </summary>
+      <param name="control">A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetControl"/> that displays the returned document.</param>
+      <returns>A document the Spreadsheet editor displays.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.ISpreadsheetValueStorage.SetValue(DevExpress.XtraSpreadsheet.SpreadsheetControl,System.Object)">
+      <summary>
+        <para>Specifies a document to be displayed in the Spreadsheet editor.</para>
+      </summary>
+      <param name="control">A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetControl"/> to display the specified document.</param>
+      <param name="propertyValue">A document to be displayed in the Spreadsheet editor.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Office.Win.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.AddModelNodeUpdaters(DevExpress.ExpressApp.Model.Core.IModelNodeUpdaterRegistrator)">
+      <summary>
+        <para>Registers node updaters in the application.</para>
+      </summary>
+      <param name="updaterRegistrator">An <see cref="T:DevExpress.ExpressApp.Model.Core.IModelNodeUpdaterRegistrator"/> object exposing the AddUpdater method used to register node updaters in the application.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+      <summary>
+        <para>Customizes metadata of <see cref="T:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule"/>-specific business classes before the metadata is loaded to the Application Model&#39;s BOModel node.</para>
+      </summary>
+      <param name="typesInfo">An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object that holds metadata information on business classes to be loaded to the Application Model.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+      <summary>
+        <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Office.Win.IModelRichTextColumn"/>, IModelBarManagerLayout, <see cref="T:DevExpress.ExpressApp.Office.Win.IModelWinOfficeMenuManagerSettings"/>, ISpreadsheetModelBarManagerLayout, and IModelWinSpreadsheetPropertyEditorSettings interfaces.</para>
+      </summary>
+      <param name="extenders">A ModelInterfaceExtenders object that is a collection of Application Model interface extenders.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.FindOfficeModule(DevExpress.ExpressApp.ModuleList)">
+      <summary>
+        <para>Checks whether the specified module list contains the <see cref="T:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule"/>, and returns the module if so.</para>
+      </summary>
+      <param name="modules">A ModuleList object that is a collection of modules.</param>
+      <returns>An OfficeWindowsFormsModule object that is the Office Module.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.ForcePngIcons">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object that represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule"/> module.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.OfficeModule">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.RichTextMailMergeDataType">
+      <summary>
+        <para>Specifies the mail merge template type.</para>
+      </summary>
+      <value>A <see cref="T:System.Type"/> object that is the mail merge template type.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.UpdateNode(DevExpress.ExpressApp.Model.IModelAction,DevExpress.ExpressApp.Model.IModelApplication)">
+      <summary>
+        <para>Updates the Application Model&#39;s node.</para>
+      </summary>
+      <param name="node">An <see cref="T:DevExpress.ExpressApp.Model.IModelAction"/> object, representing the Application Model&#39;s node updated by the UpdateNode method.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.Model.IModelApplication"/> providing access to the Application Model.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.UpdateNode(DevExpress.ExpressApp.SystemModule.IModelActionLink,DevExpress.ExpressApp.Model.IModelApplication)">
+      <summary>
+        <para>Updates the Application Model&#39;s node.</para>
+      </summary>
+      <param name="node">An <see cref="T:DevExpress.ExpressApp.SystemModule.IModelActionLink"/> providing access to the ActionLink node.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.Model.IModelApplication"/> providing access to the Application Model.</param>
+    </member>
+  </members>
+</doc>

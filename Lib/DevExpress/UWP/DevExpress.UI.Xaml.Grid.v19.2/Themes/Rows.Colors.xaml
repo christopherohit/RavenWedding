@@ -1,0 +1,110 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="GridCellDefaultBackground" Color="Transparent" Core:ColorKey.Id="GridColors.CellBackground.Light"/>
+
+            <SolidColorBrush x:Key="CellForegroundFocusedBrush" Color="#99000000" Core:ColorKey.Id="GridColors.CellForegroundFocused.Light"/>
+            <SolidColorBrush x:Key="CellForegroundSelectedBrush" Color="#99000000" Core:ColorKey.Id="GridColors.CellForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="CellForegroundFocusedRowBrush" Color="#99000000" Core:ColorKey.Id="GridColors.CellForegroundFocusedRow.Light"/>
+            <SolidColorBrush x:Key="CellForegroundSelectedRowBrush" Color="#99000000" Core:ColorKey.Id="GridColors.CellForegroundSelectedRow.Light"/>
+            <SolidColorBrush x:Key="CellForegroundFocusedSelectedBrush" Color="#99000000" Core:ColorKey.Id="GridColors.CellForegroundSelectedFocused.Light"/>
+
+            <SolidColorBrush x:Key="CellBackgroundFocusedBrush" Color="Transparent" Core:ColorKey.Id="GridColors.CellBackgroundFocused.Light"/>
+            <SolidColorBrush x:Key="CellBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.CellBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="CellBackgroundFocusedRowBrush" Color="#FFD2D2D2" Core:ColorKey.Id="GridColors.CellBackgroundFocusedRow.Light"/>
+            <SolidColorBrush x:Key="CellBackgroundSelectedRowBrush" Color="#FFF0F0F0" Core:ColorKey.Id="GridColors.CellBackgroundSelectedRow.Light"/>
+            <SolidColorBrush x:Key="CellBackgroundFocusedSelectedBrush" Color="#FFD2D2D2" Core:ColorKey.Id="GridColors.CellBackgroundSelectedFocused.Light"/>
+            <SolidColorBrush x:Key="GridControlCellBorderThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.CellBorderBrush.Light"/>
+            
+            <SolidColorBrush x:Key="GridControlTotalSummaryForegroundThemeBrush" Color="#FF636363" Core:ColorKey.Id="GridColors.TotalSummaryForeground.Light"/>
+            
+            <SolidColorBrush x:Key="RowControlBackgroundBrush" Color="Transparent" Core:ColorKey.Id="GridColors.RowBackground.Light"/>
+            <SolidColorBrush x:Key="RowControlBackgroundFocusedBrush" Color="Transparent" Core:ColorKey.Id="GridColors.RowBackgroundFocused.Light"/>
+            <SolidColorBrush x:Key="RowControlBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.RowBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RowControlBackgroundFocusedAndSelectedBrush" Color="#FFD2D2D2" Core:ColorKey.Id="GridColors.RowBackgroundSelectedFocused.Light"/>
+            <SolidColorBrush x:Key="RowControlForegroundFocusedBrush" Color="#99000000" Core:ColorKey.Id="GridColors.RowForegroundFocused.Light"/>
+            <SolidColorBrush x:Key="RowControlForegroundSelectedBrush" Color="#99000000" Core:ColorKey.Id="GridColors.RowForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="RowControlForegroundFocusedAndSelectedBrush" Color="#99000000" Core:ColorKey.Id="GridColors.RowForegroundSelectedFocused.Light"/>
+            <SolidColorBrush x:Key="GridControlRowBorderThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.RowBorderBrush.Light"/>
+            
+            <SolidColorBrush x:Key="InvalidCellIndicatorWarningBackground" Color="#FFFFB115" Core:ColorKey.Id="GridColors.InvalidCellIndicatorWarningBackground.Light"/>
+            <SolidColorBrush x:Key="InvalidCellIndicatorInformationBackground" Color="#FF1177D7" Core:ColorKey.Id="GridColors.InvalidCellIndicatorInfoBackground.Light"/>
+            <SolidColorBrush x:Key="InvalidCellIndicatorForeground" Color="#FFD11C1C" Core:ColorKey.Id="GridColors.InvalidCellIndicatorForeground.Light"/>
+            
+            <SolidColorBrush x:Key="GridControlColumnHeaderRowBackgroundThemeBrush" Color="#FFF9F9F9" Core:ColorKey.Id="GridColors.ColumnHeaderRowBackground.Light"/>
+            <SolidColorBrush x:Key="GridControlColumnHeaderRowBorderThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.ColumnHeaderRowBorderBrush.Light"/>
+
+            <SolidColorBrush x:Key="GridControlRowIndicatorBackgroundThemeBrush" Color="#FFF9F9F9" Core:ColorKey.Id="GridColors.RowIndicatorBackground.Light"/>
+            <SolidColorBrush x:Key="GridControlRowIndicatorBorderThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.RowIndicatorBorderBrush.Light"/>
+            <SolidColorBrush x:Key="GridControlRowIndicatorForegroundBrush" Color="#FF727272" Core:ColorKey.Id="GridColors.RowIndicatorForeground.Light"/>
+            <SolidColorBrush x:Key="GridControlAdditionalRowBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.AdditionalRowBorderBrush.Light"/>
+            <SolidColorBrush x:Key="FilterCriteriaGlyphForegroundBrush" Color="#FF727272" Core:ColorKey.Id="GridColors.FilterCriteriaGlyphForeground.Light"/>
+            
+            <SolidColorBrush x:Key="GridControlTotalSummaryBackgroundThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.TotalSummaryBorderBrush.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="GridCellDefaultBackground" Color="Transparent" Core:ColorKey.Id="GridColors.CellBackground.Default" />
+
+            <SolidColorBrush x:Key="CellForegroundFocusedBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.CellForegroundFocused.Default"/>
+            <SolidColorBrush x:Key="CellForegroundSelectedBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.CellForegroundSelected.Default"/>
+            <SolidColorBrush x:Key="CellForegroundFocusedRowBrush" Color="#FFFFFFFF" Core:ColorKey.Id="GridColors.CellForegroundFocusedRow.Default"/>
+            <SolidColorBrush x:Key="CellForegroundSelectedRowBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.CellForegroundSelectedRow.Default"/>
+            <SolidColorBrush x:Key="CellForegroundFocusedSelectedBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.CellForegroundSelectedFocused.Default"/>
+
+            <SolidColorBrush x:Key="CellBackgroundFocusedBrush" Color="Transparent" Core:ColorKey.Id="GridColors.CellBackgroundFocused.Default" />
+            <SolidColorBrush x:Key="CellBackgroundSelectedBrush" Color="#FFA2A2A2" Core:ColorKey.Id="GridColors.CellBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="CellBackgroundFocusedRowBrush" Color="#FF888888" Core:ColorKey.Id="GridColors.CellBackgroundFocusedRow.Default"/>
+            <SolidColorBrush x:Key="CellBackgroundSelectedRowBrush" Color="#FFF0F0F0" Core:ColorKey.Id="GridColors.CellBackgroundSelectedRow.Default"/>
+            <SolidColorBrush x:Key="CellBackgroundFocusedSelectedBrush" Color="#FF888888" Core:ColorKey.Id="GridColors.CellBackgroundSelectedFocused.Default"/>
+            <SolidColorBrush x:Key="GridControlTotalSummaryForegroundThemeBrush" Color="#FF636363"  Core:ColorKey.Id="GridColors.TotalSummaryForeground.Default" />
+            
+            <SolidColorBrush x:Key="RowControlBackgroundBrush" Color="Transparent"  Core:ColorKey.Id="GridColors.RowBackground.Default" />
+            <SolidColorBrush x:Key="RowControlBackgroundFocusedBrush" Color="Transparent" Core:ColorKey.Id="GridColors.RowBackgroundFocused.Default" />
+            <SolidColorBrush x:Key="RowControlBackgroundSelectedBrush" Color="#FFA2A2A2" Core:ColorKey.Id="GridColors.RowBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RowControlBackgroundFocusedAndSelectedBrush" Color="#FF888888" Core:ColorKey.Id="GridColors.RowBackgroundSelectedFocused.Default"/>
+            <SolidColorBrush x:Key="RowControlForegroundFocusedBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.RowForegroundFocused.Default" />
+            <SolidColorBrush x:Key="RowControlForegroundSelectedBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.RowForegroundSelected.Default" />
+            <SolidColorBrush x:Key="RowControlForegroundFocusedAndSelectedBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.RowForegroundSelectedFocused.Default"/>
+            
+            <SolidColorBrush x:Key="InvalidCellIndicatorWarningBackground" Color="#FFFFB115" Core:ColorKey.Id="GridColors.InvalidCellIndicatorWarningBackground.Default" />
+            <SolidColorBrush x:Key="InvalidCellIndicatorInformationBackground" Color="#FF1177D7" Core:ColorKey.Id="GridColors.InvalidCellIndicatorInfoBackground.Default" />
+            <SolidColorBrush x:Key="InvalidCellIndicatorForeground" Color="#FFD11C1C" Core:ColorKey.Id="GridColors.InvalidCellIndicatorForeground.Default" />
+            <SolidColorBrush x:Key="GridControlColumnHeaderRowBackgroundThemeBrush" Color="#FFA2A2A2" Core:ColorKey.Id="GridColors.ColumnHeaderRowBackground.Default" />
+            <SolidColorBrush x:Key="GridControlRowIndicatorBackgroundThemeBrush" Color="#FFA2A2A2" Core:ColorKey.Id="GridColors.RowIndicatorBackground.Default" />
+            <SolidColorBrush x:Key="GridControlColumnHeaderRowBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.ColumnHeaderRowBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlRowIndicatorBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.RowIndicatorBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlAdditionalRowBorderBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.AdditionalRowBorderBrush.Default"/>
+            <SolidColorBrush x:Key="FilterCriteriaGlyphForegroundBrush" Color="#FF333333" Core:ColorKey.Id="GridColors.FilterCriteriaGlyphForeground.Default"/>
+
+            <SolidColorBrush x:Key="GridControlRowBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.RowBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlTotalSummaryBackgroundThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.TotalSummaryBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlCellBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.CellBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlRowIndicatorForegroundBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.RowIndicatorForeground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

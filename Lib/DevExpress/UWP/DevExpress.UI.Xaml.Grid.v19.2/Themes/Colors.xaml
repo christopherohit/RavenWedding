@@ -1,0 +1,57 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+
+            <SolidColorBrush x:Key="GridAlternateBackgroundBrush" Color="#20000000" Core:ColorKey.Id="GridColors.AlternateBackground.Default"/>
+
+            <SolidColorBrush x:Key="GridControlBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlBackgroundThemeBrush" Color="#FFDCDCDC"  Core:ColorKey.Id="GridColors.Background.Default" />
+            <SolidColorBrush x:Key="GridControlFocusVisualWhiteThemeBrush" Color="White"  Core:ColorKey.Id="GridColors.FocusVisualWhiteStroke.Default" />
+            <SolidColorBrush x:Key="GridControlFocusVisualBlackThemeBrush" Color="Black"  Core:ColorKey.Id="GridColors.FocusVisualBlackStroke.Default" />
+            
+            <SolidColorBrush x:Key="MagnifyingGlassButtonForegroundBrush" Color="#DE505050"  Core:ColorKey.Id="GridColors.MagnifyingGlassButtonForeground.Default" />
+            <SolidColorBrush x:Key="MagnifyingGlassButtonForegroundHoverBrush" Color="#FF202020"  Core:ColorKey.Id="GridColors.MagnifyingGlassButtonForegroundHover.Default" />
+            
+            <!--<SolidColorBrush x:Key="ScrollViewerContentDecoratorTrackBorderBrush" Color="#59D5D5D5" Core:ColorKey.Id="GridColors.ScrollViewerContentDecoratorTrackBorderBrush.Default" />-->
+            <!--<SolidColorBrush x:Key="ScrollViewerContentDecoratorTrackBackgroundBrush" Color="#FF5d5d5d" Core:ColorKey.Id="GridColors.ScrollViewerContentDecoratorTrackBackground.Default" />-->
+            <SolidColorBrush x:Key="GridControlDropIndicatorBackgroundThemeBrush" Color="#FFA2A2A2" Core:ColorKey.Id="GridColors.DropIndicatorBackground.Default" />
+            <SolidColorBrush x:Key="TotalSummaryRowSeparatorBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.TotalSummaryRowSeparatorBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlDropIndicatorBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.DropIndicatorBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlForegroundBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.Foreground.Default" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="GridAlternateBackgroundBrush" Color="#20000000" Core:ColorKey.Id="GridColors.AlternateBackground.Light"/>
+            
+            <SolidColorBrush x:Key="GridControlBorderThemeBrush" Color="#1A000000" Core:ColorKey.Id="GridColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="GridControlBackgroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="GridColors.Background.Light"/>
+            <SolidColorBrush x:Key="GridControlForegroundBrush" Color="#99000000" Core:ColorKey.Id="GridColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="GridControlFocusVisualWhiteThemeBrush" Color="White" Core:ColorKey.Id="GridColors.FocusVisualWhiteStroke.Light"/>
+            <SolidColorBrush x:Key="GridControlFocusVisualBlackThemeBrush" Color="Black" Core:ColorKey.Id="GridColors.FocusVisualBlackStroke.Light"/>
+            
+            <SolidColorBrush x:Key="MagnifyingGlassButtonForegroundBrush" Color="#DE505050" Core:ColorKey.Id="GridColors.MagnifyingGlassButtonForeground.Light"/>
+            <SolidColorBrush x:Key="MagnifyingGlassButtonForegroundHoverBrush" Color="#FF202020"  Core:ColorKey.Id="GridColors.MagnifyingGlassButtonForegroundHover.Light" />
+            
+            <!--<SolidColorBrush x:Key="ScrollViewerContentDecoratorTrackBorderBrush" Color="#59D5D5D5" Core:ColorKey.Id="GridColors.ScrollViewerContentDecoratorTrackBorderBrush.Light"/>-->
+            <!--<SolidColorBrush x:Key="ScrollViewerContentDecoratorTrackBackgroundBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.ScrollViewerContentDecoratorTrackBackground.Light"/>-->
+            <SolidColorBrush x:Key="GridControlDropIndicatorBackgroundThemeBrush" Color="#FFF9F9F9" Core:ColorKey.Id="GridColors.DropIndicatorBackground.Light"/>
+            <SolidColorBrush x:Key="TotalSummaryRowSeparatorBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.TotalSummaryRowSeparatorBorderBrush.Light"/>
+            <SolidColorBrush x:Key="GridControlDropIndicatorBorderThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.DropIndicatorBorderBrush.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+

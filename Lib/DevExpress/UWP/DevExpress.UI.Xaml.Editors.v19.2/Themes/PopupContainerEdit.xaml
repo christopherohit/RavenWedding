@@ -1,0 +1,61 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxe="using:DevExpress.UI.Xaml.Editors"
+    xmlns:dx="using:DevExpress.Core">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/PopupContainerEdit.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <dx:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+
+    <ControlTemplate TargetType="ContentControl" x:Key="PopupSettingsThemeKey_PopupContentContainerTemplate">
+        <Border x:Name="PopupBorder" 
+                BorderBrush="{ThemeResource PopupContentContainerBorderBrush}" 
+                BorderThickness="{ThemeResource ComboBoxPopupBorderThemeThickness}" 
+                Background="{ThemeResource PopupContentContainerBackgroundBrush}" 
+                HorizontalAlignment="Stretch">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid
+                    x:Name="TopButtonsContainer"
+                    HorizontalAlignment="Center"
+                    MinWidth="200"
+                    Visibility="{Binding Path=IsTopButtonsVisible, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button HorizontalAlignment="Stretch" Content="OK" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Normal"/>
+                    <Button HorizontalAlignment="Stretch" Grid.Column="1" Content="Cancel" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Cancel"/>
+                </Grid>
+                <ContentPresenter Grid.Row="1"/>
+                <Grid
+                    x:Name="BottomButtonsContainer"
+                    Grid.Row="2"
+                    HorizontalAlignment="Center"
+                    MinWidth="200"
+                    Visibility="{Binding Path=IsBottomButtonsVisible, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button HorizontalAlignment="Stretch" Content="OK" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Normal"/>
+                    <Button HorizontalAlignment="Stretch" Grid.Column="1" Content="Cancel" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Cancel"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+    <Style TargetType="dxe:PopupContentContainer">
+        <Setter Property="Template" Value="{StaticResource PopupSettingsThemeKey_PopupContentContainerTemplate}" />
+    </Style>
+    <Style TargetType="dxe:PopupSettings">
+        <Setter Property="PopupContentContainerTemplate" Value="{StaticResource PopupSettingsThemeKey_PopupContentContainerTemplate}"/>
+    </Style>
+</ResourceDictionary>
+

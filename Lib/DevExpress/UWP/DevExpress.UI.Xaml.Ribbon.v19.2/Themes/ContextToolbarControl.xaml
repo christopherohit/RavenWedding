@@ -1,0 +1,25 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:XamlInternal="using:DevExpress.UI.Xaml.Internal"
+    xmlns:Ribbon="using:DevExpress.UI.Xaml.Ribbon"
+    xmlns:Internal="using:DevExpress.UI.Xaml.Ribbon.Internal">
+
+    <Style TargetType="Ribbon:ContextToolbarControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:ContextToolbarControl">
+                    <Border x:Name="PART_Background">
+                        <XamlInternal:NestedMenuFlyoutControl x:Name="PART_Flyout" 
+                                                              IsLightDismissEnabled="True"
+                                                              AnimationDuration="0:0:0.2"
+                                                              Content="{TemplateBinding Group}" 
+                                                              CloseOnTargetClick="True"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>
+

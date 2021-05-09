@@ -1,0 +1,85 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:xamlInternal="using:DevExpress.UI.Xaml.Internal"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="SchedulerControlBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="SchedulerControlColors.Background.Light"/>
+            <SolidColorBrush x:Key="SchedulerControlForegroundBrush" Color="#99000000" Core:ColorKey.Id="SchedulerControlColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="SchedulerControlBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerControlColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="TimeIndicatorFillBrush" Color="#FF0078D7" Core:ColorKey.Id="SchedulerControlColors.TimeIndicatorFill.Light"/>
+            
+            <!--#region Labels/Statuses-->
+            <SolidColorBrush x:Key="LabelItemFallbackBrush" Color="#FFBCBCBC" Core:ColorKey.Id="SchedulerControlColors.LabelItemFallback.Light"/>
+            <SolidColorBrush x:Key="LabelItemNoneBrush" Color="#FFBCBCBC" Core:ColorKey.Id="SchedulerControlColors.LabelItemNone.Light"/>
+            <SolidColorBrush x:Key="LabelItemImportantBrush" Color="#FFFFDFDD" Core:ColorKey.Id="SchedulerControlColors.LabelItemImportant.Light"/>
+            <SolidColorBrush x:Key="LabelItemBusinessBrush" Color="#FFA8D5FF" Core:ColorKey.Id="SchedulerControlColors.LabelItemBusiness.Light"/>
+            <SolidColorBrush x:Key="LabelItemPersonalBrush" Color="#FFC1F49C" Core:ColorKey.Id="SchedulerControlColors.LabelItemPersonal.Light"/>
+            <SolidColorBrush x:Key="LabelItemVacationBrush" Color="#FFF3E4C7" Core:ColorKey.Id="SchedulerControlColors.LabelItemVacation.Light"/>
+            <SolidColorBrush x:Key="LabelItemMustAttendBrush" Color="#FFF4CE93" Core:ColorKey.Id="SchedulerControlColors.LabelItemMustAttend.Light"/>
+            <SolidColorBrush x:Key="LabelItemTravelRequiredBrush" Color="#FFC7F4FF" Core:ColorKey.Id="SchedulerControlColors.LabelItemTravelRequired.Light"/>
+            <SolidColorBrush x:Key="LabelItemNeedsPreparationBrush" Color="#FFCFDB98" Core:ColorKey.Id="SchedulerControlColors.LabelItemNeedsPreparation.Light"/>
+            <SolidColorBrush x:Key="LabelItemBirthdayBrush" Color="#FFE0CFE9" Core:ColorKey.Id="SchedulerControlColors.LabelItemBirthday.Light"/>
+            <SolidColorBrush x:Key="LabelItemAnniversaryBrush" Color="#FF8DE9DF" Core:ColorKey.Id="SchedulerControlColors.LabelItemAnniversary.Light"/>
+            <SolidColorBrush x:Key="LabelItemPhoneCallBrush" Color="#FFFFF7A5" Core:ColorKey.Id="SchedulerControlColors.LabelItemPhoneCall.Light"/>
+            
+            <SolidColorBrush x:Key="StatusItemFallbackBrush" Color="#FFFFFFFF" Core:ColorKey.Id="SchedulerControlColors.StatusItemFallback.Light"/>
+            <SolidColorBrush x:Key="StatusItemFreeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="SchedulerControlColors.StatusItemFree.Light"/>
+            <SolidColorBrush x:Key="StatusItemBusyBrush" Color="#FF4A87E2" Core:ColorKey.Id="SchedulerControlColors.StatusItemBusy.Light"/>
+            <SolidColorBrush x:Key="StatusItemOutOfOfficeBrush" Color="#FFD95353" Core:ColorKey.Id="SchedulerControlColors.StatusItemOutOfOffice.Light"/>
+            <xamlInternal:TileCompositionBrush x:Key="StatusItemTentativeBrush" BackgroundColor="White" ViewPort="4,4">
+                <xamlInternal:CompositionRectanglePattern Rect="0,0,1,1" Fill="#ff937bd1"/>
+                <xamlInternal:CompositionRectanglePattern Rect="2,2,1,1" Fill="#ff937bd1"/>
+            </xamlInternal:TileCompositionBrush>
+            <xamlInternal:TileCompositionBrush x:Key="StatusItemWorkingElsewhereBrush" BackgroundColor="White" ViewPort="8,8">
+                <xamlInternal:CompositionLinePattern Start="8,0" End="0,8" Stroke="#4A87E2" StrokeWidth="3"/>
+                <xamlInternal:CompositionLinePattern Start="12,4" End="4,12" Stroke="#4A87E2" StrokeWidth="3"/>
+                <xamlInternal:CompositionLinePattern Start="4,-4" End="-4,4" Stroke="#4A87E2" StrokeWidth="3"/>
+            </xamlInternal:TileCompositionBrush>
+            <SolidColorBrush x:Key="ResourceItemFallbackBrush" Color="#FF0078D7" Core:ColorKey.Id="SchedulerControlColors.ResourceItemFallback.Light"/>
+            <!--#endregion-->
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="SchedulerControlBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="SchedulerControlColors.Background.Default" />
+            <SolidColorBrush x:Key="SchedulerControlForegroundBrush" Color="#99000000" Core:ColorKey.Id="SchedulerControlColors.Foreground.Default" />
+            <SolidColorBrush x:Key="SchedulerControlBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerControlColors.BorderBrush.Default"/>
+            <SolidColorBrush x:Key="TimeIndicatorFillBrush" Color="#FF0078D7" Core:ColorKey.Id="SchedulerControlColors.TimeIndicatorFill.Default"/>
+            
+            <!--#region Labels/Statuses-->
+            <SolidColorBrush x:Key="LabelItemFallbackBrush" Color="#FFBCBCBC" Core:ColorKey.Id="SchedulerControlColors.LabelItemFallback.Default"/>
+            <SolidColorBrush x:Key="LabelItemNoneBrush" Color="#FFBCBCBC" Core:ColorKey.Id="SchedulerControlColors.LabelItemNone.Default"/>
+            <SolidColorBrush x:Key="LabelItemImportantBrush" Color="#FFFFDFDD" Core:ColorKey.Id="SchedulerControlColors.LabelItemImportant.Default"/>
+            <SolidColorBrush x:Key="LabelItemBusinessBrush" Color="#FFA8D5FF" Core:ColorKey.Id="SchedulerControlColors.LabelItemBusiness.Default"/>
+            <SolidColorBrush x:Key="LabelItemPersonalBrush" Color="#FFC1F49C" Core:ColorKey.Id="SchedulerControlColors.LabelItemPersonal.Default"/>
+            <SolidColorBrush x:Key="LabelItemVacationBrush" Color="#FFF3E4C7" Core:ColorKey.Id="SchedulerControlColors.LabelItemVacation.Default"/>
+            <SolidColorBrush x:Key="LabelItemMustAttendBrush" Color="#FFF4CE93" Core:ColorKey.Id="SchedulerControlColors.LabelItemMustAttend.Default"/>
+            <SolidColorBrush x:Key="LabelItemTravelRequiredBrush" Color="#FFC7F4FF" Core:ColorKey.Id="SchedulerControlColors.LabelItemTravelRequired.Default"/>
+            <SolidColorBrush x:Key="LabelItemNeedsPreparationBrush" Color="#FFCFDB98" Core:ColorKey.Id="SchedulerControlColors.LabelItemNeedsPreparation.Default"/>
+            <SolidColorBrush x:Key="LabelItemBirthdayBrush" Color="#FFE0CFE9" Core:ColorKey.Id="SchedulerControlColors.LabelItemBirthday.Default"/>
+            <SolidColorBrush x:Key="LabelItemAnniversaryBrush" Color="#FF8DE9DF" Core:ColorKey.Id="SchedulerControlColors.LabelItemAnniversary.Default"/>
+            <SolidColorBrush x:Key="LabelItemPhoneCallBrush" Color="#FFFFF7A5" Core:ColorKey.Id="SchedulerControlColors.LabelItemPhoneCall.Default"/>
+
+            <SolidColorBrush x:Key="StatusItemFallbackBrush" Color="#FFFFFFFF" Core:ColorKey.Id="SchedulerControlColors.StatusItemFallback.Default"/>
+            <SolidColorBrush x:Key="StatusItemFreeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="SchedulerControlColors.StatusItemFree.Default"/>
+            <!--<SolidColorBrush x:Key="StatusItemTentativeBrush" Color="#FFFFD800" Core:ColorKey.Id="SchedulerControlColors.StatusItemTentative.Default"/>-->
+            <SolidColorBrush x:Key="StatusItemBusyBrush" Color="#FF4A87E2" Core:ColorKey.Id="SchedulerControlColors.StatusItemBusy.Default"/>
+            <SolidColorBrush x:Key="StatusItemOutOfOfficeBrush" Color="#FFD95353" Core:ColorKey.Id="SchedulerControlColors.StatusItemOutOfOffice.Default"/>
+            <!--<SolidColorBrush x:Key="StatusItemWorkingElsewhereBrush" Color="#FFA3EB0C" Core:ColorKey.Id="SchedulerControlColors.StatusItemWorkingElsewhere.Default"/>-->
+            <xamlInternal:TileCompositionBrush x:Key="StatusItemTentativeBrush" BackgroundColor="White" ViewPort="4,4">
+                <xamlInternal:CompositionRectanglePattern Rect="0,0,1,1" Fill="#ff937bd1"/>
+                <xamlInternal:CompositionRectanglePattern Rect="2,2,1,1" Fill="#ff937bd1"/>
+            </xamlInternal:TileCompositionBrush>
+            <xamlInternal:TileCompositionBrush x:Key="StatusItemWorkingElsewhereBrush" BackgroundColor="White" ViewPort="8,8">
+                <xamlInternal:CompositionLinePattern Start="8,0" End="0,8" Stroke="#4A87E2" StrokeWidth="3"/>
+                <xamlInternal:CompositionLinePattern Start="12,4" End="4,12" Stroke="#4A87E2" StrokeWidth="3"/>
+                <xamlInternal:CompositionLinePattern Start="4,-4" End="-4,4" Stroke="#4A87E2" StrokeWidth="3"/>
+            </xamlInternal:TileCompositionBrush>
+            <SolidColorBrush x:Key="ResourceItemFallbackBrush" Color="#FF0078D7" Core:ColorKey.Id="SchedulerControlColors.ResourceItemFallback.Default"/>
+            <!--#endregion-->
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+

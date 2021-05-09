@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.Dashboard.v19.2.Web</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.DashboardWeb">
+      <summary>
+        <para>Contains classes that implement the Web Dashboard.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs">
+      <summary>
+        <para>Provides data for the BeforeExportDocument events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the current dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies the current dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs.ExcelExportOptions">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs.ExportAction">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs.HideItem(System.Predicate{DevExpress.DashboardCommon.DashboardItem})">
+      <summary>
+        <para>Hides the dashboard item matching the specified predicate in the exported dashboard.</para>
+      </summary>
+      <param name="match">A System.Predicate that specifies the condition used to determine whether to hide the dashboard item.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs.HideItem(System.String)">
+      <summary>
+        <para>Hides the dashboard item with the specified name in the exported dashboard.</para>
+      </summary>
+      <param name="itemComponentName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item to hide.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs.ImageExportOptions">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs.PdfExportOptions">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.BeforeExportDocumentWebEventHandler">
+      <summary>
+        <para>References a method that handles the BeforeExportDocument events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The <see cref="T:DevExpress.DashboardWeb.BeforeExportDocumentWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ClientTrustLevel">
+      <summary>
+        <para>Lists trust levels that specify which actions a client can initiate to execute them on a server side.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.ClientTrustLevel.Full">
+      <summary>
+        <para>A client can initiate any action to execute them on a server side.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.ClientTrustLevel.Restricted">
+      <summary>
+        <para>A client cannot initiate actions that can lead to changing a dashboard stored on a server. This trust level can be used to prevent inadvertent or unauthorized modifications to dashboards.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventArgs">
+      <summary>
+        <para>Provides data for the ConfigureDataConnection events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the current dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies the current dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventHandler">
+      <summary>
+        <para>References a method that handles the ConfigureDataConnection events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.ConfigureDataReloadingTimeout"/> and <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.ConfigureDataReloadingTimeout"/> events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs.#ctor(System.String,System.String,System.String,System.TimeSpan)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">The System.String value that is a dashboard unique identifier.</param>
+      <param name="dataSourceName">A System.String value that is the data source name.</param>
+      <param name="dataMember">A System.String value, specifying the data member.</param>
+      <param name="dataReloadingTimeout">A System.TimeSpan object specifying the data reloading timeout.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the current dashboard.</para>
+      </summary>
+      <value>The System.String value that is a dashboard unique identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs.DataMember">
+      <summary>
+        <para>Gets the identifier of a corresponding data member in the data source.</para>
+      </summary>
+      <value>A System.String value, specifying the data member.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs.DataReloadingTimeout">
+      <summary>
+        <para>Gets or sets a time interval that is the data reloading timeout.</para>
+      </summary>
+      <value>A <see cref="T:System.TimeSpan"/> object specifying the data reloading timeout.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs.DataSourceName">
+      <summary>
+        <para>Gets the data source name for which the event was raised.</para>
+      </summary>
+      <value>A System.String value that is the data source name.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventHandler">
+      <summary>
+        <para>References a method that handles the ConfigureDataReloadingTimeout events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The <see cref="T:DevExpress.DashboardWeb.ConfigureDataReloadingTimeoutWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.ConfigureItemDataCalculation"/> and <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.ConfigureItemDataCalculation"/> events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventArgs.#ctor(System.String,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A System.String value that specifies a dashboard identifier.</param>
+      <param name="ItemComponentName">A System.String value that specifies a component name of the dashboard item.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventArgs.CalculateAllTotals">
+      <summary>
+        <para>Gets or sets whether to calculate totals that are not displayed in the dashboard item.</para>
+      </summary>
+      <value>true, to calculate hidden totals; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets a dashboard identifier.</para>
+      </summary>
+      <value>A System.String that specifies the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventArgs.ItemComponentName">
+      <summary>
+        <para>Gets the component name of the dashboard item.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.ConfigureItemDataCalculation"/> and <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.ConfigureItemDataCalculation"/> events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.ConfigureItemDataCalculationWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConnectionErrorWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.ConnectionError"/> and <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.ConnectionError"/> events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.ConnectionErrorWebEventArgs.#ctor(System.String,System.String,System.String,DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase,System.Exception)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.ConnectionErrorWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that is the dashboard identifier.</param>
+      <param name="dataSourceName">A <see cref="T:System.String"/> that is the data source name.</param>
+      <param name="connectionName">A <see cref="T:System.String"/> that is the connection name.</param>
+      <param name="connectionParameters">A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant containing connection parameters.</param>
+      <param name="exception">A <see cref="T:System.Exception"/> object that is the exception that caused the connection error.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConnectionErrorWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that is the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ConnectionErrorWebEventArgs.DataSourceName">
+      <summary>
+        <para>Gets the data source name.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that is the data source name.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ConnectionErrorWebEventHandler">
+      <summary>
+        <para>References a DevExpress.DashboardWpf.ConnectionErrorWpfEventArgs method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.ConnectionError"/> and <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.ConnectionError"/> events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.ConnectionErrorWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomAssemblyLoadingWebEventArgs">
+      <summary>
+        <para>Provides data for the CustomAssemblyLoading events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.CustomAssemblyLoadingWebEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.CustomAssemblyLoadingWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that is the dashboard identifier.</param>
+      <param name="dataSourceName">A <see cref="T:System.String"/> that is the name of the Entity Framework data source.</param>
+      <param name="dataSourceComponentName">A <see cref="T:System.String"/> that is the component name of the Entity Framework data source.</param>
+      <param name="contextName">A <see cref="T:System.String"/> that is the name of the Entity Framework context.</param>
+      <param name="assemblyPath">A <see cref="T:System.String"/> that is the path to the external assembly containing the Entity Framework model.</param>
+      <param name="allowLoading">A <see cref="T:System.Boolean"/> value that specifies whether to allow loading a custom assembly.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomAssemblyLoadingWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that is the dashboard identifier.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomAssemblyLoadingWebEventHandler">
+      <summary>
+        <para>References a method that handles the CustomAssemblyLoading events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="customAssemblyLoading">A <see cref="T:DevExpress.DashboardWeb.CustomAssemblyLoadingWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs">
+      <summary>
+        <para>Serves as the base for classes providing data for events used to customize exported documents.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the exported dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the identifier of the exported dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.ExportAction">
+      <summary>
+        <para>Gets the export action performed by an end-user.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardExportAction"/> object that is the export action performed by an end-user.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.ExportMode">
+      <summary>
+        <para>Gets the document export mode.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardExportMode"/> value that is the document export mode.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.ImageExportOptions">
+      <summary>
+        <para>Gets export options related to exporting a dashboard/dashboard item to an image.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object containing export options related to exporting a dashboard/dashboard item to an image.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.ImageOptions">
+      <summary>
+        <para>Gets export options related to exporting a dashboard/dashboard item to an image.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.XtraPrinting.ImageExportOptions"/> object containing export options related to exporting a dashboard/dashboard item to an image.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.ItemComponentName">
+      <summary>
+        <para>Gets the component name of the exported dashboard item.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the component name of the exported dashboard item.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.PdfExportOptions">
+      <summary>
+        <para>Gets export options related to exporting a dashboard/dashboard item to PDF format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object containing options related to exporting a dashboard/dashboard item to PDF format.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportBaseWebEventArgs.PdfOptions">
+      <summary>
+        <para>Gets export options related to exporting a dashboard/dashboard item to PDF format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object containing options related to exporting a dashboard/dashboard item to PDF format.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomExportWebEventArgs">
+      <summary>
+        <para>Provides data for the CustomExport events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportWebEventArgs.PrintableComponents">
+      <summary>
+        <para>Provides access to a dictionary containing dashboard item names and related PrintableComponents. For internal use.</para>
+      </summary>
+      <value>A dictionary containing dashboard item names and related PrintableComponents.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomExportWebEventArgs.Report">
+      <summary>
+        <para>Gets the underlying report of the exported document.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that is the underlying report of the exported document.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomExportWebEventHandler">
+      <summary>
+        <para>References a method that handles the CustomExport events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.CustomExportWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomFilterExpressionWebEventArgs">
+      <summary>
+        <para>Provides data for the CustomFilterExpression events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomFilterExpressionWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the current dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies the current dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomFilterExpressionWebEventHandler">
+      <summary>
+        <para>References a method that handles the CustomFilterExpression events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The <see cref="T:DevExpress.DashboardWeb.CustomFilterExpressionWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomizeExportDocumentWebEventArgs">
+      <summary>
+        <para>Provides data for the CustomizeExportDocument events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomizeExportDocumentWebEventArgs.ExcelExportOptions">
+      <summary>
+        <para>Gets options related to exporting a dashboard/dashboard item to the Excel format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing options related to exporting a dashboard/dashboard item to the Excel format.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomizeExportDocumentWebEventArgs.ExcelOptions">
+      <summary>
+        <para>Gets options related to exporting a dashboard item to the Excel format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.ExcelExportOptions"/> object containing options related to exporting a dashboard item to the Excel format.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomizeExportDocumentWebEventArgs.Stream">
+      <summary>
+        <para>Gets or sets a stream containing the exported document.</para>
+      </summary>
+      <value>A <see cref="T:System.IO.Stream"/> object that specifies a stream containing the exported document.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomizeExportDocumentWebEventHandler">
+      <summary>
+        <para>References a method that handles the CustomizeExportDocument events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.CustomizeExportDocumentWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomPaletteWebEventArgs">
+      <summary>
+        <para>Provides data for the CustomPalette events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.CustomPaletteWebEventArgs.#ctor(System.String,DevExpress.DashboardCommon.CustomPaletteEventArgs)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.CustomPaletteWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="innerArgs">A <see cref="T:DevExpress.DashboardCommon.CustomPaletteEventArgs"/> object.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomPaletteWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets a dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomPaletteWebEventArgs.Palette">
+      <summary>
+        <para>Gets or sets a palette used to color dashboard item elements.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardPalette"/> object that specifies a palette used to color dashboard item elements.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomPaletteWebEventHandler">
+      <summary>
+        <para>References a method that handles the CustomPalette events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.CustomPaletteWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomParametersWebEventArgs">
+      <summary>
+        <para>Provides data for the CustomParameters events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.CustomParametersWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the required dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies a dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.CustomParametersWebEventHandler">
+      <summary>
+        <para>References a method that handles the CustomParameters events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.CustomParametersWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardAddingWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.DashboardAdding"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardAddingWebEventArgs.#ctor(System.Xml.Linq.XDocument,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardAddingWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that is the dashboard XML definition.</param>
+      <param name="dashboardName">A <see cref="T:System.String"/> value that is the dashboard name.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardAddingWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets or sets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardAddingWebEventArgs.DashboardName">
+      <summary>
+        <para>Gets the name of the dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the name of the dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardAddingWebEventArgs.DashboardXml">
+      <summary>
+        <para>Gets the dashboard XML definition.</para>
+      </summary>
+      <value>A <see cref="T:System.Xml.Linq.XDocument"/> object that is the dashboard XML definition.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardAddingWebEventArgs.Handled">
+      <summary>
+        <para>Gets or sets whether default actions are required to add the dashboard to a storage.</para>
+      </summary>
+      <value>true, if no default actions are required to save the dashboard to a storage; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardAddingWebEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.DashboardAdding"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.DashboardAddingWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardConfigurator">
+      <summary>
+        <para>Provides a server side API for the <see cref="T:DevExpress.DashboardWeb.ASPxDashboard"/> control and ASP.NET MVC Dashboard extension.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardConfigurator"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardConfigurator.AllowExecutingCustomSql">
+      <summary>
+        <para>Gets or sets whether to execute SQL queries on the server side.</para>
+      </summary>
+      <value>true, to allow executing SQL queries on the server side; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardConfigurator.AllowReadUnlistedColumnsFromClientApi">
+      <summary>
+        <para>Gets or sets whether to enable client-side access to data source fields that are not associated with any dashboard item&#39;s data members.</para>
+      </summary>
+      <value>true, to enable client-side access to data source fields that are not associated with any dashboard item&#39;s data members; otherwise, false.</value>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.BeforeExportDocument">
+      <summary>
+        <para>Allows you to hide specific dashboard items when exporting the entire dashboard.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.ConfigureDataConnection">
+      <summary>
+        <para>Allows you to customize connection settings before the Web Dashboard connects to a data store (database, OLAP cube, etc.).</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.ConfigureDataReloadingTimeout">
+      <summary>
+        <para>Allows you to set a time interval that specifies how frequently the Web Dashboard should refill its in-memory cache when a user sends a data request.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.ConfigureItemDataCalculation">
+      <summary>
+        <para>Allows you to configure how the dashboard item&#39;s client data is calculated.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.ConnectionError">
+      <summary>
+        <para>Allows overriding the default behavior when current connection parameters do not allow connecting to a data store.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.CustomAssemblyLoading">
+      <summary>
+        <para>Occurs before a custom assembly is loaded for use as <see cref="T:DevExpress.DashboardCommon.DashboardEFDataSource"/>.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.CustomExport">
+      <summary>
+        <para>Allows you to customize the exported document.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.CustomFilterExpression">
+      <summary>
+        <para>Allows you to include WHERE clauses into <see cref="T:DevExpress.DashboardCommon.DashboardSqlDataSource"/> queries.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.CustomizeExportDocument">
+      <summary>
+        <para>Allows you to customize the exported document.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.CustomPalette">
+      <summary>
+        <para>Provides the capability to substitute the default palette containing colors used to paint dashboard item elements.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.CustomParameters">
+      <summary>
+        <para>Occurs before data is loaded from the data store and allows you to customize dashboard parameters that are used for data processing.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardConfigurator.DashboardStorage">
+      <summary>
+        <para>Gets a storage of dashboards for the Web Dashboard.</para>
+      </summary>
+      <value>An object implementing the <see cref="T:DevExpress.DashboardWeb.IDashboardStorage"/> interface that is the storage of dashboards.</value>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.DataLoading">
+      <summary>
+        <para>Allows you to provide data for the <see cref="T:DevExpress.DashboardCommon.DashboardObjectDataSource"/>.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardConfigurator.DataSourceStorage">
+      <summary>
+        <para>Gets the data source storage used by the Web Dashboard.</para>
+      </summary>
+      <value>An object implementing the <see cref="T:DevExpress.DashboardWeb.IDataSourceStorage"/> interface that is a storage of the dashboard data sources.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardConfigurator.Default">
+      <summary>
+        <para>Gets the default <see cref="T:DevExpress.DashboardWeb.DashboardConfigurator"/> class instance.</para>
+      </summary>
+      <value>The default <see cref="T:DevExpress.DashboardWeb.DashboardConfigurator"/> class instance.</value>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.ExcelDataSourceBeforeFill">
+      <summary>
+        <para>Provides the capability to change options used to extract data from Microsoft Excel workbooks (XLS, XLSX or XLSM files) or CSV files.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardConfigurator.PassCredentials">
+      <summary>
+        <para>Gets or sets whether confidential information (such as user credentials) will be passed to the client side (web browser).</para>
+      </summary>
+      <value>true, to pass confidential information to the client side; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetConnectionStringsProvider(DevExpress.DashboardWeb.IDataSourceWizardConnectionStringsStorage)">
+      <summary>
+        <para>Specifies a provider of data connections that can be used by the Web Dashboard.</para>
+      </summary>
+      <param name="storage">A storage that implements the <see cref="T:DevExpress.DashboardWeb.IDataSourceWizardConnectionStringsStorage"/> interface and allows you to save the created JSON data connections.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetConnectionStringsProvider(DevExpress.DataAccess.Web.IDataSourceWizardConnectionStringsProvider)">
+      <summary>
+        <para>Specifies a provider of data connections that can be used by the Web Dashboard.</para>
+      </summary>
+      <param name="provider">An object that implements the <see cref="T:DevExpress.DataAccess.Web.IDataSourceWizardConnectionStringsProvider"/> interface and provides access to the predefined connections strings.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStateService(DevExpress.DashboardWeb.IDashboardStateService)">
+      <summary>
+        <para>Specifies a service allowing you to manage a dashboard state.</para>
+      </summary>
+      <param name="service">An object implementing the <see cref="T:DevExpress.DashboardWeb.IDashboardStateService"/> interface that specifies a service allowing you to manage a dashboard state.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStorage(DevExpress.DashboardWeb.DashboardFileStorage)">
+      <summary>
+        <para>Specifies a file storage of dashboards for the Web Dashboard.</para>
+      </summary>
+      <param name="fileStorage">A <see cref="T:DevExpress.DashboardWeb.DashboardFileStorage"/> object that is the file storage of dashboards.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStorage(DevExpress.DashboardWeb.DashboardInMemoryStorage)">
+      <summary>
+        <para>Specifies an in-memory storage of dashboards for the Web Dashboard.</para>
+      </summary>
+      <param name="inMemoryStorage">A <see cref="T:DevExpress.DashboardWeb.DashboardInMemoryStorage"/> object that is the in-memory storage of dashboards.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStorage(DevExpress.DashboardWeb.IDashboardStorage)">
+      <summary>
+        <para>Specifies a storage of dashboards for the Web Dashboard.</para>
+      </summary>
+      <param name="customStorage">An object implementing the <see cref="T:DevExpress.DashboardWeb.IDashboardStorage"/> interface that is a storage of dashboards.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStorage(DevExpress.DashboardWeb.IEditableDashboardStorage)">
+      <summary>
+        <para>Specifies an editable storage of dashboards for the Web Dashboard.</para>
+      </summary>
+      <param name="customStorage">An object implementing the <see cref="T:DevExpress.DashboardWeb.IEditableDashboardStorage"/> interface that is an editable storage of dashboards.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDataSourceStorage(DevExpress.DashboardWeb.DataSourceInMemoryStorage)">
+      <summary>
+        <para>Specifies a data source storage for the Web Dashboard.</para>
+      </summary>
+      <param name="inMemoryStorage">A <see cref="T:DevExpress.DashboardWeb.DataSourceInMemoryStorage"/> object that is a storage of the dashboard data sources.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDataSourceStorage(DevExpress.DashboardWeb.IDataSourceStorage)">
+      <summary>
+        <para>Specifies a data source storage for the Web Dashboard.</para>
+      </summary>
+      <param name="customStorage">An object implementing the <see cref="T:DevExpress.DashboardWeb.IDataSourceStorage"/> interface that is a storage of the dashboard data sources.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDBSchemaProvider(DevExpress.DataAccess.Sql.IDBSchemaProvider)">
+      <summary>
+        <para>Specifies a custom data store schema.</para>
+      </summary>
+      <param name="provider">The data store&#39;s schema - an object that implements the DevExpress.DataAccess.Sql.IDBSchemaProvider interface.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetDBSchemaProvider(DevExpress.DataAccess.Sql.IDBSchemaProviderEx)">
+      <summary>
+        <para>Specifies a custom data store schema.</para>
+      </summary>
+      <param name="provider">An object that implements the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProviderEx"/> interface representing the data store&#39;s schema</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardConfigurator.SetObjectDataSourceCustomFillService(DevExpress.DashboardCommon.IObjectDataSourceCustomFillService)">
+      <summary>
+        <para>Specifies a custom fill service for the <see cref="T:DevExpress.DashboardCommon.DashboardObjectDataSource"/> that provides data for the Web Dashboard.</para>
+      </summary>
+      <param name="objectDataSourceCustomFillService">An object implementing the <see cref="T:DevExpress.DashboardCommon.IObjectDataSourceCustomFillService"/> interface that specifies a custom fill service for the <see cref="T:DevExpress.DashboardCommon.DashboardObjectDataSource"/>.</param>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.ValidateCustomSqlQuery">
+      <summary>
+        <para>Provides the capability to check the validity of the custom SQL query used to supply the dashboard with data.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.ValidateUnderlyingDataColumns">
+      <summary>
+        <para>Raises when a user requests underlying data from the client and allows you to validate which columns should be returned.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardConfigurator.VerifyClientTrustLevel">
+      <summary>
+        <para>Allows you to verify the trust level used to specify which actions a client can initiate to execute them on a server side.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardCustomSqlExecutingException">
+      <summary>
+        <para>The exceptions that occur when the data source has custom SQL queries that can lead to inadvertent or unauthorized modifications to your data/database structure.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardCustomSqlExecutingException.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardCustomSqlExecutingException"/> class.</para>
+      </summary>
+      <param name="dataSourceName">A <see cref="T:System.String"/> object that is a name of the data source for which the exception is raised.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardFileStorage">
+      <summary>
+        <para>A file storage used to hold dashboards.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardFileStorage.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardFileStorage"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardFileStorage.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardFileStorage"/> class.</para>
+      </summary>
+      <param name="workingDirectory">A <see cref="T:System.String"/> that specifies the relative or absolute path to the directory used to store dashboards.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardFileStorage.WorkingDirectory">
+      <summary>
+        <para>Gets or sets the path to the directory used to store dashboards.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the relative or absolute path to the directory used to store dashboards.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardInfo">
+      <summary>
+        <para>Contains information used to identify a dashboard within the dashboard storage.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardInfo.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardInfo"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardInfo.ID">
+      <summary>
+        <para>Gets or sets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardInfo.Name">
+      <summary>
+        <para>Gets or sets the dashboard name.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the dashboard name.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardInMemoryStorage">
+      <summary>
+        <para>An in-memory storage used to hold dashboards.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardInMemoryStorage.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardInMemoryStorage"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWeb.DashboardInMemoryStorage.DashboardSave">
+      <summary>
+        <para>Allows you to handle the process of saving a dashboard to the <see cref="T:DevExpress.DashboardWeb.DashboardInMemoryStorage"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardInMemoryStorage.RegisterDashboard(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Adds a new dashboard to the current <see cref="T:DevExpress.DashboardWeb.DashboardInMemoryStorage"/>.</para>
+      </summary>
+      <param name="dashboardID">A <see cref="T:System.String"/> that specifies the dashboard identifier.</param>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the dashboard XML definition.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs">
+      <summary>
+        <para>Provides data for the ASPxDashboardViewer.DashboardLoaded event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs.#ctor(System.String,DevExpress.DashboardCommon.Dashboard)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the dashboard identifier.</param>
+      <param name="dashboard">A <see cref="T:DevExpress.DashboardCommon.Dashboard"/> object that is the loaded dashboard.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs.Dashboard">
+      <summary>
+        <para>Gets the loaded dashboard.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.Dashboard"/> object that is the loaded dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the loaded dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies a loaded dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardLoadedWebEventHandler">
+      <summary>
+        <para>References a method that handles the ASPxDashboardViewer.DashboardLoaded event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardLoadingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.DashboardLoading"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the required dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies a dashboard that should be provided via the <see cref="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardXml"/> property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardType">
+      <summary>
+        <para>Gets or sets the type of the dashboard created at design time.</para>
+      </summary>
+      <value>A <see cref="T:System.Type"/> that specifies a type of the dashboard created at design time.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardXml">
+      <summary>
+        <para>Gets or sets the dashboard XML definition.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> containing XML data that defines the dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardLoadingEventHandler">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.DashboardLoadingEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardLoadingWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.DashboardLoading"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardLoadingWebEventArgs.#ctor(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardLoadingWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the dashboard XML definition.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardLoadingWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardLoadingWebEventArgs.DashboardXml">
+      <summary>
+        <para>Gets or sets the dashboard XML definition.</para>
+      </summary>
+      <value>A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the dashboard XML definition.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardLoadingWebEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.DashboardLoading"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.DashboardLoadingWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardRestrictedModeException">
+      <summary>
+        <para>The exception that occurs when the user&#39;s trust level is unsuitable to perform actions a client can initiate to execute on a server side.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardRestrictedModeException.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardRestrictedModeException"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardSaveEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.DashboardInMemoryStorage.DashboardSave"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.SaveDashboardEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardSavingWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.DashboardSaving"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardSavingWebEventArgs.#ctor(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardSavingWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="dashboardXml">A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the dashboard XML definition.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardSavingWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardSavingWebEventArgs.DashboardXml">
+      <summary>
+        <para>Gets the dashboard XML definition.</para>
+      </summary>
+      <value>A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the dashboard XML definition.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DashboardSavingWebEventArgs.Handled">
+      <summary>
+        <para>Gets or sets whether default actions are required to save the dashboard.</para>
+      </summary>
+      <value>true, to specify that no default actions are required to save the dashboard; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardSavingWebEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.DashboardSaving"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.DashboardSavingWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardStorageBase">
+      <summary>
+        <para>Serves as the base class for classes that act as dashboard storage.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardTypeStorage">
+      <summary>
+        <para>A storage of dashboards created at design time within Visual Studio.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardTypeStorage.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardTypeStorage"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardTypeStorage.RegisterDashboard(System.Type)">
+      <summary>
+        <para>Adds a new dashboard to the current <see cref="T:DevExpress.DashboardWeb.DashboardTypeStorage"/>.</para>
+      </summary>
+      <param name="dashboardType">A <see cref="T:System.Type"/> object that specifies the dashboard type.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardTypeStorage.RegisterDashboard(System.Type,System.String)">
+      <summary>
+        <para>Adds a new dashboard to the current <see cref="T:DevExpress.DashboardWeb.DashboardTypeStorage"/>.</para>
+      </summary>
+      <param name="dashboardType">A <see cref="T:System.Type"/> object that specifies the dashboard type.</param>
+      <param name="dashboardName">A <see cref="T:System.String"/> value that specifies the dashboard name.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardTypeStorage.RegisterDashboard(System.Type,System.String,System.String)">
+      <summary>
+        <para>Adds a new dashboard to the current <see cref="T:DevExpress.DashboardWeb.DashboardTypeStorage"/>.</para>
+      </summary>
+      <param name="dashboardType">A <see cref="T:System.Type"/> object that specifies the dashboard type.</param>
+      <param name="dashboardName">A <see cref="T:System.String"/> value that specifies the dashboard name.</param>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardTypeStorage.SaveDashboard(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Saves the specified dashboard to the current <see cref="T:DevExpress.DashboardWeb.DashboardTypeStorage"/>.</para>
+      </summary>
+      <param name="dashboardID">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that is the XML definition of the dashboard to be saved.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DashboardUnsafeConnectionException">
+      <summary>
+        <para>The exception that occurs when the dashboard contains unsafe data connection.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DashboardUnsafeConnectionException.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DashboardUnsafeConnectionException"/> class.</para>
+      </summary>
+      <param name="dataSourceName">A <see cref="T:System.String"/> object that is the name of the data source for which the exception is raised.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DataLoadingWebEventArgs">
+      <summary>
+        <para>Provides data for the DataLoading events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DataLoadingWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the current dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies the current dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DataLoadingWebEventHandler">
+      <summary>
+        <para>References a method that handles the DataLoading events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.DataLoadingWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DataRequestOptions">
+      <summary>
+        <para>Contains options that allow you to configure data request parameters.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DataRequestOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DataRequestOptions"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.DataRequestOptions.ItemDataRequestMode">
+      <summary>
+        <para>Gets or sets whether a dashboard control loads dashboard items&#39; data using batch requests or separate requests.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.ItemDataRequestMode"/> enumeration value that specifies a data request mode.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DataSourceInMemoryStorage">
+      <summary>
+        <para>An in-memory storage of the dashboard data sources.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DataSourceInMemoryStorage.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DataSourceInMemoryStorage"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DataSourceInMemoryStorage.RegisterDataSource(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Registers the specified data source in the current <see cref="T:DevExpress.DashboardWeb.DataSourceInMemoryStorage"/>.</para>
+      </summary>
+      <param name="dataSourceId">A <see cref="T:System.String"/> that is the data source identifier.</param>
+      <param name="document">A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the XML document containing a data source definition.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DataSourceInMemoryStorage.RegisterDataSource(System.String,System.Xml.Linq.XElement)">
+      <summary>
+        <para>Registers the specified data source in the current <see cref="T:DevExpress.DashboardWeb.DataSourceInMemoryStorage"/>.</para>
+      </summary>
+      <param name="dataSourceId">A <see cref="T:System.String"/> that is the data source identifier.</param>
+      <param name="rootElement">A <see cref="T:System.Xml.Linq.XElement"/> object that specifies the XML element.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DataSourceInMemoryStorage.RegisterDataSource(System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Registers the specified data source in the current <see cref="T:DevExpress.DashboardWeb.DataSourceInMemoryStorage"/>.</para>
+      </summary>
+      <param name="document">A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the XML document containing a data source definition.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DataSourceInMemoryStorage.RegisterDataSource(System.Xml.Linq.XElement)">
+      <summary>
+        <para>Registers the specified data source in the current <see cref="T:DevExpress.DashboardWeb.DataSourceInMemoryStorage"/>.</para>
+      </summary>
+      <param name="rootElement">A <see cref="T:System.Xml.Linq.XElement"/> object that specifies the XML element.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.DataSourceUnsafeConnectionException">
+      <summary>
+        <para>The exception that occurs when the data source contains unsafe data connection.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.DataSourceUnsafeConnectionException.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.DataSourceUnsafeConnectionException"/> class.</para>
+      </summary>
+      <param name="dataSourceName">A <see cref="T:System.String"/> object that is a name of the data source for which the exception is raised.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs">
+      <summary>
+        <para>Provides data for the ExcelDataSourceBeforeFill events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.#ctor(System.String,System.String,System.String,DevExpress.DataAccess.Excel.BeforeFillEventArgs)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that is the dashboard identifier.</param>
+      <param name="dataSourceComponentName">A <see cref="T:System.String"/> value that is the component name of the Excel data source.</param>
+      <param name="dataSourceName">A <see cref="T:System.String"/> value that is the Excel data source name.</param>
+      <param name="e">A <see cref="T:DevExpress.DataAccess.Excel.BeforeFillEventArgs"/> object.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the dashboard for which the event was raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the identifier of the dashboard for which the event was raised.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.DataSourceComponentName">
+      <summary>
+        <para>Gets the component name of the Excel data source for which the event was raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the component name of the Excel data source for which the event was raised.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.DataSourceName">
+      <summary>
+        <para>Gets the name of the Excel data source for which the event was raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the name of the Excel data source for which the event was raised.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.FileName">
+      <summary>
+        <para>Gets or sets a path to the Microsoft Excel workbook or CSV file.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the path to the Microsoft Excel workbook or CSV file.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.SourceOptions">
+      <summary>
+        <para>Gets or sets options used to extract data from Microsoft Excel workbooks (XLS, XLSX or XLSM files) or CSV files.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DataAccess.Excel.ExcelSourceOptionsBase"/> descendant containing options used to extract data from Microsoft Excel workbooks (XLS, XLSX or XLSM files) or CSV files.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.Stream">
+      <summary>
+        <para>Gets or sets a stream that contains a Microsoft Excel workbook or CSV file.</para>
+      </summary>
+      <value>A <see cref="T:System.IO.Stream"/> object containing a Microsoft Excel workbook or CSV file.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.StreamDocumentFormat">
+      <summary>
+        <para>Gets or sets the format of the document contained in the <see cref="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.Stream"/>.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DataAccess.Excel.ExcelDocumentFormat"/> enumeration value that specifies the format of the document contained in the <see cref="P:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs.Stream"/>.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventHandler">
+      <summary>
+        <para>References a method that handles the ExcelDataSourceBeforeFill events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The <see cref="T:DevExpress.DashboardWeb.ExcelDataSourceBeforeFillWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.IDashboardStateService">
+      <summary>
+        <para>When implemented by a class, provides a service used to manage a dashboard state.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IDashboardStateService.GetState(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Gets the dashboard state for the current state service.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that is the XML document containing the dashboard.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object containing a dashboard sate.</returns>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.IDashboardStorage">
+      <summary>
+        <para>When implemented by a class, represents a storage of dashboards.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IDashboardStorage.GetAvailableDashboardsInfo">
+      <summary>
+        <para>Gets information about dashboards stored in the current <see cref="T:DevExpress.DashboardWeb.IDashboardStorage"/>.</para>
+      </summary>
+      <returns>A collection of <see cref="T:DevExpress.DashboardWeb.DashboardInfo"/> objects that contain information about dashboards stored in the current <see cref="T:DevExpress.DashboardWeb.IDashboardStorage"/>.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IDashboardStorage.LoadDashboard(System.String)">
+      <summary>
+        <para>Loads the dashboard with the specified identifier from the current <see cref="T:DevExpress.DashboardWeb.IDashboardStorage"/>.</para>
+      </summary>
+      <param name="dashboardID">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <returns>A <see cref="T:System.Xml.Linq.XDocument"/> object that is the XML definition of the loaded dashboard.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IDashboardStorage.SaveDashboard(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Saves the specified dashboard to the current <see cref="T:DevExpress.DashboardWeb.IDashboardStorage"/>.</para>
+      </summary>
+      <param name="dashboardID">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that is the XML definition of the dashboard to be saved.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.IDataSourceStorage">
+      <summary>
+        <para>When implemented by a class, represents a storage of the dashboard data sources.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IDataSourceStorage.GetDataSource(System.String)">
+      <summary>
+        <para>Loads the data source&#39;s XML definition from the current <see cref="T:DevExpress.DashboardWeb.IDataSourceStorage"/>.</para>
+      </summary>
+      <param name="dataSourceID">A <see cref="T:System.String"/> value that is the data source&#39;s identifier.</param>
+      <returns>A <see cref="T:System.Xml.Linq.XDocument"/> object that is the XML definition of the loaded data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IDataSourceStorage.GetDataSourcesID">
+      <summary>
+        <para>Gets identifiers of the data sources stored in the current <see cref="T:DevExpress.DashboardWeb.IDataSourceStorage"/>.</para>
+      </summary>
+      <returns>A collection of <see cref="T:System.String"/> values that are identifiers of the dashboards stored in the current <see cref="T:DevExpress.DashboardWeb.IDataSourceStorage"/>.</returns>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.IDataSourceWizardConnectionStringsStorage">
+      <summary>
+        <para>When implemented by a class, represents a storage of data connections used in the Dashboard Data Source Wizard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IDataSourceWizardConnectionStringsStorage.SaveDataConnectionParameters(System.String,DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase,System.Boolean)">
+      <summary>
+        <para>Allows you to save and store data connection parameters.</para>
+      </summary>
+      <param name="name">A connection name.</param>
+      <param name="connectionParameters">An object that contains the parameters of data connections.</param>
+      <param name="saveCredentials">For internal use.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.IEditableDashboardStorage">
+      <summary>
+        <para>When implemented by a class, represents an editable storage of dashboards.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.IEditableDashboardStorage.AddDashboard(System.Xml.Linq.XDocument,System.String)">
+      <summary>
+        <para>Adds a new dashboard to the current <see cref="T:DevExpress.DashboardWeb.IEditableDashboardStorage"/>.</para>
+      </summary>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that is the XML definition of the dashboard to be added.</param>
+      <param name="dashboardName">A <see cref="T:System.String"/> value that specifies the dashboard name.</param>
+      <returns>A <see cref="T:System.String"/> that is the identifier of the newly added dashboard.</returns>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ItemDataRequestMode">
+      <summary>
+        <para>Lists values used to specify an item&#39;s data request mode.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.ItemDataRequestMode.Auto">
+      <summary>
+        <para>For Web Forms, the auto mode is BatchRequests. For other platform, the auto mode is SeparateRequests.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.ItemDataRequestMode.BatchRequests">
+      <summary>
+        <para>Detailed items grouped by the same master filter item perform one batch request.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.ItemDataRequestMode.SeparateRequests">
+      <summary>
+        <para>Detailed items grouped by the same master filter item perform simultaneous separate requests.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.LimitVisibleDataMode">
+      <summary>
+        <para>Lists values that specify data limitation modes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.LimitVisibleDataMode.Designer">
+      <summary>
+        <para>Visible data will be limited only in the designer mode.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.LimitVisibleDataMode.DesignerAndViewer">
+      <summary>
+        <para>Visible data will be limited both in the designer and viewer modes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.LimitVisibleDataMode.None">
+      <summary>
+        <para>Visible data will not be reduced.</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.DashboardWeb.Localization">
+      <summary>
+        <para>Contains classes used to localize Web Dashboard elements.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Localization.DashboardWebStringId">
+      <summary>
+        <para>Lists values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.Localization.DashboardWebStringId.IncompatibleBrowser">
+      <summary>
+        <para>Default value: Dashboard Viewer: The current browser version is not supported.&lt;br/&gt;&lt;br/&gt;Currently, the following browsers are supported: Internet Explorer 9, Chrome, Safari, FireFox, Opera, Android 3+.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.MobileLayoutMode">
+      <summary>
+        <para>Lists values that specify a mobile layout mode for the Web Dashboard.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.MobileLayoutMode.Always">
+      <summary>
+        <para>A mobile layout is used both for mobile phones and desktop applications.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.MobileLayoutMode.Auto">
+      <summary>
+        <para>A mobile layout is enabled automatically when the Web Dashboard is used on the mobile phones.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.MobileLayoutMode.Never">
+      <summary>
+        <para>A desktop layout is used both for mobile phones and desktop applications.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Padding">
+      <summary>
+        <para>Contains properties used to set paddings of the Web Dashboard elements.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Padding.#ctor(System.Int32)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Padding"/> class.</para>
+      </summary>
+      <param name="all">An integer value that specifies all four paddings of the Web Dashboard element.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Padding.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Padding"/> class.</para>
+      </summary>
+      <param name="left">An integer value that specifies the left padding of the Web Dashboard element.</param>
+      <param name="right">An integer value that specifies the right padding of the Web Dashboard element.</param>
+      <param name="top">An integer value that specifies the top padding of the Web Dashboard element.</param>
+      <param name="bottom">An integer value that specifies the bottom padding of the Web Dashboard element.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Padding.Bottom">
+      <summary>
+        <para>Gets or sets the bottom padding (space) of the Web Dashboard element.</para>
+      </summary>
+      <value>An integer value that specifies the bottom padding of the Web Dashboard element.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Padding.Left">
+      <summary>
+        <para>Gets or sets the left padding (space) of the Web Dashboard element.</para>
+      </summary>
+      <value>An integer value that specifies the left padding of the Web Dashboard element.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Padding.Right">
+      <summary>
+        <para>Gets or sets the right padding (space) of the Web Dashboard element.</para>
+      </summary>
+      <value>An integer value that specifies the right padding of the Web Dashboard element.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Padding.Top">
+      <summary>
+        <para>Gets or sets the top padding (space) of the Web Dashboard element.</para>
+      </summary>
+      <value>An integer value that specifies the top padding of the Web Dashboard element.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.RequestDashboardIDsWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.RequestDashboardIDs"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.RequestDashboardIDsWebEventArgs.#ctor(System.Collections.Generic.List{DevExpress.DashboardWeb.DashboardInfo})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.RequestDashboardIDsWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardIDs">A collection of <see cref="T:DevExpress.DashboardWeb.DashboardInfo"/> objects containing information used to identify dashboards.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.RequestDashboardIDsWebEventArgs.DashboardIDs">
+      <summary>
+        <para>Gets or sets a collection of <see cref="T:DevExpress.DashboardWeb.DashboardInfo"/> objects containing information used to identify dashboards.</para>
+      </summary>
+      <value>A collection of <see cref="T:DevExpress.DashboardWeb.DashboardInfo"/> objects containing information used to identify dashboards.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.RequestDashboardIDsWebEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.RequestDashboardIDs"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.RequestDashboardIDsWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.SaveDashboardEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.DashboardInMemoryStorage.DashboardSave"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.SaveDashboardEventArgs.#ctor(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.SaveDashboardEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="dashboardXml">A <see cref="T:System.Xml.Linq.XDocument"/> object that is the dashboard XML definition.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.SaveDashboardEventArgs.DashboardId">
+      <summary>
+        <para>Gets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.SaveDashboardEventArgs.DashboardXml">
+      <summary>
+        <para>Gets the dashboard XML definition.</para>
+      </summary>
+      <value>A <see cref="T:System.Xml.Linq.XDocument"/> object that is the dashboard XML definition.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.SetInitialDashboardState"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs.#ctor(System.String,System.Xml.Linq.XDocument)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> value that specifies the dashboard identifier.</param>
+      <param name="dashboard">A <see cref="T:System.Xml.Linq.XDocument"/> object that specifies the XML document containing a dashboard definition.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the loaded dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the identifier of the loaded dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs.DashboardXml">
+      <summary>
+        <para>Get the XML document containing the definition of the loaded dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.Xml.Linq.XDocument"/> object containing the definition of the loaded dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs.InitialState">
+      <summary>
+        <para>Gets or sets the initial state of the loaded dashboard.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object containing the initial state of the loaded dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.SetInitialDashboardStateEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.SetInitialDashboardState"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs">
+      <summary>
+        <para>Provides data for the ValidateDashboardCustomSqlQuery events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs.#ctor(DevExpress.DashboardCommon.ValidateDashboardCustomSqlQueryEventArgs)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs"/> class.</para>
+      </summary>
+      <param name="innerArgs">A <see cref="T:DevExpress.DashboardCommon.ValidateDashboardCustomSqlQueryEventArgs"/> object.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs.CustomSqlQuery">
+      <summary>
+        <para>Gets the custom SQL query that should be checked.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DataAccess.Sql.CustomSqlQuery"/> object that specifies the custom SQL query.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the identifier of the current dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that identifies the current dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs.DataSourceComponentName">
+      <summary>
+        <para>Gets or sets the component name of the data source for which the event was raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the component name of the data source for which the event was raised.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs.DataSourceName">
+      <summary>
+        <para>Gets or sets the name of the data source for which the event was raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the name of the data source for which the event was raised.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs.ExceptionMessage">
+      <summary>
+        <para>Gets or sets the exception message returned after custom SQL query validation.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the exception message returned after custom SQL query validation.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs.Valid">
+      <summary>
+        <para>Gets or sets whether the current custom SQL query is valid.</para>
+      </summary>
+      <value>true, if the current custom SQL query is valid; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventHandler">
+      <summary>
+        <para>References a method that handles the ValidateCustomSqlQuery events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.ValidateDashboardCustomSqlQueryWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.ValidateUnderlyingDataColumns"/> and <see cref="E:DevExpress.DashboardWeb.ASPxDashboard.ValidateUnderlyingDataColumns"/> events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs.#ctor(System.String,System.String,System.String[],System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardId">A string value that is a dashboard&#39;s unique name.</param>
+      <param name="ItemComponentName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="columns">A collection of data column names that can be accessed from the client.</param>
+      <param name="valid">A value that indicates whether to provide a user with client-side access to the underlying columns.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs.Columns">
+      <summary>
+        <para>Gets the names of data columns that can be accessed from the client.</para>
+      </summary>
+      <value>A collection of data column names that can be accessed from the client.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs.DashboardId">
+      <summary>
+        <para>Gets the dashboard&#39;s unique name.</para>
+      </summary>
+      <value>A string value that is a dashboard&#39;s unique name.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs.ItemComponentName">
+      <summary>
+        <para>Gets the component name of the dashboard item for which the event is raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs.Valid">
+      <summary>
+        <para>Gets or sets whether to provide a user with client-side access to the underlying columns.</para>
+      </summary>
+      <value>true, to provide client-side access to the underlying columns; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventHandler">
+      <summary>
+        <para>References a method that handles the ValidateUnderlyingDataColumns events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.ValidateUnderlyingDataColumnsWebEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.VerifyClientTrustLevelEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.VerifyClientTrustLevel"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.VerifyClientTrustLevelEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.VerifyClientTrustLevelEventArgs"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.VerifyClientTrustLevelEventArgs.ClientTrustLevel">
+      <summary>
+        <para>Gets or sets the trust level that specifies which actions a client can initiate to execute them on a server side.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.ClientTrustLevel"/> value that specifies a trust level.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.VerifyClientTrustLevelEventHandler">
+      <summary>
+        <para>References a method that handles the <see cref="E:DevExpress.DashboardWeb.DashboardConfigurator.VerifyClientTrustLevel"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWeb.VerifyClientTrustLevelEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.WebDashboardExporter">
+      <summary>
+        <para>Implements a base functionality to perform server-side export of a dashboard/dashboard item displayed in the Web Dashboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.#ctor(DevExpress.DashboardWeb.DashboardConfigurator)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.WebDashboardExporter"/> class for the specified <see cref="T:DevExpress.DashboardWeb.DashboardConfigurator"/> instance.</para>
+      </summary>
+      <param name="dashboardConfigurator">A <see cref="T:DevExpress.DashboardWeb.DashboardConfigurator"/> instance that provides server settings for the Web Dashboard.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToExcel(System.String,System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Excel format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToExcel(System.String,System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardState)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Excel format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToExcel(System.String,System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Excel format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing Excel-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToImage(System.String,System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToImage(System.String,System.String,System.IO.Stream,System.Drawing.Size)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="dashboardItemSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard item size.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToImage(System.String,System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="dashboardItemSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard item size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToImage(System.String,System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardImageExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="dashboardItemSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard item size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object containing Image-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToPdf(System.String,System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToPdf(System.String,System.String,System.IO.Stream,System.Drawing.Size)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardItemSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard item size.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToPdf(System.String,System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardItemSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard item size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportDashboardItemToPdf(System.String,System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardItemSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard item size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object containing PDF-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToExcel(System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Excel format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard whose data should be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToExcel(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardState)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Excel format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard whose data should be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToExcel(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Excel format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard whose data should be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing Excel-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToImage(System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToImage(System.String,System.IO.Stream,System.Drawing.Size)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Image file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToImage(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToImage(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardImageExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object containing Image-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToImage(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardWeb.Padding)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="itemsPadding">A <see cref="T:DevExpress.DashboardWeb.Padding"/> object that specifies the dashboard items paddings.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToImage(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardWeb.Padding,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardImageExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Image file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="itemsPadding">A <see cref="T:DevExpress.DashboardWeb.Padding"/> object that specifies the dashboard items paddings.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object containing image-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToPdf(System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToPdf(System.String,System.IO.Stream,System.Drawing.Size)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToPdf(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToPdf(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object containing PDF-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToPdf(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardWeb.Padding)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="itemsPadding">A <see cref="T:DevExpress.DashboardWeb.Padding"/> object that specifies the dashboard items paddings.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.ExportToPdf(System.String,System.IO.Stream,System.Drawing.Size,DevExpress.DashboardWeb.Padding,DevExpress.DashboardCommon.DashboardState,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of a dashboard to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="dashboardSize">A <see cref="T:System.Drawing.Size"/> object that specifies the dashboard size.</param>
+      <param name="itemsPadding">A <see cref="T:DevExpress.DashboardWeb.Padding"/> object that specifies the dashboard items paddings.</param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that specifies the dashboard state to be applied to the resulting document.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object containing PDF-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.WebDashboardExporter.GetPrintableComponent(System.String,System.String)">
+      <summary>
+        <para>Gets a printable component corresponding to the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardId">A <see cref="T:System.String"/> that specifies the identifier of the dashboard containing the required dashboard item.</param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>An object that implements the <see cref="T:DevExpress.XtraPrinting.IPrintable"/> interface, specifying a component to be printed/exported.</returns>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.WorkingMode">
+      <summary>
+        <para>Lists values used to specify a working mode of the Web Dashboard.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.WorkingMode.Designer">
+      <summary>
+        <para>The Web Dashboard acts as a Dashboard Designer and allows end-users to create, edit and save dashboards. Note that in this case, you can switch to the Viewer mode on the client side.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.WorkingMode.Viewer">
+      <summary>
+        <para>The Web Dashboard acts as a Dashboard Viewer and allows you to display dashboards to end-users. Note that in this case, you can switch to the Designer mode on the client side.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.WorkingMode.ViewerOnly">
+      <summary>
+        <para>The Web Dashboard acts as a Dashboard Viewer without the capability to switch to the Designer mode on the client side.
+In this mode, the Web Dashboard does not load the extensions required for designing dashboards.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,19 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ToolbarControlMobilePanelBackgroundBrush" Color="#FFE6E6E6" Core:ColorKey.Id="ToolbarControlMobileColors.PanelBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarControlMobileBackgroundBrush" Color="#FFE6E6E6" Core:ColorKey.Id="ToolbarControlMobileColors.Background.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ToolbarControlMobilePanelBackgroundBrush" Color="#FF212121" Core:ColorKey.Id="ToolbarControlMobileColors.PanelBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarControlMobileBackgroundBrush" Color="#FF212121" Core:ColorKey.Id="ToolbarControlMobileColors.Background.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
+</ResourceDictionary>
+
+
+

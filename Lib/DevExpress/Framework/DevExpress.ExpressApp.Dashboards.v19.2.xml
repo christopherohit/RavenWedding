@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Dashboards.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Dashboards">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the Dashboards Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.DashboardDataProvider">
+      <summary>
+        <para>The data provider used by the Dashboards Module.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardDataProvider.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardDataProvider"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardDataProvider.AttachService(System.ComponentModel.Design.IServiceContainer,DevExpress.Persistent.Base.IDashboardData)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="serviceContainer"></param>
+      <param name="dashboardData"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardDataProvider.AttachViewService(System.ComponentModel.Design.IServiceContainer,DevExpress.Persistent.Base.IDashboardData)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="serviceContainer"></param>
+      <param name="dashboardData"></param>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.DashboardDataProvider.ContextApplication">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardDataProvider.CreateObjectSpace(System.Type)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="type"></param>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.DashboardDataProvider.ShowPersistentMembersOnly">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.DashboardDataProvider.TopReturnedRecordsInDesigner">
+      <summary>
+        <para>Specifies the maximum number of records to be retrieved from a data store in the Dashboard Designer.</para>
+      </summary>
+      <value>An integer value that specifies the maximum number of records to be retrieved from a data store.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.DashboardsModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Dashboards.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.ActivateDashboardController(DevExpress.ExpressApp.Controller)">
+      <summary>
+        <para>Deactivates the specified Controller if the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> list does not contain <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/>, or the <see cref="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.DashboardDataType"/> property is not initialized.</para>
+      </summary>
+      <param name="controller">A <see cref="T:DevExpress.ExpressApp.Controller"/> object to be activated.</param>
+      <returns>true, if the Controller is activated; otherwise, false</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.AddDashboardData``1(DevExpress.ExpressApp.IObjectSpace,System.String,System.String)">
+      <summary>
+        <para>Creates a dashboard data object from the specified XML string if there is no dashboard data with the specified title parameter in the database.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object that specifies the Object Space.</param>
+      <param name="title">A string specifying the dashboard title.</param>
+      <param name="xml">A string specifying the dashboard configuration in XML format.</param>
+      <returns>A dashboard data object.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.AddDashboardDataFromResources``1(DevExpress.ExpressApp.IObjectSpace,System.String,System.Reflection.Assembly,System.String)">
+      <summary>
+        <para>Creates a dashboard data object from the specified XML resource file if there is no dashboard data with the specified title parameter in the database.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object that specifies the Object Space.</param>
+      <param name="title">A string specifying the dashboard title.</param>
+      <param name="assembly">An <see cref="T:System.Reflection.Assembly"/> specifying the assembly which contains the dashboard configuration as an embedded resource.</param>
+      <param name="embeddedResourceName">A string specifying the embedded resource name which contains the dashboard configuration in XML format.</param>
+      <returns>A dashboard data object.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+      <summary>
+        <para>Registers the Generator Updater of the Dashboards Module.</para>
+      </summary>
+      <param name="updaters">A ModelNodesGeneratorUpdaters object providing access to the list of Generator Updaters.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+      <summary>
+        <para>Customizes metadata on business classes specific to the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> before loading the metadata to the Application Model&#39;s BOModel node.</para>
+      </summary>
+      <param name="typesInfo">An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object which holds metadata information on business classes to be loaded to the Application Model.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.DashboardDataType">
+      <summary>
+        <para>Specifies the dashboard data type used by the Dashboards Module.</para>
+      </summary>
+      <value>A <see cref="T:System.Type"/> object specifying the report data type used by the Dashboards Module.</value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.DashboardsModule.DashboardDetailViewName">
+      <summary>
+        <para>Gets the dashboard Detail View identifier (&quot;DashboardViewer_DetailView&quot;, by default).</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.DashboardsModule.DashboardViewItemId">
+      <summary>
+        <para>Gets the dashboard View Item identifier (&quot;DashboardViewer&quot;, by default).</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.DataProvider">
+      <summary>
+        <para>Specifies the data provider used by the Dashboards Module.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardDataProvider"/> object that provides data for dashboards.</value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.DashboardsModule.DefaultDashboardDataCaption">
+      <summary>
+        <para>Gets the caption of the <see cref="T:DevExpress.Persistent.Base.IDashboardData"/> object (&quot;Dashboard&quot;, by default).</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.DashboardsModule.DefaultDashboardDataImageName">
+      <summary>
+        <para>Gets the <see cref="T:DevExpress.Persistent.Base.IDashboardData"/> object&#39;s icon name (&quot;BO_Dashboard&quot;, by default).</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Dashboards.DashboardsModule.DefaultDashboardDataProperty">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+      <summary>
+        <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Model.IModelClassDashboardsVisibility"/> interface.</para>
+      </summary>
+      <param name="extenders">A ModelInterfaceExtenders object that is a collection of Application Model interface extenders.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.FindDashboardDataType(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Returns the <see cref="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.DashboardDataType"/> value of the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> instance added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> list.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the XAF application.</param>
+      <returns>The type of the dashboard data used by the Dashboards Module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.FindDashboardModule(DevExpress.ExpressApp.ModuleList)">
+      <summary>
+        <para>Returns the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> instance which is added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> list.</para>
+      </summary>
+      <param name="modules">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the XAF application.</param>
+      <returns>A <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> object.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.GenerateNavigationItem">
+      <summary>
+        <para>Specifies whether or not the Reports | Dashboards navigation item is created automatically.</para>
+      </summary>
+      <value>true, if the Dashboards navigation item is created automatically; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> module.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.HideDirectDataSourceConnections">
+      <summary>
+        <para>Specifies if the Data Source Wizard allows setting direct Database connections.</para>
+      </summary>
+      <value>false, if the Data Source Wizard allows setting direct Database connections; otherwise, true.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.DashboardsModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.Dashboards.DashboardsModule"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.IModelDashboardNavigationItem">
+      <summary>
+        <para>A Navigation Item node that points to a dashboard.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.IModelDashboardNavigationItem.DashboardTitle">
+      <summary>
+        <para>Specifies the title of dashboard associated with the current navigation item.</para>
+      </summary>
+      <value>A string which is the dashboard title.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.IModelDashboardNavigationItem.ObjectKey">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.IModelDashboardNavigationItem.View">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+  </members>
+</doc>

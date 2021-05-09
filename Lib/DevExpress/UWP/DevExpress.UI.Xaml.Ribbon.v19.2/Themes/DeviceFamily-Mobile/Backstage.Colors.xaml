@@ -1,0 +1,83 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="RibbonBackstageMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="BackstageViewMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonBackstageMobileTabsBackgroundBrush" Color="#FF333333" Core:ColorKey.Id="BackstageViewMobileColors.TabsBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonBackstageMobileButtonIconFillBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageViewMobileColors.CloseButtonIconFill.Light"/>
+
+
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="BackstageTabItemMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundHoverBrush" Color="#FF3C3C3C" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundPressedBrush" Color="#FF4C4C4C" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundSelectedPressedBrush" Color="#FF4C4C4C" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundSelectedHoverBrush" Color="#FF4C4C4C" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundSelectedBrush" Color="#FF4C4C4C" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundSelectedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundSelectedHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundSelectedPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundSelectedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillSelected.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundSelectedHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundSelectedPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileFocusVisualStrokeBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="BackstageTabItemMobileFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.FocusVisualBackground.Light"/>
+
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RibbonBackstageMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="BackstageViewMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonBackstageMobileTabsBackgroundBrush" Color="#FF1A1A1A" Core:ColorKey.Id="BackstageViewMobileColors.TabsBackground.Default" />
+            <SolidColorBrush x:Key="RibbonBackstageMobileButtonIconFillBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageViewMobileColors.CloseButtonIconFill.Default" />
+
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="BackstageTabItemMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundSelectedPressedBrush" Color="#FF313131" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundSelectedHoverBrush" Color="#FF313131" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileBackgroundSelectedBrush" Color="#FF313131" Core:ColorKey.Id="BackstageTabItemMobileColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.Foreground.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundSelectedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillSelected.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundSelectedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundSelectedHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillSelectedHovered.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundSelectedHoverBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileIconForegroundSelectedPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.IconFillSelectedPressed.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileForegroundSelectedPressedBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.ForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileFocusVisualStrokeBrush" Color="#F3FFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="BackstageTabItemMobileFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="BackstageTabItemMobileColors.FocusVisualBackground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

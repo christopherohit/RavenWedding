@@ -1,0 +1,50 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="SchedulerViewBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.Background.Light"/>
+            <SolidColorBrush x:Key="SchedulerViewGridDecorationBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.GridDecoration.Light"/>
+            <SolidColorBrush x:Key="SchedulerViewSelectionBackgroundBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.SelectionBackground.Light" />
+            <SolidColorBrush x:Key="SchedulerViewForegroundBrush" Color="#FF969696" Core:ColorKey.Id="SchedulerViewColors.Foreground.Light"/>
+
+            <SolidColorBrush x:Key="SchedulerViewAllDayAreaCellBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.AllDayAreaCellBackground.Light"/>
+            <SolidColorBrush x:Key="SchedulerViewAllDayAreaCellBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.AllDayAreaCellBackgroundSelected.Light"/>
+
+            <SolidColorBrush x:Key="SchedulerViewCellBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.CellBackground.Light"/>
+            <SolidColorBrush x:Key="SchedulerViewCellBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.CellBackgroundSelected.Light"/>
+
+
+            <SolidColorBrush x:Key="SchedulerViewHeaderCellBackgroundBrush" Color="#FFF9F9F9" Core:ColorKey.Id="SchedulerViewColors.HeaderCellBackground.Light"/>
+            <SolidColorBrush x:Key="SchedulerViewHeaderCellBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.HeaderCellBorderBrush.Light"/>            
+
+            <SolidColorBrush x:Key="SchedulerMonthViewCellBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.MonthViewCellBackground.Light"/>
+            <SolidColorBrush x:Key="SchedulerMonthViewCellBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.MonthViewCellBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="SchedulerMonthViewCellForegroundBrush" Color="#99000000" Core:ColorKey.Id="SchedulerViewColors.MonthViewCellForeground.Light"/>
+            
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="SchedulerViewBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.Background.Default" />
+            <SolidColorBrush x:Key="SchedulerViewGridDecorationBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.GridDecoration.Default"/>
+            <SolidColorBrush x:Key="SchedulerViewSelectionBackgroundBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.SelectionBackground.Default" />
+            <SolidColorBrush x:Key="SchedulerViewForegroundBrush" Color="#FF969696" Core:ColorKey.Id="SchedulerViewColors.Foreground.Default" />
+
+            <SolidColorBrush x:Key="SchedulerViewAllDayAreaCellBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.AllDayAreaCellBackground.Default"/>
+            <SolidColorBrush x:Key="SchedulerViewAllDayAreaCellBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.AllDayAreaCellBackgroundSelected.Default"/>
+
+            <SolidColorBrush x:Key="SchedulerViewCellBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.CellBackground.Default"/>
+            <SolidColorBrush x:Key="SchedulerViewCellBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.CellBackgroundSelected.Default"/>
+
+            <SolidColorBrush x:Key="SchedulerViewHeaderCellBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.HeaderCellBorderBrush.Default"/>
+            <SolidColorBrush x:Key="SchedulerViewHeaderCellBackgroundBrush" Color="#FFF9F9F9" Core:ColorKey.Id="SchedulerViewColors.HeaderCellBackground.Default"/>
+
+            <SolidColorBrush x:Key="SchedulerMonthViewCellBackgroundBrush" Color="Transparent" Core:ColorKey.Id="SchedulerViewColors.MonthViewCellBackground.Default"/>
+            <SolidColorBrush x:Key="SchedulerMonthViewCellBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="SchedulerViewColors.MonthViewCellBackgroundSelected.Default"/>
+            <SolidColorBrush x:Key="SchedulerMonthViewCellForegroundBrush" Color="#99000000" Core:ColorKey.Id="SchedulerViewColors.MonthViewCellForeground.Default"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
+</ResourceDictionary>
+

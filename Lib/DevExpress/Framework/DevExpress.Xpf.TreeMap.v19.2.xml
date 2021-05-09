@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.Xpf.TreeMap.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.Xpf.TreeMap">
+      <summary>
+        <para>Contains all required classes for the functioning of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapControl"/>.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.BlueGreenPalette">
+      <summary>
+        <para>Represents the Blue Green palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.BlueGreenPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.BlueGreenPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.BlueGreenPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.BlueIIPalette">
+      <summary>
+        <para>Represents the Blue II palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.BlueIIPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.BlueIIPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.BlueIIPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.BluePalette">
+      <summary>
+        <para>Represents the Blue palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.BluePalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.BluePalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.BluePalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.BlueWarmPalette">
+      <summary>
+        <para>Represents the Blue Warm palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.BlueWarmPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.BlueWarmPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.BlueWarmPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ChameleonPalette">
+      <summary>
+        <para>Represents the Chameleon palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.ChameleonPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.ChameleonPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ChameleonPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ColorCollection">
+      <summary>
+        <para>Represents the collection of <see cref="T:System.Windows.Media.Color"/> objects.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.ColorCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.ColorCollection"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.ColorCollection.ToString(System.String,System.IFormatProvider)">
+      <summary>
+        <para>Returns the textual representation of the <see cref="T:DevExpress.Xpf.TreeMap.ColorCollection"/>.</para>
+      </summary>
+      <param name="format">A <see cref="T:System.String"/> object representing a formatting string.</param>
+      <param name="formatProvider">An object of a class implementing the <see cref="T:System.IFormatProvider"/> interface.</param>
+      <returns>A <see cref="T:System.String"/> value which is the textual representation of the <see cref="T:DevExpress.Xpf.TreeMap.ColorCollection"/>.</returns>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.CustomPalette">
+      <summary>
+        <para>Represents a custom palette for the colorizers.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.CustomPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.CustomPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.CustomPalette.Colors">
+      <summary>
+        <para>Returns the color collection of a custom palette.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.ColorCollection"/> object containing the color of a palette.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.CustomPalette.PaletteName">
+      <summary>
+        <para>Returns the name of a custom palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.DXTreeMapPalette">
+      <summary>
+        <para>Represents the DX Tree Map palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.DXTreeMapPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.DXTreeMapPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.DXTreeMapPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.GreenPalette">
+      <summary>
+        <para>Represents the Green palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.GreenPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.GreenPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.GreenPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.GreenYellowPalette">
+      <summary>
+        <para>Represents the Green Yellow palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.GreenYellowPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.GreenYellowPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.GreenYellowPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.GroupDefinitionCollection">
+      <summary>
+        <para>A collection of <see cref="T:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition"/> items.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.GroupDefinitionCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.GroupDefinitionCollection"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl">
+      <summary>
+        <para>The helper control allowing you to apply themes to tree map items generated from a hierarchical data source.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl"/> class with the default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl.ItemType">
+      <summary>
+        <para>For internal use only. Returns the type of the tree map item whose appearance the control configures.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl.OnApplyTemplate">
+      <summary>
+        <para>Called after the template is completely generated and attached to the visual tree.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl.Text">
+      <summary>
+        <para>Gets or sets the text that the control uses as the tree map item label.</para>
+      </summary>
+      <value>The text that the control provides to tree map item labels.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl.TextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.HierarchicalTreeMapItemControl.Text"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.InAFogPalette">
+      <summary>
+        <para>Represents the In a Fog palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.InAFogPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.InAFogPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.InAFogPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ITreeMapLayoutItem">
+      <summary>
+        <para>The interface that provides properties required for tree map item arrangement in the parent group.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ITreeMapLayoutItem.Layout">
+      <summary>
+        <para>Gets or sets the layout of the tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Rect"/> value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ITreeMapLayoutItem.Weight">
+      <summary>
+        <para>Returns the weight of the tree map item in its parent layout.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value specifying the weight.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.LayoutDirection">
+      <summary>
+        <para>Lists the possible tree map layout&#39;s fill directions.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.LayoutDirection.BottomLeftToTopRight">
+      <summary>
+        <para>Items are arranged from the bottom-left angle to the top-right angle.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.LayoutDirection.BottomRightToTopLeft">
+      <summary>
+        <para>Items are arranged from the bottom-right angle to the top-left angle.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.LayoutDirection.TopLeftToBottomRight">
+      <summary>
+        <para>Items are arranged from the top-left angle to the bottom-right angle.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.LayoutDirection.TopRightToBottomLeft">
+      <summary>
+        <para>Items are arranged from the top-right angle to the bottom-left angle.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.MarqueePalette">
+      <summary>
+        <para>Represents the Marquee palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.MarqueePalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.MarqueePalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.MarqueePalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.NatureColorsPalette">
+      <summary>
+        <para>Represents the Nature Colors palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.NatureColorsPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.NatureColorsPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.NatureColorsPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.NorthernLightsPalette">
+      <summary>
+        <para>Represents the Nothern Lights palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.NorthernLightsPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.NorthernLightsPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.NorthernLightsPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.Office2013Palette">
+      <summary>
+        <para>Represents the Office 2013 palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.Office2013Palette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.Office2013Palette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.Office2013Palette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.Office2016Palette">
+      <summary>
+        <para>Represents the Office 2016 palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.Office2016Palette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.Office2016Palette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.Office2016Palette.PaletteName">
+      <summary>
+        <para>Returns the name of the palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value specifying the name of the palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.OfficePalette">
+      <summary>
+        <para>Represents the Office palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.OfficePalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.OfficePalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.OfficePalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.OrangePalette">
+      <summary>
+        <para>Represents the Orange palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.OrangePalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.OrangePalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.OrangePalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.OrangeRedPalette">
+      <summary>
+        <para>Represents the Orange Red palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.OrangeRedPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.OrangeRedPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.OrangeRedPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.PaletteBase">
+      <summary>
+        <para>The base class for the tree map palettes.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.PaletteBase.Count">
+      <summary>
+        <para>Returns the count of colors in a palette.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.PaletteBase.Item(System.Int32)">
+      <summary>
+        <para>Provides indexed access to individual items in the palette.</para>
+      </summary>
+      <param name="index">A <see cref="T:System.Int32"/> value specifying the zero-based index of the item to be accessed.</param>
+      <value>A <see cref="T:System.Windows.Media.Color"/> object which represents the color in the chart palette.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.PaletteBase.PaletteName">
+      <summary>
+        <para>Returns the name of a palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value, specifying the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.PastelKitPalette">
+      <summary>
+        <para>Represents the Pastel Kit palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.PastelKitPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.PastelKitPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.PastelKitPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.PredefinedPalette">
+      <summary>
+        <para>The base class for all predefined palettes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.RedOrangePalette">
+      <summary>
+        <para>Represents the Red Orange palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.RedOrangePalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.RedOrangePalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.RedOrangePalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.RedPalette">
+      <summary>
+        <para>Represents the Red palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.RedPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.RedPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.RedPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.RedVioletPalette">
+      <summary>
+        <para>Represents the Red Violet palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.RedVioletPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.RedVioletPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.RedVioletPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.SelectionMode">
+      <summary>
+        <para>Lists the possible Tree Map selection modes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SelectionMode.Extended">
+      <summary>
+        <para>Extended single selection mode, allowing you to select several items with SHIFT held down.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SelectionMode.Multiple">
+      <summary>
+        <para>Several tree map items can be selected at the same time.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SelectionMode.None">
+      <summary>
+        <para>Selection is disabled.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SelectionMode.Single">
+      <summary>
+        <para>One tree map item can be selected at a time.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm">
+      <summary>
+        <para>A class representing the Slice and Dice layout algorithm.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm.Calculate(System.Collections.Generic.IList{DevExpress.Xpf.TreeMap.ITreeMapLayoutItem},System.Windows.Size,System.Int32)">
+      <summary>
+        <para>Arranges the specified list of tree map items.</para>
+      </summary>
+      <param name="items">A list of objects whose classes implement the <see cref="T:DevExpress.Xpf.TreeMap.ITreeMapLayoutItem"/> interface and that should be arranged.</param>
+      <param name="size">The size of the parent layout in which items should be arranged.</param>
+      <param name="groupLevel">The nested level of the parent layout.</param>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm.LayoutMode">
+      <summary>
+        <para>Gets or sets the layout mode used to arrange items using this algorithm.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutMode"/> enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm.LayoutModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm.LayoutMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutMode">
+      <summary>
+        <para>Lists the modes of the <see cref="T:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutAlgorithm"/>.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutMode.Auto">
+      <summary>
+        <para>The Layout direction is selected depending on the layout&#39;s width/height ratio.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutMode.Horizontal">
+      <summary>
+        <para>All tree map items are arranged horizontally.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.SliceAndDiceLayoutMode.Vertical">
+      <summary>
+        <para>All tree map items are arranged vertically.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.SlipstreamPalette">
+      <summary>
+        <para>Represents the Slipstream palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.SlipstreamPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.SlipstreamPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.SlipstreamPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.SquarifiedLayoutAlgorithm">
+      <summary>
+        <para>A class representing the Squarified layout algorithm.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.SquarifiedLayoutAlgorithm.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.SquarifiedLayoutAlgorithm"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.SquarifiedLayoutAlgorithm.Calculate(System.Collections.Generic.IList{DevExpress.Xpf.TreeMap.ITreeMapLayoutItem},System.Windows.Size,System.Int32)">
+      <summary>
+        <para>Arranges the specified list of tree map items.</para>
+      </summary>
+      <param name="items">A list of objects whose classes implement the <see cref="T:DevExpress.Xpf.TreeMap.ITreeMapLayoutItem"/> interface and that should be arranged.</param>
+      <param name="size">The size of the parent layout in which items should be arranged.</param>
+      <param name="groupLevel">The nested level of the parent layout.</param>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.StripedLayoutAlgorithm">
+      <summary>
+        <para>A class representing the Strip layout algorithm.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.StripedLayoutAlgorithm.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.StripedLayoutAlgorithm"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.StripedLayoutAlgorithm.Calculate(System.Collections.Generic.IList{DevExpress.Xpf.TreeMap.ITreeMapLayoutItem},System.Windows.Size,System.Int32)">
+      <summary>
+        <para>Arranges the specified list of tree map items.</para>
+      </summary>
+      <param name="items">A list of objects whose classes implement the <see cref="T:DevExpress.Xpf.TreeMap.ITreeMapLayoutItem"/> interface and that should be arranged.</param>
+      <param name="size">The size of the parent layout in which items should be arranged.</param>
+      <param name="groupLevel">The nested level of the parent layout.</param>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.StripedLayoutAlgorithm.LastStripeMinThickness">
+      <summary>
+        <para>Gets or sets the minimum thickness of the last strip.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value in percents.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.StripedLayoutAlgorithm.LastStripeMinThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.StripedLayoutAlgorithm.LastStripeMinThickness"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TerracottaPiePalette">
+      <summary>
+        <para>Represents the Terracota Pie palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TerracottaPiePalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TerracottaPiePalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TerracottaPiePalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TheTreesPalette">
+      <summary>
+        <para>Represents the The Trees palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TheTreesPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TheTreesPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TheTreesPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ToolTipInfo">
+      <summary>
+        <para>Contains settings that define the appearance and behavior of built-in map tooltips.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.ToolTipInfo.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.ToolTipInfo"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipInfo.ContentTemplate">
+      <summary>
+        <para>Gets the template that defines the presentation of the data content of the tooltip for an <see cref="P:DevExpress.Xpf.TreeMap.ToolTipInfo.Item"/>.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object specifying data content template.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipInfo.HorizontalBeakAlignment">
+      <summary>
+        <para>Gets the horizontal alignment of the tooltip&#39;s beak.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.HorizontalAlignment"/> enumeration value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipInfo.Item">
+      <summary>
+        <para>Gets the data source item for which the tooltip is invoked.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> specifying the data source item.</value>
+    </member>
+    <member name="E:DevExpress.Xpf.TreeMap.ToolTipInfo.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.Xpf.TreeMap.ToolTipInfo"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipInfo.ToolTipPosition">
+      <summary>
+        <para>Gets the tooltip position on the tree map.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Point"/> value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipInfo.ToolTipText">
+      <summary>
+        <para>Gets the hint for the tree map item located at the specified point on a map.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value representing the text displayed when the mouse pointer is over a map item.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipInfo.VerticalBeakAlignment">
+      <summary>
+        <para>Gets the vertical alignment of the tooltip&#39;s beak.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.VerticalAlignment"/> enumeration value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipInfo.Visible">
+      <summary>
+        <para>Gets the value indicating whether the tooltip is visible.</para>
+      </summary>
+      <value>true if the tooltip is visible; otherwise false.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ToolTipMousePosition">
+      <summary>
+        <para>Specifies a tooltip position near the mouse pointer.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.ToolTipMousePosition.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.ToolTipMousePosition"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ToolTipOpenMode">
+      <summary>
+        <para>Lists the values used to specify when chart tooltips should be opened.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipOpenMode.OnClick">
+      <summary>
+        <para>A tooltip appears when clicking a particular tree map item.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipOpenMode.OnHover">
+      <summary>
+        <para>A tooltip appears when hovering over a particular tree map item.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ToolTipOptions">
+      <summary>
+        <para>Contains settings that define how to display tooltips within a Tree Map.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.ToolTipOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.ToolTipOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipOptions.AutoPopDelay">
+      <summary>
+        <para>Gets or sets the time interval in which tooltip is displayed.</para>
+      </summary>
+      <value>A <see cref="T:System.TimeSpan"/> value specifying the tooltip popup interval.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipOptions.AutoPopDelayProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.ToolTipOptions.AutoPopDelay"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipOptions.CloseOnClick">
+      <summary>
+        <para>Gets or sets a value indicating whether a tooltip is closed when a tree map item is clicked.</para>
+      </summary>
+      <value>true, if a tooltip is closed when a tree map item is clicked; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipOptions.CloseOnClickProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.ToolTipOptions.CloseOnClick"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipOptions.InitialDelay">
+      <summary>
+        <para>Gets or sets the delay before tooltips are invoked.</para>
+      </summary>
+      <value>A <see cref="T:System.TimeSpan"/> value specifying the delay.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipOptions.InitialDelayProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.ToolTipOptions.InitialDelay"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipOptions.OpenMode">
+      <summary>
+        <para>Gets or sets the opening mode of tooltips.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.ToolTipOpenMode"/> enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipOptions.OpenModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.ToolTipOptions.OpenMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipOptions.Position">
+      <summary>
+        <para>Gets or sets a value indicating how the tooltip position is defined.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.ToolTipPosition"/> class descendant object.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipOptions.PositionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.ToolTipOptions.Position"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ToolTipPosition">
+      <summary>
+        <para>The base class for all classes that define how a tooltip should be positioned within a Tree Map.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.ToolTipRelativePosition">
+      <summary>
+        <para>Specifies a tooltip position depending on the tree map item arrangement for which this tooltip is invoked.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.ToolTipRelativePosition.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.ToolTipRelativePosition"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.ToolTipRelativePosition.Origin">
+      <summary>
+        <para>Gets or sets the position at which the tooltip will appear relative to the size of a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Point"/> value specifying the position of tooltips.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.ToolTipRelativePosition.OriginProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.ToolTipRelativePosition.Origin"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapColorizerBase">
+      <summary>
+        <para>A base class for all tree map colorizers.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapColorizerBase.GetItemColor(DevExpress.Xpf.TreeMap.TreeMapItem,DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo)">
+      <summary>
+        <para>Returns the color for the specified item with the specified tree location.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> object for which the color is obtained.</param>
+      <param name="group">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo"/> value specifying information about the item position in a group.</param>
+      <returns>A nullable <see cref="T:System.Windows.Media.Color"/> value that is the color of the specified item.</returns>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapControl">
+      <summary>
+        <para>A TreeMap Control to display flat and hierarchical data.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapControl"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapControl.CalcHitInfo(System.Windows.Point)">
+      <summary>
+        <para>Returns information about the TreeMap item located at the specified point.</para>
+      </summary>
+      <param name="point">A <see cref="T:System.Drawing.Point"/> structure specifying the test point coordinates relative to the control&#39;s top-left corner.</param>
+      <returns>A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapHitInfo"/> object that contains information about TreeMap item located at the test point.</returns>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.Colorizer">
+      <summary>
+        <para>Gets or sets the colorizer used to colorize TreeMap items.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapColorizerBase"/> class descendant object.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ColorizerProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.Colorizer"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.DataAdapter">
+      <summary>
+        <para>Gets or sets the data adapter for a TreeMap Control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapDataAdapterBase"/> class descendant object.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.DataAdapterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.DataAdapter"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.EnableHighlighting">
+      <summary>
+        <para>Gets or sets the value indicating whether highlighting is enabled for a TreeMap Control.</para>
+      </summary>
+      <value>true if highlighting is enabled; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.EnableHighlightingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.EnableHighlighting"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.GroupHeaderContentTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the content of the TreeMap group header.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object specifying the template used to display the group header.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.GroupHeaderContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.GroupHeaderContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.LayoutAlgorithm">
+      <summary>
+        <para>Gets or sets a layout algorithm for arranging TreeMap items.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapLayoutAlgorithmBase"/> class descendant object, specifying a layout algorithm.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.LayoutAlgorithmProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.LayoutAlgorithm"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.LeafContentTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the content of the TreeMap leaf item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object specifying the template of the TreeMap leaf item.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.LeafContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.LeafContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapControl.OnApplyTemplate">
+      <summary>
+        <para>Called after the template is completely generated and attached to the visual tree.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.SelectedItem">
+      <summary>
+        <para>Gets or sets the currently selected item of a TreeMap Control.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> specifying the currently selected item.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.SelectedItemProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.SelectedItem"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.SelectedItems">
+      <summary>
+        <para>Gets or sets the list of selected items of a TreeMap Control.</para>
+      </summary>
+      <value>A list of selected items.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.SelectedItemsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.SelectedItems"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="E:DevExpress.Xpf.TreeMap.TreeMapControl.SelectionChanged">
+      <summary>
+        <para>Occurs when tree map items are added to or removed from the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.SelectedItems"/> collection.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.SelectionMode">
+      <summary>
+        <para>Gets or sets the selection mode of the TreeMap Control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.SelectionMode"/> enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.SelectionModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.SelectionMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipContentTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the content of the TreeMap leaf item tooltip.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object defining the content of the TreeMap tooltip.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipEnabled">
+      <summary>
+        <para>Gets or sets a value indicating whether tooltips are enabled.</para>
+      </summary>
+      <value>true if tooltips are enabled; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipEnabledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipEnabled"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipGroupContentTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the content of the TreeMap group item tooltip.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object defining the content of the TreeMap tooltip.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipGroupContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipGroupContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipGroupPattern">
+      <summary>
+        <para>Gets or sets a string which represents the pattern specifying the text to be displayed in a tree map group item tooltip.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/>, which represents the tooltip pattern.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipGroupPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipGroupPattern"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipInfo">
+      <summary>
+        <para>Provides access to the <see cref="T:DevExpress.Xpf.TreeMap.ToolTipInfo"/> object that contains settings of built-in TreeMap tooltips.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.ToolTipInfo"/> object.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipOptions">
+      <summary>
+        <para>Gets or sets options used to display a tooltip.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.ToolTipOptions"/> object.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipOptions"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipPattern">
+      <summary>
+        <para>Gets or sets a string which represents the pattern specifying the text to be displayed in a tree map leaf item tooltip.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/>, which represents the tooltip pattern.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipPattern"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of the TreeMap tooltip.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object defining a TreeMap tooltip presentation template.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.ToolTipTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapControl.TreeMapStyle">
+      <summary>
+        <para>Gets or sets the tree map appearance settings.</para>
+      </summary>
+      <value>The tree map appearance settings storage.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapControl.TreeMapStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapControl.TreeMapStyle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapDataAdapterBase">
+      <summary>
+        <para>A base class for all tree map data adapters.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapDependencyObject">
+      <summary>
+        <para>Enables Windows Presentation Foundation (WPF) property system services for its derived model classes.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapDependencyObject.Owner">
+      <summary>
+        <para>Returns an object&#39;s owner.</para>
+      </summary>
+      <value>An owner object.</value>
+    </member>
+    <member name="E:DevExpress.Xpf.TreeMap.TreeMapDependencyObject.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapDependencyObject"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter">
+      <summary>
+        <para>The data adapter that provides flat data to a tree map.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.DataMember">
+      <summary>
+        <para>Specifies the name of an object in a data source to provide data for a data adapter.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.DataMemberProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.DataMember"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.DataSource">
+      <summary>
+        <para>Gets or sets the object that is a data source of the data adapter.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> that is a data source.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.DataSourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.DataSource"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.Groups">
+      <summary>
+        <para>Gets or sets the collection of <see cref="T:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition"/> objects used to group tree map items.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.GroupDefinitionCollection"/> collection containing <see cref="T:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition"/> objects.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.GroupsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.Groups"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.LabelDataMember">
+      <summary>
+        <para>Gets or sets the name of the data field whose values are used to automatically generate <see cref="P:DevExpress.Xpf.TreeMap.TreeMapItem.Label"/> values.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.LabelDataMemberProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.LabelDataMember"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.ValueDataMember">
+      <summary>
+        <para>Gets or sets the name of the data field whose values are used to automatically generate <see cref="P:DevExpress.Xpf.TreeMap.TreeMapItem.Value"/> values.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.ValueDataMemberProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter.ValueDataMember"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer">
+      <summary>
+        <para>The colorizer that colors tree map items from the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.StartColor"/> to the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.EndColor"/> using a gradient.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.EndColor">
+      <summary>
+        <para>Gets or sets the end color of the gradient used to color tree map items.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Color"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.EndColorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.EndColor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.GetItemColor(DevExpress.Xpf.TreeMap.TreeMapItem,DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo)">
+      <summary>
+        <para>Returns the color for the specified item with the specified tree location.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> object for which the color is obtained.</param>
+      <param name="group">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo"/> value specifying information about the item position in a group.</param>
+      <returns>A nullable <see cref="T:System.Windows.Media.Color"/> value that is the color of the specified item.</returns>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.StartColor">
+      <summary>
+        <para>Gets or sets the start color of the gradient used to color tree map items.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Color"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.StartColorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGradientColorizer.StartColor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition">
+      <summary>
+        <para>The definition of a group provided from flat data using the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapFlatDataAdapter"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.GroupDataMember">
+      <summary>
+        <para>Gets or sets the name of a data member of the data source used to group tree map items generated from the data source.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value, specifying the name of the data member.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.GroupDataMemberProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.GroupDataMember"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.HeaderContentTemplate">
+      <summary>
+        <para>Gets or sets the content template for headers of automatically generated groups.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object, specifying the template.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.HeaderContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.HeaderContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.NullValueGroupHeader">
+      <summary>
+        <para>Gets or sets the Group Header text for the null (Nothing in Visual Basic) value of the group data member.</para>
+      </summary>
+      <value>The Group Header text.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.NullValueGroupHeaderProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGroupDefinition.NullValueGroupHeader"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer">
+      <summary>
+        <para>The colorizer that colors the tree map items in colors blended from group colors and gradient colors in a proportion based on the tree map item value.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.GetItemColor(DevExpress.Xpf.TreeMap.TreeMapItem,DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo)">
+      <summary>
+        <para>Returns the color for the specified item with the specified tree location.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> object for which the color is obtained.</param>
+      <param name="group">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo"/> value specifying information about the item position in a group.</param>
+      <returns>A nullable <see cref="T:System.Windows.Media.Color"/> value that is the color of the specified item.</returns>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.GradientColor">
+      <summary>
+        <para>Gets or sets the color mixed with the group color for a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Color"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.GradientColorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.GradientColor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.Max">
+      <summary>
+        <para>Gets or sets the value indicating the maximum portion of the group color in the color mixed for a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value between 0 and 1.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.MaxProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.Max"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.Min">
+      <summary>
+        <para>Gets or sets the value indicating the minimum portion of the group color in the color mixed for a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value between 0 and 1.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.MinProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapGroupGradientColorizer.Min"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter">
+      <summary>
+        <para>A data adapter that allows you to provide hierarchical data to the Tree Map.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter.DataSource">
+      <summary>
+        <para>Gets or sets the object that is the data source of the data adapter.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> that is the data source.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter.DataSourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter.DataSource"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter.ValueDataMember">
+      <summary>
+        <para>Gets or sets the name of the data field whose values are used to specify values of tree map items.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter.ValueDataMemberProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapHierarchicalDataAdapter.ValueDataMember"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapHitInfo">
+      <summary>
+        <para>Contains information about what is located at a specific point within the Tree Map.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapHitInfo.TreeMapItem">
+      <summary>
+        <para>Returns the tree map item that is under the point being hit tested.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> object.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapItem">
+      <summary>
+        <para>An item of a tree map.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapItem.#ctor(System.Double,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> class with the specified value and label.</para>
+      </summary>
+      <param name="value">A <see cref="T:System.Double"/> value that is <see cref="P:DevExpress.Xpf.TreeMap.TreeMapItem.Value"/>.</param>
+      <param name="label">A <see cref="T:System.String"/> object that is <see cref="P:DevExpress.Xpf.TreeMap.TreeMapItem.Label"/>.</param>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.ActualBackground">
+      <summary>
+        <para>Returns the actual background brush of a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Brush"/> object.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.ActualForeground">
+      <summary>
+        <para>Returns the actual foreground brush of a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Brush"/> object.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.ActualTemplate">
+      <summary>
+        <para>Gets or sets the actual template of the current tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object representing the template used to represent the tree map item.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapItem.ActualTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapItem.ActualTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.Background">
+      <summary>
+        <para>Gets or sets the background brush of a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Brush"/> object.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.Children">
+      <summary>
+        <para>Returns the collection of children items of a current item.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemCollection"/> object, containing children <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> objects.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.FontSize">
+      <summary>
+        <para>Returns the tree map item&#39;s font size.</para>
+      </summary>
+      <value>The tree map item&#39;s font size.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.FontWeight">
+      <summary>
+        <para>Returns the tree map item&#39;s font weight.</para>
+      </summary>
+      <value>The tree map item&#39;s font weight.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.Foreground">
+      <summary>
+        <para>Gets or sets the foreground brush of a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Brush"/> object.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.GroupBorderBrush">
+      <summary>
+        <para>Returns the tree map item&#39;s border brush if the item is a group.</para>
+      </summary>
+      <value>The tree map item&#39;s border brush if the item is a group.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.IsHighlighted">
+      <summary>
+        <para>Returns the value indicating whether a tree map item is highlighted.</para>
+      </summary>
+      <value>true if an item is highlighted; otherwise false.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.IsSelected">
+      <summary>
+        <para>Returns the value indicating whether a tree map item is selected.</para>
+      </summary>
+      <value>true if an item is selected; otherwise false.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.Label">
+      <summary>
+        <para>Gets or sets the label of a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value, representing the label of a tree map item.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.OpacityMask">
+      <summary>
+        <para>Gets or sets the opacity mask of the current tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Drawing.Brush"/> class descendant object representing the opacity mask.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.Tag">
+      <summary>
+        <para>Gets or sets the object containing data related to a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> that contains data about the chart element.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItem.Value">
+      <summary>
+        <para>Gets or sets the value of a tree map item.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapItemCollection">
+      <summary>
+        <para>Represents a collection of <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> objects.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapItemCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemCollection"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo">
+      <summary>
+        <para>This class stores information about a group of a tree map item.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Double,System.Double)">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo"/> class with the specified settings.</para>
+      </summary>
+      <param name="groupLevel">A <see cref="T:System.Int32"/> value specifying the nested level of a tree map item.</param>
+      <param name="groupIndex">A <see cref="T:System.Int32"/> value specifying the index of the item&#39;s group in group&#39;s parent.</param>
+      <param name="itemIndex">A <see cref="T:System.Int32"/> value specifying the index of the item&#39;s group.</param>
+      <param name="minValue">A <see cref="T:System.Double"/> value specifying the minimum item value in the item group.</param>
+      <param name="maxValue">A <see cref="T:System.Double"/> value specifying the maximum item value in the item group.</param>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo.GroupIndex">
+      <summary>
+        <para>Returns the index of the group in the descending sorted item collection of the group&#39;s parent.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo.GroupLevel">
+      <summary>
+        <para>Returns an item&#39;s nesting level.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo.ItemIndex">
+      <summary>
+        <para>Returns the index of an item in the source collection of the group.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value specifying the index of an item.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo.MaxValue">
+      <summary>
+        <para>Returns the maximum value of the items in this group.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo.MinValue">
+      <summary>
+        <para>Returns the minimum value of the items in this group.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapItemStorage">
+      <summary>
+        <para>Stores a collection of tree map items and provides them to a tree map control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapItemStorage.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemStorage"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapItemStorage.Items">
+      <summary>
+        <para>Returns the collection of tree map items contained in this storage.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemCollection"/> object containing <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> objects.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapItemStorage.ItemsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapItemStorage.Items"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapLayoutAlgorithm">
+      <summary>
+        <para>The base class for all predefined layout algorithms.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapLayoutAlgorithm.Direction">
+      <summary>
+        <para>Gets or sets the layout fill direction used by the algorithm.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.Charts.LayoutDirection"/> enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapLayoutAlgorithm.DirectionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapLayoutAlgorithm.Direction"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapLayoutAlgorithmBase">
+      <summary>
+        <para>The base class for all classes representing layout algorithms.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapLayoutAlgorithmBase.Calculate(System.Collections.Generic.IList{DevExpress.Xpf.TreeMap.ITreeMapLayoutItem},System.Windows.Size,System.Int32)">
+      <summary>
+        <para>Arranges the specified list of tree map items.</para>
+      </summary>
+      <param name="items">A list of objects whose classes implement the <see cref="T:DevExpress.Xpf.TreeMap.ITreeMapLayoutItem"/> interface and that should be arranged.</param>
+      <param name="size">The size of the parent layout in which items should be arranged.</param>
+      <param name="groupLevel">The nested level of the parent layout.</param>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizer">
+      <summary>
+        <para>The colorizer that colors tree map items using a palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizer.ColorizeGroups">
+      <summary>
+        <para>Gets or sets value indicating whether tree map items should be colorized by groups.</para>
+      </summary>
+      <value>true, if items in one group should be colorized using one color; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizer.ColorizeGroupsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizer.ColorizeGroups"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizer.GetItemColor(DevExpress.Xpf.TreeMap.TreeMapItem,DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo)">
+      <summary>
+        <para>Returns the color for the specified item with the specified tree location.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> object for which the color is obtained.</param>
+      <param name="group">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo"/> value specifying information about the item position in a group.</param>
+      <returns>A nullable <see cref="T:System.Windows.Media.Color"/> value that is the color of the specified item.</returns>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizerBase">
+      <summary>
+        <para>The base class for all palette based colorizers.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizerBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizerBase"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizerBase.Palette">
+      <summary>
+        <para>Gets or sets the palette used to color tree map items by the colorizer.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.TreeMap.PaletteBase"/> class descendant object.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizerBase.PaletteProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapPaletteColorizerBase.Palette"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer">
+      <summary>
+        <para>A colorizer that allows you to provide colors based on which range the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapItem.Value"/> belongs to.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.GetItemColor(DevExpress.Xpf.TreeMap.TreeMapItem,DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo)">
+      <summary>
+        <para>Returns the color for the specified item with the specified tree location.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItem"/> object for which the color is obtained.</param>
+      <param name="group">A <see cref="T:DevExpress.Xpf.TreeMap.TreeMapItemGroupInfo"/> value specifying information about the item position in a group.</param>
+      <returns>A nullable <see cref="T:System.Windows.Media.Color"/> value that is the color of the specified item.</returns>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.GroupColor">
+      <summary>
+        <para>Gets or sets the color used to colorize groups.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Color"/> value.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.GroupColorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.GroupColor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.RangeStops">
+      <summary>
+        <para>Gets range stops for the range colorizer.</para>
+      </summary>
+      <value>A collection of <see cref="T:System.Double"/> values specifying range stops.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.RangeStopsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapRangeColorizer.RangeStops"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.Xpf.TreeMap.TreeMapControl.SelectionChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventArgs.#ctor(System.Collections.Generic.List{System.Object})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventArgs"/> class with the specified settings.</para>
+      </summary>
+      <param name="selection">A list of selected objects.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventArgs.#ctor(System.Collections.IList)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventArgs"/> class with the specified settings.</para>
+      </summary>
+      <param name="selection">A list of selected items.</param>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventArgs.Selection">
+      <summary>
+        <para>Returns the list of selected items.</para>
+      </summary>
+      <value>A list of selected items.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventHandler">
+      <summary>
+        <para>Represents a method that will handle the <see cref="E:DevExpress.Xpf.TreeMap.TreeMapControl.SelectionChanged"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">An <see cref="T:DevExpress.Xpf.TreeMap.TreeMapSelectionChangedEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.TreeMapStyle">
+      <summary>
+        <para>The tree map appearance settings storage.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.TreeMapStyle.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.TreeMapStyle"/> class with the default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupBackground">
+      <summary>
+        <para>Gets or sets the group background brush.</para>
+      </summary>
+      <value>The group background brush.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupBorderBrush">
+      <summary>
+        <para>Gets or sets the group border brush.</para>
+      </summary>
+      <value>The group border brush.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupFontSize">
+      <summary>
+        <para>Gets or sets the group font size.</para>
+      </summary>
+      <value>The group font size.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupFontSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupFontSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupFontWeight">
+      <summary>
+        <para>Gets or sets the group font weight.</para>
+      </summary>
+      <value>The group font weight.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupFontWeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupFontWeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupForeground">
+      <summary>
+        <para>Gets or sets the group foreground brush.</para>
+      </summary>
+      <value>The group foreground brush.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.GroupForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupBackground">
+      <summary>
+        <para>Gets or sets the subgroup foreground brush.</para>
+      </summary>
+      <value>The subgroup foreground brush.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupFontSize">
+      <summary>
+        <para>Gets or sets the subgroup font size.</para>
+      </summary>
+      <value>The subgroup font size.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupFontSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupFontSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupFontWeight">
+      <summary>
+        <para>Gets or sets the subgroup font weight.</para>
+      </summary>
+      <value>The subgroup font weight.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupFontWeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupFontWeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupForeground">
+      <summary>
+        <para>Gets or sets the subgroup foreground.</para>
+      </summary>
+      <value>The subgroup foreground.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.TreeMap.TreeMapStyle.SubGroupForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.VioletIIPalette">
+      <summary>
+        <para>Represents the Violet II palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.VioletIIPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.VioletIIPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.VioletIIPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.VioletPalette">
+      <summary>
+        <para>Represents the Violet palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.VioletPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.VioletPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.VioletPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.YellowOrangePalette">
+      <summary>
+        <para>Represents the Yellow Orange palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.YellowOrangePalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.YellowOrangePalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.YellowOrangePalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.TreeMap.YellowPalette">
+      <summary>
+        <para>Represents the Yellow palette.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.TreeMap.YellowPalette.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.TreeMap.YellowPalette"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.TreeMap.YellowPalette.PaletteName">
+      <summary>
+        <para>Returns the name of this palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> object representing the name of a palette.</value>
+    </member>
+  </members>
+</doc>

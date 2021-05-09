@@ -1,0 +1,18 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ProgressBarSplashScreenViewStateForeground" Color="#FF106EBE" Core:ColorKey.Id="ProgressBarSplashScreenViewColors.StateForeground.Light"/>
+            <SolidColorBrush x:Key="ProgressBarSplashScreenViewBackground" Color="#FFFFFFFF" Core:ColorKey.Id="ProgressBarSplashScreenViewColors.Background.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ProgressBarSplashScreenViewStateForeground" Color="#FFDCDCDC" Core:ColorKey.Id="ProgressBarSplashScreenViewColors.StateForeground.Default" />
+            <SolidColorBrush x:Key="ProgressBarSplashScreenViewBackground" Color="#C0000000" Core:ColorKey.Id="ProgressBarSplashScreenViewColors.Background.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="ToolTipInfo" />
+    <RootPropertyPathName Name="Visibility" />
+    <RootPropertyPathName Name="ToolTipPosition" />
+    <RootPropertyPathName Name="ToolTipTemplate" />
+    <RootPropertyPathName Name="ActualNavigationPanelOptions" />
+    <RootPropertyPathName Name="ShowKilometersScale" />
+    <RootPropertyPathName Name="ShowMilesScale" />
+    <RootPropertyPathName Name="ShowCoordinates" />
+    <RootPropertyPathName Name="ShowZoomTrackbar" />
+    <RootPropertyPathName Name="EnableZooming" />
+    <RootPropertyPathName Name="ZoomLevel" />
+    <RootPropertyPathName Name="EnableScrolling" />
+    <RootPropertyPathName Name="ShowScrollButtons" />
+    <RootPropertyPathName Name="EnableNavigation" />
+    <RootPropertyPathName Name="ToolTipText" />
+    <RootPropertyPathName Name="Position" />
+    <RootPropertyPathName Name="MilesScaleBarWidth" />
+    <RootPropertyPathName Name="MilesScaleText" />
+    <RootPropertyPathName Name="KilometersScaleBarWidth" />
+    <RootPropertyPathName Name="KilometersScaleText" />
+    <RootPropertyPathName Name="Orientation" />
+    <RootPropertyPathName Name="LongitudeCardinalPoint" />
+    <RootPropertyPathName Name="LongitudeSeconds" />
+    <RootPropertyPathName Name="LongitudeMinutes" />
+    <RootPropertyPathName Name="LongitudeDegrees" />
+    <RootPropertyPathName Name="LatitudeCardinalPoint" />
+    <RootPropertyPathName Name="LatitudeSeconds" />
+    <RootPropertyPathName Name="LatitudeMinutes" />
+    <RootPropertyPathName Name="LatitudeDegrees" />
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="Padding" />
+    <RootPropertyPathName Name="ColorLegendItems" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="DescriptionVisible" />
+    <RootPropertyPathName Name="Header" />
+    <RootPropertyPathName Name="HeaderVisible" />
+    <RootPropertyPathName Name="Fill" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="TextBrush" />
+    <RootPropertyPathName Name="Brush" />
+    <RootPropertyPathName Name="Item" />
+    <RootPropertyPathName Name="MarkerTemplate" />
+    <RootPropertyPathName Name="ContentTemplate" />
+    <RootPropertyPathName Name="Content" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="ThemeDictionaries" />
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.ColorKey">
+      <RootMethod Name="GetId" />
+      <RootMethod Name="SetId" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.SystemColorsSchemeDictionaryLoader" />
+    <RootType FullName="DevExpress.Core.BooleanToVisibilityConverter">
+      <RootProperty Name="Invert" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapItemTemplateSelector">
+      <RootProperty Name="MapCustomElementTemplate" />
+      <RootProperty Name="MapPushpinTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.PushpinControl">
+      <RootProperty Name="Item" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Template" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.PushpinMarkerControl">
+      <RootProperty Name="Item" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapItemsLayerBase" />
+    <RootType FullName="DevExpress.UI.Xaml.Map.VectorLayer">
+      <RootProperty Name="ShapeFill" />
+      <RootProperty Name="ShapeStroke" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.VectorItemsLayer" />
+    <RootType FullName="DevExpress.UI.Xaml.Map.VectorFileLayer" />
+    <RootType FullName="DevExpress.UI.Xaml.Map.MultiScaleImage" />
+    <RootType FullName="DevExpress.UI.Xaml.Map.ImageTilesLayer" />
+    <RootType FullName="DevExpress.UI.Xaml.Map.ColorListLegend" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.ColorScaleLegend" />
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapScrollButtons">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapCoordinatesPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapScalePanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ShowKilometersScale" />
+      <RootProperty Name="ShowMilesScale" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapZoomTrackbarButton">
+      <RootProperty Name="Style" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapVerticalZoomTrackbar">
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="ZoomLevel" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapHorizontalZoomTrackbar">
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="ZoomLevel" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.MapControl">
+      <RootProperty Name="ToolTipTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="RenderTransform" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Child" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="CornerRadius" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.NavigationPanel">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.ToolTipPanel">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Position" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="ContentTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontWeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.ColorScalePanel">
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="UseLayoutRounding" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.VectorLayerItemsControl">
+      <RootProperty Name="ItemTemplateSelector" />
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.VectorLayerPanel" />
+    <RootType FullName="Windows.UI.Xaml.Media.TransformGroup">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TranslateTransform">
+      <RootProperty Name="X" />
+      <RootProperty Name="Y" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Map.PushpinPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Content" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

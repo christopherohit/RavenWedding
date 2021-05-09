@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Reports.Web.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Reports.Web">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the ASP.NET Reports Module (Obsolete).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Reports.Web.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule.DefaultPreviewFormat">
+      <summary>
+        <para>Specifies in which format reports are previewed when they are pressed in a List View.</para>
+      </summary>
+      <value>The ReportOutputType enumeration value that specifies the display format of reports from the Report List View.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule.GetXafResourceLocalizerTypes">
+      <summary>
+        <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the <see cref="T:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule"/>.</para>
+      </summary>
+      <returns>An ICollection&lt;Type&gt; collection containing the types of the Resource Localizers supplied with the ReportsAspNetModule.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule.ShowFormatSpecificPreviewActions">
+      <summary>
+        <para>Specifies whether the PreviewInMht, PreviewInXls, PreviewInPdf and PreviewInRtf Actions are activated for the Report List View.</para>
+      </summary>
+      <value>true if the Actions are activated for the Report List View; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Reports.Web.WebReportServiceController">
+      <summary>
+        <para>A <see cref="T:DevExpress.ExpressApp.ViewController"/> descendant containing platform-specific code, providing end-users with ability to view reports.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Web.WebReportServiceController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Reports.Web.WebReportServiceController"/> class.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

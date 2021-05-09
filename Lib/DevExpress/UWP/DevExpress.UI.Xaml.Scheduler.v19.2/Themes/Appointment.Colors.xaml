@@ -1,0 +1,39 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="AppointmentForegroundBrush" Color="#99000000" Core:ColorKey.Id="AppointmentColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrush" Color="Transparent" Core:ColorKey.Id="AppointmentColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushHovered" Color="#21000000" Core:ColorKey.Id="AppointmentColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushPressed" Color="#60000000" Core:ColorKey.Id="AppointmentColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushSelected" Color="#FF0078D7" Core:ColorKey.Id="AppointmentColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushSelectedHovered" Color="#FF0078D7" Core:ColorKey.Id="AppointmentColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushSelectedPressed" Color="#FF0078D7" Core:ColorKey.Id="AppointmentColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="AppointmentsMoreButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBackgroundHoveredBrush" Color="#21000000" Core:ColorKey.Id="AppointmentsMoreButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="AppointmentsMoreButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonForegroundBrush" Color="#99000000" Core:ColorKey.Id="AppointmentsMoreButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="AppointmentsMoreButtonColors.BorderBrush.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="AppointmentForegroundBrush" Color="#99000000" Core:ColorKey.Id="AppointmentColors.Foreground.Default" />
+
+            <SolidColorBrush x:Key="AppointmentBorderBrush" Color="Transparent" Core:ColorKey.Id="AppointmentColors.BorderBrush.Default"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushHovered" Color="#21000000" Core:ColorKey.Id="AppointmentColors.BorderBrushHovered.Default"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushPressed" Color="#60000000" Core:ColorKey.Id="AppointmentColors.BorderBrushPressed.Default"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushSelected" Color="#FF0078D7" Core:ColorKey.Id="AppointmentColors.BorderBrushSelected.Default"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushSelectedHovered" Color="#FF0078D7" Core:ColorKey.Id="AppointmentColors.BorderBrushSelectedHovered.Default"/>
+            <SolidColorBrush x:Key="AppointmentBorderBrushSelectedPressed" Color="#FF0078D7" Core:ColorKey.Id="AppointmentColors.BorderBrushSelectedPressed.Default"/>
+
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="AppointmentsMoreButtonColors.Background.Default"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBackgroundHoveredBrush" Color="#21000000" Core:ColorKey.Id="AppointmentsMoreButtonColors.BackgroundHovered.Default"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="AppointmentsMoreButtonColors.BackgroundPressed.Default"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonForegroundBrush" Color="#99000000" Core:ColorKey.Id="AppointmentsMoreButtonColors.Foreground.Default"/>
+            <SolidColorBrush x:Key="AppointmentsMoreButtonBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="AppointmentsMoreButtonColors.BorderBrush.Default"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+

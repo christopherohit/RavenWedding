@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Workflow.Win.v19.2</name>
+  </assembly>
+  <members>
+    <member name="T:DevExpress.ExpressApp.Workflow.ActivitiesInformationEventArgs">
+      <summary>
+        <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.QueryAvailableActivities"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Workflow.ActivitiesInformationEventArgs.#ctor(System.Collections.Generic.List{DevExpress.ExpressApp.Workflow.ActivityInformation})">
+      <summary>
+        <para>Creates a new instance of the <see cref="T:DevExpress.ExpressApp.Workflow.ActivitiesInformationEventArgs"/> class.</para>
+      </summary>
+      <param name="activitiesInformation">A list of ActivityInformation objects representing activities that will be available in the rehosted workflow designer&#39;s toolbox. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Workflow.ActivitiesInformationEventArgs.ActivitiesInformation"/> property.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Workflow.ActivitiesInformationEventArgs.ActivitiesInformation">
+      <summary>
+        <para>Specifies activities that will be available in the rehosted workflow designer&#39;s toolbox.</para>
+      </summary>
+      <value>A list of ActivityInformation objects representing activities that will be available in the rehosted workflow designer&#39;s toolbox.</value>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Workflow.Win">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the Windows Forms Workflow Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase">
+      <summary>
+        <para>An abstract base class for the Workflow Designer control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.ActivityLoaded">
+      <summary>
+        <para>Occurs after an Workflow Activity is loaded to the <see cref="T:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase"/> control.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.CanFilterResourceAssemblyNamespaces">
+      <summary>
+        <para>Specifies if the resource assemblies are filtered by the Workflow Designer.</para>
+      </summary>
+      <value>true, if the resource assemblies are filtered; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.CanSetTargetFramework45">
+      <summary>
+        <para>Specifies whether or not the target framework version is set to 4.5 for the Workflow Designer.</para>
+      </summary>
+      <value>true, if the target framework is set to 4.5; otherwise - false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.Designer">
+      <summary>
+        <para>Gets the Workfolw Designer.</para>
+      </summary>
+      <value>A WorkflowDesigner object which renders the visual representation of a workflow model.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.RemoveFramework45DebugSymbol">
+      <summary>
+        <para>Specifies whether or not the framework 4.5 debug symbol is removed from the loaded XAML.</para>
+      </summary>
+      <value>true, when debug symbol is removed, otherwise - false.</value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.WorkflowDesignerCreated">
+      <summary>
+        <para>Occurs after the <see cref="P:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.Designer"/> property is initialized</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Workflow.Win.WorkflowDesignerControlBase.Xaml">
+      <summary>
+        <para>Specifies the XAML code loaded to the Workflow Designer.</para>
+      </summary>
+      <value>A string which is the XAML code loaded to the Workflow Designer.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Workflow.Win.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+      <summary>
+        <para>Registers the NavigationItemsWorkflowsUpdater Generator Updater.</para>
+      </summary>
+      <param name="updaters">A ModelNodesGeneratorUpdaters object providing access to the list of Generator Updaters.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.AvailableActivitiesProvider">
+      <summary>
+        <para>Specifies the object that provides activities available in the Workflow Designer toolbox.</para>
+      </summary>
+      <value>An AvailableActivitiesProvider object that provides activities available in the Workflow Designer toolbox.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.GetAvailableActivities(System.Collections.Generic.List{DevExpress.ExpressApp.Workflow.ActivityInformation})">
+      <summary>
+        <para>This method is intended for internal use.</para>
+      </summary>
+      <param name="activitiesInformation"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule"/> module.</returns>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.QueryAvailableActivities">
+      <summary>
+        <para>Occurs prior to loading the rehosted workflow designer.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.Workflow.Win.WorkflowWindowsFormsModule"/> after it has been created.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages an XAF application.</param>
+    </member>
+  </members>
+</doc>

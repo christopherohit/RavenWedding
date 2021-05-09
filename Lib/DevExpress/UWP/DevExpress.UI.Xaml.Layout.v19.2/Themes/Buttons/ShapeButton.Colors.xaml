@@ -1,0 +1,55 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ShapeButtonFocusVisualWhiteStrokeThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonColors.FocusVisualWhiteStroke.Default" />
+            <SolidColorBrush x:Key="ShapeButtonFocusVisualBlackStrokeThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonColors.FocusVisualBlackStroke.Default" />
+            <SolidColorBrush x:Key="ShapeButtonBackgroundHoverBrush" Color="#FF6A6A6A" Core:ColorKey.Id="ShapeButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ShapeButtonForegroundHoverBrush" Color="#FF414141" Core:ColorKey.Id="ShapeButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ShapeButtonBackgroundPressedBrush" Color="#FF3E3E3E" Core:ColorKey.Id="ShapeButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ShapeButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ShapeButtonBackgroundDisabledBrush" Color="#FF707070" Core:ColorKey.Id="ShapeButtonColors.BackgroundDisabled.Default" />
+            <SolidColorBrush x:Key="ShapeButtonForegroundDisabledBrush" Color="#FF4E4E4E" Core:ColorKey.Id="ShapeButtonColors.ForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="ShapeButtonBorderDisabledBrush" Color="#FF3B3B3B" Core:ColorKey.Id="ShapeButtonColors.BorderBrushDisabled.Default" />
+            <SolidColorBrush x:Key="ShapeButtonBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="ShapeButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ShapeButtonForegroundBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ShapeButtonBorderBrush" Color="#FF3E3E3E" Core:ColorKey.Id="ShapeButtonColors.BorderBrush.Default" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ShapeButtonFocusVisualWhiteStrokeThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonColors.FocusVisualWhiteStroke.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonFocusVisualBlackStrokeThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonColors.FocusVisualBlackStroke.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonBackgroundHoverBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ShapeButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonForegroundHoverBrush" Color="#FF414141" Core:ColorKey.Id="ShapeButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonBackgroundPressedBrush" Color="#FF969696" Core:ColorKey.Id="ShapeButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonBackgroundDisabledBrush" Color="#FFF9F9F9" Core:ColorKey.Id="ShapeButtonColors.BackgroundDisabled.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonForegroundDisabledBrush" Color="#FFC2C2C2" Core:ColorKey.Id="ShapeButtonColors.ForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonBorderDisabledBrush" Color="#FFEFEFEF" Core:ColorKey.Id="ShapeButtonColors.BorderBrushDisabled.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonBackgroundBrush" Color="#FFEFEFEF" Core:ColorKey.Id="ShapeButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ShapeButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ShapeButtonColors.BorderBrush.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

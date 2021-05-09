@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.TreeMap.v19.2.Core</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.TreeMap">
+      <summary>
+        <para>Contains all common classes that the WinForms TreeMap Control and WPF TreeMap Control require to function.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.TreeMap.IHierarchicalItem">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.TreeMap.IHierarchicalItem.Children">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.TreeMap.IHierarchicalItem.Label">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.TreeMap.IHierarchicalItem.Tag">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.TreeMap.IHierarchicalItem.Value">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.TreeMap.ISunburstItem">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.TreeMap.ITreeMapItem">
+      <summary>
+        <para>The interface that should be implemented by a class which can be used as a tree map item.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

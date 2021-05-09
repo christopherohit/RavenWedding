@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Appointment" />
+    <RootPropertyPathName Name="Subject" />
+    <RootPropertyPathName Name="BottomText" />
+    <RootPropertyPathName Name="IsBottomTextVisible" />
+    <RootPropertyPathName Name="TopText" />
+    <RootPropertyPathName Name="IsTopTextVisible" />
+    <RootPropertyPathName Name="Label" />
+    <RootPropertyPathName Name="Style" />
+    <RootPropertyPathName Name="Brush" />
+    <RootPropertyPathName Name="Status" />
+    <RootPropertyPathName Name="Type" />
+    <RootPropertyPathName Name="IsDragging" />
+    <RootPropertyPathName Name="HasReminder" />
+    <RootPropertyPathName Name="NewEventCommand" />
+    <RootPropertyPathName Name="ViewModel" />
+    <RootPropertyPathName Name="SnoozeSelectedReminderCommand" />
+    <RootPropertyPathName Name="SnoozeList" />
+    <RootPropertyPathName Name="SelectedSnooze" />
+    <RootPropertyPathName Name="DismissAllCommand" />
+    <RootPropertyPathName Name="DismissSelectedReminderCommand" />
+    <RootPropertyPathName Name="Reminders" />
+    <RootPropertyPathName Name="SelectedReminder" />
+    <RootPropertyPathName Name="TimeBeforeAppointmentStartDisplayText" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Commands" />
+    <RootPropertyPathName Name="LessResourcesPerPageCommand" />
+    <RootPropertyPathName Name="MoreResourcesPerPageCommand" />
+    <RootPropertyPathName Name="GoToResourceCommand" />
+    <RootPropertyPathName Name="Header" />
+    <RootPropertyPathName Name="DisplayTexts" />
+    <RootPropertyPathName Name="Resource" />
+    <RootPropertyPathName Name="Caption" />
+    <RootPropertyPathName Name="View" />
+    <RootPropertyPathName Name="Owner" />
+    <RootPropertyPathName Name="ActualGroupType" />
+    <RootPropertyPathName Name="ActualStyleSettings" />
+    <RootPropertyPathName Name="GroupSpacing" />
+    <RootPropertyPathName Name="VisualData" />
+    <RootPropertyPathName Name="HeaderCellContainers" />
+    <RootPropertyPathName Name="HeaderCellMinHeight" />
+    <RootPropertyPathName Name="CellMinWidth" />
+    <RootPropertyPathName Name="AppointmentMinHeight" />
+    <RootPropertyPathName Name="CellContainers" />
+    <RootPropertyPathName Name="CellTemplate" />
+    <RootPropertyPathName Name="CellMinHeight" />
+    <RootPropertyPathName Name="VerticalOffset" />
+    <RootPropertyPathName Name="ScrollViewer" />
+    <RootPropertyPathName Name="TimeRulerCellMinWidth" />
+    <RootPropertyPathName Name="TimeRulerCellMinHeight" />
+    <RootPropertyPathName Name="TimeRulers" />
+    <RootPropertyPathName Name="ShowAllDayArea" />
+    <RootPropertyPathName Name="AllDayAreaAppointmentMinHeight" />
+    <RootPropertyPathName Name="AllDayAreaCellContainers" />
+    <RootPropertyPathName Name="AllDayAreaCellTemplate" />
+    <RootPropertyPathName Name="AllDayAreaCellMinHeight" />
+    <RootPropertyPathName Name="AllDayAreaCellMinWidth" />
+    <RootPropertyPathName Name="ShowTimeIndicatorOverAppointment" />
+    <RootPropertyPathName Name="ActualSize" />
+    <RootPropertyPathName Name="Height" />
+    <RootPropertyPathName Name="Settings" />
+    <RootPropertyPathName Name="ToolbarTemplate" />
+    <RootPropertyPathName Name="HeaderPresenterTemplate" />
+    <RootPropertyPathName Name="GoNextInterval" />
+    <RootPropertyPathName Name="GoPrevInterval" />
+    <RootPropertyPathName Name="TimeIndicator" />
+    <RootPropertyPathName Name="Fill" />
+    <RootPropertyPathName Name="Views" />
+    <RootPropertyPathName Name="VisibleIntervals" />
+    <RootPropertyPathName Name="Interval" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="Icon" />
+    <RootPropertyPathName Name="CanExecute" />
+    <RootPropertyPathName Name="RepeatPane" />
+    <RootPropertyPathName Name="DayOfWeek" />
+    <RootPropertyPathName Name="WeekOfMonth" />
+    <RootPropertyPathName Name="Frequency" />
+    <RootPropertyPathName Name="EditedItem" />
+    <RootPropertyPathName Name="IsRepeatPaneVisible" />
+    <RootPropertyPathName Name="IsEditingWarningVisible" />
+    <RootPropertyPathName Name="SeriesEnd" />
+    <RootPropertyPathName Name="AppointmentInterval" />
+    <RootPropertyPathName Name="End" />
+    <RootPropertyPathName Name="IsDayOfWeekPosSelectorVisible" />
+    <RootPropertyPathName Name="DaysOfMonth" />
+    <RootPropertyPathName Name="DayOfMonth" />
+    <RootPropertyPathName Name="IsDaySelectorVisible" />
+    <RootPropertyPathName Name="IsDaySelectionGroupVisible" />
+    <RootPropertyPathName Name="IsOnDayOfWeekPosElementChecked" />
+    <RootPropertyPathName Name="IsOnDayElementChecked" />
+    <RootPropertyPathName Name="IsMonthSelectorVisible" />
+    <RootPropertyPathName Name="Months" />
+    <RootPropertyPathName Name="Month" />
+    <RootPropertyPathName Name="IsDaysOfWeekSelectorVisible" />
+    <RootPropertyPathName Name="IsSaturdayChecked" />
+    <RootPropertyPathName Name="IsFridayChecked" />
+    <RootPropertyPathName Name="IsThursdayChecked" />
+    <RootPropertyPathName Name="IsWednesdayChecked" />
+    <RootPropertyPathName Name="IsTuesdayChecked" />
+    <RootPropertyPathName Name="IsMondayChecked" />
+    <RootPropertyPathName Name="IsSundayChecked" />
+    <RootPropertyPathName Name="Intervals" />
+    <RootPropertyPathName Name="IsRemindersSelectorVisible" />
+    <RootPropertyPathName Name="ReminderSpans" />
+    <RootPropertyPathName Name="ReminderSpan" />
+    <RootPropertyPathName Name="IsAllDay" />
+    <RootPropertyPathName Name="IsEndTimeEnabled" />
+    <RootPropertyPathName Name="IsEndTimeVisible" />
+    <RootPropertyPathName Name="EndTime" />
+    <RootPropertyPathName Name="IsEndDateEnabled" />
+    <RootPropertyPathName Name="EndDate" />
+    <RootPropertyPathName Name="IsStartTimeEnabled" />
+    <RootPropertyPathName Name="IsStartTimeVisible" />
+    <RootPropertyPathName Name="StartTime" />
+    <RootPropertyPathName Name="IsStartDateEnabled" />
+    <RootPropertyPathName Name="StartDate" />
+    <RootPropertyPathName Name="TimeZones" />
+    <RootPropertyPathName Name="TimeZone" />
+    <RootPropertyPathName Name="DisplayName" />
+    <RootPropertyPathName Name="Resources" />
+    <RootPropertyPathName Name="IsResourceSelectorVisible" />
+    <RootPropertyPathName Name="IsResourceSelectorEnabled" />
+    <RootPropertyPathName Name="DialogSettings" />
+    <RootPropertyPathName Name="AllowMultipleResourceSelection" />
+    <RootPropertyPathName Name="Location" />
+    <RootPropertyPathName Name="Labels" />
+    <RootPropertyPathName Name="Statuses" />
+    <RootPropertyPathName Name="Calendars" />
+    <RootPropertyPathName Name="Calendar" />
+    <RootPropertyPathName Name="IsCalendarSelectorVisible" />
+    <RootPropertyPathName Name="IsRepeatButtonVisible" />
+    <RootPropertyPathName Name="IsRepeatButtonChecked" />
+    <RootPropertyPathName Name="IsEditSeriesButtonVisible" />
+    <RootPropertyPathName Name="IsEditSeriesButtonChecked" />
+    <RootPropertyPathName Name="DeleteCommand" />
+    <RootPropertyPathName Name="IsDeleteButtonVisible" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="ThemeDictionaries" />
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.ColorKey">
+      <RootMethod Name="GetId" />
+      <RootMethod Name="SetId" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.BooleanToVisibilityConverter" />
+    <RootType FullName="DevExpress.Core.BooleanNegationConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AppointmentTypeToBooleanConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.ContainerPositionToBorderRuleConverter">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="BorderRule" />
+    </RootType>
+    <RootType FullName="System.String" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AppointmentContainerItemsPanel">
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemMinHeight" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.ItemsContainerPanel`1[[DevExpress.UI.Xaml.Scheduler.Internal.CellsContainerViewModelBase, DevExpress.UI.Xaml.Scheduler.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a]]">
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="FocusVisualPrimaryThickness" />
+      <RootProperty Name="FocusVisualSecondaryThickness" />
+      <RootProperty Name="FocusVisualMargin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.ItemsContainerPanelBase`1[[DevExpress.UI.Xaml.Scheduler.Internal.CellsContainerViewModelBase, DevExpress.UI.Xaml.Scheduler.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a]]">
+      <RootProperty Name="ItemContainerTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AppointmentControlBase" />
+    <RootType FullName="Windows.UI.Xaml.UIElement">
+      <RootProperty Name="CanDrag" />
+      <RootProperty Name="IsHoldingEnabled" />
+      <RootProperty Name="AllowDrop" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="UseSystemFocusVisuals" />
+      <RootProperty Name="IsTabStop" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayAppointmentControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AllDayAppointmentControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthAppointmentControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.FlyoutAppointmentControl">
+      <RootProperty Name="CanDrag" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AppointmentsMoreButton" />
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Target" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+      <RootProperty Name="Transitions" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Setters" />
+      <RootProperty Name="StateTriggers" />
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.TrackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Spacing" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalUniformSize" />
+      <RootProperty Name="Visibility" />
+      <RootMethod Name="GetHorizontalCellSize" />
+      <RootMethod Name="SetHorizontalCellSize" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="TextTrimming" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="UpdateSourceTrigger" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.StateTrigger">
+      <RootProperty Name="IsActive" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.ControlAdaptiveTrigger">
+      <RootProperty Name="Control" />
+      <RootProperty Name="MinControlHeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualTransition">
+      <RootProperty Name="From" />
+      <RootProperty Name="To" />
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthAppointmentItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="AppointmentsOffset" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AllDayAppointmentItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="AppointmentsOffset" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayAppointmentItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="AppointmentsOffset" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Themes.AppointmentResourceDictionary" />
+    <RootType FullName="DevExpress.UI.Xaml.FlyoutControl">
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Native.PopupBase">
+      <RootProperty Name="VerticalOffset" />
+      <RootProperty Name="HorizontalOffset" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Native.FlyoutBase">
+      <RootProperty Name="Settings" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AppointmentsFlyoutListView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
+      <RootProperty Name="IsSwipeEnabled" />
+      <RootProperty Name="CanReorderItems" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="SelectionMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="BringIntoViewOnFocusChange" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="IsHorizontalRailEnabled" />
+      <RootProperty Name="IsHorizontalScrollChainingEnabled" />
+      <RootProperty Name="IsVerticalScrollChainingEnabled" />
+      <RootProperty Name="IsVerticalRailEnabled" />
+      <RootProperty Name="IsDeferredScrollingEnabled" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="UseSystemFocusVisuals" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Margin" />
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+      <RootMethod Name="GetIsHorizontalRailEnabled" />
+      <RootMethod Name="SetIsHorizontalRailEnabled" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+      <RootMethod Name="GetIsVerticalRailEnabled" />
+      <RootMethod Name="SetIsVerticalRailEnabled" />
+      <RootMethod Name="GetZoomMode" />
+      <RootMethod Name="SetZoomMode" />
+      <RootMethod Name="GetIsDeferredScrollingEnabled" />
+      <RootMethod Name="SetIsDeferredScrollingEnabled" />
+      <RootMethod Name="GetBringIntoViewOnFocusChange" />
+      <RootMethod Name="SetBringIntoViewOnFocusChange" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemContainerTransitions" />
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="TranslateX" />
+      <RootProperty Name="TranslateY" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
+      <RootMethod Name="GetAccessibilityView" />
+      <RootMethod Name="SetAccessibilityView" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter">
+      <RootProperty Name="FooterTransitions" />
+      <RootProperty Name="FooterTemplate" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarButton">
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="ItemStyle" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Icon" />
+      <RootProperty Name="CommandParameter" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsStackPanel">
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.AddDeleteThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ContentThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ReorderThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition">
+      <RootProperty Name="IsStaggeringEnabled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="ContentTransitions" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
+    <RootType FullName="DevExpress.UI.Xaml.FlyoutSettings">
+      <RootProperty Name="Placement" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Controls.DXComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="SelectedValuePath" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="FlyoutSettings" />
+      <RootProperty Name="ShowCheckBoxes" />
+      <RootProperty Name="ShowNullValueItem" />
+      <RootProperty Name="ShowSelectAllItem" />
+      <RootProperty Name="ShowPopupFooterButtons" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="SelectedItems" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemContainerStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.RemindersDialogViewControl" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.SchedulerLocalizerExtension">
+      <RootProperty Name="StringId" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Themes.RemindersDialogViewControlResourceDictionary" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.ResourceNavigatorControl">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Commands" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.ResourceNavigatorButton">
+      <RootProperty Name="Command" />
+      <RootProperty Name="CommandParameter" />
+      <RootProperty Name="IconSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.PointerItemBase">
+      <RootProperty Name="ClickMode" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.GlyphItemBase">
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="IconStretch" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.NativeIconContentPresenter">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarControl">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Group" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarGroup">
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="FlyoutFlowBreakWithSeparator" />
+      <RootProperty Name="IconSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Themes.SchedulerContextMenuResourceDictionary" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Themes.TimeRulerResourceDictionary" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.ThemedSelectionConverter">
+      <RootProperty Name="SelectedBrush" />
+      <RootProperty Name="UnselectedBrush" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.ObjectToVisibilityConverter" />
+    <RootType FullName="DevExpress.Core.BooleanToDoubleConverter">
+      <RootProperty Name="ValueTrue" />
+      <RootProperty Name="ValueFalse" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.DoubleToThicknessConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.SchedulerGroupTypeToBooleanConverter">
+      <RootProperty Name="Invert" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayViewBase">
+      <RootProperty Name="StyleSettingsTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.ViewBase">
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="Caption" />
+      <RootProperty Name="IconSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.DayView" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.WeekView" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.WorkWeekView" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.MonthView">
+      <RootProperty Name="StyleSettingsTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.DayViewStyleSettings">
+      <RootProperty Name="CellTemplate" />
+      <RootProperty Name="AllDayAreaCellTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.MonthViewStyleSettings">
+      <RootProperty Name="CellTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayViewControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthViewControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthResourceHeaderControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayResourceHeaderControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DateHeaderControl">
+      <RootProperty Name="Header" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AdaptiveHeaderContentPresenter">
+      <RootProperty Name="DisplayTexts" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.SchedulerViewLayoutControl">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="TopFixedContent" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalOffset" />
+      <RootProperty Name="LeftFixedContent" />
+      <RootProperty Name="TopLeftFixedContent" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.SchedulerGroupPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="ResetDependentSizeAfterMeasure" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthResourceHeaderContainerPanel">
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.HeaderContainerItemsPanel">
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="ItemMinHeight" />
+      <RootProperty Name="ItemMinWidth" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthCellsContainerItemsPanel">
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="ChildPanelItemTemplate" />
+      <RootProperty Name="ItemMinHeight" />
+      <RootProperty Name="ItemMinWidth" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthCellItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="GridDecorationBrush" />
+      <RootProperty Name="DefaultCellBackground" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.TimeRulerContainersPanel">
+      <RootProperty Name="Owner" />
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="ItemMinWidth" />
+      <RootProperty Name="ItemMinHeight" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AllDayAreaCellsContainerItemsPanel">
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="ChildPanelItemTemplate" />
+      <RootProperty Name="ItemMinHeight" />
+      <RootProperty Name="ItemMinWidth" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayResourceHeaderContainerPanel">
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.CellsContainerItemsPanel">
+      <RootProperty Name="Owner" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="ChildPanelItemTemplate" />
+      <RootProperty Name="ItemMinHeight" />
+      <RootProperty Name="ItemMinWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootMethod Name="GetZIndex" />
+      <RootMethod Name="SetZIndex" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.TimeMarkerContainersPanel">
+      <RootProperty Name="ItemSpacing" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemContainerTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.AllDayAreaCellItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="GridDecorationBrush" />
+      <RootProperty Name="DefaultCellBackground" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.HeaderCellItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="GridDecorationBrush" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayViewTimeIndicatorControl">
+      <RootProperty Name="Position" />
+      <RootProperty Name="TimeIndicator" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DayCellItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="GridDecorationBrush" />
+      <RootProperty Name="DefaultCellBackground" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="SelectionStartIndex" />
+      <RootProperty Name="SelectionEndIndex" />
+      <RootProperty Name="SelectionBackground" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.TimeIndicatorItemsPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="BorderRule" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Columns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Themes.SchedulerViewsResourceDictionary" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.DateTimeRangeToStringConverter" />
+    <RootType FullName="DevExpress.Core.TypeTemplateSelector">
+      <RootProperty Name="FindDescendants" />
+      <RootProperty Name="Templates" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.SchedulerHeaderSettings">
+      <RootProperty Name="ToolbarTemplate" />
+      <RootProperty Name="ToolbarItemTemplateSelector" />
+      <RootProperty Name="HeaderPresenterTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.SchedulerHeaderControl">
+      <RootProperty Name="Settings" />
+      <RootProperty Name="VisibleInterval" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarControl">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="GroupTemplate" />
+      <RootProperty Name="GroupsSource" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Groups" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarGroup">
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemTemplateSelector" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarToggleButton">
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="CommandParameter" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="ActAsSimpleButton" />
+      <RootProperty Name="IsThreeStateMode" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Icon" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Themes.SchedulerHeaderResourceDictionary" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.TimeRulerTimeIndicatorControl">
+      <RootProperty Name="Position" />
+      <RootProperty Name="TimeIndicator" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.TimeRulerItemsPanel">
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Columns" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="BorderRule" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.TimeRulerCellItemsPanel">
+      <RootProperty Name="ItemContainerTemplate" />
+      <RootProperty Name="GridDecorationBrush" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="BorderRule" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.TileCompositionBrush">
+      <RootProperty Name="BackgroundColor" />
+      <RootProperty Name="ViewPort" />
+      <RootProperty Name="Patterns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.CompositionLinePattern">
+      <RootProperty Name="Start" />
+      <RootProperty Name="End" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeWidth" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.CompositionRectanglePattern">
+      <RootProperty Name="Rect" />
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.Native.GlobalThemeResourceDictionaryHelper">
+      <RootMethod Name="GetIsAttached" />
+      <RootMethod Name="SetIsAttached" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.SchedulerResourceLoader" />
+    <RootType FullName="DevExpress.Core.SystemColorsSchemeDictionaryLoader" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.SchedulerControl">
+      <RootProperty Name="AppointmentsFlyoutStyle" />
+      <RootProperty Name="EditAppointmentDialogSettingsTemplate" />
+      <RootProperty Name="HeaderSettingsTemplate" />
+      <RootProperty Name="DefaultCalendarStyleSettingsTemplate" />
+      <RootProperty Name="SchedulerMenu" />
+      <RootProperty Name="AppointmentMenu" />
+    </RootType>
+    <RootType FullName="DevExpress.Mvvm.UI.Interactivity.Interaction">
+      <RootMethod Name="GetBehaviorsTemplate" />
+      <RootMethod Name="SetBehaviorsTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.TimeIndicator">
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.EditAppointmentDialogSettings">
+      <RootProperty Name="AllowMultipleResourceSelection" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.CalendarStyleSettings">
+      <RootProperty Name="LabelItemFallbackStyle" />
+      <RootProperty Name="LabelItemStyles" />
+      <RootProperty Name="StatusItemFallbackStyle" />
+      <RootProperty Name="StatusItemStyles" />
+      <RootProperty Name="ResourceItemFallbackStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.ResourceItemStyle">
+      <RootProperty Name="Brush" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.StatusItemStyleCollection" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.StatusItemStyle">
+      <RootProperty Name="Id" />
+      <RootProperty Name="Brush" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.LabelItemStyleCollection" />
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.LabelItemStyle">
+      <RootProperty Name="Id" />
+      <RootProperty Name="Brush" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.SchedulerItemsPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="DevExpress.Mvvm.UI.MessageBoxService" />
+    <RootType FullName="DevExpress.Mvvm.UI.DialogService">
+      <RootProperty Name="Name" />
+      <RootProperty Name="DialogStyle" />
+      <RootProperty Name="ButtonContentModifiers" />
+      <RootProperty Name="ViewTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.Mvvm.UI.DialogContentControl">
+      <RootProperty Name="Title" />
+      <RootProperty Name="ButtonTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.Mvvm.UI.DialogButtonContentModifier">
+      <RootProperty Name="Id" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Symbol" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.EditAppointmentDialog" />
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.EnumItemsSourceProvider">
+      <RootProperty Name="EnumInstance" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.Internal.MonthIndexToMonthNameConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Style" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Scheduler.ResourceSelectionModeConverter" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="TextWrapping" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.DateEdit">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="EditValue" />
+      <RootProperty Name="NullText" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="AllowNullInput" />
+      <RootProperty Name="AllowSpinOnMouseWheel" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MinValue" />
+      <RootProperty Name="IsTextEditable" />
+      <RootProperty Name="TextInputSettings" />
+      <RootProperty Name="PopupSettings" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="ShowDefaultButtons" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.IconContentPresenter">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="IconStretch" />
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.TextInputMaskSettings">
+      <RootProperty Name="Mask" />
+      <RootProperty Name="MaskType" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.DateNavigatorPopupSettings" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToggleButton">
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.TextEdit">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="TabIndex" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.DXListViewItemContainer" />
+    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

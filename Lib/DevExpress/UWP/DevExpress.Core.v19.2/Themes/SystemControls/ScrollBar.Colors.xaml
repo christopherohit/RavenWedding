@@ -1,0 +1,51 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            
+            <SolidColorBrush x:Key="DXScrollBarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ScrollBarColors.ButtonBackground.Default" />
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundBrush" Color="#FFa2a2a2" Core:ColorKey.Id="ScrollBarColors.ButtonForeground.Default" />
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundDisabledBrush" Color="#FF474747" Core:ColorKey.Id="ScrollBarColors.ButtonForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundHoverBrush" Color="#FFe0e0e0" Core:ColorKey.Id="ScrollBarColors.ButtonForegroundHovered.Default" />
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundPressedBrush" Color="#FFe0e0e0" Core:ColorKey.Id="ScrollBarColors.ButtonForegroundPressed.Default" />
+            <SolidColorBrush x:Key="DXScrollBarTrackBackgroundBrush" Color="#FF5d5d5d" Core:ColorKey.Id="ScrollBarColors.TrackBackground.Default" />
+            <SolidColorBrush x:Key="DXScrollBarPanningTrackBackgroundBrush" Color="#FF5d5d5d" Core:ColorKey.Id="ScrollBarColors.PanningTrackBackground.Default" />
+            <SolidColorBrush x:Key="DXScrollBarTrackBackgroundDisabledBrush" Color="#FF4F4F4F" Core:ColorKey.Id="ScrollBarColors.TrackBackgroundDisabled.Default" />
+            <SolidColorBrush x:Key="DXScrollBarSliderBrush" Color="#FF303030" Core:ColorKey.Id="ScrollBarColors.SliderBackground.Default" />
+            <SolidColorBrush x:Key="DXScrollBarSliderHoverBrush" Color="#FF181818" Core:ColorKey.Id="ScrollBarColors.SliderBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="DXScrollBarSliderPressedBrush" Color="#FF181818" Core:ColorKey.Id="ScrollBarColors.SliderBackgroundPressed.Default" />
+            
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            
+            <SolidColorBrush x:Key="DXScrollBarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ScrollBarColors.ButtonBackground.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ScrollBarColors.ButtonForeground.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundDisabledBrush" Color="#FFB5B5B5" Core:ColorKey.Id="ScrollBarColors.ButtonForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundHoverBrush" Color="#FF969696" Core:ColorKey.Id="ScrollBarColors.ButtonForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarButtonForegroundPressedBrush" Color="#FF969696" Core:ColorKey.Id="ScrollBarColors.ButtonForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarTrackBackgroundBrush" Color="#FFE8E8E8" Core:ColorKey.Id="ScrollBarColors.TrackBackground.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarPanningTrackBackgroundBrush" Color="#FFE8E8E8" Core:ColorKey.Id="ScrollBarColors.PanningTrackBackground.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarTrackBackgroundDisabledBrush" Color="#FFF4F4F4" Core:ColorKey.Id="ScrollBarColors.TrackBackgroundDisabled.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarSliderBrush" Color="#FF969696" Core:ColorKey.Id="ScrollBarColors.SliderBackground.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarSliderHoverBrush" Color="#FF686868" Core:ColorKey.Id="ScrollBarColors.SliderBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="DXScrollBarSliderPressedBrush" Color="#FF686868" Core:ColorKey.Id="ScrollBarColors.SliderBackgroundPressed.Light"/>
+            
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+

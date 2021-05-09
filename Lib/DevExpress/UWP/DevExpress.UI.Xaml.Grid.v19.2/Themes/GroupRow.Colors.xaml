@@ -1,0 +1,44 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="GridControlSelectedRowForegroundThemeBrush" Color="#99000000" Core:ColorKey.Id="GridColors.GroupRowForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="GridControlGroupBackgroundSelectedBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.GroupRowBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="GridControlFocusedRowForegroundThemeBrush" Color="#99000000" Core:ColorKey.Id="GridColors.GroupRowForegroundFocused.Light"/>
+            <SolidColorBrush x:Key="GridControlFocusedAndSelectedRowForegroundThemeBrush" Color="#99000000" Core:ColorKey.Id="GridColors.GroupRowForegroundSelectedFocused.Light"/>
+            <SolidColorBrush x:Key="GridControlGroupBackgroundFocusedBrush" Color="Transparent" Core:ColorKey.Id="GridColors.GroupRowBackgroundFocused.Light"/>
+            <SolidColorBrush x:Key="GridControlGroupBackgroundFocusedAndSelectedBrush" Color="#FFD2D2D2" Core:ColorKey.Id="GridColors.GroupRowBackgroundSelectedFocused.Light"/>
+            <SolidColorBrush x:Key="GridControlGroupRowBackgroundThemeBrush" Color="Transparent" Core:ColorKey.Id="GridColors.GroupRowBackground.Light"/>
+            <SolidColorBrush x:Key="GridControlGroupRowBorderThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.GroupRowBorderBrush.Light"/>
+            <SolidColorBrush x:Key="GridControlGroupArrowThemeBrush" Color="#FF565656" Core:ColorKey.Id="GridColors.GroupArrowForeground.Light"/>
+            <SolidColorBrush x:Key="GroupRowHeaderForegroundBrush" Color="#99000000" Core:ColorKey.Id="GridColors.GroupRowHeaderForeground.Light"/>
+            <SolidColorBrush x:Key="GridControlGroupColumnSummaryBorderThemeBrush" Color="#FFE5E5E5" Core:ColorKey.Id="GridColors.GroupColumnSummaryBorderBrush.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="GridControlSelectedRowForegroundThemeBrush" Color="#FF2B2B2B"  Core:ColorKey.Id="GridColors.GroupRowForegroundSelected.Default" />
+            <SolidColorBrush x:Key="GridControlFocusedRowForegroundThemeBrush" Color="#FF2B2B2B"  Core:ColorKey.Id="GridColors.GroupRowForegroundFocused.Default" />
+            <SolidColorBrush x:Key="GridControlFocusedAndSelectedRowForegroundThemeBrush" Color="#FF2B2B2B"  Core:ColorKey.Id="GridColors.GroupRowForegroundSelectedFocused.Default" />
+            <SolidColorBrush x:Key="GridControlGroupRowBackgroundThemeBrush" Color="Transparent"  Core:ColorKey.Id="GridColors.GroupRowBackground.Default" />
+            <SolidColorBrush x:Key="GridControlGroupArrowThemeBrush" Color="#FF565656"  Core:ColorKey.Id="GridColors.GroupArrowForeground.Default" />
+            <SolidColorBrush x:Key="GroupRowHeaderForegroundBrush" Color="#FF2B2B2B" Core:ColorKey.Id="GridColors.GroupRowHeaderForeground.Default" />
+            <SolidColorBrush x:Key="GridControlGroupRowBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.GroupRowBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlGroupColumnSummaryBorderThemeBrush" Color="#FF3E3E3E" Core:ColorKey.Id="GridColors.GroupColumnSummaryBorderBrush.Default" />
+            <SolidColorBrush x:Key="GridControlGroupBackgroundFocusedAndSelectedBrush" Color="#FF888888" Core:ColorKey.Id="GridColors.GroupRowBackgroundSelectedFocused.Default" />
+            <SolidColorBrush x:Key="GridControlGroupBackgroundFocusedBrush" Color="Transparent" Core:ColorKey.Id="GridColors.GroupRowBackgroundFocused.Default" />
+            <SolidColorBrush x:Key="GridControlGroupBackgroundSelectedBrush" Color="#FFA2A2A2" Core:ColorKey.Id="GridColors.GroupRowBackgroundSelected.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundBrush" Color="#FF373A3D" Core:ColorKey.Id="DateNavigatorColors.ButtonForeground.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundPressedBrush" Color="#FF929292" Core:ColorKey.Id="DateNavigatorColors.ButtonForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundHoverBrush" Color="#FF929292" Core:ColorKey.Id="DateNavigatorColors.ButtonForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundDisabledBrush" Color="#FFC2C2C2" Core:ColorKey.Id="DateNavigatorColors.ButtonForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="CalendarHeaderForegroundBrush" Color="#FF000000" Core:ColorKey.Id="DateNavigatorColors.CalendarHeaderForeground.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundBrush" Color="#FF373A3D"  Core:ColorKey.Id="DateNavigatorColors.ButtonForeground.Default" />
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundPressedBrush" Color="#FF929292"  Core:ColorKey.Id="DateNavigatorColors.ButtonForegroundPressed.Default" />
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundHoverBrush" Color="#FF929292"  Core:ColorKey.Id="DateNavigatorColors.ButtonForegroundHovered.Default" />
+            <SolidColorBrush x:Key="DateNavigatorButtonForegroundDisabledBrush" Color="#FF4E4E4E" Core:ColorKey.Id="DateNavigatorColors.ButtonForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="CalendarHeaderForegroundBrush" Color="#FF000000" Core:ColorKey.Id="DateNavigatorColors.CalendarHeaderForeground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+

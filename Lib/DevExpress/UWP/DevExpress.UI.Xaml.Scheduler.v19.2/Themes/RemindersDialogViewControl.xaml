@@ -1,0 +1,104 @@
+﻿<ResourceDictionary
+    x:Class="DevExpress.UI.Xaml.Scheduler.Themes.RemindersDialogViewControlResourceDictionary"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sch="using:DevExpress.UI.Xaml.Scheduler"
+    xmlns:schi="using:DevExpress.UI.Xaml.Scheduler.Internal"
+    xmlns:dxr="using:DevExpress.UI.Xaml.Ribbon"
+    xmlns:dxc="using:DevExpress.UI.Xaml.Controls"
+    xmlns:dxx="using:DevExpress.UI.Xaml">
+
+    <Style x:Key="ComboBoxStyleBase" TargetType="dxc:DXComboBox">
+        <Setter Property="Foreground" Value="#AB000000" />
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Background" Value="White" />
+    </Style>
+    
+    <Style TargetType="schi:RemindersDialogViewControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="schi:RemindersDialogViewControl">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition />
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="{Binding ViewModel.Description, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                   Margin="4"/>
+                        <ListView Grid.Row="1"
+                                  ItemsSource="{Binding ViewModel.Reminders, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                  SelectedValue="{Binding ViewModel.SelectedReminder, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                                  SelectionMode="Single"
+                                  BorderThickness="1"
+                                  Height="250" Width="450">
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                            <ListView.ItemTemplate>
+                                <DataTemplate                                   >
+                                    <Grid HorizontalAlignment="Stretch">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Text="{Binding Appointment.Subject}"/>
+                                        <!--<TextBlock Text="{Binding Appointment.Subject}" Grid.Row="1"/>-->
+                                        <TextBlock HorizontalAlignment="Right"
+                                                   Width="140"
+                                                   Grid.RowSpan="2"
+                                                   Text="{Binding TimeBeforeAppointmentStartDisplayText}" 
+                                                   TextAlignment="Left"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                            <dxr:ToolbarButton Content="{schi:SchedulerLocalizer StringId=RemindersWindow_Dismiss}"
+                                              Command="{Binding ViewModel.DismissSelectedReminderCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                            <dxr:ToolbarButton Content="{schi:SchedulerLocalizer StringId=RemindersWindow_DismissAll}"
+                                              Command="{Binding ViewModel.DismissAllCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                        </StackPanel>
+                        <TextBlock Text="{schi:SchedulerLocalizer StringId=RemindersWindow_ClickSnoozeToBeReminderAgainIn}" 
+                                   Grid.Row="3" 
+                                   Margin="4"
+                                   HorizontalAlignment="Left"/>
+                        <Grid Grid.Row="4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <dxc:DXComboBox x:Name="SnoozeCmb"
+                                      HorizontalAlignment="Stretch"
+                                            
+                                      DisplayMemberPath="DisplayText"
+                                      SelectedValuePath="TimeSpan"
+                                      ItemsSource="{Binding ViewModel.SnoozeList, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                      SelectedValue="{Binding ViewModel.SelectedSnooze, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                                      Style="{StaticResource ComboBoxStyleBase}">
+                                
+                                <dxc:DXComboBox.FlyoutSettings>
+                                    <dxx:FlyoutSettings Placement="Top"/>
+                                </dxc:DXComboBox.FlyoutSettings>
+                            </dxc:DXComboBox>
+                            <dxr:ToolbarButton Content="{schi:SchedulerLocalizer StringId=RemindersWindow_Snooze}"
+                                              Command="{Binding ViewModel.SnoozeSelectedReminderCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                              HorizontalAlignment="Right"
+                                              Grid.Column="1"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>    
+
+</ResourceDictionary>
+

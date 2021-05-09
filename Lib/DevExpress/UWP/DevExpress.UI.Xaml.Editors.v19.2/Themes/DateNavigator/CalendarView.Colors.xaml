@@ -1,0 +1,69 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundBrush" Color="#FF505050" Core:ColorKey.Id="DateNavigatorColors.CellForeground.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundAnotherViewBrush" Color="#3F000000" Core:ColorKey.Id="DateNavigatorColors.CellForegroundFromAnotherView.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundAnotherViewSelectedBrush" Color="#89FFFFFF" Core:ColorKey.Id="DateNavigatorColors.CellForegroundFromAnotherViewSelected.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundBlackoutBrush" Color="#00FFFFFF" Core:ColorKey.Id="DateNavigatorColors.CellForegroundBlackout.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundSelectedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="DateNavigatorColors.CellForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="DateNavigatorColors.CellForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundTodayBrush" Color="#FF505050" Core:ColorKey.Id="DateNavigatorColors.CellForegroundToday.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundHolidayBrush" Color="#FF733737" Core:ColorKey.Id="DateNavigatorColors.CellForegroundHoliday.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorDecorationBorderBrush" Color="#FFB9B9B9" Core:ColorKey.Id="DateNavigatorColors.DecorationBorderBrush.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorDecorationBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="DateNavigatorColors.DecorationBackground.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorDecorationTodayBackgroundBrush" Color="#FF0191E4" Core:ColorKey.Id="DateNavigatorColors.DecorationTodayBackground.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundBlackoutBrush" Color="Transparent" Core:ColorKey.Id="DateNavigatorColors.CellBackgroundBlackout.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundSelectedBrush" Color="#FF106EBE" Core:ColorKey.Id="DateNavigatorColors.CellBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundTodayBrush" Color="#33969696" Core:ColorKey.Id="DateNavigatorColors.CellBackgroundToday.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundHoverBrush" Color="#33106EBE" Core:ColorKey.Id="DateNavigatorColors.CellBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellCaretBorderBrush" Color="#FF505050" Core:ColorKey.Id="DateNavigatorColors.CellCaretBorderBrush.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorCellCaretBackgroundBrush" Color="#33106EBE" Core:ColorKey.Id="DateNavigatorColors.CellCaretBackground.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorDayOfWeekNameForegroundBrush" Color="#FF373A3D" Core:ColorKey.Id="DateNavigatorColors.DayOfWeekNameForeground.Light"/>
+            <SolidColorBrush x:Key="DateNavigatorWeekNumberForegroundBrush" Color="#FF373A3D" Core:ColorKey.Id="DateNavigatorColors.WeekNumberForeground.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundBrush" Color="#FF101010"  Core:ColorKey.Id="DateNavigatorColors.CellForeground.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundAnotherViewBrush" Color="#3F000000"  Core:ColorKey.Id="DateNavigatorColors.CellForegroundFromAnotherView.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundAnotherViewSelectedBrush" Color="#89FFFFFF"  Core:ColorKey.Id="DateNavigatorColors.CellForegroundFromAnotherViewSelected.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundBlackoutBrush" Color="#00FFFFFF"  Core:ColorKey.Id="DateNavigatorColors.CellForegroundBlackout.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundSelectedBrush" Color="#FFFFFFFF"  Core:ColorKey.Id="DateNavigatorColors.CellForegroundSelected.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundHoverBrush" Color="#FF101010"  Core:ColorKey.Id="DateNavigatorColors.CellForegroundHovered.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundTodayBrush" Color="#FF6A6A6A"  Core:ColorKey.Id="DateNavigatorColors.CellForegroundToday.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellForegroundHolidayBrush" Color="#FF733737"  Core:ColorKey.Id="DateNavigatorColors.CellForegroundHoliday.Default" />
+            <SolidColorBrush x:Key="DateNavigatorDecorationBorderBrush" Color="#FFB9B9B9"  Core:ColorKey.Id="DateNavigatorColors.DecorationBorderBrush.Default" />
+            <SolidColorBrush x:Key="DateNavigatorDecorationBackgroundBrush" Color="#FFDCDCDC"  Core:ColorKey.Id="DateNavigatorColors.DecorationBackground.Default" />
+            <SolidColorBrush x:Key="DateNavigatorDecorationTodayBackgroundBrush" Color="#FF353535"  Core:ColorKey.Id="DateNavigatorColors.DecorationTodayBackground.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundBlackoutBrush" Color="Transparent"  Core:ColorKey.Id="DateNavigatorColors.CellBackgroundBlackout.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundSelectedBrush" Color="#FF545454"  Core:ColorKey.Id="DateNavigatorColors.CellBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundTodayBrush" Color="#FFFFFFFF"  Core:ColorKey.Id="DateNavigatorColors.CellBackgroundToday.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellBackgroundHoverBrush" Color="#61000000"  Core:ColorKey.Id="DateNavigatorColors.CellBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellCaretBorderBrush" Color="#FF262626"  Core:ColorKey.Id="DateNavigatorColors.CellCaretBorderBrush.Default" />
+            <SolidColorBrush x:Key="DateNavigatorCellCaretBackgroundBrush" Color="#61000000" Core:ColorKey.Id="DateNavigatorColors.CellCaretBackground.Default" />
+            <SolidColorBrush x:Key="DateNavigatorDayOfWeekNameForegroundBrush" Color="#FF373A3D"  Core:ColorKey.Id="DateNavigatorColors.DayOfWeekNameForeground.Default" />
+            <SolidColorBrush x:Key="DateNavigatorWeekNumberForegroundBrush" Color="#FF373A3D"  Core:ColorKey.Id="DateNavigatorColors.WeekNumberForeground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

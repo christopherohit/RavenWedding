@@ -1,0 +1,96 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <!--#region HeaderedPageContent.xaml-->
+
+            <SolidColorBrush x:Key="HeaderedPageContent_HeaderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="HeaderedPageContentColors.HeaderBackground.Default" />
+            <SolidColorBrush x:Key="HeaderedPageContent_HeaderForeground" Color="#FF505050"  Core:ColorKey.Id="HeaderedPageContentColors.HeaderForeground.Default" />
+
+            <SolidColorBrush x:Key="HeaderedPageContent_Background" Color="White"  Core:ColorKey.Id="HeaderedPageContentColors.Background.Default" />
+            <SolidColorBrush x:Key="HeaderedPageContent_Foreground" Color="Black"  Core:ColorKey.Id="HeaderedPageContentColors.Foreground.Default" />
+            <!--#endregion-->
+            <!--#region PivotPageContent.xaml-->
+
+            <SolidColorBrush x:Key="PivotPageContent_HeaderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="PivotPageContentColors.HeaderBackground.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_HeaderForeground" Color="#FF8E8E8E"  Core:ColorKey.Id="PivotPageContentColors.HeaderForeground.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_HoveredHeaderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_HoveredHeaderForeground" Color="#FF8E8E8E"  Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundHovered.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_DisabledHeaderForeground" Color="#FF8E8E8E"  Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHeaderForeground" Color="#FF333333"  Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundSelected.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHeaderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHoveredHeaderForeground" Color="#FF333333"  Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHoveredHeaderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_PressedHeaderForeground" Color="#FF8E8E8E"  Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundPressed.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_PressedHeaderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_SelectedPressedHeaderForeground" Color="#FF333333"  Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_SelectedPressedHeaderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_ContentBackground" Color="White"  Core:ColorKey.Id="PivotPageContentColors.ContentBackground.Default" />
+
+            <SolidColorBrush x:Key="PivotPageContent_HeaderBorderBackground" Color="#FFF9F9F9"  Core:ColorKey.Id="PivotPageContentColors.HeaderBorderBackground.Default" />
+
+            <SolidColorBrush x:Key="PivotPageContent_NextPreviousButtonsBackground" Color="Transparent"  Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBackground.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_NextPreviousButtonsBorderBrush" Color="Transparent"  Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBorderBrush.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_NextPreviousButtonsGlyphBrush" Color="Black"  Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsGlyphBrush.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_HoveredNextPreviousButtonsBackground" Color="#30000000"  Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_HoveredNextPreviousButtonsGlyphBrush" Color="Black"  Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsGlyphBrushHovered.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_PressedNextPreviousButtonsBackground" Color="#47000000"  Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_PressedNextPreviousButtonsGlyphBrush" Color="Black"  Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsGlyphBrushPressed.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_LeftHeaderForeground" Color="Black"  Core:ColorKey.Id="PivotPageContentColors.LeftHeaderForeground.Default" />
+            <SolidColorBrush x:Key="PivotPageContent_RightHeaderForeground" Color="Black"  Core:ColorKey.Id="PivotPageContentColors.RightHeaderForeground.Default" />
+            <!--#endregion-->
+            <!--#region MasterDetailPageContent-->
+            <SolidColorBrush x:Key="MasterDetailPageContent_SplitterBackground" Color="Transparent"  Core:ColorKey.Id="MasterDetailPageContentColors.SplitterBackground.Default" />
+            <SolidColorBrush x:Key="MasterDetailPageContent_SplitterBackgroundHovered" Color="#FF5D5D5D"  Core:ColorKey.Id="MasterDetailPageContentColors.SplitterBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="MasterDetailPageContent_SplitterBackgroundPressed" Color="#FF303030"  Core:ColorKey.Id="MasterDetailPageContentColors.SplitterBackgroundPressed.Default" />
+            <!--#endregion-->
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <!--#region HeaderedPageContent.xaml-->
+
+            <SolidColorBrush x:Key="HeaderedPageContent_HeaderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="HeaderedPageContentColors.HeaderBackground.Light"/>
+            <SolidColorBrush x:Key="HeaderedPageContent_HeaderForeground" Color="#FF505050" Core:ColorKey.Id="HeaderedPageContentColors.HeaderForeground.Light"/>
+
+            <SolidColorBrush x:Key="HeaderedPageContent_Background" Color="White" Core:ColorKey.Id="HeaderedPageContentColors.Background.Light"/>
+            <SolidColorBrush x:Key="HeaderedPageContent_Foreground" Color="Black" Core:ColorKey.Id="HeaderedPageContentColors.Foreground.Light"/>
+            <!--#endregion-->
+            <!--#region PivotPageContent.xaml-->
+
+            <SolidColorBrush x:Key="PivotPageContent_HeaderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="PivotPageContentColors.HeaderBackground.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_HeaderForeground" Color="#FF8E8E8E" Core:ColorKey.Id="PivotPageContentColors.HeaderForeground.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_HoveredHeaderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_HoveredHeaderForeground" Color="#FF8E8E8E" Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_DisabledHeaderForeground" Color="#FF8E8E8E" Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHeaderForeground" Color="#FF333333" Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHeaderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHoveredHeaderForeground" Color="#FF333333" Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_SelectedHoveredHeaderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_PressedHeaderForeground" Color="#FF8E8E8E" Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_PressedHeaderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_SelectedPressedHeaderForeground" Color="#FF333333" Core:ColorKey.Id="PivotPageContentColors.HeaderForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_SelectedPressedHeaderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="PivotPageContentColors.HeaderBackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_ContentBackground" Color="White" Core:ColorKey.Id="PivotPageContentColors.ContentBackground.Light"/>
+
+            <SolidColorBrush x:Key="PivotPageContent_HeaderBorderBackground" Color="#FFF9F9F9" Core:ColorKey.Id="PivotPageContentColors.HeaderBorderBackground.Light"/>
+
+            <SolidColorBrush x:Key="PivotPageContent_NextPreviousButtonsBackground" Color="Transparent" Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBackground.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_NextPreviousButtonsBorderBrush" Color="Transparent" Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBorderBrush.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_NextPreviousButtonsGlyphBrush" Color="Black" Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsGlyphBrush.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_HoveredNextPreviousButtonsBackground" Color="#30000000" Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_HoveredNextPreviousButtonsGlyphBrush" Color="Black" Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsGlyphBrushHovered.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_PressedNextPreviousButtonsBackground" Color="#47000000" Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_PressedNextPreviousButtonsGlyphBrush" Color="Black" Core:ColorKey.Id="PivotPageContentColors.NextPreviousButtonsGlyphBrushPressed.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_LeftHeaderForeground" Color="Black" Core:ColorKey.Id="PivotPageContentColors.LeftHeaderForeground.Light"/>
+            <SolidColorBrush x:Key="PivotPageContent_RightHeaderForeground" Color="Black" Core:ColorKey.Id="PivotPageContentColors.RightHeaderForeground.Light"/>
+            <!--#endregion-->
+            <!--#region MasterDetailPageContent-->
+            <SolidColorBrush x:Key="MasterDetailPageContent_SplitterBackground" Color="Transparent"  Core:ColorKey.Id="MasterDetailPageContentColors.SplitterBackground.Light" />
+            <SolidColorBrush x:Key="MasterDetailPageContent_SplitterBackgroundHovered" Color="#FFE8E8E8"  Core:ColorKey.Id="MasterDetailPageContentColors.SplitterBackgroundHovered.Light" />
+            <SolidColorBrush x:Key="MasterDetailPageContent_SplitterBackgroundPressed" Color="#FF969696"  Core:ColorKey.Id="MasterDetailPageContentColors.SplitterBackgroundPressed.Light" />
+            <!--#endregion-->
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+    

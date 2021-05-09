@@ -1,0 +1,1081 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="Padding" />
+    <RootPropertyPathName Name="SelectedTab" />
+    <RootPropertyPathName Name="ControlPane" />
+    <RootPropertyPathName Name="CloseCommand" />
+    <RootPropertyPathName Name="Items" />
+    <RootPropertyPathName Name="GroupItemsPath" />
+    <RootPropertyPathName Name="SelectionMode" />
+    <RootPropertyPathName Name="IsGrouping" />
+    <RootPropertyPathName Name="ItemContainerStyle" />
+    <RootPropertyPathName Name="ItemContainerStyleSelector" />
+    <RootPropertyPathName Name="ItemTemplate" />
+    <RootPropertyPathName Name="ItemTemplateSelector" />
+    <RootPropertyPathName Name="SelectedItem" />
+    <RootPropertyPathName Name="ShowCheckBoxes" />
+    <RootPropertyPathName Name="IsSelected" />
+    <RootPropertyPathName Name="IsCheckable" />
+    <RootPropertyPathName Name="BorderThickness" />
+    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="AvailableFontSizes" />
+    <RootPropertyPathName Name="SelectedFontSize" />
+    <RootPropertyPathName Name="AvailableFonts" />
+    <RootPropertyPathName Name="SelectedFontFamily" />
+    <RootPropertyPathName Name="Source" />
+    <RootPropertyPathName Name="Foreground" />
+    <RootPropertyPathName Name="ButtonEditViewModel" />
+    <RootPropertyPathName Name="ActualTemplate" />
+    <RootPropertyPathName Name="Editor" />
+    <RootPropertyPathName Name="VerticalContentAlignment" />
+    <RootPropertyPathName Name="SelectionHighlightBrush" />
+    <RootPropertyPathName Name="MaxLength" />
+    <RootPropertyPathName Name="InputScope" />
+    <RootPropertyPathName Name="TextWrapping" />
+    <RootPropertyPathName Name="AcceptsReturn" />
+    <RootPropertyPathName Name="IsTextPredictionEnabled" />
+    <RootPropertyPathName Name="IsReadOnly" />
+    <RootPropertyPathName Name="NullTextForeground" />
+    <RootPropertyPathName Name="BaseEditViewModel" />
+    <RootPropertyPathName Name="StateManager" />
+    <RootPropertyPathName Name="RightButtons" />
+    <RootPropertyPathName Name="ActualEditTemplate" />
+    <RootPropertyPathName Name="LeftButtons" />
+    <RootPropertyPathName Name="Buttons" />
+    <RootPropertyPathName Name="FlyoutContext" />
+    <RootPropertyPathName Name="FlyoutCaption" />
+    <RootPropertyPathName Name="IsGroupCollapsed" />
+    <RootPropertyPathName Name="FlyoutItems" />
+    <RootPropertyPathName Name="FlyoutColumnCount" />
+    <RootPropertyPathName Name="FlyoutCalculator" />
+    <RootPropertyPathName Name="IconProvider" />
+    <RootPropertyPathName Name="ActualIsIconVisible" />
+    <RootPropertyPathName Name="UseBackground" />
+    <RootPropertyPathName Name="Groups" />
+    <RootPropertyPathName Name="State" />
+    <RootPropertyPathName Name="ActualSize" />
+    <RootPropertyPathName Name="Tabs" />
+    <RootPropertyPathName Name="HotItems" />
+    <RootPropertyPathName Name="FlyoutHeaderInfo" />
+    <RootPropertyPathName Name="Owner" />
+    <RootPropertyPathName Name="ChangeRibbonStateCommand" />
+    <RootPropertyPathName Name="BackCommand" />
+    <RootPropertyPathName Name="HeaderContent" />
+    <RootPropertyPathName Name="HeaderContentTemplate" />
+    <RootPropertyPathName Name="HelpPane" />
+    <RootPropertyPathName Name="IsEnabled" />
+    <RootPropertyPathName Name="IsHitTestVisible" />
+    <RootPropertyPathName Name="IsOpen" />
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Caption" />
+    <RootPropertyPathName Name="HeaderItemTemplate" />
+    <RootPropertyPathName Name="HeaderItemContainerStyle" />
+    <RootPropertyPathName Name="ContextualHeaderItemTemplate" />
+    <RootPropertyPathName Name="ContextualHeaderItemContainerStyle" />
+    <RootPropertyPathName Name="TemplateSettings" />
+    <RootPropertyPathName Name="DropDownOffset" />
+    <RootPropertyPathName Name="DropDownOpenedHeight" />
+    <RootPropertyPathName Name="IsHeaderVisible" />
+    <RootPropertyPathName Name="HorizontalAlignment" />
+    <RootPropertyPathName Name="BackstageView" />
+    <RootPropertyPathName Name="ActAsDropDown" />
+    <RootPropertyPathName Name="IsFontSizeDropDownOpen" />
+    <RootPropertyPathName Name="ActualSelectedFontSize" />
+    <RootPropertyPathName Name="FontSize" />
+    <RootPropertyPathName Name="IsFontFamilyDropDownOpen" />
+    <RootPropertyPathName Name="ActualSelectedFontFamily" />
+    <RootPropertyPathName Name="IsChecked" />
+    <RootPropertyPathName Name="IsInAdvancedMode" />
+    <RootPropertyPathName Name="SelectedColor" />
+    <RootPropertyPathName Name="ColorGroups" />
+    <RootPropertyPathName Name="ShowIndicator" />
+    <RootPropertyPathName Name="ShowPopupCommand" />
+    <RootPropertyPathName Name="UseIconPadding" />
+    <RootPropertyPathName Name="ViewMode" />
+    <RootPropertyPathName Name="ShowTitleBar" />
+    <RootPropertyPathName Name="StaysOpen" />
+    <RootPropertyPathName Name="ActualPlacementTarget" />
+    <RootPropertyPathName Name="ActualHeight" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="ThemeDictionaries" />
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.ColorKey">
+      <RootMethod Name="GetId" />
+      <RootMethod Name="SetId" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.ThicknessNegationConverter" />
+    <RootType FullName="DevExpress.Core.ObjectToBooleanConverter">
+      <RootProperty Name="Invert" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.BackstageView" />
+    <RootType FullName="DevExpress.Core.StyleHelper">
+      <RootMethod Name="GetBindableSetters" />
+      <RootMethod Name="SetBindableSetters" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="UseSystemFocusVisuals" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="IsTabStop" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.BackstageTabItem">
+      <RootProperty Name="ControlPaneShowMode" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.GlyphItemBase">
+      <RootProperty Name="ClosePopupOnClick" />
+      <RootProperty Name="IconFill" />
+      <RootProperty Name="TemplateSelector" />
+      <RootProperty Name="IconSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Target" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Opacity" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Setters" />
+      <RootProperty Name="Storyboard" />
+      <RootProperty Name="StateTriggers" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.NestedMenuFlyoutControl">
+      <RootProperty Name="HeaderEnabledMode" />
+      <RootProperty Name="BackButtonEnabledMode" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="PlacementTarget" />
+      <RootProperty Name="CloseOnTargetClick" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="AnimationDuration" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="StaysOpen" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HeaderContent" />
+      <RootProperty Name="IsLightDismissEnabled" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.IconView">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Owner" />
+      <RootProperty Name="UseIconPadding" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="IsHitTestVisible" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsHitTestVisible" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="IsHitTestVisible" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="ConverterParameter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.BackstageButtonItem">
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IconFill" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.BindableSetterCollection" />
+    <RootType FullName="DevExpress.Core.BindableSetter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Binding" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.TemplateInstanceConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.TitleSettings">
+      <RootProperty Name="Background" />
+      <RootProperty Name="InactiveBackground" />
+      <RootProperty Name="ButtonBackground" />
+      <RootProperty Name="ButtonHoverBackground" />
+      <RootProperty Name="ButtonPressedBackground" />
+      <RootProperty Name="ButtonInactiveBackground" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="InactiveForeground" />
+      <RootProperty Name="ButtonForeground" />
+      <RootProperty Name="ButtonHoverForeground" />
+      <RootProperty Name="ButtonPressedForeground" />
+      <RootProperty Name="ButtonInactiveForeground" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.HelpPaneButton">
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="IconStretch" />
+      <RootProperty Name="Placement" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="CommandParameter" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="IconFill" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="IsHitTestVisible" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.HelpPaneToggleButton">
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="IconFill" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="IsChecked" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.HelpPaneRadioButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonRadioButtonBase">
+      <RootProperty Name="TemplateSelector" />
+      <RootProperty Name="ItemStyle" />
+      <RootProperty Name="IconFill" />
+      <RootProperty Name="FlyoutFlowBreak" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.HelpPaneItemTemplateSelector">
+      <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="FooterTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.ObjectToVisibilityConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.DXListViewItemContainer" />
+    <RootType FullName="Windows.UI.Xaml.UIElement">
+      <RootProperty Name="IsHoldingEnabled" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonComboBox">
+      <RootProperty Name="Header" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="SelectedItemTemplate" />
+      <RootProperty Name="GroupStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.DXItemsControl">
+      <RootProperty Name="ItemContainerStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonComboBoxBase">
+      <RootProperty Name="UseIndependentFlyout" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Controls.DXComboBox">
+      <RootProperty Name="SelectedItemsTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PathIcon">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.DXListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="GroupItemsPath" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="IsGrouping" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="ItemContainerStyleSelector" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemTemplateSelector" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ShowCheckBoxes" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="MaxHeight" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Controls.DXComboBoxSelectedItemsPresenter">
+      <RootProperty Name="SelectedItemsSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="IsThreeState" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.NullToObjectConverter">
+      <RootProperty Name="ValueNull" />
+      <RootProperty Name="ValueNotNull" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.Native.EditorTextBox">
+      <RootProperty Name="Style" />
+      <RootProperty Name="SelectionHighlightColor" />
+      <RootProperty Name="MaxLength" />
+      <RootProperty Name="InputScope" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="AcceptsReturn" />
+      <RootProperty Name="IsTextPredictionEnabled" />
+      <RootProperty Name="IsReadOnly" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="NullTextForeground" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarTextBox" />
+    <RootType FullName="DevExpress.UI.Xaml.Editors.TextEdit">
+      <RootProperty Name="NullTextForeground" />
+      <RootProperty Name="ButtonsTemplate" />
+      <RootProperty Name="TextTemplate" />
+      <RootProperty Name="EditNonEditableTemplate" />
+      <RootProperty Name="SelectionHighlightBrush" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.BaseEdit">
+      <RootProperty Name="EditTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarHelpPaneButton">
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="IconStretch" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="CommandParameter" />
+      <RootProperty Name="Command" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonItemBase">
+      <RootProperty Name="ItemStyle" />
+      <RootProperty Name="CollapsePriority" />
+      <RootProperty Name="CollapsedGroupName" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarHelpPaneRadioButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarHelpPanelToggleButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarMenuButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarRadioButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarCheckBox" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarComboBox">
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="GroupStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarFontEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarSpinEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarSplitButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarToggleButton" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+      <RootProperty Name="EnableDependentAnimation" />
+      <RootProperty Name="BeginTime" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="TextTrimming" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.SpinEdit">
+      <RootProperty Name="AllowRoundOutOfRangeValue" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="MaxValue" />
+      <RootProperty Name="MinValue" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Increment" />
+      <RootProperty Name="TextInputSettings" />
+      <RootProperty Name="SelectionHighlightBrush" />
+      <RootProperty Name="EditValue" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
+      <RootMethod Name="GetAccessibilityView" />
+      <RootMethod Name="SetAccessibilityView" />
+      <RootMethod Name="GetName" />
+      <RootMethod Name="SetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Data" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="FlowDirection" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.FlyoutItemsContentHost">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ColumnCount" />
+      <RootProperty Name="FlyoutCalculator" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.PropertyProvider">
+      <RootMethod Name="GetProperties" />
+      <RootMethod Name="SetProperties" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.Native.VisualStateHelper">
+      <RootMethod Name="GetManager" />
+      <RootMethod Name="SetManager" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.ButtonsControl">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.EditorControl">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ContentTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.ButtonsPanel" />
+    <RootType FullName="DevExpress.UI.Xaml.Editors.EditorPopupContainer">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.EditorPopup" />
+    <RootType FullName="DevExpress.UI.Xaml.ValidationFlyout" />
+    <RootType FullName="DevExpress.Core.BooleanToDoubleConverter">
+      <RootProperty Name="ValueFalse" />
+      <RootProperty Name="ValueTrue" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.BooleanToVisibilityConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarMenuButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarToggleButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarRadioButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarSplitButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Internal.DropDownIconView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Owner" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsIconVisible" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.ToolbarGroupDropDownItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Internal.PointerItemBase">
+      <RootProperty Name="ClickMode" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonMenuItemBase">
+      <RootProperty Name="FlyoutSettings" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="Duration" />
+      <RootProperty Name="From" />
+      <RootProperty Name="To" />
+      <RootProperty Name="EnableDependentAnimation" />
+      <RootProperty Name="EasingFunction" />
+      <RootProperty Name="BeginTime" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.ToolbarStackedFlyoutControl">
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="StaysOpen" />
+      <RootProperty Name="AnimationFlyoutShift" />
+      <RootProperty Name="CloseOnTargetClick" />
+      <RootProperty Name="AnimationDuration" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HeaderContent" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TranslateTransform">
+      <RootProperty Name="Y" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.ToolbarFlyinSettings" />
+    <RootType FullName="DevExpress.UI.Xaml.Internal.NativeIconContentPresenter">
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.NativeIconView">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="UseIconPadding" />
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="Icon" />
+      <RootProperty Name="IconTemplate" />
+      <RootProperty Name="IconFill" />
+      <RootProperty Name="IconSizeUnit" />
+      <RootProperty Name="IconStretch" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonStateToBoolConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.SizeToDoubleConverter">
+      <RootProperty Name="Multiplier" />
+      <RootProperty Name="Property" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonSplitButton">
+      <RootProperty Name="Style" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="FlyoutContent" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonSplitButtonBase">
+      <RootProperty Name="ActAsDropDown" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarTab" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="IsHorizontalRailEnabled" />
+      <RootProperty Name="IsVerticalRailEnabled" />
+      <RootProperty Name="IsDeferredScrollingEnabled" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="VerticalSnapPointsType" />
+      <RootProperty Name="VerticalSnapPointsAlignment" />
+      <RootProperty Name="BringIntoViewOnFocusChange" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetIsDeferredScrollingEnabled" />
+      <RootMethod Name="SetIsDeferredScrollingEnabled" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonTabPanel">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.StateTrigger">
+      <RootProperty Name="IsActive" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ExponentialEase">
+      <RootProperty Name="EasingMode" />
+      <RootProperty Name="Exponent" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonToolbarHeaderControl">
+      <RootProperty Name="EmbedFlyoutHeader" />
+      <RootProperty Name="Owner" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.Mvvm.UI.Interactivity.Interaction">
+      <RootMethod Name="GetBehaviorsTemplate" />
+      <RootMethod Name="SetBehaviorsTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonInputPaneBehavior">
+      <RootProperty Name="OwnerState" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ToolbarControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.ToolbarPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonFlyoutPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="FlyoutCalculator" />
+      <RootProperty Name="ColumnCount" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.CloseParentPopupOnAreaClickBehavior" />
+    <RootType FullName="DevExpress.UI.Xaml.Native.FlyoutBase">
+      <RootProperty Name="AnimationDuration" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Native.PopupBase">
+      <RootProperty Name="StaysOpen" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Popup">
+      <RootProperty Name="IsLightDismissEnabled" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.MenuClippedGrid">
+      <RootProperty Name="VerticalContentRectShift" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonHeaderControl">
+      <RootProperty Name="Owner" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="EmbedFlyoutHeader" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonTabsControl">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedTab" />
+      <RootProperty Name="HeaderItemTemplate" />
+      <RootProperty Name="HeaderItemContainerStyle" />
+      <RootProperty Name="ContextualHeaderItemTemplate" />
+      <RootProperty Name="ContextualHeaderItemContainerStyle" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="BackstageView" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonFlyoutTitleControl">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsTitleEditable" />
+      <RootProperty Name="Title" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonButton">
+      <RootProperty Name="Style" />
+      <RootProperty Name="ClickMode" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IconFill" />
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Internal.FlyoutHeaderControl">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="SeparatorVisibility" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BackCommand" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="BackButtonStyle" />
+      <RootProperty Name="SeparatorBrush" />
+    </RootType>
+    <RootType FullName="System.Double" />
+    <RootType FullName="Windows.UI.Xaml.Thickness" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.TitleTextEdit">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Owner" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FocusOnLoaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="SelectionHighlightColor" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Style" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.ToolbarHelpPaneView">
+      <RootProperty Name="IsExtended" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HelpPane" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonStateExtensions">
+      <RootMethod Name="GetItemState" />
+      <RootMethod Name="SetItemState" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.HorizontalItemSeparator">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonFlyoutTitlePopup">
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="PlacementTarget" />
+      <RootProperty Name="Settings" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonHeaderFlyoutSettings">
+      <RootProperty Name="TargetHorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonHelpPaneView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HelpPane" />
+      <RootProperty Name="Placement" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="IsCompact" />
+      <RootProperty Name="ShowSeparator" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.SplitCloseThemeAnimation">
+      <RootProperty Name="OpenedTargetName" />
+      <RootProperty Name="ClosedTargetName" />
+      <RootProperty Name="OffsetFromCenter" />
+      <RootProperty Name="OpenedLength" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Glyph" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter" />
+    <RootType FullName="DevExpress.UI.Xaml.Internal.FlyoutHeaderBackButton" />
+    <RootType FullName="DevExpress.Core.SystemColorsSchemeDictionaryLoader" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonHeaderBackstageItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonHeaderItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarHeaderItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonHeaderContextualItem" />
+    <RootType FullName="DevExpress.Core.BoolToObjectConverter">
+      <RootProperty Name="ValueTrue" />
+      <RootProperty Name="ValueFalse" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonToolbarTabsControl">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedTab" />
+      <RootProperty Name="HeaderItemTemplate" />
+      <RootProperty Name="HeaderItemContainerStyle" />
+      <RootProperty Name="ContextualHeaderItemTemplate" />
+      <RootProperty Name="ContextualHeaderItemContainerStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonToolbarHeaderPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonHeaderPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarColorEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Internal.MenuFlyoutControl">
+      <RootProperty Name="AnimationDuration" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="StaysOpen" />
+      <RootProperty Name="PlacementTarget" />
+      <RootProperty Name="Settings" />
+      <RootMethod Name="GetCloseOnTargetClick" />
+      <RootMethod Name="SetCloseOnTargetClick" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarComboBox">
+      <RootProperty Name="Header" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="GroupStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarFontEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Editors.FontEdit">
+      <RootProperty Name="FontFamilyItemTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarMenuButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarToggleButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarRadioButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarSplitButton" />
+    <RootType FullName="Windows.UI.Xaml.Controls.GroupStyle">
+      <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="HeaderContainerStyle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.DXListViewGroupHeaderContainer" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToggleButton">
+      <RootProperty Name="IconSource" />
+      <RootProperty Name="ClosePopupOnClick" />
+      <RootProperty Name="IconWidth" />
+      <RootProperty Name="IconHeight" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="IconTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.MultiPath">
+      <RootProperty Name="Data" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Editors.ColorEdit">
+      <RootProperty Name="DefaultColor" />
+      <RootProperty Name="Color" />
+      <RootProperty Name="ColorGroupsSource" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.GalleryItemContainer" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonGallery" />
+    <RootType FullName="DevExpress.UI.Xaml.Gallery">
+      <RootProperty Name="GroupContainerStyle" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="GroupHeaderTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.InRibbonGalleryItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.InRibbonGallery" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.InRibbonGalleryPanel" />
+    <RootType FullName="DevExpress.UI.Xaml.GalleryVirtualizingPanel" />
+    <RootType FullName="DevExpress.Core.BooleanToObjectConverter">
+      <RootProperty Name="ValueTrue" />
+      <RootProperty Name="ValueFalse" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonCheckBox" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonColorEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonToolbarColorEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonFontEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonRadioButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonSpinEdit" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonTextBox" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonMenuButton" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonHeaderDropDownItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonToolbarHeaderDropDownItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonGroupDropDownItem" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonViewModeToBoolConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonTab" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.RibbonContextualTab" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonGroupSeparator" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.ToolbarGroupSeparator" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonContentHost">
+      <RootProperty Name="Owner" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.RibbonAdaptiveTrigger">
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Inverted" />
+      <RootProperty Name="ControlSize" />
+      <RootProperty Name="MinControlWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="CenterY" />
+      <RootProperty Name="ScaleY" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.BackstageFlyoutSettings" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.DoubleNegationConverter" />
+    <RootType FullName="DevExpress.UI.Xaml.FlyinSettings" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.ContextToolbarControl" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.Internal.VerticalItemSeparator" />
+    <RootType FullName="DevExpress.UI.Xaml.Ribbon.BackstageSeparatorItem" />
+  </Roots.RootTypes>
+</Roots>

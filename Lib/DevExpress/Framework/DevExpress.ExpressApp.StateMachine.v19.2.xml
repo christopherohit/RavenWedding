@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.StateMachine.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.StateMachine">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the State Machine Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.StateMachine.StateMachineModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.StateMachine.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.StateMachine.StateMachineModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.StateMachine.StateMachineModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.StateMachine.StateMachineModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.StateMachine.StateMachineModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.StateMachine.StateMachineModule"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.StateMachine.StateMachineModule.RegisterDomainComponentEntities(DevExpress.ExpressApp.DC.ITypesInfo,System.String,System.String,System.String,System.String)">
+      <summary>
+        <para>Registers the domain component entities that are required by the State Machine module.</para>
+      </summary>
+      <param name="typesInfo">An ITypesInfo object that is the type information store within which the domain components required for the State Machine module must be registered.</param>
+      <param name="stateMachineEntityName">A string that specifies the name for the State Machine entity.</param>
+      <param name="stateEntityName">A string that specifies the name for the State entity.</param>
+      <param name="transitionEntityName">A string that specifies the name for the Transition entity.</param>
+      <param name="stateAppearanceEntityName">A string that specifies the name for the State Appearance entity.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.StateMachine.StateMachineModule.StateMachineStorageType">
+      <summary>
+        <para>Specifies a persistent type used to store state machines in the database.</para>
+      </summary>
+      <value>A persistent type used to store state machines in the database.</value>
+    </member>
+  </members>
+</doc>

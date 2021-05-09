@@ -1,0 +1,363 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevExpress.UI.Xaml.Editors.Native"
+    xmlns:dxe="using:DevExpress.UI.Xaml.Editors" 
+    xmlns:dx="using:DevExpress.Core"
+    xmlns:dxi="using:DevExpress.UI.Xaml.Editors.Native"
+    xmlns:dxen="using:DevExpress.UI.Xaml.Editors.Native">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/RadialTimeEdit.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <dx:BooleanToDoubleConverter ValueFalse="1" ValueTrue="0" x:Key="SelectedConverter"/>
+    <dxe:DateTimePickerItemTemplateSelector x:Key="DateTimePicker_ItemTemplateSelector"/>
+    <dx:BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    <dxen:DoubleToPointConverter x:Key="radiusToStartPointConverter"/>
+    <dxen:DoubleToSizeConverter x:Key="radiusToSizeConverter"/>
+
+    <ControlTemplate x:Key="RadialTimeSelectorPointerTemplate" TargetType="dxen:RadialTimeSelectorPointer">
+        <StackPanel>
+            <Ellipse Name="pointer" StrokeThickness="3" Stroke="{TemplateBinding Stroke}" Width="{TemplateBinding Width}" Height="{TemplateBinding Width}" Fill="{TemplateBinding Background}"/>
+            <Grid
+                x:Name="BottomIndicator"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Margin="4,-2">
+                <Path
+                    Data="F1 M -1.04904e-005,0L 13,13L 26,0L -1.04904e-005,0 Z "
+                    Fill="{TemplateBinding Stroke}"
+                    Stretch="Fill"
+                    Height="5"
+                    Width="10" />
+                <Path 
+                    Data="F1 M -1.04904e-005,0L 13,13L 26,0L -1.04904e-005,0 Z "
+                    Fill="{TemplateBinding Stroke}"
+                    Stretch="Fill"
+                    Height="5"
+                    Width="10" />
+                <Path 
+                    Data="F1 M -1.04904e-005,0L 13,13L 26,0L -1.04904e-005,0 Z "
+                    Fill="{TemplateBinding Stroke}"
+                    Margin="0, -1, 0, 1"
+                    Stretch="Fill"
+                    Height="5"
+                    Width="10" />
+            </Grid>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup>
+                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="Pressed">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pointer" Storyboard.TargetProperty="Fill">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource RadialTimeSelectorPointerBackgroundHoverBrush}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </StackPanel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="RadialTimeSelectorTemplate" TargetType="dxen:RadialTimeSelector">
+        <Grid>
+            <Ellipse Name="PART_BackEllipse" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                     StrokeThickness="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Thickness}" 
+                     Stroke="{TemplateBinding Background}"
+                     Fill="Transparent"/>
+
+            <Path Stroke="{TemplateBinding Foreground}" StrokeThickness="{TemplateBinding Thickness}" Name="PART_Arc" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure x:Name="PART_PathFigure"  StartPoint="{TemplateBinding StartPoint}" >
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <ArcSegment x:Name="PART_ArcSegment" SweepDirection="Clockwise" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <dxen:RadialTimeSelectorPointer Width="35" x:Name="PART_Pointer" Stroke="{TemplateBinding PointerStroke}" Canvas.ZIndex="10" VerticalAlignment="Center"/>
+        </Grid>
+    </ControlTemplate>
+
+    <Style x:Key="AmPmDateTimePickerSelector" TargetType="dxe:DateTimePickerSelector">
+        <Setter Property="ItemTemplateSelector" Value="{StaticResource DateTimePicker_ItemTemplateSelector}"/>
+        <Setter Property="dx:FocusHelper2.Focusable" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="dxe:DateTimePickerSelector">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonGroup">
+                                <VisualState x:Name="Normal">
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.3" Storyboard.TargetName="pickerPanel" Storyboard.TargetProperty="Opacity" To="0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Expanded">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="SelectedItem">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource RadialTimeAmPmSelectedBackgroundBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="SelectedItem">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource RadialTimeAmPmSelectedForegroundBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <DoubleAnimation Duration="0:0:0.3" Storyboard.TargetName="pickerPanel" Storyboard.TargetProperty="Opacity" To="1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Animated">
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.3" Storyboard.TargetName="pickerPanel" Storyboard.TargetProperty="Opacity" To="1" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid Width="Auto" Height="Auto" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="SelectedItemContainer"
+                            Opacity="{Binding Path=IsAnimated, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource SelectedConverter}}">
+                            <dxe:DateTimePickerItem x:Name="SelectedItem" DataContext="{Binding Path=SelectedItem, RelativeSource={RelativeSource TemplatedParent}}"
+                                                    ContentTemplate="{Binding Path=SelectedItemTemplate, RelativeSource={RelativeSource TemplatedParent}}" Width="60" Height="60"
+                                                    Background="{ThemeResource RadialTimeAmPmBackgroundBrush}"
+                                                    Foreground="{ThemeResource RadialTimeAmPmForegroundBrush}"
+                                                    Orientation="Horizontal"
+                                                    IsSelected="True" />
+                        </Grid>
+                        <local:MouseScrollingContainer IsLooped="{TemplateBinding IsLooped}" PanningDeceleration="0.005" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                            <ScrollViewer Width="Auto" 
+                                          ZoomMode="Disabled"
+                                          VerticalScrollBarVisibility="Disabled"
+                                          HorizontalScrollBarVisibility="Hidden"
+                                          HorizontalScrollMode="Enabled"
+                                          VerticalScrollMode="Disabled"
+                                          HorizontalSnapPointsAlignment="Near"
+                                          HorizontalSnapPointsType="Mandatory"
+                                          IsDeferredScrollingEnabled="True"
+                                          IsTabStop="False">
+                                <dxen:RadialTimePickerPanel x:Name="pickerPanel" Opacity="0" Orientation="Horizontal" />
+                            </ScrollViewer>
+                        </local:MouseScrollingContainer>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="dxe:DateTimePickerItem">
+                    <Setter Property="Width" Value="60" />
+                    <Setter Property="Height" Value="60" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="SimpleTextEdit_BorderTemplate" TargetType="ContentControl">
+        <Grid x:Name="PART_Root" Background="Transparent" BorderThickness="2" BorderBrush="Transparent">
+            <ContentPresenter x:Name="ContentElement" Margin="{TemplateBinding BorderThickness}"/>
+            <dxe:EditorPopupContainer>
+                <dxe:EditorPopup/>
+            </dxe:EditorPopupContainer>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SimpleTextEdit_Template" TargetType="dxe:TextEdit">
+        <ContentControl
+            VerticalAlignment="Stretch"
+            IsTabStop="False"
+            Template="{StaticResource SimpleTextEdit_BorderTemplate}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            Background="{TemplateBinding Background}"
+            dxi:VisualStateHelper.Manager="{Binding Path=(dxe:PropertyProvider.Properties).BaseEditViewModel.StateManager, RelativeSource={RelativeSource TemplatedParent}}">
+            <Grid x:Name="ContentElement" UseLayoutRounding="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <dxe:ButtonsControl
+                    x:Name="PART_LeftButtons"
+                    dxe:PropertyProvider.Properties="{TemplateBinding dxe:PropertyProvider.Properties}"
+                    ItemsSource="{Binding Path=(dxe:PropertyProvider.Properties).ButtonEditViewModel.LeftButtons, RelativeSource={RelativeSource Self}}" />
+                <dxe:EditorControl
+                    x:Name="PART_Content"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="1"
+                    dxe:PropertyProvider.Properties="{TemplateBinding dxe:PropertyProvider.Properties}"
+                    ContentTemplate="{Binding Path=ActualEditTemplate, RelativeSource={RelativeSource TemplatedParent}}" />
+                <dxe:ButtonsControl
+                    x:Name="PART_RightButtons"
+                    dxe:PropertyProvider.Properties="{TemplateBinding dxe:PropertyProvider.Properties}"
+                    Grid.Column="2"
+                    ItemsSource="{Binding Path=(dxe:PropertyProvider.Properties).ButtonEditViewModel.RightButtons, RelativeSource={RelativeSource Self}}" />
+            </Grid>
+        </ContentControl>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="RadialTimePicker_Template" TargetType="dxen:RadialTimePicker">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+            <ItemsControl Grid.Row="1" x:Name="ItemsControlAmPm" HorizontalAlignment="Center" VerticalAlignment="Bottom" >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <dxen:RadialTimePickerSelector Style="{StaticResource AmPmDateTimePickerSelector}"
+                                                        ItemsSource="{Binding Path=Items}" 
+                                                        SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" 
+                                                        IsAnimated="{Binding Path=IsAnimated, Mode=TwoWay}" 
+                                                        IsExpanded="{Binding Path=IsExpanded, Mode=TwoWay}"
+                                                        IsLooped="{Binding Path=IsLooped}">
+                        </dxen:RadialTimePickerSelector>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <Grid Margin="35">
+                <dxen:RadialTimeSelectorItemsControl x:Name="ItemsControl" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <dxen:RadialTimeSelectorItemsPanel />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <dxen:RadialTimeSelector Thickness="10"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinValue="0" MaxValue="{Binding MaxValue}" Value="{Binding Path=Value, Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </dxen:RadialTimeSelectorItemsControl>
+                <dxe:TextEdit Grid.RowSpan="2" EditValue="{TemplateBinding DateTime}" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" Template="{StaticResource SimpleTextEdit_Template}" Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ShowDateTime, Converter={StaticResource booleanToVisibilityConverter}}" Foreground="{TemplateBinding Foreground}">
+                    <dxe:TextEdit.TextInputSettings>
+                        <dxe:TextInputMaskSettings Mask="{Binding DisplayMask, RelativeSource={RelativeSource Mode=TemplatedParent}}" MaskType="DateTime"/>
+                    </dxe:TextEdit.TextInputSettings>
+                </dxe:TextEdit>
+            </Grid>
+        </Grid>
+    </ControlTemplate>
+
+    <Style TargetType="dxen:RadialTimeSelector">
+        <Setter Property="Template" Value="{StaticResource RadialTimeSelectorTemplate}" />
+        <Setter Property="Foreground" Value="{ThemeResource RadialTimeSelectorForegroundBrush}" />
+        <Setter Property="PointerStroke" Value="{ThemeResource RadialTimeSelectorPointerStrokeBrush}" />
+        <Setter Property="Thickness" Value="40" />
+        <Setter Property="Background" Value="{ThemeResource RadialTimeSelectorBackgroundBrush}" />
+    </Style>
+    <Style TargetType="dxen:RadialTimeSelectorPointer">
+        <Setter Property="Template" Value="{StaticResource RadialTimeSelectorPointerTemplate}" />
+        <Setter Property="MinHeight" Value="25" />
+        <Setter Property="MinWidth" Value="25" />
+        <Setter Property="RenderTransformOrigin" Value="0.5,0.5" />
+        <Setter Property="ManipulationMode" Value="All" />
+        <Setter Property="Background" Value="{ThemeResource RadialTimeSelectorPointerBackgroundBrush}" />
+    </Style>
+
+
+    <ControlTemplate x:Name="RadialTimeEdit_Template" TargetType="dxe:RadialTimePickerEdit">
+        <Grid x:Name="PART_Root" Background="{TemplateBinding Background}">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="EnabledStates">
+                    <VisualState x:Name="Enabled" />
+                    <VisualState x:Name="Disabled">
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames BeginTime="0" Duration="0" Storyboard.TargetName="PART_Content" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.35" />
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <ContentControl x:Name="BorderContent" HorizontalContentAlignment="Stretch" IsTabStop="False" VerticalContentAlignment="Stretch">
+                <Grid x:Name="ButtonEditGrid" UseLayoutRounding="True">
+                    <dxe:EditorControl
+                        x:Name="PART_Content"
+                        VerticalAlignment="Stretch"
+                        ContentTemplate="{Binding Path=EditTemplate, RelativeSource={RelativeSource TemplatedParent}}" />
+                </Grid>
+            </ContentControl>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="RadialTimeEditPopupSettings_PopupTemplate" TargetType="ContentControl">
+        <dxe:RadialTimePickerEdit
+            EditValue="{Binding Path=PopupSettings.PopupEditValue, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+        />
+    </ControlTemplate>
+
+    <DataTemplate x:Key="RadialTimeEdit_EditTemplate">
+        <dxen:RadialTimePicker x:Name="PART_Editor"/>
+    </DataTemplate>
+    <ControlTemplate TargetType="ContentControl" x:Key="RadialTimeEditPopupContentContainerTemplate">
+        <Border x:Name="PopupBorder" 
+                BorderBrush="{ThemeResource RadialTimeEditPopupContainerBorderBrush}" 
+                BorderThickness="{ThemeResource ComboBoxPopupBorderThemeThickness}" 
+                Background="{ThemeResource RadialTimeEditPopupContainerBackgroundBrush}" 
+                HorizontalAlignment="Stretch">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid
+                    x:Name="TopButtonsContainer"
+                    HorizontalAlignment="Center"
+                    MinWidth="200"
+                    Visibility="{Binding Path=IsTopButtonsVisible, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button HorizontalAlignment="Stretch" Content="OK" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Normal"/>
+                    <Button HorizontalAlignment="Stretch" Grid.Column="1" Content="Cancel" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Cancel"/>
+                </Grid>
+                <ContentPresenter Grid.Row="1"/>
+                <Grid
+                    x:Name="BottomButtonsContainer"
+                    Grid.Row="2"
+                    HorizontalAlignment="Center"
+                    MinWidth="200"
+                    Visibility="{Binding Path=IsBottomButtonsVisible, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button HorizontalAlignment="Stretch" Content="OK" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Normal"/>
+                    <Button HorizontalAlignment="Stretch" Grid.Column="1" Content="Cancel" Command="{Binding Path=ClosePopupCommand, RelativeSource={RelativeSource TemplatedParent}}" CommandParameter="Cancel"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+    <Style TargetType="dxe:RadialTimeEditPopupSettings">
+        <Setter Property="PopupMaxWidth" Value="400"/>
+        <Setter Property="ShowPopupButtons" Value="true"/>
+        <Setter Property="PopupContentContainerTemplate" Value="{StaticResource RadialTimeEditPopupContentContainerTemplate}"/>
+        <Setter Property="Background" Value="{ThemeResource RadialTimeEditPopupBackgroundBrush}"/>
+        <Setter Property="PopupTemplate" Value="{StaticResource RadialTimeEditPopupSettings_PopupTemplate}"/>
+    </Style>
+    <Style TargetType="dxe:RadialTimePickerEdit">
+        <Setter Property="IsTabStop" Value="True"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="ValidateOnTextInput" Value="True"/>
+        <Setter Property="Template" Value="{StaticResource RadialTimeEdit_Template}"/>
+        <Setter Property="EditTemplate" Value="{StaticResource RadialTimeEdit_EditTemplate}"/>
+    </Style>
+    <Style TargetType="dxi:RadialTimePicker">
+        <Setter Property="Foreground" Value="{ThemeResource RadialTimePickerForegroundBrush}"/>
+        <Setter Property="Template" Value="{StaticResource RadialTimePicker_Template}"/>
+    </Style>
+
+</ResourceDictionary>
+

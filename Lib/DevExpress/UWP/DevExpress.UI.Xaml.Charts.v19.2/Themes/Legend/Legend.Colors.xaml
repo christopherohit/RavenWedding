@@ -1,0 +1,21 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ChartLegendBackgroundThemeBrush" Color="#00FFFFFF" Core:ColorKey.Id="ChartColors.LegendBackground.Light"/>
+            <SolidColorBrush x:Key="ChartLegendForegroundThemeBrush" Color="#FF808080" Core:ColorKey.Id="ChartColors.LegendForeground.Light"/>
+            <SolidColorBrush x:Key="ChartLegendBorderThemeBrush" Color="#59808080" Core:ColorKey.Id="ChartColors.LegendBorder.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ChartLegendBackgroundThemeBrush" Color="#00FFFFFF"  Core:ColorKey.Id="ChartColors.LegendBackground.Default" />
+            <SolidColorBrush x:Key="ChartLegendForegroundThemeBrush" Color="#FFD4D4D4"  Core:ColorKey.Id="ChartColors.LegendForeground.Default" />
+            <SolidColorBrush x:Key="ChartLegendBorderThemeBrush" Color="#59808080"  Core:ColorKey.Id="ChartColors.LegendBorder.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+

@@ -1,0 +1,687 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+
+
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundCheckedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundIndeterminateHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundIndeterminatePressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundCheckedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundCheckedHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundCheckedPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundCheckedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundCheckedHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundCheckedPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderCheckedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushCheckedHover.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarFontEditHeaderBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarFontEditColors.HeaderBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarFontEditHeaderForegroundBrush" Color="#AF000000" Core:ColorKey.Id="RibbonToolbarFontEditColors.HeaderForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarFontEditHeaderSeparatorBrush" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonToolbarFontEditColors.HeaderSeparator.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxForegroundDisabledBrush" Color="#FF666666" Core:ColorKey.Id="RibbonToolbarTextBoxColors.ForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxForegroundBrush" Color="#FF000000" Core:ColorKey.Id="RibbonToolbarTextBoxColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxNullTextForegroundBrush" Color="#FF666666" Core:ColorKey.Id="RibbonToolbarTextBoxColors.NullTextForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBorderInvalidBrush" Color="#FFFF0000" Core:ColorKey.Id="RibbonToolbarTextBoxColors.BorderBrushInvalid.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBorderBrush" Color="#FF3E3E3E" Core:ColorKey.Id="RibbonToolbarTextBoxColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBorderDisabledBrush" Color="#26000000" Core:ColorKey.Id="RibbonToolbarTextBoxColors.BorderBrushDisabled.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarTextBoxColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBackgroundDisabledBrush" Color="#66CACACA" Core:ColorKey.Id="RibbonToolbarTextBoxColors.BackgroundDisabled.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxSelectionHighlightBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonToolbarTextBoxColors.SelectionHighlight.Light"/>
+
+
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFill.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillDisabledBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFillDisabled.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectStrokeBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectStrokeHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectStrokeHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectStrokePressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectStrokePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxIndeterminateGlyphFillPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.IndeterminateGlyphFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxIndeterminateGlyphFillBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.IndeterminateGlyphFill.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxIndeterminateGlyphFillHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.IndeterminateGlyphFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFill.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillDisabledBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFillDisabled.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.FocusVisualBackground.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarComboBoxColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarComboBoxColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemForegroundSelected.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundSelectedHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundSelectedPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundSelectedHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundSelectedPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBackgroundBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBackgroundHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBorderHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBorderHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBackgroundBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonSeparatorBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.Separator.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonContentBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ContentBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonContentBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ContentBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonArrowBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ArrowBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonArrowBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ArrowBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarSpinEditForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarSpinEditColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarSpinEditBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSpinEditColors.BorderBrush.Light"/>
+
+
+
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundIndeterminateHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundIndeterminatePressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundCheckedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundCheckedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundCheckedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderIndeterminateHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderIndeterminatePressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderCheckedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderCheckedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderCheckedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundIndeterminateHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundIndeterminatePressedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundCheckedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundCheckedHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundCheckedPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillChecked.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.FocusVisualBackground.Light"/>
+
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonIconFillBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonIconForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonIconForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.FocusVisualBackground.Light"/>
+
+
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBorderBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBackgroundHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBackgroundPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonIconFillBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonIconForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonIconForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.FocusVisualStroke.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundCheckedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBackgroundCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BackgroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundIndeterminateHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundIndeterminatePressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundCheckedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundCheckedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundCheckedHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundCheckedHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillCheckedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonIconForegroundCheckedPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.IconFillCheckedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonForegroundCheckedPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.ForegroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderCheckedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushCheckedHover.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarToggleButtonBorderCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarToggleButtonColors.BorderBrushCheckedPressed.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarFontEditHeaderBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarFontEditColors.HeaderBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarFontEditHeaderForegroundBrush" Color="#AF000000" Core:ColorKey.Id="RibbonToolbarFontEditColors.HeaderForeground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarFontEditHeaderSeparatorBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonToolbarFontEditColors.HeaderSeparator.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxForegroundDisabledBrush" Color="#FF666666" Core:ColorKey.Id="RibbonToolbarTextBoxColors.ForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxNullTextForegroundBrush" Color="#FF666666" Core:ColorKey.Id="RibbonToolbarTextBoxColors.NullTextForeground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBorderInvalidBrush" Color="#FFFF0000"  Core:ColorKey.Id="RibbonToolbarTextBoxColors.BorderBrushInvalid.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarTextBoxColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxSelectionHighlightBrush" Color="#FF2A2A2A" Core:ColorKey.Id="RibbonToolbarTextBoxColors.SelectionHighlight.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxForegroundBrush" Color="#FF000000" Core:ColorKey.Id="RibbonToolbarTextBoxColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBorderBrush" Color="#FF3E3E3E" Core:ColorKey.Id="RibbonToolbarTextBoxColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBackgroundDisabledBrush" Color="#66CACACA" Core:ColorKey.Id="RibbonToolbarTextBoxColors.BackgroundDisabled.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTextBoxBorderDisabledBrush" Color="#26000000" Core:ColorKey.Id="RibbonToolbarTextBoxColors.BorderBrushDisabled.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFill.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxIndeterminateGlyphFillPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.IndeterminateGlyphFillPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFillPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillDisabledBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFillDisabled.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxIndeterminateGlyphFillBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.IndeterminateGlyphFill.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFill.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillDisabledBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFillDisabled.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxIndeterminateGlyphFillHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.IndeterminateGlyphFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxGlyphFillHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.GlyphFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectStrokeBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectStrokeHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectStrokeHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectStrokePressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectStrokePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarCheckBoxNormalRectFillPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarCheckBoxColors.NormalRectFillPressed.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarComboBoxColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarComboBoxColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemBackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemForeground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxItemForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarComboBoxColors.ItemForegroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarComboBoxBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarComboBoxColors.BorderBrush.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundSelectedHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundSelectedHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonIconForegroundSelectedPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.IconFillSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonForegroundSelectedPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.ForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.BorderBrushSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMenuButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarMenuButtonColors.FocusVisualBackground.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBackgroundBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBackgroundHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBorderHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBorderHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonSelectionBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.SelectionBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarRadioButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarRadioButtonColors.FocusVisualBackground.Default" />
+
+            <SolidColorBrush x:Key="RibbonToolbarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarButtonColors.FocusVisualBackground.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBackgroundBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonSeparatorBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.Separator.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.BorderBrushSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonContentBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ContentBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonArrowBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ArrowBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonContentBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ContentBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonArrowBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.ArrowBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSplitButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarSplitButtonColors.FocusVisualBackground.Default" />
+
+            <SolidColorBrush x:Key="RibbonToolbarSpinEditForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarSpinEditColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarSpinEditBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarSpinEditColors.BorderBrush.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundIndeterminateHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundIndeterminatePressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundCheckedBrush" Color="#60FFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundCheckedHoverBrush" Color="#70FFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBackgroundCheckedPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BackgroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderIndeterminateHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderIndeterminatePressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderCheckedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderCheckedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushCheckedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonBorderCheckedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.BorderBrushCheckedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundIndeterminateHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundIndeterminatePressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundCheckedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillChecked.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundCheckedHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillCheckedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonForegroundCheckedPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.ForegroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHelpPanelToggleButtonColors.IconFillCheckedPressed.Default" />
+            
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonIconFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonIconForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonIconForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneButtonColors.FocusVisualStroke.Default" />
+            
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBackgroundBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBackgroundHoverBrush" Color="#70FFFFFF" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonSelectionBorderBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.SelectionBorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonIconFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonIconForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ToolbarHelpPaneRadioButtonIconForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarHelpPaneRadioButtonColors.IconFillPressed.Default" />
+            
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

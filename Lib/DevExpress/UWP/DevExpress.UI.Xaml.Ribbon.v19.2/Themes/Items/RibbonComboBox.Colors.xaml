@@ -1,0 +1,53 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="RibbonComboBoxBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonComboBoxColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonComboBoxColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonComboBoxColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.BorderBrush.Light"/>
+
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundPressedrBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxItemForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonComboBoxColors.ItemForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxItemForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="RibbonComboBoxColors.ItemForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonComboBoxItemForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonComboBoxColors.ItemForegroundSelected.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RibbonComboBoxBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonComboBoxColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonComboBoxColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundPressedrBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.ItemBackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonComboBoxColors.ItemForeground.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonComboBoxColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="RibbonComboBoxColors.ItemForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxItemForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonComboBoxColors.ItemForegroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonComboBoxBorderBrush" Color="#60000000" Core:ColorKey.Id="RibbonComboBoxColors.BorderBrush.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

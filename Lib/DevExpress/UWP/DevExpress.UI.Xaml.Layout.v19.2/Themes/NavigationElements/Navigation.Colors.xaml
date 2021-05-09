@@ -1,0 +1,52 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="DXBackButtonBackgroundThemeBrush" Color="#00FFFFFF"  Core:ColorKey.Id="BackButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="DXBackButtonForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="BackButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="DXBackButtonPressedForegroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="BackButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="DXBackButtonPointerOverBackgroundThemeBrush" Color="#21FFFFFF" Core:ColorKey.Id="BackButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="DXBackButtonPointerOverForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="BackButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="DXBackButtonFocusVisualWhiteStrokeThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="BackButtonColors.FocusVisualWhiteStroke.Default" />
+            <SolidColorBrush x:Key="DXBackButtonFocusVisualBlackStrokeThemeBrush" Color="#FF000000" Core:ColorKey.Id="BackButtonColors.FocusVisualBlackStroke.Default" />
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="HyperlinkNavigationButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HyperlinkNavigationButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundPressedBrush" Color="#FFEEEEEE" Core:ColorKey.Id="HyperlinkNavigationButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundDisabledBrush" Color="#FF666666" Core:ColorKey.Id="HyperlinkNavigationButtonColors.ForegroundDisabled.Default" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="DXBackButtonBackgroundThemeBrush" Color="#00FFFFFF" Core:ColorKey.Id="BackButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="DXBackButtonForegroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="BackButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="DXBackButtonPressedForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="BackButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="DXBackButtonPointerOverBackgroundThemeBrush" Color="#3D000000" Core:ColorKey.Id="BackButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="DXBackButtonPointerOverForegroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="BackButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="DXBackButtonFocusVisualWhiteStrokeThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="BackButtonColors.FocusVisualWhiteStroke.Light"/>
+            <SolidColorBrush x:Key="DXBackButtonFocusVisualBlackStrokeThemeBrush" Color="#FF000000" Core:ColorKey.Id="BackButtonColors.FocusVisualBlackStroke.Light"/>
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundBrush" Color="#FF5990ff" Core:ColorKey.Id="HyperlinkNavigationButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundHoverBrush" Color="#FF2fa7ff" Core:ColorKey.Id="HyperlinkNavigationButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundPressedBrush" Color="#FF2fa7ff"  Core:ColorKey.Id="HyperlinkNavigationButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="HyperlinkNavigationButtonForegroundDisabledBrush" Color="#FF333333"  Core:ColorKey.Id="HyperlinkNavigationButtonColors.ForegroundDisabled.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

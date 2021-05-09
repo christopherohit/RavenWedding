@@ -1,0 +1,442 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+
+            <SolidColorBrush x:Key="ContextToolbarFontEditHeaderBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ContextToolbarFontEditColors.HeaderBackground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarFontEditHeaderForegroundBrush" Color="#AF000000" Core:ColorKey.Id="ContextToolbarFontEditColors.HeaderForeground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarFontEditHeaderSeparatorBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ContextToolbarFontEditColors.HeaderSeparator.Light"/>
+
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ContextToolbarComboBoxColors.Background.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemForeground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarComboBoxColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBorderBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.BorderBrush.Light"/>
+
+            <SolidColorBrush x:Key="ContextToolbarColorEditBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarColorEditColors.Background.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarColorEditColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditSeparatorBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarColorEditColors.Separator.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditArrowBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ArrowBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditArrowBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ArrowBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditContentBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ContentBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditContentBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ContentBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarColorEditColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarColorEditFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarColorEditColors.FocusVisualBackground.Light"/>
+
+            <SolidColorBrush x:Key="ContextToolbarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.Background.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarMenuButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundSelectedHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundSelectedPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundSelectedHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundSelectedPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarMenuButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarToggleButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundCheckedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundChecked.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundIndeterminateHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundIndeterminatePressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundCheckedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundChecked.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundCheckedHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundCheckedPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundCheckedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillChecked.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundCheckedHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundCheckedPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderCheckedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushChecked.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarToggleButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarRadioButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBackgroundBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBackground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBackgroundHoverBackground" Color="#70000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBackgroundPressedBackground" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBorderBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBorderHoverBackground" Color="#70000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBorderPressedBackground" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarRadioButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarRadioButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarRadioButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarRadioButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarRadioButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarRadioButtonColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarSplitButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarSplitButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonSeparatorBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.Separator.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonContentBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ContentBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonContentBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ContentBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonArrowBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ArrowBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonArrowBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ArrowBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="ContextToolbarSplitButtonColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.FocusVisualBackground.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            
+            <SolidColorBrush x:Key="ContextToolbarFontEditHeaderBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ContextToolbarFontEditColors.HeaderBackground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarFontEditHeaderForegroundBrush" Color="#AF000000" Core:ColorKey.Id="ContextToolbarFontEditColors.HeaderForeground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarFontEditHeaderSeparatorBrush" Color="#FFA2A2A2" Core:ColorKey.Id="ContextToolbarFontEditColors.HeaderSeparator.Default" />
+            
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ContextToolbarComboBoxColors.Background.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemBackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarComboBoxColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemForeground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxItemForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarComboBoxColors.ItemForegroundSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarComboBoxBorderBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarComboBoxColors.BorderBrush.Default" />
+            
+            <SolidColorBrush x:Key="ContextToolbarColorEditBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarColorEditColors.Background.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarColorEditColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarColorEditColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditSeparatorBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarColorEditColors.Separator.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.BorderBrushSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarColorEditColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditArrowBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ArrowBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditContentBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ContentBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditArrowBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ArrowBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarColorEditContentBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarColorEditColors.ContentBackgroundPressed.Default" />
+            
+            <SolidColorBrush x:Key="ContextToolbarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.Background.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ContextToolbarButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarButtonBackgroundColors.FocusVisualBackground.Default" />
+            
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarMenuButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundSelectedHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundSelectedHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonIconForegroundSelectedPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.IconFillSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonForegroundSelectedPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarMenuButtonColors.ForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.BorderBrushSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarMenuButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarMenuButtonColors.FocusVisualBackground.Default" />
+            
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarToggleButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundCheckedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundChecked.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBackgroundCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BackgroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundIndeterminateHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundIndeterminatePressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundCheckedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillChecked.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundCheckedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundChecked.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundCheckedHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundCheckedHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonIconForegroundCheckedPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.IconFillCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonForegroundCheckedPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarToggleButtonColors.ForegroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderIndeterminatePressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderCheckedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushChecked.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderCheckedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonBorderCheckedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.BorderBrushCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarToggleButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarToggleButtonColors.FocusVisualBackground.Default" />
+            
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarRadioButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBackgroundBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBackground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBackgroundHoverBackground" Color="#70000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBackgroundPressedBackground" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarRadioButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarRadioButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarRadioButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarRadioButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarRadioButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarRadioButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBorderBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBorderBrush.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBorderHoverBackground" Color="#70000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonSelectionBorderPressedBackground" Color="#60000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.SelectionBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarRadioButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarRadioButtonColors.FocusVisualBackground.Default" />
+            
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarSplitButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarSplitButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="ContextToolbarSplitButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonSeparatorBrush" Color="#30000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.Separator.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.BorderBrushSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonContentBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ContentBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonArrowBackgroundHoverBrush" Color="#40000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ArrowBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonArrowBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ArrowBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ContextToolbarSplitButtonContentBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="ContextToolbarSplitButtonColors.ContentBackgroundPressed.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

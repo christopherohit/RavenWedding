@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Dashboards.Win.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Dashboards.Win">
+      <summary>
+        <para>Contains classes that are specific to the Dashboards Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Win.CreateCustomFormEventArgs">
+      <summary>
+        <para>Arguments, passed to the <see cref="E:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.CreateCustomForm"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.CreateCustomFormEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.CreateCustomFormEventArgs"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Win.CreateCustomFormEventArgs.Form">
+      <summary>
+        <para>Specifies the <see cref="T:DevExpress.XtraEditors.XtraForm"/> which is created in a <see cref="E:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.CreateCustomForm"/> event handler.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.XtraEditors.XtraForm"/> that contains the <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager">
+      <summary>
+        <para>Manages the <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> control in WinForms XAF applications.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.#ctor(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager"/> class.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the XAF application.</param>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.CreateCustomForm">
+      <summary>
+        <para>Occurs when creating a Form for the <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.DashboardDesignerCreated">
+      <summary>
+        <para>Occurs after a <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> control has been created.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.DashboardDesignerCreator">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.DesignerFormStyle">
+      <summary>
+        <para>Specifies whether the Standard UI or Ribbon UI is used in the Dashboard Designer.</para>
+      </summary>
+      <value>RibbonFormStyle.Standard when the Standard UI is used; RibbonFormStyle.Ribbon - if the Ribbon UI is used.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.GetDashboardData">
+      <summary>
+        <para>Returns the persistent object used to store a dashboard in the application database.</para>
+      </summary>
+      <returns>An <see cref="T:DevExpress.Persistent.Base.IDashboardData"/> object  that is used to store dashboards in the application database.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.ShowDesigner(DevExpress.ExpressApp.IObjectSpace,System.Type)">
+      <summary>
+        <para>Shows an empty <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object representing the current View&#39;s Object Space.</param>
+      <param name="dashboardDataType">A type implementing the <see cref="T:DevExpress.Persistent.Base.IDashboardData"/> interface. An implementation used by the Dashboards Module is specified in the <see cref="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.DashboardDataType"/> property.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.ShowDesigner(DevExpress.ExpressApp.IObjectSpace,System.Type,DevExpress.Persistent.Base.IDashboardData)">
+      <summary>
+        <para>Shows a <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> with the provided <see cref="T:DevExpress.DashboardCommon.Dashboard"/>.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object specifying the current View&#39;s Object Space.</param>
+      <param name="dashboardDataType">A type implementing the <see cref="T:DevExpress.Persistent.Base.IDashboardData"/> interface. An implementation used by the Dashboards Module is specified in the <see cref="P:DevExpress.ExpressApp.Dashboards.DashboardsModule.DashboardDataType"/> property.</param>
+      <param name="dashboardData">An <see cref="T:DevExpress.Persistent.Base.IDashboardData"/> object. The <see cref="P:DevExpress.Persistent.Base.IDashboardData.Content"/> property should contain the current <see cref="T:DevExpress.DashboardCommon.Dashboard"/>.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.SkipDataSourceWizard">
+      <summary>
+        <para>Indicates whether or not the Data Source Wizard is displayed immediately after the <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> is displayed.</para>
+      </summary>
+      <value>true, if the Data Source Wizard is not displayed; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerShownEventArgs">
+      <summary>
+        <para>Arguments, passed to the <see cref="E:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager.DashboardDesignerCreated"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerShownEventArgs.#ctor(DevExpress.DashboardWin.DashboardDesigner)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerShownEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardDesigner">A <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> object.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerShownEventArgs.DashboardDesigner">
+      <summary>
+        <para>Gets the <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> object and allows you to customize it.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> object that is the Dashboard Designer created by the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardDesignerManager"/>.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Dashboards.Win.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+      <summary>
+        <para>Customizes metadata on business classes specific to the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule"/> before loading the metadata to the Application Model&#39;s BOModel node.</para>
+      </summary>
+      <param name="typesInfo">An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object which holds metadata information on business classes to be loaded to the Application Model.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule.DesignerFormStyle">
+      <summary>
+        <para>Specifies the dashboard designer form style.</para>
+      </summary>
+      <value>RibbonFormStyle.Standard, when the Standard UI is used; RibbonFormStyle.Ribbon - if the Ribbon UI is used.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule.GetXafResourceLocalizerTypes">
+      <summary>
+        <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule"/>.</para>
+      </summary>
+      <returns>An ICollection&lt;Type&gt; collection containing the types of the Resource Localizers supplied with the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule"/>.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.DashboardsWindowsFormsModule"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Dashboards.Win.WinDashboardViewerViewItem">
+      <summary>
+        <para>A View Item that displays the Dashboard Viewer control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Dashboards.Win.WinDashboardViewerViewItem.#ctor(System.String,System.Type)">
+      <summary>
+        <para>Creates a new instance of the <see cref="T:DevExpress.ExpressApp.Dashboards.Win.WinDashboardViewerViewItem"/> class.</para>
+      </summary>
+      <param name="id">A <see cref="T:System.Type"/> object specifying the type of object for which the current View Item&#39;s View is created.</param>
+      <param name="objectType">A string specifying the identifier of the View Item.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Dashboards.Win.WinDashboardViewerViewItem.Viewer">
+      <summary>
+        <para>Gets the Dashboard Viewer control, used by the Dashboards Module to display dashboards in WinForms applications.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWin.DashboardViewer"/> control.</value>
+    </member>
+  </members>
+</doc>

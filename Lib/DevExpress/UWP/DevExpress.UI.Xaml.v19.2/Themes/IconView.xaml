@@ -1,0 +1,81 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Internal="using:DevExpress.UI.Xaml.Internal"
+    xmlns:Core="using:DevExpress.Core">
+
+    <Core:BooleanToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+    <Core:BooleanToVisibilityConverter x:Key="boolToVisibilityInvertConverter" Invert="True"/>
+    <Core:BooleanToDoubleConverter x:Key="boolToOpacityConverter" ValueFalse="0" ValueTrue="1"/>
+    <Core:BooleanToDoubleConverter x:Key="boolToOpacityInvertConverter" ValueFalse="1" ValueTrue="0"/>
+
+    <Style TargetType="Internal:IconView">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Padding" Value="0,0,8,0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Internal:IconView">
+                    <Internal:NativeIconContentPresenter Margin="{TemplateBinding ActualIconPadding}"
+                                                         HandleIsIconVisibleChange="Visibility"
+                                                         VerticalAlignment="Center"
+                                                         HorizontalAlignment="Center"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Internal:NativeIconView">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Padding" Value="0,0,8,0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Internal:NativeIconView">
+                    <Internal:NativeIconContentPresenter Owner="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                         Margin="{TemplateBinding ActualIconPadding}"
+                                                         HandleIsIconVisibleChange="Visibility"
+                                                         VerticalAlignment="Center"
+                                                         HorizontalAlignment="Center"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Internal:SwitchableIconView">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Padding" Value="0,0,8,0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Internal:SwitchableIconView">
+                    <Grid Margin="{TemplateBinding Padding}">
+                        <Internal:NativeIconContentPresenter x:Name="PART_DefaultIcon" 
+                                                             Visibility="{Binding SwitchableOwner.UseDefaultIconSource, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource boolToVisibilityConverter}}"/>
+                        <Internal:NativeIconContentPresenter x:Name="PART_AlternativeIcon" 
+                                                             Visibility="{Binding SwitchableOwner.UseDefaultIconSource, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource boolToVisibilityInvertConverter}}"
+                                                             UseDefaultIconSource="False"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Internal:DropDownIconView">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Internal:DropDownIconView">
+                    <Grid>
+                        <PathIcon Data="F1 M 0,0 L 6,4 L 12,0 L 12,2 L 6,6 L 0,2 z"
+                                  Opacity="{Binding ActualIsIconVisible, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource boolToOpacityInvertConverter}}"
+                                  VerticalAlignment="Center"
+                                  HorizontalAlignment="Center"/>
+                        <Internal:NativeIconContentPresenter x:Name="PART_Icon"
+															 Opacity="{Binding ActualIsIconVisible, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource boolToOpacityConverter}}"
+                                                             VerticalAlignment="Center"
+                                                             HorizontalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

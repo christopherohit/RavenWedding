@@ -1,0 +1,27 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ChartSeriesTitleForegroundThemeBrush" Color="#FF232323" Core:ColorKey.Id="ChartColors.TitleForeground.Light"/>
+            <SolidColorBrush x:Key="ChartsSimpleBarPresentationBackgroundBrush" Color="BlueViolet" Core:ColorKey.Id="ChartColors.BarPresentationBackground.Light"/>
+            <SolidColorBrush x:Key="ChartsSimpleBarBorderBrush" Color="Black" Core:ColorKey.Id="ChartColors.BarBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ChartsSimpleMarkerPresentationBackgroundBrush" Color="BlueViolet" Core:ColorKey.Id="ChartColors.MarkerPresentationBackground.Light"/>
+            <SolidColorBrush x:Key="ChartsSimpleAreaBackgroundBrush" Color="Red" Core:ColorKey.Id="ChartColors.AreaBackground.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ChartSeriesTitleForegroundThemeBrush" Color="#FFE5E5E5"  Core:ColorKey.Id="ChartColors.TitleForeground.Default" />
+            <SolidColorBrush x:Key="ChartsSimpleBarPresentationBackgroundBrush" Color="BlueViolet"  Core:ColorKey.Id="ChartColors.BarPresentationBackground.Default" />
+            <SolidColorBrush x:Key="ChartsSimpleBarBorderBrush" Color="Black"  Core:ColorKey.Id="ChartColors.BarBorderBrush.Default" />
+            <SolidColorBrush x:Key="ChartsSimpleMarkerPresentationBackgroundBrush" Color="BlueViolet"  Core:ColorKey.Id="ChartColors.MarkerPresentationBackground.Default" />
+            <SolidColorBrush x:Key="ChartsSimpleAreaBackgroundBrush" Color="Red"  Core:ColorKey.Id="ChartColors.AreaBackground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+

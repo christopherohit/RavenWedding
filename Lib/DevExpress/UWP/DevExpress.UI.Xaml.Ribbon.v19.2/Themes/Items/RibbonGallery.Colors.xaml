@@ -1,0 +1,150 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <!--RibbonGallery-->
+            <SolidColorBrush x:Key="RibbonGalleryGroupBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryGroupBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryGroupBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushSelectedPressed.Light"/>
+
+            <SolidColorBrush x:Key="RibbonGalleryItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushSelectedPressed.Light"/>
+
+            
+            <!--InRibbonGalleryItem-->
+            <SolidColorBrush x:Key="InRibbonGalleryItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushSelectedPressed.Light"/>
+            
+            <!--InRibbonGallery-->
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundBrush" Color="Transparent" Core:ColorKey.Id="InRibbonGalleryColors.Background.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryColors.SelectedHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundBrush" Color="#FF505050" Core:ColorKey.Id="InRibbonGalleryColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundSelectedHoverBrush" Color="#FF505050" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundSelectedPressedBrush" Color="#FF505050" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundSelectedBrush" Color="#FF505050" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBorderBrush" Color="Transparent" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="InRibbonGalleryBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushSelectedPressed.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RibbonGalleryGroupBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryGroupBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryGroupBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryGroupBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.GroupBorderBrushSelectedPressed.Default" />
+
+            <SolidColorBrush x:Key="RibbonGalleryItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGalleryItemBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGalleryColors.ItemBorderBrushSelectedPressed.Default" />
+
+            <SolidColorBrush x:Key="InRibbonGalleryItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryItemBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryItemColors.BorderBrushSelectedPressed.Default" />
+
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundBrush" Color="Transparent" Core:ColorKey.Id="InRibbonGalleryColors.Background.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryColors.SelectedHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundBrush" Color="#FF101010" Core:ColorKey.Id="InRibbonGalleryColors.Foreground.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundSelectedHoverBrush" Color="#FF101010" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundSelectedPressedBrush" Color="#FF101010" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="InRibbonGalleryColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBorderBrush" Color="Transparent" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="InRibbonGalleryBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="InRibbonGalleryColors.BorderBrushSelectedPressed.Default" />
+
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="using:DevExpress.Core"
+    xmlns:dxc="using:DevExpress.UI.Xaml.Controls"
+    xmlns:dxrc="using:DevExpress.UI.Xaml.Controls.Native"
+    xmlns:dxrcc="using:DevExpress.UI.Xaml.Controls.Native.Converters">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/RangeControl.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <dxrcc:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    <dx:BooleanToDoubleConverter x:Key="BoolToOpacityConverter" ValueFalse="0" ValueTrue="1"/>
+    <dxrcc:BoolToGridLengthConverter x:Key="BoolToGridLengthConverter"/>
+
+    <Style x:Key="SelectionThumbStyle" TargetType="Thumb">
+        <Setter Property="Width" Value="30"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Thumb">
+                    <Border BorderThickness="0" Background="Transparent" Width="{TemplateBinding Width}" Margin="{TemplateBinding Margin}">
+                        <Grid Width="15" HorizontalAlignment="Center">
+                            <Rectangle Width="3" HorizontalAlignment="Center" StrokeThickness="0" Fill="{TemplateBinding Background}"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Name="UnSelectedAreaStyle" TargetType="Border">
+        <Setter Property="Background" Value="{ThemeResource RangeControlElementsBackgroundThemeBrush}"/>
+        <Setter Property="Opacity" Value="0.5"/>
+    </Style>
+    <Style x:Key="SliderResizeThumbStyle" TargetType="Thumb">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border BorderThickness="0" Background="{ThemeResource RangeControlElementsBackgroundThemeBrush}" >
+                        <Grid Margin="0,4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="5"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" Width="1" BorderThickness="0" Background="{ThemeResource RangeControlVerticalElementsBackgroundThemeBrush}" HorizontalAlignment="Right"/>
+                            <Border Grid.Column="1" Width="1" BorderThickness="0" Background="{ThemeResource RangeControlVerticalElementsBackgroundThemeBrush}" HorizontalAlignment="Center"/>
+                            <Border Grid.Column="2" Width="1" BorderThickness="0" Background="{ThemeResource RangeControlVerticalElementsBackgroundThemeBrush}" HorizontalAlignment="Left"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="RangeBarStyle" TargetType="dxrc:RangeBar">
+        <Setter Property="SelectionBackground" Value="{ThemeResource RangeControlBarSelectionThemeBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="dxrc:RangeBar">
+                    <Canvas x:Name="PART_Root">
+                        <Border x:Name="PART_LeftSide" BorderThickness="0" Canvas.ZIndex="2" Background="{ThemeResource RangeControlElementsBackgroundThemeBrush}" />
+                        <Border x:Name="PART_RightSide" BorderThickness="0" Canvas.ZIndex="2" Background="{ThemeResource RangeControlElementsBackgroundThemeBrush}" />
+                        <Thumb x:Name="PART_LeftResizeThumb" Style="{StaticResource SliderResizeThumbStyle}" Canvas.ZIndex="3"/>
+                        <Thumb x:Name="PART_RightResizeThumb" Style="{StaticResource SliderResizeThumbStyle}" Canvas.ZIndex="4"/>
+                        <Thumb x:Name="PART_Slider" Canvas.ZIndex="0">
+                            <Thumb.Template>
+                                <ControlTemplate>
+                                    <Border Background="{ThemeResource RangeControlElementsForegroundThemeBrush}" />
+                                </ControlTemplate>
+                            </Thumb.Template>
+                        </Thumb>
+                        <Border x:Name="PART_SelectionSide" Canvas.ZIndex="1" IsHitTestVisible="False" UseLayoutRounding="False"
+                                Background="{TemplateBinding SelectionBackground}" />
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <ControlTemplate x:Key="RangeControlTemplate" TargetType="dxc:RangeControl">
+        <Grid x:Name="PART_LayoutRoot" Background="{TemplateBinding Background}" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup>
+                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="MoveSelection">
+                        <VisualState.Setters>
+                            <Setter Target="PART_SelectionRectangle.Opacity" Value="1"/>
+                        </VisualState.Setters>
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_SelectionLeftThumb"
+                                                           Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RangeThumbsHighlightBrush, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_SelectionRightThumb"
+                                                           Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RangeThumbsHighlightBrush, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="{Binding Path=ShowRangeBar, Converter={StaticResource BoolToGridLengthConverter}, RelativeSource={RelativeSource TemplatedParent}, Mode=OneWay, ConverterParameter=22}"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" x:Name="PART_ClientPanelArea" Background="Transparent">
+                <ScrollViewer x:Name="PART_ScrollViewer" ZoomMode="Disabled" VerticalScrollMode="Disabled" HorizontalScrollBarVisibility="Hidden" 
+                              VerticalScrollBarVisibility="Hidden" HorizontalScrollMode="Disabled">
+                    <Grid>
+                        <Canvas x:Name="PART_ClientPanel">
+                            <ContentPresenter x:Name="PART_Content" Content="{TemplateBinding Content}" Canvas.ZIndex="0"/>
+                            <Border x:Name="PART_LeftSideBorder" Background="{TemplateBinding OutOfRangeAreaBrush}"
+                                    Opacity="{Binding Path=ShowRangeThumbs, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BoolToOpacityConverter}}"/>
+                            <Border x:Name="PART_RightSideBorder" Background="{TemplateBinding OutOfRangeAreaBrush}"
+                                    Opacity="{Binding Path=ShowRangeThumbs, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BoolToOpacityConverter}}"/>
+                            <Thumb x:Name="PART_SelectionLeftThumb" 
+                                   Style="{TemplateBinding SelectionThumbStyle}" 
+                                   Background="{TemplateBinding RangeThumbsBrush}"
+                                   Opacity="{Binding Path=ShowRangeThumbs, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BoolToOpacityConverter}}"/>
+                            <Thumb x:Name="PART_SelectionRightThumb" 
+                                   Style="{TemplateBinding SelectionThumbStyle}"
+                                   Background="{TemplateBinding RangeThumbsBrush}"
+                                   Opacity="{Binding Path=ShowRangeThumbs, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BoolToOpacityConverter}}"/>
+                            <Canvas x:Name="PART_InteractionArea" Background="Transparent" Canvas.ZIndex="99"/>
+                        </Canvas>
+                    </Grid>
+                </ScrollViewer>
+                <Canvas Background="Transparent" IsHitTestVisible="False">
+                    <Border x:Name="PART_SelectionRectangle" BorderThickness="2" BorderBrush="{ThemeResource RangeControlSelectionRectangleThemeBrush}" Opacity="0"
+                            Visibility="{Binding Path=ShowSelectionRectangle, RelativeSource={RelativeSource TemplatedParent}, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}">
+                    </Border>
+                </Canvas>
+            </Grid>
+            <dxrc:RangeBar Grid.Row="1" x:Name="PART_RangeBar" Margin="0,3,0,0" Style="{StaticResource RangeBarStyle}" ManipulationMode="None" 
+                           Visibility="{Binding Path=ShowRangeBar, Converter={StaticResource BoolToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}, Mode=OneWay}">
+            </dxrc:RangeBar>
+        </Grid>
+    </ControlTemplate>
+    <Style TargetType="dxc:RangeControl">
+        <Setter Property="Background" Value="{ThemeResource RangeControlBackgroundThemeBrush}"/>
+        <Setter Property="Template" Value="{StaticResource RangeControlTemplate}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RangeControlForegroundThemeBrush}" />
+        <Setter Property="SelectionThumbStyle" Value="{StaticResource SelectionThumbStyle}"/>
+        <Setter Property="RangeThumbsBrush" Value="{ThemeResource RangeControlElementsBackgroundThemeBrush}"/>
+        <Setter Property="RangeThumbsHighlightBrush" Value="{ThemeResource RangeControlThumbHighlightThemeBrush}"/>
+        <Setter Property="OutOfRangeAreaBrush" Value="{ThemeResource RangeControlUnSelectedAreaThemeBrush}"/>
+    </Style>
+</ResourceDictionary>
+

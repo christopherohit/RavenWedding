@@ -1,0 +1,24 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="RatingItemBackgroundBrush" Color="#FF919191" Core:ColorKey.Id="RatingEditColors.ItemBackground.Light"/>
+            <SolidColorBrush x:Key="RatingItemBackgroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="RatingEditColors.ItemHovered.Light"/>
+            <SolidColorBrush x:Key="RatingItemBackgroundSelectedBrush" Color="#FF0078D7" Core:ColorKey.Id="RatingEditColors.ItemBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RatingItemStrokeBrush" Color="Transparent" Core:ColorKey.Id="RatingEditColors.ItemStroke.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RatingItemBackgroundBrush" Color="#FF979797"  Core:ColorKey.Id="RatingEditColors.ItemBackground.Default" />
+            <SolidColorBrush x:Key="RatingItemBackgroundHoverBrush" Color="#FF646464"  Core:ColorKey.Id="RatingEditColors.ItemHovered.Default" />
+            <SolidColorBrush x:Key="RatingItemBackgroundSelectedBrush" Color="#FF646464"  Core:ColorKey.Id="RatingEditColors.ItemBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RatingItemStrokeBrush" Color="#FFDCDCDC"  Core:ColorKey.Id="RatingEditColors.ItemStroke.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+

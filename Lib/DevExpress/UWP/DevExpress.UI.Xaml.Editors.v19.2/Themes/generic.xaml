@@ -1,0 +1,34 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxe="using:DevExpress.UI.Xaml.Editors" 
+    xmlns:dx="using:DevExpress.Core" 
+    xmlns:dxxaml="using:DevExpress.UI.Xaml"
+    xmlns:dxi="using:DevExpress.UI.Xaml.Editors.Native" 
+    xmlns:themes="using:DevExpress.Core.Native" >
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/EditorTextBox.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/ButtonEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/ColorEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/FontEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/TextEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/PopupContainerEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/DateTimePicker.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/DateNavigator/DateNavigator.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/DatePickerEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/DateEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/SpinEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/VirtualizedItemsControl.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/RadialTimeEdit.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/RatingEdit.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <themes:GlobalThemeResourceDictionaryHelper.IsAttached>
+        <dxi:EditorsResourceLoader/>
+    </themes:GlobalThemeResourceDictionaryHelper.IsAttached>
+
+    <dx:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader"/>
+       
+</ResourceDictionary>
+

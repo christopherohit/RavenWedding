@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.ReportsV2.Web.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.ReportsV2.Web">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the ASP.NET Reports V2 Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ActionTarget">
+      <summary>
+        <para>Contains values specifying if the report designer is opened within the current browser tab, or in a separate tab.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ActionTarget.CurrentTab">
+      <summary>
+        <para>The designer is shown in the current browser tab.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ActionTarget.NewTab">
+      <summary>
+        <para>The designer is shown in a new browser tab.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ClientLibrariesLocations">
+      <summary>
+        <para>Contains values used to initialize the <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ClientLibrariesLocation"/> property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ClientLibrariesLocations.Custom">
+      <summary>
+        <para>JavaScript libraries specified in the default.aspx markup are used.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ClientLibrariesLocations.Embedded">
+      <summary>
+        <para>Embedded JavaScript libraries are loaded automatically.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.DesignAndPreviewDisplayModes">
+      <summary>
+        <para>Contains values used to initialize the <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.DesignAndPreviewDisplayMode"/> property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.DesignAndPreviewDisplayModes.DetailView">
+      <summary>
+        <para>The report designer and viewer are displayed in the main window.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.DesignAndPreviewDisplayModes.Popup">
+      <summary>
+        <para>The report designer and viewer are displayed in a new popup window.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem">
+      <summary>
+        <para>The <see cref="T:DevExpress.ExpressApp.Editors.ViewItem"/> that displays the Report Designer within a Detail View.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem.#ctor(DevExpress.ExpressApp.Model.IModelViewItem,System.Type)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem"/> class.</para>
+      </summary>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelViewItem"/> object.</param>
+      <param name="objectType">A <see cref="T:System.Type"/> of business objects used in report.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem.OpenReport(DevExpress.XtraReports.UI.XtraReport,System.String)">
+      <summary>
+        <para>Opens the specified report in the designer.</para>
+      </summary>
+      <param name="report">An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that defines the report layout.</param>
+      <param name="reportTitle">A string which is the report title.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem.OpenReport(System.String)">
+      <summary>
+        <para>Opens the specified report in the designer.</para>
+      </summary>
+      <param name="handle">A string which is the report handle.</param>
+    </member>
+    <member name="E:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem.QueryReport">
+      <summary>
+        <para>This event is obsolete.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem.ReportDesigner">
+      <summary>
+        <para>Gets the ASP.NET End-User Report Designer control.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.XtraReports.Web.ASPxReportDesigner"/> object that specifies the report designer control.</value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem.SaveReport">
+      <summary>
+        <para>This event is obsolete.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportDesignerDetailItem.Setup(DevExpress.ExpressApp.IObjectSpace,DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>This method is not used any longer.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <param name="application"></param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType">
+      <summary>
+        <para>Contains values that specify the report output format.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType.Mht">
+      <summary>
+        <para>The report is exported to an MHT file.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType.Pdf">
+      <summary>
+        <para>The report is exported to an PDF file.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType.ReportViewer">
+      <summary>
+        <para>The report is displayed in a popup window that contains a Detail View with a single <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem"/> View Item.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType.Rtf">
+      <summary>
+        <para>The report is exported to an RTF file.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType.Xls">
+      <summary>
+        <para>The report is exported to an XLS file.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.ReportsV2.Web.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+      <summary>
+        <para>Registers the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2"/> Generator Updater.</para>
+      </summary>
+      <param name="updaters">A ModelNodesGeneratorUpdaters object providing access to the list of Generator Updaters.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ClientLibrariesLocation">
+      <summary>
+        <para>This property is obsolete. Use the embedRequiredClientLibraries option in the Web.config file instead.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.DefaultPreviewFormat">
+      <summary>
+        <para>Specifies the default format in which reports are previewed when a user clicks a row in the <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> List View.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType"/> enumeration value that specifies the default format.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.DesignAndPreviewDisplayMode">
+      <summary>
+        <para>Specifies whether the report viewer and designer are displayed in a popup or main window.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.DesignAndPreviewDisplayModes"/> enumeration value that specifies how the report viewer and designer are displayed.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.EnableValueManagerInHtml5DocumentViewer">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.GetXafResourceLocalizerTypes">
+      <summary>
+        <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2"/>.</para>
+      </summary>
+      <returns>An ICollection&lt;Type&gt; collection containing the types of the Resource Localizers supplied with the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2"/>.</returns>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ReportDesignDetailViewWebName">
+      <summary>
+        <para>Specifies the identifier of the detail view that displays the <see cref="T:DevExpress.XtraReports.Web.ASPxReportDesigner"/> control wrapped into a View Item (see How to: Access the ASPxReportDesigner Control).</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ReportViewDetailViewWebName">
+      <summary>
+        <para>Specifies an identifier of the Detail View used to display a report preview.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ReportViewerType">
+      <summary>
+        <para>Specifies the Report Viewer type to be used in an ASP.NET application.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerTypes"/> enumeration value that specifies the Report Viewer type.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ShowFormatSpecificExportActions">
+      <summary>
+        <para>Specifies if the <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToMhtAction"/>, <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToPdfAction"/>, <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToRtfAction"/> and <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToXlsAction"/> Actions are active.</para>
+      </summary>
+      <value>true, if the format-specific Actions should be active, otherwise - false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ShowReportDesignerActionTarget">
+      <summary>
+        <para>Specifies if the ShowReportDesigner Action opens the designer within the current browser tab, or in a separate tab.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ActionTarget"/> enumeration value specifying if the report designer is opened within the current browser tab, or in a separate tab.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem">
+      <summary>
+        <para>The <see cref="T:DevExpress.ExpressApp.Editors.ViewItem"/> that displays a report preview in a Detail View using the ASP.NET Document Viewer.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem.#ctor(System.String,DevExpress.ExpressApp.ReportsV2.Web.ReportViewerContainer,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem"/> class.</para>
+      </summary>
+      <param name="reportContainerHandle">A string which is the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> handle.</param>
+      <param name="reportViewContainer">A ReportViewerContainer object.</param>
+      <param name="itemId">A string which is the identifier of the current View Item.</param>
+    </member>
+    <member name="E:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem.CustomizeParameterEditors">
+      <summary>
+        <para>Occurs when standard editors are created for the report parameters, according to their types.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem.QueryReport">
+      <summary>
+        <para>Occurs when a report to be displayed in a <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem"/> is queried.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerDetailItem.ReportViewer">
+      <summary>
+        <para>Gets the ASP.NET Document Viewer control.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.XtraReports.Web.ASPxDocumentViewer"/> object that is a control used to view the report content.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerTypes">
+      <summary>
+        <para>Contains values that specify the Report Viewer type used in ASP.NET applications.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerTypes.ASP">
+      <summary>
+        <para>The ASP.NET Document Viewer is used.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.ReportViewerTypes.HTML5">
+      <summary>
+        <para>The HTML5 Document Viewer is used.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.ReportWebViewerDetailItem">
+      <summary>
+        <para>The <see cref="T:DevExpress.ExpressApp.Editors.ViewItem"/> that displays a report preview in a Detail View using the HTML5 Document Viewer.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.ReportWebViewerDetailItem.#ctor(DevExpress.XtraReports.UI.XtraReport,DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.ReportWebViewerDetailItem"/> class.</para>
+      </summary>
+      <param name="report">A string which is the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> handle.</param>
+      <param name="parametersObject">A ReportViewerContainer object.</param>
+      <param name="itemId">A string which is the identifier of the current View Item.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportWebViewerDetailItem.Report">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.ReportWebViewerDetailItem.ReportViewer">
+      <summary>
+        <para>Gets the HTML5 Document Viewer control.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.XtraReports.Web.ASPxWebDocumentViewer"/> object that is a control used to view the report content.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.WebEditReportController">
+      <summary>
+        <para>A Controller activated in List Views of <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> objects. Hides the Edit, CopyPredefinedReport and ShowReportDesigner Actions from the command column.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.WebEditReportController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.WebEditReportController"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.WebNewReportWizardShowingEventArgs">
+      <summary>
+        <para>Contains arguments passed to the <see cref="E:DevExpress.ExpressApp.ReportsV2.Web.WebReportServiceController.NewReportWizardShowing"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.WebNewReportWizardShowingEventArgs.#ctor(System.Type,DevExpress.ExpressApp.ReportsV2.INewReportWizardParameters)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.WebNewReportWizardShowingEventArgs"/> class.</para>
+      </summary>
+      <param name="reportDataType">A <see cref="T:System.Type"/> object specifying the report data type used by the Reports module.</param>
+      <param name="wizardParameters">An INewReportWizardParameters object that specifies the report wizard parameters.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.WebNewReportWizardShowingEventArgs.ReportDataType">
+      <summary>
+        <para>Gets the report data type used by the Reports module.</para>
+      </summary>
+      <value>A <see cref="T:System.Type"/> object specifying the report data type used by the Reports module.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.WebNewReportWizardShowingEventArgs.WizardParameters">
+      <summary>
+        <para>Specifies report wizard parameters.</para>
+      </summary>
+      <value>An INewReportWizardParameters object that specifies report wizard parameters.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController">
+      <summary>
+        <para>An ASP.NET-specific descendant of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportsControllerCore"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToMhtAction">
+      <summary>
+        <para>Gets the PrintReportTo_Mht Action.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that specifies the PrintReportTo_Mht Action.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToPdfAction">
+      <summary>
+        <para>Gets the PrintReportTo_Pdf Action.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that specifies the PrintReportTo_Pdf Action.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToRtfAction">
+      <summary>
+        <para>Gets the PrintReportTo_Rtf Action.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that specifies the PrintReportTo_Rtf Action.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToXlsAction">
+      <summary>
+        <para>Gets the PrintReportTo_Xls Action.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that specifies the PrintReportTo_Xls Action.</value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.FormatSpecificExportActionsRequiredContext">
+      <summary>
+        <para>The key name that activates the <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToMhtAction"/>, <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToPdfAction"/>, <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToRtfAction"/> and <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToXlsAction"/> Actions when the module&#39;s <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2.ShowFormatSpecificExportActions"/> property is set to true.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.PreviewInReportViewerAction">
+      <summary>
+        <para>Gets a ShowReportInPreviewWindow Action.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that specifies the ShowReportInPreviewWindow Action.</value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.PreviewInReportViewerContext">
+      <summary>
+        <para>The key name that activates the <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.PreviewInReportViewerAction"/> Actions when the module&#39;s <see cref="P:DevExpress.ExpressApp.Reports.Web.ReportsAspNetModule.DefaultPreviewFormat"/> property is set to <see cref="F:DevExpress.ExpressApp.ReportsV2.Web.ReportOutputType.ReportViewer"/>.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.SetFormatSpecificExportActionsVisible(System.Boolean)">
+      <summary>
+        <para>Activates or deactivates the <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToMhtAction"/>, <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToPdfAction"/>, <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToRtfAction"/> and <see cref="P:DevExpress.ExpressApp.ReportsV2.Web.WebReportsController.ExportToXlsAction"/> Actions.</para>
+      </summary>
+      <param name="active">true, if the format-specific Actions should be active, otherwise, false.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.WebReportSeparateTabController">
+      <summary>
+        <para>The <see cref="T:DevExpress.ExpressApp.ViewController"/> that opens a report in a separate browser tab when a user holds the CONTROL key and clicks a row in the Reports List View.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.WebReportSeparateTabController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.WebReportSeparateTabController"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ReportsV2.Web.WebReportServiceController">
+      <summary>
+        <para>A <see cref="T:DevExpress.ExpressApp.ViewController"/> descendant containing platform-specific code, providing end-users with ability to view and design reports.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ReportsV2.Web.WebReportServiceController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ReportsV2.Web.WebReportServiceController"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.ReportsV2.Web.WebReportServiceController.CustomizeParameterEditors">
+      <summary>
+        <para>Occurs when an editor control is created for the report parameter.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.ReportsV2.Web.WebReportServiceController.NewReportWizardShowing">
+      <summary>
+        <para>Occurs before invoking the Report Wizard dialog.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

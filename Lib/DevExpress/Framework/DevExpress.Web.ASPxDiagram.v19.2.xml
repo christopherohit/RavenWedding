@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.Web.ASPxDiagram.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.Web.ASPxDiagram">
+      <summary>
+        <para>Contains classes that implement the functionality of the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.ASPxDiagram">
+      <summary>
+        <para>A diagram control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.ASPxDiagram.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.AutoZoom">
+      <summary>
+        <para>Specifies how the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control automatically zooms the work area.</para>
+      </summary>
+      <value>The zoom mode.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.ClientInstanceName">
+      <summary>
+        <para>Specifies the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>&#39;s programmatic identifier on the client.</para>
+      </summary>
+      <value>The control&#39;s client identifier.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.ClientReadOnly">
+      <summary>
+        <para>Specifies whether the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control is read-only on the client side.</para>
+      </summary>
+      <value>true if the editor is read only on the client side; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.ClientSideEvents">
+      <summary>
+        <para>Gets an object that lists the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>&#39;s client-side events.</para>
+      </summary>
+      <value>An object that allows you to assign handlers to the client-side events.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.CustomJSProperties">
+      <summary>
+        <para>Enables you to supply server data that can be parsed on the client.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.CustomShapes">
+      <summary>
+        <para>Provides access to a collection of custom shapes.</para>
+      </summary>
+      <value>A collection of custom shapes.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeDataMember">
+      <summary>
+        <para>Specifies the data source member that supplies data to the diagram edges.</para>
+      </summary>
+      <value>The data source member.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeDataSource">
+      <summary>
+        <para>Specifies the object from which the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control retrieves information about edges.</para>
+      </summary>
+      <value>The data source object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeDataSourceID">
+      <summary>
+        <para>Specifies the ID of the control from which the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control retrieves information about edges.</para>
+      </summary>
+      <value>The control ID.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeDeleted">
+      <summary>
+        <para>Occurs after an edge was deleted.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeInserted">
+      <summary>
+        <para>Occurs after an edge was inserted.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeUpdated">
+      <summary>
+        <para>Occurs after an edge was updated.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.ASPxDiagram.Export">
+      <summary>
+        <para>Exports the diagram data in JSON format.</para>
+      </summary>
+      <returns>The diagram data in JSON format.</returns>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.Images">
+      <summary>
+        <para>Defines images displayed in the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>&#39;s elements.</para>
+      </summary>
+      <value>An object that contains image settings.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.ASPxDiagram.Import(System.String)">
+      <summary>
+        <para>Imports the diagram data.</para>
+      </summary>
+      <param name="data">The diagram data in JSON format.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.JSProperties">
+      <summary>
+        <para>Enables you to supply server data that can be parsed on the client.</para>
+      </summary>
+      <value>The collection of property names and their values.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.Mappings">
+      <summary>
+        <para>Provides access to the control&#39;s mapping properties.</para>
+      </summary>
+      <value>An object that contains mapping properties.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeDataMember">
+      <summary>
+        <para>Specifies the data source member that supplies data to the diagram nodes.</para>
+      </summary>
+      <value>The data source member.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeDataSource">
+      <summary>
+        <para>Specifies the object from which the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control retrieves information about nodes.</para>
+      </summary>
+      <value>The data source object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeDataSourceID">
+      <summary>
+        <para>Specifies the ID of the control from which the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control retrieves information about nodes.</para>
+      </summary>
+      <value>The control ID.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeDeleted">
+      <summary>
+        <para>Occurs after a node was deleted.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeInserted">
+      <summary>
+        <para>Occurs after a node was inserted.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeUpdated">
+      <summary>
+        <para>Occurs after a node was updated.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.ReadOnly">
+      <summary>
+        <para>Specifies whether the diagram is read-only.</para>
+      </summary>
+      <value>true to make the diagram read-only; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.SettingsAutoLayout">
+      <summary>
+        <para>Specifies an auto-layout algorithm that the control uses to build a diagram.</para>
+      </summary>
+      <value>An object that contains the auto-layout settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.SettingsGrid">
+      <summary>
+        <para>Provides access to grid settings.</para>
+      </summary>
+      <value>An object that contains the grid settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.SettingsPage">
+      <summary>
+        <para>Provides access to page settings.</para>
+      </summary>
+      <value>An object that contains the page settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.SettingsSidePanel">
+      <summary>
+        <para>Provides access to the Side Panel&#39;s settings.</para>
+      </summary>
+      <value>An object that contains the Side Panel&#39;s settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.SettingsToolbox">
+      <summary>
+        <para>Provides access to the Toolbox&#39;s settings.</para>
+      </summary>
+      <value>An object that contains the Toolbox&#39;s settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.SimpleView">
+      <summary>
+        <para>Switches the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control to simple view mode.</para>
+      </summary>
+      <value>true, to enable simple view mode; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.Styles">
+      <summary>
+        <para>Specifies the style settings of the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> elements.</para>
+      </summary>
+      <value>An object that provides style settings for elements.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.StylesEditors">
+      <summary>
+        <para>Specifies the style settings of editors in the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control.</para>
+      </summary>
+      <value>An object that contains style settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.StylesMenu">
+      <summary>
+        <para>Specifies the style settings of menu elements in the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control.</para>
+      </summary>
+      <value>An object that contains style settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.Units">
+      <summary>
+        <para>Specifies the measurement unit for size properties (for instance, <see cref="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Height"/>, <see cref="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Width"/>).</para>
+      </summary>
+      <value>The unit.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.ViewUnits">
+      <summary>
+        <para>Specifies the measurement unit that is displayed in user interface elements.</para>
+      </summary>
+      <value>The unit.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.ConnectorLineEnding">
+      <summary>
+        <para>Lists types of a connector line end.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.ConnectorLineEnding.Arrow">
+      <summary>
+        <para>A connector ends with an arrow.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.ConnectorLineEnding.None">
+      <summary>
+        <para>A connector ends without any special element.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.ConnectorLineType">
+      <summary>
+        <para>Lists connector line types.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.ConnectorLineType.Orthogonal">
+      <summary>
+        <para>A connector links shapes by a right-angle polyline.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.ConnectorLineType.Straight">
+      <summary>
+        <para>A connector links shapes by a straight line.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramAutoLayout">
+      <summary>
+        <para>Lists auto-layout types.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramAutoLayout.Auto">
+      <summary>
+        <para>Layered layout if the control is bound to node and edge data sources or Tree layout if the control is bound to a linear tree-like data structure.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramAutoLayout.Layered">
+      <summary>
+        <para>The layered (Sugiyama-style) layout.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramAutoLayout.Tree">
+      <summary>
+        <para>The tree layout.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramAutoLayoutSettings">
+      <summary>
+        <para>Contains auto-layout settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramAutoLayoutSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramAutoLayoutSettings"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramAutoLayoutSettings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramAutoLayoutSettings.Orientation">
+      <summary>
+        <para>Specifies the diagram layout orientation.</para>
+      </summary>
+      <value>The orientation.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramAutoLayoutSettings.Type">
+      <summary>
+        <para>Specifies the diagram layout type.</para>
+      </summary>
+      <value>The layout type.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramAutoZoomMode">
+      <summary>
+        <para>Lists values that specify the auto zoom mode.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramAutoZoomMode.Disabled">
+      <summary>
+        <para>Auto-zoom is disabled.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramAutoZoomMode.FitContent">
+      <summary>
+        <para>Changes the diagram&#39;s content to fit the work area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramAutoZoomMode.FitToWidth">
+      <summary>
+        <para>The diagram width fits the work area.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents">
+      <summary>
+        <para>Contains a list of the client-side events available for the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.DiagramChanged">
+      <summary>
+        <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.DiagramChanged"/> event.</para>
+      </summary>
+      <value>The name of a JavaScript function or the JavaScript function&#39;s code used to handle the event.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.ItemClick">
+      <summary>
+        <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.ItemClick"/> event.</para>
+      </summary>
+      <value>The name of a JavaScript function or the JavaScript function&#39;s code used to handle the event.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.ItemDblClick">
+      <summary>
+        <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.ItemDblClick"/> event.</para>
+      </summary>
+      <value>The name of a JavaScript function or the JavaScript function&#39;s code used to handle the event.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.SelectionChanged">
+      <summary>
+        <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.SelectionChanged"/> event.</para>
+      </summary>
+      <value>The name of a JavaScript function or the JavaScript function&#39;s code used to handle the event.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramCustomShape">
+      <summary>
+        <para>A custom shape.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramCustomShape.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramCustomShape"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.AllowEditImage">
+      <summary>
+        <para>This property is not in effect.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.AllowEditText">
+      <summary>
+        <para>Specifies whether the shape&#39;s text can be edited.</para>
+      </summary>
+      <value>true, to allow end users to edit text; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramCustomShape.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.CollectionItem"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.BackgroundImageHeight">
+      <summary>
+        <para>Specifies the height of the shape background image.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.BackgroundImageLeft">
+      <summary>
+        <para>Specifies the left offset of the shape background image.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.BackgroundImageTop">
+      <summary>
+        <para>Specifies the top offset of the shape background image.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.BackgroundImageUrl">
+      <summary>
+        <para>Specifies the shape background image&#39;s URL.</para>
+      </summary>
+      <value>The image URL.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.BackgroundImageWidth">
+      <summary>
+        <para>Specifies the width of the shape background image.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.BaseType">
+      <summary>
+        <para>Specifies the base shape type for the custom shape.</para>
+      </summary>
+      <value>The type of the base shape.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.Category">
+      <summary>
+        <para>Specifies a category to which the custom shape belongs.</para>
+      </summary>
+      <value>The category name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.ConnectionPoints">
+      <summary>
+        <para>Provides access to a collection of the shape&#39;s connection points.</para>
+      </summary>
+      <value>A collection of connection points.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.DefaultHeight">
+      <summary>
+        <para>Specifies the initial height of the shape.</para>
+      </summary>
+      <value>The height, in units.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.DefaultImageUrl">
+      <summary>
+        <para>Specifies the shape image&#39;s URL.</para>
+      </summary>
+      <value>The image URL.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.DefaultText">
+      <summary>
+        <para>Specifies the initial text of the shape.</para>
+      </summary>
+      <value>The shape text.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.DefaultWidth">
+      <summary>
+        <para>Specifies the initial width of the shape.</para>
+      </summary>
+      <value>The width, in units.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.ImageHeight">
+      <summary>
+        <para>Specifies the height of the image in the shape.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.ImageLeft">
+      <summary>
+        <para>Specifies the left offset of the image in the shape.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.ImageTop">
+      <summary>
+        <para>Specifies the top offset of the image in the shape.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.ImageWidth">
+      <summary>
+        <para>Specifies the width of the image in the shape.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.TextHeight">
+      <summary>
+        <para>Specifies the text container height.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.TextLeft">
+      <summary>
+        <para>Specifies the left offset of a text container.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.TextTop">
+      <summary>
+        <para>Specifies the top offset of a text container.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.TextWidth">
+      <summary>
+        <para>Specifies the text container width.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.Title">
+      <summary>
+        <para>Specifies the shape&#39;s tooltip in the toolbox.</para>
+      </summary>
+      <value>The tooltip text.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramCustomShape.ToString">
+      <summary>
+        <para>Returns a type of the custom shape (the <see cref="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.Type"/> property value).</para>
+      </summary>
+      <returns>The type name.</returns>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.Type">
+      <summary>
+        <para>Identifies the shape&#39;s type.</para>
+      </summary>
+      <value>The type name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo">
+      <summary>
+        <para>Contains edge mapping properties.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.FromKey">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s start node key.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.FromLineEnd">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s line start tip.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.FromPointIndex">
+      <summary>
+        <para>Specifies the name of a data source field that provides the start connection point&#39;s index.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.LineType">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s line type.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.Locked">
+      <summary>
+        <para>Specifies the name of a data source field whose values indicate whether an edge is locked.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.Style">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge style.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.Text">
+      <summary>
+        <para>Specifies the name of a data source field that provides edge texts.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.TextStyle">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s text style.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.ToKey">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s end node key.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.ToLineEnd">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s line end tip.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.ToPointIndex">
+      <summary>
+        <para>Specifies the name of a data source field that provides an index of a shape connection point where an edge ends.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.ZIndex">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s z-index.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramEditorStyles">
+      <summary>
+        <para>Contains styles settings that define the appearance of editors in the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramEditorStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramEditorStyles"/> class with specified settings.</para>
+      </summary>
+      <param name="skinOwner"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramEditorStyles.ToString">
+      <summary>
+        <para>This method is not in effect for the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramEditorStyles"/> class.</para>
+      </summary>
+      <returns>An empty string.</returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramGridSettings">
+      <summary>
+        <para>Contains grid settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramGridSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramAutoLayoutSettings"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramGridSettings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramGridSettings.Size">
+      <summary>
+        <para>Specifies the grid&#39;s pitch.</para>
+      </summary>
+      <value>The grid&#39;s pitch.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramGridSettings.SnapToGrid">
+      <summary>
+        <para>Specifies whether diagram elements should snap to grid lines.</para>
+      </summary>
+      <value>true to snap elements to grid lines; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramGridSettings.ToString">
+      <summary>
+        <para>This method is not in effect for the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramGridSettings"/> class.</para>
+      </summary>
+      <returns>An empty string.</returns>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramGridSettings.Visible">
+      <summary>
+        <para>Specifies whether grid lines are visible.</para>
+      </summary>
+      <value>true to display grid lines; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramImages">
+      <summary>
+        <para>Contains settings that define <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> elements&#39; images.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramImages.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramImages"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the ISkinOwner interface.</param>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramImages.DesignTimeSpriteName">
+      <summary>
+        <para>Returns &quot;dt_Sprite.png&quot;.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramImages.GetImageProperties(System.Web.UI.Page,System.String,System.Boolean)">
+      <summary>
+        <para>For internal use only.</para>
+      </summary>
+      <param name="page"></param>
+      <param name="imageName"></param>
+      <param name="encode"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramItemInsertedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeInserted"/> and <see cref="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeInserted"/> events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramItemInsertedEventArgs.#ctor(System.Int32,System.Exception)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramItemInsertedEventArgs"/> class instance with the specified settings.</para>
+      </summary>
+      <param name="affectedRecords">The number of records affected by the current data operation.</param>
+      <param name="exception">An exception that was raised during the data operation.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramItemInsertedEventArgs.#ctor(System.Int32,System.Exception,System.Collections.Specialized.OrderedDictionary)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramItemInsertedEventArgs"/> class instance with the specified settings.</para>
+      </summary>
+      <param name="affectedRecords">The number of records affected by the current data operation.</param>
+      <param name="exception">An exception that was raised during the data operation.</param>
+      <param name="values">A dictionary of modified field name/value pairs for the record.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramItemInsertedEventArgs.KeyValue">
+      <summary>
+        <para>Specifies the key value of the inserted item.</para>
+      </summary>
+      <value>An object that uniquely identifies the item.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramItemInsertedEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeInserted"/> and <see cref="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.NodeInserted"/> events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">An object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramMappingInfo">
+      <summary>
+        <para>Implements the common functionality of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo"/> and <see cref="T:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo"/> classes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramMappingInfo.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramMappingInfo"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramMappingInfo.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramMappingInfo.Key">
+      <summary>
+        <para>Specifies the name of a data source field that provides node or edge keys.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramMappings">
+      <summary>
+        <para>Contains the ASPxDiagram&#39;s mapping properties.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramMappings.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramMappings"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramMappings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramMappings.Edge">
+      <summary>
+        <para>Provides access to edge mapping properties.</para>
+      </summary>
+      <value>An object that contains mapping properties.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramMappings.Node">
+      <summary>
+        <para>Provides access to node mapping properties.</para>
+      </summary>
+      <value>An object that contains mapping properties.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramMenuStyles">
+      <summary>
+        <para>Contains styles settings that define the appearance of menu elements in the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramMenuStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramMenuStyles"/> class.</para>
+      </summary>
+      <param name="menu">An object that implements the ISkinOwner interface.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo">
+      <summary>
+        <para>Contains node mapping properties.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.ContainerKey">
+      <summary>
+        <para>Specifies the name of a data source field that provides the key of a shape&#39;s parent container shape.</para>
+      </summary>
+      <value>The container key.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Height">
+      <summary>
+        <para>Specifies the name of a data source field that provides a node&#39;s height.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.ImageUrl">
+      <summary>
+        <para>Specifies the name of a data source field that provides the URL of a shape&#39;s image.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Left">
+      <summary>
+        <para>Specifies the name of a data source field that provides the x-coordinate of a node&#39;s left border.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Locked">
+      <summary>
+        <para>Specifies the name of a data source field whose values indicate whether a node is locked.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.ParentKey">
+      <summary>
+        <para>Specifies the name of a data source field that provides a parent node key for a node.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Style">
+      <summary>
+        <para>Specifies the name of a data source field that provides a node style.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Text">
+      <summary>
+        <para>Specifies the name of a data source field that provides node texts.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.TextStyle">
+      <summary>
+        <para>Specifies the name of a data source field that provides a node&#39;s text style.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Top">
+      <summary>
+        <para>Specifies the name of a data source field that provides the y-coordinate of a node&#39;s top border.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Type">
+      <summary>
+        <para>Specifies the name of a data source field that provides the shape type for a node.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.Width">
+      <summary>
+        <para>Specifies the name of a data source field that provides a node&#39;s width.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramNodeMappingInfo.ZIndex">
+      <summary>
+        <para>Specifies the name of a data source field that provides a node&#39;s z-index.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramPageOrientation">
+      <summary>
+        <para>Lists page orientations.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramPageOrientation.Landscape">
+      <summary>
+        <para>A landscape orientation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramPageOrientation.Portrait">
+      <summary>
+        <para>A portrait orientation.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramPageSettings">
+      <summary>
+        <para>Contains page settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramPageSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramPageSettings"/> class with specified settings.</para>
+      </summary>
+      <param name="owner"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramPageSettings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramPageSettings.Color">
+      <summary>
+        <para>Specifies the color of a diagram page.</para>
+      </summary>
+      <value>A structure that specifies the page color.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramPageSettings.Height">
+      <summary>
+        <para>Specifies the page height.</para>
+      </summary>
+      <value>The page height.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramPageSettings.Orientation">
+      <summary>
+        <para>Specifies the page orientation.</para>
+      </summary>
+      <value>The page orientation</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramPageSettings.ToString">
+      <summary>
+        <para>This method is not in effect for the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramPageSettings"/> class.</para>
+      </summary>
+      <returns>An empty string.</returns>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramPageSettings.Width">
+      <summary>
+        <para>Specifies the page width.</para>
+      </summary>
+      <value>The page width.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramPanelVisibility">
+      <summary>
+        <para>Lists values that specify diagram panels&#39; visibility.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramPanelVisibility.Auto">
+      <summary>
+        <para>The panel is disabled when the diagram is read-only.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramPanelVisibility.Collapsed">
+      <summary>
+        <para>The panel is collapsed initially.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramPanelVisibility.Disabled">
+      <summary>
+        <para>The panel is disabled. An element that can invoke the panel is hidden.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramPanelVisibility.Visible">
+      <summary>
+        <para>The panel is initially visible.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramShapeCategory">
+      <summary>
+        <para>Lists shape categories.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeCategory.Containers">
+      <summary>
+        <para>The category that contains shape containers.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeCategory.Custom">
+      <summary>
+        <para>A custom category. Use the <see cref="P:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.CustomCategoryName"/> property to specify the category name.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeCategory.FlowChart">
+      <summary>
+        <para>The category that contains shapes to built flow charts.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeCategory.General">
+      <summary>
+        <para>The category that contains general-purpose shapes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPoint">
+      <summary>
+        <para>A shape&#39;s connection point.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPoint.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPoint"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPoint.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.CollectionItem"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPoint.Left">
+      <summary>
+        <para>Specifies the horizontal offset of a connection point.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPoint.Top">
+      <summary>
+        <para>Specifies the vertical offset of a connection point.</para>
+      </summary>
+      <value>A decimal number from 0 to 1.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPoint.ToString">
+      <summary>
+        <para>Returns the connection point&#39;s offsets in the following format&#0058; &quot;Left, Top&quot;.</para>
+      </summary>
+      <returns>A string that contain offsets.</returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPointCollection">
+      <summary>
+        <para>A collection of connection points.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPointCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPointCollection"/> class with specified settings.</para>
+      </summary>
+      <param name="owner"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramShapeConnectionPointCollection.Add(System.Decimal,System.Decimal)">
+      <summary>
+        <para>Adds a new connection point to the end of the collection and returns the newly created object.</para>
+      </summary>
+      <param name="left">The horizontal offset of a connection point.</param>
+      <param name="top">The vertical offset of a connection point.</param>
+      <returns>An object that is the newly created point.</returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramShapeType">
+      <summary>
+        <para>Lists built-in shapes&#39; types.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ArrowBottom">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ArrowEastWest">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ArrowLeft">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ArrowNorthSouth">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ArrowRight">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ArrowTop">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.CardWithImageOnLeft">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.CardWithImageOnRight">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.CardWithImageOnTop">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Cross">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Data">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Database">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Decision">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Delay">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Diamond">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Display">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Document">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Ellipse">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.HardDisk">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Heart">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Hexagon">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.HorizontalContainer">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.InternalStorage">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ManualInput">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.ManualOperation">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Merge">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.MultipleDocuments">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Octagon">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Or">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.PaperTape">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Pentagon">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.PredefinedProcess">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Preparation">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Process">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Rectangle">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Star">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.StoredData">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.SummingJunction">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Terminator">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Text">
+      <summary>
+        <para>Text</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Triangle">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.Unset">
+      <summary>
+        <para>The shape type is not set.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramShapeType.VerticalContainer">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramSidePanelSettings">
+      <summary>
+        <para>Contains settings that affect the Side Panel&#39;s functionality.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramSidePanelSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramSidePanelSettings"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramSidePanelSettings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramSidePanelSettings.Visibility">
+      <summary>
+        <para>Specifies the Side Panel&#39;s visibility.</para>
+      </summary>
+      <value>The panel&#39;s visibility.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramStyles">
+      <summary>
+        <para>Contains style settings that define <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> elements&#39; appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramStyles"/> class.</para>
+      </summary>
+      <param name="owner">An object that implements the ISkinOwner interface.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramStyles.HistoryPanel">
+      <summary>
+        <para>Gets the History Panel&#39;s style settings.</para>
+      </summary>
+      <value>An object that contains style settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramStyles.LoadingPanel">
+      <summary>
+        <para>Gets the Loading Panel&#39;s style settings.</para>
+      </summary>
+      <value>An object that contains style settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramStyles.SidePanel">
+      <summary>
+        <para>Gets the Side Panel&#39;s style settings.</para>
+      </summary>
+      <value>An object that contains style settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramStyles.Toolbox">
+      <summary>
+        <para>Gets the Toolbox&#39;s style settings.</para>
+      </summary>
+      <value>An object that contains style settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup">
+      <summary>
+        <para>A group of shapes in the Toolbox.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.#ctor">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup"/> class instance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.#ctor(DevExpress.Web.ASPxDiagram.DiagramShapeCategory)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup"/> class instance with the specified shape category.</para>
+      </summary>
+      <param name="category">The shape category.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.#ctor(DevExpress.Web.ASPxDiagram.DiagramShapeCategory,System.String)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup"/> class instance with the specified settings.</para>
+      </summary>
+      <param name="category">The shape category.</param>
+      <param name="title">The group title.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.#ctor(System.String,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup"/> class with specified settings.</para>
+      </summary>
+      <param name="customCategoryName"></param>
+      <param name="title"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.CollectionItem"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.Category">
+      <summary>
+        <para>Specifies the shape category displayed in the group.</para>
+      </summary>
+      <value>The shape category.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.CustomCategoryName">
+      <summary>
+        <para>Specifies the name of a custom shape category.</para>
+      </summary>
+      <value>The category name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.DisplayMode">
+      <summary>
+        <para>Specifies how shapes are displayed in the toolbox.</para>
+      </summary>
+      <value>The display mode.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.Title">
+      <summary>
+        <para>Specifies the toolbox group&#39;s title.</para>
+      </summary>
+      <value>The title.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxGroup.ToString">
+      <summary>
+        <para>Returns the group&#39;s title and category in the following format&#0058; &quot;Title [Category]&quot;.</para>
+      </summary>
+      <returns>A string that contains the names of a title and a category.</returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramToolboxGroupDisplayMode">
+      <summary>
+        <para>Lists display modes for a diagram toolbox group.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramToolboxGroupDisplayMode.Icons">
+      <summary>
+        <para>Shapes are displayed as icons.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramToolboxGroupDisplayMode.Texts">
+      <summary>
+        <para>Shapes are displayed as texts.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramToolboxSettings">
+      <summary>
+        <para>Contains settings that affect the Toolbox&#39;s functionality.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramToolboxSettings"/> class instance with the specified owner.</para>
+      </summary>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramToolboxSettings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies public properties from the specified object to the current object.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object or descendant whose properties are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramToolboxSettings.Groups">
+      <summary>
+        <para>Lists toolbox groups.</para>
+      </summary>
+      <value>A collection of toolbox groups.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramToolboxSettings.Visibility">
+      <summary>
+        <para>Specifies the Toolbox&#39;s visibility.</para>
+      </summary>
+      <value>The Toolbox visibility.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.DiagramUnit">
+      <summary>
+        <para>Lists measurement units.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramUnit.Cm">
+      <summary>
+        <para>Centimeter</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramUnit.In">
+      <summary>
+        <para>Inch</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.DiagramUnit.Px">
+      <summary>
+        <para>Pixel</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.Web.ASPxDiagram.Localization">
+      <summary>
+        <para>Contains classes and enumerations that implement basic functionality for localization of the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> control.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramLocalizer">
+      <summary>
+        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> user interface elements at runtime.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramLocalizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramLocalizer"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramLocalizer.CreateResXLocalizer">
+      <summary>
+        <para>Returns an object that comprises resources based on the thread&#39;s language and regional settings (culture).</para>
+      </summary>
+      <returns>An object that comprises resources.</returns>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramLocalizer.GetString(DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId)">
+      <summary>
+        <para>Returns a localized string for the specified string identifier.</para>
+      </summary>
+      <param name="id">A value that identifies the string to localize.</param>
+      <returns>A string that corresponds to the specified identifier.</returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramResourcesLocalizer">
+      <summary>
+        <para>An object that provids a means to localize the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>&#39;s user interface elements at runtime.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramResourcesLocalizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramResourcesLocalizer"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId">
+      <summary>
+        <para>Contains values for strings that can be localized in the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.AutoZoom_Content">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.AutoZoom_Width">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Connector_LineEnding_Arrow">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Connector_LineEnding_None">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Connector_Orthogonal">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Connector_Straight">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.FitTo_Content">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.FitTo_Width">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Layout">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Layout_Arrange">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Layout_AutoLayout">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Layout_AutoLayout_Horizontal">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Layout_AutoLayout_Vertical">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Page">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Page_Layout">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Page_Layout_Landscape">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Page_Layout_Portrait">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Page_View">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Style">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Style_Line">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Settings_Style_Text">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.ShowGrid">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.ShowToolbox">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.SimpleView">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.SnapToGrid">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Toolbox_Containers">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Toolbox_Custom">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Toolbox_FlowChart">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.Toolbox_General">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.UnitCm">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.UnitIn">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.UnitPx">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,78 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="RibbonToolbarMobileBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarControlMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMobileForegroundBrush" Color="#FF424242" Core:ColorKey.Id="RibbonToolbarControlMobileColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarMobileContentBackgroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonToolbarControlMobileColors.ContentBackground.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileFlyoutBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonToolbarTabMobileColors.FlyoutBorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarTabMobileColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileFlyoutBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarTabMobileColors.FlyoutBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushSelectedPressed.Light"/>
+
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RibbonToolbarMobileBackgroundBrush" Color="#FF515151" Core:ColorKey.Id="RibbonToolbarControlMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMobileForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarControlMobileColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarMobileContentBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonToolbarControlMobileColors.ContentBackground.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileFlyoutBorderBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonToolbarTabMobileColors.FlyoutBorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarTabMobileColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabMobileBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileFlyoutBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonToolbarTabMobileColors.FlyoutBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemForeground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarTabItemMobileBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarTabMobileColors.ItemBorderBrushSelectedPressed.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

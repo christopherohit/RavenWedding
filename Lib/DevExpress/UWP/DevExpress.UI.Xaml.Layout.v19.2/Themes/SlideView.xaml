@@ -1,0 +1,103 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxcore="using:DevExpress.Core"
+    xmlns:ve="using:DevExpress.UI.Xaml.Layout.VisualElements"
+    xmlns:local="using:DevExpress.UI.Xaml.Layout">
+    <ControlTemplate x:Key="SlideViewItemHeaderTemplate" TargetType="local:SlideViewItemHeader">
+        <ContentPresenter x:Name="presenter">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="PointerOver">
+                        <Storyboard>
+                            <DoubleAnimation Duration="0" To="0.8" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="presenter"/>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <Storyboard>
+                            <DoubleAnimation Duration="0" To="0.4" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="presenter"/>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="PointerOverPressed">
+                        <Storyboard>
+                            <DoubleAnimation Duration="0" To="0.4" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="presenter"/>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Disabled">
+                        <Storyboard>
+                            <DoubleAnimation Duration="0" To="{StaticResource ListViewItemDisabledThemeOpacity}" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="presenter"/>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </ContentPresenter>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SlideViewItemTemplate" TargetType="local:SlideViewItem">
+        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}">
+            <ve:veContentPresenter x:Name="PART_Content"
+                            Content="{TemplateBinding Content}" 
+                            ContentTemplate="{TemplateBinding ContentTemplate}" 
+                            ContentTransitions="{TemplateBinding ContentTransitions}" 
+                            Margin="{TemplateBinding Padding}" 
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            />
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SlideViewTemplate" TargetType="local:SlideView">
+        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}">
+
+            <Grid>
+                <ScrollViewer x:Name="ScrollViewer" ZoomMode="Disabled" VerticalScrollMode="Disabled" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <ItemsPresenter  x:Name="PART_ItemsPresenter" Margin="{TemplateBinding Padding}" />
+                </ScrollViewer>
+                <local:SlideViewHeadersPanel x:Name="PART_HeadersPanel" Orientation="Horizontal" VerticalAlignment="Top" Margin="{TemplateBinding Padding}"/>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+    <ItemsPanelTemplate x:Key="SlideViewItemsPanelTemplate">
+        <local:SlideViewItemsPanel Orientation="Horizontal" ItemSizeMode="AutoSize"/>
+    </ItemsPanelTemplate>
+
+    <Style TargetType="local:SlideViewItemHeader">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Template" Value="{StaticResource SlideViewItemHeaderTemplate}"/>
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+
+    <Style TargetType="local:SlideViewItem">
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="Template" Value="{StaticResource SlideViewItemTemplate}"/>
+    </Style>
+
+    <Style TargetType="local:SlideView">
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled"/>
+        <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Auto"/>
+        <Setter Property="ScrollViewer.IsHorizontalRailEnabled" Value="True"/>
+        <Setter Property="ScrollViewer.VerticalScrollMode" Value="Disabled"/>
+        <Setter Property="ScrollViewer.IsVerticalRailEnabled" Value="True"/>
+        <Setter Property="ScrollViewer.ZoomMode" Value="Disabled"/>
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="TabNavigation" Value="Once"/>
+        <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+        <Setter Property="ItemContainerTransitions">
+            <Setter.Value>
+                <TransitionCollection>
+                    <AddDeleteThemeTransition/>
+                    <ContentThemeTransition/>
+                    <ReorderThemeTransition/>
+                    <EntranceThemeTransition IsStaggeringEnabled="False"/>
+                </TransitionCollection>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsPanel" Value="{StaticResource SlideViewItemsPanelTemplate}"/>
+        <Setter Property="Template" Value="{StaticResource SlideViewTemplate}"/>
+    </Style>
+</ResourceDictionary>

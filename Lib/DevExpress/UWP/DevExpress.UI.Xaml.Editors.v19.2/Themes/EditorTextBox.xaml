@@ -1,0 +1,44 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxi="using:DevExpress.UI.Xaml.Editors.Native">
+    <Style TargetType="dxi:EditorTextBox">
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="dxi:EditorTextBox">
+                    <Grid Margin="{TemplateBinding Padding}"
+                          VerticalAlignment="{TemplateBinding ActualVerticalContentAlignment}">
+                        <TextBlock x:Name="NullTextElement"
+                                   TextAlignment="{TemplateBinding TextAlignment}"
+                                   UseLayoutRounding="True"
+                                   Visibility="{TemplateBinding NullTextVisibility}"
+                                   VerticalAlignment="Stretch"
+                                   IsHitTestVisible="False"
+                                   Text="{TemplateBinding NullText}"
+                                   CharacterSpacing="{TemplateBinding CharacterSpacing}"
+                                   TextWrapping="{TemplateBinding TextWrapping}"
+                                   Foreground="{TemplateBinding NullTextForeground}"
+                                   FontStyle="{TemplateBinding FontStyle}"
+                                   FontStretch="{TemplateBinding FontStretch}"
+                                   FontWeight="{TemplateBinding FontWeight}"
+                                   FontFamily="{TemplateBinding FontFamily}"
+                                   FontSize="{TemplateBinding FontSize}"/>
+                        <ScrollViewer x:Name="ContentElement"
+                                      HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}"
+                                      HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
+                                      IsTabStop="False"
+                                      IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}"
+                                      IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}"
+                                      VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}"
+                                      VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}"
+                                      IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}"
+                                      ZoomMode="Disabled"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

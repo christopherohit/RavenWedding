@@ -1,0 +1,34 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevExpress.UI.Xaml.Charts">
+    
+    <Style TargetType="local:GridLinesPresentation">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:GridLinesPresentation">
+                    <Grid>
+                        <Path Data="{Binding MinorLinesGeometry}"
+                              Stroke="{Binding Path=Element.GridLinesMinorBrush}"
+                              StrokeThickness="{Binding Path=Element.ActualGridLinesMinorStrokeStyle.Thickness}"
+                              StrokeDashArray="{Binding  Path=Element.ActualGridLinesMinorStrokeStyle.DashArray}"
+                              StrokeDashCap="{Binding Path=Element.ActualGridLinesMinorStrokeStyle.DashCap}"
+                              StrokeDashOffset="{Binding Path=Element.ActualGridLinesMinorStrokeStyle.DashOffset}"
+                              StrokeLineJoin="{Binding Path=Element.ActualGridLinesMinorStrokeStyle.LineJoin}"
+                              StrokeMiterLimit="{Binding Path=Element.ActualGridLinesMinorStrokeStyle.MiterLimit}"/>
+                        <Path Data="{Binding MajorLinesGeometry}"
+                              Stroke="{Binding Path=Element.GridLinesBrush}"
+                              StrokeThickness="{Binding Path=Element.ActualGridLinesStrokeStyle.Thickness}"
+                              StrokeDashArray="{Binding  Path=Element.ActualGridLinesStrokeStyle.DashArray}"
+                              StrokeDashCap="{Binding Path=Element.ActualGridLinesStrokeStyle.DashCap}"
+                              StrokeDashOffset="{Binding Path=Element.ActualGridLinesStrokeStyle.DashOffset}"
+                              StrokeLineJoin="{Binding Path=Element.ActualGridLinesStrokeStyle.LineJoin}"
+                              StrokeMiterLimit="{Binding Path=Element.ActualGridLinesStrokeStyle.MiterLimit}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>
+

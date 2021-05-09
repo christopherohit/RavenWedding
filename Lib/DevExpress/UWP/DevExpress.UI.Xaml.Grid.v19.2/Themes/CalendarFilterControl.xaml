@@ -1,0 +1,48 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="using:DevExpress.Core"
+    xmlns:dxg="using:DevExpress.UI.Xaml.Grid"
+    xmlns:dxe="using:DevExpress.UI.Xaml.Editors"
+    >
+
+    <ResourceDictionary.MergedDictionaries>
+        <dx:SystemStyleOverrides/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="DateFilterStyle" TargetType="CheckBox" BasedOn="{StaticResource SystemCheckBoxStyle}">
+        <Setter Property="Margin" Value="7,0,0,1"/>
+        <!--<Setter Property="RequestedTheme" Value="Light"/>-->
+    </Style>
+
+    <Style TargetType="dxg:CalendarFilterControl">
+        <Setter Property="DateFilterStyle" Value="{StaticResource DateFilterStyle}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <Grid Margin="0,2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel x:Name="PART_UpperFiltersPanel"/>
+
+                            <dxe:DateNavigator x:Name="PART_DateNavigator"
+                                               SelectionMode="Multiple"
+                                               AnimationMode="Standard"
+                                               MaxHeight="240"
+                                               MaxWidth="330"
+                                               Grid.Row="1"/>
+
+                            <StackPanel x:Name="PART_BottomFiltersPanel" Grid.Row="2"/>
+                        </Grid>
+                    </ScrollViewer>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

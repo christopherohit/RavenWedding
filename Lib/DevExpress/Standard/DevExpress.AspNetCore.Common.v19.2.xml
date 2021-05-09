@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.AspNetCore.Common.v19.2</name>
+  </assembly>
+  <members>
+    <member name="T:DevExpress.AspNetCore.ApplicationBuilderExtensions">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.ApplicationBuilderExtensions.UseDevExpressControls(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="appBuilder"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.AspNetCore.ApplicationOptions">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.ApplicationOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.AspNetCore.ApplicationOptions"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.AspNetCore.ApplicationOptions.AccessibilityCompliant">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.AspNetCore.ApplicationOptions.Resources">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.AspNetCore.BuilderFactory">
+      <summary>
+        <para>Provides access to ASP.NET Core controls.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.BuilderFactory.#ctor(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.AspNetCore.BuilderFactory"/> class.</para>
+      </summary>
+      <param name="htmlHelper">A helper object for rendering ASP.NET Core controls.</param>
+    </member>
+    <member name="M:DevExpress.AspNetCore.BuilderFactory.Scripts">
+      <summary>
+        <para>Returns control-specific scripts located on a web page.</para>
+      </summary>
+      <returns>An IHtmlContent instance that stores control-specific scripts.</returns>
+    </member>
+    <member name="M:DevExpress.AspNetCore.BuilderFactory.StyleSheets">
+      <summary>
+        <para>Returns control-specific styles.</para>
+      </summary>
+      <returns>An IHtmlContent instance that stores control-specific styles.</returns>
+    </member>
+    <member name="M:DevExpress.AspNetCore.BuilderFactory.StyleSheets(System.Action{DevExpress.AspNetCore.StyleSheetSettings})">
+      <summary>
+        <para>Returns control-specific styles.</para>
+      </summary>
+      <param name="config">Control rendering specific settings.</param>
+      <returns>An IHtmlContent instance that stores control-specific styles.</returns>
+    </member>
+    <member name="T:DevExpress.AspNetCore.BuilderFactory`1">
+      <summary>
+        <para>Provides access to ASP.NET Core controls configured by MVC models.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.BuilderFactory`1.#ctor(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper{`0})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.AspNetCore.BuilderFactory`1"/> class.</para>
+      </summary>
+      <param name="htmlHelper">A helper object for rendering ASP.NET controls configured by MVC models.</param>
+    </member>
+    <member name="T:DevExpress.AspNetCore.HtmlHelperExtensions">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.HtmlHelperExtensions.DevExpress(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="htmlHelper"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.AspNetCore.HtmlHelperExtensions.DevExpress``1(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper{``0})">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="htmlHelper"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.AspNetCore.MvcServiceCollectionExtensions">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.MvcServiceCollectionExtensions.AddDevExpressControls(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="services"></param>
+    </member>
+    <member name="M:DevExpress.AspNetCore.MvcServiceCollectionExtensions.AddDevExpressControls(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{DevExpress.AspNetCore.ApplicationOptions})">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="services"></param>
+      <param name="setupAction"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.AspNetCore.ResourcesType">
+      <summary>
+        <para>Lists resources that can be automatically added.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.AspNetCore.ResourcesType.DevExtreme">
+      <summary>
+        <para>Specifies that a reference to the DevExtreme package should be added. For a complete list of these references, see the &quot;Integration with 3rd-Party Libraries and Frameworks&quot; section of the Introduction&quot;&gt;DevExtreme Packages document.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.AspNetCore.ResourcesType.None">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.AspNetCore.ResourcesType.ThirdParty">
+      <summary>
+        <para>Specifies that references to external libraries required by a specific control should be added. For a complete list of these references, see .</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.AspNetCore.ScriptSettings">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.ScriptSettings.#ctor">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.AspNetCore.StyleSheetSettings">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.AspNetCore.StyleSheetSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.AspNetCore.StyleSheetSettings"/> class.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

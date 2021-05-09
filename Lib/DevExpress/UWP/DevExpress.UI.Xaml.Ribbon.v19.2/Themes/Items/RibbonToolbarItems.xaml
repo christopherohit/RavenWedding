@@ -1,0 +1,1638 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Internal="using:DevExpress.UI.Xaml.Ribbon.Internal"
+    xmlns:XamlInternal="using:DevExpress.UI.Xaml.Internal"
+    xmlns:dxxi="using:DevExpress.UI.Xaml.Internal"
+    xmlns:dxc="using:DevExpress.UI.Xaml.Controls"
+    xmlns:Ribbon="using:DevExpress.UI.Xaml.Ribbon"
+    xmlns:Core="using:DevExpress.Core"
+    xmlns:Editors="using:DevExpress.UI.Xaml.Editors"
+    xmlns:dxi="using:DevExpress.UI.Xaml.Editors.Native"
+    xmlns:Xaml="using:DevExpress.UI.Xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/RibbonToolbarItems.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Core:ObjectToBooleanConverter x:Key="ObjectToBooleanConverter"/>
+    <Internal:ThicknessNegationConverter x:Key="ThicknessNegationConverter"/>
+    <Core:ObjectToVisibilityConverter x:Key="ObjectToVisibilityConverter"/>
+
+    <!--#region RibbonToolbarTextBox-->
+    <ControlTemplate x:Key="TextEdit_BorderTemplate" TargetType="ContentControl">
+        <Grid x:Name="PART_Root" Background="Transparent">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Disabled">
+                        <VisualState.Setters>
+                            <Setter Target="BackgroundElement.Background" Value="{ThemeResource RibbonToolbarTextBoxBackgroundDisabledBrush}"/>
+                            <Setter Target="BorderElement.BorderBrush" Value="{ThemeResource RibbonToolbarTextBoxBorderDisabledBrush}"/>
+                            <Setter Target="ContentElement.Foreground" Value="{ThemeResource RibbonToolbarTextBoxForegroundDisabledBrush}"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Invalid">
+                        <VisualState.Setters>
+                            <Setter Target="BorderElement.BorderBrush" Value="{ThemeResource RibbonToolbarTextBoxBorderInvalidBrush}"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Target="BackgroundElement.Opacity" Value="{ThemeResource TextControlBackgroundThemeOpacity}"/>
+                            <Setter Target="BorderElement.Opacity" Value="{ThemeResource TextControlBorderThemeOpacity}"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="PointerOver">
+                        <VisualState.Setters>
+                            <Setter Target="BackgroundElement.Opacity" Value="{ThemeResource TextControlPointerOverBackgroundThemeOpacity}"/>
+                            <Setter Target="BorderElement.Opacity" Value="{ThemeResource TextControlPointerOverBorderThemeOpacity}"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Focused"/>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border x:Name="BackgroundElement" Background="{TemplateBinding Background}" Grid.ColumnSpan="2" Margin="{TemplateBinding BorderThickness}"/>
+            <Border x:Name="BorderElement" HorizontalAlignment="Stretch" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
+            <ContentPresenter x:Name="ContentElement" Margin="{TemplateBinding BorderThickness}"/>
+            <Editors:EditorPopupContainer>
+                <Editors:EditorPopup/>
+                <Xaml:ValidationFlyout/>
+            </Editors:EditorPopupContainer>
+        </Grid>
+    </ControlTemplate>
+    <Style x:Key="EditorTextBoxStyle" TargetType="dxi:EditorTextBox"/>
+    <ControlTemplate x:Key="TextEdit_ButtonsTemplate" TargetType="Editors:TextEdit">
+        <ContentControl
+            VerticalAlignment="Stretch"
+            VerticalContentAlignment="Center"
+            Template="{StaticResource TextEdit_BorderTemplate}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            Background="{TemplateBinding Background}"
+            dxi:VisualStateHelper.Manager="{Binding Path=(Editors:PropertyProvider.Properties).BaseEditViewModel.StateManager, RelativeSource={RelativeSource TemplatedParent}}">
+            <Editors:ButtonsControl
+                x:Name="PART_Buttons"
+                Editors:PropertyProvider.Properties="{TemplateBinding Editors:PropertyProvider.Properties}"
+                ItemsSource="{Binding Path=(Editors:PropertyProvider.Properties).ButtonEditViewModel.Buttons, RelativeSource={RelativeSource Self}}">
+                <Editors:ButtonsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Editors:ButtonsPanel/>
+                    </ItemsPanelTemplate>
+                </Editors:ButtonsControl.ItemsPanel>
+            </Editors:ButtonsControl>
+        </ContentControl>
+    </ControlTemplate>
+    <ControlTemplate x:Key="TextEdit_Template" TargetType="Editors:TextEdit">
+        <ContentControl
+            VerticalAlignment="Stretch"
+            IsTabStop="False"
+            Template="{StaticResource TextEdit_BorderTemplate}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            Background="{TemplateBinding Background}"
+            dxi:VisualStateHelper.Manager="{Binding Path=(Editors:PropertyProvider.Properties).BaseEditViewModel.StateManager, RelativeSource={RelativeSource TemplatedParent}}">
+            <Grid x:Name="ContentElement" 
+                  UseLayoutRounding="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Editors:ButtonsControl
+                    x:Name="PART_LeftButtons"
+                    Editors:PropertyProvider.Properties="{TemplateBinding Editors:PropertyProvider.Properties}"
+                    ItemsSource="{Binding Path=(Editors:PropertyProvider.Properties).ButtonEditViewModel.LeftButtons, RelativeSource={RelativeSource Self}}" />
+                <Editors:EditorControl
+                    x:Name="PART_Content"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="1"
+                    Editors:PropertyProvider.Properties="{TemplateBinding Editors:PropertyProvider.Properties}"
+                    ContentTemplate="{Binding Path=ActualEditTemplate, RelativeSource={RelativeSource TemplatedParent}}" />
+                <Editors:ButtonsControl
+                    x:Name="PART_RightButtons"
+                    Editors:PropertyProvider.Properties="{TemplateBinding Editors:PropertyProvider.Properties}"
+                    Grid.Column="2"
+                    ItemsSource="{Binding Path=(Editors:PropertyProvider.Properties).ButtonEditViewModel.RightButtons, RelativeSource={RelativeSource Self}}" />
+            </Grid>
+        </ContentControl>
+    </ControlTemplate>
+    <DataTemplate x:Key="TextEdit_EditTemplate">
+        <dxi:EditorTextBox
+            x:Name="PART_Editor"
+            Style="{StaticResource EditorTextBoxStyle}"
+            SelectionHighlightColor="{Binding Path=(Editors:PropertyProvider.Properties).Editor.SelectionHighlightBrush, RelativeSource={RelativeSource TemplatedParent}}"
+            MaxLength="{Binding Path=(Editors:PropertyProvider.Properties).Editor.MaxLength, RelativeSource={RelativeSource TemplatedParent}}"
+            InputScope="{Binding Path=(Editors:PropertyProvider.Properties).Editor.InputScope, RelativeSource={RelativeSource TemplatedParent}}"
+            TextWrapping="{Binding Path=(Editors:PropertyProvider.Properties).Editor.TextWrapping, RelativeSource={RelativeSource TemplatedParent}}"
+            AcceptsReturn="{Binding Path=(Editors:PropertyProvider.Properties).Editor.AcceptsReturn, RelativeSource={RelativeSource TemplatedParent}}"
+            IsTextPredictionEnabled="{Binding Path=(Editors:PropertyProvider.Properties).Editor.IsTextPredictionEnabled, RelativeSource={RelativeSource TemplatedParent}}"
+            IsReadOnly="{Binding Path=(Editors:PropertyProvider.Properties).Editor.IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
+            VerticalContentAlignment="{Binding Path=(Editors:PropertyProvider.Properties).Editor.VerticalContentAlignment, RelativeSource={RelativeSource TemplatedParent}}"
+            NullTextForeground="{Binding Path=(Editors:PropertyProvider.Properties).Editor.NullTextForeground, RelativeSource={RelativeSource TemplatedParent}}"
+            Padding="{Binding Path=(Editors:PropertyProvider.Properties).Editor.Padding, RelativeSource={RelativeSource Self}}"/>
+    </DataTemplate>
+    <DataTemplate x:Key="TextEdit_EditNonEditableTemplate">
+        <TextBlock
+            x:Name="PART_Editor"
+            VerticalAlignment="{Binding Path=(Editors:PropertyProvider.Properties).Editor.VerticalContentAlignment, RelativeSource={RelativeSource TemplatedParent}}"
+            Padding="{Binding Path=(Editors:PropertyProvider.Properties).Editor.Padding, RelativeSource={RelativeSource Self}}"/>
+    </DataTemplate>
+    <Style TargetType="Ribbon:RibbonToolbarTextBox">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="18"/>
+        <Setter Property="MinWidth" Value="{ThemeResource TextControlThemeMinWidth}"/>
+        <Setter Property="MinHeight" Value="{ThemeResource TextControlThemeMinHeight}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarTextBoxForegroundBrush}"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarTextBoxBackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarTextBoxBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Margin" Value="8,7"/>
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+        <Setter Property="Padding" Value="{ThemeResource TextControlThemePadding}"/>
+        <Setter Property="NullTextForeground" Value="{ThemeResource RibbonToolbarTextBoxNullTextForegroundBrush}"/>
+        <Setter Property="ButtonsTemplate" Value="{StaticResource TextEdit_ButtonsTemplate}"/>
+        <Setter Property="TextTemplate" Value="{StaticResource TextEdit_Template}"/>
+        <Setter Property="EditTemplate" Value="{StaticResource TextEdit_EditTemplate}"/>
+        <Setter Property="EditNonEditableTemplate" Value="{StaticResource TextEdit_EditNonEditableTemplate}"/>
+        <Setter Property="SelectionHighlightBrush" Value="{ThemeResource RibbonToolbarTextBoxSelectionHighlightBrush}"/>
+        <Setter Property="Core:StyleHelper.BindableSetters">
+            <Setter.Value>
+                <Core:BindableSetterCollection>
+                    <Core:BindableSetter Property="Template" Binding="{Binding Path=(Editors:PropertyProvider.Properties).ButtonEditViewModel.ActualTemplate, RelativeSource={RelativeSource Self}}" />
+                </Core:BindableSetterCollection>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+
+    <Style TargetType="Ribbon:ToolbarHelpPaneButton">
+        <Setter Property="ItemStyle" Value="GlyphWithText"/>
+        <Setter Property="IconFill" Value="{ThemeResource ToolbarHelpPaneButtonIconFillBrush}"/>
+        <Setter Property="Background" Value="{ThemeResource ToolbarHelpPaneButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource ToolbarHelpPaneButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource ToolbarHelpPaneButtonBorderBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="12,8"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:ToolbarHelpPaneButton">
+                    <Grid x:Name="PART_Background"
+                          Background="{TemplateBinding Background}"
+                          BorderThickness="{TemplateBinding BorderThickness}" 
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          Padding="{TemplateBinding Padding}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource ToolbarHelpPaneButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource ToolbarHelpPaneButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource ToolbarHelpPaneButtonForegroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource ToolbarHelpPaneButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource ToolbarHelpPaneButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource ToolbarHelpPaneButtonForegroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Flyout">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.HorizontalAlignment" Value="Stretch"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Glyph"/>
+                                <VisualState x:Name="GlyphWithText"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                        <ContentPresenter x:Name="PART_Text"
+                                          VerticalAlignment="Center"
+                                          FontWeight="SemiLight"
+                                          Grid.Column="1"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        <Rectangle x:Name="PART_FocusVisual" 
+                                   Grid.ColumnSpan="2" 
+                                   IsHitTestVisible="False" 
+                                   StrokeThickness="1" 
+                                   Opacity="0" 
+                                   Stroke="{ThemeResource ToolbarHelpPaneButtonFocusVisualStrokeBrush}" 
+                                   Fill="{ThemeResource ToolbarHelpPaneButtonFocusVisualBackgroundBrush}"
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:ToolbarHelpPaneRadioButton">
+        <Setter Property="ItemStyle" Value="GlyphWithText"/>
+        <Setter Property="UseSystemFocusVisuals" Value="False"/>
+        <Setter Property="Background" Value="{ThemeResource ToolbarHelpPaneRadioButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource ToolbarHelpPaneRadioButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource ToolbarHelpPaneRadioButtonBorderBrush}"/>
+        <Setter Property="IconFill" Value="{ThemeResource ToolbarHelpPaneRadioButtonIconFillBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="12,8"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:ToolbarHelpPaneRadioButton">
+                    <Grid x:Name="PART_Grid"
+                          Margin="{TemplateBinding Padding}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource ToolbarHelpPaneRadioButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource ToolbarHelpPaneRadioButtonSelectionBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource ToolbarHelpPaneRadioButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource ToolbarHelpPaneRadioButtonForegroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource ToolbarHelpPaneRadioButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource ToolbarHelpPaneRadioButtonSelectionBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource ToolbarHelpPaneRadioButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource ToolbarHelpPaneRadioButtonForegroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Grid.Opacity" Value="0.4"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CheckStates">
+                                <VisualState x:Name="Checked">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_SelectionBorder.Opacity" Value="1"/>
+                                        <Setter Target="PART_CommonBorder.Opacity" Value="0"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unchecked"/>
+                                <VisualState x:Name="Indeterminate"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Glyph">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Text" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Icon" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="GlyphWithText"/>
+                                <VisualState x:Name="Flyout"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="PART_CommonBorder" 
+                                Opacity="1" 
+                                Grid.ColumnSpan="2"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                        <Border x:Name="PART_SelectionBorder"
+                                Opacity="0" 
+                                Background="{ThemeResource ToolbarHelpPaneRadioButtonSelectionBackgroundBrush}"
+                                BorderBrush="{ThemeResource ToolbarHelpPaneRadioButtonSelectionBorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Grid.ColumnSpan="2"
+                                Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                        <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                        <ContentPresenter x:Name="PART_Text" 
+                                          Grid.Column="1" 
+                                          AutomationProperties.AccessibilityView="Raw" 
+                                          Foreground="{TemplateBinding Foreground}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <Rectangle x:Name="PART_FocusVisual" 
+                                   Grid.ColumnSpan="2"
+                                   IsHitTestVisible="False" 
+                                   StrokeThickness="1" 
+                                   Opacity="0"
+                                   Stroke="{ThemeResource ToolbarHelpPaneRadioButtonFocusVisualStrokeBrush}"
+                                   Fill="{ThemeResource ToolbarHelpPaneRadioButtonFocusVisualBackgroundBrush}"
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarHelpPanelToggleButton">
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="12,8"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarHelpPanelToggleButton">
+                    <Grid x:Name="PART_Background"
+                          Background="{TemplateBinding Background}"
+                          BorderThickness="{TemplateBinding BorderThickness}" 
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          Padding="{TemplateBinding Padding}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CheckStates">
+                                <VisualState x:Name="Checked">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundCheckedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderCheckedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundCheckedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundCheckedHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderCheckedHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundCheckedHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundCheckedPressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderCheckedPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonIconForegroundCheckedPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundCheckedPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unchecked"/>
+                                <VisualState x:Name="UncheckedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="UncheckedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Indeterminate"/>
+                                <VisualState x:Name="IndeterminatePointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundIndeterminateHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderIndeterminateHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonIconForegroundIndeterminateHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundIndeterminateHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="IndeterminatePressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBackgroundIndeterminatePressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonBorderIndeterminatePressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonIconForegroundIndeterminatePressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarHelpPanelToggleButtonForegroundIndeterminatePressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Flyout">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.HorizontalAlignment" Value="Stretch"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Glyph">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Text" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Icon" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="GlyphWithText"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                        <ContentPresenter x:Name="PART_Text"
+                                          Grid.Column="1"
+                                          VerticalAlignment="Center"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        <Rectangle x:Name="PART_FocusVisual" 
+                                   Grid.ColumnSpan="2"
+                                   IsHitTestVisible="False" 
+                                   StrokeThickness="1" 
+                                   Opacity="0" 
+                                   Stroke="{ThemeResource RibbonToolbarHelpPanelToggleButtonFocusVisualStrokeBrush}"
+                                   Fill="{ThemeResource RibbonToolbarHelpPanelToggleButtonFocusVisualBackgroundBrush}"
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarMenuButton">
+        <Setter Property="UseSystemFocusVisuals" Value="False"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarMenuButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarMenuButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarMenuButtonBorderBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="11"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarMenuButton">
+                    <Grid x:Name="PART_Background"
+                          Background="{TemplateBinding Background}"
+                          BorderThickness="{TemplateBinding BorderThickness}" 
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          Padding="{TemplateBinding Padding}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="SelectionStates">
+                                <VisualState x:Name="Unselected"/>
+                                <VisualState x:Name="UnselectedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarMenuButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarMenuButtonBorderHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonForegroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="UnselectedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarMenuButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarMenuButtonBorderPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonForegroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarMenuButtonBackgroundSelectedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarMenuButtonBorderSelectedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonIconForegroundSelectedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonForegroundSelectedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarMenuButtonBackgroundSelectedHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarMenuButtonBorderSelectedHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonIconForegroundSelectedHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonForegroundSelectedHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarMenuButtonBackgroundSelectedPressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarMenuButtonBorderSelectedPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonIconForegroundSelectedPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarMenuButtonForegroundSelectedPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Flyout">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ArrowGlyph" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Glyph">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Text" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Icon" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="GlyphWithText"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                        <ContentPresenter x:Name="PART_Text"
+                                          Grid.Column="1"
+                                          VerticalAlignment="Center" 
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        <Path x:Name="PART_ArrowGlyph"
+                              Grid.Column="2"
+                              Data="F1 M 0,0 L 6,6 L 0,12 L 2,12 L 8,6 L 2,0 z"
+                              Fill="{Binding Foreground, ElementName=PART_Text}"
+                              Visibility="Collapsed"
+                              Margin="16,0,4,0"
+                              VerticalAlignment="Center"/>
+                        <XamlInternal:NestedMenuFlyoutControl x:Name="PART_Flyout"
+                                                       AnimationDuration="0:0:0.3"
+                                                       x:DeferLoadStrategy="Lazy"
+                                                       Grid.ColumnSpan="3"
+                                                       CloseOnTargetClick="{TemplateBinding XamlInternal:MenuFlyoutControl.CloseOnTargetClick}"
+                                                       Margin="{Binding BorderThickness, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}">
+                            <Internal:FlyoutItemsContentHost ItemsSource="{Binding Items, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=OneTime}"
+                                                             ColumnCount="{TemplateBinding FlyoutColumnCount}"/>
+                        </XamlInternal:NestedMenuFlyoutControl>
+                        <Rectangle x:Name="PART_FocusVisual" 
+                                   Grid.ColumnSpan="3" 
+                                   IsHitTestVisible="False" 
+                                   StrokeThickness="1" 
+                                   Opacity="0" 
+                                   Stroke="{ThemeResource RibbonToolbarMenuButtonFocusVisualStrokeBrush}" 
+                                   Fill="{ThemeResource RibbonToolbarMenuButtonFocusVisualBackgroundBrush}"
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarRadioButton">
+        <Setter Property="UseSystemFocusVisuals" Value="False"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarRadioButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarRadioButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarRadioButtonBorderBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="12"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarRadioButton">
+                    <Grid x:Name="PART_Grid"
+                          Margin="{TemplateBinding Padding}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource RibbonToolbarRadioButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_CommonBorder.BorderBrush" Value="{ThemeResource RibbonToolbarRadioButtonBorderHoverBrush}"/>
+                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource RibbonToolbarRadioButtonSelectionBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_SelectionBorder.BorderBrush" Value="{ThemeResource RibbonToolbarRadioButtonSelectionBorderHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarRadioButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarRadioButtonForegroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource RibbonToolbarRadioButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_CommonBorder.BorderBrush" Value="{ThemeResource RibbonToolbarRadioButtonBorderPressedBrush}"/>
+                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource RibbonToolbarRadioButtonSelectionBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_SelectionBorder.BorderBrush" Value="{ThemeResource RibbonToolbarRadioButtonSelectionBorderPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarRadioButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarRadioButtonForegroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Grid.Opacity" Value="0.4"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CheckStates">
+                                <VisualState x:Name="Checked">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_SelectionBorder.Opacity" Value="1"/>
+                                        <Setter Target="PART_CommonBorder.Opacity" Value="0"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unchecked"/>
+                                <VisualState x:Name="Indeterminate"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Glyph">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Text" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Icon" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="GlyphWithText"/>
+                                <VisualState x:Name="Flyout"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="PART_CommonBorder" 
+                                Opacity="1" 
+                                Grid.ColumnSpan="2"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                        <Border x:Name="PART_SelectionBorder"
+                                Opacity="0" 
+                                Background="{ThemeResource RibbonToolbarRadioButtonSelectionBackgroundBrush}"
+                                BorderBrush="{ThemeResource RibbonToolbarRadioButtonSelectionBorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Grid.ColumnSpan="2"
+                                Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                        <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                        <ContentPresenter x:Name="PART_Text" 
+                                          Grid.Column="1" 
+                                          AutomationProperties.AccessibilityView="Raw" 
+                                          Foreground="{TemplateBinding Foreground}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <Rectangle x:Name="PART_FocusVisual" 
+                                   Grid.ColumnSpan="2"
+                                   IsHitTestVisible="False" 
+                                   StrokeThickness="1" 
+                                   Opacity="0"
+                                   Stroke="{ThemeResource RibbonToolbarRadioButtonFocusVisualStrokeBrush}"
+                                   Fill="{ThemeResource RibbonToolbarRadioButtonFocusVisualBackgroundBrush}"
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarButton">
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarButtonBorderBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="11"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarButton">
+                    <Grid x:Name="PART_Background"
+                          Background="{TemplateBinding Background}"
+                          BorderThickness="{TemplateBinding BorderThickness}" 
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          Padding="{TemplateBinding Padding}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarButtonBorderHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarButtonForegroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarButtonBorderPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarButtonForegroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Flyout">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.HorizontalAlignment" Value="Stretch"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Glyph">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Text" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Icon" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="GlyphWithText"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                        <ContentPresenter x:Name="PART_Text"
+                                          VerticalAlignment="Center"
+                                          Grid.Column="1"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        <Rectangle x:Name="PART_FocusVisual" 
+                                   Grid.ColumnSpan="2" 
+                                   IsHitTestVisible="False" 
+                                   StrokeThickness="1" 
+                                   Opacity="0" 
+                                   Stroke="{ThemeResource RibbonToolbarButtonFocusVisualStrokeBrush}" 
+                                   Fill="{ThemeResource RibbonToolbarButtonFocusVisualBackgroundBrush}"
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarCheckBox">
+        <Setter Property="UseSystemFocusVisuals" Value="False"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarCheckBoxBackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarCheckBoxBorderBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarCheckBoxForegroundBrush}"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="11"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarCheckBox">
+                    <Grid x:Name="PART_Background" 
+                          Background="{TemplateBinding Background}"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="27"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="NormalRectangle.Fill" Value="{ThemeResource RibbonToolbarCheckBoxNormalRectFillHoverBrush}"/>
+                                        <Setter Target="NormalRectangle.Stroke" Value="{ThemeResource RibbonToolbarCheckBoxNormalRectStrokeHoverBrush}"/>
+                                        <Setter Target="CheckGlyph.Fill" Value="{ThemeResource RibbonToolbarCheckBoxGlyphFillHoverBrush}"/>
+                                        <Setter Target="IndeterminateGlyph.Fill" Value="{ThemeResource RibbonToolbarCheckBoxIndeterminateGlyphFillHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="NormalRectangle.Fill" Value="{ThemeResource RibbonToolbarCheckBoxNormalRectFillPressedBrush}"/>
+                                        <Setter Target="NormalRectangle.Stroke" Value="{ThemeResource RibbonToolbarCheckBoxNormalRectStrokePressedBrush}"/>
+                                        <Setter Target="CheckGlyph.Fill" Value="{ThemeResource RibbonToolbarCheckBoxGlyphFillPressedBrush}"/>
+                                        <Setter Target="IndeterminateGlyph.Fill" Value="{ThemeResource RibbonToolbarCheckBoxIndeterminateGlyphFillPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                        <Setter Target="NormalRectangle.Fill" Value="{ThemeResource RibbonToolbarCheckBoxNormalRectFillDisabledBrush}"/>
+                                        <Setter Target="CheckGlyph.Fill" Value="{ThemeResource RibbonToolbarCheckBoxGlyphFillDisabledBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CheckStates">
+                                <VisualState x:Name="Checked">
+                                    <VisualState.Setters>
+                                        <Setter Target="CheckGlyph.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="CheckGlyph.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="CheckGlyph.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Indeterminate">
+                                    <VisualState.Setters>
+                                        <Setter Target="IndeterminateGlyph.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="IndeterminatePointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="IndeterminateGlyph.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="IndeterminatePressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="IndeterminateGlyph.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unchecked"/>
+                                <VisualState x:Name="UncheckedPressed"/>
+                                <VisualState x:Name="UncheckedPointerOver"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <Grid VerticalAlignment="Center">
+                            <Rectangle x:Name="NormalRectangle" 
+                                       Fill="{ThemeResource RibbonToolbarCheckBoxNormalRectFillBrush}" 
+                                       Stroke="{ThemeResource RibbonToolbarCheckBoxNormalRectStrokeBrush}"
+                                       Height="21" 
+                                       StrokeThickness="1" 
+                                       UseLayoutRounding="False" 
+                                       Width="21"/>
+                            <Path x:Name="CheckGlyph" 
+                                  Data="F1 M 0,58 L 2,56 L 6,60 L 13,51 L 15,53 L 6,64 z" 
+                                  Fill="{ThemeResource RibbonToolbarCheckBoxGlyphFillBrush}" 
+                                  FlowDirection="LeftToRight" 
+                                  Height="14" 
+                                  Opacity="0" 
+                                  Stretch="Fill"
+                                  Width="16"/>
+                            <Rectangle x:Name="IndeterminateGlyph"
+                                       Fill="{ThemeResource RibbonToolbarCheckBoxIndeterminateGlyphFillBrush}" 
+                                       Height="9" 
+                                       Opacity="0" 
+                                       UseLayoutRounding="False" 
+                                       Width="9"/>
+                            <Rectangle x:Name="PART_FocusVisual" 
+                                       IsHitTestVisible="False" 
+                                       StrokeThickness="1" 
+                                       Height="27"
+                                       Width="27"
+                                       Opacity="0"
+                                       Stroke="{ThemeResource RibbonToolbarCheckBoxFocusVisualStrokeBrush}" 
+                                       Fill="{ThemeResource RibbonToolbarCheckBoxFocusVisualBackgroundBrush}"/>
+                        </Grid>
+                        <ContentPresenter x:Name="ContentPresenter" 
+                                          Grid.Column="1" 
+                                          AutomationProperties.AccessibilityView="Raw"  
+                                          Content="{TemplateBinding Content}" 
+                                          Margin="{TemplateBinding Padding}" 
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+<!--#region RibbonToolbarComboBox-->
+    <Style TargetType="Xaml:DXListViewItemContainer" x:Key="RibbonToolbarComboBoxItemContainerStyle">
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarComboBoxItemForegroundBrush}" />
+        <Setter Property="TabNavigation" Value="Local"/>
+        <Setter Property="IsHoldingEnabled" Value="True"/>
+        <Setter Property="Padding" Value="8, 12"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}"/>
+        <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Xaml:DXListViewItemContainer">
+                    <Grid BorderThickness="1" x:Name="PART_Background"
+                          Background="{TemplateBinding Background}"
+                          IsHitTestVisible="True">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="SelectionStates">
+                                <VisualState x:Name="Unselected"/>
+                                <VisualState x:Name="UnselectedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonToolbarComboBoxItemForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarComboBoxItemBackgroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="UnselectedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarComboBoxItemBackgroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonToolbarComboBoxItemForegroundSelectedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarComboBoxItemBackgroundSelectedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonToolbarComboBoxItemForegroundSelectedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarComboBoxItemBackgroundSelectedHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonToolbarComboBoxItemForegroundSelectedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarComboBoxItemBackgroundSelectedPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                                  IsThreeState="False" 
+                                  MinWidth="0"
+                                  Visibility="{Binding IsCheckable, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                        <ContentPresenter x:Name="PART_Content" Margin="{TemplateBinding Padding}" Grid.Column="1" VerticalContentAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="Ribbon:RibbonToolbarComboBox">
+        <Setter Property="ItemContainerStyle" Value="{StaticResource RibbonToolbarComboBoxItemContainerStyle}"/>
+        <Setter Property="Margin" Value="8,7"/>
+        <Setter Property="MinWidth" Value="{ThemeResource ComboBoxThemeMinWidth}"/>
+        <Setter Property="MinHeight" Value="32"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarComboBoxForegroundBrush}"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarComboBoxBackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarComboBoxBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="UseIndependentFlyout" Value="True"/>
+        <Setter Property="SelectedItemsTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <dxc:DXComboBoxSelectedItemsPresenter SelectedItemsSource="{Binding}"/>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarComboBox">
+                    <Grid BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          Background="{TemplateBinding Background}"
+                          x:Name="PART_Background">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarComboBoxBackgroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarComboBoxBackgroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Disabled"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <ContentPresenter Margin="8,4" 
+                                          x:Name="PART_Content"
+                                          Content="{TemplateBinding SelectedItem}"
+                                          VerticalAlignment="Center" 
+                                          HorizontalAlignment="Left"/>
+                        <PathIcon Margin="4" Data="F0 M 0,0 l 1 0 7 7 7 -7 1 0 -8 8 -8 -8 z" 
+                                    Width="16" Height="8" 
+                                    HorizontalAlignment="Right" 
+                                    VerticalAlignment="Center"
+                                    Foreground="{TemplateBinding Foreground}"/>
+                        <dxxi:NestedMenuFlyoutControl PlacementTarget="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                      CloseOnTargetClick="{TemplateBinding XamlInternal:MenuFlyoutControl.CloseOnTargetClick}"
+                                                      DataContext="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                      AnimationDuration="0:0:0.1"
+                                                      HorizontalAlignment="Stretch"
+                                                      x:Name="PART_Flyout">
+                            <Xaml:DXListView ItemsSource="{Binding Items}"
+                                            Background="{TemplateBinding Background}"
+                                            Foreground="{TemplateBinding Foreground}"
+                                            HorizontalAlignment="Stretch"
+                                            GroupItemsPath="{Binding GroupItemsPath}"
+                                            SelectionMode="{Binding SelectionMode}"
+                                            IsGrouping="{Binding IsGrouping}"
+                                            ItemContainerStyle="{Binding ItemContainerStyle}"
+                                            ItemContainerStyleSelector="{Binding ItemContainerStyleSelector}"
+                                            ItemTemplate="{Binding ItemTemplate}"
+                                            ItemTemplateSelector="{Binding ItemTemplateSelector}"
+                                            SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                                            ShowCheckBoxes="{Binding ShowCheckBoxes}"
+                                            BorderThickness="1"
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            MaxHeight="300"/>
+                        </dxxi:NestedMenuFlyoutControl>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+    <Style TargetType="Ribbon:RibbonToolbarFontEdit">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamilyItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid Margin="0,0,8,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="115"/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock FontFamily="{Binding}" FontSize="{Binding FontSize, RelativeSource={RelativeSource Mode=TemplatedParent}}" Text="{Binding Source}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <TextBlock FontFamily="{Binding}" FontSize="{Binding FontSize, RelativeSource={RelativeSource Mode=TemplatedParent}}" Text="AaBbCc" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarFontEdit">
+                    <Grid Margin="{TemplateBinding Padding}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Ribbon:RibbonToolbarComboBox Header="Font Family"
+                                                      MinWidth="240"
+                                                      Margin="8,7,1,7"
+                                                      x:Name="PART_FontFamilyCombo"
+                                                      IsOpen="{Binding IsFontFamilyDropDownOpen, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                                                      ItemsSource="{Binding AvailableFonts, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                      SelectedItem="{Binding ActualSelectedFontFamily, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                                                      ItemTemplate="{TemplateBinding FontFamilyItemTemplate}">    
+                            <Ribbon:RibbonToolbarComboBox.GroupStyle>
+                                <GroupStyle>
+                                    <GroupStyle.HeaderTemplate>
+                                        <DataTemplate>
+                                            <Border Background="{ThemeResource RibbonToolbarFontEditHeaderBackgroundBrush}" Padding="8,4">
+                                                <TextBlock Text="{Binding Title}" VerticalAlignment="Center" Foreground="{ThemeResource RibbonToolbarFontEditHeaderForegroundBrush}" FontSize="14"/>
+                                            </Border>
+                                        </DataTemplate>
+                                    </GroupStyle.HeaderTemplate>
+                                    <GroupStyle.HeaderContainerStyle>
+                                        <Style TargetType="Xaml:DXListViewGroupHeaderContainer">
+                                            <Setter Property="MinHeight" Value="20"/>
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Xaml:DXListViewGroupHeaderContainer">
+                                                        <Grid>
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition/>
+                                                                <RowDefinition Height="Auto"/>
+                                                            </Grid.RowDefinitions>
+                                                            <ContentPresenter HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"/>
+                                                            <Rectangle Height="1" 
+                                                                       StrokeThickness="0" 
+                                                                       HorizontalAlignment="Stretch" 
+                                                                       Grid.Row="1" 
+                                                                       Fill="{ThemeResource RibbonToolbarFontEditHeaderSeparatorBrush}"/>
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </GroupStyle.HeaderContainerStyle>
+                                </GroupStyle>
+                            </Ribbon:RibbonToolbarComboBox.GroupStyle>
+                        </Ribbon:RibbonToolbarComboBox>
+                        <Ribbon:RibbonToolbarComboBox Grid.Column="1"
+                                                      Header="Font Size"
+                                                      Margin="1,7,8,7"
+                                                      MinWidth="70"
+                                                      IsOpen="{Binding IsFontSizeDropDownOpen, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                                                      ItemsSource="{Binding AvailableFontSizes, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                      SelectedItem="{Binding ActualSelectedFontSize, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                                                      x:Name="PART_FontSizeCombo">
+                            <Ribbon:RibbonToolbarComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" FontSize="{Binding FontSize, RelativeSource={RelativeSource Mode=TemplatedParent}}" Width="30" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </Ribbon:RibbonToolbarComboBox.ItemTemplate>
+                        </Ribbon:RibbonToolbarComboBox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarSpinEdit">
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="0,6"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarSpinEdit">
+                    <Border BorderThickness="0" BorderBrush="Transparent">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{TemplateBinding Title}" HorizontalAlignment="Right" Padding="8,0" VerticalAlignment="Center" Foreground="{ThemeResource RibbonToolbarSpinEditForegroundBrush}"/>
+                            <Editors:SpinEdit AllowRoundOutOfRangeValue="{TemplateBinding AllowRoundOutOfRangeValue}"
+                                          Value="{Binding Value, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                                          BorderBrush="{ThemeResource RibbonToolbarSpinEditBorderBrush}"
+                                          Foreground="{ThemeResource RibbonToolbarSpinEditForegroundBrush}"
+                                          MaxValue="{TemplateBinding MaxValue}"
+                                          MinValue="{TemplateBinding MinValue}"
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalAlignment="Left"
+                                          HorizontalContentAlignment="Left"
+                                          BorderThickness="{TemplateBinding BorderThickness}"
+                                          Increment="{TemplateBinding Increment}"
+                                          TextInputSettings="{TemplateBinding TextInputSettings}"
+                                          Grid.Column="1"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarSplitButton">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarSplitButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarSplitButtonBorderBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="11"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarSplitButton">
+                    <Grid x:Name="PART_Background"
+                          Background="{TemplateBinding Background}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          BorderBrush="{TemplateBinding BorderBrush}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="SelectionStates">
+                                <VisualState x:Name="Unselected"/>
+                                <VisualState x:Name="UnselectedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarSplitButtonBorderHoverBrush}"/>
+                                        <Setter Target="PART_ArrowGlyph.Opacity" Value="1"/>
+                                        <Setter Target="PART_ArrowHoverBackground.Opacity" Value="1"/>
+                                        <Setter Target="PART_ButtonHoverBackground.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="UnselectedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarSplitButtonBorderPressedBrush}"/>
+                                        <Setter Target="PART_ArrowGlyph.Opacity" Value="1"/>
+                                        <Setter Target="PART_ArrowPressedBackground.Opacity" Value="1"/>
+                                        <Setter Target="PART_ButtonPressedBackground.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarSplitButtonBorderSelectedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarSplitButtonBackgroundSelectedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarSplitButtonBorderSelectedHoverBrush}"/>
+                                        <Setter Target="PART_ArrowGlyph.Opacity" Value="1"/>
+                                        <Setter Target="PART_ArrowHoverBackground.Opacity" Value="1"/>
+                                        <Setter Target="PART_ButtonHoverBackground.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarSplitButtonBorderSelectedPressedBrush}"/>
+                                        <Setter Target="PART_ArrowGlyph.Opacity" Value="1"/>
+                                        <Setter Target="PART_ArrowPressedBackground.Opacity" Value="1"/>
+                                        <Setter Target="PART_ButtonPressedBackground.Opacity" Value="1"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Flyout">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Button" Storyboard.TargetProperty="(Grid.ColumnSpan)">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="1"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Separator" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Background" Storyboard.TargetProperty="HorizontalAlignment">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Stretch"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ArrowGlyph" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FlyoutArrowGlyph" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Arrow" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="16,0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Button" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="11"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FocusVisual" Storyboard.TargetProperty="Margin">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Glyph">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Icon" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonText" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="GlyphWithText"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="ArrowStates">
+                                <VisualState x:Name="ArrowActive">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Arrow" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="ArrowInactive">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Arrow" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Button" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="11"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="HoverStates">
+                                <VisualState x:Name="HoverArrow">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_ArrowHoverBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonArrowBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_ArrowPressedBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonArrowBackgroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="HoverButton">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_ButtonHoverBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonContentBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_ButtonPressedBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonContentBackgroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="HoverBoth">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_ArrowHoverBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonArrowBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_ArrowPressedBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonArrowBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_ButtonHoverBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonContentBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_ButtonPressedBackground.Fill" Value="{ThemeResource RibbonToolbarSplitButtonContentBackgroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Rectangle x:Name="PART_ButtonHoverBackground"
+                                   Opacity="0"
+                                   Fill="{ThemeResource RibbonToolbarSplitButtonBackgroundBrush}"/>
+                        <Rectangle x:Name="PART_ButtonPressedBackground"
+                                   Opacity="0"
+                                   Fill="{ThemeResource RibbonToolbarSplitButtonBackgroundBrush}"/>
+
+                        <Rectangle x:Name="PART_ArrowHoverBackground"
+                                   Grid.Column="1"
+                                   Opacity="0"
+                                   Fill="{ThemeResource RibbonToolbarSplitButtonBackgroundBrush}"/>
+                        <Rectangle x:Name="PART_ArrowPressedBackground"
+                                   Grid.Column="1"
+                                   Opacity="0"
+                                   Fill="{ThemeResource RibbonToolbarSplitButtonBackgroundBrush}"/>
+
+                        <Grid x:Name="PART_Button"
+                              Padding="{TemplateBinding Padding}"
+                              Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <XamlInternal:IconView x:Name="PART_Icon"
+                                                   Padding="0,0,8,0"
+                                                   UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                            <ContentPresenter x:Name="PART_ButtonText"
+                                              VerticalAlignment="Center"
+                                              Grid.Column="1"
+                                              Visibility="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={ThemeResource ObjectToVisibilityConverter}}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        </Grid>
+                        <Rectangle x:Name="PART_Separator"
+                                   Width="1"
+                                   Grid.Column="1"
+                                   VerticalAlignment="Stretch"
+                                   HorizontalAlignment="Left"
+                                   Visibility="Collapsed"
+                                   Margin="0,4"
+                                   Opacity="1"
+                                   Fill="{ThemeResource RibbonToolbarSplitButtonSeparatorBrush}"/>
+                        <Grid x:Name="PART_Arrow"
+                              Grid.Column="1"
+                              Padding="1.5"
+                              HorizontalAlignment="Right">
+                            <PathIcon x:Name="PART_ArrowGlyph"
+                                      Opacity="0"
+                                      Data="F1 M 0,0 L 4,3 L 8,0 L 8,2 L 4,5 L 0,2 z"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Center"/>
+                            <PathIcon x:Name="PART_FlyoutArrowGlyph"
+                                      Visibility="Collapsed"
+                                      Data="F1 M 0,0 L 6,6 L 0,12 L 2,12 L 8,6 L 2,0 z"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Center"/>
+                        </Grid>
+                        <XamlInternal:NestedMenuFlyoutControl x:Name="PART_Flyout"
+                                                       AnimationDuration="0:0:0.2"
+                                                       x:DeferLoadStrategy="Lazy"
+                                                       Content="{TemplateBinding FlyoutContent}"
+                                                       Grid.ColumnSpan="2"
+                                                       CloseOnTargetClick="{TemplateBinding XamlInternal:MenuFlyoutControl.CloseOnTargetClick}"
+                                                       Margin="{Binding BorderThickness, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                        <Rectangle x:Name="PART_FocusVisual"
+                                   Grid.ColumnSpan="2"
+                                   IsHitTestVisible="False"
+                                   StrokeThickness="1"
+                                   Opacity="0"
+                                   Stroke="{ThemeResource RibbonToolbarSplitButtonFocusVisualStrokeBrush}"
+                                   Fill="{ThemeResource RibbonToolbarSplitButtonFocusVisualBackgroundBrush}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:RibbonToolbarToggleButton">
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="11"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Ribbon:RibbonToolbarToggleButton">
+                    <Grid x:Name="PART_Background"
+                          Background="{TemplateBinding Background}"
+                          BorderThickness="{TemplateBinding BorderThickness}" 
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          Padding="{TemplateBinding Padding}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CheckStates">
+                                <VisualState x:Name="Checked">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundCheckedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderCheckedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonIconForegroundCheckedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundCheckedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundCheckedHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderCheckedHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonIconForegroundCheckedHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundCheckedHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundCheckedPressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderCheckedPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonIconForegroundCheckedPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundCheckedPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unchecked"/>
+                                <VisualState x:Name="UncheckedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="UncheckedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderPressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundPressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Indeterminate"/>
+                                <VisualState x:Name="IndeterminatePointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundIndeterminateHoverBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderIndeterminateHoverBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonIconForegroundIndeterminateHoverBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundIndeterminateHoverBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="IndeterminatePressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonToolbarToggleButtonBackgroundIndeterminatePressedBrush}"/>
+                                        <Setter Target="PART_Background.BorderBrush" Value="{ThemeResource RibbonToolbarToggleButtonBorderIndeterminatePressedBrush}"/>
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonIconForegroundIndeterminatePressedBrush}"/>
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource RibbonToolbarToggleButtonForegroundIndeterminatePressedBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RibbonStates">
+                                <VisualState x:Name="Flyout">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_Background.HorizontalAlignment" Value="Stretch"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Glyph">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Text" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Icon" Storyboard.TargetProperty="Padding">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="GlyphWithText"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                        <ContentPresenter x:Name="PART_Text"
+                                          Grid.Column="1"
+                                          VerticalAlignment="Center"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        <Rectangle x:Name="PART_FocusVisual" 
+                                   Grid.ColumnSpan="2"
+                                   IsHitTestVisible="False" 
+                                   StrokeThickness="1" 
+                                   Opacity="0" 
+                                   Stroke="{ThemeResource RibbonToolbarToggleButtonFocusVisualStrokeBrush}"
+                                   Fill="{ThemeResource RibbonToolbarToggleButtonFocusVisualBackgroundBrush}"
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+

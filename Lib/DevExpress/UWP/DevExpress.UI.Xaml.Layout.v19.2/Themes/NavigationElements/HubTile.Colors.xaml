@@ -1,0 +1,20 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="TileBackgroundBrush" Color="#FF0178D0" Core:ColorKey.Id="TileColors.Background.Light"/>
+            <SolidColorBrush x:Key="TileForegroundBrush" Color="White" Core:ColorKey.Id="TileColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="TileSelectionFrameBrush" Color="#60606060" Core:ColorKey.Id="TileColors.SelectionFrameBrush.Light"/>
+            <SolidColorBrush x:Key="TileHoverFrameBrush" Color="#60D0D0D0" Core:ColorKey.Id="TileColors.HoverFrameBrush.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="TileBackgroundBrush" Color="#FF0178D0" Core:ColorKey.Id="TileColors.Background.Default" />
+            <SolidColorBrush x:Key="TileForegroundBrush" Color="White" Core:ColorKey.Id="TileColors.Foreground.Default" />
+            <SolidColorBrush x:Key="TileSelectionFrameBrush" Color="#60606060" Core:ColorKey.Id="TileColors.SelectionFrameBrush.Default" />
+            <SolidColorBrush x:Key="TileHoverFrameBrush" Color="#60D0D0D0" Core:ColorKey.Id="TileColors.HoverFrameBrush.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+

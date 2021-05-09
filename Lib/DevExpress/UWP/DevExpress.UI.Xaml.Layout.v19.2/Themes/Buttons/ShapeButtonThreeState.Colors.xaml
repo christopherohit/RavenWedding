@@ -1,0 +1,95 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ShapeButtonThreeStateFocusVisualWhiteStrokeThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.FocusVisualWhiteStroke.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateFocusVisualBlackStrokeThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.FocusVisualBlackStroke.Default" />
+
+            <SolidColorBrush x:Key="ShapeButtonThreeStatePointerOverBackgroundThemeBrush" Color="#21000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStatePressedBackgroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedBackgroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundChecked.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPointerOverBackgroundThemeBrush" Color="#99000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPressedBackgroundThemeBrush" Color="#00FFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedDisabledBackgroundThemeBrush" Color="#66000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundCheckedDisabled.Default" />
+
+            <SolidColorBrush x:Key="ShapeButtonThreeStateDisabledBorderThemeBrush" Color="#66000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushDisabled.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPointerOverBorderThemeBrush" Color="#99000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPressedBorderThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedBorderThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushChecked.Default" />
+
+            <SolidColorBrush x:Key="ShapeButtonThreeStatePressedForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateDisabledForegroundThemeBrush" Color="#66000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundChecked.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPressedForegroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedDisabledForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundCheckedDisabled.Default" />
+            
+            <SolidColorBrush x:Key="ShapeButtonThreeStateForegroundBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ShapeButtonThreeStateBorderBrush" Color="#FF3E3E3E" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrush.Default" />
+
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ShapeButtonThreeStateFocusVisualWhiteStrokeThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.FocusVisualWhiteStroke.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateFocusVisualBlackStrokeThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.FocusVisualBlackStroke.Light"/>
+
+            <SolidColorBrush x:Key="ShapeButtonThreeStatePointerOverBackgroundThemeBrush" Color="#21000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStatePressedBackgroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedBackgroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundChecked.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPointerOverBackgroundThemeBrush" Color="#99000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPressedBackgroundThemeBrush" Color="#00FFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedDisabledBackgroundThemeBrush" Color="#66000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BackgroundCheckedDisabled.Light"/>
+
+            <SolidColorBrush x:Key="ShapeButtonThreeStateDisabledBorderThemeBrush" Color="#66000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushDisabled.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPointerOverBorderThemeBrush" Color="#99000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPressedBorderThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedBorderThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrushChecked.Light"/>
+
+            <SolidColorBrush x:Key="ShapeButtonThreeStatePressedForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateDisabledForegroundThemeBrush" Color="#66000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundChecked.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedPressedForegroundThemeBrush" Color="#FF000000" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateCheckedDisabledForegroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ShapeButtonThreeStateColors.ForegroundCheckedDisabled.Light"/>
+
+
+            <SolidColorBrush x:Key="ShapeButtonThreeStateForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ShapeButtonThreeStateColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ShapeButtonThreeStateBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ShapeButtonThreeStateColors.BorderBrush.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

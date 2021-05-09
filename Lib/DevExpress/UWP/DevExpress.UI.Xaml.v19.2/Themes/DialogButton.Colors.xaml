@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="DialogButtonForegroundThemeBrush" Color="#FF505050" Core:ColorKey.Id="DialogButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="DialogButtonBackgroundThemeBrush" Color="#FFEFEFEF" Core:ColorKey.Id="DialogButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="DialogButtonBorderThemeBrush" Color="#FFD2D2D2" Core:ColorKey.Id="DialogButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="DialogButtonBackgroundHoverBrush" Color="#FFD2D2D2" Core:ColorKey.Id="DialogButtonColors.BackgroundHovered.Light"/>
+            <!--<SolidColorBrush x:Key="DialogButtonBackgroundDisabledBrush" Color="#FFF9F9F9" Core:ColorKey.Id="DialogButtonColors.BackgroundDisabled.Light"/>
+            <SolidColorBrush x:Key="DialogButtonForegroundDisabledBrush" Color="#FFC2C2C2" Core:ColorKey.Id="DialogButtonColors.ForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="DialogButtonBorderDisabledBrush" Color="#FFEFEFEF" Core:ColorKey.Id="DialogButtonColors.BorderBrushDisabled.Light"/>-->
+            <SolidColorBrush x:Key="DialogButtonBackgroundPressedBrush" Color="#FF969696" Core:ColorKey.Id="DialogButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="DialogButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="DialogButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="DialogButtonOuterFocusVisualStroke" Color="#FFDADADA" Core:ColorKey.Id="DialogButtonColors.OuterFocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="DialogButtonInnerFocusVisualStroke" Color="#FF969696" Core:ColorKey.Id="DialogButtonColors.InnerFocusVisualStroke.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="DialogButtonBackgroundHoverBrush" Color="#FF6A6A6A"  Core:ColorKey.Id="DialogButtonColors.BackgroundHovered.Default" />
+            <!--<SolidColorBrush x:Key="DialogButtonBackgroundDisabledBrush" Color="#FF707070"  Core:ColorKey.Id="DialogButtonColors.BackgroundDisabled.Default" />
+            <SolidColorBrush x:Key="DialogButtonForegroundDisabledBrush" Color="#FF4E4E4E"  Core:ColorKey.Id="DialogButtonColors.ForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="DialogButtonBorderDisabledBrush" Color="#FF3B3B3B"  Core:ColorKey.Id="DialogButtonColors.BorderBrushDisabled.Default" />-->
+            <SolidColorBrush x:Key="DialogButtonBackgroundPressedBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="DialogButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="DialogButtonForegroundPressedBrush" Color="#FFA0A0A0"  Core:ColorKey.Id="DialogButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="DialogButtonForegroundThemeBrush" Color="#FF000000"  Core:ColorKey.Id="DialogButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="DialogButtonBackgroundThemeBrush" Color="#FFA2A2A2"  Core:ColorKey.Id="DialogButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="DialogButtonBorderThemeBrush" Color="#FF3E3E3E"  Core:ColorKey.Id="DialogButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="DialogButtonOuterFocusVisualStroke" Color="#FF3B3B3B" Core:ColorKey.Id="DialogButtonColors.OuterFocusVisualStroke.Default"/>
+            <SolidColorBrush x:Key="DialogButtonInnerFocusVisualStroke" Color="#FF181818" Core:ColorKey.Id="DialogButtonColors.InnerFocusVisualStroke.Default"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+

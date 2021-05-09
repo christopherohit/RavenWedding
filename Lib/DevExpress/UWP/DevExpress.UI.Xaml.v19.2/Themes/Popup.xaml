@@ -1,0 +1,32 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="using:DevExpress.Core" 
+    xmlns:xaml="using:DevExpress.UI.Xaml.Native">
+
+    <Style TargetType="xaml:PopupBase">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="xaml:PopupBase">
+                    <Popup x:Name="PART_Popup" IsOpen="{TemplateBinding IsOpen}">
+                        <Grid Margin="0,0,0,0" Width="Auto" Height="Auto">
+                            <!--<Border HorizontalAlignment="Stretch" Margin="4,4,0,0" x:Name="shadow" Width="Auto" Opacity="0.25" Background="#FF000000" />-->
+                            <Border
+                            x:Name="PART_Container"
+                            Child="{TemplateBinding Child}"
+                            Width="{TemplateBinding Width}"
+                            MinWidth="{TemplateBinding MinWidth}"
+                            MaxWidth="{TemplateBinding MaxWidth}"
+                            Height="{TemplateBinding Height}"
+                            MinHeight="{TemplateBinding MinHeight}"
+                            MaxHeight="{TemplateBinding MaxHeight}">
+                            </Border>
+                        </Grid>
+                    </Popup>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

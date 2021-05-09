@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="Legend" />
+    <RootPropertyPathName Name="Foreground" />
+    <RootPropertyPathName Name="FontFamily" />
+    <RootPropertyPathName Name="FontSize" />
+    <RootPropertyPathName Name="FontStretch" />
+    <RootPropertyPathName Name="FontStyle" />
+    <RootPropertyPathName Name="FontWeight" />
+    <RootPropertyPathName Name="LegendMarkerTemplate" />
+    <RootPropertyPathName Name="MarkerBrush" />
+    <RootPropertyPathName Name="PointColorBrush" />
+    <RootPropertyPathName Name="Element" />
+    <RootPropertyPathName Name="ToolTipBrush" />
+    <RootPropertyPathName Name="ToolTipText" />
+    <RootPropertyPathName Name="LeftArrowVisibility" />
+    <RootPropertyPathName Name="DownArrowVisibility" />
+    <RootPropertyPathName Name="ElementInfo" />
+    <RootPropertyPathName Name="Presentation" />
+    <RootPropertyPathName Name="IndicatorMode" />
+    <RootPropertyPathName Name="Orientation" />
+    <RootPropertyPathName Name="Minimum" />
+    <RootPropertyPathName Name="Maximum" />
+    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="ViewportSize" />
+    <RootPropertyPathName Name="SmallChange" />
+    <RootPropertyPathName Name="LargeChange" />
+    <RootPropertyPathName Name="IsOverChart" />
+    <RootPropertyPathName Name="ToolTipPosition" />
+    <RootPropertyPathName Name="X" />
+    <RootPropertyPathName Name="Y" />
+    <RootPropertyPathName Name="ToolTipInfo" />
+    <RootPropertyPathName Name="ToolTipTemplate" />
+    <RootPropertyPathName Name="ElementTemplate" />
+    <RootPropertyPathName Name="Margin" />
+    <RootPropertyPathName Name="Angle" />
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="ContentTemplate" />
+    <RootPropertyPathName Name="MajorLinesGeometry" />
+    <RootPropertyPathName Name="GridLinesBrush" />
+    <RootPropertyPathName Name="ActualGridLinesStrokeStyle" />
+    <RootPropertyPathName Name="Thickness" />
+    <RootPropertyPathName Name="DashArray" />
+    <RootPropertyPathName Name="DashCap" />
+    <RootPropertyPathName Name="DashOffset" />
+    <RootPropertyPathName Name="LineJoin" />
+    <RootPropertyPathName Name="MiterLimit" />
+    <RootPropertyPathName Name="MinorLinesGeometry" />
+    <RootPropertyPathName Name="GridLinesMinorBrush" />
+    <RootPropertyPathName Name="ActualGridLinesMinorStrokeStyle" />
+    <RootPropertyPathName Name="Geometry" />
+    <RootPropertyPathName Name="InterlacedBrush" />
+    <RootPropertyPathName Name="Brush" />
+    <RootPropertyPathName Name="Visibility" />
+    <RootPropertyPathName Name="BorderBrush" />
+    <RootPropertyPathName Name="BorderThickness" />
+    <RootPropertyPathName Name="Padding" />
+    <RootPropertyPathName Name="Items" />
+    <RootPropertyPathName Name="MaximumRowsOrColumns" />
+    <RootPropertyPathName Name="ItemTemplate" />
+    <RootPropertyPathName Name="Clip" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="ThemeDictionaries" />
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.ColorKey">
+      <RootMethod Name="GetId" />
+      <RootMethod Name="SetId" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AxisBase">
+      <RootProperty Name="Brush" />
+      <RootProperty Name="GridLinesBrush" />
+      <RootProperty Name="GridLinesMinorBrush" />
+      <RootProperty Name="InterlacedBrush" />
+      <RootProperty Name="ShowMajorGridlines" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AxisX" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AxisY" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AxisLabelOptions">
+      <RootProperty Name="ElementTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="IsTabStop" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.Strip">
+      <RootProperty Name="Brush" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontStretch" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="RenderTransformOrigin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.Legend">
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="Content" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontStretch" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Clip" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SeriesLabelOptions">
+      <RootProperty Name="ElementTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SeriesView">
+      <RootProperty Name="ToolTipPointTemplate" />
+      <RootProperty Name="ToolTipSeriesTemplate" />
+      <RootProperty Name="LegendMarkerTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.PointSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.ScatterLineSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.LineSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.StepLineSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.StackedLineSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.FullStackedLineSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.FullStackedBarSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SideBySideFullStackedBarSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SideBySideBarSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SideBySideStackedBarSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.StackedBarSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AreaSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.StackedAreaSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.FullStackedAreaSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.StepAreaSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.PieSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.DonutSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.NestedDonutSeriesView" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.FunnelSeriesView" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stretch" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="MinWidth" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="StrokeDashCap" />
+      <RootProperty Name="StrokeDashOffset" />
+      <RootProperty Name="StrokeLineJoin" />
+      <RootProperty Name="StrokeMiterLimit" />
+    </RootType>
+    <RootType FullName="DevExpress.Core.SystemColorsSchemeDictionaryLoader" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.CartesianChart" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.PieChart" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.FunnelChart" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.DrawingDomainPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.ElementContainer" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.VisualContainer" />
+    <RootType FullName="DevExpress.Core.SystemStyleOverrides" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollBar">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="IndicatorMode" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="ViewportSize" />
+      <RootProperty Name="SmallChange" />
+      <RootProperty Name="LargeChange" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="Duration" />
+      <RootProperty Name="To" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+      <RootProperty Name="Duration" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation">
+      <RootProperty Name="BeginTime" />
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="System.Boolean" />
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.RepeatButton">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Interval" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Thumb">
+      <RootProperty Name="Background" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.ScrollBarPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.ToolTipPresentation" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Popup">
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="HorizontalOffset" />
+      <RootProperty Name="VerticalOffset" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.ToolTipContentPresenter">
+      <RootProperty Name="ToolTipPosition" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="ContentTemplate" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.VisualContainerItemsControl">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.VisualContainerPanel" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AxisLabelPresentation" />
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AxisTitlePresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.AxisTitlePanel">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.GridLinesPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.InterlacePresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.StripPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.LegendPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.LegendPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="MaximumRowsOrColumns" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SeriesLabelPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SimpleBarPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SimpleMarkerPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SimpleAreaPresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SeriesTitlePresentation" />
+    <RootType FullName="DevExpress.UI.Xaml.Charts.SeriesTitlePanel">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Fill" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

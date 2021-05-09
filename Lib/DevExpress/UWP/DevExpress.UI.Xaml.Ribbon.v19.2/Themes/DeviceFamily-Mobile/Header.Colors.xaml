@@ -1,0 +1,139 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <!--RibbonHeaderControl-->
+            <SolidColorBrush x:Key="RibbonFooterBackgroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonHeaderControlMobileColors.FooterBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderControlMobileBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonHeaderControlMobileColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderControlFlyoutHeaderForegroundBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonHeaderControlMobileColors.HeaderForeground.Light"/>
+
+            <!--RibbonTabsControl and ComboBox-->
+            <SolidColorBrush x:Key="RibbonTabsControlMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonTabsControlMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonTabsControlMobileBackgroundHoverBrush" Color="#1AFFFFFF" Core:ColorKey.Id="RibbonTabsControlMobileColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonTabsControlMobileBackgroundPressedBrush" Color="#1AFFFFFF" Core:ColorKey.Id="RibbonTabsControlMobileColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonTabsControlMobilePlaceholderForegroundBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonTabsControlMobileColors.PlaceholderForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTabsControlMobileDropDownGlyphForegroundBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonTabsControlMobileColors.DropDownGlyphForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTabsControlMobilePopupBackgroundBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonTabsControlMobileColors.PopupBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonTabsControlMobilePopupBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonTabsControlMobileColors.PopupBorderBrush.Light"/>
+
+            <!--RibbonFlyoutTitleControl-->
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileForegroundBrush" Color="#FF000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBorderBrush" Color="#FF7A7A7A" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBorder.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileDeleteButtonForegroundBrush" Color="#CC000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditDeleteButtonForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileForegroundFocusedBrush" Color="#FF000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditForegroundFocused.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBackgroundFocusedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBackgroundFocused.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileHighlightBrush" Color="#FF207ECE" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditHighlight.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileDeleteButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditDeleteButtonForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBorderHoverBrush" Color="#FF171717" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBorderHover.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobilePlaceholderFocusedForegroundBrush" Color="#66000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditPlaceholderFocusedForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobilePlaceholderForegroundBrush" Color="#99000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditPlaceholderForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobilePopupContentBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.PopupContentBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileFocusVisualStrokeBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.FocusVisualBackground.Light"/>
+
+            <!--RibbonToolbarHeaderControl.FlyoutHeaderControl-->
+
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.HeaderBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileHSeparatorBackgroundBrush" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.HeaderSeparator.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileItemSeparatorBackgroundBrush" Color="#19000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonSeparator.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileItemIconFillBrush" Color="#FF212121" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonIconFill.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonFocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonFocusVisualBackground.Light"/>
+
+            <!--RibbonToolbarHeaderControl-->
+            <SolidColorBrush x:Key="RibbonToolbarHeaderControlMobileBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderControlMobileBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderControlMobileFlyoutHeaderForegroundBrush" Color="#FF212121" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.FlyoutHeaderForeground.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RibbonFooterBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonHeaderControlMobileColors.FooterBackground.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderControlMobileBorderBrush" Color="#FF818181" Core:ColorKey.Id="RibbonHeaderControlMobileColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderControlFlyoutHeaderForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonHeaderControlMobileColors.HeaderForeground.Default" />
+
+            <SolidColorBrush x:Key="RibbonTabsControlMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonTabsControlMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonTabsControlMobileBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="RibbonTabsControlMobileColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonTabsControlMobileBackgroundPressedBrush" Color="#FF272727" Core:ColorKey.Id="RibbonTabsControlMobileColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonTabsControlMobilePlaceholderForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonTabsControlMobileColors.PlaceholderForeground.Default" />
+            <SolidColorBrush x:Key="RibbonTabsControlMobileDropDownGlyphForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonTabsControlMobileColors.DropDownGlyphForeground.Default" />
+            <SolidColorBrush x:Key="RibbonTabsControlMobilePopupBackgroundBrush" Color="#FF1A1A1A" Core:ColorKey.Id="RibbonTabsControlMobileColors.PopupBackground.Default" />
+            <SolidColorBrush x:Key="RibbonTabsControlMobilePopupBorderBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonTabsControlMobileColors.PopupBorderBrush.Default" />
+
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBorderBrush" Color="#FF858585" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBorder.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileDeleteButtonForegroundBrush" Color="#CC000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditDeleteButtonForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileForegroundFocusedBrush" Color="#FF000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditForegroundFocused.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBackgroundBrush" Color="#FF000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBackground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBackgroundFocusedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBackgroundFocused.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileHighlightBrush" Color="#FF4A4A4A" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditHighlight.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileDeleteButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditDeleteButtonForegroundPressed.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobileBorderHoverBrush" Color="#FFF2F2F2" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditBorderHover.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobilePlaceholderFocusedForegroundBrush" Color="#66000000" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditPlaceholderFocusedForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditMobilePlaceholderForegroundBrush" Color="#99FFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.TitleTextEditPlaceholderForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobilePopupContentBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.PopupContentBackground.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileForegroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileFocusVisualStrokeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlMobileFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonFlyoutTitleControlMobileColors.FocusVisualBackground.Default" />
+
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.HeaderBackground.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileHSeparatorBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.HeaderSeparator.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileItemSeparatorBackgroundBrush" Color="#19000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonSeparator.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileItemIconFillBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonIconFill.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBackground.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonForeground.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonFocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileButtonBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonBorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutHeaderMobileFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BackButtonFocusVisualBackground.Default" />
+
+            <SolidColorBrush x:Key="RibbonToolbarHeaderControlMobileBackgroundBrush" Color="#FF515151" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderControlMobileBorderBrush" Color="#FF696969" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderControlMobileFlyoutHeaderForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderControlMobileColors.FlyoutHeaderForeground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

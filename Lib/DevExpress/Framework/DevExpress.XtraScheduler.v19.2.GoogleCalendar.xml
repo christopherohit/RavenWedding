@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.XtraScheduler.v19.2.GoogleCalendar</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.XtraScheduler.GoogleCalendar">
+      <summary>
+        <para>Provides API that supports synchronization between the Scheduler and Google Calendars.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraScheduler.GoogleCalendar.ConflictDetectedEventArgs">
+      <summary>
+        <para>Provides properties that allow you to choose whether a Scheduler Appointment should be copied into a related Google Calendar Event, or vice versa. See the <see cref="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.ConflictDetected"/> event description for the details.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.ConflictDetectedEventArgs.Appointment">
+      <summary>
+        <para>Provides access to a Scheduler Appointment associated with this conflict.</para>
+      </summary>
+      <value>The Appointment associated with this conflict.</value>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.ConflictDetectedEventArgs.ConflictOperationType">
+      <summary>
+        <para>Returns the conflict type. Allows you to determine whether the conflict has emerged for a newly created or an edited Event/Appointment.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.ConflictOperationType"/> enumeration value that specifies the conflict type.</value>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.ConflictDetectedEventArgs.Event">
+      <summary>
+        <para>Provides access to a Google Event associated with this conflict.</para>
+      </summary>
+      <value>A Google Event associated with this conflict.</value>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.ConflictDetectedEventArgs.GoogleEventIsValid">
+      <summary>
+        <para>Gets or sets whether the <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> should copy a Google Event data into a Scheduler Appointment.</para>
+      </summary>
+      <value>true if the <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> should copy a Google Event data into a Scheduler Appointment; false if Appointment data should be copied into an Event.</value>
+    </member>
+    <member name="T:DevExpress.XtraScheduler.GoogleCalendar.ConflictOperationType">
+      <summary>
+        <para>Provides values that allow you to get whether an Appointment associated with a synchronization conflict is a new Appointment, or an existing one that has been edited.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraScheduler.GoogleCalendar.ConflictOperationType.Edit">
+      <summary>
+        <para>A conflict has occurred for an edited Event/Appointment.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraScheduler.GoogleCalendar.ConflictOperationType.New">
+      <summary>
+        <para>A conflict has occurred for a newly created Event/Appointment.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync">
+      <summary>
+        <para>A component that provides synchronization between a <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/> and a Google Calendar. See Google Calendars for more details.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> class with the default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.#ctor(System.ComponentModel.IContainer)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> class with the specified settings.</para>
+      </summary>
+      <param name="components">An object that implements the IContainer interface and owns this <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/>.</param>
+    </member>
+    <member name="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.AppointmentValuesRequested">
+      <summary>
+        <para>Raises when the <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> should copy Scheduler Appointment data into a corresponding Google Calendar Event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.CalendarId">
+      <summary>
+        <para>Gets or sets the CalendarListEntry.ID property of a Google Calendar, whose events should be synchronized with Scheduler Appointments.</para>
+      </summary>
+      <value>A String value that specifies a calendar identifier.</value>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.CalendarService">
+      <summary>
+        <para>Gets or sets a Google Calendar Service required to access Google Events.</para>
+      </summary>
+      <value>A Google Calendar Service object required to access and modify Google Calendar Events.</value>
+    </member>
+    <member name="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.CompareEventAndAppointment">
+      <summary>
+        <para>Allows you to manually compare a Google Event with its paired Scheduler Appointment, and decide whether these objects are equal.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.ConflictDetected">
+      <summary>
+        <para>Raises when the <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> component is uncertain whether it should copy Scheduler Appointment data to a corresponding Google Event, or vice versa.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.CustomFieldETagPropertyName">
+      <summary>
+        <para>Gets or sets the name of an appointment custom field that stores Google Event ETag.</para>
+      </summary>
+      <value>A String value that is the custom field name.</value>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.CustomFieldIdPropertyName">
+      <summary>
+        <para>Gets or sets the name of an appointment custom field that stores Google Event ID.</para>
+      </summary>
+      <value>A String value that is the custom field name.</value>
+    </member>
+    <member name="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.EventValuesRequested">
+      <summary>
+        <para>Raises when the <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> should copy Google Calendar Event data into a corresponding Scheduler Appointment.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.FilterAppointments">
+      <summary>
+        <para>Allows you to skip certain Scheduler Appointments and\or Google Calendar Events during synchronization.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Load">
+      <summary>
+        <para>Loads the session info from a default .xml file in the project&#39;s working directory.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Load(System.IO.Stream)">
+      <summary>
+        <para>Loads the session information from the target stream.</para>
+      </summary>
+      <param name="stream">A Stream that stores session information.</param>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Load(System.String)">
+      <summary>
+        <para>Saves the session info from the .xml file.</para>
+      </summary>
+      <param name="filePath">A String value that specifies the path to a file that stores the session info.</param>
+    </member>
+    <member name="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.OnException">
+      <summary>
+        <para>Raises when a critical synchronization error occurs.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.ProgressChanged">
+      <summary>
+        <para>Repeatedly occurs as the synchronization process makes noticeable progress. Allows you to track the progress and update UI elements (e.g., a <see cref="T:DevExpress.XtraEditors.ProgressBarControl"/> accordingly).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Save">
+      <summary>
+        <para>Saves the current session info to a default .xml file in the project&#39;s working directory.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Save(System.IO.Stream)">
+      <summary>
+        <para>Saves the session information to the target stream.</para>
+      </summary>
+      <param name="stream">A Stream that receives the saved information.</param>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Save(System.String)">
+      <summary>
+        <para>Saves the current session info to the .xml file.</para>
+      </summary>
+      <param name="filePath">A String value that specifies the path to a file that should store the session info.</param>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.SkipOverdueReminders">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.StateTrackingMode">
+      <summary>
+        <para>Gets or sets whether this <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> should automatically write session information to an .xml file.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.StateTrackingMode"/> enumerator value that specifies whether this <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> should automatically write session information to an .xml file.</value>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Storage">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/>&#39;s storage whose Appointments should be synchronized with a Google Calendar.</para>
+      </summary>
+      <value>An object that implements the ISchedulerStorageBase interface. Accepts both <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> and <see cref="T:DevExpress.XtraScheduler.SchedulerDataStorage"/> storages.</value>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.Synchronize">
+      <summary>
+        <para>Triggers the synchronization.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync.SynchronizeAsync">
+      <summary>
+        <para>Triggers the synchronization. This is the asynchronous method that retrieves Google Calendar data in a non-UI thread.</para>
+      </summary>
+      <returns>A Task that encapsulates information about the current synchronization process state.</returns>
+    </member>
+    <member name="T:DevExpress.XtraScheduler.GoogleCalendar.StateTrackingMode">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraScheduler.GoogleCalendar.StateTrackingMode.Auto">
+      <summary>
+        <para>The <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> automatically logs user activity and writes session information to an .xml file located in the working directory. You can call the  /  method overloads with no parameters to trigger this process. Alternatively, use method overloads which take the &quot;Stream&quot; parameter to save session info elsewhere.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraScheduler.GoogleCalendar.StateTrackingMode.Manual">
+      <summary>
+        <para>The <see cref="T:DevExpress.XtraScheduler.GoogleCalendar.DXGoogleCalendarSync"/> does not automatically log user activity. If needed, you can call parameterized  /  method overloads to manually save session information.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

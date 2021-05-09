@@ -1,0 +1,51 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevExpress.UI.Xaml.Charts">
+
+    <Style TargetType="local:LegendPresentation">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:LegendPresentation">
+                    <Border x:Name="border"
+                        Visibility="{Binding Path=Element.Visibility}"    
+                        Background="{Binding Path=Element.Background}"
+                        BorderBrush="{Binding Path=Element.BorderBrush}"
+                        BorderThickness="{Binding Path=Element.BorderThickness}"
+                        Padding="{Binding Path=Element.Padding}"
+                        Margin="{Binding Path=Element.Margin}">
+                        <ItemsControl ItemsSource="{Binding Items}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:LegendPanel
+                                        Orientation="{Binding Path=Element.Orientation}"
+                                        MaximumRowsOrColumns="{Binding Path=Element.MaximumRowsOrColumns}"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <ContentPresenter Content="{Binding}" ContentTemplate="{Binding Path=Legend.ItemTemplate}" Visibility="{Binding Visibility}"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="border"
+                                            Storyboard.TargetProperty="Opacity"
+                                            Duration="0:00:00.2"
+                                            To="0.8"/>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

@@ -1,0 +1,90 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxcore="using:DevExpress.Core"
+    xmlns:local="using:DevExpress.UI.Xaml.Layout"
+    xmlns:ve="using:DevExpress.UI.Xaml.Layout.VisualElements">
+
+    <ve:TileSizeConverter x:Key="TileSizeConverter"/>
+    <Style TargetType="local:SlideDecorator">
+        <Style.Setters>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="local:SlideDecorator">
+                        <Grid x:Name="LayoutRoot">
+                            <Grid.Resources>
+                                <Storyboard x:Name="ContentChangeStoryboard" x:Key="ContentChangeStoryboard" FillBehavior="Stop">
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_PreviousContent" Storyboard.TargetProperty="Visibility"
+                                                               Duration="0:0:0.15" FillBehavior="Stop">
+                                        <ObjectAnimationUsingKeyFrames.KeyFrames>
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames.KeyFrames>
+                                    </ObjectAnimationUsingKeyFrames>
+                                    <DoubleAnimation Storyboard.TargetName="PART_PreviousContent" Storyboard.TargetProperty="(RenderTransform).Y"
+                                                 To="{Binding Path=ActualHeight, ElementName=sizeManager, Converter={StaticResource TileSizeConverter}, ConverterParameter=-1}"
+                                                 Duration="0:0:0.15"/>
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_Content" Storyboard.TargetProperty="(RenderTransform).Y"
+                                                               Duration="0:0:1">
+                                        <DiscreteDoubleKeyFrame KeyTime="0" Value="{Binding Path=ActualHeight, ElementName=sizeManager}"/>
+                                        <DiscreteDoubleKeyFrame KeyTime="0:0:0.15" Value="{Binding Path=ActualHeight, ElementName=sizeManager}"/>
+                                        <LinearDoubleKeyFrame KeyTime="0:0:0.4" Value="20"/>
+                                        <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase EasingMode="EaseOut"/>
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Grid.Resources>
+
+                            <Grid Margin="{TemplateBinding Padding}" >
+                                <Border x:Name="Image"
+                                                Background="{TemplateBinding Background}">
+                                    <Grid Margin="{TemplateBinding Padding}">
+                                        <local:TileContentPresenter x:Name="PART_Content" Content="{TemplateBinding Content}" 
+                                                                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                            ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
+                                                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                            <local:TileContentPresenter.Resources>
+                                                <ve:TilePresenterSizeManager x:Key="SizeManager" x:Name="sizeManager" Element="{Binding ElementName=LayoutRoot}" />
+                                            </local:TileContentPresenter.Resources>
+                                            <ContentPresenter.RenderTransform>
+                                                <TranslateTransform/>
+                                            </ContentPresenter.RenderTransform>
+                                        </local:TileContentPresenter>
+                                        <local:TileContentPresenter x:Name="PART_PreviousContent" Content="{TemplateBinding PreviousContent}" 
+                                                                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                            ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
+                                                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                                            Visibility="Collapsed">
+                                            <ContentPresenter.RenderTransform>
+                                                <TranslateTransform/>
+                                            </ContentPresenter.RenderTransform>
+                                        </local:TileContentPresenter>
+                                    </Grid>
+                                </Border>
+
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <TransitionCollection>
+                        <EntranceThemeTransition/>
+                    </TransitionCollection>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>
+

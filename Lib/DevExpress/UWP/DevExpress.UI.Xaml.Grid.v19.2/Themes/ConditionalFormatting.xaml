@@ -1,0 +1,59 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core"
+    xmlns:dxg="using:DevExpress.UI.Xaml.Grid">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ConditionalFormattingRedTextBrush" Color="#D9A61200" Core:ColorKey.Id="ConditionalFormattingColors.RedTextBrush.Light"/>
+            <SolidColorBrush x:Key="ConditionalFormattingRedFillBrush" Color="#E9FFD9D9" Core:ColorKey.Id="ConditionalFormattingColors.RedFillBrush.Light"/>
+            <SolidColorBrush x:Key="ConditionalFormattingYellowTextBrush" Color="#D99C6500" Core:ColorKey.Id="ConditionalFormattingColors.YellowTextBrush.Light"/>
+            <SolidColorBrush x:Key="ConditionalFormattingYellowFillBrush" Color="#E9FFF5D9" Core:ColorKey.Id="ConditionalFormattingColors.YellowFillBrush.Light"/>
+            <SolidColorBrush x:Key="ConditionalFormattingGreenTextBrush" Color="#D9158800" Core:ColorKey.Id="ConditionalFormattingColors.GreenTextBrush.Light"/>
+            <SolidColorBrush x:Key="ConditionalFormattingGreenFillBrush" Color="#E9D9FFD9" Core:ColorKey.Id="ConditionalFormattingColors.GreenFillBrush.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ConditionalFormattingRedTextBrush" Color="#FF991F18" Core:ColorKey.Id="ConditionalFormattingColors.RedTextBrush.Default"/>
+            <SolidColorBrush x:Key="ConditionalFormattingRedFillBrush" Color="#FFFFC6C6" Core:ColorKey.Id="ConditionalFormattingColors.RedFillBrush.Default" />
+            <SolidColorBrush x:Key="ConditionalFormattingYellowTextBrush" Color="#FF7E450C" Core:ColorKey.Id="ConditionalFormattingColors.YellowTextBrush.Default"/>
+            <SolidColorBrush x:Key="ConditionalFormattingYellowFillBrush" Color="#FFFFF0C6" Core:ColorKey.Id="ConditionalFormattingColors.YellowFillBrush.Default"/>
+            <SolidColorBrush x:Key="ConditionalFormattingGreenTextBrush" Color="#FF14670C" Core:ColorKey.Id="ConditionalFormattingColors.GreenTextBrush.Default"/>
+            <SolidColorBrush x:Key="ConditionalFormattingGreenFillBrush" Color="#FFC6FFC6" Core:ColorKey.Id="ConditionalFormattingColors.GreenFillBrush.Default"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+    <DataTemplate x:Key="ConditionalFormatting_PredefinedFormatsTemplate">
+        <dxg:FormatInfoCollection>
+            <dxg:FormatInfo FormatName="LightRedFillWithDarkRedText">
+                <dxg:Format Foreground="{ThemeResource ConditionalFormattingRedTextBrush}" Background="{ThemeResource ConditionalFormattingRedFillBrush}"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="YellowFillWithDarkYellowText">
+                <dxg:Format Foreground="{ThemeResource ConditionalFormattingYellowTextBrush}" Background="{ThemeResource ConditionalFormattingYellowFillBrush}"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="GreenFillWithDarkGreenText">
+                <dxg:Format Foreground="{ThemeResource ConditionalFormattingGreenTextBrush}" Background="{ThemeResource ConditionalFormattingGreenFillBrush}"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="LightRedFill">
+                <dxg:Format Background="{ThemeResource ConditionalFormattingRedFillBrush}"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="LightGreenFill">
+                <dxg:Format Background="{ThemeResource ConditionalFormattingGreenFillBrush}"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="RedText">
+                <dxg:Format Foreground="{ThemeResource ConditionalFormattingRedTextBrush}"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="GreenText">
+                <dxg:Format Foreground="{ThemeResource ConditionalFormattingGreenTextBrush}"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="BoldText">
+                <dxg:Format FontWeight="Bold"/>
+            </dxg:FormatInfo>
+            <dxg:FormatInfo FormatName="ItalicText">
+                <dxg:Format FontStyle="Italic"/>
+            </dxg:FormatInfo>
+        </dxg:FormatInfoCollection>
+    </DataTemplate>
+
+</ResourceDictionary>
+

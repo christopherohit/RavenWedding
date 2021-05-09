@@ -1,0 +1,93 @@
+﻿<ResourceDictionary    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxcore="using:DevExpress.Core"
+    xmlns:local="using:DevExpress.UI.Xaml.Layout"
+    xmlns:ve="using:DevExpress.UI.Xaml.Layout.VisualElements"
+    >
+    <ControlTemplate x:Key="LayoutGroupHeaderTemplate" TargetType="local:LayoutGroupHeader">
+        <ve:veContentPresenter x:Name="PART_Content"
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Content="{TemplateBinding Content}" 
+                                ContentTemplate="{TemplateBinding ContentTemplate}" 
+                                ContentTransitions="{TemplateBinding ContentTransitions}" 
+                                Margin="{TemplateBinding Padding}" 
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+    </ControlTemplate>
+    <ControlTemplate x:Key="LayoutGroupTemplate" TargetType="local:LayoutGroup">
+        <Border Background="{TemplateBinding Background}" 
+                BorderBrush="{TemplateBinding BorderBrush}" 
+                BorderThickness="{TemplateBinding BorderThickness}">
+            <Border.Resources>
+                <dxcore:BooleanToVisibilityConverter x:Key="HeaderVisibilityConverter"/>
+                <dxcore:BooleanToDoubleConverter x:Key="HeaderSpacingConverter" ValueTrue="12"/>
+            </Border.Resources>
+            <ve:HeaderedContainerSplitPanel Orientation="Vertical"
+                                            Padding="{Binding ActualPadding, ElementName=paddingManager}"
+                                            VerticalItemSpacing="{Binding IsHeaderVisible, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource HeaderSpacingConverter}}">
+                <Grid Margin="12,12,12,0"
+                      Visibility="{Binding IsHeaderVisible, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource HeaderVisibilityConverter}}"
+                      HorizontalAlignment="{TemplateBinding HorizontalHeaderAlignment}"
+                      VerticalAlignment="{TemplateBinding VerticalHeaderAlignment}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <local:LayoutGroupHeader x:Name="PART_Header" 
+                                             HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"
+                                             Content="{TemplateBinding ActualHeader}" 
+                                             ContentTemplate="{TemplateBinding HeaderTemplate}" 
+                                             ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}" />
+                    <local:ExpandButton x:Name="PART_ExpandButton" Grid.Column="1"
+                                        Visibility="{Binding IsExpandButtonVisible, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource HeaderVisibilityConverter}}">
+                        <local:ExpandButton.CheckedContent>
+                            <TextBlock Text="&#xE018;" />
+                        </local:ExpandButton.CheckedContent>
+                        <TextBlock Text="&#xE019;" />
+                    </local:ExpandButton>
+                </Grid>
+                <ItemsPresenter x:Name="PART_ItemsPresenter" 
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                    <ItemsPresenter.Resources>
+                        <ve:LayoutGroupPaddingManager x:Key="PaddingManager" x:Name="paddingManager" Padding="{TemplateBinding Padding}" />
+                    </ItemsPresenter.Resources>
+                </ItemsPresenter>
+            </ve:HeaderedContainerSplitPanel>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="ExpandedStates">
+                    <VisualState x:Name="Expanded"/>
+                    <VisualState x:Name="Collapsed"/>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </Border>
+    </ControlTemplate>
+    <ItemsPanelTemplate x:Key="LayoutGroupItemsPanelTemplate">
+        <local:SplitPanel />
+    </ItemsPanelTemplate>
+
+    <Style TargetType="local:LayoutGroupHeader">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="Template" Value="{StaticResource LayoutGroupHeaderTemplate}"/>
+    </Style>
+
+    <Style TargetType="local:LayoutGroup">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="TabNavigation" Value="Local"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalHeaderAlignment" Value="Center"/>
+        <Setter Property="HorizontalHeaderAlignment" Value="Left"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="ItemsPanel" Value="{StaticResource LayoutGroupItemsPanelTemplate}"/>
+        <Setter Property="Template" Value="{StaticResource LayoutGroupTemplate}"/>
+    </Style>
+</ResourceDictionary>
+

@@ -1,0 +1,21 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="TimeRulerBackgroundBrush" Color="Transparent" Core:ColorKey.Id="TimeRulerColors.Background.Light"/>
+            <SolidColorBrush x:Key="TimeRulerForegroundBrush" Color="#99000000" Core:ColorKey.Id="TimeRulerColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="TimeRulerGridDecorationBrush" Color="#FFE5E5E5" Core:ColorKey.Id="TimeRulerColors.GridDecoration.Light"/>
+            <SolidColorBrush x:Key="TimeRulerBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="TimeRulerColors.BorderBrush.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="TimeRulerBackgroundBrush" Color="Transparent" Core:ColorKey.Id="TimeRulerColors.Background.Default" />
+            <SolidColorBrush x:Key="TimeRulerForegroundBrush" Color="#99000000" Core:ColorKey.Id="TimeRulerColors.Foreground.Default" />
+            <SolidColorBrush x:Key="TimeRulerGridDecorationBrush" Color="#FFE5E5E5" Core:ColorKey.Id="TimeRulerColors.GridDecoration.Default"/>
+            <SolidColorBrush x:Key="TimeRulerBorderBrush" Color="#FFE5E5E5" Core:ColorKey.Id="TimeRulerColors.BorderBrush.Default"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+

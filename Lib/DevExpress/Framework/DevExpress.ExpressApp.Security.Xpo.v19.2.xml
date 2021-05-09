@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Security.Xpo.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Security.ClientServer.Wcf">
+      <summary>
+        <para>Contains classes related to the Middle Tier WCF Service functionality.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper">
+      <summary>
+        <para>Provides static helper methods to be used in the Middle Tier Security - WCF Service scenario.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.AddKnownType(System.Type)">
+      <summary>
+        <para>Adds the specified custom permission requests or custom logon parameters type to the WCF data service contract&#39;s known types list.</para>
+      </summary>
+      <param name="type">A System.Type object to be added to the WCF data service contract&#39;s known types list.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.CreateDefaultBinding">
+      <summary>
+        <para>Creates a Creates a <see cref="T:System.ServiceModel.WSHttpBinding"/> object object that you can use in the Middle Tier Security - WCF Service scenario.</para>
+      </summary>
+      <returns>A <see cref="T:System.ServiceModel.WSHttpBinding"/> object that you can use in the WCF Application Server implementation.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.CreateNetTcpBinding">
+      <summary>
+        <para>Creates a <see cref="T:System.ServiceModel.NetTcpBinding"/> object that you can use in the Middle Tier Security - WCF Service scenario.</para>
+      </summary>
+      <returns>A <see cref="T:System.ServiceModel.NetTcpBinding"/> object that you can use in the Middle Tier Security - WCF Service scenario.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.GetKnownTypes(System.Reflection.ICustomAttributeProvider)">
+      <summary>
+        <para>Gets a list of types that are known by the WCF data service&#39;s contract.</para>
+      </summary>
+      <param name="provider">An ICustomAttributeProvider object.</param>
+      <returns>An IEnumerable&lt;Type&gt; list of types that are known by the WCF data service&#39;s contract.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.ResetKnownTypesLock">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.SecurityUserBase">
+      <summary>
+        <para>An abstract base class for XAF users.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.ChangePasswordOnFirstLogon">
+      <summary>
+        <para>Specifies whether the user must change password on the next logon.</para>
+      </summary>
+      <value>true, if the user must change password on the next logon; otherwise - false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.ComparePassword(System.String)">
+      <summary>
+        <para>Compares the current user&#39;s stored encrypted password with its plain-text representation.</para>
+      </summary>
+      <param name="password">A string which is the plain-text password for comparison.</param>
+      <returns>true if the passwords are identical, otherwise - false</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.ComparePassword(System.String,System.String)">
+      <summary>
+        <para>Compares the specified encrypted password with its plain-text representation.</para>
+      </summary>
+      <param name="storedPassword">A string which is the plain-text password for comparison.</param>
+      <param name="password">A string which is the encrypted password for comparison.</param>
+      <returns>true if the passwords are identical, otherwise - false</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.GeneratePassword(System.String)">
+      <summary>
+        <para>Generates an encrypted password.</para>
+      </summary>
+      <param name="password">A string which is an unencrypted password.</param>
+      <returns>An encrypted password value.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.IsActive">
+      <summary>
+        <para>Specifies if a user is allowed to logon.</para>
+      </summary>
+      <value>true if a user is active; otherwise - false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.Oid">
+      <summary>
+        <para>Specifies the user&#39;s identifier.</para>
+      </summary>
+      <value>A System.Guid object which is the user&#39;s unique identifier.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.SetPassword(System.String)">
+      <summary>
+        <para>Changes the user password.</para>
+      </summary>
+      <param name="password">A string which is a new password.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.UserName">
+      <summary>
+        <para>Specifies the user&#39;s login name.</para>
+      </summary>
+      <value>A string which is the user&#39;s login name.</value>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Security.Strategy">
+      <summary>
+        <para>A namespace of the interfaces and classes that are used by the Security System.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole">
+      <summary>
+        <para>A persistent class that defines the security role.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.#ctor(DevExpress.Xpo.Session)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole"/> class in a particular Session</para>
+      </summary>
+      <param name="session">A DevExpress.Xpo.Session object, which is a persistent objects cache where the role will be instantiated.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.ChildRoles">
+      <summary>
+        <para>Gets the current role&#39;s child roles list.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole"/>&gt; collection which is the list of the current role&#39;s child roles.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.ParentRoles">
+      <summary>
+        <para>Gets the current role&#39;s master roles list.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole"/>&gt; collection which is the list of the current role&#39;s master roles.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.Users">
+      <summary>
+        <para>A list of users associated with the current role.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser"/>&gt; collection which is the list of users associated with the current role.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase">
+      <summary>
+        <para>An abstract base class for security roles.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.#ctor(DevExpress.Xpo.Session)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase"/> class in a particular Session</para>
+      </summary>
+      <param name="session">A DevExpress.Xpo.Session object, which is a persistent objects cache where the role will be instantiated.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.AutoAssociationPermissions">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.CanEditModel">
+      <summary>
+        <para>Specifies whether users associated with the current role can use the Model Editor. A DevExpress.Xpo.Session object, which is a persistent objects cache where the user will be instantiated.</para>
+      </summary>
+      <value>true, if users associated with the current role can use the Model Editor; otherwise - false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.IsAdministrative">
+      <summary>
+        <para>Specifies whether users associated with the current role are administrators.</para>
+      </summary>
+      <value>true, if users associated with the current role are administrators; otherwise - false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.Name">
+      <summary>
+        <para>Specifies the name of the security role.</para>
+      </summary>
+      <value>A string which is the name of the security role.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.TypeAssociationPermissionsOwnerHelper">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser">
+      <summary>
+        <para>An XAF user who has a list of associated security roles.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser.#ctor(DevExpress.Xpo.Session)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser"/> class in a particular Session</para>
+      </summary>
+      <param name="session">A DevExpress.Xpo.Session object, which is a persistent objects cache where the user will be instantiated.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser.Roles">
+      <summary>
+        <para>A list of roles associated with the current user.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole"/>&gt; collection which is the list of roles associated with the current user.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase">
+      <summary>
+        <para>An abstract base class for Security System Users.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.#ctor(DevExpress.Xpo.Session)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase"/> class in a particular Session</para>
+      </summary>
+      <param name="session">A DevExpress.Xpo.Session object, which is a persistent objects cache where the user will be instantiated.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.ChangePasswordOnFirstLogon">
+      <summary>
+        <para>Specifies whether the user must change password on the next logon.</para>
+      </summary>
+      <value>true, if the user must change password on the next logon; otherwise - false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.ComparePassword(System.String)">
+      <summary>
+        <para>Compares the current user&#39;s stored encrypted password with its plain-text representation.</para>
+      </summary>
+      <param name="password">A string which is the plain-text password for comparison.</param>
+      <returns>true if the passwords are identical, otherwise - false</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.IsActive">
+      <summary>
+        <para>Specifies if a user is allowed to logon.</para>
+      </summary>
+      <value>true if a user is active; otherwise - false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.Oid">
+      <summary>
+        <para>Specifies the user&#39;s identifier.</para>
+      </summary>
+      <value>A System.Guid object which is the user&#39;s unique identifier.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.SetPassword(System.String)">
+      <summary>
+        <para>Changes the user password.</para>
+      </summary>
+      <param name="password">A string which is a new password.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.UserName">
+      <summary>
+        <para>Specifies the user&#39;s login name.</para>
+      </summary>
+      <value>A string which is the user&#39;s login name.</value>
+    </member>
+    <member name="N:DevExpress.ExpressApp.Security.Xpo.Adapters">
+      <summary>
+        <para>Contains classes and interfaces specific to the XPO Security Permissions Caching functionality.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOClientServerCachedRequestSecurityAdapter">
+      <summary>
+        <para>A Security Adapter used in XPO-based applications with the Application Server.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOClientServerCachedRequestSecurityAdapter.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOClientServerCachedRequestSecurityAdapter"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOClientServerCachedRequestSecurityAdapter.IsGranted(DevExpress.ExpressApp.Security.IRequestSecurity,DevExpress.ExpressApp.IObjectSpace,System.Type,System.Object,System.String,System.String,System.Boolean@)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="requestSecurity"></param>
+      <param name="objectSpace"></param>
+      <param name="objectType"></param>
+      <param name="targetObject"></param>
+      <param name="memberName"></param>
+      <param name="operation"></param>
+      <param name="handled"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOClientServerCachedRequestSecurityAdapter.SetRequestCache(System.Collections.Generic.IDictionary{System.String,System.Boolean})">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="requestCache"></param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoClientServerCachedRequestSecurityAdapterProvider">
+      <summary>
+        <para>A Security Adapter Provider used to register the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOClientServerCachedRequestSecurityAdapter"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoClientServerCachedRequestSecurityAdapterProvider.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoClientServerCachedRequestSecurityAdapterProvider"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoClientServerCachedRequestSecurityAdapterProvider.CanHandle(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoClientServerCachedRequestSecurityAdapterProvider.CanHandle(System.Object)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="targetObject"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoClientServerCachedRequestSecurityAdapterProvider.CreateSecurityAdapter">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoClientServerCachedRequestSecurityAdapterProvider.GetSecuritySystemMode(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOIntegratedCachedRequestSecurityAdapter">
+      <summary>
+        <para>A Security Adapter used in XPO-based applications with the Integrated security.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOIntegratedCachedRequestSecurityAdapter.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOIntegratedCachedRequestSecurityAdapter"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOIntegratedCachedRequestSecurityAdapter.GetRealObjectSpace(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoIntegratedCachedRequestSecurityAdapterProvider">
+      <summary>
+        <para>A Security Adapter Provider used to register the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOIntegratedCachedRequestSecurityAdapter"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoIntegratedCachedRequestSecurityAdapterProvider.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoIntegratedCachedRequestSecurityAdapterProvider"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoIntegratedCachedRequestSecurityAdapterProvider.CanHandle(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoIntegratedCachedRequestSecurityAdapterProvider.CanHandle(System.Object)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="targetObject"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoIntegratedCachedRequestSecurityAdapterProvider.CreateSecurityAdapter">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoIntegratedCachedRequestSecurityAdapterProvider.GetSecuritySystemMode(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOSecurityAdapterHelper">
+      <summary>
+        <para>Provides helper methods for XPO Security Adapters.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOSecurityAdapterHelper.GetXpoCachedRequestSecurityAdapters">
+      <summary>
+        <para>Returns the list of all available Security Adapter Providers for XPO.</para>
+      </summary>
+      <returns>An IEnumerable&lt;ISecurityAdapterProvider&gt; list of Security Adapter Providers.</returns>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOUICachedRequestSecurityAdapter">
+      <summary>
+        <para>A Security Adapter used in XPO-based applications with the UI-level security.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOUICachedRequestSecurityAdapter.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOUICachedRequestSecurityAdapter"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOUICachedRequestSecurityAdapter.GetRealObjectSpace(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoUICachedRequestSecurityAdapterProvider">
+      <summary>
+        <para>A Security Adapter Provider used to register the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XPOUICachedRequestSecurityAdapter"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoUICachedRequestSecurityAdapterProvider.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoUICachedRequestSecurityAdapterProvider"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoUICachedRequestSecurityAdapterProvider.CanHandle(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoUICachedRequestSecurityAdapterProvider.CanHandle(System.Object)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="targetObject"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoUICachedRequestSecurityAdapterProvider.CreateSecurityAdapter">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.Xpo.Adapters.XpoUICachedRequestSecurityAdapterProvider.GetSecuritySystemMode(DevExpress.ExpressApp.IObjectSpace)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="objectSpace"></param>
+      <returns></returns>
+    </member>
+  </members>
+</doc>

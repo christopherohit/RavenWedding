@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.Dashboard.v19.2.Wpf</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.DashboardWpf">
+      <summary>
+        <para>Contains classes that implement the WPF Dashboard functionality.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.ConfigureItemDataCalculationEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWpf.DashboardControl.ConfigureItemDataCalculation"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.ConfigureItemDataCalculationEventArgs.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWpf.ConfigureItemDataCalculationEventArgs"/> class with the specified settings.</para>
+      </summary>
+      <param name="itemComponentName">A <see cref="T:System.String"/> value that specifies a component name of the dashboard item.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ConfigureItemDataCalculationEventArgs.CalculateAllTotals">
+      <summary>
+        <para>Gets or sets whether to calculate totals which are not displayed in the dashboard item.</para>
+      </summary>
+      <value>True, to calculate hidden totals; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ConfigureItemDataCalculationEventArgs.ItemComponentName">
+      <summary>
+        <para>Gets the component name of the dashboard item.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.ConfigureItemDataCalculationEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.DashboardWpf.DashboardControl.ConfigureItemDataCalculation"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The <see cref="T:DevExpress.DashboardWpf.ConfigureItemDataCalculationEventArgs"/> object containing event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.ConnectionErrorWpfEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWpf.DashboardControl.ConnectionError"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.ConnectionErrorWpfEventArgs.#ctor(System.String,System.String,DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase,System.Exception)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWpf.ConnectionErrorWpfEventArgs"/> class.</para>
+      </summary>
+      <param name="dataSourceName">A <see cref="T:System.String"/> that is the data source name.</param>
+      <param name="connectionName">A <see cref="T:System.String"/> that is the connection name.</param>
+      <param name="connectionParameters">A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant containing connection parameters.</param>
+      <param name="exception">A <see cref="T:System.Exception"/> object that is the exception that caused the connection error.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ConnectionErrorWpfEventArgs.DataSourceName">
+      <summary>
+        <para>Gets the data source name.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that is the data source name.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.ConnectionErrorWpfEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.DashboardWpf.DashboardControl.ConnectionError"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.ConnectionErrorWpfEventArgs"/> object containing event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardControl">
+      <summary>
+        <para>A control used to embed dashboards created in the Dashboard Designer into a WPF application.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWpf.DashboardControl"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.AllowMaximizeAnimation">
+      <summary>
+        <para>Gets or sets whether to enable the animation when you maximize or restore dashboard items. This is a dependency property.</para>
+      </summary>
+      <value>True, to enable the animation; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.AllowMaximizeAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.AllowMaximizeAnimation"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.AnimationInProgress">
+      <summary>
+        <para>Gets whether the animation is being played.</para>
+      </summary>
+      <value>true, if the animation is in progress; otherwise, false.</value>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.AsyncDataLoading">
+      <summary>
+        <para>Allows you to provide data for the <see cref="T:DevExpress.DashboardCommon.DashboardObjectDataSource"/>.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.AsyncExcelDataSourceBeforeFill">
+      <summary>
+        <para>Allows you to change options used to extract data from Microsoft Excel workbooks (XLS, XLSX or XLSM files) or CSV files asynchronously.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.AsyncValidateCustomSqlQuery">
+      <summary>
+        <para>Enables you to check the validity of the custom SQL query used to supply the dashboard with data.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.BeforeExportDocument">
+      <summary>
+        <para>Allows you to hide specific dashboard items when printing or exporting the entire dashboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.CanClearMasterFilter(System.String)">
+      <summary>
+        <para>Returns whether the specified master filter can be cleared in the current state.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if the specified master filter can be cleared in the current state; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.CanPerformDrillDown(System.String)">
+      <summary>
+        <para>Returns whether drill down is possible in the current state of the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if drill down is possible in the current state of the specified dashboard item; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.CanPerformDrillUp(System.String)">
+      <summary>
+        <para>Returns whether drill up is possible in the current state of the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName"></param>
+      <returns>true, if drill up is possible in the current state of the specified dashboard item; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.CanSetMasterFilter(System.String)">
+      <summary>
+        <para>Returns whether the master filter item allows selecting one or more elements.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if the master filter item allows selecting one or more elements; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.CanSetMultiValueMasterFilter(System.String)">
+      <summary>
+        <para>Returns whether the master filter item allows selecting multiple elements.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if the master filter item allows selecting multiple elements; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ClearMasterFilter(System.String)">
+      <summary>
+        <para>Clears the specified master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.ConfigureDataConnection">
+      <summary>
+        <para>Allows you to customize connection settings before the <see cref="T:DevExpress.DashboardWpf.DashboardControl"/> connects to a data store (database, OLAP cube, etc.).</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.ConfigureItemDataCalculation">
+      <summary>
+        <para>Allows you to configure how the dashboard item&#39;s client data is calculated.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.ConnectionError">
+      <summary>
+        <para>Allows overriding the default behavior when current connection parameters do not allow connecting to a data store.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.CustomAssemblyLoading">
+      <summary>
+        <para>Occurs before a custom assembly is loaded for use as <see cref="T:DevExpress.DashboardCommon.DashboardEFDataSource"/>.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.CustomExport">
+      <summary>
+        <para>Allows you to customize the exported document.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.CustomFilterExpression">
+      <summary>
+        <para>Allows you to include WHERE clauses into <see cref="T:DevExpress.DashboardCommon.DashboardSqlDataSource"/> queries.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.CustomizeExportDocument">
+      <summary>
+        <para>Allows you to customize the exported document.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.CustomPalette">
+      <summary>
+        <para>Provides the capability to substitute the default palette containing colors used to paint dashboard item elements.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.CustomParameters">
+      <summary>
+        <para>Occurs before data is loaded from the data store and allows you to customize dashboard parameters that are used for data processing.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.Dashboard">
+      <summary>
+        <para>Gets or sets the opened dashboard.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.Dashboard"/> object that is the opened dashboard.</value>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseDoubleClick">
+      <summary>
+        <para>Occurs when an end-user double-clicks a dashboard item.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseDown">
+      <summary>
+        <para>Occurs when the mouse pointer is over the dashboard item and a mouse button is released.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseEnter">
+      <summary>
+        <para>Occurs when the mouse pointer enters the dashboard item.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseLeave">
+      <summary>
+        <para>Occurs when the mouse pointer enters the dashboard item.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseMove">
+      <summary>
+        <para>Occurs when the mouse pointer moves over a dashboard item.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseUp">
+      <summary>
+        <para>Occurs when the mouse pointer is over the dashboard item and a mouse button is released.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseWheel">
+      <summary>
+        <para>Occurs when the mouse wheel moves while the dashboard item has focus.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemSelectionChanged">
+      <summary>
+        <para>Occurs after the selection within the dashboard item is changed.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemVisualInteractivity">
+      <summary>
+        <para>Allows you to provide custom visual interactivity for data-bound dashboard items that support element selection and highlighting.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DashboardLoaded">
+      <summary>
+        <para>Occurs after the <see cref="T:DevExpress.DashboardWpf.DashboardControl"/> loads a dashboard.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.DashboardProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.Dashboard"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.DashboardSource">
+      <summary>
+        <para>Gets or sets a dashboard source for the <see cref="T:DevExpress.DashboardWpf.DashboardControl"/>.</para>
+      </summary>
+      <value>An <see cref="T:System.Object"/> that specifies a dashboard source for the <see cref="T:DevExpress.DashboardWpf.DashboardControl"/>.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.DashboardSourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.DashboardSource"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.DashboardViewModel">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DataLoadingError">
+      <summary>
+        <para>Allows you to suppress the form containing errors that occur during data loading.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DrillDownPerformed">
+      <summary>
+        <para>Occurs after a drill-down is performed.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.DrillUpPerformed">
+      <summary>
+        <para>Occurs after a drill-up is performed.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.ExcelExportOptions">
+      <summary>
+        <para>Provides access to options related to exporting a dashboard item to the Excel format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing options related to exporting a dashboard item to the Excel format.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToExcel(System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Excel format.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToExcel(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Excel format using specified export options.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object which specifies the Excel export options to be applied when the dashboard item is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToExcel(System.String,System.String)">
+      <summary>
+        <para>Exports the dashboard item to the specified file in Excel format.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Excel file.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToExcel(System.String,System.String,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified file in Excel format using specified export options.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Excel file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object which specifies the Excel export options to be applied when the dashboard item is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToImage(System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Image format.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToImage(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardImageExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in Image format using the specified image options.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when the dashboard item is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToImage(System.String,System.String)">
+      <summary>
+        <para>Exports the dashboard item to the specified file in Image format.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Image file.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToImage(System.String,System.String,DevExpress.DashboardCommon.DashboardImageExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the image file using the specified image options.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the image file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when the dashboard item is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToPdf(System.String,System.IO.Stream)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in PDF format.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToPdf(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified stream in PDF format using the specified PDF-specific options.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when the dashboard item is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToPdf(System.String,System.String)">
+      <summary>
+        <para>Exports the dashboard item to the specified file in PDF format.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportDashboardItemToPdf(System.String,System.String,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
+      <summary>
+        <para>Exports the dashboard item to the specified file in PDF format using the specified PDF-specific options.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when the dashboard item is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToExcel(System.IO.Stream)">
+      <summary>
+        <para>Exports dashboard data to the specified stream in Excel format.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToExcel(System.IO.Stream,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
+      <summary>
+        <para>Exports dashboard data to the specified stream in Excel format.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing Excel-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToExcel(System.String)">
+      <summary>
+        <para>Exports dashboard data to the specified file in Excel format.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Excel file.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToExcel(System.String,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
+      <summary>
+        <para>Exports dashboard data to the specified file in Excel format.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Excel file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing Excel-specific options.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToImage(System.IO.Stream)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToImage(System.IO.Stream,DevExpress.DashboardCommon.DashboardImageExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in Image format using the specified image-specific options.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when a dashboard is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToImage(System.String)">
+      <summary>
+        <para>Exports a dashboard to the specified file in Image format.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Image file.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToImage(System.String,DevExpress.DashboardCommon.DashboardImageExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified image file using the specified image-specific options.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the image file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when a dashboard is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToPdf(System.IO.Stream)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToPdf(System.IO.Stream,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified stream in PDF format using the specified PDF-specific options.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when a dashboard is exported.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToPdf(System.String)">
+      <summary>
+        <para>Exports a dashboard to the specified file in PDF format.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ExportToPdf(System.String,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
+      <summary>
+        <para>Exports a dashboard to the specified file in PDF format using the specified PDF-specific options.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when a dashboard is exported.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.FullscreenDashboardViewModel">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.FullscreenDashboardViewModelProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.FullscreenDashboardViewModel"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetAvailableDrillDownValues(System.String)">
+      <summary>
+        <para>Returns axis point tuples identifying elements that can be used to perform drill-down in the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects identifying elements that can be used to perform drill-down in the specified dashboard item.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetAvailableFilterValues(System.String)">
+      <summary>
+        <para>Returns axis point tuples identifying elements that can be selected in the current state of the master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the master filter item.</param>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects identifying elements that can be selected in the current state of the master filter item.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetAvailablePredefinedRanges(System.String)">
+      <summary>
+        <para>Returns names of the predefined ranges available for the specified Range Filter.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> value that specifies the component name of the Range Filter dashboard item.</param>
+      <returns>An array of <see cref="T:System.String"/> values that are names of the available predefined ranges.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetCurrentDrillDownValues(System.String)">
+      <summary>
+        <para>Returns an axis point tuple identifying the current drill-down state.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <returns>An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object representing a set of axis points.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetCurrentFilterValues(System.String)">
+      <summary>
+        <para>Returns axis point tuples identifying currently selected elements in the master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the master filter item.</param>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects identifying elements that can be selected in the current state of the master filter item.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetCurrentPredefinedRange(System.String)">
+      <summary>
+        <para>Returns the name of the currently selected predefined range.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> value that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <returns>A <see cref="T:System.String"/> value that is the name of the currently selected predefined range.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetCurrentRange(System.String)">
+      <summary>
+        <para>Returns the selected range for the specified Range Filter or Date Filter dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that is the selected range in the specified Range Filter or Date Filter dashboard item.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetCurrentSelection(System.String)">
+      <summary>
+        <para>Returns records identifying currently selected elements in the master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the master filter item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardDataSet"/> object that represents a list of records identifying currently selected elements.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetDashboardLayout">
+      <summary>
+        <para>Saves dashboard layout to a string.</para>
+      </summary>
+      <returns>A <see cref="T:System.String"/> that is the dashboard layout representation.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetDashboardState">
+      <summary>
+        <para>Gets the current dashboard state.</para>
+      </summary>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that contains modifications produced by end-user interaction.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetEntireRange(System.String)">
+      <summary>
+        <para>Returns the visible range for the specified Range Filter or Date Filter dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that is the visible range in the specified Range Filter or Date Filter dashboard item.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetItemData(System.String)">
+      <summary>
+        <para>Returns the client data for the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.ViewerData.MultiDimensionalData"/> object that is the data visualized in the dashboard item.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetPrintableComponent(System.String)">
+      <summary>
+        <para>Gets a printable component corresponding to the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>An object that implements the <see cref="T:DevExpress.XtraPrinting.IPrintable"/> interface, specifying a component to be printed/exported.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetSelectedTabPage(System.String)">
+      <summary>
+        <para>Returns a component name of the selected tab page in the specified tab container.</para>
+      </summary>
+      <param name="tabContainerName">A <see cref="T:System.String"/> that is the <see cref="T:DevExpress.DashboardCommon.TabContainerDashboardItem"/> component name.</param>
+      <returns>A <see cref="T:System.String"/> that is the <see cref="T:DevExpress.DashboardCommon.TabContainerDashboardItem"/> component name.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetSelectedTabPageIndex(System.String)">
+      <summary>
+        <para>Returns an index of the selected tab page in the specified tab container.</para>
+      </summary>
+      <param name="tabContainerName">A <see cref="T:System.String"/> that is the <see cref="T:DevExpress.DashboardCommon.TabContainerDashboardItem"/> component name.</param>
+      <returns>A <see cref="T:System.String"/> that is the <see cref="T:DevExpress.DashboardCommon.TabContainerDashboardItem"/> component name.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetUnderlyingData(System.String)">
+      <summary>
+        <para>Returns underlying data for the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardCommon.ViewerData.AxisPoint})">
+      <summary>
+        <para>Returns underlying data for the specified dashboard item by the specified axis points.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> objects that specify data points in a multidimensional space.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardCommon.ViewerData.AxisPoint},System.Collections.Generic.IList{System.String})">
+      <summary>
+        <para>Returns underlying data for the specified dashboard item by the specified axis points.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> objects that specify data points in a multidimensional space.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specify data member identifiers used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardWpf.UnderlyingDataTargetValue})">
+      <summary>
+        <para>Returns underlying data for the specified dashboard item by the specified dimension values.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardWpf.UnderlyingDataTargetValue"/> objects that specify the hierarchy of dimension values.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardWpf.UnderlyingDataTargetValue},System.Collections.Generic.IList{System.String})">
+      <summary>
+        <para>Returns underlying data for the specified dashboard item by the specified dimension values.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardWpf.UnderlyingDataTargetValue"/> objects that specify the hierarchy of dimension values.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specify data member identifiers used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{System.String})">
+      <summary>
+        <para>Returns underlying data for the specified dashboard item by the specified data members.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specify data member identifiers used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.ImageExportOptions">
+      <summary>
+        <para>Provides access to options related to exporting a dashboard/dashboard item to an image.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object containing options related to exporting a dashboard/dashboard item to an image.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.InvalidateData">
+      <summary>
+        <para>Schedules the asynchronous data update for the entire dashboard. The data update is performed when the <see cref="M:System.Windows.UIElement.UpdateLayout"/> method is called.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.InvalidateData(System.String)">
+      <summary>
+        <para>Schedules the asynchronous data update for the specified dashboard item. The data update is performed when the <see cref="M:System.Windows.UIElement.UpdateLayout"/> method is called.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that is a dashboard item name.</param>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.LayoutChanged">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.LoadDashboard(System.IO.Stream)">
+      <summary>
+        <para>Loads a dashboard from a stream.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object that contains the dashboard.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.LoadDashboard(System.String)">
+      <summary>
+        <para>Loads a dashboard from an XML file.</para>
+      </summary>
+      <param name="path">A <see cref="T:System.String"/> that specifies the path to an XML file that contains the dashboard.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.LoadDashboardLayout(System.IO.Stream)">
+      <summary>
+        <para>Loads a dashboard layout from a stream.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object that contains the dashboard layout.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.LoadDashboardLayout(System.String)">
+      <summary>
+        <para>Loads a dashboard layout (layout items and layout containers) from an XML file.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> value that specifies the path to an XML file that contains the dashboard layout.</param>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.MasterFilterCleared">
+      <summary>
+        <para>Occurs when an end-user clears the selection in the master filter item.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.MasterFilterSet">
+      <summary>
+        <para>Occurs when an end-user changes the state of the master filter.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.MaximizedDashboardItemName">
+      <summary>
+        <para>Gets or sets the name of the maximized dashboard item. This is the dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is a maximized dashboard item&#39;s name.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.MaximizedDashboardItemNameProperty">
+      <summary>
+        <para>Identifies the <see cref="F:DevExpress.DashboardWpf.DashboardControl.MaximizedDashboardItemNameProperty"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.ObjectDataSourceLoadingBehavior">
+      <summary>
+        <para>Specifies how to load the object data sources available in the end-user application considering the application security.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DataAccess.DocumentLoadingBehavior"/> enumeration member that specifies whether to allow loading object data sources or prompt the user for confirmation.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.ObjectDataSourceLoadingBehaviorProperty">
+      <summary>
+        <para>Identifies the <see cref="F:DevExpress.DashboardWpf.DashboardControl.ObjectDataSourceLoadingBehaviorProperty"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.PdfExportOptions">
+      <summary>
+        <para>Provides access to options related to exporting a dashboard/dashboard item to the PDF format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object containing options related to exporting a dashboard/dashboard item to the PDF format.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.PerformDrillDown(System.String,DevExpress.DashboardCommon.DashboardDataRow)">
+      <summary>
+        <para>Performs a drill-down for the required element.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="row">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.PerformDrillDown(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
+      <summary>
+        <para>Performs a drill-down for the required element.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object representing a set of axis points.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.PerformDrillDown(System.String,System.Object)">
+      <summary>
+        <para>Performs a drill-down for the required element by its value.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="value">A value that will be used to perform a drill-down for the required element.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.PerformDrillUp(System.String)">
+      <summary>
+        <para>Performs a drill-up in the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.PrintPreviewOptions">
+      <summary>
+        <para>Provides access to options that the Print Preview window uses to print a dashboard/dashboard item.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardPrintPreviewOptions"/> object that contains print options.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ReloadData">
+      <summary>
+        <para>Reloads data from the data source for the entire dashboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ReloadData(System.String)">
+      <summary>
+        <para>Reloads data from the data source for the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that is a dashboard item name.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SaveDashboardLayout(System.IO.Stream)">
+      <summary>
+        <para>Saves a dashboard layout (layout items and layout containers) to a stream.</para>
+      </summary>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object that contains the dashboard layout.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SaveDashboardLayout(System.String)">
+      <summary>
+        <para>Saves a dashboard layout (layout items and layout containers) to a separate XML file.</para>
+      </summary>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to an XML file that contains the dashboard layout.</param>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.SelectedTabPageChanged">
+      <summary>
+        <para>Occurs when the selected tab page is changed.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetDashboardLayout(System.String)">
+      <summary>
+        <para>Applies dashboard layout contained in a string.</para>
+      </summary>
+      <param name="layout">A <see cref="T:System.String"/> that is the dashboard layout representation.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetDashboardState(DevExpress.DashboardCommon.DashboardState)">
+      <summary>
+        <para>Applies the dashboard state to the loaded dashboard.</para>
+      </summary>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object.</param>
+    </member>
+    <member name="E:DevExpress.DashboardWpf.DashboardControl.SetInitialDashboardState">
+      <summary>
+        <para>Allows you to specify the initial dashboard state when loading a dashboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetMasterFilter(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
+      <summary>
+        <para>Selects required elements in the specified master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object that identifies a master filter element.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetMasterFilter(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.DashboardDataRow})">
+      <summary>
+        <para>Selects required elements in the specified master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">A list of <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> objects used to identify master filter elements.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetMasterFilter(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.ViewerData.AxisPointTuple})">
+      <summary>
+        <para>Selects the required elements in the specified master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuples">A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects used to identify master filter elements.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetMasterFilter(System.String,System.Object)">
+      <summary>
+        <para>Selects required elements by their values in the specified master filter item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">Values that are used to select elements in the master filter item.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetRange(System.String,DevExpress.DashboardCommon.RangeFilterSelection)">
+      <summary>
+        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetRange(System.String,System.String)">
+      <summary>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetSelectedTabPage(System.String)">
+      <summary>
+        <para>Selects the page specified by its component name.</para>
+      </summary>
+      <param name="tabPageName">A <see cref="T:System.String"/> that is the <see cref="T:DevExpress.DashboardCommon.DashboardTabPage"/> component name.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.SetSelectedTabPage(System.String,System.Int32)">
+      <summary>
+        <para>Selects the page specified by its parent container name and by the index in the page collection.</para>
+      </summary>
+      <param name="tabContainerName">A <see cref="T:System.String"/> that is the <see cref="T:DevExpress.DashboardCommon.TabContainerDashboardItem"/> component name.</param>
+      <param name="index">An integer that is the page index in the <see cref="P:DevExpress.DashboardCommon.TabContainerDashboardItem.TabPages"/> collection.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ShowDashboardItemPrintPreview(System.String)">
+      <summary>
+        <para>Invokes the Print Preview, which shows the print preview of the dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object, that is a dashboard item&#39;s name.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ShowDataInspector(System.String)">
+      <summary>
+        <para>Invokes the Data Inspector dialog for the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ShowDataInspector(System.String,DevExpress.DashboardCommon.InspectedType)">
+      <summary>
+        <para>Invokes the Data Inspector dialog with a defined data type for the specified dashboard item.</para>
+      </summary>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
+      <param name="inspectedType">A <see cref="T:DevExpress.DashboardCommon.InspectedType"/> object that defines a displayed underlying data.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.ShowPrintPreview">
+      <summary>
+        <para>Invokes the Print Preview, which shows the print preview of the dashboard.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.TitleAlignment">
+      <summary>
+        <para>Gets or sets the horizontal alignment of the dashboard title content, excluding command buttons. This is a dependency property.</para>
+      </summary>
+      <value>The <see cref="T:System.Windows.HorizontalAlignment"/> enumeration member that specifies horizontal alignment.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.TitleAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.TitleAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.TitleContent">
+      <summary>
+        <para>Gets or sets the title text. This is a dependency property.</para>
+      </summary>
+      <value>An object displayed in the dashboard title. Specify a <see cref="T:System.String"/> to display text.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.TitleContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.TitleContent"/> dependency property.&#39;</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.TitleContentTemplate">
+      <summary>
+        <para>Allows you to specify a template to display in the dashboard title (command buttons are not affected).</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object that specifies the data template for the dashboard title content.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.TitleContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.TitleContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.TitleContentTemplateSelector">
+      <summary>
+        <para>Gets or sets an object that returns a template based on custom logic. This is a dependency property.</para>
+      </summary>
+      <value>An object that applies templates based on custom logic.&#39;</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.TitleContentTemplateSelectorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.TitleContentTemplateSelector"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardControl.TitleVisibility">
+      <summary>
+        <para>Gets or sets whether the dashboard title is displayed.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Visibility"/> enumeration member that specifies whether the dashboard title is displayed.</value>
+    </member>
+    <member name="F:DevExpress.DashboardWpf.DashboardControl.TitleVisibilityProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.DashboardWpf.DashboardControl.TitleVisibility"/> dependency property.</para>
+      </summary>
+      <value>A dependency property.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.UpdateData">
+      <summary>
+        <para>Performs the scheduled data update asynchronously.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.UpdateExtractDataSourcesAsync(System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult},System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult})">
+      <summary>
+        <para>Updates all extract data sources in the current dashboard asynchronously. Allows you to specify custom actions to perform after updating the data and file.</para>
+      </summary>
+      <param name="onDataUpdated">A custom action to perform when the data is updated.</param>
+      <param name="onFileUpdated">A custom action to perform when the file is updated.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardControl.UpdateExtractDataSourcesAsync(System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult},System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult},System.String[])">
+      <summary>
+        <para>Updates the specified extract data sources in the current dashboard asynchronously. Allows you to specify custom actions to perform after updating the data and file.</para>
+      </summary>
+      <param name="onDataUpdated">A custom action to perform when the data is updated.</param>
+      <param name="onFileUpdated">A custom action to perform when the file is updated.</param>
+      <param name="dataSourceNames">A list of the data source names.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs">
+      <summary>
+        <para>Provides data for events related to mouse actions.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.Data">
+      <summary>
+        <para>Gets the data displayed in the dashboard item.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.ViewerData.MultiDimensionalData"/> object that is the dashboard item data.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetAxisPoint">
+      <summary>
+        <para>Obtains the AxisPoint object located at the top priority axis and related to the visual element under the test point.</para>
+      </summary>
+      <returns>An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> object that is the axis point in the multidimensional data concept.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetAxisPoint(System.String)">
+      <summary>
+        <para>Obtains the AxisPoint object located at the specified axis and related to the visual element under the test point.</para>
+      </summary>
+      <param name="axisName">A string that specifies the name of the data axis.</param>
+      <returns>An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> object that is the data axis point.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetDeltas">
+      <summary>
+        <para>Gets a list of delta descriptors related to the visual element located under the test point.</para>
+      </summary>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.DeltaDescriptor"/> objects containing the delta metadata.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetMeasures">
+      <summary>
+        <para>Gets a list of measure descriptors related to the visual element located under the test point.</para>
+      </summary>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.MeasureDescriptor"/> objects containing the measure metadata.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetSlice">
+      <summary>
+        <para>Returns the data slice for the Default axis by the AxisPoint related to the visual element located under the test point.</para>
+      </summary>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.ViewerData.MultiDimensionalData"/> object that is the slice of the client data.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetSlice(System.String)">
+      <summary>
+        <para>Returns the data slice for the specified axis by the AxisPoint related to the visual element located under the test point.</para>
+      </summary>
+      <param name="axisName">A string that is the standard data axis name.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.ViewerData.MultiDimensionalData"/> object that is the slice of the client data.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetUnderlyingData">
+      <summary>
+        <para>Returns underlying data related to the visual element located under the test point.</para>
+      </summary>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that is a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetUnderlyingData(System.Collections.Generic.IList{System.String})">
+      <summary>
+        <para>Returns underlying data related to the visual element located under the test point.</para>
+      </summary>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specifies data members used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that is a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetUnderlyingData(System.String)">
+      <summary>
+        <para>Returns underlying data related to the visual element located under the test point.</para>
+      </summary>
+      <param name="axisName">A string value that is the name of the data axis whose dimension values are used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that is a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs.GetUnderlyingData(System.String,System.Collections.Generic.IList{System.String})">
+      <summary>
+        <para>Returns underlying data related to the visual element located under the test point.</para>
+      </summary>
+      <param name="axisName">A string value that is the name of the data axis whose dimension values are used to obtain underlying data.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specifies data members used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that is a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseDoubleClick"/>,  <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseUp"/>, <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseDown"/> and <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseMove"/> events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.DashboardItemMouseActionWpfEventArgs"/> object containing event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemMouseWpfEventArgs">
+      <summary>
+        <para>Provides data for events related to mouse movements.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardItemMouseWpfEventArgs.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWpf.DashboardItemMouseWpfEventArgs"/> class.</para>
+      </summary>
+      <param name="dashboardItemName">The name of the dashboard item.</param>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardItemMouseWpfEventArgs.DashboardItemName">
+      <summary>
+        <para>Gets the name of the dashboard item.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that is the name of the dashboard item.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemMouseWpfEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseWheel"/>, <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseEnter"/> and <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemMouseLeave"/> events.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.DashboardItemMouseWpfEventArgs"/> object containing event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemSelectionChangedWpfEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemSelectionChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardItemSelectionChangedWpfEventArgs.CurrentSelection">
+      <summary>
+        <para>Gets currently selected elements&#39; data.</para>
+      </summary>
+      <value>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects corresponding to the selected elements.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardItemSelectionChangedWpfEventArgs.DashboardItemName">
+      <summary>
+        <para>Gets the name of the dashboard item that is the event&#39;s source.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that is the dashboard item&#39;s name.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemSelectionChangedWpfEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemSelectionChanged"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.DashboardItemSelectionChangedWpfEventArgs"/> object containing event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemVisualInteractivityWpfEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemVisualInteractivity"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardItemVisualInteractivityWpfEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardItemVisualInteractivity"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.DashboardItemVisualInteractivityWpfEventArgs"/> object containing event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardLoadedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardLoaded"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.DashboardLoadedEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWpf.DashboardLoadedEventArgs"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.DashboardLoadedEventArgs.Dashboard">
+      <summary>
+        <para>A dashboard to load.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.Dashboard"/> object to assign to the <see cref="P:DevExpress.DashboardWpf.DashboardControl.Dashboard"/> property.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.DashboardLoadedEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.DashboardWpf.DashboardControl.DashboardLoaded"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.DashboardLoadedEventArgs"/> object containing event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWpf.DashboardControl.AsyncExcelDataSourceBeforeFill"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.#ctor(System.String,System.String,DevExpress.DataAccess.Excel.BeforeFillEventArgs)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs"/> class.</para>
+      </summary>
+      <param name="dataSourceComponentName"></param>
+      <param name="dataSourceName"></param>
+      <param name="e"></param>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.DataSourceComponentName">
+      <summary>
+        <para>Gets the component name of the Excel data source for which the event was raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the component name of the Excel data source for which the event was raised.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.DataSourceName">
+      <summary>
+        <para>Gets the name of the Excel data source for which the event was raised.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the name of the Excel data source for which the event was raised.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.FileName">
+      <summary>
+        <para>Gets or sets a path to the Microsoft Excel workbook or CSV file.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the path to the Microsoft Excel workbook or CSV file.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.SourceOptions">
+      <summary>
+        <para>Gets or sets options used to extract data from Microsoft Excel workbooks (XLS, XLSX or XLSM files) or CSV files.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DataAccess.Excel.ExcelSourceOptionsBase"/> descendant containing options used to extract data from Microsoft Excel workbooks (XLS, XLSX or XLSM files) or CSV files.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.Stream">
+      <summary>
+        <para>Gets or sets a stream that contains a Microsoft Excel workbook or CSV file.</para>
+      </summary>
+      <value>A <see cref="T:System.IO.Stream"/> object containing a Microsoft Excel workbook or CSV file.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.StreamDocumentFormat">
+      <summary>
+        <para>Gets or sets the format of the document contained in the <see cref="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.Stream"/>.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DataAccess.Excel.ExcelDocumentFormat"/> enumeration value that specifies the format of the document contained in the <see cref="P:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs.Stream"/>.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventHandler">
+      <summary>
+        <para>A method that will handle the <see cref="E:DevExpress.DashboardWpf.DashboardControl.AsyncExcelDataSourceBeforeFill"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.ExcelDataSourceBeforeFillEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.IMouseApiProvider">
+      <summary>
+        <para>Provides data for the visual point on the dashboard item.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.IMouseApiProvider.DashboardItemName">
+      <summary>
+        <para>Gets the dashboard item component name.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> value.</value>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.IMouseApiProvider.GetAxisPoint(System.String,System.Collections.IList)">
+      <summary>
+        <para>Gets the axis point for the specified axis by the specified values.</para>
+      </summary>
+      <param name="axisName">A string value contained in the <see cref="T:DevExpress.DashboardCommon.DashboardDataAxisNames"/> class that specifies the name of the data axis.</param>
+      <param name="dimensionValues">A list of values identifying the required point.</param>
+      <returns>An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> object that is the data point on the specified axis.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.IMouseApiProvider.GetUnderlyingData(System.Collections.Generic.IList{DevExpress.DashboardCommon.ViewerData.AxisPoint},System.Collections.Generic.IList{System.String})">
+      <summary>
+        <para>Returns underlying data for the specified dashboard item by the specified dimension values.</para>
+      </summary>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> objects that specify data points in a multidimensional space.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specify data member identifiers used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that is a list of records from the dashboard data source.</returns>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.IMouseApiProvider.MultiDimensionalData">
+      <summary>
+        <para>Provides access to the dashboard item client data.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.ViewerData.MultiDimensionalData"/> object containing data displayed in the dashboard item.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.SetInitialDashboardStateWpfEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.DashboardWpf.DashboardControl.SetInitialDashboardState"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.SetInitialDashboardStateWpfEventHandler">
+      <summary>
+        <para>A method that will handle the <see cref="E:DevExpress.DashboardWpf.DashboardControl.SetInitialDashboardState"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">A <see cref="T:DevExpress.DashboardWpf.SetInitialDashboardStateWpfEventArgs"/> object that contains event data.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWpf.UnderlyingDataTargetValue">
+      <summary>
+        <para>Dimension value used to obtain the underlying data.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWpf.UnderlyingDataTargetValue.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWpf.UnderlyingDataTargetValue"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.UnderlyingDataTargetValue.DimensionID">
+      <summary>
+        <para>Gets or sets the dimension identifier used to obtain the underlying data.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the dimension identifier used to obtain the underlying data.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWpf.UnderlyingDataTargetValue.Value">
+      <summary>
+        <para>Gets or sets the dimension value used to obtain the underlying data.</para>
+      </summary>
+      <value>The dimension value used to obtain the underlying data.</value>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,71 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseStroke" Color="#FF3E3E3E" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStroke.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseHoveredStroke" Color="#FF181818" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStrokeHovered.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipsePressedStroke" Color="#FF3E3E3E" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStrokePressed.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseDisabledStroke" Color="#FF4A4A4A" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStrokeDisabled.Default" />
+            
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseHoveredFill" Color="#FF6A6A6A" Core:ColorKey.Id="RadioButtonColors.OuterEllipseFillHovered.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipsePressedFill" Color="#FF6A6A6A" Core:ColorKey.Id="RadioButtonColors.OuterEllipseFillPressed.Default" />
+
+            <SolidColorBrush x:Key="DXRadioButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="RadioButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonForegroundDisabledBrush" Color="#FF4A4A4A" Core:ColorKey.Id="RadioButtonColors.ForegroundDisabled.Default" />
+            
+            <SolidColorBrush x:Key="DXRadioButtonBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RadioButtonColors.Background.Default" />
+
+            <SolidColorBrush x:Key="DXRadioButtonGlyphDisabledFill" Color="#FF4A4A4A" Core:ColorKey.Id="RadioButtonColors.GlyphFillDisabled.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonGlyphFill" Color="#FF101010" Core:ColorKey.Id="RadioButtonColors.GlyphFill.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonGlyphPressedFill" Color="#FFB6B6B6" Core:ColorKey.Id="RadioButtonColors.GlyphFillPressed.Default" />
+
+            <SolidColorBrush x:Key="DXRadioButtonOuterFocusVisualStroke" Color="#FF3B3B3B" Core:ColorKey.Id="RadioButtonColors.OuterFocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="DXRadioButtonInnerFocusVisualStroke" Color="#FF181818" Core:ColorKey.Id="RadioButtonColors.InnerFocusVisualStroke.Default" />
+            
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseStroke" Color="#FFD2D2D2" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStroke.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseHoveredStroke" Color="#FF999999" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStrokeHovered.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipsePressedStroke" Color="#FF999999" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStrokePressed.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseDisabledStroke" Color="#FFF0F0F0" Core:ColorKey.Id="RadioButtonColors.OuterEllipseStrokeDisabled.Light"/>
+
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipseHoveredFill" Color="#FFE6E6E6" Core:ColorKey.Id="RadioButtonColors.OuterEllipseFillHovered.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonOuterEllipsePressedFill" Color="#FFE6E6E6" Core:ColorKey.Id="RadioButtonColors.OuterEllipseFillPressed.Light"/>
+
+
+            <SolidColorBrush x:Key="DXRadioButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RadioButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonForegroundDisabledBrush" Color="#FFC2C2C2" Core:ColorKey.Id="RadioButtonColors.ForegroundDisabled.Light"/>
+
+            <SolidColorBrush x:Key="DXRadioButtonBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RadioButtonColors.Background.Light"/>
+
+
+            <SolidColorBrush x:Key="DXRadioButtonGlyphDisabledFill" Color="#FFF0F0F0" Core:ColorKey.Id="RadioButtonColors.GlyphFillDisabled.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonGlyphFill" Color="#FF505050" Core:ColorKey.Id="RadioButtonColors.GlyphFill.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonGlyphPressedFill" Color="#FF505050" Core:ColorKey.Id="RadioButtonColors.GlyphFillPressed.Light"/>
+
+            <SolidColorBrush x:Key="DXRadioButtonOuterFocusVisualStroke" Color="#FFDADADA" Core:ColorKey.Id="RadioButtonColors.OuterFocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="DXRadioButtonInnerFocusVisualStroke" Color="#FF969696" Core:ColorKey.Id="RadioButtonColors.InnerFocusVisualStroke.Light"/>
+            
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

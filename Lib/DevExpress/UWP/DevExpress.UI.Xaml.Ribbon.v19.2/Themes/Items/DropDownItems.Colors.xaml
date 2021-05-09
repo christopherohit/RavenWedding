@@ -1,0 +1,172 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonGroupDropDownItemColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemForegroundBrush" Color="#FF505050" Core:ColorKey.Id="RibbonGroupDropDownItemColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="RibbonGroupDropDownItemColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.FocusVisualBackground.Light"/>
+
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualStrokeSelectedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualStrokeSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualBackgroundSelectedBrush" Color="#15000000" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualStrokeBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundHoverBrush" Color="#1AFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundSelectedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundSelectedHoveredBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundSelectedPressedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundSelectedBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundSelectedHoveredBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundSelectedPressedBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundPressedBrush" Color="#1AFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFlyoutBackgroundBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FlyoutBackground.Light"/>
+
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualStrokeSelectedBrush" Color="#FF505050" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualStrokeSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualBackgroundSelectedBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualBackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualStrokeBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.Background.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundPressedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundSelectedPressedBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundSelectedHoveredBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundSelectedBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundBrush" Color="#FF424242" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundSelectedBrush" Color="#FF212121" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundSelectedHoveredBrush" Color="#FF212121" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundSelectedPressedBrush" Color="#FF212121" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundHoverBrush" Color="#FF212121" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundPressedBrush" Color="#FF212121" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFlyoutBackgroundBrush" Color="#FF106EBE" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FlyoutBackground.Light"/>
+        
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+           
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonGroupDropDownItemColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBackgroundSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemForegroundBrush" Color="#FF101010" Core:ColorKey.Id="RibbonGroupDropDownItemColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="RibbonGroupDropDownItemColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderSelectedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderSelectedHoverBrush" Color="#70000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemBorderSelectedPressedBrush" Color="#60000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.BorderBrushSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonGroupDropDownItemFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="RibbonGroupDropDownItemColors.FocusVisualBackground.Default" />
+            
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualStrokeSelectedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualStrokeSelected.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualBackgroundSelectedBrush" Color="#15000000" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualStrokeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundSelectedBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundSelectedHoveredBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundSelectedPressedBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundSelectedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundSelectedHoveredBrush" Color="#FF101010" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundSelectedPressedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundHoverBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemForegroundPressedBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemBackgroundPressedBrush" Color="#FF272727" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonHeaderDropDownItemFlyoutBackgroundBrush" Color="#FF1A1A1A" Core:ColorKey.Id="RibbonHeaderDropDownItemColors.FlyoutBackground.Default" />
+            
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualStrokeSelectedBrush" Color="#FF101010" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualStrokeSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBorderBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualBackgroundSelectedBrush" Color="#15000000" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualBackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualStrokeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.Background.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundPressedBrush" Color="#30FFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundSelectedPressedBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundSelectedHoveredBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemBackgroundSelectedBrush" Color="Transparent" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundBrush" Color="#FFEFEFEF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.Foreground.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundSelectedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundSelectedHoveredBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundSelectedPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonToolbarHeaderDropDownItemFlyoutBackgroundBrush" Color="#FF1A1A1A" Core:ColorKey.Id="RibbonToolbarHeaderDropDownItemColors.FlyoutBackground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.Dashboard.v19.2.Web.Mvc5</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.DashboardWeb.Mvc">
+      <summary>
+        <para>Contains classes that implement the common functionality of the ASP.NET MVC Dashboard extension.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Mvc.DashboardController">
+      <summary>
+        <para>A dashboard controller that handles interactions between client and server sides.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardController"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.#ctor(DevExpress.DashboardWeb.DashboardConfigurator)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardController"/> class.</para>
+      </summary>
+      <param name="dashboardConfigurator">A <see cref="T:DevExpress.DashboardWeb.DashboardConfigurator"/> object that provides server settings for the Web Dashboard.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.ConvertItem">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.CreateNewDashboard">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.Mvc.DashboardController.DashboardStorageInstanceRouteName">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.Mvc.DashboardController.DashboardStorageRouteName">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.Mvc.DashboardController.DataServerRouteName">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.DashboardWeb.Mvc.DashboardController.DataSourceStorageRouteName">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.DataSourceWizardAction">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetBatchItemModel">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetConnectionStrings">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetDashboard(System.String)">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <param name="dashboardId"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetDashboards">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetDataSources">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetDimensionFilterItems">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetDimensionFilterString">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetDimensionUniqueValues">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetFieldList">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetItemModel">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetMapShapeFileAction">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetParameterValues">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.GetUnderlyingData">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.MarkDataSourcesForReloadAction">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PerformExport">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PostBatchItemModel">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PostColoringScheme">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PostDashboardPalette">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PostItemModel">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PostMapShapeFileAction">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PostParameterValues">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.PostUnderlyingData">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardController.SaveDashboard">
+      <summary>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Mvc.DashboardExtension">
+      <summary>
+        <para>An extension object implementing the Web Dashboard functionality.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardExtension.#ctor(DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtension"/> class with the specified settings.</para>
+      </summary>
+      <param name="settings">An object containing extension specific settings.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardExtension.#ctor(DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings,System.Web.Mvc.ViewContext)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtension"/> class with the specified settings and provides the context information about the view.</para>
+      </summary>
+      <param name="settings">An object containing extension specific settings.</param>
+      <param name="viewContext">A <see cref="T:System.Web.Mvc.ViewContext"></see> object that is the view context.</param>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings">
+      <summary>
+        <para>Contains specific settings of the Web Dashboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowCreateNewDashboard">
+      <summary>
+        <para>Gets or sets whether an end-user can create new dashboards.</para>
+      </summary>
+      <value>true, to allow an end-user to create new dashboards; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowCreateNewJsonConnection">
+      <summary>
+        <para>Gets or sets whether an end user can create a JSON data source with a new data connection.</para>
+      </summary>
+      <value>true, to allow end users to create a JSON data source with a new data connection; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowExportDashboard">
+      <summary>
+        <para>Gets or sets whether end-users can export a dashboard.</para>
+      </summary>
+      <value>true, if end-users can export a dashboard; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowExportDashboardItems">
+      <summary>
+        <para>Gets or sets whether end-users can export dashboard items.</para>
+      </summary>
+      <value>true, if end-users can export dashboard items; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowInspectAggregatedData">
+      <summary>
+        <para>Gets or sets whether to display aggregated data in the Data Inspector.</para>
+      </summary>
+      <value>true, to display aggregated data in the Data Inspector; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowInspectRawData">
+      <summary>
+        <para>Gets or sets whether to display raw data in the Data Inspector.</para>
+      </summary>
+      <value>true, to display raw data in the Data Inspector; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowMaximizeItems">
+      <summary>
+        <para>Gets or sets whether end users can maximize dashboard items.</para>
+      </summary>
+      <value>true, to allow maximizing dashboard items; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowOpenDashboard">
+      <summary>
+        <para>Gets or sets whether an end-user can open existing dashboards.</para>
+      </summary>
+      <value>true, to allow an end-user to open existing dashboards; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.BackendOptions">
+      <summary>
+        <para>Provides access to the Web Dashboard&#39;s back-end options.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.DashboardBackendOptions"/> object that contains the Web Dashboard&#39;s back-end options.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.CanCreateNewJsonDataSource">
+      <summary>
+        <para>This property is no longer used. Use <see cref="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.AllowCreateNewJsonConnection"/> instead.</para>
+      </summary>
+      <value>true, to allow end users to create a JSON data source with a new data connection; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ClientInstanceName">
+      <summary>
+        <para>Gets or sets the Web Dashboard &#39;s client programmatic identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the Web Dashboard&#39;s client identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ClientSideEvents">
+      <summary>
+        <para>Gets an object that lists the client-side events specific to the <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtension"/>.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.DashboardControlClientSideEvents"/> object which allows assigning handlers to the client-side events available to the <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtension"/>.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ControllerName">
+      <summary>
+        <para>Gets or sets the controller name.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the controller name.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.DashboardId">
+      <summary>
+        <para>Gets or sets the dashboard identifier.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the dashboard identifier.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.DashboardState">
+      <summary>
+        <para>Gets or sets the dashboard state (such as the master filtering state) for the Web Dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the dashboard state for the Web Dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.DataRequestOptions">
+      <summary>
+        <para>Provides access to the Web Dashboard&#39;s data request options.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.DataRequestOptions"/> value used to specify a data request mode for a dashboard.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.EnableCustomSql">
+      <summary>
+        <para>Enables a user to specify a custom SQL string in the Data Source wizard.</para>
+      </summary>
+      <value>true, to allow a user to specify a custom SQL string in the Data Source wizard; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.EnableJsonDataSource">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.EnableOlapDataSource">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.EnableSqlDataSource">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ExcelExportOptions">
+      <summary>
+        <para>Provides access to options related to exporting a dashboard item to the Excel format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing options related to exporting a dashboard item to the Excel format.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ExportOptions">
+      <summary>
+        <para>Provides access to dashboard options specific to export.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.DashboardExportOptions"/> object that contains settings which specify parameters affecting how the dashboard (dashboard items) is exported.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ImageExportOptions">
+      <summary>
+        <para>Provides access to options related to exporting a dashboard/dashboard item to an image.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object containing options related to exporting a dashboard/dashboard item to an image.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.IncludeDashboardIdToUrl">
+      <summary>
+        <para>Gets or sets whether the <see cref="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.DashboardId"/> will be included in the Web Dashboard&#39;s URL.</para>
+      </summary>
+      <value>true, to include the <see cref="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.DashboardId"/> in the Web Dashboard&#39;s URL; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.IncludeDashboardStateToUrl">
+      <summary>
+        <para>Gets or sets whether the dashboard state (such as the master filtering state) will be included in the Web Dashboard&#39;s URL.</para>
+      </summary>
+      <value>true, to include the dashboard state in the Web Dashboard&#39;s URL; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.InitialDashboardId">
+      <summary>
+        <para>Gets or sets the identifier of the dashboard to be loaded to the ASP.NET MVC Dashboard extension.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the identifier of the dashboard to be loaded to the ASP.NET MVC Dashboard extension.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.InitialDashboardState">
+      <summary>
+        <para>Gets or sets the initial dashboard state when loading a dashboard.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the initial dashboard state.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.LimitVisibleDataMode">
+      <summary>
+        <para>Gets or sets a data limitation mode that allows you to display a reduced form of visible data.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.LimitVisibleDataMode"/> value that is a data limitation mode.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.LoadDefaultDashboard">
+      <summary>
+        <para>Gets or sets whether the default dashboard should be loaded from the dashboard storage.</para>
+      </summary>
+      <value>true, to load the default dashboard from the dashboard storage; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.MobileLayoutEnabled">
+      <summary>
+        <para>Gets or sets a mobile layout mode for the Web Dashboard.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.MobileLayoutMode"/> object that specifies a mobile layout mode.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.PdfExportOptions">
+      <summary>
+        <para>Provides access to options related to exporting a dashboard/dashboard item to the PDF format.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object containing options related to exporting a dashboard/dashboard item to the PDF format.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ResizeByTimer">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.ShowConfirmationOnBrowserClosing">
+      <summary>
+        <para>Gets or sets whether the web browser displays a confirmation message when an-end user closes a page containing the Web Dashboard.</para>
+      </summary>
+      <value>true, if the web browser displays a confirmation message when an-end user closes a page containing the Web Dashboard; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.UseCardLegacyLayout">
+      <summary>
+        <para>Gets or sets whether to enable the legacy card layout used prior to v17.1.</para>
+      </summary>
+      <value>true, to enable the legacy card layout used prior to v17.1; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.UseNeutralFilterMode">
+      <summary>
+        <para>Gets or sets whether to show all items in the filter elements deselected by default.</para>
+      </summary>
+      <value>true, if all items in the filter elements deselected by default; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings.WorkingMode">
+      <summary>
+        <para>Gets or sets the working mode of the Web Dashboard.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.DashboardWeb.WorkingMode"/> enumeration value that specifies the working mode of the Web Dashboard.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Mvc.MvcDashboardFactory">
+      <summary>
+        <para>Contains helper methods to create MVC extensions included in the DevExpress Dashboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.MvcDashboardFactory.Dashboard(DevExpress.Web.Mvc.UI.ExtensionsFactory,DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings)">
+      <summary>
+        <para>Creates a Web Dashboard.</para>
+      </summary>
+      <param name="factory">An <see cref="T:DevExpress.Web.Mvc.UI.ExtensionsFactory"/> object</param>
+      <param name="settings">A <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings"/> object containing Web Dashboard specific settings.</param>
+      <returns>A <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtension"/> object implementing the Web Dashboard functionality.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.MvcDashboardFactory.Dashboard(DevExpress.Web.Mvc.UI.ExtensionsFactory,System.Action{DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings})">
+      <summary>
+        <para>Creates a Web Dashboard.</para>
+      </summary>
+      <param name="factory">An <see cref="T:DevExpress.Web.Mvc.UI.ExtensionsFactory"/> object</param>
+      <param name="method">A delegate method that accepts <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtensionSettings"/> as a parameter.</param>
+      <returns>A <see cref="T:DevExpress.DashboardWeb.Mvc.DashboardExtension"/> object implementing the Web Dashboard functionality.</returns>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Mvc.MVCxDashboard">
+      <summary>
+        <para>An ASP.NET MVC equivalent of the <see cref="T:DevExpress.DashboardWeb.ASPxDashboard"/> control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.MVCxDashboard.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardWeb.Mvc.MVCxDashboard"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.DashboardWeb.Mvc.MVCxDashboard.ControllerName">
+      <summary>
+        <para>Gets or sets the controller name.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> that specifies the controller name.</value>
+    </member>
+    <member name="T:DevExpress.DashboardWeb.Mvc.RouteCollectionExtension">
+      <summary>
+        <para>Extends a <see cref="T:System.Web.Routing.RouteCollection"/> object for routing within a web application containing the ASP.NET MVC Dashboard extension.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.RouteCollectionExtension.MapDashboardRoute(System.Web.Mvc.AreaRegistrationContext,System.String,System.String,System.String[])">
+      <summary>
+        <para>Maps the specified URL route and sets a prefix, controller name and namespaces.</para>
+      </summary>
+      <param name="context">A <see cref="T:System.Web.Mvc.AreaRegistrationContext"/> object containing information required to register an area within an application.</param>
+      <param name="routePrefix">A <see cref="T:System.String"/> value that specifies a route prefix.</param>
+      <param name="controllerName">A <see cref="T:System.String"/> value that specifies the controller name.</param>
+      <param name="namespaces">A set of namespaces for the application.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.RouteCollectionExtension.MapDashboardRoute(System.Web.Routing.RouteCollection)">
+      <summary>
+        <para>Maps the specified URL route.</para>
+      </summary>
+      <param name="routes">A collection of the <see cref="T:System.Web.Routing.RouteCollection"/> objects that are routes for the application.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.RouteCollectionExtension.MapDashboardRoute(System.Web.Routing.RouteCollection,System.String)">
+      <summary>
+        <para>Maps the specified URL route and sets a prefix.</para>
+      </summary>
+      <param name="routes">A collection of the <see cref="T:System.Web.Routing.RouteCollection"/> objects that are routes for the application.</param>
+      <param name="routePrefix">A <see cref="T:System.String"/> value that specifies a route prefix.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.RouteCollectionExtension.MapDashboardRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.String[])">
+      <summary>
+        <para>Maps the specified URL route and sets a prefix, controller name and namespaces.</para>
+      </summary>
+      <param name="routes">A collection of the <see cref="T:System.Web.Routing.RouteCollection"/> objects that are routes for the application.</param>
+      <param name="routePrefix">A <see cref="T:System.String"/> value that specifies a route prefix.</param>
+      <param name="controllerName">A <see cref="T:System.String"/> value that specifies the controller name.</param>
+      <param name="namespaces">A set of namespaces for the application.</param>
+    </member>
+    <member name="M:DevExpress.DashboardWeb.Mvc.RouteCollectionExtension.MapDashboardRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.String[],System.String)">
+      <summary>
+        <para>Maps the specified URL route and sets a prefix, controller and area names, and namespaces.</para>
+      </summary>
+      <param name="routes">A collection of the <see cref="T:System.Web.Routing.RouteCollection"/> objects that are routes for the application.</param>
+      <param name="routePrefix">A <see cref="T:System.String"/> value that specifies a route prefix.</param>
+      <param name="controllerName">A <see cref="T:System.String"/> value that specifies the controller name.</param>
+      <param name="namespaces">A set of namespaces for the application.</param>
+      <param name="areaName">A <see cref="T:System.String"/> value that specifies the name of the area to register.</param>
+    </member>
+  </members>
+</doc>

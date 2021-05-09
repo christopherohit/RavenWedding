@@ -1,0 +1,149 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ComboBoxItemsBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ComboBoxColors.PopupBackground.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemsBorderBrush" Color="#FF1F1F1F" Core:ColorKey.Id="ComboBoxColors.PopupBorderBrush.Default" />
+
+            <SolidColorBrush x:Key="ComboBoxBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ComboBoxColors.Background.Default" />
+            <SolidColorBrush x:Key="ComboBoxBackgroundDisabledBrush" Color="#FF8A8A8A" Core:ColorKey.Id="ComboBoxColors.BackgroundDisabled.Default" />
+            <SolidColorBrush x:Key="ComboBoxBackgroundHoverBrush" Color="#FF6A6A6A" Core:ColorKey.Id="ComboBoxColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxBackgroundPressedBrush" Color="#FF6A6A6A" Core:ColorKey.Id="ComboBoxColors.BackgroundPressed.Default" />
+
+            <SolidColorBrush x:Key="ComboBoxForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ComboBoxForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ComboBoxForegroundDisabledBrush" Color="#FF595959" Core:ColorKey.Id="ComboBoxColors.ForegroundDisabled.Default" />
+            
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundBrush" Color="#FF545454" Core:ColorKey.Id="ComboBoxColors.DropDownForeground.Default" />
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.DropDownForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.DropDownForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundDisabledBrush" Color="#FF696969" Core:ColorKey.Id="ComboBoxColors.DropDownForegroundDisabled.Default" />
+            
+            <SolidColorBrush x:Key="ComboBoxGlyphBackgroundPressedBrush" Color="#FF484848" Core:ColorKey.Id="ComboBoxColors.DropDownBackgroundPressed.Default" />
+            
+            <SolidColorBrush x:Key="ComboBoxHighlightBorderBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxColors.HighlightedBorderBrush.Default" />
+            
+            <SolidColorBrush x:Key="ComboBoxBorderBrush" Color="#FF3E3E3E" Core:ColorKey.Id="ComboBoxColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ComboBoxBorderHoverBrush" Color="#FF6A6A6A" Core:ColorKey.Id="ComboBoxColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxBorderPressedBrush" Color="#FF181818" Core:ColorKey.Id="ComboBoxColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ComboBoxBorderDisabledBrush" Color="#FF4A4A4A" Core:ColorKey.Id="ComboBoxColors.BorderBrushDisabled.Default" />
+            
+            <SolidColorBrush x:Key="ComboBoxInnerFocusVisualStroke" Color="#FF181818" Core:ColorKey.Id="ComboBoxColors.InnerFocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ComboBoxOuterFocusVisualStroke" Color="#FF3E3E3E" Core:ColorKey.Id="ComboBoxColors.OuterFocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ComboBoxOuterFocusVisualStrokePressed" Color="#FF3E3E3E" Core:ColorKey.Id="ComboBoxColors.OuterFocusVisualStrokePressed.Default" />
+            
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundBrush" Color="#00000000" Core:ColorKey.Id="ComboBoxItemColors.Background.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundDisabledBrush" Color="#00000000" Core:ColorKey.Id="ComboBoxItemColors.BackgroundDisabled.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundPressedBrush" Color="#FF6A6A6A" Core:ColorKey.Id="ComboBoxItemColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundHoveredBrush" Color="#FF888888" Core:ColorKey.Id="ComboBoxItemColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedBrush" Color="#FF545454" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedUnfocusedBrush" Color="#FF545454" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedUnfocused.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedDisabledBrush" Color="#FF545454" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedDisabled.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedHoveredBrush" Color="#FF545454" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedPressedBrush" Color="#FF545454" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedPressed.Default" />
+
+            <SolidColorBrush x:Key="ComboBoxItemForegroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="ComboBoxItemColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundHoveredBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundDisabledBrush" Color="#FF595959" Core:ColorKey.Id="ComboBoxItemColors.ForegroundDisabled.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedDisabledBrush" Color="#FF595959" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedDisabled.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedHoveredBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedUnfocusedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedUnfocused.Default" />
+            
+            <SolidColorBrush x:Key="ComboBoxItemOuterFocusVisualStroke" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.OuterFocusVisualStroke.Default" />
+
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ComboBoxItemsBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.PopupBackground.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemsBorderBrush" Color="#FFCCCCCC" Core:ColorKey.Id="ComboBoxColors.PopupBorderBrush.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.Background.Light"/>
+            <SolidColorBrush x:Key="ComboBoxBackgroundDisabledBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxColors.BackgroundDisabled.Light"/>
+            <SolidColorBrush x:Key="ComboBoxBackgroundHoverBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ComboBoxColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ComboBoxBackgroundPressedBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ComboBoxColors.BackgroundPressed.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ComboBoxForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ComboBoxForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ComboBoxForegroundDisabledBrush" Color="#FFC2C2C2" Core:ColorKey.Id="ComboBoxColors.ForegroundDisabled.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxColors.DropDownForeground.Light"/>
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxColors.DropDownForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxColors.DropDownForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ComboBoxGlyphForegroundDisabledBrush" Color="#FFB5B5B5" Core:ColorKey.Id="ComboBoxColors.DropDownForegroundDisabled.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxGlyphBackgroundPressedBrush" Color="#FF999999" Core:ColorKey.Id="ComboBoxColors.DropDownBackgroundPressed.Light"/>
+
+
+            <SolidColorBrush x:Key="ComboBoxHighlightBorderBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxColors.HighlightedBorderBrush.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ComboBoxColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ComboBoxBorderDisabledBrush" Color="#FFEFEFEF" Core:ColorKey.Id="ComboBoxColors.BorderBrushDisabled.Light"/>
+            <SolidColorBrush x:Key="ComboBoxBorderPressedBrush" Color="#FF999999" Core:ColorKey.Id="ComboBoxColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ComboBoxBorderHoverBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ComboBoxColors.BorderBrushHovered.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxOuterFocusVisualStroke" Color="#FFD2D2D2" Core:ColorKey.Id="ComboBoxColors.OuterFocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ComboBoxOuterFocusVisualStrokePressed" Color="#FFD2D2D2" Core:ColorKey.Id="ComboBoxColors.OuterFocusVisualStrokePressed.Light"/>
+            <SolidColorBrush x:Key="ComboBoxInnerFocusVisualStroke" Color="#FF969696" Core:ColorKey.Id="ComboBoxColors.InnerFocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundBrush" Color="#00FFFFFF" Core:ColorKey.Id="ComboBoxItemColors.Background.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundDisabledBrush" Color="#00FFFFFF" Core:ColorKey.Id="ComboBoxItemColors.BackgroundDisabled.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundPressedBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundHoveredBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ComboBoxItemColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelected.Light" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedUnfocusedBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedUnfocused.Light" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedDisabledBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedDisabled.Light" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedHoveredBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedHovered.Light" />
+            <SolidColorBrush x:Key="ComboBoxItemBackgroundSelectedPressedBrush" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.BackgroundSelectedPressed.Light" />
+
+            <SolidColorBrush x:Key="ComboBoxItemForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxItemColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundDisabledBrush" Color="#FFC2C2C2" Core:ColorKey.Id="ComboBoxItemColors.ForegroundDisabled.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundHoveredBrush" Color="#FF505050" Core:ColorKey.Id="ComboBoxItemColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedDisabledBrush" Color="#FFC2C2C2" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedDisabled.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedHoveredBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ComboBoxItemForegroundSelectedUnfocusedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ComboBoxItemColors.ForegroundSelectedUnfocused.Light"/>
+
+            <SolidColorBrush x:Key="ComboBoxItemOuterFocusVisualStroke" Color="#FF969696" Core:ColorKey.Id="ComboBoxItemColors.OuterFocusVisualStroke.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

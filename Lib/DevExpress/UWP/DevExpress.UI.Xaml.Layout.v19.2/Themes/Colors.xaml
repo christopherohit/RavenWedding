@@ -1,0 +1,52 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ItemBackgroundHover" Color="#30FFFFFF" Core:ColorKey.Id="ScrollableControlButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ItemBackgroundPressed" Color="#60FFFFFF" Core:ColorKey.Id="ScrollableControlButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ScrollableControlButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ScrollableControlButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="pathFillDefault" Color="#FFDCDCDC" Core:ColorKey.Id="ScrollableControlButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="pathFillHover" Color="#FFDCDCDC" Core:ColorKey.Id="ScrollableControlButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="pathFillPressed" Color="#FFDCDCDC" Core:ColorKey.Id="ScrollableControlButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="TileSelectorItemBackground" Color="#FF839BBB"  Core:ColorKey.Id="TileSelectorItemColors.Background.Default" />
+            <SolidColorBrush x:Key="TileSelectorItemForeground" Color="#FFFFFFFF"  Core:ColorKey.Id="TileSelectorItemColors.Foreground.Default" />
+            <SolidColorBrush x:Key="TileItemHoverBackground" Color="#30FFFFFF"  Core:ColorKey.Id="TileButtonControlColors.Background.Default" />
+            <SolidColorBrush x:Key="TileItemBackgroundBrush" Color="#40FFFFFF" Core:ColorKey.Id="TileBarItemArrowControlColors.Background.Default" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ItemBackgroundHover" Color="#3F839BBB" Core:ColorKey.Id="ScrollableControlButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ItemBackgroundPressed" Color="#FF839BBB" Core:ColorKey.Id="ScrollableControlButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ScrollableControlButtonBackgroundBrush" Color="Transparent"  Core:ColorKey.Id="ScrollableControlButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="pathFillDefault" Color="#FF839BBB" Core:ColorKey.Id="ScrollableControlButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="pathFillHover" Color="#FF839BBB" Core:ColorKey.Id="ScrollableControlButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="pathFillPressed" Color="#FFFFFFFF" Core:ColorKey.Id="ScrollableControlButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="TileSelectorItemBackground" Color="#FF839BBB" Core:ColorKey.Id="TileSelectorItemColors.Background.Light"/>
+            <SolidColorBrush x:Key="TileSelectorItemForeground" Color="#FFFFFFFF" Core:ColorKey.Id="TileSelectorItemColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="TileItemHoverBackground" Color="#30FFFFFF" Core:ColorKey.Id="TileButtonControlColors.Background.Light"/>
+            <SolidColorBrush x:Key="TileItemBackgroundBrush" Color="#40FFFFFF" Core:ColorKey.Id="TileBarItemArrowControlColors.Background.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

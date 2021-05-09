@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Chart.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Chart">
+      <summary>
+        <para>Contains classes and interfaces specific to the Chart Module functionality.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Chart.ChartListEditorBase">
+      <summary>
+        <para>An abstract class that serves as the base class for the Charting List Editors.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.#ctor(DevExpress.ExpressApp.Model.IModelListView)">
+      <summary>
+        <para>Creates and initializes an instance of the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/> class.</para>
+      </summary>
+      <param name="model">An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object representing the Application Model&#39;s node, which contains information on the View that will use the instantiated List Editor.</param>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Chart.ChartListEditorBase.Alias">
+      <summary>
+        <para>This field is intended for internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.BreakLinksToControls">
+      <summary>
+        <para>Removes references to the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s control and its event handlers.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Chart.ChartListEditorBase.ChartControl">
+      <summary>
+        <para>Provides access to the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s control.</para>
+      </summary>
+      <value>An object representing the current List Editor&#39;s control.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Chart.ChartListEditorBase.ChartControlContainer">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Chart.ChartListEditorBase.ContextMenuTemplate">
+      <summary>
+        <para>Provides access to the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s Context Menu Template.</para>
+      </summary>
+      <value>A control which implements the IContextMenuTemplate interface and represents a List Editor&#39;s Context Menu Template.</value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Chart.ChartListEditorBase.ControlDataSourceChanged">
+      <summary>
+        <para>Occurs when the <see cref="P:DevExpress.ExpressApp.Chart.ChartListEditorBase.ChartControl"/>&#39;s data source is changed.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.Dispose">
+      <summary>
+        <para>Releases all resources used by the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.GetIndexByObject(System.Object)">
+      <summary>
+        <para>Returns the index of an object that represents the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s point.</para>
+      </summary>
+      <param name="obj">An object that represents the Charting List Editor&#39;s point.</param>
+      <returns>An index of an object that represents the Charting List Editor&#39;s point.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.GetObjectByIndex(System.Int32)">
+      <summary>
+        <para>Returns an object that represents the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s point with the specified index.</para>
+      </summary>
+      <param name="index">The index of an object that represents the Charting List Editor&#39;s point.</param>
+      <returns>The object that represents the Charting List Editor&#39;s point with the specified index.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.GetOrderedObjects">
+      <summary>
+        <para>Returns an ordered list of objects that represent the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s points.</para>
+      </summary>
+      <returns>An ordered list of objects that represent the Charting List Editor&#39;s points.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.GetSelectedObjects">
+      <summary>
+        <para>Returns a collection of objects that are currently selected in the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s control.</para>
+      </summary>
+      <returns>A list of the selected objects.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartListEditorBase.Refresh">
+      <summary>
+        <para>Refreshes the bound data source of the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>&#39;s control.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Chart.ChartListEditorBase.SelectionType">
+      <summary>
+        <para>Returns the selection type supported by the <see cref="T:DevExpress.ExpressApp.Chart.ChartListEditorBase"/>.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.ExpressApp.SelectionType"/> enumeration value that represents the selection type supported by the current List Editor.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Chart.ChartModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Chart.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Chart.ChartModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+      <summary>
+        <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Chart.IModelChartListView"/> interface.</para>
+      </summary>
+      <param name="extenders">A ModelInterfaceExtenders object that is a collection of Application Model interface extenders.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Chart.ChartModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Chart.ChartModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Chart.ChartModule"/> module.</returns>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Chart.ChartModule.LocalizationGroup">
+      <summary>
+        <para>Specifies the name of a localization group node containing localization items specific to the Chart Module functionality.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Chart.IModelChartListView">
+      <summary>
+        <para>Used to extend the Application Model with the ChartSettings node.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Chart.IModelChartListView.ChartSettings">
+      <summary>
+        <para>Provides access to the ChartSettings node.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.ExpressApp.Chart.IModelChartSettings"/> object representing the ChartSettings node.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Chart.IModelChartSettings">
+      <summary>
+        <para>The ChartSettings node provides access to the settings of the charting List Editor used by a List View.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Chart.IModelChartSettings.Settings">
+      <summary>
+        <para>Provides access to the settings of the charting List Editor used by a List View, editable using the Chart Designer.</para>
+      </summary>
+      <value>A string representing the serialized chart settings.</value>
+    </member>
+  </members>
+</doc>

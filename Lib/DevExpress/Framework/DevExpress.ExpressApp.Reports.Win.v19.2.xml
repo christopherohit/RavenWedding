@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Reports.Win.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Reports.Win">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the Windows Forms Reports Module (Obsolete).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Reports.Win.QueryRootReportComponentNameEventArgs">
+      <summary>
+        <para>Represents parameters passed to the <see cref="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.QueryRootReportComponentName"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.QueryRootReportComponentNameEventArgs.#ctor(DevExpress.ExpressApp.Reports.XafReport)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Reports.Win.QueryRootReportComponentNameEventArgs"/> class.</para>
+      </summary>
+      <param name="report">An XafReport object that is the XAF report.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.QueryRootReportComponentNameEventArgs.GetDefaultName">
+      <summary>
+        <para>Generates a default name for each created XafReport object.</para>
+      </summary>
+      <returns>A string which is the default report name.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Reports.Win.QueryRootReportComponentNameEventArgs.Name">
+      <summary>
+        <para>Specifies the name of the created report.</para>
+      </summary>
+      <value>A string which is the name of the created report.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Reports.Win.QueryRootReportComponentNameEventArgs.Report">
+      <summary>
+        <para>Gets the created XafReport object.</para>
+      </summary>
+      <value>A created XafReport object.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Reports.Win.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule.CreateCustomReportDesignRepositoryItem">
+      <summary>
+        <para>Occurs before a Repository Item is created to display a report parameter.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule.EnableInplaceReports">
+      <summary>
+        <para>This property is obsolete.</para>
+      </summary>
+      <value>true, to enable inplace reports; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule.GetXafResourceLocalizerTypes">
+      <summary>
+        <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the <see cref="T:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule"/>.</para>
+      </summary>
+      <returns>An ICollection&lt;Type&gt; collection containing the types of the Resource Localizers supplied with the ReportsWindowsFormsModule.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule.ReportDataType">
+      <summary>
+        <para>This property is obsolete.</para>
+      </summary>
+      <value>A <see cref="T:System.Type"/> object specifying the report data type used by the Reports module.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Reports.Win.WinReportServiceController">
+      <summary>
+        <para>Represents a <see cref="T:DevExpress.ExpressApp.ViewController"/> descendant. Contains platform-specific code, providing end-users with ability to create, design and view reports.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Reports.Win.WinReportServiceController"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.CreateCustomDesignForm">
+      <summary>
+        <para>Occurs before creating the Report Designer form.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.CreateCustomXafReportVerbsManager">
+      <summary>
+        <para>Occurs when the XafReportVerbsManager object is created for the Report Designer.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.CustomShowDesignForm">
+      <summary>
+        <para>Occurs before showing the Report Designer form.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.CustomShowPreview">
+      <summary>
+        <para>Occurs before showing the report&#39;s Preview dialog.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.DesignFormCreated">
+      <summary>
+        <para>Occurs after the Report Designer form is created, but before a report is loaded into it.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.NewXafReportWizardShowing">
+      <summary>
+        <para>Occurs before invoking the Report Wizard.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.QueryRootReportComponentName">
+      <summary>
+        <para>Occurs when the name of an XAF report is determined.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.ShowDesigner(DevExpress.Persistent.Base.General.IReportData)">
+      <summary>
+        <para>Invokes the Report Designer.</para>
+      </summary>
+      <param name="reportData">An IReportData object representing the report to be modified in the Report Designer.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.ShowDesigner(DevExpress.Persistent.Base.General.IReportData,DevExpress.ExpressApp.IObjectSpace,System.Type,System.Boolean)">
+      <summary>
+        <para>Invokes the Report Designer.</para>
+      </summary>
+      <param name="reportData">An IReportData object representing the report to be modified in the Report Designer. Should belong to the Object Space, specified by the reportDataObjectSpace parameter.</param>
+      <param name="reportDataObjectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object representing the Object Space in which the Report Designer will operate.</param>
+      <param name="targetBusinessClass">A <see cref="T:System.Type"/> object representing the report&#39;s target business class. If the IReportData is not a new object, pass null (Nothing in VB).</param>
+      <param name="isModified">true, if a report has been modified (has uncommitted changes); otherwise, false.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.ShowDesigner(System.Type,System.Object)">
+      <summary>
+        <para>Invokes the Report Designer.</para>
+      </summary>
+      <param name="reportDataType">A <see cref="T:System.Type"/> of the report to be modified in the Report Designer.</param>
+      <param name="reportDataKey">An object representing the key property value of the ReportData object to be modified in the Report Designer.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Reports.Win.WinReportServiceController.ShowWizard(System.Type)">
+      <summary>
+        <para>Invokes the Report Wizard.</para>
+      </summary>
+      <param name="reportDataType">A <see cref="T:System.Type"/> of the report object to be generated by the Report Wizard.</param>
+    </member>
+  </members>
+</doc>

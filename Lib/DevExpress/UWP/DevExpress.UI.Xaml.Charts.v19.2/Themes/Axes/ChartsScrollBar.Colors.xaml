@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ChartsScrollBarButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ChartsScrollBarColors.ButtonForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBackgroundHoverBrush" Color="#FFDADADA" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBackgroundPressedBrush" Color="#99000000" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBorderHoverBrush" Color="#FFDADADA" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBorderPressedBrush" Color="#99000000" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBorderBrush" Color="#3B555555" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBorderBrush.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBorderHoverBrush" Color="#6BB7B7B7" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBorderPressedBrush" Color="#ED555555" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBackgroundBrush" Color="#FFCDCDCD" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBackground.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBackgroundHoverBrush" Color="#FFDADADA" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBackgroundPressedBrush" Color="#99000000" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarTrackBorderBrush" Color="#59D5D5D5" Core:ColorKey.Id="ChartsScrollBarColors.TrackBorderBrush.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarPanningBorderBrush" Color="#7D9A9A9A" Core:ColorKey.Id="ChartsScrollBarColors.PanningBorderBrush.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarPanningBackgroundBrush" Color="#FFCDCDCD" Core:ColorKey.Id="ChartsScrollBarColors.PanningBackground.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarTrackBackgroundBrush" Color="#FF5d5d5d" Core:ColorKey.Id="ChartsScrollBarColors.TrackBackground.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarButtonForegroundHoverBrush" Color="#FFe0e0e0" Core:ColorKey.Id="ChartsScrollBarColors.ButtonForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ChartsScrollBarButtonForegroundBrush" Color="#FFa2a2a2" Core:ColorKey.Id="ChartsScrollBarColors.ButtonForeground.Default" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ChartsScrollBarButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ChartsScrollBarColors.ButtonForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBackgroundHoverBrush" Color="#FFDADADA" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBackgroundPressedBrush" Color="#99000000" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBorderHoverBrush" Color="#FFDADADA" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarButtonBorderPressedBrush" Color="#99000000" Core:ColorKey.Id="ChartsScrollBarColors.ButtonBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBorderBrush" Color="#3B555555" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBorderHoverBrush" Color="#6BB7B7B7" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBorderPressedBrush" Color="#ED555555" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBackgroundBrush" Color="#FFCDCDCD" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBackground.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBackgroundHoverBrush" Color="#FFDADADA" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarThumbBackgroundPressedBrush" Color="#99000000" Core:ColorKey.Id="ChartsScrollBarColors.ThumbBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarTrackBorderBrush" Color="#59D5D5D5" Core:ColorKey.Id="ChartsScrollBarColors.TrackBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarPanningBorderBrush" Color="#7D9A9A9A" Core:ColorKey.Id="ChartsScrollBarColors.PanningBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarPanningBackgroundBrush" Color="#FFCDCDCD" Core:ColorKey.Id="ChartsScrollBarColors.PanningBackground.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarTrackBackgroundBrush" Color="#FFE8E8E8" Core:ColorKey.Id="ChartsScrollBarColors.TrackBackground.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarButtonForegroundHoverBrush" Color="#FF969696" Core:ColorKey.Id="ChartsScrollBarColors.ButtonForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ChartsScrollBarButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="ChartsScrollBarColors.ButtonForeground.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

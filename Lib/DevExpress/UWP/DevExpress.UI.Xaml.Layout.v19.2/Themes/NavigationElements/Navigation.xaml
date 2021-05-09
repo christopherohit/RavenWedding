@@ -1,0 +1,285 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="using:DevExpress.Core"
+    xmlns:ve="using:DevExpress.UI.Xaml.Layout.VisualElements"
+    xmlns:local="using:DevExpress.UI.Xaml.Layout">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/Navigation.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <dx:UnsetValueConverter x:Key="UnsetValueConverter"/>
+
+    <Style x:Key="BasicTextStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}"/>
+        <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+        <Setter Property="TextTrimming" Value="WordEllipsis"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Typography.StylisticSet20" Value="True"/>
+        <Setter Property="Typography.DiscretionaryLigatures" Value="True"/>
+        <Setter Property="Typography.CaseSensitiveForms" Value="True"/>
+    </Style>
+
+    <Style x:Key="BaselineTextStyle" TargetType="TextBlock" BasedOn="{StaticResource BasicTextStyle}">
+        <Setter Property="LineHeight" Value="20"/>
+        <!-- Properly align text along its baseline -->
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TranslateTransform X="-1" Y="4"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="HeaderTextStyleNormal" TargetType="TextBlock" BasedOn="{StaticResource BaselineTextStyle}">
+        <Setter Property="FontSize" Value="56"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="LineHeight" Value="40"/>
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TranslateTransform X="-2" Y="8"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="HeaderTextStyleSnapped" TargetType="TextBlock" BasedOn="{StaticResource BaselineTextStyle}">
+        <Setter Property="FontSize" Value="28"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="LineHeight" Value="20"/>
+    </Style>
+    <Style x:Key="PageHeaderTextStyleNormal" TargetType="TextBlock" BasedOn="{StaticResource HeaderTextStyleNormal}">
+        <Setter Property="TextWrapping" Value="NoWrap"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="Margin" Value="0,0,30,40"/>
+    </Style>
+    <Style x:Key="PageHeaderTextStyleSnapped" TargetType="TextBlock" BasedOn="{StaticResource HeaderTextStyleSnapped}">
+        <Setter Property="TextWrapping" Value="NoWrap"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="Margin" Value="0,0,24,20"/>
+    </Style>
+    <DataTemplate x:Key="PageAdornerControlHeaderTemplateNormal">
+        <TextBlock Text="{Binding}" Style="{StaticResource PageHeaderTextStyleNormal}"/>
+    </DataTemplate>
+    <DataTemplate x:Key="PageAdornerControlHeaderTemplateSnapped">
+        <TextBlock Text="{Binding}" Style="{StaticResource PageHeaderTextStyleSnapped}"/>
+    </DataTemplate>
+
+    <Style TargetType="local:PageAdornerControl">
+        <Setter Property="NormalHeaderTemplate" Value="{StaticResource PageAdornerControlHeaderTemplateNormal}"/>
+        <Setter Property="SnappedHeaderTemplate" Value="{StaticResource PageAdornerControlHeaderTemplateSnapped}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PageAdornerControl">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition x:Name="firstRow" Height="140"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <local:BackButton x:Name="PART_BackButton" 
+                                                  Command="{Binding GoBackCommand, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                <ContentPresenter x:Name="PART_Header" Grid.Column="1" 
+                                                  Content="{Binding Header, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource UnsetValueConverter}}" 
+                                                  ContentTemplate="{TemplateBinding ActualHeaderTemplate}" 
+                                                  ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"/>
+                            </Grid>
+                            <ContentPresenter x:Name="PART_Content" Grid.Row="1"/>
+                        </Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="BackButtonStates">
+                                <VisualState x:Name="BackButtonVisible" />
+                                <VisualState x:Name="BackButtonHidden">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BackButton" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Header" Storyboard.TargetProperty="Margin">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="36,0,0,0"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="ApplicationViewStates">
+                                <VisualState x:Name="FullScreenLandscape"/>
+                                <VisualState x:Name="FullScreenPortrait"/>
+                                <VisualState x:Name="Snapped">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="firstRow" Storyboard.TargetProperty="Height">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="80"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BackButton" Storyboard.TargetProperty="Margin">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="12,6,12,6"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Filled"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="local:BackButton">
+        <Setter Property="MinWidth" Value="0"/>
+        <Setter Property="Width" Value="48"/>
+        <Setter Property="Height" Value="48"/>
+        <Setter Property="Margin" Value="36,0,36,36"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="FontSize" Value="56"/>
+        <Setter Property="AutomationProperties.AutomationId" Value="BackButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Back"/>
+        <Setter Property="AutomationProperties.ItemType" Value="Navigation Button"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid x:Name="RootGrid">
+                        <Grid Margin="-1,-16,0,0">
+                            <TextBlock x:Name="BackgroundGlyph" Text="&#xE0A8;" Foreground="{ThemeResource DXBackButtonBackgroundThemeBrush}"/>
+                            <TextBlock x:Name="NormalGlyph" Text="&#xE071;" Foreground="{ThemeResource DXBackButtonForegroundThemeBrush}"/>
+                            <TextBlock x:Name="ArrowGlyph" Text="&#xE0A6;" Foreground="{ThemeResource DXBackButtonPressedForegroundThemeBrush}" Opacity="0"/>
+                        </Grid>
+                        <Rectangle
+                            x:Name="FocusVisualWhite"
+                            IsHitTestVisible="False"
+                            Stroke="{ThemeResource DXBackButtonFocusVisualWhiteStrokeThemeBrush}"
+                            StrokeEndLineCap="Square"
+                            StrokeDashArray="1,1"
+                            Opacity="0"
+                            StrokeDashOffset="1.5"/>
+                        <Rectangle
+                            x:Name="FocusVisualBlack"
+                            IsHitTestVisible="False"
+                            Stroke="{ThemeResource DXBackButtonFocusVisualBlackStrokeThemeBrush}"
+                            StrokeEndLineCap="Square"
+                            StrokeDashArray="1,1"
+                            Opacity="0"
+                            StrokeDashOffset="0.5"/>
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundGlyph" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXBackButtonPointerOverBackgroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalGlyph" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXBackButtonPointerOverForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundGlyph" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXBackButtonForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="ArrowGlyph"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0"/>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="NormalGlyph"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0"
+                                            Duration="0"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualWhite"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0"/>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualBlack"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="local:HyperlinkNavigationButton">
+        <Setter Property="Foreground" Value="{ThemeResource HyperlinkNavigationButtonForegroundBrush}" />
+        <Setter Property="BorderThickness" Value="{ThemeResource HyperlinkButtonBorderThemeThickness}" />
+        <Setter Property="Padding" Value="0,6,0,6" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+        <Setter Property="UseSystemFocusVisuals" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HyperlinkButton">
+                    <Grid x:Name="RootGrid">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource HyperlinkNavigationButtonForegroundHoverBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource HyperlinkNavigationButtonForegroundPressedBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource HyperlinkNavigationButtonForegroundDisabledBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter x:Name="ContentPresenter"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Content="{TemplateBinding Content}"
+                                ContentTransitions="{TemplateBinding ContentTransitions}"
+                                ContentTemplate="{TemplateBinding ContentTemplate}"
+                                Padding="{TemplateBinding Padding}"
+                                HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                AutomationProperties.AccessibilityView="Raw"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

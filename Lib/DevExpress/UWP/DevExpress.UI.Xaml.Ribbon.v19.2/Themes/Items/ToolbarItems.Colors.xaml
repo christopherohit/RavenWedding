@@ -1,0 +1,411 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFlyoutBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FlyoutBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFlyoutBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FlyoutBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemIconFillBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushSelectedPressed.Light"/>
+
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarMenuButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundSelectedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundSelectedHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundSelectedPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconFillBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundSelectedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundSelectedHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundSelectedPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillSelectedPressed.Light"/>
+
+            <SolidColorBrush x:Key="ToolbarToggleButtonContentBorderCheckedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.ContentBorderBrushChecked.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonContentBackgroundCheckedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.ContentBackgroundChecked.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonContentBackgroundCheckedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.ContentBackgroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarToggleButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundIndeterminatePressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundIndeterminateHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundCheckedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundIndeterminatePressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundIndeterminateHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundCheckedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundChecked.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundCheckedHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundCheckedPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundCheckedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillChecked.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundCheckedHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundCheckedPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconFillBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarToggleButtonColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderIndeterminateHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderIndeterminatePressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderCheckedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderCheckedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushCheckedPressed.Light"/>
+
+
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBackgroundHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBackgroundPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBorderBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBorderHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBorderPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarRadioButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarRadioButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonIconForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarRadioButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonIconForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarRadioButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonIconFillBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarRadioButtonColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarRadioButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarRadioButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarRadioButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarRadioButtonColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarRadioButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarRadioButtonColors.FocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="ToolbarRadioButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.FocusVisualBackground.Light"/>
+
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BackgroundSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BackgroundSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BackgroundSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonContentBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ContentBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonContentBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ContentBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonArrowBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ArrowBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonArrowBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ArrowBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonIconFillBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonForegroundBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushSelected.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushSelectedHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushSelectedPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarSplitButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.FocusVisualStroke.Light"/>
+
+            <SolidColorBrush x:Key="ToolbarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarButtonColors.Background.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonBackgroundPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarButtonColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonBackgroundHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarButtonColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonIconForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarButtonColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonIconForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarButtonColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonIconFill" Color="#FF0078D7" Core:ColorKey.Id="ToolbarButtonColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonForeground" Color="#FF0078D7" Core:ColorKey.Id="ToolbarButtonColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonForegroundPressedBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarButtonColors.ForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonForegroundHoverBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarButtonColors.ForegroundHovered.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarButtonColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarButtonColors.FocusVisualBackground.Light"/>
+            <SolidColorBrush x:Key="ToolbarButtonFocusVisualStrokeBrush" Color="#FF0078D7" Core:ColorKey.Id="ToolbarButtonColors.FocusVisualStroke.Light"/>
+
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+           
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundSelectedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFlyoutBackgroundBrush" Color="#FF424242" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FlyoutBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFlyoutBorderBrush" Color="#FF737373" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FlyoutBorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemIconFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundSelectedHoverBrush" Color="#70FFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBackgroundSelectedPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarGroupDropDownItemBorderSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarGroupDropDownItemColors.BorderBrushSelectedPressed.Default" />
+            
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundSelectedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarMenuButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundSelectedHoverBrush" Color="#70FFFFFF" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBackgroundSelectedPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarMenuButtonColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonBorderSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarMenuButtonColors.BorderBrushSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundSelectedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundSelectedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundSelectedHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundSelectedHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonIconForegroundSelectedPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.IconFillSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarMenuButtonForegroundSelectedPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarMenuButtonColors.ForegroundSelectedPressed.Default" />
+
+            <SolidColorBrush x:Key="ToolbarToggleButtonContentBackgroundCheckedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.ContentBackgroundChecked.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarToggleButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundIndeterminatePressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundIndeterminatePressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundIndeterminatePressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundIndeterminateHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonContentBackgroundCheckedHoverBrush" Color="#70FFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.ContentBackgroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBackgroundCheckedPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.BackgroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderIndeterminateHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderIndeterminatePressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonContentBorderCheckedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarToggleButtonColors.ContentBorderBrushChecked.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderCheckedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonBorderCheckedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarToggleButtonColors.BorderBrushCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundIndeterminateHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundIndeterminateHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundCheckedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundChecked.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundCheckedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillChecked.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundCheckedHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundCheckedHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillCheckedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonForegroundCheckedPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.ForegroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarToggleButtonIconForegroundCheckedPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarToggleButtonColors.IconFillCheckedPressed.Default" />
+            
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBackgroundBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarRadioButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonIconForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarRadioButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarRadioButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarRadioButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonIconFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarRadioButtonColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarRadioButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarRadioButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBackgroundHoverBrush" Color="#70FFFFFF" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarRadioButtonColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBorderBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBorderHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonSelectionBorderPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarRadioButtonColors.SelectionBorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarRadioButtonColors.ForegroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonIconForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarRadioButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarRadioButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarRadioButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarRadioButtonColors.BorderBrush.Default" />
+            
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundSelectedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BackgroundSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonContentBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ContentBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonArrowBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ArrowBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonContentBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ContentBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonArrowBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.ArrowBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonIconFillBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonForegroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundSelectedHoverBrush" Color="#70FFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BackgroundSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBackgroundSelectedPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BackgroundSelectedPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderHoverBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderPressedBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderSelectedBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushSelected.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderSelectedHoverBrush" Color="#FFB3D6F2" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushSelectedHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarSplitButtonBorderSelectedPressedBrush" Color="#FF90C0E6" Core:ColorKey.Id="ToolbarSplitButtonBackgroundColors.BorderBrushSelectedPressed.Default" />
+           
+            <SolidColorBrush x:Key="ToolbarButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="ToolbarButtonColors.Background.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonFocusVisualBackgroundBrush" Color="#FFCCE3F5" Core:ColorKey.Id="ToolbarButtonColors.FocusVisualBackground.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonIconForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarButtonColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonForegroundPressedBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarButtonColors.ForegroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonFocusVisualStrokeBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarButtonColors.FocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonIconFill" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarButtonColors.IconFill.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonForeground" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarButtonColors.Foreground.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonBackgroundPressedBrush" Color="#60FFFFFF" Core:ColorKey.Id="ToolbarButtonColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonBackgroundHoverBrush" Color="#30FFFFFF" Core:ColorKey.Id="ToolbarButtonColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonBorderBrush" Color="#FFFFFFFF" Core:ColorKey.Id="ToolbarButtonColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonIconForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarButtonColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="ToolbarButtonForegroundHoverBrush" Color="#FFDCDCDC" Core:ColorKey.Id="ToolbarButtonColors.ForegroundHovered.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Notifications.Web.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Notifications.Web">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the ASP.NET Notifications Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Notifications.Web.WebNotificationsController">
+      <summary>
+        <para>Inherits from the <see cref="T:DevExpress.ExpressApp.Notifications.NotificationsController"/> to implement ASP.NET specific behavior.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Notifications.Web.WebNotificationsController.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Notifications.Web.WebNotificationsController"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Notifications.Web.WebNotificationsController.IsViewShowing">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Notifications.Web.WebNotificationsController.RefreshNotifications">
+      <summary>
+        <para>Refreshes the notification list.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

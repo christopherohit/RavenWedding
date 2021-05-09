@@ -1,0 +1,40 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:Core="using:DevExpress.Core">
+
+    <ResourceDictionary x:Key="Win8">
+    </ResourceDictionary>
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="DialogContentForegroundThemeBrush" Color="#FFFFFFFF"   Core:ColorKey.Id="DialogContentControlColors.Foreground.Default" />
+            <SolidColorBrush x:Key="DialogContentBackgroundThemeBrush" Color="#FF515151"   Core:ColorKey.Id="DialogContentControlColors.Background.Default" />
+            <SolidColorBrush x:Key="DialogContentBorderBrush" Color="#FF1A1A1A"   Core:ColorKey.Id="DialogContentControlColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="DialogLayoutFadeThemeBrush" Color="#BE000000"  Core:ColorKey.Id="DialogContentControlColors.Fade.Default" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="DialogContentForegroundThemeBrush" Color="#FF3D3D3D" Core:ColorKey.Id="DialogContentControlColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="DialogContentBackgroundThemeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="DialogContentControlColors.Background.Light"/>
+            <SolidColorBrush x:Key="DialogContentBorderBrush" Color="#FF106EBE"   Core:ColorKey.Id="DialogContentControlColors.BorderBrush.Light" />
+            <SolidColorBrush x:Key="DialogLayoutFadeThemeBrush" Color="#BEFFFFFF" Core:ColorKey.Id="DialogContentControlColors.Fade.Light"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

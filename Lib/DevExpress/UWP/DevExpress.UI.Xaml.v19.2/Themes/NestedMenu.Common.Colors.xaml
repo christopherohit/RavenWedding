@@ -1,0 +1,53 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            
+            <SolidColorBrush x:Key="NestedMenuBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="NestedMenuColors.Background.Light"/>
+            <SolidColorBrush x:Key="NestedMenuForegroundBrush" Color="#AF000000" Core:ColorKey.Id="NestedMenuColors.Foreground.Light"/>
+            <SolidColorBrush x:Key="NestedMenuBorderBrush" Color="#FFD2D2D2" Core:ColorKey.Id="NestedMenuColors.BorderBrush.Light"/>
+            <SolidColorBrush x:Key="NestedMenuHeaderBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="NestedMenuColors.HeaderBackground.Light"/>
+
+            <SolidColorBrush x:Key="NestedMenuBackButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="NestedMenuColors.BackButtonBackground.Light"/>
+            <SolidColorBrush x:Key="NestedMenuBackButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="NestedMenuColors.BackButtonBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="NestedMenuBackButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="NestedMenuColors.BackButtonBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="NestedMenuBackButtonForegroundBrush" Color="#FF505050" Core:ColorKey.Id="NestedMenuColors.BackButtonForeground.Light"/>
+            <SolidColorBrush x:Key="NestedMenuBackButtonFocusVisualStrokeBrush" Color="#FF505050" Core:ColorKey.Id="NestedMenuColors.BackButtonFocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="NestedMenuBackButtonSeparatorBrush" Color="#19000000"  Core:ColorKey.Id="NestedMenuColors.BackButtonSeparator.Light"/>
+            <SolidColorBrush x:Key="NestedMenuBackButtonFocusVisualBackgroundBrush" Color="#15000000"  Core:ColorKey.Id="NestedMenuColors.BackButtonFocusVisualBackground.Light"/>
+        
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            
+            <SolidColorBrush x:Key="NestedMenuBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="NestedMenuColors.Background.Default" />
+            <SolidColorBrush x:Key="NestedMenuForegroundBrush" Color="#AF000000" Core:ColorKey.Id="NestedMenuColors.Foreground.Default" />
+            <SolidColorBrush x:Key="NestedMenuBorderBrush" Color="#FFA2A2A2" Core:ColorKey.Id="NestedMenuColors.BorderBrush.Default" />
+            <SolidColorBrush x:Key="NestedMenuHeaderBackgroundBrush" Color="#FFDCDCDC" Core:ColorKey.Id="NestedMenuColors.HeaderBackground.Default" />
+
+            <SolidColorBrush x:Key="NestedMenuBackButtonBackgroundBrush" Color="Transparent" Core:ColorKey.Id="NestedMenuColors.BackButtonBackground.Default" />
+            <SolidColorBrush x:Key="NestedMenuBackButtonBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="NestedMenuColors.BackButtonBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="NestedMenuBackButtonBackgroundPressedBrush" Color="#60000000" Core:ColorKey.Id="NestedMenuColors.BackButtonBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="NestedMenuBackButtonForegroundBrush" Color="#FF101010" Core:ColorKey.Id="NestedMenuColors.BackButtonForeground.Default" />
+            <SolidColorBrush x:Key="NestedMenuBackButtonFocusVisualStrokeBrush" Color="#FF101010" Core:ColorKey.Id="NestedMenuColors.BackButtonFocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="NestedMenuBackButtonSeparatorBrush" Color="#19000000" Core:ColorKey.Id="NestedMenuColors.BackButtonSeparator.Default" />
+            <SolidColorBrush x:Key="NestedMenuBackButtonFocusVisualBackgroundBrush" Color="#15000000" Core:ColorKey.Id="NestedMenuColors.BackButtonFocusVisualBackground.Default" />
+            
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+

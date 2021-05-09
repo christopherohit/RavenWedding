@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.AuditTrail.v19.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.AuditTrail">
+      <summary>
+        <para>Contains interfaces and classes that are specific to the Audit Trail Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.AuditTrail.AuditTrailModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.AuditTrail.v<span id="macro" data-macro-template="xx.x">19.2</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.AuditTrail.AuditTrailModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.AuditTrail.AuditTrailModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.AuditTrail.AuditTrailModule.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+      <summary>
+        <para>Registers the ModelAuditOperationTypeLocalizationGeneratorUpdater Generator Updater.</para>
+      </summary>
+      <param name="updaters">A ModelNodesGeneratorUpdaters object providing access to the list of Generator Updaters.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.AuditTrail.AuditTrailModule.AuditDataItemPersistentType">
+      <summary>
+        <para>Specifies the business class used to persist auditing information in the database.</para>
+      </summary>
+      <value>The type of a business class used to persist auditing information in the database.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.AuditTrail.AuditTrailModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.AuditTrail.AuditTrailModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object which represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handles database updates for the <see cref="T:DevExpress.ExpressApp.AuditTrail.AuditTrailModule"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.AuditTrail.AuditTrailModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.AuditTrail.AuditTrailModule"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.</param>
+    </member>
+  </members>
+</doc>

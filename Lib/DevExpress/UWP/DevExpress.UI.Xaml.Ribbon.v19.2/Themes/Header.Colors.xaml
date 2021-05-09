@@ -1,0 +1,52 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="RibbonTitleTextEditForegroundBrush" Color="#FF000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBorderBrush" Color="#FF7A7A7A" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBorderBrush.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditDeleteButtonForegroundBrush" Color="#CC000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditDeleteButtonForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditForegroundFocusedBrush" Color="#FF000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditForegroundFocused.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBackgroundFocusedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBackgroundFocused.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditHighlightBrush" Color="#FF207ECE" Core:ColorKey.Id="RibbonControlColors.TitleTextEditHighlight.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditDeleteButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleTextEditDeleteButtonForegroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBorderHoverBrush" Color="#FF171717" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBorderBrushHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditPlaceholderFocusedForegroundBrush" Color="#66000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditPlaceholderFocusedForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditPlaceholderForegroundBrush" Color="#99000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditPlaceholderForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitlePopupContentBackgroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.FlyoutTitleBackground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleForeground.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="RibbonControlColors.TitleBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="RibbonControlColors.TitleBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlFocusVisualStrokeBrush" Color="#FFF3F3F3" Core:ColorKey.Id="RibbonControlColors.TitleFocusVisualStroke.Light"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleFocusVisualBackground.Light"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="RibbonTitleTextEditForegroundBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleTextEditForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBorderBrush" Color="#FF858585" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBorderBrush.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditDeleteButtonForegroundBrush" Color="#CC000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditDeleteButtonForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditForegroundFocusedBrush" Color="#FF000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditForegroundFocused.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBackgroundBrush" Color="#FF000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBackground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBackgroundFocusedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBackgroundFocused.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditHighlightBrush" Color="#FF4A4A4A" Core:ColorKey.Id="RibbonControlColors.TitleTextEditHighlight.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditDeleteButtonForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleTextEditDeleteButtonForegroundPressed.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditBorderHoverBrush" Color="#FFF2F2F2" Core:ColorKey.Id="RibbonControlColors.TitleTextEditBorderBrushHovered.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditPlaceholderFocusedForegroundBrush" Color="#66000000" Core:ColorKey.Id="RibbonControlColors.TitleTextEditPlaceholderFocusedForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonTitleTextEditPlaceholderForegroundBrush" Color="#99FFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleTextEditPlaceholderForeground.Default"/>
+            <SolidColorBrush x:Key="RibbonFlyoutTitlePopupContentBackgroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonControlColors.FlyoutTitleBackground.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleForegroundBrush" Color="#FFA2A2A2" Core:ColorKey.Id="RibbonControlColors.TitleForeground.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="RibbonControlColors.TitleBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="RibbonControlColors.TitleBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlFocusVisualStrokeBrush" Color="#FFFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleFocusVisualStroke.Default" />
+            <SolidColorBrush x:Key="RibbonFlyoutTitleControlFocusVisualBackgroundBrush" Color="#2AFFFFFF" Core:ColorKey.Id="RibbonControlColors.TitleFocusVisualBackground.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+

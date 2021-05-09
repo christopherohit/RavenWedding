@@ -1,0 +1,195 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="using:DevExpress.Core">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterIconForegroundBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterIconFill.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterIconFillHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterIconFillPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="HelpPaneButtonMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileIconForegroundPressedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneButtonMobileColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneButtonMobileColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneButtonMobileColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileIconForegroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneButtonMobileColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="HelpPaneButtonMobileIconForegroundHoverBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneButtonMobileColors.IconFillHovered.Light"/>
+            
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFill.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundIndeterminateHoverBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundIndeterminatePressedBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundCheckedBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillChecked.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundCheckedHoverBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundCheckedPressedBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundIndeterminatePressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundCheckedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundChecked.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundCheckedHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundCheckedPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundIndeterminateHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundIndeterminatePressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundCheckedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundChecked.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundCheckedHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundCheckedPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundCheckedPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundIndeterminatePressedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillIndeterminatePressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundPressedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundHoverBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundIndeterminateHoverBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillIndeterminateHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundCheckedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillChecked.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundCheckedHoverBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillCheckedHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundCheckedPressedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillCheckedPressed.Light"/>
+            
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterIconForegroundBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterIconFill.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterIconForegroundHoverBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterIconFillHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterIconForegroundPressedBrush" Color="#FF505050" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterIconFillPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterSelectionBackgroundBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterSelectionBackground.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterSelectionBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterSelectionBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterSelectionBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterSelectionBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.Background.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileIconForegroundPressedBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.IconFillPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.BackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.BackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileSelectionBackgroundBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.SelectionBackground.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileSelectionBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.SelectionBackgroundHovered.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileSelectionBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.SelectionBackgroundPressed.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileIconForegroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.IconFill.Light"/>
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileIconForegroundHoverBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.IconFillHovered.Light"/>
+
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterIconForegroundBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterIconFill.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterIconFillHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterIconFillPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileFooterBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneButtonMobileColors.FooterBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="HelpPaneButtonMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileIconForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneButtonMobileColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneButtonMobileColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneButtonMobileColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileIconForegroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneButtonMobileColors.IconFill.Default" />
+            <SolidColorBrush x:Key="HelpPaneButtonMobileIconForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneButtonMobileColors.IconFillHovered.Default" />
+            
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFill.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundIndeterminateHoverBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundIndeterminatePressedBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundCheckedBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillChecked.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundCheckedHoverBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillCheckedHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterIconForegroundCheckedPressedBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterIconFillCheckedPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundIndeterminateHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundIndeterminatePressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundCheckedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundChecked.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundCheckedHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileFooterBackgroundCheckedPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.FooterBackgroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundIndeterminatePressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundIndeterminateHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundIndeterminatePressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundIndeterminatePressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundCheckedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundChecked.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundCheckedHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundCheckedHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileBackgroundCheckedPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.BackgroundCheckedPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFill.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundIndeterminateHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillIndeterminateHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundCheckedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillChecked.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundCheckedHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillCheckedHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneToggleButtonMobileIconForegroundCheckedPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneToggleButtonMobileColors.IconFillCheckedPressed.Default" />
+            
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterIconForegroundBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterIconFill.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterIconForegroundHoverBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterIconFillHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterIconForegroundPressedBrush" Color="#FF101010" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterIconFillPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterSelectionBackgroundBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterSelectionBackground.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterSelectionBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterSelectionBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileFooterSelectionBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.FooterSelectionBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileBackgroundBrush" Color="Transparent" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.Background.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileIconForegroundPressedBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.IconFillPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileBackgroundHoverBrush" Color="#FF272727" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.BackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileBackgroundPressedBrush" Color="#FF313131" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.BackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileSelectionBackgroundBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.SelectionBackground.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileSelectionBackgroundHoverBrush" Color="#30000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.SelectionBackgroundHovered.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileSelectionBackgroundPressedBrush" Color="#57000000" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.SelectionBackgroundPressed.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileIconForegroundBrush" Color="#FFF3F3F3" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.IconFill.Default" />
+            <SolidColorBrush x:Key="HelpPaneRadioButtonMobileIconForegroundHoverBrush" Color="#FFFFFFFF" Core:ColorKey.Id="HelpPaneRadioButtonMobileColors.IconFillHovered.Default" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
