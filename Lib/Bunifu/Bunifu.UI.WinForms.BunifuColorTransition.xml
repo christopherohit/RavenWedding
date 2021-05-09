@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForms.BunifuColorTransition</name>
+    </assembly>
+    <members>
+        <member name="T:BunifuColorTransition.BunifuColorTransition">
+            <summary>
+            Class BunifuColorTransition.
+            </summary>
+            <seealso cref="T:System.ComponentModel.Component" />
+        </member>
+        <member name="M:BunifuColorTransition.BunifuColorTransition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:BunifuColorTransition.BunifuColorTransition" /> class.
+            </summary>
+        </member>
+        <member name="M:BunifuColorTransition.BunifuColorTransition.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BunifuColorTransition.BunifuColorTransition" /> class.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="E:BunifuColorTransition.BunifuColorTransition.OnValueChange">
+            <summary>
+            Occurs when [on value change].
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition._ProgessValue">
+            <summary>
+            The progess value
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition._startcolor">
+            <summary>
+            The startcolor
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition._endcolor">
+            <summary>
+            The endcolor
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition._value">
+            <summary>
+            The value
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition.colorArray">
+            <summary>
+            The color array
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition._interval">
+            <summary>
+            The interval
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition._enableAutoTransitions">
+            <summary>
+            The enable automatic transitions
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition._control">
+            <summary>
+            The control
+            </summary>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.ProgessValue">
+            <summary>
+            Gets the progess value.
+            </summary>
+            <value>The progess value.</value>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.StartColor">
+            <summary>
+            Gets or sets the start color.
+            </summary>
+            <value>The start color.</value>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.EndColor">
+            <summary>
+            Gets or sets the end color.
+            </summary>
+            <value>The end color.</value>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.ColorArray">
+            <summary>
+            Gets or sets the color array.
+            </summary>
+            <value>The color array.</value>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.Interval">
+            <summary>
+            Gets or sets the interval.
+            </summary>
+            <value>The interval.</value>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.AutoTransition">
+            <summary>
+            Gets or sets a value indicating whether [automatic transition].
+            </summary>
+            <value><c>true</c> if [automatic transition]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:BunifuColorTransition.BunifuColorTransition.TransitionControl">
+            <summary>
+            Gets or sets the control to apply transition.
+            </summary>
+            <value>The transition control.</value>
+        </member>
+        <member name="M:BunifuColorTransition.BunifuColorTransition.Refresh">
+            <summary>
+            Refreshes this instance.
+            </summary>
+        </member>
+        <member name="M:BunifuColorTransition.BunifuColorTransition.GetColorScale(System.Int32,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Occurs when [on value change].
+            </summary>
+            <param name="Passentage">The passentage.</param>
+            <param name="startColor">The start color.</param>
+            <param name="endColor">The end color.</param>
+            <returns>Color.</returns>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition.curcolor">
+            <summary>
+            The curcolor
+            </summary>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition.loop">
+            <summary>
+            The loop
+            </summary>
+        </member>
+        <member name="M:BunifuColorTransition.BunifuColorTransition.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the timer1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:BunifuColorTransition.BunifuColorTransition.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BunifuColorTransition.BunifuColorTransition.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BunifuColorTransition.BunifuColorTransition.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

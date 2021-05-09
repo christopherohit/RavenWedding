@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForms.BunifuCircleProgress</name>
+    </assembly>
+    <members>
+        <member name="T:Bunifu.UI.WinForms.BunifuCircleProgress">
+            <summary>
+            Class BunifuCircleProgress.
+            </summary>
+            <seealso cref="T:System.Windows.Forms.ProgressBar" />
+            <seealso cref="T:System.Windows.Forms.Control" />
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bunifu.UI.WinForms.BunifuCircleProgress" /> class.
+            </summary>
+            
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Handles the <see cref="E:Paint" /> event.
+            </summary>
+            <param name="pe">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._Thickness">
+            <summary>
+            The thickness
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._Thickness2">
+            <summary>
+            The thickness2
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._progresscolor">
+            <summary>
+            The progresscolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._progressbackcolor">
+            <summary>
+            The progressbackcolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._animated">
+            <summary>
+            The progress
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress.angle">
+            <summary>
+            The angle
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._interval">
+            <summary>
+            The interval
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._SubScripttext">
+            <summary>
+            The SubScripttext
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._SuperScripttext">
+            <summary>
+            The SuperScripttext
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._SubScriptcolor">
+            <summary>
+            The SubScriptcolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._SuperScriptcolor">
+            <summary>
+            The SuperScriptcolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._secondaryfont">
+            <summary>
+            The secondaryfont
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress.textmargin">
+            <summary>
+            The textmargin
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._superscripmargin">
+            <summary>
+            The superscripmargin
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._subscriptmargin">
+            <summary>
+            The subscriptmargin
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._isPercentage">
+            <summary>
+            The is percentage
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress._circleMargin">
+            <summary>
+            The circle margin
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.CircleMargin">
+            <summary>
+            Gets or sets the circle margin.
+            </summary>
+            <value>The circle margin.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.SubScriptText">
+            <summary>
+            Gets or sets the SubScript text.
+            </summary>
+            <value>The SubScript text.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.SubScriptColor">
+            <summary>
+            Gets or sets the color of the SubScript.
+            </summary>
+            <value>The color of the SubScript.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.SecondaryFont">
+            <summary>
+            Gets or sets the secondary font.
+            </summary>
+            <value>The secondary font.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.SuperScriptText">
+            <summary>
+            Gets or sets the SuperScript text.
+            </summary>
+            <value>The SuperScript text.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.SuperScriptColor">
+            <summary>
+            Gets or sets the color of the SuperScript.
+            </summary>
+            <value>The color of the SuperScript.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.TextMargin">
+            <summary>
+            Gets or sets the text margin.
+            </summary>
+            <value>The text margin.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.SuperScriptMargin">
+            <summary>
+            Gets or sets the SuperScript margin.
+            </summary>
+            <value>The SuperScript margin.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.SubScriptMargin">
+            <summary>
+            Gets or sets the SubScript margin.
+            </summary>
+            <value>The SubScript margin.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.ProgressColor">
+            <summary>
+            Gets or sets the color of the progress color.
+            </summary>
+            <value>The color of the progress.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.ProgressBackColor">
+            <summary>
+            Gets or sets the color of the progress background color.
+            </summary>
+            <value>The color of the progress back.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.LineThickness">
+            <summary>
+            Gets or sets the line thickness.
+            </summary>
+            <value>The line thickness.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.LineProgressThickness">
+            <summary>
+            Gets or sets the line progress thickness.
+            </summary>
+            <value>The line progress thickness.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.Text">
+            <summary>
+            Gets or sets the text in the <see cref="!:CircularProgress" />.
+            </summary>
+            <value>The text.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.AnimationInterval">
+            <summary>
+            Gets or sets the animation interval.
+            </summary>
+            <value>The animation interval.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.Animated">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Bunifu.UI.WinForms.BunifuCircleProgress" /> is animated.
+            </summary>
+            <value><c>true</c> if animated; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.AnimationSpeed">
+            <summary>
+            Gets or sets the animation speed.
+            </summary>
+            <value>The animation speed.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuCircleProgress.IsPercentage">
+            <summary>
+            Gets or sets a value indicating whether this instance is percentage.
+            </summary>
+            <value><c>true</c> if this instance is percentage; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChanged">
+            <summary>
+            Occurs when [progress changed].
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.Calculate(System.Int32)">
+            <summary>
+            Calculates the specified value.
+            </summary>
+            <param name="val">The value.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.Call_Invoke">
+            <summary>
+            Calls the invoke.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.RenderProgress(System.Int32,System.Drawing.Graphics)">
+            <summary>
+            Renders the progress.
+            </summary>
+            <param name="v">The v.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.DrawSText(System.Drawing.Graphics)">
+            <summary>
+            Draws the s text.
+            </summary>
+            <param name="g">The g.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.AddPoint(System.Drawing.PointF,System.Int32)">
+            <summary>
+            Adds the point.
+            </summary>
+            <param name="p">The p.</param>
+            <param name="v">The v.</param>
+            <returns>PointF.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.AddSize(System.Drawing.SizeF,System.Int32)">
+            <summary>
+            Adds the size.
+            </summary>
+            <param name="s">The s.</param>
+            <param name="v">The v.</param>
+            <returns>SizeF.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the timer1 control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.BunifuCircleProgress_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Resize event of the BunifuCircleProgress control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.BunifuCircleProgress_FontChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the FontChanged event of the BunifuCircleProgress control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.Init">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuCircleProgress.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuCircleProgress.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

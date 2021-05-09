@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForms.BunifuRadioButton</name>
+    </assembly>
+    <members>
+        <member name="T:Bunifu.UI.WinForms.BunifuRadioButton">
+            <summary>
+            Class BunifuRadioButton.
+            </summary>
+            <seealso cref="T:System.Windows.Forms.Control" />
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bunifu.UI.WinForms.BunifuRadioButton"/> class.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Handles the <see cref="E:Paint" /> event.
+            </summary>
+            <param name="pe">The <see cref="T:System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuRadioButton._checked">
+            <summary>
+            The checked
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuRadioButton._color">
+            <summary>
+            The color
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuRadioButton._outlinecolor">
+            <summary>
+            The outlinecolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuRadioButton.ParentControl">
+            <summary>
+            The parent control
+            </summary>
+        </member>
+        <member name="E:Bunifu.UI.WinForms.BunifuRadioButton.CheckedChanged">
+            <summary>
+            Occurs when [checked changed].
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuRadioButton.Checked">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Bunifu.UI.WinForms.BunifuRadioButton" /> is checked.
+            </summary>
+            <value><c>true</c> if checked; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuRadioButton.RadioColor">
+            <summary>
+            Gets or sets the color of the radio.
+            </summary>
+            <value>The color of the radio.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuRadioButton.OutlineColor">
+            <summary>
+            Gets or sets the color of the outline.
+            </summary>
+            <value>The color of the outline.</value>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuRadioButton._text">
+            <summary>
+            The text
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuRadioButton.Text">
+            <summary>
+            Gets or sets the text associated with this control.
+            </summary>
+            <value>The text.</value>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.drawRadio(System.Drawing.Graphics,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Draws the radio.
+            </summary>
+            <param name="_graphics">The graphics.</param>
+            <param name="_color">The color.</param>
+            <param name="_outline">The outline.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.checkControl(System.Object)">
+            <summary>
+            Checks the control.
+            </summary>
+            <param name="sender">The sender.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.Reset">
+            <summary>
+            Resets this instance.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.BunifuRadioButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the 1 event of the BunifuRadioButton_Click control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.BunifuRadioButton_ParentChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the ParentChanged event of the BunifuRadioButton control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuRadioButton.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuRadioButton.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

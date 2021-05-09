@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForm.BunifuShadowPanel</name>
+    </assembly>
+    <members>
+        <member name="P:Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel.PanelColor">
+            <summary>
+            Gets or sets the color of the panel.
+            </summary>
+            <value>
+            The color of the panel.
+            </value>
+        </member>
+        <member name="P:Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>
+            The color of the border.
+            </value>
+        </member>
+        <member name="P:Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel.ShadowTopLeftVisible">
+            <summary>
+            Gets or sets a value indicating whether top left Shaddow is visible.
+            </summary>
+            <value>
+              <c>true</c> if [shaddow top left visible]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel.ShadowDept">
+            <summary>
+            Gets the shadow dept.
+            </summary>
+            <value>
+            The shadow dept.
+            </value>
+        </member>
+    </members>
+</doc>

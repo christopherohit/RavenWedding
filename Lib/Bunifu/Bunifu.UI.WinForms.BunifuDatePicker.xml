@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForms.BunifuDatePicker</name>
+    </assembly>
+    <members>
+        <member name="T:Bunifu.UI.WinForms.BunifuDatePicker">
+            <summary>
+            Class BunifuDatePicker.
+            </summary>
+            <seealso cref="T:System.Windows.Forms.DateTimePicker" />
+            <seealso cref="T:System.Windows.Forms.ComboBox" />
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.GetWindowLong(System.IntPtr,System.Int32)">
+            <summary>
+            Gets the window long.
+            </summary>
+            <param name="handleToWindow">The handle to window.</param>
+            <param name="offsetToValueToGet">The offset to value to get.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.SetWindowLong(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            Sets the window long.
+            </summary>
+            <param name="h">The h.</param>
+            <param name="index">The index.</param>
+            <param name="value">The value.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.McmFirst">
+            <summary>
+            The MCM first
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.McmGetminreqrect">
+            <summary>
+            The MCM getminreqrect
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.McsWeeknumbers">
+            <summary>
+            The MCS weeknumbers
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.DtmFirst">
+            <summary>
+            The DTM first
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.DtmGetmonthcal">
+            <summary>
+            The DTM getmonthcal
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.SendMessage(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sends the message.
+            </summary>
+            <param name="h">The h.</param>
+            <param name="msg">The MSG.</param>
+            <param name="param">The parameter.</param>
+            <param name="data">The data.</param>
+            <returns>IntPtr.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.GetParent(System.IntPtr)">
+            <summary>
+            Gets the parent.
+            </summary>
+            <param name="h">The h.</param>
+            <returns>IntPtr.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.SendMessage(System.IntPtr,System.Int32,System.Int32,System.Drawing.Rectangle@)">
+            <summary>
+            Sends the message.
+            </summary>
+            <param name="h">The h.</param>
+            <param name="msg">The MSG.</param>
+            <param name="param">The parameter.</param>
+            <param name="data">The data.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.MoveWindow(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Moves the window.
+            </summary>
+            <param name="h">The h.</param>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <param name="repaint">if set to <c>true</c> [repaint].</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bunifu.UI.WinForms.BunifuDatePicker" /> class.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the <see cref="E:Paint" /> event.
+            </summary>
+            <param name="paintEvent">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._color">
+            <summary>
+            The color
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._radius">
+            <summary>
+            The radius
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._borderthickness">
+            <summary>
+            The borderthickness
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._filldatepicker">
+            <summary>
+            The filldatepicker
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._fillindicator">
+            <summary>
+            The fillindicator
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._indicatorLoc">
+            <summary>
+            The indicator loc
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._textalign">
+            <summary>
+            The textalign
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._datepickercolor">
+            <summary>
+            The datepickercolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._disabledcolor">
+            <summary>
+            The disabledcolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._icon">
+            <summary>
+            The icon
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._text">
+            <summary>
+            The text
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.ParentControl">
+            <summary>
+            The parent control
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker._height">
+            <summary>
+            The height
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.icoColor">
+            <summary>
+            The icon color
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.DisplayWeekNumbers">
+            <summary>
+            Gets or sets a value indicating whether [display week numbers].
+            </summary>
+            <value><c>true</c> if [display week numbers]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.Icon">
+            <summary>
+            Gets or sets the icon.
+            </summary>
+            <value>The icon.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.IconColor">
+            <summary>
+            Gets or sets the color of the icon.
+            </summary>
+            <value>The color of the icon.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.DisabledColor">
+            <summary>
+            Gets or sets the color of the disabled.
+            </summary>
+            <value>The color of the disabled.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.FillDatePicker">
+            <summary>
+            Gets or sets a value indicating whether [fill drop down].
+            </summary>
+            <value><c>true</c> if [fill drop down]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.DPHeight">
+            <summary>
+            Gets or sets a value indicating whether [fill drop down].
+            </summary>
+            <value><c>true</c> if [fill drop down]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.BunifuDatePicker.Indicator">
+            <summary>
+            Enum Indicator
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left">
+            <summary>
+            The left
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right">
+            <summary>
+            The right
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.Indicator.None">
+            <summary>
+            The none
+            </summary>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.BunifuDatePicker.TextAlign">
+            <summary>
+            Enum TextAlign
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left">
+            <summary>
+            The left
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Right">
+            <summary>
+            The right
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Center">
+            <summary>
+            The center
+            </summary>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness">
+            <summary>
+            Enum BorderThickness
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick">
+            <summary>
+            The thick
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin">
+            <summary>
+            The thin
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.DateBorderThickness">
+            <summary>
+            Gets or sets the border thickness.
+            </summary>
+            <value>The border thickness.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.DateTextAlign">
+            <summary>
+            Gets or sets the text align.
+            </summary>
+            <value>The text align.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.IconLocation">
+            <summary>
+            Gets or sets the indicator location.
+            </summary>
+            <value>The indicator location.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.BorderRadius">
+            <summary>
+            Gets or sets the border radius.
+            </summary>
+            <value>The border radius.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.Color">
+            <summary>
+            Gets or sets the color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.BackColor">
+            <summary>
+            Gets or sets a value indicating the background color of the <see cref="T:System.Windows.Forms.DateTimePicker" /> control.
+            </summary>
+            <value>The color of the back.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the control can respond to user interaction.
+            </summary>
+            <value><c>true</c> if enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.Font">
+            <summary>
+            Gets or sets the font of the text displayed by the control.
+            </summary>
+            <value>The font.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.ForeColor">
+            <summary>
+            Gets or sets the foreground color of the control.
+            </summary>
+            <value>The color of the fore.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.Height">
+            <summary>
+            Gets or sets the height of the control.
+            </summary>
+            <value>The height.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.Width">
+            <summary>
+            Gets or sets the width of the control.
+            </summary>
+            <value>The width.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.RightToLeftLayout">
+            <summary>
+            Gets or sets whether the contents of the <see cref="T:System.Windows.Forms.DateTimePicker" /> are laid out from right to left.
+            </summary>
+            <value><c>true</c> if [right to left layout]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.ShowUpDown">
+            <summary>
+            Gets or sets a value indicating whether a spin button control (also known as an up-down control) is used to adjust the date/time value.
+            </summary>
+            <value><c>true</c> if [show up down]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.Init">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.draw(System.Drawing.Graphics,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Draws the specified linecolor.
+            </summary>
+            <param name="graphics">The graphics.</param>
+            <param name="linecolor">The linecolor.</param>
+            <param name="forecolor">The forecolor.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.RoundedRectangle(System.Drawing.Rectangle,System.Int32,System.Int32)">
+            <summary>
+            Roundeds the rectangle.
+            </summary>
+            <param name="rectangle">The rectangle.</param>
+            <param name="cornerRadius">The corner radius.</param>
+            <param name="margin">The margin.</param>
+            <returns>GraphicsPath.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.DrawString(System.Drawing.Graphics,System.String,System.Drawing.Color)">
+            <summary>
+            Draws the string.
+            </summary>
+            <param name="graphics">The graphics.</param>
+            <param name="text">The text.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.ChangeColor(System.Drawing.Bitmap,System.Drawing.Color)">
+            <summary>
+            Changes the color.
+            </summary>
+            <param name="scrBitmap">The SCR bitmap.</param>
+            <param name="color">The color.</param>
+            <returns>Bitmap.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.BunifuDatePicker_ParentChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the ParentChanged event of the BunifuDatePicker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.heighLess">
+            <summary>
+            The heigh less
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.OnDropDown(System.EventArgs)">
+            <summary>
+            Handles the <see cref="E:DropDown" /> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.BunifuDatePicker_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Resize event of the BunifuDatePicker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.BunifuDatePicker_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handles the MouseDown event of the BunifuDatePicker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDatePicker.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.Properties.Resources.calendar">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

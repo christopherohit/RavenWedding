@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForms.BunifuDropdown</name>
+    </assembly>
+    <members>
+        <member name="T:Bunifu.UI.WinForms.BunifuDropdown">
+            <summary>
+            Class BunifuDropdown.
+            </summary>
+            <seealso cref="T:System.Windows.Forms.ComboBox" />
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.graphics">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bunifu.UI.WinForms.BunifuDropdown" /> class.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bunifu.UI.WinForms.BunifuDropdown" /> class.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the <see cref="E:Paint" /> event.
+            </summary>
+            <param name="pe">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._color">
+            <summary>
+            The color
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._radius">
+            <summary>
+            The radius
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._borderthickness">
+            <summary>
+            The borderthickness
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._filldropdown">
+            <summary>
+            The filldropdown
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._fillindicator">
+            <summary>
+            The fillindicator
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._direction">
+            <summary>
+            The direction
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._indicatorLoc">
+            <summary>
+            The indicator loc
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._textalign">
+            <summary>
+            The textalign
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._dropdowncolor">
+            <summary>
+            The dropdowncolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._itembackcolor">
+            <summary>
+            The itembackcolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._itembordercolor">
+            <summary>
+            The itembordercolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._disabledcolor">
+            <summary>
+            The disabledcolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._icon">
+            <summary>
+            The icon
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._text">
+            <summary>
+            The text
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.ParentControl">
+            <summary>
+            The parent control
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._highlightcolor">
+            <summary>
+            The highlightcolor
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown._itemforecolor">
+            <summary>
+            The itemforecolor
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Icon">
+            <summary>
+            Gets or sets the icon.
+            </summary>
+            <value>The icon.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.IndicatorColor">
+            <summary>
+            Gets or sets the color of the indicator.
+            </summary>
+            <value>The color of the indicator.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.ItemHighLightColor">
+            <summary>
+            Gets or sets the color of the item high light.
+            </summary>
+            <value>The color of the item high light.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.ItemForeColor">
+            <summary>
+            Gets or sets the color of the item fore.
+            </summary>
+            <value>The color of the item fore.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.DisabledColor">
+            <summary>
+            Gets or sets the color of the disabled.
+            </summary>
+            <value>The color of the disabled.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.FillDropDown">
+            <summary>
+            Gets or sets a value indicating whether [fill drop down].
+            </summary>
+            <value><c>true</c> if [fill drop down]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.FillIndicator">
+            <summary>
+            Gets or sets a value indicating whether [fill indicator].
+            </summary>
+            <value><c>true</c> if [fill indicator]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.BunifuDropdown.Directions">
+            <summary>
+            Enum Directions
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.Directions.Up">
+            <summary>
+            Up
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.Directions.Down">
+            <summary>
+            Down
+            </summary>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.BunifuDropdown.Indicator">
+            <summary>
+            Enum Indicator
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.Indicator.Left">
+            <summary>
+            The left
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right">
+            <summary>
+            The right
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.Indicator.None">
+            <summary>
+            The none
+            </summary>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.BunifuDropdown.TextAlign">
+            <summary>
+            Enum TextAlign
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left">
+            <summary>
+            The left
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Right">
+            <summary>
+            The right
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Center">
+            <summary>
+            The center
+            </summary>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.BunifuDropdown.BorderThickness">
+            <summary>
+            Enum BorderThickness
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick">
+            <summary>
+            The thick
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin">
+            <summary>
+            The thin
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Direction">
+            <summary>
+            Gets or sets the direction.
+            </summary>
+            <value>The direction.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.DropdownBorderThickness">
+            <summary>
+            Gets or sets the border thickness.
+            </summary>
+            <value>The border thickness.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.DropDownTextAlign">
+            <summary>
+            Gets or sets the text align.
+            </summary>
+            <value>The text align.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.IndicatorLocation">
+            <summary>
+            Gets or sets the indicator location.
+            </summary>
+            <value>The indicator location.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.BorderRadius">
+            <summary>
+            Gets or sets the border radius.
+            </summary>
+            <value>The border radius.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Color">
+            <summary>
+            Gets or sets the color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.ItemBorderColor">
+            <summary>
+            Gets or sets the color of the item border.
+            </summary>
+            <value>The color of the item border.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.ItemBackColor">
+            <summary>
+            Gets or sets the color of the item back.
+            </summary>
+            <value>The color of the item back.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.SelectedIndex">
+            <summary>
+            Gets or sets the index specifying the currently selected item.
+            </summary>
+            <value>The index of the selected.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the control can respond to user interaction.
+            </summary>
+            <value><c>true</c> if enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.ItemHeight">
+            <summary>
+            Gets or sets the height of an item in the combo box.
+            </summary>
+            <value>The height of the item.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Font">
+            <summary>
+            Gets or sets the font of the text displayed by the control.
+            </summary>
+            <value>The font.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Height">
+            <summary>
+            Gets or sets the height of the control.
+            </summary>
+            <value>The height.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Width">
+            <summary>
+            Gets or sets the width of the control.
+            </summary>
+            <value>The width.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.ForeColor">
+            <summary>
+            Gets or sets the foreground color of the control.
+            </summary>
+            <value>The color of the fore.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.Text">
+            <summary>
+            Gets or sets the text associated with this control.
+            </summary>
+            <value>The text.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.DropDownStyle">
+            <summary>
+            Gets or sets a value specifying the style of the combo box.
+            </summary>
+            <value>The drop down style.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.FlatStyle">
+            <summary>
+            Gets or sets the appearance of the <see cref="T:System.Windows.Forms.ComboBox" />.
+            </summary>
+            <value>The flat style.</value>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.BunifuDropdown.DrawMode">
+            <summary>
+            Gets or sets a value indicating whether your code or the operating system will handle drawing of elements in the list.
+            </summary>
+            <value>The draw mode.</value>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.SendMessage(System.IntPtr,System.UInt32,System.Int32,System.Int32)">
+            <summary>
+            Sends the message.
+            </summary>
+            <param name="hWnd">The h WND.</param>
+            <param name="Msg">The MSG.</param>
+            <param name="wParam">The w parameter.</param>
+            <param name="lParam">The l parameter.</param>
+            <returns>IntPtr.</returns>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.CB_SETITEMHEIGHT">
+            <summary>
+            The cb setitemheight
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.SetComboBoxHeight(System.IntPtr,System.Int32)">
+            <summary>
+            Sets the height of the ComboBox.
+            </summary>
+            <param name="comboBoxHandle">The combo box handle.</param>
+            <param name="comboBoxDesiredHeight">Height of the combo box desired.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.draw(System.Drawing.Graphics,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Draws the specified linecolor.
+            </summary>
+            <param name="graphics">The graphics.</param>
+            <param name="linecolor">The linecolor.</param>
+            <param name="indicatorcolor">The indicatorcolor.</param>
+            <param name="forecolor">The forecolor.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.DrawTriangle(System.Drawing.Graphics,System.Drawing.Rectangle,Bunifu.UI.WinForms.BunifuDropdown.Directions,System.Drawing.Color)">
+            <summary>
+            Draws the triangle.
+            </summary>
+            <param name="g">The g.</param>
+            <param name="rect">The rect.</param>
+            <param name="direction">The direction.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.RoundedRectangle(System.Drawing.Rectangle,System.Int32,System.Int32)">
+            <summary>
+            Roundeds the rectangle.
+            </summary>
+            <param name="rectangle">The rectangle.</param>
+            <param name="cornerRadius">The corner radius.</param>
+            <param name="margin">The margin.</param>
+            <returns>GraphicsPath.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.DrawString(System.Drawing.Graphics,System.String,System.Drawing.Color)">
+            <summary>
+            Draws the string.
+            </summary>
+            <param name="graphics">The graphics.</param>
+            <param name="text">The text.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.DrawImage(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Image)">
+            <summary>
+            Draws the image.
+            </summary>
+            <param name="graphics">The graphics.</param>
+            <param name="rectangle">The rectangle.</param>
+            <param name="ico">The icon.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.BunifuDropdown_DrawItem(System.Object,System.Windows.Forms.DrawItemEventArgs)">
+            <summary>
+            Handles the DrawItem event of the BunifuDropdown control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.BunifuDropdown_ParentChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the ParentChanged event of the BunifuDropdown control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.CreateRoundRectangle(System.Drawing.Rectangle,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates the round rectangle.
+            </summary>
+            <param name="rectangle">The rectangle.</param>
+            <param name="topLeftRadius">The top left radius.</param>
+            <param name="topRightRadius">The top right radius.</param>
+            <param name="bottomRightRadius">The bottom right radius.</param>
+            <param name="bottomLeftRadius">The bottom left radius.</param>
+            <returns>GraphicsPath.</returns>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.BunifuDropdown_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handles the MouseDown event of the BunifuDropdown control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.Txt_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Txt control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.txt_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Leave event of the txt control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.WinForms.BunifuDropdown.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bunifu.UI.WinForms.BunifuDropdown.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Bunifu.UI.WinForms.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.WinForms.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

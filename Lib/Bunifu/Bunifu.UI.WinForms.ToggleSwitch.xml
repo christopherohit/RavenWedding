@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForms.ToggleSwitch</name>
+    </assembly>
+    <members>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bunifu.ToggleSwitch.BunifuToggleSwitch"/> class.
+            </summary>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch._ToggleStateOn">
+            <summary>
+            The toggle state on
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.ToggleStateOn">
+            <summary>
+            Gets or sets the toggle state on.
+            </summary>
+            <value>The toggle state on.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch._ToggleStateOff">
+            <summary>
+            The toggle state off
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.ToggleStateOff">
+            <summary>
+            Gets or sets the toggle state off.
+            </summary>
+            <value>The toggle state off.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch._ToggleStateDisabled">
+            <summary>
+            The toggle state disabled
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.ToggleStateDisabled">
+            <summary>
+            Gets or sets the toggle state disabled.
+            </summary>
+            <value>The toggle state disabled.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch._Padding">
+            <summary>
+            The padding
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.Padding">
+            <summary>
+            Gets or sets padding within the control.
+            </summary>
+            <value>The padding.</value>
+            
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch.CurState">
+            <summary>
+            The current state
+            </summary>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediately redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.DrawCircle(Bunifu.ToggleSwitch.ToggleState)">
+            <summary>
+            Draws the circle.
+            </summary>
+            <param name="State">The state.</param>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.DrawBackground(Bunifu.ToggleSwitch.ToggleState)">
+            <summary>
+            Draws the background.
+            </summary>
+            <param name="State">The state.</param>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.BackgroundImage">
+            <summary>
+            Gets or sets the background image displayed in the control.
+            </summary>
+            <value>The background image.</value>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.BackgroundImageLayout">
+            <summary>
+            Gets or sets the background image layout as defined in the <see cref="T:System.Windows.Forms.ImageLayout" /> enumeration.
+            </summary>
+            <value>The background image layout.</value>
+        </member>
+        <member name="E:Bunifu.ToggleSwitch.BunifuToggleSwitch.OnValuechange">
+            <summary>
+            Occurs when [on valuechange].
+            </summary>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch._Value">
+            <summary>
+            The value
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.Value">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Bunifu.ToggleSwitch.BunifuToggleSwitch"/> is value.
+            </summary>
+            <value><c>true</c> if value; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.DrawRoundedRectangle(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Drawing.Pen,System.Drawing.Color)">
+            <summary>
+            Draws the rounded rectangle.
+            </summary>
+            <param name="gfx">The GFX.</param>
+            <param name="Bounds">The bounds.</param>
+            <param name="CornerRadius">The corner radius.</param>
+            <param name="DrawPen">The draw pen.</param>
+            <param name="FillColor">Color of the fill.</param>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.BunifuToggleSwitch_Load(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Load event of the BunifuToggleSwitch control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.BunifuToggleSwitch_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Resize event of the BunifuToggleSwitch control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch._Animation">
+            <summary>
+            The animation
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.BunifuToggleSwitch.Animation">
+            <summary>
+            Gets or sets the animation.
+            </summary>
+            <value>The animation.</value>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.animate_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the animate control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.BunifuToggleSwitch_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event of the BunifuToggleSwitch control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.Desiner_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the Desiner control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.BunifuToggleSwitch.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.BunifuToggleSwitch.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Bunifu.ToggleSwitch.ToggleState">
+            <summary>
+            Class ToggleState.
+            </summary>
+        </member>
+        <member name="M:Bunifu.ToggleSwitch.ToggleState.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BorderThicknessInner">
+            <summary>
+            The border thickness inner
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BorderThicknessInner">
+            <summary>
+            Gets or sets the border thickness inner.
+            </summary>
+            <value>The border thickness inner.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BorderRadiusInner">
+            <summary>
+            The border radius inner
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BorderRadiusInner">
+            <summary>
+            Gets or sets the border radius inner.
+            </summary>
+            <value>The border radius inner.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BorderThickness">
+            <summary>
+            The border thickness
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BorderThickness">
+            <summary>
+            Gets or sets the border thickness.
+            </summary>
+            <value>The border thickness.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BorderRadius">
+            <summary>
+            The border radius
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BorderRadius">
+            <summary>
+            Gets or sets the border radius.
+            </summary>
+            <value>The border radius.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BorderColor">
+            <summary>
+            The border color
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BorderColorInner">
+            <summary>
+            The border color inner
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BorderColorInner">
+            <summary>
+            Gets or sets the border color inner.
+            </summary>
+            <value>The border color inner.</value>
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BackColor">
+            <summary>
+            The back color
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BackColor">
+            <summary>
+            Gets or sets the color of the back.
+            </summary>
+            <value>The color of the back.</value>
+            
+        </member>
+        <member name="F:Bunifu.ToggleSwitch.ToggleState._BackColorInner">
+            <summary>
+            The back color inner
+            </summary>
+        </member>
+        <member name="P:Bunifu.ToggleSwitch.ToggleState.BackColorInner">
+            <summary>
+            Gets or sets the back color inner.
+            </summary>
+            <value>The back color inner.</value>
+        </member>
+    </members>
+</doc>

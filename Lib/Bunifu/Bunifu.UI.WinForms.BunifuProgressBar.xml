@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bunifu.UI.WinForms.BunifuProgressBar</name>
+    </assembly>
+    <members>
+        <member name="T:Bunifu.UI.Winforms.BunifuProgressBar">
+            <summary>
+            Class BunifuProgressBar.
+            </summary>
+            <seealso cref="T:System.Windows.Forms.UserControl" />
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bunifu.UI.Winforms.BunifuProgressBar" /> class.
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._Value">
+            <summary>
+            The value
+            </summary>
+        </member>
+        <member name="E:Bunifu.UI.Winforms.BunifuProgressBar.onValueChange">
+            <summary>
+            Occurs when [on value change].
+            </summary>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._MaximumValue">
+            <summary>
+            The maximum value
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.MaximumValue">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+            <value>The maximum value.</value>
+            
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._MinimumValue">
+            <summary>
+            The minimum value
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.MinimumValue">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+            <value>The minimum value.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._Animation">
+            <summary>
+            The animation
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.Animation">
+            <summary>
+            Gets or sets the animation.
+            </summary>
+            <value>The animation.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._AnimationStep">
+            <summary>
+            The animation
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.AnimationStep">
+            <summary>
+            Gets or sets the animation.
+            </summary>
+            <value>The animation.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._BorderRadius">
+            <summary>
+            The border radius
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.BorderRadius">
+            <summary>
+            Gets or sets the border radius.
+            </summary>
+            <value>The border radius.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._BorderThickness">
+            <summary>
+            The border thickness
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.BorderThickness">
+            <summary>
+            Gets or sets the border thickness.
+            </summary>
+            <value>The border thickness.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._BorderColor">
+            <summary>
+            The border color
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._ProgressColorLeft">
+            <summary>
+            The progress color
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.ProgressColorLeft">
+            <summary>
+            Gets or sets the progress color left.
+            </summary>
+            <value>The progress color left.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._ProgressColorRight">
+            <summary>
+            The progress color right
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.ProgressColorRight">
+            <summary>
+            Gets or sets the progress color right.
+            </summary>
+            <value>The progress color right.</value>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar._ProgressBackColor">
+            <summary>
+            The progress back color
+            </summary>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.ProgressBackColor">
+            <summary>
+            Gets or sets the color of the progress back.
+            </summary>
+            <value>The color of the progress back.</value>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.BackgroundImage">
+            <summary>
+            Gets or sets the background image displayed in the control.
+            </summary>
+            <value>The background image.</value>
+        </member>
+        <member name="P:Bunifu.UI.Winforms.BunifuProgressBar.BackgroundImageLayout">
+            <summary>
+            Gets or sets the background image layout as defined in the <see cref="T:System.Windows.Forms.ImageLayout" /> enumeration.
+            </summary>
+            <value>The background image layout.</value>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.DrawRoundedRectangle(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Drawing.Pen,System.Drawing.Color)">
+            <summary>
+            Draws the rounded rectangle.
+            </summary>
+            <param name="gfx">The GFX.</param>
+            <param name="Bounds">The bounds.</param>
+            <param name="CornerRadius">The corner radius.</param>
+            <param name="DrawPen">The draw pen.</param>
+            <param name="FillColor">Color of the fill.</param>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.RoundCorners(System.Drawing.Image,System.Int32,System.Drawing.Color)">
+            <summary>
+            Rounds the corners.
+            </summary>
+            <param name="StartImage">The start image.</param>
+            <param name="CornerRadius">The corner radius.</param>
+            <param name="BackgroundColor">Color of the background.</param>
+            <returns>Image.</returns>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediately redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.ValueToPixel(System.Int32)">
+            <summary>
+            Values to pixel.
+            </summary>
+            <param name="Value">The value.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.PixelToValue(System.Int32)">
+            <summary>
+            Pixels to value.
+            </summary>
+            <param name="Pixel">The pixel.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.RenderProgressByValue(System.Int32)">
+            <summary>
+            Renders the progress by value.
+            </summary>
+            <param name="Value">The value.</param>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.RenderProgressByPixel(System.Int32)">
+            <summary>
+            Renders the progress by pixel.
+            </summary>
+            <param name="Pixels">The pixels.</param>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.RenderBg">
+            <summary>
+            Renders the bg.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.BunifuProgressBar_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Resize event of the BunifuProgressBar control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.BunifuProgressBar_Load(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Load event of the BunifuProgressBar control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar.curAnimProgressWidth">
+            <summary>
+            The current anim progress width
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.animationTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the animationTimer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:Bunifu.UI.Winforms.BunifuProgressBar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bunifu.UI.Winforms.BunifuProgressBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
