@@ -157,6 +157,25 @@ namespace Raven
             catch (Exception er)
             {
                 MessageBox.Show(er.Message);
+                Directory.CreateDirectory(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text);
+                if (Directory.Exists(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text))
+                {
+                sudunglai:
+                    i++;
+                    Directory.CreateDirectory(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i);
+                    if (Directory.Exists(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i))
+                    {
+                        goto sudunglai;
+                    }
+                    else
+                    {
+                        string SetFull = FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i;
+                        string SavePic = Path.Combine(SetFull, DateTime.Now.Year.ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Day.ToString() + "--" +
+                        DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-" + DateTime.Now.Second.ToString() +
+                        ".jpg");
+                        cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
+                    }
+                }
             }
         }
     }

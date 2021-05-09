@@ -16,6 +16,7 @@ namespace Raven
     public partial class Info : Form
     {
         System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["SignUp"];
+        System.Windows.Forms.Form GetLackName = System.Windows.Forms.Application.OpenForms["SignIn"];
         public Bunifu.Framework.UI.BunifuMaterialTextbox SetName { get { return this.name; } }
         #region Round Corner
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -148,7 +149,7 @@ namespace Raven
         }
 
         #region Method
-        bool Update(string username  , string Gender, string Phone, string address, string icm, DateTime DOB, string Des)
+        bool Update(string username  , string Gender , string Phone , string address , string icm , DateTime DOB , string Des)
         {
             return AccountDAO.Instance.UpdateInfo(username , Gender , Phone , address , icm , DOB , Des );
         }
@@ -212,9 +213,11 @@ namespace Raven
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception or)
             {
-                string username = ((SignIn)GetName).TextBox.Text;
+                MessageBox.Show(or.Message);
+                MessageBox.Show(((SignIn)GetLackName).TextBox.Text);
+                string username = ((SignIn)GetLackName).TextBox.Text;
                 string icm = ICM.Text;
                 string Gender = gender.Text;
                 string Phone = phone.Text;

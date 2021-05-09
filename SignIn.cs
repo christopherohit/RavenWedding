@@ -179,6 +179,7 @@ namespace Raven
                         Info retype = new Info();
                         retype.Show();
                         retype.SetName.Text = Getame(username);
+                        this.Hide();
                     }
                     else
                     {
