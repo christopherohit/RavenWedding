@@ -1,0 +1,2871 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.TreeMap.Windows</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.ColorMapping">
+            <summary>
+            Class which represents the color mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.ColorMapping.EvaluateColorMapping(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode})">
+            <summary>
+            Evaluate color mapping for leaf nodes.
+            </summary>
+            <param name="leafNodes">The leaf node.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.ColorMapping.EvaluateColorMapping(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem})">
+            <summary>
+            Evaluate color mapping for tree map items.
+            </summary>
+            <param name="treeMapItems">The tree map items.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.ColorMapping.SetColor(Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode,System.Drawing.Brush)">
+            <summary>
+            Set mapped color for tree map leaf node.
+            </summary>
+            <param name="item">The tree map leaf node.</param>
+            <param name="brush">The color value.</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping">
+            <summary>
+            Class which represents the range brush color mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.SetRangeBrushColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode})">
+            <summary>
+            Set range brush color for tree map leaf node.
+            </summary>
+            <param name="leafNodes">The tree map leaf nodes.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.GetLegends(Syncfusion.Windows.Forms.TreeMap.TreeMap)">
+            <summary>
+            Gets the legends of the tree map.
+            </summary>
+            <param name="treemap">The tree map.</param>
+            <returns>The legend.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.GetInteractiveColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Double)">
+            <summary>
+            Get the interactive color for tree map items.
+            </summary>
+            <param name="leafnode">The tree map item leaf node.</param>
+            <param name="value">The color weight value.</param>
+            <returns>The color value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.SetRangeBrushColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem})">
+            <summary>
+            Set the range brush color for tree map item leaf node.
+            </summary>
+            <param name="leafNodes">The tree map item leaf node.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.GenerateGradientCollection(System.Collections.Generic.List{System.Drawing.Color})">
+            <summary>
+            Generate gradient collection value for tree map.
+            </summary>
+            <param name="gradientColors">The gradient colors.</param>
+            <returns>The gradient collection.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.RGBToHex(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Convert RGB color value to hex color value.
+            </summary>
+            <param name="r">The red color value.</param>
+            <param name="g">The green color value.</param>
+            <param name="b">The blue color value.</param>
+            <returns>The hex color value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.GetRangeColorValues(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            To get the range color value based on the range, start and end value.
+            </summary>
+            <param name="range">The range value.</param>
+            <param name="start">The start value.</param>
+            <param name="end">The end value.</param>
+            <returns>The color values.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.HexToR(System.Drawing.Color)">
+            <summary>
+            Convert hex color value to red color value.
+            </summary>
+            <param name="color">The hex color value.</param>
+            <returns>The red color value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.HexToG(System.Drawing.Color)">
+            <summary>
+            Convert hex color value to green color value.
+            </summary>
+            <param name="color">The hex color value.</param>
+            <returns>The green color value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.HexToB(System.Drawing.Color)">
+            <summary>
+            Convert hex color value to blue color value.
+            </summary>
+            <param name="color">The hex color value.</param>
+            <returns>The blue color value.</returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.RangeBrushColorMapping.Brushes">
+            <summary>
+            Gets or sets the brush color for range.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.UniColorMapping">
+            <summary>
+            Class which represent the uni color mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.UniColorMapping.SetUniColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode})">
+            <summary>
+            Set mapped color for leaf node items of tree map.
+            </summary>
+            <param name="leafNodes">The leaf nodes.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.UniColorMapping.SetUniColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem})">
+            <summary>
+            Set header color for tree map items.
+            </summary>
+            <param name="leafNodes">The tree map items.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.UniColorMapping.Color">
+            <summary>
+            Gets or sets the color of the mapping.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping">
+            <summary>
+            Class which represents the palette color mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.SetPaletteColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode})">
+            <summary>
+            Set palette color for tree map leaf nodes.
+            </summary>
+            <param name="list">The tree map leaf nodes.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.SetPaletteColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem})">
+            <summary>
+            Set palette color for tree map items.
+            </summary>
+            <param name="list">The tree map items.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.Colors">
+            <summary>
+            Gets or sets the color for palette color mapping.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping">
+            <summary>
+            Class which represent the desaturation color mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.SetDesaturatedColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode})">
+            <summary>
+            Set desaturated color for tree map leaf node.
+            </summary>
+            <param name="list">The tree map leaf node.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.SetDesaturatedColor(System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem})">
+            <summary>
+            Set desaturated color for tree map items.
+            </summary>
+            <param name="list">The tree map items.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.Color">
+            <summary>
+            Gets or sets the color value for the desaturation color mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.From">
+            <summary>
+            Gets or sets the from value  of the color mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.To">
+            <summary>
+            Gets or sets the To value  of the color mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.RangeMinimum">
+            <summary>
+            Gets or sets the minimum range of mapping value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.RangeMaximum">
+            <summary>
+            Gets or sets the maximum range of mapping value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.RangeBrush">
+            <summary>
+            Class which represent the range brush color.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.RangeBrush.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.RangeBrush"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.RangeBrush.Color">
+            <summary>
+            Gets or sets the color value of mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.RangeBrush.From">
+            <summary>
+            Gets or sets the From value of mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.RangeBrush.To">
+            <summary>
+            Gets or sets the To value of mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.RangeBrush.LegendLabel">
+            <summary>
+            Gets or sets the label of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.RangeBrush.GradientColors">
+            <summary>
+            Gets or sets the gradient colors of range.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.GroupColorMapping">
+            <summary>
+            Class which represents the group color mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.GroupColorMapping.GroupID">
+            <summary>
+            Gets or sets the id of the group. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.GroupColorMapping.TreeMapColorMapping">
+            <summary>
+            Gets or sets the TreeMap color mapping.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.ExtensionMethods">
+            <summary>
+            Class which represent the extension method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.ExtensionMethods.GetTypeInfo(System.Type)">
+            <summary>
+            Get type info of the type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The type info.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TypeInfo">
+            <summary>
+            Class which represent the type info.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TypeInfo.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TypeInfo"/> class.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TypeInfo.GetDeclaredProperty(System.String)">
+            <summary>
+            To get the declared property info.
+            </summary>
+            <param name="name">The property name.</param>
+            <returns>The property info.</returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TypeInfo.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper">
+            <summary>
+            Represents the class used to validate <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> customization.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper.DrawItemInSquarifiedMode(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Double,System.Double,System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.Rectangle)">
+            <summary>
+             Helps to draw squarified item <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <param name="treeMap">TreeMap.</param>
+            <param name="TreeMapItemList">TreeMapItem.</param>
+            <param name="parentWidth">To set parent width.</param>
+            <param name="parentHeight">To set parent height.</param>
+            <param name="graphics">To set graphics.</param>
+            <param name="brush">To set the brush color.</param>
+            <param name="AvailableArea">To set the available area.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper.DrawHierarchicalSquarfiedItem(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Double,System.Double,System.Drawing.Size,System.Double,System.Double,System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.Rectangle)">
+            <summary>
+             Helps to draw hierarchical squarified item <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <param name="treeMap">TreeMap.</param>
+            <param name="TreeMapItemList">TreeMapItem.</param>
+            <param name="prevItemWidth">To set previous width.</param>
+            <param name="prevItemHeight">To set previous height.</param>
+            <param name="AvailableSize">To set available size.</param>
+            <param name="Gap">To set gap.</param>
+            <param name="HeaderHeight">To set header height.</param>
+            <param name="graphics">To set graphics.</param>
+            <param name="brush">To set the brush color.</param>
+            <param name="availableArea">To set the available area.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper.CalculateSquarfiedItemsSize(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Double,System.Double,System.Drawing.Size,System.Double,System.Double,System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.Rectangle)">
+            <summary>
+             Helps to draw hierarchical squarified item <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <param name="treeMap">TreeMap.</param>
+            <param name="TreeMapItemList">TreeMapItem.</param>
+            <param name="prevItemWidth">To set previous width.</param>
+            <param name="prevItemHeight">To set previous height.</param>
+            <param name="AvailableSize">To set available size.</param>
+            <param name="Gap">To set gap.</param>
+            <param name="HeaderHeight">To set header height.</param>
+            <param name="graphics">To set graphics.</param>
+            <param name="brush">To set the brush color.</param>
+            <param name="availableArea">To set the available area.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper.DrawTreeMapInSliceAndDiceMode(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Double,System.Double,System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.Rectangle)">
+            <summary>
+             Helps to draw slice and dice mode item <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <param name="treeMap">TreeMap.</param>
+            <param name="TreeMapItemList">TreeMapItem.</param>
+            <param name="parentWidth">To set parent width.</param>
+            <param name="parentHeight">To set parent height.</param>
+            <param name="graphics">To set graphics.</param>
+            <param name="brush">To set the brush color.</param>
+            <param name="AvailableArea">To set the available area.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper.GetSliceOrientation(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Drawing.Rectangle)">
+            <summary>
+             Helps to draw orientation item <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <param name="treeMap">TreeMap.</param>
+            <param name="AvailableArea">To set the available area.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper.CalculateSliceAndDiceItemSize(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Double,System.Double,System.Drawing.Size,System.Double,System.Double,System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.Rectangle)">
+            <summary>
+             Helps to draw slice and dice mode item <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <param name="treeMap">TreeMap.</param>
+            <param name="TreeMapItemList">TreeMapItem.</param>
+            <param name="prevItemWidth">To set previous width.</param>
+            <param name="prevItemHeight">To set previous height.</param>
+            <param name="AvailableSize">To set available size.</param>
+            <param name="Gap">To set gap.</param>
+            <param name="HeaderHeight">To set header height.</param>
+            <param name="graphics">To set graphics.</param>
+            <param name="brush">To set the brush color.</param>
+            <param name="availableArea">To set the available area.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleHelper.DrawHierarchicalSliceAndDiceItem(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Double,System.Double,System.Drawing.Size,System.Double,System.Double,System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.Rectangle)">
+            <summary>
+             Helps to draw hierarchical slice and dice mode item <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <param name="treeMap">TreeMap.</param>
+            <param name="TreeMapItemList">TreeMapItem.</param>
+            <param name="prevItemWidth">To set previous width.</param>
+            <param name="prevItemHeight">To set previous height.</param>
+            <param name="AvailableSize">To set available size.</param>
+            <param name="Gap">To set gap.</param>
+            <param name="HeaderHeight">To set header height.</param>
+            <param name="graphics">To set graphics.</param>
+            <param name="brush">To set the brush color.</param>
+            <param name="availableArea">To set the available area.</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.Legend">
+            <summary>
+            Class which represent the Legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.Legend.LegendWidth">
+            <summary>
+            Gets the width of treemap legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.Legend.LegendHeight">
+            <summary>
+            Gets the  height of treemap legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.Legend.LegendLabel">
+            <summary>
+            Gets or sets the Legend Label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.Legend.Fill">
+            <summary>
+            Gets the fill color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.Legend.Rect">
+            <summary>
+            Gets or sets the rectangle bounding box value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LegendSettings">
+            <summary>
+            Class which represents the legend settings.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LegendSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.LegendSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.StartLabel">
+            <summary>
+            Gets or sets the start label of legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.EndLabel">
+            <summary>
+            Gets or sets the End label of legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.LegendMode">
+            <summary>
+            Gets or sets the Legend mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.LegendPosition">
+            <summary>
+            Gets or sets the Legend position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.Positions">
+            <summary>
+            Gets or sets the Legend mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.Title">
+            <summary>
+            Gets or sets the Legend Title.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.ShowLegend">
+            <summary>
+            Gets or sets a value indicating whether the legend is enabled or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.PositionX">
+            <summary>
+            Gets or sets the x position for legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.PositionY">
+            <summary>
+            Gets or sets the y position for legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.LegendGap">
+            <summary>
+            Gets or sets the Gap between legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.LegendType">
+            <summary>
+            Gets or sets the type of legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LegendSettings.Size">
+            <summary>
+            Gets or sets the size of legends.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore">
+            <summary>
+            Provides storage for the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.BackColorProperty">
+            <summary>
+            Provides information about the <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.BackColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.HeaderColorProperty">
+            <summary>
+            Provides information about the <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.HeaderColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.FontProperty">
+            <summary>
+            Provides information about the <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.Font"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.staticData">
+            <summary>
+            It contains the value of the <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.StaticDataStore"/> property value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore"/> class.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" -->
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.GetStaticData">
+            <summary>
+            Initializes the <see cref="T:Syncfusion.Styles.StaticData"/>, if <see cref="F:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.staticData"/> is null.
+            </summary>
+            <returns><see cref="T:Syncfusion.Styles.StaticData"/></returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore.StaticDataStore">
+            <summary>
+            Gets the static data value of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle">
+            <summary>
+            Represents the class to define the style for <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.defaultStyle">
+            <summary>
+            It contains the value of the <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.DefaultStyle"/> property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.#ctor(Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> class.
+            </summary>
+            <param name="store"> Holds instance of a <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore"/> class. </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.#ctor(Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> class.
+            </summary>
+            <param name="identity">A <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity"/> that holds the identity for this <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore"/>.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.#ctor(Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity,Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> class.
+            </summary>
+            <param name="identity">A <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity"/> that holds the identity for this <see cref="!:TreeTreeMaptyleInfoStore"/>.</param>
+            <param name="store"> Holds instance of a <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoStore"/> class </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.GetDefaultStyle">
+            <summary>
+            Gets the default style value of the <see cref="!:ComboBoxStyle"/> class.
+            </summary>
+            <returns>Returns the default style value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.CreateSubObjectIdentity(Syncfusion.Styles.StyleInfoProperty)">
+            <summary>
+            Overridden to create a product-specific identity object for the sub object.
+            </summary>
+            <param name="sip">
+            StyleInfoProperty descriptor for this sub object.
+            </param>
+            <returns>
+            Identity for the sub object.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.ShouldSerializeBackColor">
+            <summary>
+            Determines a value indicating whether to serialize <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.BackColor"/> property.
+            </summary>
+            <returns><b>True</b> if the property was modified; Otherwise <b>False</b>.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.ShouldSerializeHeaderColor">
+            <summary>
+            Determines a value indicating whether to serialize <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.HeaderColor"/> property.
+            </summary>
+            <returns><b>True</b> if the property was modified; Otherwise <b>False</b>.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.ShouldSerializeFont">
+            <summary>
+            Determines a value indicating whether to serialize <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.Font"/> property.
+            </summary>
+            <returns><b>True</b> if the property was modified; Otherwise <b>False</b>.</returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.DefaultStyle">
+            <summary>
+            Gets the default style value for the <see cref="N:Syncfusion.Windows.Forms.TreeMap"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.HeaderColor">
+            <summary>
+            Gets or sets the header color of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+            <value>The <see cref="T:System.Drawing.Color"/> value is used to fill the header color of the TreeMap.</value>
+            <remarks>
+            This color has filled to header color of the TreeMap only when set the
+            <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HeaderBrush"/> property.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.BackColor">
+            <summary>
+            Gets or sets the back color of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+            <value>The <see cref="T:System.Drawing.Color"/> value is used to fill the back color of the TreeMap.</value>
+            <remarks>
+            This color has filled to back color of the TreeMap only when set the
+            <see cref="!:Syncfusion.Windows.Forms.TreeMap.TreeMap.BackColor"/> property.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle.Font">
+            <summary>
+            Gets or sets the <see cref="T:System.Drawing.Font"/> value of the 
+            <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity">
+            <summary>
+            Implements the class that provide the identity information of <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> 
+            using <see cref="T:Syncfusion.Styles.StyleInfoSubObjectIdentity"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity.treeMap">
+            <summary>
+             Maintains the TreeMap for create the identity. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity.#ctor(Syncfusion.Windows.Forms.TreeMap.TreeMap)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity"/> class.
+            </summary>
+            <param name="map">
+            <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> to create an identity.
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity.GetBaseStyles(Syncfusion.Styles.IStyleInfo)">
+            <summary>
+            Loops through all base styles until it finds a style that has a specific property initialized.
+            </summary>
+            <param name="thisStyleInfo">A instance of <see cref="T:Syncfusion.Styles.IStyleInfo"/></param>
+            <returns>
+            Returns the <see cref="T:Syncfusion.Styles.IStyleInfo"/>.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapStyleInfoIdentity.OnStyleChanged(Syncfusion.Styles.StyleInfoBase,Syncfusion.Styles.StyleInfoProperty)">
+            <summary>
+            Occurs when a property in the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> has changed.
+            </summary>
+            <param name="style">The <see cref="M:Syncfusion.Styles.StyleInfoBase.#ctor"/> instance that has changed.</param>
+            <param name="sip">A <see cref="T:Syncfusion.Styles.StyleInfoProperty"/> that identifies the property to operate on.</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapInfoSubObjectIdentity">
+            <summary>
+                Represents a class that provides style identity information for nested objects of the
+                <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapInfoSubObjectIdentity.#ctor(Syncfusion.Styles.StyleInfoBase,Syncfusion.Styles.StyleInfoProperty)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapInfoSubObjectIdentity"/> class.         
+            </summary>
+            <param name="owner">
+            The <see cref="T:Syncfusion.Styles.StyleInfoBase"/> that owns this sub-object.
+            </param>
+            <param name="sip">
+            The <see cref="T:Syncfusion.Styles.StyleInfoProperty"/> descriptor for this expandable
+                sub-object.
+            </param>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMap.themeStyle">
+            <summary>
+            It contains the value of the <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.ThemeStyle"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMap.isVisualStyleEnabled">
+            <summary>
+             It contains the value of the <see cref="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.IsVisualStyleEnabled"/> property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.OnThemeNameChanged(System.String)">
+            <summary>
+            Helps to apply the ThemeName settings in control
+            </summary>
+            <param name="themeName">ThemeName</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.GetControlName(System.String)">
+            <summary>
+            Helps to apply the ControlName settings in control
+            </summary>
+            <param name="controlName">ControlName</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.OnDraw(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            Helps to update the renderer settings of TreeMap
+            </summary>
+            <param name="e">PaintEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.DrawBackground(System.Drawing.Graphics)">
+            <summary>
+            Helps to draw background of treemap <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.DrawTreeMapItems(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            Helps to draw treemap items of treemap <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.DrawItemInSquarifiedHeader(Syncfusion.Windows.Forms.TreeMap.TreeMap,Syncfusion.Windows.Forms.TreeMap.TreeMapItem,System.Drawing.Rectangle,System.Drawing.Graphics)">
+            <summary>
+            Helps to draw squarified of treemap <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.DrawSliceAndDiceHeader(Syncfusion.Windows.Forms.TreeMap.TreeMap,System.Drawing.Graphics,System.Drawing.Rectangle,System.Collections.Generic.List{Syncfusion.Windows.Forms.TreeMap.TreeMapItem},System.Int32)">
+            <summary>
+            Helps to draw slice and dice of treemap <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.DrawLabels">
+            <summary>
+            Helps to draw labels of treemap <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.CreateAccessibilityInstance">
+            <summary>
+            Creates the accessibilty for the control.
+            </summary>
+            <returns>Accessibility</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMap.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMap.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.IsVisualStyleEnabled">
+            <summary>
+            Gets a value indicating whether the visual style based theme is applied to the control and
+            also indicates whether the theme files are referred from external assemblies or not.
+            </summary>
+            <value>Return true, if the visual style based theme is applied to the control. Otherwise returns false.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.ThemeStyle">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapVisualStyle"/> value used to customize the appearance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMap"/>.
+            </summary>
+            <remarks>
+            This ThemeStyle settings will be applied only when the VisualStyleBased theme has been applied to the control.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.WeightValuePath">
+            <summary>
+            To specify the Weightvalue path
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.LabelFont">
+            <summary>
+            To specify the font style of label
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.LabelBrush">
+            <summary>
+            To specify the label brush
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.LabelBackgroundBrush">
+            <summary>
+            To specify the label background brush
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.LabelBorderBrush">
+            <summary>
+            To specify the label border brush
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.LabelBorderThickness">
+            <summary>
+            To specify the label border thickness
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HeaderFont">
+            <summary>
+            To specify the font for treemap header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HeaderBrush">
+            <summary>
+            To specify the color for treemap header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HeaderBackgroundBrush">
+            <summary>
+            To specify the color for treemap header background
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HeaderBorderBrush">
+            <summary>
+            To specify the color for header border brush
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HeaderBorderThickness">
+            <summary>
+            To specify the  header border thickness
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.ItemsLayoutMode">
+            <summary>
+            To specify the item layout mode
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.SelectionMode">
+            <summary>
+            To specify the selection mode
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.LegendSetting">
+            <summary>
+            To specify the legendsettings
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.IsTootTipVisible">
+            <summary>
+            To specify the tooltip is visible or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HeaderToolTipInfo">
+            <summary>
+            To specify the header tooltip info
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.ItemToolTipInfo">
+            <summary>
+            To specify the Item tooltip info
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HighlightOnSelection">
+            <summary>
+            To specify the highlightonselection is true or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HighlightBorderBrush">
+            <summary>
+            To specify the highlightonselection is true or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HighlightBorderThickness">
+            <summary>
+            To specify the highlightborder thickness
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMap.HighlightGroupOnSelection">
+            <summary>
+            To specify highlighting the group of items on selection
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues">
+            <summary>
+            Class which represents the keys calculation values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues.RecordKey">
+            <summary>
+            Gets or sets the record key values.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues.CompareTo(System.Object)">
+            <summary>
+            Compare to object key value.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The integer value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues.ToString">
+            <summary>
+            Convert key value to string.
+            </summary>
+            <returns>The string value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues.Equals(Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues)">
+            <summary>
+            Equals object key values.
+            </summary>
+            <param name="other">The key calculation values.</param>
+            <returns>The bool values.</returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues.Keys">
+            <summary>
+            Gets or sets the key values.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues.Values">
+            <summary>
+            Gets or sets the summary base values.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.KeysCalculationValues.Comparers">
+            <summary>
+            Gets or sets the comparers values.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.BinaryList">
+            <summary>
+            Class which represent the binary list.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.BinaryList.AddIfUnique(System.IComparable)">
+            <summary>
+            Add if unique to find location.
+            </summary>
+            <param name="o">The i comparable.</param>
+            <returns>The location.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.BinaryList.IsUniqueKey(System.IComparable)">
+            <summary>
+            Find the location of unique key.
+            </summary>
+            <param name="o">The Icomprable object.</param>
+            <returns>The location index.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.BinaryList.AddKeyValue(System.IComparable)">
+            <summary>
+            Add key values.
+            </summary>
+            <param name="o">The comparable object.</param>
+            <returns>The location index.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.SummaryBase">
+            <summary>
+            This class is an abstract class that defines the necessary functionality to do tablix calculations.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SummaryBase.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SummaryBase.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SummaryBase.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SummaryBase.GetInstance">
+            <summary>
+            Provides a new instance of this SummaryBase object.
+            </summary>
+            <returns>New instance of this SummaryBase.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SummaryBase.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.CountSummary">
+            <summary>
+            Class which represent the count summary.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.CountSummary.count">
+            <summary>
+            Gets or sets the count value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountSummary.ToString">
+            <summary>
+            Returns a string value count.
+            </summary>
+            <returns>The string count.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountSummary.GetInstance">
+            <summary>
+            Returns a new instance of count summary.
+            </summary>
+            <returns>The new instance of count summary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary">
+            <summary>
+            Class which represents the count distinct summary.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.count">
+            <summary>
+            Gets or sets the count value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.list">
+            <summary>
+            Gets or sets the list of object value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.ToString">
+            <summary>
+            Returns the string value of count distinct.
+            </summary>
+            <returns>The string value as CountDistinct.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.CountDistinctSummary.GetInstance">
+            <summary>
+            To get new instance of the count distinct summary.
+            </summary>
+            <returns>The new instance of the count distinct summary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary">
+            <summary>
+            Class which represent the double minimum summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary.ToString">
+            <summary>
+            Returns the string value as DoubleMinimum.
+            </summary>
+            <returns>The string value as DoubleMinimum.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary.min">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMinSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double min summary.
+            </summary>
+            <returns>The  new instance of the double min summary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary">
+            <summary>
+            Class which represent the double maximum summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary.ToString">
+            <summary>
+            Returns a string value double maximum.
+            </summary>
+            <returns>The string DoubleMaximum.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary.max">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleMaxSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double max summary.
+            </summary>
+            <returns>The  new instance of the double max summary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary">
+            <summary>
+            Class which represents the double standard deviation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.ToString">
+            <summary>
+            Returns a string value double standard eviation.
+            </summary>
+            <returns>The string DoubleStandardDeviation.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.sumX2">
+            <summary>
+            Gets or sets the value for sum square.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.sumX">
+            <summary>
+            Gets or set value for sum x.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.n">
+            <summary>
+            Gets or sets value for n.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double stdev summary.
+            </summary>
+            <returns>The  new instance of the DoubleStDevSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary">
+            <summary>
+            Class which represent the double standard deviation summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.ToString">
+            <summary>
+            Returns a string value double standard deviation population.
+            </summary>
+            <returns>The string DoubleStandardDeviationPopulation.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.sumX2">
+            <summary>
+            Gets or sets value for the sum square.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.sumX">
+            <summary>
+            Gets or sets value for the sum x.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.n">
+            <summary>
+            Gets or sets value for the n.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleStDevPSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double st dev ps summary.
+            </summary>
+            <returns>The  new instance of the DoubleStDevPSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary">
+            <summary>
+            Class which represents the double variance summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.ToString">
+            <summary>
+            Returns a string value double variance.
+            </summary>
+            <returns>The string DoubleVariance.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.sumX2">
+            <summary>
+            Gets or sets value for the sum square.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.sumX">
+            <summary>
+            Gets or sets value for the sum x.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.n">
+            <summary>
+            Gets or sets value for the n.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVarianceSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double variance summary.
+            </summary>
+            <returns>The  new instance of the DoubleVarianceSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary">
+            <summary>
+            Class which represents the double variance population summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.ToString">
+            <summary>
+            Returns a string value double variance.
+            </summary>
+            <returns>The string DoubleVariance.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.sumX2">
+            <summary>
+            Gets or sets value for the sum square.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.sumX">
+            <summary>
+            Gets or sets value for the sum x.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.n">
+            <summary>
+            Gets or sets value for the n.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleVariancePSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double variance ps summary.
+            </summary>
+            <returns>The  new instance of the DoubleVariancePSSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary">
+            <summary>
+            Class which represents the double average summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.ToString">
+            <summary>
+            Returns a string value double average.
+            </summary>
+            <returns>The string DoubleAverage.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.total">
+            <summary>
+            Gets or sets value for the total.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.count">
+            <summary>
+            Gets or sets value for the count.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleAverageSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double average summary.
+            </summary>
+            <returns>The  new instance of the DoubleAverageSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary">
+            <summary>
+            Class which represents the double total summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary.ToString">
+            <summary>
+            Returns a string value double total.
+            </summary>
+            <returns>The string DoubleTotal.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary.total">
+            <summary>
+            Gets or sets value for the total.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DoubleTotalSummary.GetInstance">
+            <summary>
+            Returns the new instance of the double total summary.
+            </summary>
+            <returns>The  new instance of the DoubleTotalSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary">
+            <summary>
+            Class which represents the int total summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary.ToString">
+            <summary>
+            Returns a string value int total.
+            </summary>
+            <returns>The string IntTotal.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary.total">
+            <summary>
+            Gets or sets a value for total.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.IntTotalSummary.GetInstance">
+            <summary>
+            Returns the new instance of the int total summary.
+            </summary>
+            <returns>The  new instance of the IntTotalSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary">
+            <summary>
+            Class which represents the decimal total summary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary.ToString">
+            <summary>
+            Returns a string value decimal total.
+            </summary>
+            <returns>The string DecimalTotal.</returns>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary.total">
+            <summary>
+            Gets or sets a value for total.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DecimalTotalSummary.GetInstance">
+            <summary>
+            Returns the new instance of the decimal total summary.
+            </summary>
+            <returns>The  new instance of the DecimalTotalSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TextSummary">
+            <summary>
+            Class which represents the text summary.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TextSummary.text">
+            <summary>
+            Gets or sets a value for text. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TextSummary.values">
+            <summary>
+            Gets or sets a value for values.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TextSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TextSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TextSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TextSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TextSummary.GetInstance">
+            <summary>
+            Returns the new instance of the text summary.
+            </summary>
+            <returns>The  new instance of the TextSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.DataSummary">
+            <summary>
+            Class which represents the data summary.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.DataSummary.value">
+            <summary>
+            Gets or sets a object value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DataSummary.ToString">
+            <summary>
+            Returns a string value data summary.
+            </summary>
+            <returns>The string DataSummary.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DataSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DataSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DataSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DataSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.DataSummary.GetInstance">
+            <summary>
+            Returns the new instance of the data summary.
+            </summary>
+            <returns>The  new instance of the DataSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.FirstSummary">
+            <summary>
+            Class which represents the first summary.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.FirstSummary.count">
+            <summary>
+            Gets or sets a value for count.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.FirstSummary.list">
+            <summary>
+            Gets or sets a value for list.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.FirstSummary.ToString">
+            <summary>
+            Returns a string value First.
+            </summary>
+            <returns>The string First.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.FirstSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.FirstSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.FirstSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.FirstSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.FirstSummary.GetInstance">
+            <summary>
+            Returns the new instance of the first summary.
+            </summary>
+            <returns>The  new instance of the FirstSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LastSummary">
+            <summary>
+            Class which represents the last summary.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LastSummary.count">
+            <summary>
+            Gets or sets a value for count.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LastSummary.list">
+            <summary>
+            Gets or sets a list values.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LastSummary.ToString">
+            <summary>
+            Returns a string value Last.
+            </summary>
+            <returns>The string Last.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LastSummary.Combine(System.Object)">
+            <summary>
+            Use this method to combine a value from an object in the Tablix Grid's data source with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The value to be included in the compuation.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LastSummary.CombineSummary(Syncfusion.Windows.Forms.TreeMap.SummaryBase)">
+            <summary>
+            Use this method to combine another SummaryBase object with the accumulation values held in this instance.
+            </summary>
+            <param name="other">The other SummaryBase object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LastSummary.Reset">
+            <summary>
+            Resets all internal values so the calculations begins as new.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LastSummary.GetResult">
+            <summary>
+            Returns the calculation value.
+            </summary>
+            <returns>The calculation value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LastSummary.GetInstance">
+            <summary>
+            Returns the new instance of the last summary.
+            </summary>
+            <returns>The  new instance of the LastSummary.</returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.GroupValueInfo">
+            <summary>
+            Class which represents the group value info.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.GroupValueInfo.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.GroupValueInfo"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.GroupValueInfo.DataSources">
+            <summary>
+            Gets or sets the data source value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.GroupValueInfo.Value">
+            <summary>
+            Gets or sets the summary base value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.GroupValueInfo.ColorValue">
+            <summary>
+            Gets or sets the color value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.GroupValueInfo.GroupName">
+            <summary>
+            Gets or sets the group name.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapValueField">
+            <summary>
+            Class which represents the tree map value field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapValueField.GetSummaryInstance">
+            <summary>
+            Method to create new instance for double total summary.
+            </summary>
+            <returns>The new instance of double total summary.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapValueField.Clone">
+            <summary>
+            Clone the tree map value field to a variable.
+            </summary>
+            <returns>The cloned variable.</returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapValueField.Name">
+            <summary>
+            Gets or sets the name value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapValueField.FieldName">
+            <summary>
+            Gets or sets the field name.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings">
+            <summary>
+            Class which represent the leaf item setting.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.RaiseLabelDrawingEvent(Syncfusion.Windows.Forms.TreeMap.LabelDrawingEventArgs)">
+            <summary>
+            Called the label rawing event when label gets drawn.
+            </summary>
+            <param name="e">The label drawing event arguments.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.Gap">
+            <summary>
+            Gets or sets the gap value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.LabelPosition">
+            <summary>
+            Gets or sets the label position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.BorderThickness">
+            <summary>
+            Gets or sets the border thickness.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.BorderBrush">
+            <summary>
+            Gets or sets the border color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.ShowLabels">
+            <summary>
+            Gets or sets the visiblity of labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.LabelPath">
+            <summary>
+            Gets or sets the label path.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.LabelDrawing">
+            <summary>
+            Event raised when the label gets drawn.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LeafItemSettings.LabelDrawingEventHandler">
+            <summary>
+            Called when the label gets drawn.
+            </summary>
+            <param name="sender">The tree map.</param>
+            <param name="e">The label drawing event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapLabel">
+            <summary>
+            Class which represents the tree map label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLabel.Rect">
+            <summary>
+            Gets or sets the rectangle value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLabel.Item">
+            <summary>
+            Gets or sets the tree map items.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine">
+            <summary>
+            Class which represents the tree map engine.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.itemProperties">
+            <summary>
+            Gets or sets a PropertyDescriptorCollection describing the type of the underlying data item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.GetValue(System.String,System.Object)">
+            <summary>
+            Get data from the field if it is nested data.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="o">The object.</param>
+            <returns>The object.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.GetGroupItem(System.String)">
+            <summary>
+            Get group items.
+            </summary>
+            <param name="field">The field value.</param>
+            <returns>The group items of field.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.GetGroupItem(System.String,System.String)">
+            <summary>
+            Get group items from the label path.
+            </summary>
+            <param name="field">The field value.</param>
+            <param name="labelPath">The label path.</param>
+            <returns>The group items.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.GetTreeMapItems(System.String,System.String,System.String,System.String)">
+            <summary>
+            To get tree map items from the value data.
+            </summary>
+            <param name="valueData">The value data.</param>
+            <param name="colorData">The color data.</param>
+            <param name="labelData">The label data.</param>
+            <param name="headerData">The heaer data.</param>
+            <returns>The tree map items.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.GetTreeMapLeafNodes(System.String,System.String,System.String)">
+            <summary>
+            To get tree map leaf nodes.
+            </summary>
+            <param name="valueData">The value data.</param>
+            <param name="colorData">The color data.</param>
+            <param name="labelData">The label data.</param>
+            <returns>The tree map leaf nodes.</returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.ItemType">
+            <summary>
+            Gets or sets the type of the item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.IsEmptyDataSource">
+            <summary>
+            Gets or sets a value indicating whether the data source wmpty or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.HasNestedData">
+            <summary>
+            Gets or sets a value indicating whether data has nested or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.DataSource">
+            <summary>
+            Gets or sets a object value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.DataSourceList">
+            <summary>
+            Gets or sets a data source.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.ItemProperties">
+            <summary>
+            Gets or sets a PropertyDescriptorCollection describing the type of the underlying data item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.ValueField">
+            <summary>
+            Gets or sets a tree map value field value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapEngine.ColorField">
+            <summary>
+            Gets or sets a color field value of tree map.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel">
+            <summary>
+            Class which represents the tree map level.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.groupingGap">
+            <summary>
+            Default value set for the grouping gap as 5.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.groupsPadding">
+            <summary>
+            Gets or sets the padding for the group.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.groupingBorderThickenss">
+            <summary>
+            Gets or sets the border thickness for the grouping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.groupingBackground">
+            <summary>
+            Gets or sets the background color for the grouping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.groupingBorderColor">
+            <summary>
+            Gets or sets the border color for grouping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.itemsGap">
+            <summary>
+            Gets or sets the gap for items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.Dispose">
+            <summary>
+            Called to dispose all the objects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.RaiseLabelDrawingEvent(Syncfusion.Windows.Forms.TreeMap.LabelDrawingEventArgs)">
+            <summary>
+            Raise label drawing event when label gets drawn.
+            </summary>
+            <param name="e">The label drawing event arguments.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.GroupingPath">
+            <summary>
+            Gets or sets the grouping path value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.GroupingGap">
+            <summary>
+            Gets or sets the grouping gap value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.LabelPosition">
+            <summary>
+            Gets or sets the position of label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.GroupsPadding">
+            <summary>
+            Gets or sets the padding for the group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.GroupingBorderThickenss">
+            <summary>
+            Gets or sets the border thickness for the grouping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.GroupingBackground">
+            <summary>
+            Gets or sets the background color for the grouping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.GroupingBorderColor">
+            <summary>
+            Gets or sets the border color for grouping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.ItemsGap">
+            <summary>
+            Gets or sets the gap for items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.ColorMapping">
+            <summary>
+            Gets or sets the mapping value for color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.HeaderHeight">
+            <summary>
+            Gets or sets the height of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.LevelHeaderPath">
+            <summary>
+            Gets or sets the path for the level header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.ShowLabels">
+            <summary>
+            Gets or sets a value indicating whether the show labels or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.DataSource">
+            <summary>
+            Gets or sets a object value for data source.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.TreeMapItems">
+            <summary>
+            Gets or sets a tree map items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.LabelPath">
+            <summary>
+            Gets or sets the  path of the label.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.PropertyChanged">
+            <summary>
+            Raised when the property value gets changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.LabelDrawing">
+            <summary>
+            Raise label drawing event when label gets drawn.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapLevel.LabelDrawingEventHandler">
+            <summary>
+            Raise label drawing event when label gets drawn.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LabelDrawingEventArgs">
+            <summary>
+            Class which represent the  label drawing event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LabelDrawingEventArgs.Rect">
+            <summary>
+            Gets the rectangle bounding box value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LabelDrawingEventArgs.Data">
+            <summary>
+            Gets the object data value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LabelDrawingEventArgs.Graphics">
+            <summary>
+            Gets or sets the graphics value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.LabelDrawingEventArgs.Handled">
+            <summary>
+            Gets or sets a value indicating whether handled or not.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel">
+            <summary>
+            Class which represent the tree map flat level.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.groupPath">
+            <summary>
+            Gets or sets the group path.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.groupGap">
+            <summary>
+            Gets or sets the Gap between the treemap group items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.GroupPath">
+            <summary>
+            Gets or sets the group path.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.GroupGap">
+            <summary>
+            Gets or sets the Gap between the treemap group items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.GroupPadding">
+            <summary>
+            Gets or sets  the group padding.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.GroupBorderThickenss">
+            <summary>
+            Gets or sets the Group border thickness.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.GroupBackground">
+            <summary>
+            Gets or sets the background color for the group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel.GroupBorderColor">
+            <summary>
+            Gets or sets the borer color for the group.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel">
+            <summary>
+            Class which represent the tree map hierarchical level.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.childPath">
+            <summary>
+            Class which represent the path value of the child.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.labelPath">
+            <summary>
+            Gets or sets the path value for the label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.headerPath">
+            <summary>
+            Gets or sets the path value for the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.ChildPath">
+            <summary>
+            Class which represent the path value of the child.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.ChildGap">
+            <summary>
+            Gets or sets the gap value for the child.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.ChildPadding">
+            <summary>
+            Gets or sets the padding value for the child.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.ChildBorderThickenss">
+            <summary>
+            Gets or sets the border thickness of the child.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.ChildBackground">
+            <summary>
+            Gets or sets the background color of the child.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.ChildBorderColor">
+            <summary>
+            Gets or sets the border color for the child.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.LabelPath">
+            <summary>
+            Gets or sets the path value for the label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapHierarchicalLevel.HeaderPath">
+            <summary>
+            Gets or sets the path value for the header.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes">
+            <summary>
+            To specify the item layout modes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.Squarified">
+            <summary>
+            To specify the layout mode as Squarified
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto">
+            <summary>
+            To specify the layout mode as SliceAndDiceAuto
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceHorizontal">
+            <summary> 
+            To specify the layout mode as SliceAndDiceHorizontal
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceVertical">
+            <summary>
+            To specify the layout mode as SliceAndDiceVertical
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LegendTypes">
+            <summary>
+            To specify the legend types.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendTypes.Rectangle">
+            <summary> 
+            To specify the legend type as Rectangle
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendTypes.Ellipse">
+            <summary> 
+            To specify the legend type as Ellipse
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendTypes.None">
+            <summary> 
+            To specify the legend type as None
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LegendMode">
+            <summary>
+            To specify the legend mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendMode.Default">
+            <summary> 
+            To specify the legend mode as Default
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendMode.Interactive">
+            <summary> 
+            To specify the legend mode as Interactive
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LegendPositions">
+            <summary>
+            To specify the legend position.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendPositions.Left">
+            <summary> 
+            To specify the legend positions  as Left
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendPositions.Top">
+            <summary> 
+            To specify the legend positions  as Top
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendPositions.Right">
+            <summary> 
+            To specify the legend positions  as Right
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LegendPositions.Bottom">
+            <summary> 
+            To specify the legend positions  as Bottom
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.Position">
+            <summary>
+            To specify position.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.Default">
+            <summary> 
+            To specify the  position  as Default
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.TopLeft">
+            <summary> 
+            To specify the  position  as TopLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.TopCenter">
+            <summary> 
+            To specify the  position  as TopCenter
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.TopRight">
+            <summary> 
+            To specify the  position  as TopRight
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.MidLeft">
+            <summary> 
+            To specify the  position  as MidLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.Center">
+            <summary> 
+            To specify the  position  as Center
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.MidRight">
+            <summary> 
+            To specify the  position  as MidRight
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.BottomLeft">
+            <summary> 
+            To specify the  position  as BottomLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.BottomCenter">
+            <summary> 
+            To specify the  position  as BottomCenter
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.Position.BottomRight">
+            <summary> 
+            To specify the  position  as BottomRight
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.SelectionModes">
+            <summary>
+            To specify the selection mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.SelectionModes.Default">
+            <summary> 
+            To specify the  selection mode as Default
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.SelectionModes.Multiple">
+            <summary> 
+            To specify the  selection mode as Multiple
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.LabelPositions">
+            <summary>
+            To specify the label position.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.TopLeft">
+            <summary> 
+            To specify the  label position as TopLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.TopCenter">
+            <summary> 
+            To specify the  label position as TopLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.TopRight">
+            <summary> 
+            To specify the  label position as TopRight
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.CenterLeft">
+            <summary> 
+            To specify the  label position as CenterLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.Center">
+            <summary> 
+            To specify the  label position as Center
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.CenterRight">
+            <summary> 
+            To specify the  label position as CenterRight
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.BottomLeft">
+            <summary> 
+            To specify the  label position as BottomLeft
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.BottomCenter">
+            <summary> 
+            To specify the  label position as BottomCenter
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.LabelPositions.BottomRight">
+            <summary> 
+            To specify the  label position as BottomRight
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapItem">
+            <summary>
+            Class which represents the tree map items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.TreeMap">
+            <summary>
+            Gets or sets the tree map values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.isRootTreeMapItem">
+            <summary>
+            Gets or sets a value indicating whether the tree map item is root or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.GroupingLevel">
+            <summary>
+            Gets or sets the grouping level value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.Windows.Forms.TreeMap.TreeMapItem"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.OnPropertyChanged(System.String)">
+            <summary>
+            Method gets called when the property value changed.
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.TreeMapLevel">
+            <summary>
+            Gets the level of tree map.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.Height">
+            <summary>
+            Gets or sets height value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.DefaultWidth">
+            <summary>
+            Gets or sets the default width. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.AreaByWeight">
+            <summary>
+            Gets or sets the area by weight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.Weight">
+            <summary>
+            Gets or sets the weight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.ItemWidth">
+            <summary>
+            Gets or sets the item width.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.ItemHeight">
+            <summary>
+            Gets or sets the item height.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.LeftPosition">
+            <summary>
+            Gets or sets the left position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.TopPosition">
+            <summary>
+            Gets or sets the top position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.HeaderSize">
+            <summary>
+            Gets or sets the size of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.Header">
+            <summary>
+            Gets or sets the value for header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.ColorWeight">
+            <summary>
+            Gets or sets the weight of the color value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.HeaderColor">
+            <summary>
+            Gets or sets the color of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.MappedColor">
+            <summary>
+            Gets or sets the color mapped.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.LeafNodes">
+            <summary>
+            Gets the tree map leaf nodes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.ChildTreeMapItems">
+            <summary>
+            Gets the child tree map items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.SubItemsList">
+            <summary>
+            Gets or sets the sub item list.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.Data">
+            <summary>
+            Gets  the data.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.Label">
+            <summary>
+            Gets the label.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.TreeMap.TreeMapItem.PropertyChanged">
+            <summary>
+            Event raised while the property value gets changed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.TreeMapWindowsAssembly">
+            <exclude/>
+            <summary>
+            This class holds the name of the Syncfusion.TreeMap.Windows assembly and provides a helper
+            routine that helps with resolving types when loading a serialization stream and when
+            the framework probes for assemblies by reflection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.TreeMapWindowsAssembly.Name">
+            <summary>
+            The full name of this assembly without version information: "Syncfusion.TreeMap.Windows"
+            </summary>
+        </member>
+        <member name="F:Syncfusion.TreeMapWindowsAssembly.Assembly">
+            <summary>
+            A reference to the <see cref="T:System.Reflection.Assembly"/> for the TreeMap assembly.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.TreeMapWindowsAssembly.RootNamespace">
+            <summary>
+            The root namespace of this assembly. Used internally for locating resources within the assembly.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.TreeMapWindowsAssembly.#cctor">
+            <summary>
+            Initializes the <see cref="T:Syncfusion.TreeMapWindowsAssembly"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.TreeMapWindowsAssembly.AssemblyResolver(System.Object,System.ResolveEventArgs)">
+            <summary>
+            This delegate helps with resolving types and can be used as an eventhandler
+            for a <see cref="E:System.AppDomain.AssemblyResolve"/> event.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event data with information about the type.</param>
+            <returns>A reference to the assembly where the type is located.</returns>      
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.AssemblyInfo">
+            <summary>
+            AssemblyInformation for internal use.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapDesigner">
+            <summary>
+            Class for SmartTag
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.TreeMap.TreeMapDesigner.actionLists">
+            <summary>
+            Designer ActionList collection
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapDesigner.#ctor">
+            <summary>
+            Initializes a new instance of the TreeMapDesigner class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapDesigner.Initialize(System.ComponentModel.IComponent)">
+            <summary>
+            Overridden Initialize method.
+            </summary>
+            <param name="component">Component object</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList">
+            <summary>
+            TreeMapActionList class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.#ctor(System.ComponentModel.IComponent)">
+            <summary>
+            Initializes a new instance of the TreeMapActionList class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.InitializeActionList">
+            <summary>
+            Overrridden InitializeActionList.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.Name">
+            <summary>
+            Gets or sets Name.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.HeaderBorderThickness">
+            <summary>
+            Gets/Sets HeaderBorderThickness value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.HighlightOnSelection">
+            <summary>
+            Gets/Sets HighlightOnSelection value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.HighlightGroupOnSelection">
+            <summary>
+            Gets/Sets HighlightGroupOnSelection value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.IsToolTipVisible">
+            <summary>
+            Gets/Sets IsToolTipVisible value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.ItemsLayoutModes">
+            <summary>
+            Gets/Sets ItemsLayoutModes value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapActionList.SelectionModes">
+            <summary>
+            Gets/Sets SelectionModes value
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.#ctor(Syncfusion.Windows.Forms.TreeMap.TreeMap)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="treemap">TreeMap</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.HitTest(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the child object at the specified screen coordinates.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.Bounds">
+            <summary>
+            Bounds of the Control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.Role">
+            <summary>
+            Gets the role for the Treemap. This is used by accessibility programs.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.Name">
+            <summary>
+            Gets or sets the accessible object name
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.Description">
+            <summary>
+            Gets the description of the Control.ControlAccessibleObject
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.State">
+            <summary>
+            Gets the state of this accessible object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.Help">
+            <summary>
+            Gets the description of what the object does or how the object is used.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapAccessibility.Parent">
+            <summary>
+            Gets the parent of an accessible object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SubstringExtensions.Between(System.String,System.String,System.String)">
+            <summary>
+            Get string value between [first] a and [last] b.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SubstringExtensions.Before(System.String,System.String)">
+            <summary>
+            Get string value after [first] a.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.SubstringExtensions.After(System.String,System.String)">
+            <summary>
+            Get string value after [last] a.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode">
+            <summary>
+            Class which represents the tree map leaf nodes.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.OnPropertyChanged(System.String)">
+            <summary>
+            Method gets called when the property value gets changed.
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.Height">
+            <summary>
+            Gets or sets the height value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.DefaultWidth">
+            <summary>
+            Gets or sets the default width value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.AreaByWeight">
+            <summary>
+            Gets or sets the area by weight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.Weight">
+            <summary>
+            Gets or sets the weight value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.ItemWidth">
+            <summary>
+            Gets or sets the item width value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.ItemHeight">
+            <summary>
+            Gets or sets the item height value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.LeftPosition">
+            <summary>
+            Gets or sets the left position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.TopPosition">
+            <summary>
+            Gets or sets the to position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.HeaderSize">
+            <summary>
+            Gets or sets the size of header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.ColorWeight">
+            <summary>
+            Gets or sets the weight of the color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.HeaderColor">
+            <summary>
+            Gets or sets the color of header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.MappedColor">
+            <summary>
+            Gets or sets the value for mapped color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.LeafNodes">
+            <summary>
+            Gets the tree map leaf nodes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.ChildTreeMapItems">
+            <summary>
+            Gets the child tree map items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.SubItemsList">
+            <summary>
+            Gets or sets the sub items of tree map.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.Data">
+            <summary>
+            Gets the object value for the data.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.Label">
+            <summary>
+            Gets the value for the label.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.TreeMap.TreeMapLeafNode.PropertyChanged">
+            <summary>
+            Raised when the property value gets changed.
+            </summary>
+        </member>
+    </members>
+</doc>
