@@ -82,7 +82,7 @@ namespace Raven.DAO
         }
         public bool UpdateInfo(string username , string gender , string phone , string address , string icm , DateTime DOB , string Des)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery("EXEC FillIn4InFormation @Emails  , @gender =  , @phone =  , @Address =  , @ICM =  , @DOB =  , @DES =  ", new object[] { username , gender , phone , address , icm , DOB , Des });
+            int result = DataProvider.Instance.ExecuteNonQuery("EXEC FillIn4InFormation @Emails  , @gender  , @phone , @Address  , @ICM  , @DOB  , @DES ", new object[] { username , gender , phone , address , icm , DOB , Des });
             return result > 0;
         }
         public bool Block(string username, bool block)
