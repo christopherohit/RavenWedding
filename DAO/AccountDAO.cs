@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -94,6 +95,11 @@ namespace Raven.DAO
         {
             int result = DataProvider.Instance.ExecuteNonQuery("EXEC InsertMember @name  , @email  , @pass ", new object[] { fullname, mails, pass });
             return result > 0;
+        }
+
+        public bool UpdateImage(Image image)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("");
         }
     }
 }
