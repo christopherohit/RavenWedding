@@ -16,6 +16,8 @@ namespace Raven
 {
     public partial class LastStep : Form
     {
+        bool IsDirty { get; set; }
+        bool IsClean { get; set; }
         string FullPath = Path.GetFullPath(@"C:\");
         string FullSelect = Path.GetFullPath(@"D:\");
  
@@ -24,15 +26,21 @@ namespace Raven
             InitializeComponent();
             cameraControl1.Hide();
             pictureBox3.Hide();
+            button1.Hide();
+            pictureBox4.Hide();
+            IsClean = true;
+            IsDirty = false;
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void bunifuButton1_Click(object sender, EventArgs e)// Create Dialog to pick picture
         {
             pictureBox1.Show();
             ProcessImage();
+            this.bunifuButton1.Hide();
+            button1.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e) // Create Dialog to pick picture
         {
             ProcessImage();
         }
@@ -47,6 +55,8 @@ namespace Raven
                 string ChoosePic = fileDialog.FileName.Replace(FullSelect, "");
                 pictureBox1.Image = new Bitmap(FullSelect + ChoosePic);
                 pictureBox1.Image.Tag = ChoosePic;
+                IsDirty = true;
+                IsClean = true;
             }
 
         }
@@ -59,33 +69,45 @@ namespace Raven
                 string ChoosePic = fileDialog.FileName.Replace(FullPath, "");
                 pictureBox1.Image = new Bitmap(FullPath + ChoosePic);
                 pictureBox1.Image.Tag = ChoosePic;
+                IsDirty = false;
+                IsClean = false;
             }
         }
         public void ProcessImage()
         {
             try
             {
+                MessageBox.Show("We don't recommend you pick any picture drive C. It will be have some error for System \n ", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 GetImageInD();
             }
             catch (Exception er)
             {
+                MessageBox.Show("We recognize that you choose a picture from C drive, We extremely non encourage it method\n" + er.Message + "", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 GetImageInC();
-                MessageBox.Show("We don't recommend you pick any picture drive C. It will be have some error for System \n "+ er.Message + "" , "Warning" , MessageBoxButtons.OK , MessageBoxIcon.Warning);
-                MessageBox.Show(er.Message);
             }
         }
         #endregion
         
-        private void bunifuButton2_Click(object sender, EventArgs e)
+        private void bunifuButton2_Click(object sender, EventArgs e) // Setup Button Require for Take a Photo
         {
-            cameraControl1.Show();
-            pictureBox1.Hide();
-            pictureBox3.Show();
-            bunifuButton1.Visible = false;
-            bunifuButton2.Visible = false;
+            var res = MessageBox.Show("This app will use your camera\nDo you accept ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res == DialogResult.Yes)
+            {
+                cameraControl1.Show();
+                pictureBox1.Hide();
+                pictureBox3.Show();
+                bunifuButton1.Visible = false;
+                bunifuButton2.Visible = false;
+            }
+            else
+            {
+
+            }
+
+            
         }
 
-        #region
+        #region Move Form
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
@@ -112,7 +134,7 @@ namespace Raven
         }
         #endregion
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e) // Exit Form
         {
             var mes = MessageBox.Show("My System will set default image for you", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (mes == DialogResult.Yes)
@@ -128,7 +150,7 @@ namespace Raven
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e) // Take a picture, create a directory and save it into a folder which set name by member's name
         {
             System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["Info"];
             int i = 0;
@@ -153,6 +175,9 @@ namespace Raven
                         cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
                     }
                 }
+                pictureBox4.Show();
+                button1.Show();
+
             }
             catch (Exception er)
             {
@@ -176,6 +201,24 @@ namespace Raven
                         cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
                     }
                 }
+                pictureBox4.Show();
+                button1.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (IsClean == true && IsDirty == true)
+                {
+                    string file = FullSelect + pictureBox1.Image.Tag.ToString();
+                    byte[] buffer = File.ReadAllBytes(file);
+                }
+            }
+            catch (Exception)
+            {
+
             }
         }
     }

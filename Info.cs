@@ -157,7 +157,63 @@ namespace Raven
         
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            try
+            if (((SignUp)GetName) == null)
+            {
+                string username = ((SignIn)GetLackName).TextBox.Text;
+                string icm = ICM.Text;
+                string Gender = gender.Text;
+                string Phone = phone.Text;
+                string address = Address.Text;
+                DateTime DOB = birth.Value;
+                string Des = desc.Text;
+                if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(ICM.Text) || string.IsNullOrEmpty(gender.Text) || string.IsNullOrEmpty(phone.Text) || string.IsNullOrEmpty(Address.Text) || string.IsNullOrEmpty(desc.Text) || birth.Value.Year >= 1998)
+                {
+                    #region Check For missing
+                    if (string.IsNullOrEmpty(name.Text))
+                    {
+                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (string.IsNullOrEmpty(ICM.Text))
+                    {
+                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (string.IsNullOrEmpty(gender.Text))
+                    {
+                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (string.IsNullOrEmpty(phone.Text))
+                    {
+                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (string.IsNullOrEmpty(Address.Text))
+                    {
+                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (string.IsNullOrEmpty(desc.Text))
+                    {
+                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (birth.Value.Year > 1998)
+                    {
+                        MessageBox.Show("System Error Please recheck", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    #endregion
+                }
+                else
+                {
+                    if (Update(username, Gender, Phone, address, icm, DOB, Des))
+                    {
+                        LastStep lastStep = new LastStep();
+                        lastStep.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Update failed. Something was wrong, please try again later");
+                    }
+                }
+            }
+            else
             {
                 string username = ((SignUp)GetName).SetMails.Text;
                 string icm = ICM.Text;
@@ -213,64 +269,8 @@ namespace Raven
                     }
                 }
             }
-            catch (Exception or)
-            {
-                MessageBox.Show(or.Message);
-                MessageBox.Show(((SignIn)GetLackName).TextBox.Text);
-                string username = ((SignIn)GetLackName).TextBox.Text;
-                string icm = ICM.Text;
-                string Gender = gender.Text;
-                string Phone = phone.Text;
-                string address = Address.Text;
-                DateTime DOB = birth.Value;
-                string Des = desc.Text;
-                if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(ICM.Text) || string.IsNullOrEmpty(gender.Text) || string.IsNullOrEmpty(phone.Text) || string.IsNullOrEmpty(Address.Text) || string.IsNullOrEmpty(desc.Text) || birth.Value.Year >= 1998)
-                {
-                    #region Check For missing
-                    if (string.IsNullOrEmpty(name.Text))
-                    {
-                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if (string.IsNullOrEmpty(ICM.Text))
-                    {
-                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if (string.IsNullOrEmpty(gender.Text))
-                    {
-                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if (string.IsNullOrEmpty(phone.Text))
-                    {
-                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if (string.IsNullOrEmpty(Address.Text))
-                    {
-                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if (string.IsNullOrEmpty(desc.Text))
-                    {
-                        MessageBox.Show("Please fill in blank space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if (birth.Value.Year > 1998)
-                    {
-                        MessageBox.Show("System Error Please recheck", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    #endregion
-                }
-                else
-                {
-                    if (Update(username, Gender, Phone, address, icm, DOB, Des))
-                    {
-                        LastStep lastStep = new LastStep();
-                        lastStep.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Update failed. Something was wrong, please try again later");
-                    }
-                }
-            }
+                
+            
         }
 
         private void name_OnValueChanged(object sender, EventArgs e)
