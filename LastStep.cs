@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -17,9 +18,9 @@ namespace Raven
     public partial class LastStep : Form
     {
         bool IsDirty { get; set; }
-        bool IsClean { get; set; }
         string FullPath = Path.GetFullPath(@"C:\");
         string FullSelect = Path.GetFullPath(@"D:\");
+        System.Windows.Forms.Form GetData = System.Windows.Forms.Application.OpenForms["Info"];
  
         public LastStep()
         {
@@ -28,7 +29,6 @@ namespace Raven
             pictureBox3.Hide();
             button1.Hide();
             pictureBox4.Hide();
-            IsClean = true;
             IsDirty = false;
         }
 
@@ -55,8 +55,7 @@ namespace Raven
                 string ChoosePic = fileDialog.FileName.Replace(FullSelect, "");
                 pictureBox1.Image = new Bitmap(FullSelect + ChoosePic);
                 pictureBox1.Image.Tag = ChoosePic;
-                IsDirty = true;
-                IsClean = true;
+                IsDirty = false;
             }
 
         }
@@ -70,7 +69,6 @@ namespace Raven
                 pictureBox1.Image = new Bitmap(FullPath + ChoosePic);
                 pictureBox1.Image.Tag = ChoosePic;
                 IsDirty = false;
-                IsClean = false;
             }
         }
         public void ProcessImage()
@@ -152,6 +150,7 @@ namespace Raven
 
         private void pictureBox3_Click(object sender, EventArgs e) // Take a picture, create a directory and save it into a folder which set name by member's name
         {
+            IsDirty = true;
             System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["Info"];
             int i = 0;
             try
@@ -173,6 +172,7 @@ namespace Raven
                         DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-" + DateTime.Now.Second.ToString() +
                         ".jpg");
                         cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
+                        cameraControl1.Enabled = false;
                     }
                 }
                 pictureBox4.Show();
@@ -199,17 +199,53 @@ namespace Raven
                         DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-" + DateTime.Now.Second.ToString() +
                         ".jpg");
                         cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
+                        cameraControl1.Enabled = false;
                     }
                 }
                 pictureBox4.Show();
                 button1.Show();
+                
             }
         }
 
         protected void button1_Click(object sender, EventArgs e)
         {
             string cStr = "Data Source=DESKTOP-7CBSM7T;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
-            /*using (System.)*/
+            using (SqlConnection con = new SqlConnection(cStr))
+            {
+                if(IsDirty == false)
+                {
+                    try
+                    {
+                        string file = FullPath + pictureBox1.Image.Tag.ToString();
+                        byte[] bytes = File.ReadAllBytes(file);
+                        string UpImage = "UPDATE nhanvien set Pic = @image where Phone = @phone";
+                        SqlCommand command = new SqlCommand(UpImage, con);
+                        command.Parameters.AddWithValue("@phone", ((Info)GetData).GetPhone.Text);
+                        var binary = command.Parameters.Add("@image", SqlDbType.VarBinary, -1);
+                        binary.Value = bytes;
+                    }
+                    catch (Exception)
+                    {
+                        string file = FullSelect + pictureBox1.Image.Tag.ToString();
+                        byte[] bytes = File.ReadAllBytes(file);
+                        string UpImage = "UPDATE nhanvien set Pic = @image where Phone = @phone";
+                        SqlCommand command = new SqlCommand(UpImage, con);
+                        command.Parameters.AddWithValue("@phone", ((Info)GetData).GetPhone.Text);
+                        var binary = command.Parameters.Add("@image", SqlDbType.VarBinary, -1);
+                        binary.Value = bytes;
+                    }
+                }
+                else
+                {
+
+                }
+            };
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

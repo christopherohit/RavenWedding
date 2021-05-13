@@ -18,6 +18,7 @@ namespace Raven
         System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["SignUp"];
         System.Windows.Forms.Form GetLackName = System.Windows.Forms.Application.OpenForms["SignIn"];
         public Bunifu.Framework.UI.BunifuMaterialTextbox SetName { get { return this.name; } }
+        public Bunifu.Framework.UI.BunifuMaterialTextbox GetPhone { get { return this.phone; } }
         #region Round Corner
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
