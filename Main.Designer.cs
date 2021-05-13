@@ -48,7 +48,6 @@ namespace Raven
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Telerik.WinControls.UI.CategoricalRadialAxis categoricalRadialAxis1 = new Telerik.WinControls.UI.CategoricalRadialAxis();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -63,26 +62,19 @@ namespace Raven
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.DashPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.radChartView1 = new Telerik.WinControls.UI.RadChartView();
-            this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundRectShape1 = new Telerik.WinControls.RoundRectShape(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.customShape1 = new Telerik.WinControls.OldShapeEditor.CustomShape();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.DashPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
-            this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -530,8 +522,6 @@ namespace Raven
             // 
             this.DashPanel.BackColor = System.Drawing.Color.Snow;
             this.DashPanel.Controls.Add(this.label2);
-            this.DashPanel.Controls.Add(this.radChartView1);
-            this.DashPanel.Controls.Add(this.radPanel1);
             this.DashPanel.Controls.Add(this.panel3);
             this.DashPanel.Location = new System.Drawing.Point(186, 61);
             this.DashPanel.Name = "DashPanel";
@@ -550,36 +540,6 @@ namespace Raven
             this.label2.Text = "Statistic";
             // 
             // radChartView1
-            // 
-            this.radChartView1.AreaType = Telerik.WinControls.UI.ChartAreaType.Polar;
-            categoricalRadialAxis1.CenterLabels = false;
-            categoricalRadialAxis1.IsPrimary = true;
-            this.radChartView1.Axes.AddRange(new Telerik.WinControls.UI.Axis[] {
-            categoricalRadialAxis1});
-            this.radChartView1.Location = new System.Drawing.Point(9, 239);
-            this.radChartView1.Name = "radChartView1";
-            this.radChartView1.SelectionMode = Telerik.WinControls.UI.ChartSelectionMode.MultipleDataPoints;
-            this.radChartView1.Size = new System.Drawing.Size(952, 362);
-            this.radChartView1.TabIndex = 6;
-            // 
-            // radPanel1
-            // 
-            this.radPanel1.BackColor = System.Drawing.Color.Indigo;
-            this.radPanel1.Controls.Add(this.pictureBox5);
-            this.radPanel1.Controls.Add(this.label1);
-            this.radPanel1.Location = new System.Drawing.Point(42, 24);
-            this.radPanel1.Name = "radPanel1";
-            // 
-            // 
-            // 
-            this.radPanel1.RootElement.ApplyShapeToControl = true;
-            this.radPanel1.RootElement.EnableFocusBorder = true;
-            this.radPanel1.RootElement.Shape = this.roundRectShape1;
-            this.radPanel1.Size = new System.Drawing.Size(274, 147);
-            this.radPanel1.TabIndex = 5;
-            ((Telerik.WinControls.UI.RadPanelElement)(this.radPanel1.GetChildAt(0))).Text = "";
-            ((Telerik.WinControls.UI.RadPanelElement)(this.radPanel1.GetChildAt(0))).FocusBorderColor = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.radPanel1.GetChildAt(0).GetChildAt(1))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
             // 
             // pictureBox5
             // 
@@ -674,9 +634,7 @@ namespace Raven
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // customShape1
-            // 
-            this.customShape1.Dimension = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
+            //             // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -698,10 +656,6 @@ namespace Raven
             this.panel2.ResumeLayout(false);
             this.DashPanel.ResumeLayout(false);
             this.DashPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
-            this.radPanel1.ResumeLayout(false);
-            this.radPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -732,11 +686,8 @@ namespace Raven
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Label label1;
-        private Telerik.WinControls.UI.RadPanel radPanel1;
         private System.Windows.Forms.Label label2;
-        private Telerik.WinControls.UI.RadChartView radChartView1;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private Telerik.WinControls.OldShapeEditor.CustomShape customShape1;
-        private Telerik.WinControls.RoundRectShape roundRectShape1;
+
     }
 }
