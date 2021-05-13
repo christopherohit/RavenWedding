@@ -122,9 +122,6 @@
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
     </Reference>
-    <Reference Include="Emgu.CV.Platform.NetStandard, Version=4.5.1.4349, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
-      <HintPath>packages\Emgu.CV.4.5.1.4349\lib\netstandard2.0\Emgu.CV.Platform.NetStandard.dll</HintPath>
-    </Reference>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -200,55 +197,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.WinControls, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\BinNetCore\Telerik.WinControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.ChartView, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\BinNetCore\Telerik.WinControls.ChartView.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.GridView, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\BinNetCore\Telerik.WinControls.GridView.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.PivotGrid, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\BinNetCore\Telerik.WinControls.PivotGrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.RadChart, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin40\Telerik.WinControls.RadChart.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.RadDock, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin40\Telerik.WinControls.RadDock.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.RadMap, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin40\Telerik.WinControls.RadMap.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin50\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.RadWebCam, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>Lib\Telerik\Bin50\Telerik.WinControls.RadWebCam.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.Scheduler, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin50\Telerik.WinControls.Scheduler.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>Lib\Telerik\Bin50\Telerik.WinControls.Themes.Desert.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin50\Telerik.WinControls.Themes.HighContrastBlack.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
-    <Reference Include="Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin50\Telerik.WinControls.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.UI.Design, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>Lib\Telerik\Bin40\Telerik.WinControls.UI.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Windows.MediaFoundation, Version=2020.3.1016.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7">
-      <HintPath>Lib\Telerik\Bin40\Telerik.Windows.MediaFoundation.dll</HintPath>
-    </Reference>
-    <Reference Include="TelerikCommon, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
-      <HintPath>Lib\Telerik\Bin40\TelerikCommon.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authical.cs">
