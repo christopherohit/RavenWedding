@@ -1,5 +1,3 @@
-DevExpress.XtraDataLayout.DataLayoutControl, DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
-DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadWebCam, Telerik.WinControls.RadWebCam, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadBindingNavigator, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
@@ -7,18 +5,14 @@ Telerik.WinControls.UI.RadBreadCrumb, Telerik.WinControls.UI, Version=2020.3.102
 Telerik.WinControls.UI.RadRotator, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadAutoCompleteBox, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadChartView, Telerik.WinControls.ChartView, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
-DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 Telerik.WinControls.UI.RadBarcode, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.Themes.DesertTheme, Telerik.WinControls.Themes.Desert, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadCardView, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadChat, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadDropDownButton, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
-DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
-DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 Telerik.WinControls.Themes.Office2007SilverTheme, Telerik.WinControls.Themes.Office2007Silver, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.RadThemeManager, Telerik.WinControls, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.ExplorerControl, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
 Telerik.WinControls.UI.RadApplicationMenu, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
-DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 Telerik.WinControls.UI.RadRating, Telerik.WinControls.UI, Version=2020.3.1020.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
