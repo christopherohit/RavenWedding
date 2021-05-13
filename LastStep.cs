@@ -206,20 +206,10 @@ namespace Raven
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        protected void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (IsClean == true && IsDirty == true)
-                {
-                    string file = FullSelect + pictureBox1.Image.Tag.ToString();
-                    byte[] buffer = File.ReadAllBytes(file);
-                }
-            }
-            catch (Exception)
-            {
-
-            }
+            string cStr = "Data Source=DESKTOP-7CBSM7T;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
+            using (System.)
         }
     }
 }

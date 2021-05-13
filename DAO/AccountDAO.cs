@@ -97,9 +97,5 @@ namespace Raven.DAO
             return result > 0;
         }
 
-        public bool UpdateImage(Image image)
-        {
-            int result = DataProvider.Instance.ExecuteNonQuery("");
-        }
     }
 }
