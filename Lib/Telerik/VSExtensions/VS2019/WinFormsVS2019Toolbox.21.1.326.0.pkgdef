@@ -1,0 +1,791 @@
+[$RootKey$\ToolboxControlsInstaller]
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.ChartView, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.ChartView.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.ChartView, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadChartView"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.RadThemeManager"="Telerik UI for WinForms - Themes 2021 R1"
+"Telerik.WinControls.RadColorDialog"="Telerik UI for WinForms - Dialogs 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.GridView, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.GridView.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.GridView, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadGridView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadAutoCompleteBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadDropDownListEditor"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadTextBoxControlEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTextBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.VirtualGridAutoCompleteBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.VirtualGridDropDownListEditor"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.VirtualGridTextBoxControlEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.VirtualGridTextBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadVirtualGrid"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadMultiColumnComboBox"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.PivotGrid, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.PivotGrid.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.PivotGrid, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadPivotFieldList"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadPivotGrid"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadChart, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.RadChart.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadDock, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.RadDock.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadDock, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.Docking.RadDock"="Telerik UI for WinForms - Containers 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMap, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.RadMap.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMap, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadMap"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMarkupEditor, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.RadMarkupEditor.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMarkupEditor, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadMarkupDialog"="Telerik UI for WinForms - Dialogs 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Scheduler, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Scheduler.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Scheduler, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadReminder"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.RadSchedulerReminder"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.SchedulerBindingDataSource"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.RadScheduler"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.RadSchedulerNavigator"="Telerik UI for WinForms - Scheduler 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Aqua, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Aqua.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Aqua, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.AquaTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Breeze, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Breeze.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Breeze, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.BreezeTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Crystal, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Crystal.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Crystal, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.CrystalTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.CrystalDark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.CrystalDark.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.CrystalDark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.CrystalDarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Desert, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Desert.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Desert, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.DesertTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Fluent, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Fluent.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Fluent, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.FluentTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.FluentDark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.FluentDark.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.FluentDark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.FluentDarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.HighContrastBlack, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.HighContrastBlack.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.HighContrastBlack, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.HighContrastBlackTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Material, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Material.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Material, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialBlueGrey, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.MaterialBlueGrey.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialBlueGrey, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialBlueGreyTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialPink, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.MaterialPink.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialPink, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialPinkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialTeal, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.MaterialTeal.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialTeal, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialTealTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Black, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2007Black.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Black, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2007BlackTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Silver, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2007Silver.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Silver, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2007SilverTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Black, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2010Black.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Black, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2010BlackTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Blue, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2010Blue.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Blue, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2010BlueTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Silver, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2010Silver.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Silver, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2010SilverTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Dark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2013Dark.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Dark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2013DarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Light, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2013Light.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Light, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2013LightTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2019, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Office2019.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2019, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2019LightTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetro, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.TelerikMetro.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetro, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.TelerikMetroTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroBlue, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.TelerikMetroBlue.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroBlue, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.TelerikMetroBlueTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroTouch, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.TelerikMetroTouch.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroTouch, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.TelerikMetroTouchTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.VisualStudio2012Dark.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.VisualStudio2012DarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Light, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.VisualStudio2012Light.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Light, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.VisualStudio2012LightTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows7, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Windows7.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows7, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Windows7Theme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows8, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.Themes.Windows8.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows8, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Windows8Theme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.UI, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin\Telerik.WinControls.UI.dll"
+"TargetFramework"=".NETFramework,Version=v2.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.UI, Version=2021.1.326.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadCheckedDropDownList"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadCheckedListBox"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadButtonTextBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadDomainUpDown"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadFontDropDownList"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadMaskedEditBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadApplicationMenu"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadContextMenu"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadPopupContainer"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadPopupEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadBarcode"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadCardView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadChat"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadCollapsiblePanel"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadDataFilter"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadDataLayout"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadDataEntry"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadBindingNavigator"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadPictureBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadSparkline"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadTabbedFormControl"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadGanttView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadImageEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadLayoutControl"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadListControl"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadAutoCompleteBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadBrowseEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadPropertyGrid"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadCalculatorDropDown"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadCalendar"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadColorBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadCommandBar"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadDropDownList"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadListView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadPanorama"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadTextBoxControl"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTimePicker"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTimeSpanPicker"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadValidationProvider"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadPageView"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadSplitContainer"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadTrackBar"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTreeView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadGroupBox"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadDateTimePicker"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadContextMenuManager"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadPanel"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadScrollablePanel"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadStatusStrip"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadSpinEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTextBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadMenu"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadRibbonBar"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.ChartView, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.ChartView.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.ChartView, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadChartView"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.RadThemeManager"="Telerik UI for WinForms - Themes 2021 R1"
+"Telerik.WinControls.RadColorDialog"="Telerik UI for WinForms - Dialogs 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.GridView, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.GridView.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.GridView, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadGridView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadAutoCompleteBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadDropDownListEditor"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadTextBoxControlEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTextBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.VirtualGridAutoCompleteBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.VirtualGridDropDownListEditor"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.VirtualGridTextBoxControlEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.VirtualGridTextBoxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadVirtualGrid"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadMultiColumnComboBox"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.PdfViewer, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.PdfViewer.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.PdfViewer, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadPdfViewerNavigator"="Telerik UI for WinForms - PdfViewer 2021 R1"
+"Telerik.WinControls.UI.RadPdfViewer"="Telerik UI for WinForms - PdfViewer 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.PivotGrid, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.PivotGrid.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.PivotGrid, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadPivotFieldList"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadPivotGrid"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadChart, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadChart.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadDiagram, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadDiagram.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadDiagram, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadDiagramRibbonBar"="Telerik UI for WinForms - Diagram 2021 R1"
+"Telerik.WinControls.UI.RadDiagram"="Telerik UI for WinForms - Diagram 2021 R1"
+"Telerik.WinControls.UI.RadDiagramToolbox"="Telerik UI for WinForms - Diagram 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadDock, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadDock.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadDock, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.Docking.RadDock"="Telerik UI for WinForms - Containers 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMap, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadMap.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMap, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadMap"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMarkupEditor, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadMarkupEditor.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadMarkupEditor, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadMarkupDialog"="Telerik UI for WinForms - Dialogs 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadSpreadsheet, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadSpreadsheet.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadSpreadsheet, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadSpreadsheetRibbonBar"="Telerik UI for WinForms - Spreadsheet 2021 R1"
+"Telerik.WinControls.UI.RadSpreadsheet"="Telerik UI for WinForms - Spreadsheet 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadToastNotification, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadToastNotification.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadWebCam, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RadWebCam.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RadWebCam, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadWebCam"="Telerik UI for WinForms - Data Controls 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RichTextEditor, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.RichTextEditor.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.RichTextEditor, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadRichTextEditor"="Telerik UI for WinForms - RichTextEditor 2021 R1"
+"Telerik.WinControls.UI.RichTextEditorRibbonBar"="Telerik UI for WinForms - RichTextEditor 2021 R1"
+"Telerik.WinControls.UI.RadRichTextEditorRuler"="Telerik UI for WinForms - RichTextEditor 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Scheduler, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Scheduler.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Scheduler, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadReminder"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.RadSchedulerReminder"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.SchedulerBindingDataSource"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.RadScheduler"="Telerik UI for WinForms - Scheduler 2021 R1"
+"Telerik.WinControls.UI.RadSchedulerNavigator"="Telerik UI for WinForms - Scheduler 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.SpellChecker, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.SpellChecker.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.SpellChecker, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadSpellChecker"="Telerik UI for WinForms - Editors 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.SyntaxEditor, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.SyntaxEditor.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.SyntaxEditor, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadSyntaxEditor"="Telerik UI for WinForms - Editors 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Aqua, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Aqua.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Aqua, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.AquaTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Breeze, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Breeze.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Breeze, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.BreezeTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Crystal, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Crystal.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Crystal, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.CrystalTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.CrystalDark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.CrystalDark.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.CrystalDark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.CrystalDarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Desert, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Desert.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Desert, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.DesertTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Fluent, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Fluent.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Fluent, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.FluentTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.FluentDark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.FluentDark.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.FluentDark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.FluentDarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.HighContrastBlack, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.HighContrastBlack.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.HighContrastBlack, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.HighContrastBlackTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Material, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Material.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Material, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialBlueGrey, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.MaterialBlueGrey.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialBlueGrey, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialBlueGreyTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialPink, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.MaterialPink.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialPink, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialPinkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialTeal, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.MaterialTeal.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.MaterialTeal, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.MaterialTealTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Black, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2007Black.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Black, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2007BlackTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Silver, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2007Silver.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2007Silver, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2007SilverTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Black, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2010Black.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Black, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2010BlackTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Blue, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2010Blue.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Blue, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2010BlueTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Silver, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2010Silver.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2010Silver, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2010SilverTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Dark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2013Dark.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Dark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2013DarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Light, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2013Light.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2013Light, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2013LightTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2019, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Office2019.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Office2019, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Office2019LightTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetro, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.TelerikMetro.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetro, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.TelerikMetroTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroBlue, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.TelerikMetroBlue.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroBlue, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.TelerikMetroBlueTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroTouch, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.TelerikMetroTouch.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.TelerikMetroTouch, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.TelerikMetroTouchTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.VisualStudio2012Dark.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.VisualStudio2012DarkTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Light, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.VisualStudio2012Light.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.VisualStudio2012Light, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.VisualStudio2012LightTheme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows7, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Windows7.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows7, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Windows7Theme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows8, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.Themes.Windows8.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.Themes.Windows8, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.Themes.Windows8Theme"="Telerik UI for WinForms - Themes 2021 R1"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.UI, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e]
+@="Telerik UI for WinForms 2021 R1"
+"CodeBase"="D:\ZZZ Program File\Telerik\Bin40\Telerik.WinControls.UI.dll"
+"TargetFramework"=".NETFramework,Version=v4.0"
+
+[$RootKey$\ToolboxControlsInstaller\Telerik.WinControls.UI, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e\ItemCategories]
+"Telerik.WinControls.UI.RadCheckedDropDownList"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadCheckedListBox"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadButtonTextBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadDomainUpDown"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadFontDropDownList"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadMaskedEditBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadApplicationMenu"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadContextMenu"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadPopupContainer"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadPopupEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadBarcode"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadCardView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadChat"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadCollapsiblePanel"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadDataFilter"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadDataLayout"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadDataEntry"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadBindingNavigator"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadPictureBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadSparkline"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadTabbedFormControl"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadGanttView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadImageEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadLayoutControl"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadListControl"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadAutoCompleteBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadBrowseEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadPropertyGrid"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadCalculatorDropDown"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadCalendar"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadColorBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadCommandBar"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadDropDownList"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadListView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadPanorama"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadTextBoxControl"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTimePicker"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTimeSpanPicker"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadValidationProvider"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadPageView"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadSplitContainer"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadTrackBar"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTreeView"="Telerik UI for WinForms - Data Controls 2021 R1"
+"Telerik.WinControls.UI.RadGroupBox"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadDateTimePicker"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadContextMenuManager"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadPanel"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadScrollablePanel"="Telerik UI for WinForms - Containers 2021 R1"
+"Telerik.WinControls.UI.RadStatusStrip"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadSpinEditor"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadTextBox"="Telerik UI for WinForms - Editors 2021 R1"
+"Telerik.WinControls.UI.RadMenu"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+"Telerik.WinControls.UI.RadRibbonBar"="Telerik UI for WinForms - Menus & Toolbars 2021 R1"
+

@@ -1,0 +1,3069 @@
+<t:RadDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+               xmlns:t="clr-namespace:Telerik.WinForms.Documents.Model;assembly=Telerik.WinControls.RichTextEditor" 
+               xmlns:s="clr-namespace:Telerik.WinForms.Documents.Model.Styles;assembly=Telerik.WinControls.RichTextEditor" 
+               xmlns:r="clr-namespace:Telerik.WinForms.Documents.Model.Revisions;assembly=Telerik.WinControls.RichTextEditor" 
+               xmlns:n="clr-namespace:Telerik.WinForms.Documents.Model.Notes;assembly=Telerik.WinControls.RichTextEditor" 
+              xmlns:th="clr-namespace:Telerik.WinForms.Documents.Model.Themes;assembly=Telerik.WinControls.RichTextEditor" 
+               DefaultTabWidth="48" LayoutMode="Paged" LineSpacing="1.14999997615814" LineSpacingType="Auto" ParagraphDefaultSpacingAfter="12" ParagraphDefaultSpacingBefore="0" SelectedBibliographicStyleName="\APA.XSL" StyleName="defaultDocumentStyle">
+  <t:RadDocument.Captions>
+    <t:CaptionDefinition IsDefault="True" IsLinkedToHeading="False" Label="Figure" LinkedHeadingLevel="0" NumberingFormat="Arabic" SeparatorType="Hyphen" />
+    <t:CaptionDefinition IsDefault="True" IsLinkedToHeading="False" Label="Table" LinkedHeadingLevel="0" NumberingFormat="Arabic" SeparatorType="Hyphen" />
+  </t:RadDocument.Captions>
+  <t:RadDocument.ProtectionSettings>
+    <t:DocumentProtectionSettings EnableDocumentProtection="False" Enforce="False" HashingAlgorithm="None" HashingSpinCount="0" ProtectionMode="ReadOnly" />
+  </t:RadDocument.ProtectionSettings>
+  <t:RadDocument.Styles>
+    <s:StyleDefinition DisplayName="Document Default Style" IsCustom="False" IsDefault="False" IsPrimary="True" Name="defaultDocumentStyle" Type="Default">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties FirstLineIndent="0" LeftIndent="0" LineSpacing="1.14999997615814" RightIndent="0" SpacingAfter="12" SpacingBefore="0" TextAlignment="Left" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FlowDirection="LeftToRight" FontFamily="Verdana" FontSize="16" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 1 Light" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable1Light" Type="Table" UIPriority="46">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;2,Single,#FF000000,text1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.1666667,Double,#FF000000,text1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FF000000,text1,,;0.6666667,Single,#FF000000,text1,,;0.6666667,Single,#FF000000,text1,,;0.6666667,Single,#FF000000,text1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 2 - Accent 6" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable2-Accent6" Type="Table" UIPriority="47">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;2,Single,#FFF79646,accent6,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0.1666667,Double,#FFF79646,accent6,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFDEADA" ThemeBackground="accent6" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFDEADA" ThemeBackground="accent6" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.1666667,Single,#FFF79646,accent6,,;0,None,#FF000000,none,,;0.1666667,Single,#FFF79646,accent6,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 4" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable4" Type="Table" UIPriority="49">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF000000" Borders="0.6666667,Single,#FF000000,text1,," ThemeBackground="text1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF000000,text1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFCCCCCC" ThemeBackground="text1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFCCCCCC" ThemeBackground="text1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FF000000,text1,,;0.6666667,Single,#FF000000,text1,,;0.6666667,Single,#FF000000,text1,,;0.6666667,Single,#FF000000,text1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 4 - Accent 1" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable4-Accent1" Type="Table" UIPriority="49">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF4F81BD" Borders="0.6666667,Single,#FF4F81BD,accent1,," ThemeBackground="accent1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF4F81BD,accent1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDCE6F2" ThemeBackground="accent1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDCE6F2" ThemeBackground="accent1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FF4F81BD,accent1,,;0.6666667,Single,#FF4F81BD,accent1,,;0.6666667,Single,#FF4F81BD,accent1,,;0.6666667,Single,#FF4F81BD,accent1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 4 - Accent 2" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable4-Accent2" Type="Table" UIPriority="49">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFC0504D" Borders="0.6666667,Single,#FFC0504D,accent2,," ThemeBackground="accent2" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FFC0504D,accent2,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF2DCDB" ThemeBackground="accent2" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF2DCDB" ThemeBackground="accent2" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FFC0504D,accent2,,;0.6666667,Single,#FFC0504D,accent2,,;0.6666667,Single,#FFC0504D,accent2,,;0.6666667,Single,#FFC0504D,accent2,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 4 - Accent 3" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable4-Accent3" Type="Table" UIPriority="49">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF9BBB59" Borders="0.6666667,Single,#FF9BBB59,accent3,," ThemeBackground="accent3" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF9BBB59,accent3,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFEBF1DE" ThemeBackground="accent3" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFEBF1DE" ThemeBackground="accent3" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FF9BBB59,accent3,,;0.6666667,Single,#FF9BBB59,accent3,,;0.6666667,Single,#FF9BBB59,accent3,,;0.6666667,Single,#FF9BBB59,accent3,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 4 - Accent 4" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable4-Accent4" Type="Table" UIPriority="49">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF8064A2" Borders="0.6666667,Single,#FF8064A2,accent4,," ThemeBackground="accent4" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF8064A2,accent4,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFE6E0EC" ThemeBackground="accent4" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFE6E0EC" ThemeBackground="accent4" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FF8064A2,accent4,,;0.6666667,Single,#FF8064A2,accent4,,;0.6666667,Single,#FF8064A2,accent4,,;0.6666667,Single,#FF8064A2,accent4,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 4 - Accent 5" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable4-Accent5" Type="Table" UIPriority="49">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF4BACC6" Borders="0.6666667,Single,#FF4BACC6,accent5,," ThemeBackground="accent5" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF4BACC6,accent5,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDBEEF4" ThemeBackground="accent5" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDBEEF4" ThemeBackground="accent5" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FF4BACC6,accent5,,;0.6666667,Single,#FF4BACC6,accent5,,;0.6666667,Single,#FF4BACC6,accent5,,;0.6666667,Single,#FF4BACC6,accent5,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 4 - Accent 6" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable4-Accent6" Type="Table" UIPriority="49">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF79646" Borders="0.6666667,Single,#FFF79646,accent6,," ThemeBackground="accent6" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FFF79646,accent6,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFDEADA" ThemeBackground="accent6" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFDEADA" ThemeBackground="accent6" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FFF79646,accent6,,;0.6666667,Single,#FFF79646,accent6,,;0.6666667,Single,#FFF79646,accent6,,;0.6666667,Single,#FFF79646,accent6,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 5 Dark" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable5Dark" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF000000" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," ThemeBackground="text1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF000000" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="text1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF000000" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="text1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF000000" Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="text1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF999999" ThemeBackground="text1" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF999999" ThemeBackground="text1" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FFCCCCCC" ThemeBackground="text1" ThemeFillTint="33" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 5 Dark - Accent 1" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable5Dark-Accent1" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF4F81BD" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," ThemeBackground="accent1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF4F81BD" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF4F81BD" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF4F81BD" Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFB9CDE5" ThemeBackground="accent1" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFB9CDE5" ThemeBackground="accent1" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FFDCE6F2" ThemeBackground="accent1" ThemeFillTint="33" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 5 Dark - Accent 2" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable5Dark-Accent2" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFC0504D" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," ThemeBackground="accent2" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFC0504D" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent2" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFC0504D" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent2" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFC0504D" Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent2" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFE6B9B8" ThemeBackground="accent2" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFE6B9B8" ThemeBackground="accent2" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FFF2DCDB" ThemeBackground="accent2" ThemeFillTint="33" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Grid Table 5 Dark - Accent 4" IsCustom="False" IsDefault="False" IsPrimary="False" Name="GridTable5Dark-Accent4" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF8064A2" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," ThemeBackground="accent4" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF8064A2" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent4" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF8064A2" Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent4" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF8064A2" Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,," ThemeBackground="accent4" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFCCC1DA" ThemeBackground="accent4" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFCCC1DA" ThemeBackground="accent4" ThemeFillTint="66" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FFE6E0EC" ThemeBackground="accent4" ThemeFillTint="33" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="Normal" DisplayName="Heading 1" IsCustom="False" IsDefault="False" IsPrimary="True" LinkedStyleName="Heading1Char" Name="Heading1" NextStyleName="Normal" Type="Paragraph" UIPriority="9">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties KeepLines="True" OutlineLevel="1" SpacingAfter="0" SpacingBefore="32" />
+      </s:StyleDefinition.ParagraphStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Heading 1 Char" IsCustom="False" IsDefault="False" IsPrimary="False" LinkedStyleName="Heading1" Name="Heading1Char" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontSize="18.6666660308838" FontWeight="Bold" ForeColor="#FF4F81BD" ThemeForeColor="accent1" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="Normal" DisplayName="Heading 2" IsCustom="False" IsDefault="False" IsPrimary="True" LinkedStyleName="Heading2Char" Name="Heading2" NextStyleName="Normal" Type="Paragraph" UIPriority="9">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties KeepLines="True" OutlineLevel="2" SpacingAfter="0" SpacingBefore="13.3333330154419" />
+      </s:StyleDefinition.ParagraphStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Heading 2 Char" IsCustom="False" IsDefault="False" IsPrimary="False" LinkedStyleName="Heading2" Name="Heading2Char" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontSize="17.3333339691162" FontWeight="Bold" ForeColor="#FF4F81BD" ThemeForeColor="accent1" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="Normal" DisplayName="Heading 3" IsCustom="False" IsDefault="False" IsPrimary="True" LinkedStyleName="Heading3Char" Name="Heading3" NextStyleName="Normal" Type="Paragraph" UIPriority="9">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties KeepLines="True" OutlineLevel="3" SpacingAfter="0" SpacingBefore="13.3333330154419" />
+      </s:StyleDefinition.ParagraphStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Heading 3 Char" IsCustom="False" IsDefault="False" IsPrimary="False" LinkedStyleName="Heading3" Name="Heading3Char" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontWeight="Bold" ForeColor="#FF4F81BD" ThemeForeColor="accent1" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="Normal" DisplayName="Heading 4" IsCustom="False" IsDefault="False" IsPrimary="True" LinkedStyleName="Heading4Char" Name="Heading4" NextStyleName="Normal" Type="Paragraph" UIPriority="9">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties KeepLines="True" OutlineLevel="4" SpacingAfter="0" SpacingBefore="13.3333330154419" />
+      </s:StyleDefinition.ParagraphStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Heading 4 Char" IsCustom="False" IsDefault="False" IsPrimary="False" LinkedStyleName="Heading4" Name="Heading4Char" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontStyle="Italic" FontWeight="Bold" ForeColor="#FF4F81BD" ThemeForeColor="accent1" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="Normal" DisplayName="Heading 5" IsCustom="False" IsDefault="False" IsPrimary="True" LinkedStyleName="Heading5Char" Name="Heading5" NextStyleName="Normal" Type="Paragraph" UIPriority="9">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties KeepLines="True" OutlineLevel="5" SpacingAfter="0" SpacingBefore="13.3333330154419" />
+      </s:StyleDefinition.ParagraphStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Heading 5 Char" IsCustom="False" IsDefault="False" IsPrimary="False" LinkedStyleName="Heading5" Name="Heading5Char" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF4F81BD" ThemeForeColor="accent1" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="Normal" DisplayName="Heading 6" IsCustom="False" IsDefault="False" IsPrimary="True" LinkedStyleName="Heading6Char" Name="Heading6" NextStyleName="Normal" Type="Paragraph" UIPriority="9">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties KeepLines="True" OutlineLevel="6" SpacingAfter="0" SpacingBefore="13.3333330154419" />
+      </s:StyleDefinition.ParagraphStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Heading 6 Char" IsCustom="False" IsDefault="False" IsPrimary="False" LinkedStyleName="Heading6" Name="Heading6Char" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontStyle="Italic" ForeColor="#FF4F81BD" ThemeForeColor="accent1" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="Normal" DisplayName="Heading 8" IsCustom="False" IsDefault="False" IsPrimary="True" LinkedStyleName="Heading8Char" Name="Heading8" NextStyleName="Normal" Type="Paragraph" UIPriority="9">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties KeepLines="True" OutlineLevel="8" SpacingAfter="0" SpacingBefore="13.3333330154419" />
+      </s:StyleDefinition.ParagraphStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Heading 8 Char" IsCustom="False" IsDefault="False" IsPrimary="False" LinkedStyleName="Heading8" Name="Heading8Char" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontSize="13.3333330154419" ForeColor="#FF000000" ThemeForeColor="text1" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 3 - Accent 4" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable3-Accent4" Type="Table" UIPriority="48">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF8064A2" ThemeBackground="accent4" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF8064A2,accent4,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FF8064A2,accent4,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF8064A2,accent4,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FF8064A2,accent4,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF8064A2,accent4,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0.6666667,Double,#FF8064A2,accent4,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF8064A2,accent4,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FF8064A2,accent4,,;0.6666667,Single,#FF8064A2,accent4,,;0.6666667,Single,#FF8064A2,accent4,,;0.6666667,Single,#FF8064A2,accent4,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 5 Dark - Accent 2" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable5Dark-Accent2" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;3,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="EvenColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FFC0504D" ThemeBackground="accent2" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="4,Single,#FFC0504D,accent2,,;4,Single,#FFC0504D,accent2,,;4,Single,#FFC0504D,accent2,,;4,Single,#FFC0504D,accent2,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 5 Dark - Accent 3" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable5Dark-Accent3" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;3,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="EvenColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FF9BBB59" ThemeBackground="accent3" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="4,Single,#FF9BBB59,accent3,,;4,Single,#FF9BBB59,accent3,,;4,Single,#FF9BBB59,accent3,,;4,Single,#FF9BBB59,accent3,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 5 Dark - Accent 4" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable5Dark-Accent4" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;3,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="EvenColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FF8064A2" ThemeBackground="accent4" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="4,Single,#FF8064A2,accent4,,;4,Single,#FF8064A2,accent4,,;4,Single,#FF8064A2,accent4,,;4,Single,#FF8064A2,accent4,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 5 Dark - Accent 5" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable5Dark-Accent5" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;3,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="EvenColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FF4BACC6" ThemeBackground="accent5" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="4,Single,#FF4BACC6,accent5,,;4,Single,#FF4BACC6,accent5,,;4,Single,#FF4BACC6,accent5,,;4,Single,#FF4BACC6,accent5,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 5 Dark - Accent 6" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable5Dark-Accent6" Type="Table" UIPriority="50">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;3,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="EvenColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFFFFFFF,background1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FFFFFFFF" ThemeForeColor="background1" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FFF79646" ThemeBackground="accent6" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="4,Single,#FFF79646,accent6,,;4,Single,#FFF79646,accent6,,;4,Single,#FFF79646,accent6,,;4,Single,#FFF79646,accent6,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 6 Colorful" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable6Colorful" Type="Table" UIPriority="51">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF000000,text1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF000000,text1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFCCCCCC" ThemeBackground="text1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFCCCCCC" ThemeBackground="text1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF000000" ThemeForeColor="text1" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.6666667,Single,#FF000000,text1,,;0,None,#FF000000,none,,;0.6666667,Single,#FF000000,text1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 6 Colorful - Accent 1" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable6Colorful-Accent1" Type="Table" UIPriority="51">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF4F81BD,accent1,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF4F81BD,accent1,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDCE6F2" ThemeBackground="accent1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDCE6F2" ThemeBackground="accent1" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF376092" ThemeForeColor="accent1" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.6666667,Single,#FF4F81BD,accent1,,;0,None,#FF000000,none,,;0.6666667,Single,#FF4F81BD,accent1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 6 Colorful - Accent 2" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable6Colorful-Accent2" Type="Table" UIPriority="51">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFC0504D,accent2,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FFC0504D,accent2,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF2DCDB" ThemeBackground="accent2" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF2DCDB" ThemeBackground="accent2" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF953735" ThemeForeColor="accent2" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.6666667,Single,#FFC0504D,accent2,,;0,None,#FF000000,none,,;0.6666667,Single,#FFC0504D,accent2,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 6 Colorful - Accent 3" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable6Colorful-Accent3" Type="Table" UIPriority="51">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF9BBB59,accent3,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF9BBB59,accent3,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFEBF1DE" ThemeBackground="accent3" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFEBF1DE" ThemeBackground="accent3" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF76933C" ThemeForeColor="accent3" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.6666667,Single,#FF9BBB59,accent3,,;0,None,#FF000000,none,,;0.6666667,Single,#FF9BBB59,accent3,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 6 Colorful - Accent 4" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable6Colorful-Accent4" Type="Table" UIPriority="51">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF8064A2,accent4,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF8064A2,accent4,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFE6E0EC" ThemeBackground="accent4" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFE6E0EC" ThemeBackground="accent4" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF604A7B" ThemeForeColor="accent4" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.6666667,Single,#FF8064A2,accent4,,;0,None,#FF000000,none,,;0.6666667,Single,#FF8064A2,accent4,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 6 Colorful - Accent 5" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable6Colorful-Accent5" Type="Table" UIPriority="51">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF4BACC6,accent5,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FF4BACC6,accent5,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDBEEF4" ThemeBackground="accent5" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFDBEEF4" ThemeBackground="accent5" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF31859B" ThemeForeColor="accent5" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.6666667,Single,#FF4BACC6,accent5,,;0,None,#FF000000,none,,;0.6666667,Single,#FF4BACC6,accent5,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 6 Colorful - Accent 6" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable6Colorful-Accent6" Type="Table" UIPriority="51">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFF79646,accent6,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0.6666667,Double,#FFF79646,accent6,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontWeight="Bold" />
+              </s:StyleDefinition.SpanStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFDEADA" ThemeBackground="accent6" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFDEADA" ThemeBackground="accent6" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FFE46C0A" ThemeForeColor="accent6" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0,None,#FF000000,none,,;0.6666667,Single,#FFF79646,accent6,,;0,None,#FF000000,none,,;0.6666667,Single,#FFF79646,accent6,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 7 Colorful - Accent 2" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable7Colorful-Accent2" Type="Table" UIPriority="52">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFC0504D,accent2,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FFC0504D,accent2,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.ParagraphStyle>
+                <s:ParagraphProperties TextAlignment="Right" />
+              </s:StyleDefinition.ParagraphStyle>
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FFC0504D,accent2,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0.6666667,Single,#FFC0504D,accent2,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF2DCDB" ThemeBackground="accent2" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF2DCDB" ThemeBackground="accent2" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF953735" ThemeForeColor="accent2" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="List Table 7 Colorful - Accent 3" IsCustom="False" IsDefault="False" IsPrimary="False" Name="ListTable7Colorful-Accent3" Type="Table" UIPriority="52">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF9BBB59,accent3,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0.6666667,Single,#FF9BBB59,accent3,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="FirstColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.ParagraphStyle>
+                <s:ParagraphProperties TextAlignment="Right" />
+              </s:StyleDefinition.ParagraphStyle>
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0.6666667,Single,#FF9BBB59,accent3,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastColumn">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontFamily="Cambria" FontSize="17.3333339691162" FontStyle="Italic" ThemeFontFamily="major" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFFFFF" Borders="0.6666667,Single,#FF9BBB59,accent3,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," ThemeBackground="background1" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFEBF1DE" ThemeBackground="accent3" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFEBF1DE" ThemeBackground="accent3" ThemeFillTint="33" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="TopLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,None,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomLeftCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,None,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF76933C" ThemeForeColor="accent3" ThemeForeColorShade="BF" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties CellPadding="7,0,7,0" ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Normal" IsCustom="False" IsDefault="True" IsPrimary="True" Name="Normal" Type="Paragraph" UIPriority="0">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontSize="13.3333330154419" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Custom Style" IsCustom="True" IsDefault="False" IsPrimary="True" Name="Style2" Type="Table" UIPriority="99">
+      <s:StyleDefinition.ConditionalTableStylesList>
+        <s:ConditionalTableStyleInfo Type="FirstRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontStyle="Italic" FontWeight="Bold" ForeColor="#FF000000" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFC000" Borders="1,Single,#FF632523,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddColumnBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Borders="1,Single,#FF632523,none,,;0,Inherit,#FF000000,none,,;1,Single,#FF632523,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="LastRow">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontStyle="Italic" FontWeight="Normal" ForeColor="#FF000000" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFFFC000" Borders="1,Single,#FF000000,none,,;1,Single,#FF632523,none,,;1,Single,#FF000000,none,,;1,Single,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="BottomRightCell">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties FontStyle="Italic" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFF2DCDB" Borders="0,Inherit,#FF000000,none,,;1,Single,#FF000000,none,,;0,Inherit,#FF000000,none,,;0,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="OddRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FFD99594" Borders="1,Inherit,#FF000000,none,," />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+        <s:ConditionalTableStyleInfo Type="EvenRowBanding">
+          <s:ConditionalTableStyleInfo.Style>
+            <s:StyleDefinition IsCustom="True" IsDefault="False" IsPrimary="True" Type="Table">
+              <s:StyleDefinition.SpanStyle>
+                <s:SpanProperties ForeColor="#FFFFFFFF" />
+              </s:StyleDefinition.SpanStyle>
+              <s:StyleDefinition.TableCellStyle>
+                <s:TableCellProperties Background="#FF943734" />
+              </s:StyleDefinition.TableCellStyle>
+            </s:StyleDefinition>
+          </s:ConditionalTableStyleInfo.Style>
+        </s:ConditionalTableStyleInfo>
+      </s:StyleDefinition.ConditionalTableStylesList>
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties TextAlignment="Center" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontFamily="Calibri" FontSize="13.3333330154419" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableCellStyle>
+        <s:TableCellProperties Background="#FFFCD5B5" VerticalAlignment="Center" />
+      </s:StyleDefinition.TableCellStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties ColumnBandSize="1" RowBandSize="1">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Table Grid" IsCustom="False" IsDefault="False" IsPrimary="False" Name="TableGrid" Type="Table" UIPriority="59">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="1,Single,#FF000000,none,,">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition BasedOnName="TableNormal" DisplayName="Table Grid Light" IsCustom="False" IsDefault="False" IsPrimary="False" Name="TableGridLight" Type="Table" UIPriority="40">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1" LineSpacingType="Auto" SpacingAfter="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0.6666667,Single,#FFFFFFFF,background1,,;0,None,#FF000000,none,,;0,None,#FF000000,none,," CellPadding="7,0,7,0">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Table Normal" IsCustom="False" IsDefault="True" IsPrimary="False" Name="TableNormal" Type="Table" UIPriority="59">
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties CellPadding="5,0,5,0">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+  </t:RadDocument.Styles>
+  <t:Section PageMargin="95,95,95,95" PageSize="816,1056">
+    <t:Section.Headers>
+      <t:Headers>
+        <t:Headers.Default>
+          <t:Header IsLinkedToPrevious="False">
+            <t:Header.WatermarkSettings>
+              <t:DocumentWatermarkSettings Type="NoWatermark" />
+            </t:Header.WatermarkSettings>
+          </t:Header>
+        </t:Headers.Default>
+      </t:Headers>
+    </t:Section.Headers>
+    <t:Paragraph>
+      <t:Span FontSize="13.3400001525879" FontWeight="Bold" Text="RadRichTextBox" />
+      <t:Span FontSize="13.3400001525879" FontWeight="Normal" Text=" has a concept of styles which allows you to use a set of predefined styling rules for document elements. One of the types of styles which you can use in the control is " />
+      <t:Span FontSize="13.3400001525879" FontWeight="Bold" Text="Table" />
+      <t:Span FontSize="13.3400001525879" FontWeight="Normal" Text=" styles. They can be applied and manipulated using the table styles gallery which is part of the predefined RadRichTextBoxRibbonUI." />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span FontSize="13.3400001525879" FontWeight="Normal" Text="Once a style is applied to a particular table every change in its properties will result in a change in the instance in the current document as well. All properties related to the formatting can be viewed and modified through the " />
+      <t:Span FontSize="13.3400001525879" FontStyle="Italic" FontWeight="Normal" Text="Modify style" />
+      <t:Span FontSize="13.3400001525879" FontWeight="Normal" Text=" dialog. You can also change the Table Style Options from the Design ribbon tab." />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span FontSize="13.3400001525879" FontWeight="Normal" Text="There are two types of table styles: built-in and custom." />
+    </t:Paragraph>
+    <t:Paragraph StyleName="Heading1">
+      <t:Span Text="Built-in table style" />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span Text="Two separate sets of built-in styles are provided - Office2010 and Office2013. The current example has the default " />
+      <t:Span FontWeight="Bold" Text="Office2013" />
+      <t:Span Text=" set loaded." />
+    </t:Paragraph>
+    <t:Table GridColumnWidthsSerializationInfo="Fixed,123;Fixed,123;Fixed,123;Fixed,123;Fixed,133" HasFixedStructure="False" LayoutMode="Fixed" PreferredWidth="Fixed,625" StyleName="GridTable4-Accent5">
+      <t:Table.TableLook>
+        <t:TableLook ApplyLastColumn="True" ApplyLastRow="True" />
+      </t:Table.TableLook>
+      <t:TableRow Height="19.445333480835">
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="ID" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="Product" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="Quantity" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="Price" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,133" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="Amount" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow Height="20.0000057220459">
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="216321" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="Salad" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="1" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="$12.39" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,133" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="$12.39" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow Height="19.445333480835">
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="546897" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="French Fries" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="3" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="$4.29" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,133" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="$12.87" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="456231" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="Pizza" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="2" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="$15.79" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,133" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="$31.58" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow Height="19.445333480835">
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text=" " />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text=" " />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text=" " />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,123" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="Total:" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,133" RowSpan="1">
+          <t:Paragraph TextAlignment="Left">
+            <t:Span Text="$56.84" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+    </t:Table>
+    <t:Paragraph StyleName="Heading1">
+      <t:Span Text="Custom table style" />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span Text="Custom table styles can be created and added to the table styles gallery as well. They are shown in a separate part of the gallery - Custom." />
+    </t:Paragraph>
+    <t:Table GridColumnWidthsSerializationInfo="Fixed,125;Fixed,125;Fixed,125;Fixed,125;Fixed,125" HasFixedStructure="False" LayoutMode="AutoFit" PreferredWidth="Fixed,625" StyleName="Style2">
+      <t:Table.TableLook>
+        <t:TableLook ApplyLastRow="True" />
+      </t:Table.TableLook>
+      <t:TableRow Height="18.6351108551025">
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="ID" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="Product" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="Quantity" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="Price" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="Amount" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="216321" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="Salad" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="1" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="$12.39" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="$12.39" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow Height="22.362133026123">
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="546897" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="French Fries" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="3" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="$4.29" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="$12.87" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="546897" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="Pizza" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="2" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="$15.79" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="$56.84" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+      <t:TableRow>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left" />
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left" />
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left" />
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="Total:" />
+          </t:Paragraph>
+        </t:TableCell>
+        <t:TableCell ColumnSpan="1" PreferredWidth="Fixed,125" RowSpan="1">
+          <t:Paragraph FirstLineIndent="0" LeftIndent="9.44882202148438" LineSpacing="1.14999997615814" LineSpacingType="Auto" RightIndent="0" SpacingAfter="0" SpacingBefore="0" TextAlignment="Left">
+            <t:Span Text="$56.84" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+    </t:Table>
+    <t:Paragraph />
+  </t:Section>
+</t:RadDocument>

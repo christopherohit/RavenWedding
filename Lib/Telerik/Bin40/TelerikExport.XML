@@ -18,7 +18,7 @@
         </member>
         <member name="M:Telerik.WinControls.Export.SpreadStreamWorkbookEventArgs.#ctor(Telerik.Documents.SpreadsheetStreaming.IWorkbookExporter)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamWorkbookEventArgs"/> class.
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamWorkbookEventArgs" /> class.
             </summary>
             <param name="workbook">The workbook.</param>
         </member>
@@ -41,7 +41,7 @@
         </member>
         <member name="M:Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs.#ctor(Telerik.Documents.SpreadsheetStreaming.IWorksheetExporter)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs"/> class.
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs" /> class.
             </summary>
             <param name="worksheet">The worksheet.</param>
         </member>
@@ -78,14 +78,14 @@
         </member>
         <member name="M:Telerik.WinControls.Export.SpreadStreamCellStyleInfo.#ctor(Telerik.Documents.SpreadsheetStreaming.SpreadCellFormat,Telerik.Documents.SpreadsheetStreaming.IWorkbookExporter)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamCellStyleInfo"/> class.
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamCellStyleInfo" /> class.
             </summary>
             <param name="cellFormat">The cell format.</param>
             <param name="workbook">The worksheet.</param>
         </member>
         <member name="M:Telerik.WinControls.Export.SpreadStreamCellStyleInfo.#ctor(Telerik.Documents.SpreadsheetStreaming.SpreadCellFormat,Telerik.WinControls.Export.ISpreadStreamExportCellStyleInfo)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamCellStyleInfo"/> class.
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.Export.SpreadStreamCellStyleInfo" /> class.
             </summary>
             <param name="cellFormat">The cell format.</param>
             <param name="cellStyle">The cell style.</param>
@@ -224,6 +224,18 @@
             <summary>
             Represents a class which exposes all methods needed to export using RadSpreadStreamProcessing.
             </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Export.SpreadStreamExportRenderer.RowIndex">
+            <summary>
+            Gets or sets the index of the row.
+            </summary>
+            <value>The index of the row.</value>
+        </member>
+        <member name="P:Telerik.WinControls.Export.SpreadStreamExportRenderer.ColumnIndex">
+            <summary>
+            Gets or sets the index of the column.
+            </summary>
+            <value>The index of the column.</value>
         </member>
         <member name="M:Telerik.WinControls.Export.SpreadStreamExportRenderer.FinishExport">
             <summary>
@@ -535,41 +547,17 @@
             <param name="rowsCount">Count of frozen rows.</param>
             <param name="columnsCount">Count of frozen columns.</param>
         </member>
-        <member name="M:Telerik.WinControls.Export.SpreadStreamExportRenderer.OnWorksheetCreated(Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs)">
-            <summary>
-            Raises the <see cref="E:SpreadWorksheetCreated"/> event.
-            </summary>
-            <param name="e">The <see cref="T:Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Telerik.WinControls.Export.SpreadStreamExportRenderer.OnWorksheetExporting(Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs)">
-            <summary>
-            Raises the <see cref="E:SpreadWorksheetExporting"/> event.
-            </summary>
-            <param name="e">The <see cref="T:Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Telerik.WinControls.Export.SpreadStreamExportRenderer.OnWorkbookCreated(Telerik.WinControls.Export.SpreadStreamWorkbookEventArgs)">
-            <summary>
-            Raises the <see cref="E:SpreadWorkbookCreated"/> event.
-            </summary>
-            <param name="e">The <see cref="T:Telerik.WinControls.Export.SpreadStreamWorkbookEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="P:Telerik.WinControls.Export.SpreadStreamExportRenderer.RowIndex">
-            <summary>
-            Gets or sets the index of the row.
-            </summary>
-            <value>The index of the row.</value>
-        </member>
-        <member name="P:Telerik.WinControls.Export.SpreadStreamExportRenderer.ColumnIndex">
-            <summary>
-            Gets or sets the index of the column.
-            </summary>
-            <value>The index of the column.</value>
-        </member>
         <member name="E:Telerik.WinControls.Export.SpreadStreamExportRenderer.WorksheetCreated">
             <summary>
             Occurs when a new worksheet is created.
             This is suitable place to set width of columns, add indent/header rows.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Export.SpreadStreamExportRenderer.OnWorksheetCreated(Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs)">
+            <summary>
+            Raises the <see cref="E:SpreadWorksheetCreated" /> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs"/> instance containing the event data.</param>
         </member>
         <member name="E:Telerik.WinControls.Export.SpreadStreamExportRenderer.WorksheetExporting">
             <summary>
@@ -577,11 +565,23 @@
             This is suitable place to add footer rows.
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.Export.SpreadStreamExportRenderer.OnWorksheetExporting(Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs)">
+            <summary>
+            Raises the <see cref="E:SpreadWorksheetExporting" /> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.WinControls.Export.SpreadStreamWorksheetEventArgs"/> instance containing the event data.</param>
+        </member>
         <member name="E:Telerik.WinControls.Export.SpreadStreamExportRenderer.WorkbookCreated">
             <summary>
             Occurs when the workbook is created.
             This is suitable place to add and/or modify cell styles.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Export.SpreadStreamExportRenderer.OnWorkbookCreated(Telerik.WinControls.Export.SpreadStreamWorkbookEventArgs)">
+            <summary>
+            Raises the <see cref="E:SpreadWorkbookCreated" /> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.WinControls.Export.SpreadStreamWorkbookEventArgs"/> instance containing the event data.</param>
         </member>
         <member name="M:Telerik.WinControls.Export.SpreadStreamLightCellStyleInfo.#ctor(Telerik.Documents.SpreadsheetStreaming.SpreadCellFormat,System.Drawing.Color,System.Drawing.Color,System.Drawing.FontFamily,System.Double,System.Boolean,System.Boolean,System.Boolean,System.Drawing.ContentAlignment,System.Boolean,Telerik.WinControls.BorderBoxStyle,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
             <summary>
@@ -772,6 +772,21 @@
             </summary>
             <param name="page">Associated page.</param>
         </member>
+        <member name="P:Telerik.WinControls.Export.PdfEditor.FixedContentEditor">
+            <summary>
+            Gets the editor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Export.PdfEditor.OffsetX">
+            <summary>
+            Gets editor's matrix horizontal offset.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Export.PdfEditor.OffsetY">
+            <summary>
+            Gets editor's matrix vertical offset.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.Export.PdfEditor.Telerik#WinControls#Export#IPdfEditor#DrawLine(System.Drawing.PointF,System.Drawing.PointF)">
             <summary>
             Draws line.
@@ -872,21 +887,6 @@
             </summary>
             <param name="fontName">The name of font.</param>
             <param name="fontStyle">The style of font.</param>
-        </member>
-        <member name="P:Telerik.WinControls.Export.PdfEditor.FixedContentEditor">
-            <summary>
-            Gets the editor.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.Export.PdfEditor.OffsetX">
-            <summary>
-            Gets editor's matrix horizontal offset.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.Export.PdfEditor.OffsetY">
-            <summary>
-            Gets editor's matrix vertical offset.
-            </summary>
         </member>
         <member name="T:Telerik.WinControls.Export.HorizontalAlignmentType">
             <summary>
@@ -1011,6 +1011,21 @@
             Represents a class that exposes all the methods and properties needed to export to PDF.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.Export.PdfExportRenderer.Editor">
+            <summary>
+            Gets current page <see cref="T:Telerik.Windows.Documents.Fixed.Model.Editing.FixedContentEditor"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Export.PdfExportRenderer.Telerik#WinControls#Export#IPdfExportRenderer#CurrentMatrixRow">
+            <summary>
+            Gets or sets current matrix row.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Export.PdfExportRenderer.Telerik#WinControls#Export#IPdfExportRenderer#CurrentMatrixColumn">
+            <summary>
+            Gets or sets current matrix column.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.Export.PdfExportRenderer.CreateDocumentPageMatrixEditor(System.Drawing.SizeF,Telerik.WinControls.Export.IPdfEditor@)">
             <summary>
             Initializes document, first page, first page editor and the matrix which holds all pages.
@@ -1131,42 +1146,27 @@
             <param name="title">Title.</param>
             <param name="description">Description.</param>
         </member>
-        <member name="M:Telerik.WinControls.Export.PdfExportRenderer.OnPageExported(Telerik.WinControls.Export.PageExportedEventArgs)">
-            <summary>
-            Raises the <see cref="E:PageExported"/> event.
-            </summary>
-            <param name="e">The <see cref="T:Telerik.WinControls.Export.PageExportedEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Telerik.WinControls.Export.PdfExportRenderer.OnPdfExporting(Telerik.WinControls.Export.PdfExportingEventArgs)">
-            <summary>
-            Raises the <see cref="E:PDFExporting"/> event.
-            </summary>
-            <param name="e">The <see cref="T:Telerik.WinControls.Export.PdfExportingEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="P:Telerik.WinControls.Export.PdfExportRenderer.Editor">
-            <summary>
-            Gets current page <see cref="T:Telerik.Windows.Documents.Fixed.Model.Editing.FixedContentEditor"/>.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.Export.PdfExportRenderer.Telerik#WinControls#Export#IPdfExportRenderer#CurrentMatrixRow">
-            <summary>
-            Gets or sets current matrix row.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.Export.PdfExportRenderer.Telerik#WinControls#Export#IPdfExportRenderer#CurrentMatrixColumn">
-            <summary>
-            Gets or sets current matrix column.
-            </summary>
-        </member>
         <member name="E:Telerik.WinControls.Export.PdfExportRenderer.PageExported">
             <summary>
             Occurs for every page that is being exported.
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.Export.PdfExportRenderer.OnPageExported(Telerik.WinControls.Export.PageExportedEventArgs)">
+            <summary>
+            Raises the <see cref="E:PageExported" /> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.WinControls.Export.PageExportedEventArgs"/> instance containing the event data.</param>
+        </member>
         <member name="E:Telerik.WinControls.Export.PdfExportRenderer.PdfExporting">
             <summary>
             Occurs when the export process is about to be completed.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Export.PdfExportRenderer.OnPdfExporting(Telerik.WinControls.Export.PdfExportingEventArgs)">
+            <summary>
+            Raises the <see cref="E:PDFExporting" /> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.WinControls.Export.PdfExportingEventArgs"/> instance containing the event data.</param>
         </member>
         <member name="T:Telerik.WinControls.Export.SpreadExportRenderer">
             <summary>
@@ -1413,16 +1413,16 @@
             Calls <see cref="E:WorkbookCreated" /> event.
             </summary>
         </member>
-        <member name="M:Telerik.WinControls.Export.SpreadExportRenderer.OnWorkbookCreated(Telerik.WinControls.Export.WorkbookCreatedEventArgs)">
-            <summary>
-            Raises the <see cref="E:WorkbookCreated"/> event.
-            </summary>
-            <param name="e">The <see cref="T:Telerik.WinControls.Export.WorkbookCreatedEventArgs"/> instance containing the event data.</param>
-        </member>
         <member name="E:Telerik.WinControls.Export.SpreadExportRenderer.WorkbookCreated">
             <summary>
             Occurs when the workbook is created and is ready to be exported. Suitable for any final touches.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Export.SpreadExportRenderer.OnWorkbookCreated(Telerik.WinControls.Export.WorkbookCreatedEventArgs)">
+            <summary>
+            Raises the <see cref="E:WorkbookCreated" /> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.WinControls.Export.WorkbookCreatedEventArgs"/> instance containing the event data.</param>
         </member>
         <member name="T:Telerik.WinControls.Export.ExportUtils">
             <summary>

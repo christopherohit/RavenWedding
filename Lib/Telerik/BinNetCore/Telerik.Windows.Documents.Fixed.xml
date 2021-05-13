@@ -983,6 +983,16 @@
         <member name="T:Org.BouncyCastle.Utilities.Strings">
             <summary> General string utilities.</summary>
         </member>
+        <member name="T:Telerik.Windows.Documents.Fixed.Exceptions.InvalidActionException">
+            <summary>
+            Occurs when an invalid action is imported.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Fixed.Exceptions.InvalidActionException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Fixed.Exceptions.InvalidActionException" /> class.
+            </summary>
+        </member>
         <member name="T:Telerik.Windows.Documents.Fixed.Exceptions.NotSupportedActionException">
             <summary>
             Represents not supported action exception.
@@ -4634,25 +4644,25 @@
             <param name="g">The green component.</param>
             <param name="b">The blue component.</param>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.A">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.A">
             <summary>
             Gets or sets the alpha component.
             </summary>
             <value>The alpha component.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.R">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.R">
             <summary>
             Gets or sets the red component.
             </summary>
             <value>The red component.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.G">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.G">
             <summary>
             Gets or sets the green component.
             </summary>
             <value>The green component.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.B">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.ColorSpaces.RgbColor.B">
             <summary>
             Gets or sets the blue component.
             </summary>
@@ -6073,6 +6083,172 @@
             </summary>
             <value>The angle.</value>
         </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeHorizontalAlignment.Left">
+            <summary>
+            Specifies that the object shall be left aligned to the horizontal alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeHorizontalAlignment.Center">
+            <summary>
+            Specifies that the object shall be centered with respect to the horizontal alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeHorizontalAlignment.Right">
+            <summary>
+            Specifies that the object shall be right aligned to the horizontal alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeHorizontalAlignment.Inside">
+            <summary>
+            Specifies that the object shall be inside of the horizontal alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeHorizontalAlignment.Outside">
+            <summary>
+            Specifies that the object shall be outside of the horizontal alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeVerticalAlignment.Top">
+            <summary>
+            Specifies that the object shall be at the top of the vertical alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeVerticalAlignment.Center">
+            <summary>
+            Specifies that the object shall be centered with respect to the vertical alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeVerticalAlignment.Bottom">
+            <summary>
+            Specifies that the object shall be at the bottom of the vertical alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeVerticalAlignment.Inside">
+            <summary>
+            Specifies that the object shall be inside of the vertical alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowRelativeVerticalAlignment.Outside">
+            <summary>
+            Specifies that the object shall be outside of the vertical alignment base.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowTextWrap.BothSides">
+            <summary>
+            Specifies that text shall wrap around both sides of the object.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowTextWrap.LeftOnly">
+            <summary>
+            Specifies that text shall only wrap around the left side of the object.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowTextWrap.RightOnly">
+            <summary>
+            Specifies that text shall only wrap around the right side of the object.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowTextWrap.Largest">
+            <summary>
+            Specifies that text shall only wrap around the largest side of the object.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.Line">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the line containing the anchor character.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.Paragraph">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the paragraph which contains the drawing anchor.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.Page">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the edge of the page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.Margin">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the page margins.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.TopMargin">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the top margin of the current page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.BottomMargin">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the bottom margin of the current page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.OutsideMargin">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the outside margin of the current page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowVerticalRelativeFrom.InsideMargin">
+            <summary>
+            Specifies that the vertical positioning shall be relative to the inside margin of the current page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowShapeWrappingType.None">
+            <summary>
+            No wrapping should be used for the related element.
+            In effect, this setting shall place the object in front of or behind the text.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowShapeWrappingType.Square">
+            <summary>
+            This element specifies that text shall wrap around a virtual rectangle bounding this shape.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowShapeWrappingType.TopAndBottom">
+            <summary>
+            This element specifies that text shall wrap around the top and bottom of this object, but not its left or right edges.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.Character">
+            <summary>
+            Specifies that the horizontal positioning shall be relative to the position of the anchor within its run content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.Column">
+            <summary>
+            Relative to the extents of the column which contains its anchor.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.Page">
+            <summary>
+            Specifies that the horizontal positioning shall be relative to the edge of the page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.Margin">
+            <summary>
+             Specifies that the horizontal positioning shall be relative to the page margins.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.LeftMargin">
+            <summary>
+            Specifies that the horizontal positioning shall be relative to the left margin of the page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.RightMargin">
+            <summary>
+            Specifies that the horizontal positioning shall be relative to the right margin of the page.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.InsideMargin">
+            <summary>
+             Specifies that the horizontal positioning shall be relative to the inside margin of the current page (the left margin on odd pages, right on even pages).
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.FlowHorizontalRelativeFrom.OutsideMargin">
+            <summary>
+            Specifies that the horizontal positioning shall be relative to the outside margin of the current page (the right margin on odd pages, left on even pages).
+            </summary>
+        </member>
         <member name="T:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.BaselineAlignment">
             <summary>
             Describes how the baseline for a text-based element is positioned on the vertical axis, relative to the established baseline for text.
@@ -6196,7 +6372,7 @@
             Draws the block element with the specified editor.
             </summary>
             <param name="editor">The editor.</param>
-            <param name="boundingRect">The bounding rect.</param>
+            <param name="boundingRect">The bounding rectangle.</param>
         </member>
         <member name="M:Telerik.Windows.Documents.Fixed.Model.Editing.Flow.IBlockElement.Split">
             <summary>
@@ -6842,7 +7018,7 @@
             Draws the block element with the specified editor.
             </summary>
             <param name="editor">The editor.</param>
-            <param name="boundingRect">The bounding rect.</param>
+            <param name="boundingRect">The bounding rectangle.</param>
         </member>
         <member name="M:Telerik.Windows.Documents.Fixed.Model.Editing.Block.Split">
             <summary>
@@ -7197,7 +7373,7 @@
         </member>
         <member name="M:Telerik.Windows.Documents.Fixed.Model.Editing.RadFixedDocumentEditor.Dispose">
             <summary>
-            Finishes the the pages and closes the document.
+            Finishes the pages and closes the document.
             </summary>
         </member>
         <member name="T:Telerik.Windows.Documents.Fixed.Model.Editing.Tables.BorderCollapse">
@@ -7533,6 +7709,13 @@
             </summary>
             <returns>The remaining block element.</returns>
         </member>
+        <member name="M:Telerik.Windows.Documents.Fixed.Model.Editing.Tables.Table.DrawInternal(Telerik.Windows.Documents.Fixed.Model.Editing.FixedContentEditor,System.Windows.Rect)">
+            <summary>
+            Arranges the block element with the specified editor.
+            </summary>
+            <param name="editor">The editor.</param>
+            <param name="boundingRect">The bounding rectangle.</param>
+        </member>
         <member name="T:Telerik.Windows.Documents.Fixed.Model.Editing.TableBorders">
             <summary>
             Represent the borders for a table.
@@ -7592,61 +7775,61 @@
             Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties" /> class.
             </summary>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.IsFilled">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.IsFilled">
             <summary>
             Gets or sets whether the drawn geometry is filled.
             </summary>
             <value>Value indicating whether the geometry is filled.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.IsStroked">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.IsStroked">
             <summary>
             Gets or sets whether the drawn geometry is stroked.
             </summary>
             <value>Value indicating whether the geometry is stroked.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.FillColor">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.FillColor">
             <summary>
             Gets or sets the fill color.
             </summary>
             <value>The color of the fill.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeColor">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeColor">
             <summary>
             Gets or sets the stroke color.
             </summary>
             <value>The color of the stroke.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeThickness">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeThickness">
             <summary>
             Gets or sets the stroke thickness.
             </summary>
             <value>The stroke thickness.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.MiterLimit">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.MiterLimit">
             <summary>
             Gets or sets the miter limit.
             </summary>
             <value>The miter limit.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeDashOffset">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeDashOffset">
             <summary>
             Gets or sets the stroke dash offset.
             </summary>
             <value>The stroke dash offset.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeDashArray">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeDashArray">
             <summary>
             Gets or sets the stroke dash array.
             </summary>
             <value>The stroke dash array.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeLineJoin">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeLineJoin">
             <summary>
             Gets or sets the stroke line join.
             </summary>
             <value>The stroke line join.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeLineCap">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.GraphicProperties.StrokeLineCap">
             <summary>
             Gets or sets the stroke line cap.
             </summary>
@@ -7902,55 +8085,55 @@
             Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties" /> class.
             </summary>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.UnderlinePattern">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.UnderlinePattern">
             <summary>
             Gets or sets the text decorations.
             </summary>
             <value>The text decorations.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.UnderlineColor">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.UnderlineColor">
             <summary>
             Gets or sets the color of the underline.
             </summary>
             <value>The color of the underline.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.HighlightColor">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.HighlightColor">
             <summary>
             Gets or sets the color of the highlight.
             </summary>
             <value>The color of the highlight.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.CharacterSpacing">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.CharacterSpacing">
             <summary>
             Gets or sets the character spacing.
             </summary>
             <value>The character spacing.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.WordSpacing">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.WordSpacing">
             <summary>
             Gets or sets the word spacing.
             </summary>
             <value>The word spacing.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.HorizontalScaling">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.HorizontalScaling">
             <summary>
             Gets or sets the horizontal scaling.
             </summary>
             <value>The horizontal scaling.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.FontSize">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.FontSize">
             <summary>
             Gets or sets the size of the font.
             </summary>
             <value>The size of the font.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.RenderingMode">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.RenderingMode">
             <summary>
             Gets or sets the rendering mode.
             </summary>
             <value>The rendering mode.</value>
         </member>
-        <member name="P:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.BaselineAlignment">
+        <member name="F:Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties.BaselineAlignment">
             <summary>
             Gets or sets the baseline alignment.
             </summary>
@@ -8032,7 +8215,7 @@
             <param name="fontStyle">The font style.</param>
             <param name="fontWeight">The font weight.</param>
             <param name="font">The font.</param>
-            <returns>True if the font is created succesfully.</returns>
+            <returns>True if the font is created successfully.</returns>
         </member>
         <member name="M:Telerik.Windows.Documents.Fixed.Model.Fonts.FontsRepository.TryCreateFont(System.Windows.Media.FontFamily,Telerik.Windows.Documents.Fixed.Model.Fonts.FontBase@)">
             <summary>
@@ -8040,7 +8223,7 @@
             </summary>
             <param name="fontFamily">The font family.</param>
             <param name="font">The font.</param>
-            <returns>True if the font is created succesfully.</returns>
+            <returns>True if the font is created successfully.</returns>
         </member>
         <member name="P:Telerik.Windows.Documents.Fixed.Model.Fonts.FontsRepository.Symbol">
             <summary>
@@ -8143,7 +8326,7 @@
         </member>
         <member name="P:Telerik.Windows.Documents.Fixed.Model.Fonts.FontBase.ActualFontSource">
             <summary>
-            The <see cref="P:Telerik.Windows.Documents.Fixed.Model.Fonts.FontBase.FontSource"/> or a fallback <see cref="T:Telerik.Windows.Documents.Core.Fonts.FontSource"/> used when rendering the glyph outlines.
+            The <see cref="F:Telerik.Windows.Documents.Fixed.Model.Fonts.FontBase.FontSource"/> or a fallback <see cref="T:Telerik.Windows.Documents.Core.Fonts.FontSource"/> used when rendering the glyph outlines.
             </summary>
         </member>
         <member name="T:Telerik.Windows.Documents.Fixed.Model.InteractiveForms.AcroForm">
@@ -10070,7 +10253,7 @@
         </member>
         <member name="P:Telerik.Windows.Documents.Fixed.Model.RadFixedDocument.CaretPosition">
             <summary>
-            Gets or sets the caret position in the document. This property only works with RadPdfViewer.
+            Gets the caret position in the document. This property only works with RadPdfViewer.
             </summary>
             <value>The caret position.</value>
         </member>
@@ -10980,7 +11163,7 @@
         <member name="F:JBig2Decoder.MMRDecoder.blackTable1">
             black run lengths 
         </member>
-        <member name="M:JBig2Decoder.JBIG2Bitmap.setPixel(System.Int64,System.Int64,JBig2Decoder.FastBitSet,System.Int64)">
+        <member name="M:JBig2Decoder.JBIG2Bitmap.SetPixel(System.Int64,System.Int64,JBig2Decoder.FastBitSet,System.Int64)">
                     private static void setPixel(int col, int row, FastBitSet data, int value) {
                         if (value == 1)
                             data.set(row, col);

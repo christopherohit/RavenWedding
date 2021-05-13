@@ -1,0 +1,90 @@
+﻿<RadVirtualKeyboard ScaleFontOnResize="True" SynchronizeCultureWithSystem="True">
+  <MainLayoutPanel>
+    <KeyboardLayouts>
+      <Telerik.WinControls.VirtualKeyboard.VirtualKeyboardLayout KeySpacing="0.1">
+        <Rows>
+          <Telerik.WinControls.VirtualKeyboard.Row>
+            <Keys>
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="192" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="49" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="50" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="51" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="52" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="53" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="54" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="55" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="56" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="57" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="48" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="189" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="187" />
+              <Telerik.WinControls.VirtualKeyboard.Key DisplayText="Back" KeyType="Special" IsSharpStyle="True" KeyWidth="2" KeyHeight="1" VirtualKey="8" />
+            </Keys>
+          </Telerik.WinControls.VirtualKeyboard.Row>
+          <Telerik.WinControls.VirtualKeyboard.Row>
+            <Keys>
+              <Telerik.WinControls.VirtualKeyboard.Key DisplayText="Tab" KeyType="Special" KeyWidth="1.5" KeyHeight="1" VirtualKey="9" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="81" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="87" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="70" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="80" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="71" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="74" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="76" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="85" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="89" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="186" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="219" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="221" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" IsSharpStyle="True" KeyWidth="1.5" KeyHeight="1" VirtualKey="226" />
+            </Keys>
+          </Telerik.WinControls.VirtualKeyboard.Row>
+          <Telerik.WinControls.VirtualKeyboard.Row>
+            <Keys>
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey KeyType="Lock" IsSharpStyle="False" KeyWidth="2" KeyHeight="1" VirtualKey="20" DisplayText="CapsLock" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="65" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="82" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="83" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="84" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="68" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="72" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="78" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="69" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="73" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="79" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="222" />
+              <Telerik.WinControls.VirtualKeyboard.Key DisplayText="Enter" KeyType="Special" IsSharpStyle="True" KeyWidth="2" KeyHeight="1" VirtualKey="13" />
+            </Keys>
+          </Telerik.WinControls.VirtualKeyboard.Row>
+          <Telerik.WinControls.VirtualKeyboard.Row>
+            <Keys>
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey KeyType="Modifier" IsSharpStyle="True" KeyWidth="2.5" KeyHeight="1" VirtualKey="160" DisplayText="Shift" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="90" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="88" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="67" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="86" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="66" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="75" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" KeyWidth="1" KeyHeight="1" VirtualKey="77" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="188" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="190" />
+              <Telerik.WinControls.VirtualKeyboard.Key KeyType="Normal" ShowSecondaryText="True" KeyWidth="1" KeyHeight="1" VirtualKey="191" />
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey KeyType="Modifier" IsSharpStyle="True" KeyWidth="2.5" KeyHeight="1" VirtualKey="161" DisplayText="Shift" />
+            </Keys>
+          </Telerik.WinControls.VirtualKeyboard.Row>
+          <Telerik.WinControls.VirtualKeyboard.Row>
+            <Keys>
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey KeyType="Modifier" IsSharpStyle="False" KeyWidth="2" KeyHeight="1" VirtualKey="162" DisplayText="Ctrl" />
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey DisplayText="Win" KeyType="Modifier" KeyWidth="1" KeyHeight="1" VirtualKey="91" />
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey KeyType="Modifier" IsSharpStyle="False" KeyWidth="1" KeyHeight="1" VirtualKey="164" DisplayText="Alt" />
+              <Telerik.WinControls.VirtualKeyboard.Key DisplayText="" KeyType="Special" KeyWidth="7" KeyHeight="1" VirtualKey="32" />
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey KeyType="Modifier" IsSharpStyle="False" KeyWidth="1" KeyHeight="1" VirtualKey="165" DisplayText="AltGr" />
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey DisplayText="Win" KeyType="Modifier" KeyWidth="1" KeyHeight="1" VirtualKey="92" />
+              <Telerik.WinControls.VirtualKeyboard.ToggleKey KeyType="Modifier" IsSharpStyle="False" KeyWidth="2" KeyHeight="1" VirtualKey="163" DisplayText="Ctrl" />
+            </Keys>
+          </Telerik.WinControls.VirtualKeyboard.Row>
+        </Rows>
+      </Telerik.WinControls.VirtualKeyboard.VirtualKeyboardLayout>
+    </KeyboardLayouts>
+  </MainLayoutPanel>
+</RadVirtualKeyboard>

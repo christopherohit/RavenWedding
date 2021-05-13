@@ -11306,6 +11306,12 @@
             </summary>
             <value>The encoding.</value>
         </member>
+        <member name="P:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Core.CsvSettings.ShouldExportEmptyValues">
+            <summary>
+            Gets or Sets a value indicating whether the empty values are exported.
+            </summary>
+            <returns>True if the empty values are exported; otherwise false.</returns>
+        </member>
         <member name="M:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Core.CsvWriter.Dispose">
             <summary>
             Performs application-defined tasks associated with freeing, releasing,
@@ -11579,6 +11585,11 @@
             </summary>
             <param name="numberCellValue">The number cell value.</param>
             <returns>The DateTime instance.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Spreadsheet.Formatting.FormatHelper.CultureHelper">
+            <summary>
+            Gets or sets the spreadsheet culture helper.
+            </summary>
         </member>
         <member name="T:Telerik.Windows.Documents.Spreadsheet.Formatting.FormatStrings.Builders.AccountingFormatStringBuilder">
             <summary>
@@ -13094,7 +13105,7 @@
         </member>
         <member name="T:Telerik.Windows.Documents.Spreadsheet.Layout.LayoutHelper">
             <summary>
-            Represents a layout hellper class.
+            Represents a layout helper class.
             </summary>
         </member>
         <member name="M:Telerik.Windows.Documents.Spreadsheet.Layout.LayoutHelper.CalculateCellContentSize(Telerik.Windows.Documents.Spreadsheet.Model.Worksheet,Telerik.Windows.Documents.Spreadsheet.Model.CellIndex)">
@@ -28204,6 +28215,11 @@
             The maximum scale factor in the context of printing and pdf export.
             </summary>
         </member>
+        <member name="F:Telerik.Windows.Documents.Spreadsheet.Model.SpreadsheetDefaultValues.DefaultTabColor">
+            <summary>
+            The default sheet tab color.
+            </summary>
+        </member>
         <member name="T:Telerik.Windows.Documents.Spreadsheet.Model.TextCellValue">
             <summary>
             Represents the value of a cell which contains text.
@@ -28516,6 +28532,14 @@
             </summary>
             <value>The workbook theme.</value>
         </member>
+        <member name="P:Telerik.Windows.Documents.Spreadsheet.Model.Workbook.DocumentInfo">
+            <summary>
+            Gets or sets the metadata information for the document file.
+            </summary>
+            <value>
+            The document information.
+            </value>
+        </member>
         <member name="P:Telerik.Windows.Documents.Spreadsheet.Model.Workbook.IsLayoutUpdateSuspended">
             <summary>
             Gets a value indicating whether the layout update is suspended.
@@ -28635,7 +28659,7 @@
         <member name="M:Telerik.Windows.Documents.Spreadsheet.Model.Worksheet.CopyFrom(Telerik.Windows.Documents.Spreadsheet.Model.Worksheet)">
             <summary>
             Copies <see cref="T:Telerik.Windows.Documents.Spreadsheet.Model.Worksheet"/> contents from a source <see cref="T:Telerik.Windows.Documents.Spreadsheet.Model.Worksheet"/> into this instance. 
-            This <see cref="T:Telerik.Windows.Documents.Spreadsheet.Model.Worksheet"/> instance contents are overriden from the source <see cref="T:Telerik.Windows.Documents.Spreadsheet.Model.Worksheet"/> contents. 
+            This <see cref="T:Telerik.Windows.Documents.Spreadsheet.Model.Worksheet"/> instance contents are overridden from the source <see cref="T:Telerik.Windows.Documents.Spreadsheet.Model.Worksheet"/> contents. 
             </summary>
             <param name="sourceWorksheet">The worksheet to copy from.</param>
         </member>
@@ -29436,6 +29460,12 @@
             </summary>
         </member>
         <member name="M:Telerik.Windows.Documents.Spreadsheet.PropertySystem.CellsPropertyBag.ResumePropertyChanged(Telerik.Windows.Documents.Spreadsheet.Model.CellRange)">
+            <summary>
+            This method raises PropertyChanged for the entire used cell range for each property that 
+            has been changed. It is used upon Import and cell references update. Use with caution!
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Spreadsheet.PropertySystem.CellsPropertyBag.ResumePropertyChangedImmediately(Telerik.Windows.Documents.Spreadsheet.Model.CellRange)">
             <summary>
             This method raises PropertyChanged for the entire used cell range for each property that 
             has been changed. It is used upon Import and cell references update. Use with caution!
@@ -30517,6 +30547,22 @@
             <param name="generalTransform">The general transform.</param>
             <param name="value">The value.</param>
             <returns>The transformed value.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Spreadsheet.Utilities.SpreadsheetCultureHelper">
+            <summary>
+            Represents a culture helper class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Spreadsheet.Utilities.SpreadsheetCultureHelper.#ctor(System.Globalization.CultureInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Spreadsheet.Utilities.SpreadsheetCultureHelper"/> class.
+            </summary>
+            <param name="cultureInfo">The culture for the new <see cref="T:Telerik.Windows.Documents.Spreadsheet.Utilities.SpreadsheetCultureHelper"/> instance.</param>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Spreadsheet.Utilities.SpreadsheetCultureHelper.CultureInfo">
+            <summary>
+            Gets the culture of the spreadsheet culture helper.
+            </summary>
         </member>
         <member name="T:Telerik.Windows.Documents.Spreadsheet.Utilities.UnitHelper">
             <summary>

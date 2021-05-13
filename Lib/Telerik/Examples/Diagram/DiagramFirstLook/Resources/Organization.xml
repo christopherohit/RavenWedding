@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<Node Name="Management" Branch="Management">
+    <NodeMember Name="Andrew Fuller" Position="CEO" />
+    <NodeMember Name="Jason Roland" Position="President" />
+    <Node Name="Development Dept." Branch="Development">
+      <NodeMember Name="Martin Sommer" Position="Architect" />
+      <NodeMember Name="Jeremy Boather" Position="Senior Team Lead" />
+      <NodeMember Name="John Steel" Position="Development Manager" />
+      <NodeMember Name="Karin Josephs" Position="QA Architect" />
+      <Node Name="Development Team 1" Branch="Development">
+        <NodeMember Name="Karl Jablonski" Position="Team Lead" />
+        <NodeMember Name="Margaret Peacock" Position="QA Engineer" />
+        <NodeMember Name="Marie Bertrand" Position="Software Developer"/>
+        <NodeMember Name="Mary Saveley" Position="Senior Software Developer"/>
+      </Node>
+      <Node Name="Development Team 2" Branch="Development">
+        <NodeMember Name="Nancy Davolio" Position="Team Lead"/>
+        <NodeMember Name="Paula Wilson" Position="Senior QA Engineer"/>
+        <NodeMember Name="Pedro Alfonso" Position="Software Developer"/>
+        <NodeMember Name="Robert King" Position="Junior Software Developer"/>
+        <NodeMember Name="Steven Buchanan" Position="Senior Software Developer"/>
+      </Node>
+    </Node>
+    <Node Name="Marketing" Branch="Marketing">
+      <NodeMember Name="Ana Trujilo" Position="Marketing Manager USA"/>
+      <NodeMember Name="Brenda Smith" Position="Marketing Manager EU"/>
+      <NodeMember Name="Elizabeth Lincoln" Position="Marketing Director"/>
+      <Node Name="Marketing Team 1" Branch="Marketing">
+        <NodeMember Name="Georg Pipps" Position="Team Lead"/>
+        <NodeMember Name="Hanna Moos" Position="Junior Brand Manager"/>
+        <NodeMember Name="Janet Levering" Position="SEO Specialist"/>
+        <NodeMember Name="Janine Labrune" Position="Graphic Designer"/>
+        <NodeMember Name="Viktoria Ashworth" Position="Brand Manager"/>
+        <NodeMember Name="Laura Callahan" Position="Senior Brand Manager"/>
+      </Node>
+    </Node>
+	</Node>	
+</Root>

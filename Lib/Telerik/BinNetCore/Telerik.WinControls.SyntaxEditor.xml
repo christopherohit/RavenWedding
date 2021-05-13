@@ -202,6 +202,12 @@
             </summary>
             <value><c>true</c> if this instance is selection enabled; otherwise, <c>false</c>.</value>
         </member>
+        <member name="P:Telerik.WinControls.UI.RadSyntaxEditor.ShowLineNumbers">
+            <summary>
+            Gets or sets a value indicating whether the line numbers are shown.
+            </summary>
+            <value><c>true</c> if the line numbers are shown; otherwise, <c>false</c>.</value>
+        </member>
         <member name="P:Telerik.WinControls.UI.RadSyntaxEditor.DefaultSize">
             <summary>
             Gets the default size when the control is dragged onto the designer surface.
@@ -221,9 +227,19 @@
         </member>
         <member name="M:Telerik.WinControls.UI.RadSyntaxEditor.GetPositionFromPoint(System.Drawing.Point)">
             <summary>
-            Gets the position from point.
+            Gets the position from point. To get the correct caret position expects the point to be relative to the editor
+            presenter and adjusted with the scale factor and scroll offsets. Use the GetPositionFromControlPoint method instead, 
+            which internally makes the necessary adjustments considering the scale factor and offsets, 
+            assuming the point is in control coordinates.
             </summary>
             <param name="point">The point.</param>
+            <returns>CaretPosition.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadSyntaxEditor.GetPositionFromControlPoint(System.Drawing.Point)">
+            <summary>
+            Gets the position from point which is relative to the control.
+            </summary>
+            <param name="point">The point relative to the control.</param>
             <returns>CaretPosition.</returns>
         </member>
         <member name="M:Telerik.WinControls.UI.RadSyntaxEditor.MoveCurrentLineToTop">
@@ -263,9 +279,9 @@
         </member>
         <member name="M:Telerik.WinControls.UI.RadSyntaxEditor.ZoomTo(System.Double)">
             <summary>
-            Zooms to particular zoom level.
+            Zooms to particular zoom level. The minimum supported zoom level is 0.2 and the maximum supported is 4.
             </summary>
-            <param name="zoomLevel">The zoom level.</param>
+            <param name="zoomLevel">The scale factor which will be used for zooming.</param>
             <exception cref="T:System.ArgumentOutOfRangeException">ZoomLevel must be non negative.</exception>
         </member>
         <member name="T:Telerik.WinControls.UI.RadSyntaxEditorElement">
@@ -292,6 +308,11 @@
         <member name="F:Telerik.WinControls.UI.RadSyntaxEditorElement.IsSelectionEnabledProperty">
             <summary>
             Registers the <see cref="P:Telerik.WinControls.UI.RadSyntaxEditorElement.IsSelectionEnabled"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadSyntaxEditorElement.ShowLineNumbersProperty">
+            <summary>
+            Registers the <see cref="P:Telerik.WinControls.UI.RadSyntaxEditorElement.ShowLineNumbers"/> dependency property.
             </summary>
         </member>
         <member name="F:Telerik.WinControls.UI.RadSyntaxEditorElement.ScaleFactorProperty">
@@ -552,6 +573,12 @@
             </summary>
             <value><c>true</c> if this instance is selection enabled; otherwise, <c>false</c>.</value>
         </member>
+        <member name="P:Telerik.WinControls.UI.RadSyntaxEditorElement.ShowLineNumbers">
+            <summary>
+            Gets or sets a value indicating whether the line numbers are shown.
+            </summary>
+            <value><c>true</c> if the line numbers are shown; otherwise, <c>false</c>.</value>\
+        </member>
         <member name="P:Telerik.WinControls.UI.RadSyntaxEditorElement.Margins">
             <summary>
             Gets the margins.
@@ -680,9 +707,19 @@
         </member>
         <member name="M:Telerik.WinControls.UI.RadSyntaxEditorElement.GetPositionFromPoint(System.Drawing.Point)">
             <summary>
-            Gets the position from point.
+            Gets the position from point. To get the correct caret position expects the point to be relative to the editor
+            presenter and adjusted with the scale factor and scroll offsets. Use the GetPositionFromControlPoint method instead, 
+            which internally makes the necessary adjustments considering the scale factor and offsets, 
+            assuming the point is in control coordinates.
             </summary>
             <param name="point">The point.</param>
+            <returns>CaretPosition.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadSyntaxEditorElement.GetPositionFromControlPoint(System.Drawing.Point)">
+            <summary>
+            Gets the position from point which is relative to the control.
+            </summary>
+            <param name="point">The point relative to the control.</param>
             <returns>CaretPosition.</returns>
         </member>
         <member name="M:Telerik.WinControls.UI.RadSyntaxEditorElement.InvalidateEditorLayout">
@@ -734,9 +771,9 @@
         </member>
         <member name="M:Telerik.WinControls.UI.RadSyntaxEditorElement.ZoomTo(System.Double)">
             <summary>
-            Zooms to particular zoom level.
+            Zooms to particular zoom level. The minimum supported zoom level is 0.2 and the maximum supported is 4.
             </summary>
-            <param name="zoomLevel">The zoom level.</param>
+            <param name="zoomLevel">The scale factor which will be used for zooming.</param>
             <exception cref="T:System.ArgumentOutOfRangeException">ZoomLevel must be non negative.</exception>
         </member>
         <member name="M:Telerik.WinControls.UI.RadSyntaxEditorElement.OnMouseWheelZoom(System.Double)">
@@ -6048,6 +6085,11 @@
             Identifies the <see cref="P:Telerik.WinForms.Controls.SyntaxEditor.Palettes.SyntaxEditorPalette.XmlTagColor"/> dependency property.
             </summary>
         </member>
+        <member name="F:Telerik.WinForms.Controls.SyntaxEditor.Palettes.SyntaxEditorPalette.XmlCharacterDataColorProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.WinForms.Controls.SyntaxEditor.Palettes.SyntaxEditorPalette.XmlCharacterDataColor"/> dependency property.
+            </summary>
+        </member>
         <member name="P:Telerik.WinForms.Controls.SyntaxEditor.Palettes.SyntaxEditorPalette.KeywordColor">
             <summary>
             Keyword color.
@@ -6106,6 +6148,11 @@
         <member name="P:Telerik.WinForms.Controls.SyntaxEditor.Palettes.SyntaxEditorPalette.XmlTagColor">
             <summary>
             XmlTag color.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Controls.SyntaxEditor.Palettes.SyntaxEditorPalette.XmlCharacterDataColor">
+            <summary>
+            XmlCharacterData color.
             </summary>
         </member>
         <member name="P:Telerik.WinForms.Controls.SyntaxEditor.Palettes.SyntaxEditorPalette.PaletteName">
@@ -6933,6 +6980,16 @@
         <member name="P:Telerik.WinForms.Controls.SyntaxEditor.Taggers.XmlSyntaxHighlightingHelper.XmlTagFormatDefinition">
             <summary>
             XML tag format definition.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Controls.SyntaxEditor.Taggers.XmlSyntaxHighlightingHelper.XmlCharacterData">
+            <summary>
+            XML character data classification type.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Controls.SyntaxEditor.Taggers.XmlSyntaxHighlightingHelper.XmlCharacterDataFormatDefinition">
+            <summary>
+            XML character data format definition.
             </summary>
         </member>
         <member name="M:Telerik.WinForms.Controls.SyntaxEditor.Taggers.XmlSyntaxHighlightingHelper.GetXmlClassificationType(System.String)">

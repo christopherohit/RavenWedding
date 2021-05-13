@@ -1132,6 +1132,17 @@
             This property is not relevant for this class.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.UsePdfProcessingModel">
+            <summary>
+            When false, it fall-backs internally
+            to use the RadPdfViewer old model on document import.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.UsePdfProcessingModelDefaultValue">
+            <summary>
+            Gets or sets the default value for UsePdfProcessingModel property.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewer.ExportPage(System.Int32,System.String,System.Double,System.Boolean,System.Drawing.Imaging.ImageFormat)">
             <summary>
             Export a single Pdf Page to an image file on the disk
@@ -1323,11 +1334,6 @@
             Shows a <see cref="T:Telerik.WinControls.UI.RadPrintPreviewDialog"/> for editing the <see cref="T:Telerik.WinControls.UI.RadPdfViewer"/> print settings.
             </summary>
             <param name="document">As instance of <see cref="T:Telerik.WinControls.UI.RadPrintDocument"/> used to control the print process.</param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfExceptionEventArgs.Exception">
-            <summary>
-            Gets the exception that represents the error.
-            </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.PrintOrientation">
             <summary>

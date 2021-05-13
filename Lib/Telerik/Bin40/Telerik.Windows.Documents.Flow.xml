@@ -4,6 +4,1025 @@
         <name>Telerik.Windows.Documents.Flow</name>
     </assembly>
     <members>
+        <member name="T:Telerik.Windows.Documents.Flow.FormatProviders.Html.LoadImageFromUriEventArgs">
+            <summary>
+            Represents event arguments for loading an image at run-time.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.FormatProviders.Html.LoadImageFromUriEventArgs.SetImageInfo(System.Byte[],System.String)">
+            <summary>
+            Sets the image info, described by its binary data and extension.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.FormatProviders.Html.LoadImageFromUriEventArgs.Uri">
+            <summary>
+            Gets the URI.
+            </summary>
+            <value>The URI.</value>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.FormatProviders.Html.LoadStyleSheetFromUriEventArgs">
+            <summary>
+            Represents event arguments for loading a CSS stylesheet at run-time.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.FormatProviders.Html.LoadStyleSheetFromUriEventArgs.SetStyleSheetContent(System.String)">
+            <summary>
+            Sets the stylesheet content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.FormatProviders.Html.LoadStyleSheetFromUriEventArgs.Uri">
+            <summary>
+            Gets the URI.
+            </summary>
+            <value>The URI.</value>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder">
+            <summary>
+            Describes the different scenarios for inserting a structured document tag (Content Control) in RadDocument.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertCore(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Executes the main insert logic.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertInEmptyParagraph(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Paragraph)">
+            <summary>
+            Represents the case of inserting in the beginning of an empty paragraph.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertInEmptyTableCell(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableCell)">
+            <summary>
+            Represents the case of inserting in the beginning of an empty table cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAfterSoftBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting an inline content control that follows another content control hosting a paragraph or a cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertBeforeSoftBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting an inline content control that is placed just before another content control hosting a paragraph or a cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAfterHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting an inline content control that follows another content control hosting the end of a table or a table row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertBeforeHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting an inline content control that is placed just before another content control hosting a table or a table row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertBeforeMultiBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting a content control before another content control hosting multiple paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAfterMultiBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting a content control after another content control hosting multiple paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedTableCell(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableCell)">
+            <summary>
+            Represents the case of inserting a content control around a table cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedParagraph(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Paragraph)">
+            <summary>
+            Represents the case of inserting a content control around a single selected paragraph.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertAroundSelectedInlineRange(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting an inline content control around a free selection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder.InsertSdtInPartialParagraphSelection(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting an inline content control around a partially selected paragraph.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1">
+            <summary>
+            Represents a base <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1"/> class that contains common logic between controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1"/> class.
+            </summary>
+            <param name="sdtStart">The structured document tag to be built.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertCore(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the core logic when inserting structured document tags.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertInEmptyParagraph(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Paragraph)">
+            <summary>
+            Represents the case of inserting in the beginning of an empty paragraph.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertInEmptyTableCell(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableCell)">
+            <summary>
+            Represents the case of inserting in the beginning of an empty table cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAfterSoftBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting an inline content control that follows another content control hosting a paragraph or a cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertBeforeSoftBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting an inline content control that is placed just before another content control hosting a paragraph or a cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAfterHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting an inline content control that follows another content control hosting the end of a table or a table row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertBeforeHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting an inline content control that is placed just before another content control hosting a table or a table row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertBeforeMultiBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting a content control before another content control hosting multiple paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAfterMultiBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting a content control after another content control hosting multiple paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedTableCell(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableCell)">
+            <summary>
+            Represents the case of inserting a content control around a table cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedParagraph(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Paragraph)">
+            <summary>
+            Represents the case of inserting a content control around a single selected paragraph.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertAroundSelectedInlineRange(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting an inline content control around a free selection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.InsertSdtInPartialParagraphSelection(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting an inline content control around a partially selected paragraph.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtBuilder`1.Sdt">
+            <summary>
+            Gets the associated StructuredDocumentTag.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException">
+            <summary>
+            Represents an exception which is thrown if there was a problem creating a structured document tag.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException"/> class.
+            </summary>
+            <param name="message">The provided message.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException"/> class.
+            </summary>
+            <param name="message">The provided message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.Annotations.StructuredDocumentTags.Builders.SdtBuilderFailureException"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder"/> that handles the generation of check box content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder.InsertCore(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Executes the main insert logic.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxBuilder.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder"/> that handles the generation of combo box content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtComboBoxBuilder.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder"/> that handles the generation of date content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDateBuilder.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder"/> that handles the generation of drop down list content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtDropDownListBuilder.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder"/> that handles the generation of picture content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertInEmptyParagraph(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Paragraph)">
+            <summary>
+            Represents the case of inserting in the beginning of an empty paragraph.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertInEmptyTableCell(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableCell)">
+            <summary>
+            Represents the case of inserting in the beginning of an empty table cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAfterHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting an inline content control that follows another content control hosting the end of a table or a table row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedInlineRange(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting an inline content control around a free selection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedParagraph(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Paragraph)">
+            <summary>
+            Represents the case of inserting a content control around a single selected paragraph.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertAroundSelectedTableCell(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableCell)">
+            <summary>
+            Represents the case of inserting a content control around a table cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtPictureBuilder.InsertBeforeHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting an inline content control that is placed just before another content control hosting a table or a table row.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder"/> that handles the generation of RepeatingSection content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertSdtInPartialParagraphSelection(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting an inline content control around a partially selected paragraph.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertAfterHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting an inline content control that follows another content control hosting the end of a table or a table row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertAfterMultiBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting a content control after another content control hosting multiple paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertAfterSoftBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd)">
+            <summary>
+            Represents the case of inserting an inline content control that follows another content control hosting a paragraph or a cell.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertAroundSelectedInlineRange(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting an inline content control around a free selection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertBeforeHardBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting an inline content control that is placed just before another content control hosting a table or a table row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertBeforeMultiBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting a content control before another content control hosting multiple paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionBuilder.InsertBeforeSoftBlockSdt(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Represents the case of inserting an inline content control that is placed just before another content control hosting a paragraph or a cell.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionItemBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionItemBuilder"/> that handles the generation of RepeatingSectionItem content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionItemBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRepeatingSectionItemBuilder"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRichTextBuilder">
+            <summary>
+            Represents an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRichTextBuilder"/> that handles the generation of rich text content controls.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRichTextBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRichTextBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRichTextBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder">
+            <summary>
+            Represents ContentGenerator for repeating plain text content control.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder"/> class.
+            </summary>
+            <param name="sdt">The structured document tag.</param>
+            <param name="properties">The properties of the structured document tag.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder.InsertAroundSelectedImage(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor)">
+            <summary>
+            Represents the case of inserting a content control around a single selected image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder.InsertAroundSelectedMultipleBlocks(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected paragraphs or tables.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder.InsertAroundSelectedMultipleRows(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around multiple selected rows.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder.InsertAroundSelectedSingleRow(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.TableRow)">
+            <summary>
+            Represents the case of inserting a content control around a single selected row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtTextBuilder.InsertAroundSelectedTable(Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor,Telerik.Windows.Documents.Flow.Model.Table)">
+            <summary>
+            Represents the case of inserting a content control around a single selected table.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtLevel">
+            <summary>
+            Values specify the level on which a SDT is defined.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase">
+            <summary>
+            Represents the properties of a structured document tag of DocumentPart types.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties">
+            <summary>
+            Represents the common properties of a structured document tag.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties">
+            <summary>
+            Specifies the list of properties definable on a structured document tag.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties.ID">
+            <summary>
+            Gets or sets the ID of the associated SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties.DataBinding">
+            <summary>
+            Gets or sets an XML mapping (DataBinding) that relates the content of associated SDT to a specific XML node.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties.Lock">
+            <summary>
+            Gets or sets the locking behavior of the associated SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties.Alias">
+            <summary>
+            Gets or sets a friendly name for the associated SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties.OutlineColor">
+            <summary>
+            Gets or sets the color that is used for visualizing the outline.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties.OutlineAppearance">
+            <summary>
+            Gets or sets the outline appearance style.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtProperties.Placeholder">
+            <summary>
+            Gets or set the associated placeholder object.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.Type">
+            <summary>
+            Gets the structured document tag type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.ID">
+            <summary>
+            Gets or sets the ID of the associated SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.DataBinding">
+            <summary>
+            Gets or sets an XML mapping (DataBinding) that relates the content of associated SDT to a specific XML node.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.Lock">
+            <summary>
+            Gets or sets the locking behavior of the associated SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.Alias">
+            <summary>
+            Gets or sets a friendly name for the associated SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.Tag">
+            <summary>
+            Gets or sets a tag for the associated SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.IsTemporary">
+            <summary>
+            Gets or sets a value that indicates whether this SDT will be removed after editing its content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.OutlineColor">
+            <summary>
+            Gets or sets the color that is used for visualizing the outline.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.OutlineAppearance">
+            <summary>
+            Gets or sets the outline appearance style.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.Placeholder">
+            <summary>
+            Gets or set the associated placeholder object.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.RunProperties">
+            <summary>
+            Gets or sets the associated run properties.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.IsContentLocked">
+            <summary>
+            Gets a value that indicates whether the content can be modified.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties.IsLocked">
+            <summary>
+            Gets a value that indicates whether the annotation range can be modified.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase.ContainsBuiltInDocPart">
+            <summary>
+            Gets or sets a value that indicated whether the SDT contains a built in document part.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase.DocumentPartGalleryFilter">
+            <summary>
+            Gets or sets the document part gallery filter.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartPropertiesBase.DocumentPartCategoryFilter">
+            <summary>
+            Gets or sets the document part category filter.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.Editing.IMessageProvider">
+            <summary>
+            Describes the means to notify the user with information.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.IMessageProvider.ShowMessage(System.String)">
+            <summary>
+            Notifies the user with the provided information.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.ISdtBlock">
+            <summary>
+            Describes element that can be directly contained inside a structured document tag.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.ISdtBlock.SdtBlockHost">
+            <summary>
+            Gets the value that indicates the element that can be directly contained inside the structured document tag.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.SdtBlockHost">
+            <summary>
+            Represents a block that can be directly contained by a structured document tag.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar">
+            <summary>
+            Specifies the type of calendar used to display a Date SDT.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Gregorian">
+            <summary>
+            Specifies that the Gregorian calendar, as defined in ISO 8601, shall be used. This calendar should be localized into the appropriate language.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.GregorianUS">
+            <summary>
+            Specifies that the Gregorian calendar, as defined in ISO 8601, shall be used. The values for this calendar should be represented in English.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.GregorianMeFrench">
+            <summary>
+            Specifies that the Gregorian calendar, as defined in ISO 8601, shall be used. The values for this calendar should be presented in Middle East French.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.GregorianArabic">
+            <summary>
+            Specifies that the Gregorian calendar, as defined in ISO 8601, shall be used. The values for this calendar should be presented in Arabic.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Hijri">
+            <summary>
+            Specifies that the Hijri lunar calendar shall be used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Hebrew">
+            <summary>
+            Specifies that the Hebrew lunar calendar shall be used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Taiwan">
+            <summary>
+            Specifies that the Taiwanese calendar, as defined by the Chinese National Standard CNS 7648, shall be used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Japan">
+            <summary>
+            Specifies that the Japanese Emperor Era calendar, as described by Japanese Industrial Standard JIS X 0301, shall be used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Thai">
+            <summary>
+            Specifies that the Thai calendar shall be used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Korea">
+            <summary>
+            Specifies that the Korean Tangun Era calendar, as described by Korean Law Enactment No. 4, shall be used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.Saka">
+            <summary>
+            Specifies that the Saka Era calendar shall be used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.GregorianXlitEnglish">
+            <summary>
+            Specifies that the Gregorian calendar, as defined in ISO 8601, shall be used. The values for this calendar should be the representation of the English strings in the corresponding Arabic characters.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.GregorianXlitFrench">
+            <summary>
+            Specifies that the Gregorian calendar, as defined in ISO 8601, shall be used. The values for this calendar should be the representation of the French strings in the corresponding Arabic characters.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.SdtCalendar.None">
+            <summary>
+            Specifies that no calendar should be used.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxState">
+            <summary>
+            Represents a class that defines the state of a check box structured document tag.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxState.CharacterCode">
+            <summary>
+            Gets or sets the value that indicates which predefined character will be used to represent the check box.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtCheckBoxState.Font">
+            <summary>
+            Gets or sets the value that indicates which font will be used to visualize the check box.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding">
+            <summary>
+            Represents a class that defines the mapping of the structured document tag.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding"/> class from another instance.
+            </summary>
+            <param name="dataBinding"></param>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding.PrefixMappings">
+            <summary>
+            Gets a list that contains all of the namespace prefix mappings defined for the given element.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding.StoreItemId">
+            <summary>
+            Gets or sets the name of the custom XML part.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DataBinding.XPath">
+            <summary>
+            Gets or sets the XPath to the mapped XML node.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.Styles.DateMappingType">
+            <summary>
+            Represent the data type used for storing mapped date values.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.DateMappingType.Date">
+            <summary>
+            Value is stored as a date.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.DateMappingType.DateTime">
+            <summary>
+            Value is stored as a date with a time component.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.DateMappingType.Text">
+            <summary>
+            Value is stored as text.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ListItem">
+            <summary>
+            Represents a class defining the element that is part of the combo box and drop-down list SDTs.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ListItem.DisplayText">
+            <summary>
+            Gets or sets the value that indicates what is text is to be displayed when this item is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ListItem.Value">
+            <summary>
+            Gets or sets the value that indicates the value of the item.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.Styles.Lock">
+            <summary>
+            Values specify the locking behavior of SDTs and their content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.Lock.Unlocked">
+            <summary>
+            No locking.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.Lock.SdtLocked">
+            <summary>
+            SDT element cannot be deleted.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.Lock.ContentLocked">
+            <summary>
+            SDT content cannot be edited.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.Lock.SdtContentLocked">
+            <summary>
+            SDT cannot be deleted and its content cannot be edited.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.Styles.OutlineAppearance">
+            <summary>
+            Represents the different options for visualizing the outline of a ContentControl.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.OutlineAppearance.BoundingBoxes">
+            <summary>
+            The content is wrapped in a bounding box that may also contain a drop down editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.OutlineAppearance.Tags">
+            <summary>
+            The content is wrapped in design view tag.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.OutlineAppearance.Hidden">
+            <summary>
+            The content does not have outline visualization.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.Placeholder">
+            <summary>
+            Represents the class that defines the placeholder settings of the SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.Placeholder.DocumentPartReference">
+            <summary>
+            Gets or sets the value that indicates specifies the name of the document part which shall be displayed in the parent structured document tag when its run contents are empty.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.Placeholder.ShowPlaceholder">
+            <summary>
+            Gets or sets the value that indicates whether or not to show the contents of a SDT as a placeholder.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.Placeholder.PlaceholderText">
+            <summary>
+            Gets or sets the value that indicates text of the placeholder.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd">
+            <summary>
+            Represents the end of a structured document tag annotation.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.AnnotationRangeEndBase">
+            <summary>
+            Defines base class for inline annotations range end.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.AnnotationMarkerBase">
+            <summary>
+            Defines base class for inline annotations.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.InlineBase">
+            <summary>
+            Provides base functionality for all inline flow content elements.
+            </summary>
+        </member>
         <member name="T:Telerik.Windows.Documents.Flow.Model.DocumentElementBase">
             <summary>
             Provides base class for flow document elements.
@@ -34,7 +1053,7 @@
         <member name="M:Telerik.Windows.Documents.Flow.Model.DocumentElementBase.EnumerateContentChildrenOfType``1">
             <summary>
             Enumerates all direct child elements of a given type.
-            <para>For example Headers/Footers are indirect children of a <see cref="T:Telerik.Windows.Documents.Flow.Model.Section"/> element and 
+            <para>For example Headers/Footers are indirect children of a <see cref="T:Telerik.Windows.Documents.Flow.Model.Section"/> element and
             Comments are indirect children of a <see cref="T:Telerik.Windows.Documents.Flow.Model.RadFlowDocument"/> element.</para>
             </summary>
             <typeparam name="T">The type of the T.</typeparam>
@@ -55,7 +1074,7 @@
         </member>
         <member name="M:Telerik.Windows.Documents.Flow.Model.DocumentElementBase.OnAfterCloneCore(Telerik.Windows.Documents.Flow.Model.Cloning.CloneContext,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
             <summary>
-            This methods can be override in derived class and if override should be invoked after CloneCore call.  
+            This methods can be override in derived class and if override should be invoked after CloneCore call.
             </summary>
             <param name="cloneContext"></param>
             <param name="clonedElement"></param>
@@ -96,10 +1115,521 @@
             This API supports the debugging infrastructure and is not intended to be used directly from your code.
             </summary>
         </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.InlineBase.Paragraph">
+            <summary>
+            Gets the parent paragraph of the inline.
+            </summary>
+            <value>The paragraph.</value>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeEnd.Start">
+            <summary>
+            Gets the start of the current SDT.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart">
+            <summary>
+            Represents the start of a structured document tag annotation.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.AnnotationRangeStartBase">
+            <summary>
+            Defines base class for inline annotations range end.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart.SdtProperties">
+            <summary>
+            Gets or sets the properties of the current SDT.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart.End">
+            <summary>
+            Gets the end of the current SDT.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType">
+            <summary>
+            Specifies the list of supported structured document tag types.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.None">
+            <summary>
+            Unspecified type. Parent SDT still can host content and it uses the set of common properties.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.Bibliography">
+            <summary>
+            Parent SDT represents bibliography content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.CheckBox">
+            <summary>
+            Parent SDT represents a check box.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.Citation">
+            <summary>
+            Parent SDT represents citation content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.ComboBox">
+            <summary>
+            Parent SDT represents a list of editable items.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.Date">
+            <summary>
+            Parent SDT represents a date time value.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.DocumentPart">
+            <summary>
+            Parent SDT represents a single document part.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.DocumentPartGallery">
+            <summary>
+            Parent SDT represents a list of document parts.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.DropDownList">
+            <summary>
+            Parent SDT is represents a list of non-editable items.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.Equation">
+            <summary>
+            Parent SDT can contain equation data.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.Group">
+            <summary>
+            Parent SDT is in a restricted SDT group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.Picture">
+            <summary>
+            Parent SDT contains a picture.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.RichText">
+            <summary>
+            Parent SDT can contain rich text content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.Text">
+            <summary>
+            Parent SDT can contain plain text only.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.RepeatingSection">
+            <summary>
+            Parent SDT is a collection of repeating content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType.RepeatingSectionItem">
+            <summary>
+            Parent SDT is a repeating content item in a parent repeating section.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.BibliographyProperties">
+            <summary>
+            Represents the properties of a structured document tag of Bibliography type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.BibliographyProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.BibliographyProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.BibliographyProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.BibliographyProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.BibliographyProperties"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties">
+            <summary>
+            Represents the properties of a structured document tag of CheckBox type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties.Checked">
+            <summary>
+            Gets or sets a value that indicates whether the check box is checked.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties.UncheckedState">
+            <summary>
+            Gets or sets the properties that describe the SDT when it is in checked state.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CheckBoxProperties.CheckedState">
+            <summary>
+            Gets or sets the properties that describe the SDT when it is in unchecked state.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CitationProperties">
+            <summary>
+            Represents the properties of a structured document tag of Citation type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CitationProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CitationProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CitationProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CitationProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.CitationProperties"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties">
+            <summary>
+            Represents the properties of a structured document tag of ComboBox type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides a <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties.LastValue">
+            <summary>
+            Gets the content value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties.SelectedItem">
+            <summary>
+            Gets or sets the value that indicates which item is currently selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ComboBoxProperties.Items">
+            <summary>
+            Gets the items associated with this combo box.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties">
+            <summary>
+            Represents the properties of a structured document tag of date type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.DateFormat">
+            <summary>
+            Gets or sets the date format pattern.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.Language">
+            <summary>
+            Gets or sets the culture used for formatting the date.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.DateMappingType">
+            <summary>
+            Gets or sets the data type that is used for storing mapped date time value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.Calendar">
+            <summary>
+            Gets or set the type of calendar that is used for displaying the content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DateProperties.FullDate">
+            <summary>
+            Gets or sets the date time content.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartGalleryProperties">
+            <summary>
+            Represents the properties of a structured document tag of DocumentPartGallery type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartGalleryProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartGalleryProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartGalleryProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartGalleryProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartGalleryProperties"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartProperties">
+            <summary>
+            Represents the properties of a structured document tag of DocumentPart type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DocumentPartProperties"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties">
+            <summary>
+            Represents the properties of a structured document tag of DropDownList type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.DropDownListProperties.IsContentLocked">
+            <summary>
+            Gets a value that indicates whether the content can be modified.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.EquationProperties">
+            <summary>
+            Represents the properties of a structured document tag of Equation type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.EquationProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.EquationProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.EquationProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.EquationProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.EquationProperties"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.GroupProperties">
+            <summary>
+            Represents the properties of a structured document tag of Group type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.GroupProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.GroupProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.GroupProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.GroupProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.GroupProperties"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties">
+            <summary>
+            Represents the properties of a structured document tag of Picture type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.PictureProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties">
+            <summary>
+            Represents the properties of a structured document tag of RepeatingSectionItem type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionItemProperties.ParentSectionProperties">
+            <summary>
+            Gets the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties"/> associated with the parent repeating section control.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties">
+            <summary>
+            Represents the properties of a structured document tag of RepeatingSection type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides an <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties.SectionTitle">
+            <summary>
+            Gets or sets the title of the section.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RepeatingSectionProperties.AllowInsertAndDeleteSections">
+            <summary>
+            Gets or sets a value that indicates whether the underlying sections can be modified.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RichTextProperties">
+            <summary>
+            Represents the properties of a structured document tag of RichText type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RichTextProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RichTextProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RichTextProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RichTextProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.RichTextProperties"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties">
+            <summary>
+            Represents the properties of a structured document tag of Text type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties.#ctor(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties.GetBuilder(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Provides a <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.ISdtBuilder"/> that generates the structured document tag's content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.TextProperties.IsMultiline">
+            <summary>
+            Gets or sets a value that indicates whether the SDT supports new lines in its content.
+            </summary>
+        </member>
         <member name="T:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor">
             <summary>
             Defines utility class used for editing <see cref="T:Telerik.Windows.Documents.Flow.Model.RadFlowDocument">RadFlowDocuments</see>
             </summary>
+            <summary>
+            Defines utility class used for editing <see cref="T:Telerik.Windows.Documents.Flow.Model.RadFlowDocument">RadFlowDocuments</see>
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.InsertStructuredDocumentTag(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType)">
+            <summary>
+            Inserts a SDT (Structured Document Tag).
+            </summary>
+            <param name="type">The type for the SDT to be generated.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.InsertStructuredDocumentTag(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties)">
+            <summary>
+            Inserts a SDT (Structured Document Tag).
+            </summary>
+            <param name="properties">The properties of the SDT.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.InsertStructuredDocumentTag(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtType,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Inserts a SDT (Structured Document Tag).
+            </summary>
+            <param name="type">The type for the SDT to be generated.</param>
+            <param name="startElement">The start of the SDT will be inserted before the provided element.</param>
+            <param name="endElement">The end of the SDT will be inserted after the provided element.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.InsertStructuredDocumentTag(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties,Telerik.Windows.Documents.Flow.Model.DocumentElementBase,Telerik.Windows.Documents.Flow.Model.DocumentElementBase)">
+            <summary>
+            Inserts a SDT (Structured Document Tag).
+            </summary>
+            <param name="properties">The properties of the SDT.</param>
+            <param name="startElement">The start of the SDT will be inserted before the provided element.</param>
+            <param name="endElement">The end of the SDT will be inserted after the provided element.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.RemoveStructuredDocumentTag(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart)">
+            <summary>
+            Removes a SDT(Structured Document Tag) with its contents.
+            </summary>
+            <param name="sdtRangeStart">The start of the SDT to be removed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.RemoveStructuredDocumentTag(Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtRangeStart,System.Boolean)">
+            <summary>
+            Removes a SDT(Structured Document Tag).
+            </summary>
+            <param name="sdtRangeStart">The start of the SDT to be removed.</param>
+            <param name="removeContent">If true the content of the SDT is removed; else only the SDT is removed leaving behind the content.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.SetSdtMessageProvider(Telerik.Windows.Documents.Flow.Model.Editing.IMessageProvider)">
+            <summary>
+            Sets a custom message provider for the messages when creating a structured document tag.
+            </summary>
+            <param name="provider">A custom message provider which implements <see cref="T:Telerik.Windows.Documents.Flow.Model.Editing.IMessageProvider"/>.</param>
         </member>
         <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.#ctor(Telerik.Windows.Documents.Flow.Model.RadFlowDocument)">
             <summary>
@@ -399,8 +1929,8 @@
         </member>
         <member name="M:Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor.ReplaceStyling(System.Text.RegularExpressions.Regex,System.Action{Telerik.Windows.Documents.Flow.Model.Styles.CharacterProperties})">
             <summary>
-            Replaces character properties of all occurrences of a 
-            <para>matched text by the specified regex in a <see cref="T:Telerik.Windows.Documents.Flow.Model.RadFlowDocument"/>.</para> 
+            Replaces character properties of all occurrences of a
+            <para>matched text by the specified regex in a <see cref="T:Telerik.Windows.Documents.Flow.Model.RadFlowDocument"/>.</para>
             </summary>
             <param name="regex">The regex.</param>
             <param name="replacePropertiesAction">The action which replaces character properties.</param>
@@ -475,16 +2005,47 @@
             This inline should be used only for preserving the end of paragraph when converting to Plain text.
             </summary>
         </member>
-        <member name="T:Telerik.Windows.Documents.Flow.Model.InlineBase">
+        <member name="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag">
             <summary>
-            Provides base functionality for all inline flow content elements.
+            Represents a SDT(Structured Document Tag).
             </summary>
         </member>
-        <member name="P:Telerik.Windows.Documents.Flow.Model.InlineBase.Paragraph">
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag.#ctor(Telerik.Windows.Documents.Flow.Model.RadFlowDocument,Telerik.Windows.Documents.Flow.Model.StructuredDocumentTags.SdtProperties)">
             <summary>
-            Gets the parent paragraph of the inline.
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag"/> class.
             </summary>
-            <value>The paragraph.</value>
+            <param name="document">The document.</param>
+            <param name="properties">The properties of the SDT.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag.#ctor(Telerik.Windows.Documents.Flow.Model.RadFlowDocument)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag"/> class with the default properties.
+            </summary>
+            <param name="document">The document.</param>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag.Document">
+            <summary>
+            Gets the associated document.
+            </summary>
+            <value>The document.</value>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag.SdtRangeStart">
+            <summary>
+            Gets the SDT range start.
+            </summary>
+            <value>The bookmark range start.</value>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag.SdtRangeEnd">
+            <summary>
+            Gets the bookmark range end.
+            </summary>
+            <value>The SDT range end.</value>
+        </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.StructuredDocumentTag.SdtProperties">
+            <summary>
+            Gets the name of the bookmark.
+            </summary>
+            <value>The name.</value>
         </member>
         <member name="T:Telerik.Windows.Documents.Flow.Model.Styles.Core.IStyleProperty`1">
             <summary>
@@ -863,6 +2424,16 @@
         <member name="E:Telerik.Windows.Documents.Flow.FormatProviders.Html.HtmlImportSettings.LoadFromUri">
             <summary>
             Occurs when loading from URL.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Documents.Flow.FormatProviders.Html.HtmlImportSettings.LoadImageFromUri">
+            <summary>
+            Occurs when loading image from URL.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Documents.Flow.FormatProviders.Html.HtmlImportSettings.LoadStyleSheetFromUri">
+            <summary>
+            Occurs when loading stylesheet from URL.
             </summary>
         </member>
         <member name="P:Telerik.Windows.Documents.Flow.FormatProviders.Html.HtmlImportSettings.GenericFonts">
@@ -21288,7 +22859,7 @@
             Creates a web request that does basic auth
             </summary>
         </member>
-        <member name="M:HttpWebAdapters.BasicAuthHttpWebRequestFactory.#ctor(System.String,System.String)">
+        <member name="M:HttpWebAdapters.BasicAuthHttpWebRequestFactory.#ctor(System.String,System.Char[])">
              <summary>
              Creates a web request that does basic auth.
              </summary>
@@ -28989,7 +30560,7 @@
         </member>
         <member name="M:Telerik.Windows.Documents.Flow.Model.Collections.DocumentElementCollection`2.VerifyDocumentElementOnInsert(`0)">
             <summary>
-            Verifies the validity of the document element before it is inserted in the collection. 
+            Verifies the validity of the document element before it is inserted in the collection.
             </summary>
             <param name="item">The item.</param>
         </member>
@@ -31616,6 +33187,16 @@
             Represents static holder of built in style names.
             </summary>
         </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.BuiltInStyleNames.SdtPlaceholderStyleId">
+            <summary>
+            Gets the id of the style used for structured document tags' placeholder text.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.BuiltInStyleNames.SdtPlaceholderStyleName">
+            <summary>
+            Gets the name of the style used for structured document tags' placeholder text.
+            </summary>
+        </member>
         <member name="F:Telerik.Windows.Documents.Flow.Model.Styles.BuiltInStyleNames.NormalTableStyleId">
             <summary>
             Gets the id of the default table style.
@@ -32330,21 +33911,6 @@
             </summary>
             <value>The export settings.</value>
         </member>
-        <member name="T:Telerik.Windows.Documents.Flow.Model.AnnotationMarkerBase">
-            <summary>
-            Defines base class for inline annotations.
-            </summary>
-        </member>
-        <member name="T:Telerik.Windows.Documents.Flow.Model.AnnotationRangeEndBase">
-            <summary>
-            Defines base class for inline annotations range end.
-            </summary>
-        </member>
-        <member name="T:Telerik.Windows.Documents.Flow.Model.AnnotationRangeStartBase">
-            <summary>
-            Defines base class for inline annotations range end.
-            </summary>
-        </member>
         <member name="T:Telerik.Windows.Documents.Flow.Model.BookmarkRangeEnd">
             <summary>
             Defines bookmark end annotation.
@@ -32882,7 +34448,7 @@
             A flow content element used for grouping of <see cref="T:Telerik.Windows.Documents.Flow.Model.BlockBase"/> elements.
             </summary>
             <remarks>
-            In addition to the collection of blocks, section can contain one or more instances 
+            In addition to the collection of blocks, section can contain one or more instances
             of <see cref="T:Telerik.Windows.Documents.Flow.Model.Header"/> and <see cref="T:Telerik.Windows.Documents.Flow.Model.Footer"/> through the <see cref="P:Telerik.Windows.Documents.Flow.Model.Section.Headers"/> and <see cref="P:Telerik.Windows.Documents.Flow.Model.Section.Footers"/> properties.
             </remarks>
         </member>
@@ -33221,6 +34787,16 @@
         <member name="F:Telerik.Windows.Documents.Flow.Model.DocumentElementType.PermissionRangeEnd">
             <summary>
             Permission range end element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.DocumentElementType.SdtRangeStart">
+            <summary>
+            Structured Document Tag range start element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Documents.Flow.Model.DocumentElementType.SdtRangeEnd">
+            <summary>
+            Structured Document Tag range end element.
             </summary>
         </member>
         <member name="T:Telerik.Windows.Documents.Flow.Model.Fields.FieldInfo">
@@ -33669,7 +35245,7 @@
         </member>
         <member name="P:Telerik.Windows.Documents.Flow.Model.Paragraph.KeepWithNextParagraph">
             <summary>
-            Gets or sets a value indicating if this paragraph should be rendered at least partly on the one page with 
+            Gets or sets a value indicating if this paragraph should be rendered at least partly on the one page with
             the following paragraph when this is possible and when the document is shown in page view mode.
             </summary>
             <returns>The default value is <c>false</c></returns>
@@ -33700,7 +35276,7 @@
         </member>
         <member name="P:Telerik.Windows.Documents.Flow.Model.Paragraph.ContextualSpacing">
             <summary>
-            Gets or sets a value indicating whether spacing before/after are ignored 
+            Gets or sets a value indicating whether spacing before/after are ignored
             when preceding/following paragraph has same paragraph style.
             </summary>
             <returns>The default value is <c>false</c>.</returns>
@@ -33861,6 +35437,14 @@
             The properties.
             </value>
         </member>
+        <member name="P:Telerik.Windows.Documents.Flow.Model.RadFlowDocument.DocumentInfo">
+            <summary>
+            Gets or sets metadata information for the document file.
+            </summary>
+            <value>
+            The metadata.
+            </value>
+        </member>
         <member name="P:Telerik.Windows.Documents.Flow.Model.RadFlowDocument.Sections">
             <summary>
             Gets the sections of the flow document.
@@ -33893,7 +35477,7 @@
         </member>
         <member name="P:Telerik.Windows.Documents.Flow.Model.RadFlowDocument.DocumentVariables">
             <summary>
-            Gets the the document variables.
+            Gets the document variables.
             </summary>
             <value>The document variables.</value>
         </member>
@@ -35994,7 +37578,7 @@
             <summary>
             Gets or sets the row span.
             </summary>
-            <returns>The default value is <c>1</c>.</returns>        
+            <returns>The default value is <c>1</c>.</returns>
         </member>
         <member name="P:Telerik.Windows.Documents.Flow.Model.TableCell.IgnoreCellMarkerInRowHeightCalculation">
             <summary>

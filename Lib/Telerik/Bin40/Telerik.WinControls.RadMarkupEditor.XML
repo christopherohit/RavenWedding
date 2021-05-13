@@ -73,14 +73,24 @@
             Get/Set the contents of the document Body, in html.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.UI.DesignView.RawValue">
+            <summary>
+            HtmlValue without to apply the Filters (XHTML, etc.)
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.DesignView.SelectAll">
             <summary>
             Selects the whole text.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.UI.DesignView.RawValue">
+        <member name="P:Telerik.WinControls.UI.RadMarkupEditor.Value">
             <summary>
-            HtmlValue without to apply the Filters (XHTML, etc.)
+            Gets the HTML value. 
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadMarkupEditor.RawValue">
+            <summary>
+            Gets the HTML value where all symbols are escaped. 
             </summary>
         </member>
         <member name="F:Telerik.WinControls.UI.RadMarkupEditor.components">
@@ -98,16 +108,6 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadMarkupEditor.Value">
-            <summary>
-            Gets the HTML value. 
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadMarkupEditor.RawValue">
-            <summary>
-            Gets the HTML value where all symbols are escaped. 
             </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Properties.MarkupDialogResources">

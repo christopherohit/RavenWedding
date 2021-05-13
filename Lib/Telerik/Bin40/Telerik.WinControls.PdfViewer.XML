@@ -162,108 +162,6 @@
             <summary>Specifies an "Ultra-light" font weight.</summary>
             <returns>A value that represents an "Ultra-light" font weight.</returns>
         </member>
-        <member name="T:Telerik.Fixed.Legacy.HashSet`1">
-            <summary>
-            Represents a set of items. The set does not preserve the order of items and does not allow items to
-            be added twice.
-            It is cloned by sharing the underlying data structure and delaying the actual copy until the next change.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.#ctor">
-            <summary>
-            Creates a new, empty set.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Add(`0)">
-            <summary>
-            Adds the item to the set.
-            Trying to add <c>null</c> will return false without changing the collection.
-            </summary>
-            <returns>True when the item was added, false when it was not added because it already is in the set</returns>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
-            <summary>
-            Adds a list of items to the set. This is equivalent to calling <see cref="M:Telerik.Fixed.Legacy.HashSet`1.Add(`0)"/> for each item in <paramref name="items"/>.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Clear">
-            <summary>
-            Removes all items from the set.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Contains(`0)">
-            <summary>
-            Tests if this set contains the specified item.
-            Checking for <c>null</c> always returns false.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Remove(`0)">
-            <summary>
-            Removes an item from the set.
-            Trying to remove <c>null</c> will return false without changing the collection.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)">
-            <summary>
-            Copy all items to the specified array.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.HashSet`1.GetEnumerator">
-            <summary>
-            Gets an enumerator to enumerate the items in the set.
-            </summary>
-        </member>
-        <member name="P:Telerik.Fixed.Legacy.HashSet`1.Count">
-            <summary>
-            Gets the number of items in the collection.
-            </summary>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.Thickness.#ctor(System.Double)">
-            <summary>Initializes a new instance of the <see cref="T:System.Windows.Thickness" /> structure that has the specified uniform length on each side. </summary>
-            <param name="uniformLength">The uniform length applied to all four sides of the bounding rectangle.</param>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.Thickness.Equals(System.Object)">
-            <summary>Compares this <see cref="T:System.Windows.Thickness" /> structure to another <see cref="T:System.Object" /> for equality.</summary>
-            <returns>true if the two objects are equal; otherwise, false.</returns>
-            <param name="obj">The object to compare.</param>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.Thickness.Equals(Telerik.Fixed.Legacy.Thickness)">
-            <summary>Compares this <see cref="T:System.Windows.Thickness" /> structure to another <see cref="T:System.Windows.Thickness" /> structure for equality.</summary>
-            <returns>true if the two instances of <see cref="T:System.Windows.Thickness" /> are equal; otherwise, false.</returns>
-            <param name="thickness">An instance of <see cref="T:System.Windows.Thickness" /> to compare for equality.</param>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.Thickness.GetHashCode">
-            <summary>Returns the hash code of the structure.</summary>
-            <returns>A hash code for this instance of <see cref="T:System.Windows.Thickness" />.</returns>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.Thickness.op_Equality(Telerik.Fixed.Legacy.Thickness,Telerik.Fixed.Legacy.Thickness)">
-            <summary>Compares the value of two <see cref="T:System.Windows.Thickness" /> structures for equality.</summary>
-            <returns>true if the two instances of <see cref="T:System.Windows.Thickness" /> are equal; otherwise, false.</returns>
-            <param name="t1">The first structure to compare.</param>
-            <param name="t2">The other structure to compare.</param>
-        </member>
-        <member name="M:Telerik.Fixed.Legacy.Thickness.op_Inequality(Telerik.Fixed.Legacy.Thickness,Telerik.Fixed.Legacy.Thickness)">
-            <summary>Compares two <see cref="T:System.Windows.Thickness" /> structures for inequality. </summary>
-            <returns>true if the two instances of <see cref="T:System.Windows.Thickness" /> are not equal; otherwise, false.</returns>
-            <param name="t1">The first structure to compare.</param>
-            <param name="t2">The other structure to compare.</param>
-        </member>
-        <member name="P:Telerik.Fixed.Legacy.Thickness.Bottom">
-            <summary>Gets or sets the width, in pixels, of the lower side of the bounding rectangle.</summary>
-            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the lower side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</returns>
-        </member>
-        <member name="P:Telerik.Fixed.Legacy.Thickness.Left">
-            <summary>Gets or sets the width, in pixels, of the left side of the bounding rectangle. </summary>
-            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the left side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. a pixel is equal to 1/96 on an inch. The default is 0.</returns>
-        </member>
-        <member name="P:Telerik.Fixed.Legacy.Thickness.Right">
-            <summary>Gets or sets the width, in pixels, of the right side of the bounding rectangle. </summary>
-            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the right side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</returns>
-        </member>
-        <member name="P:Telerik.Fixed.Legacy.Thickness.Top">
-            <summary>Gets or sets the width, in pixels, of the upper side of the bounding rectangle.</summary>
-            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the upper side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</returns>
-        </member>
         <member name="M:Telerik.WinControls.UI.Legacy.PixelFormat.op_Inequality(Telerik.WinControls.UI.Legacy.PixelFormat,Telerik.WinControls.UI.Legacy.PixelFormat)">
             <summary> Compares two <see cref="T:System.Windows.Media.PixelFormat" /> instances for inequality.</summary>
             <returns>true if the <see cref="T:System.Windows.Media.PixelFormat" /> objects are not equal; otherwise, false.</returns>
@@ -758,7 +656,7 @@
         </member>
         <member name="M:Telerik.WinControls.UI.CurrentPageChangedEventArgs.#ctor(Telerik.Windows.Documents.Fixed.Model.RadFixedPage)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.CurrentPageChangedEventArgs"/> class.
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.CurrentPageChangedEventArgs" /> class.
             </summary>
             <param name="page">The page.</param>
         </member>
@@ -788,14 +686,19 @@
             Selection mode - text is selected when dragging with mouse pointer.
             </summary>
         </member>
-        <member name="M:Telerik.WinControls.PdfViewer.PdfItemScroller.UpdateScrollStep">
-            <summary>
-            Updates the scroll step.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.PdfPrintPreviewDialog">
             <summary>
             A specific to <c ref="RadPdfViewer"/> dialog which stands for previewing and setting <c ref="RadPrintDocument"/> before printing.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfPrintPreviewDialog.PrintDialog">
+            <summary>
+            Gets the <see cref="P:Telerik.WinControls.UI.PdfPrintPreviewDialog.PrintDialog"/> that is shown by this dialog.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfPrintPreviewDialog.WatermarkDialog">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.WatermarkPreviewDialog"/> that is shown by this dialog.
             </summary>
         </member>
         <member name="F:Telerik.WinControls.UI.PdfPrintPreviewDialog.components">
@@ -815,16 +718,6 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.UI.PdfPrintPreviewDialog.PrintDialog">
-            <summary>
-            Gets the <see cref="P:Telerik.WinControls.UI.PdfPrintPreviewDialog.PrintDialog"/> that is shown by this dialog.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfPrintPreviewDialog.WatermarkDialog">
-            <summary>
-            Gets the <see cref="T:Telerik.WinControls.UI.WatermarkPreviewDialog"/> that is shown by this dialog.
-            </summary>
-        </member>
         <member name="F:Telerik.WinControls.UI.SignatureGeneralStatus.Valid">
             <summary>
             The valid signature status.
@@ -840,16 +733,16 @@
             The unknown signature status.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerContainer.ThumbVisible">
+            <summary>
+            Gets or sets a value indicating whether the thumbnail element is visible.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewerContainer.BeginResize(System.Int32)">
             <summary>
             Begins the resize of the description element.
             </summary>
             <param name="offset">The offset used to resize the description element.</param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerContainer.ThumbVisible">
-            <summary>
-            Gets or sets a value indicating whether the thumbnail element is visible.
-            </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.RadPdfViewerNavigator.BackColor">
             <summary>
@@ -866,6 +759,56 @@
         <member name="T:Telerik.WinControls.UI.PdfViewerContextMenu">
             <summary>
             Represents the default context menu used in <see cref="T:Telerik.WinControls.UI.RadPdfViewer"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.PdfViewerElement">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerElement"/> which owns this menu.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.CopyItem">
+            <summary>
+            Gets the "Copy" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.SelectAllItem">
+            <summary>
+            Gets the "Select All" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.DeselectAllItem">
+            <summary>
+            Gets the "Deselect All" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.HandToolItem">
+            <summary>
+            Gets the "Hand" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.SelectionToolItem">
+            <summary>
+            Gets the "Selection" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.NextPageItem">
+            <summary>
+            Gets the "Next Page" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.PreviousPageItem">
+            <summary>
+            Gets the "Previous Page" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.PrintItem">
+            <summary>
+            Gets the "Print" menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.FindItem">
+            <summary>
+            Gets the "Find" menu item.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.PdfViewerContextMenu.PrepareMenuItems">
@@ -936,59 +879,19 @@
             <param name="sender">The sender.</param>
             <param name="e">The event arguments.</param>
         </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.PdfViewerElement">
-            <summary>
-            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerElement"/> which owns this menu.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.CopyItem">
-            <summary>
-            Gets the "Copy" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.SelectAllItem">
-            <summary>
-            Gets the "Select All" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.DeselectAllItem">
-            <summary>
-            Gets the "Deselect All" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.HandToolItem">
-            <summary>
-            Gets the "Hand" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.SelectionToolItem">
-            <summary>
-            Gets the "Selection" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.NextPageItem">
-            <summary>
-            Gets the "Next Page" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.PreviousPageItem">
-            <summary>
-            Gets the "Previous Page" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.PrintItem">
-            <summary>
-            Gets the "Print" menu item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfViewerContextMenu.FindItem">
-            <summary>
-            Gets the "Find" menu item.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.RadFixedPageElement">
             <summary>
             Represents an element which displays a single PDF page in <see cref="T:Telerik.WinControls.UI.RadPdfViewer"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadFixedPageElement.PdfViewerElement">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerElement"/> which owns this element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadFixedPageElement.Page">
+            <summary>
+            Gets the logical <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> which is attached to this element.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadFixedPageElement.DrawAnnotation(Telerik.WinControls.Paint.IGraphics,Telerik.Windows.Documents.Fixed.Model.Annotations.Annotation)">
@@ -1010,6 +913,11 @@
             </summary>
             <param name="data">The page.</param>
             <param name="context">The context.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadFixedPageElement.Data">
+            <summary>
+            Gets the logical <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> which is attached to this element.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadFixedPageElement.Detach">
             <summary>
@@ -1059,21 +967,6 @@
             Unwires event handlers when the attached page is being detached.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.UI.RadFixedPageElement.PdfViewerElement">
-            <summary>
-            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerElement"/> which owns this element.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadFixedPageElement.Page">
-            <summary>
-            Gets the logical <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> which is attached to this element.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadFixedPageElement.Data">
-            <summary>
-            Gets the logical <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> which is attached to this element.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.RadFixedPageElementEventArgs">
             <summary>
             Provides data for events that involve <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/>.
@@ -1091,9 +984,175 @@
             in the viewer. You can also use pan. The control utilizes virtualization in order to guarantee good performance with larger documents.
             </summary>
         </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.DocumentLoaded">
+            <summary>
+            Fires when the document has finished loading.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.DataError">
+            <summary>
+            Fires when an internal exception in during loading parts of the document occurs.
+            If the event is not handled, a default error message box will be shown,
+            otherwise the message box will not show and handling the error should be done in the 
+            event handler.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.AnnotationClicked">
+            <summary>
+            Fires when a link or a bookmark was clicked.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.FitToWidthChanged">
+            <summary>
+            Fires when the FitToWidth property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.FitFullPageChanged">
+            <summary>
+            Fires when the FitFullPage property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.ScaleFactorChanged">
+            <summary>
+            Fires when the ScaleFactor property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.CaretPositionChanged">
+            <summary>
+            Fires when the caret changes its position.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.SelectionChanged">
+            <summary>
+            Fires when the text selection has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PageElementCreating">
+            <summary>
+            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is being created. Allows for replacing it with custom page element.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.CurrentPageChanged">
+            <summary>
+            Fires after the current <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> has been changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.ViewerModeChanged">
+            <summary>
+            Fires when the ViewerMode property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PageRenderStarted">
+            <summary>
+            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is about to be asynchronously rendered.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PageRenderCompleted">
+            <summary>
+            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> has been asynchronously rendered.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewer.#ctor">
             <summary>
             Creates a RadPdfViewer control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.HorizontalScrollState">
+            <summary>
+            Gets or sets the display state of the horizontal scrollbar.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.VerticalScrollState">
+            <summary>
+            Gets or sets the display state of the vertical scrollbar.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.EnableThumbnails">
+            <summary>
+            Gets or sets whether the thumbnail element is visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ContainerElement">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerContainer"/> which represents the elements container of the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.PdfViewerElement">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerElement"/> which represents the main element of the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.AnnotationsColor">
+            <summary>
+            Gets or sets the background color of the annotations when they are pressed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.FitToWidth">
+            <summary>
+            Fit to window width
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.FitFullPage">
+            <summary>
+            Fit one full page to control
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.SelectionColor">
+            <summary>
+            Gets or sets the color that highlights the current selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ScaleFactor">
+            <summary>
+            Gets or sets the factor by which the document is scaled.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.Document">
+            <summary>
+            Gets the currently loaded <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedDocument"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ReadingMode">
+            <summary>
+            Gets or sets whether the entire document is loaded at the begining or pages are loaded on demand.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.RadContextMenu">
+            <summary>
+            Gets or sets the associated <see cref="P:Telerik.WinControls.UI.RadPdfViewer.RadContextMenu"/>. By default this is <see cref="T:Telerik.WinControls.UI.PdfViewerContextMenu"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ViewerMode">
+            <summary>
+            Gets or sets the current viewer mode - Pan, TextSelection or None.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.BackColor">
+            <summary>
+            RadPdfViewer consists of multiple visual elements and separate settings are provided to customize their appearance.
+            Current BackColor property might be ignored.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ForeColor">
+            <summary>
+            RadPdfViewer consists of multiple visual elements and separate settings are provided to customize their appearance.
+            Current ForeColor property might be ignored.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.Text">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.UsePdfProcessingModel">
+            <summary>
+            When false, it fall-backs internally
+            to use the RadPdfViewer old model on document import.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.UsePdfProcessingModelDefaultValue">
+            <summary>
+            Gets or sets the default value for UsePdfProcessingModel property.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewer.ExportPage(System.Int32,System.String,System.Double,System.Boolean,System.Drawing.Imaging.ImageFormat)">
@@ -1139,6 +1198,11 @@
             <param name="overrideFileIfAlreadyExist">override image file if they exists</param>
             <param name="imageFormat">Specify an image format when saving the image</param>
             <returns>returns collection of Bitmaps. These Bitmaps should be disposed manually.</returns>       
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.RotationAngle">
+            <summary>
+            Gets or Sets the angle for pages rotation
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewer.Rotate(Telerik.WinControls.UI.RotationAngle)">
             <summary>
@@ -1234,6 +1298,26 @@
             Hide the Pdf document's Signature panel
             </summary>
         </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PdfSignaturePanelVisibilityChanged">
+            <summary>
+            Fires when SignaturePanel hides or shows
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ThumbnailListWidth">
+            <summary>
+            Get or Set the width of the Thumbnail list
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.PrintScalePageToPaperSize">
+            <summary>
+            Scale page when printing to fit the paper size without keeping the aspect ratio.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewer.PrintOrientation">
+            <summary>
+            Set or get the page orientation when printing.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewer.Print">
             <summary>
             Directly prints the <see cref="T:Telerik.WinControls.UI.RadPdfViewer"/> to the default printer.
@@ -1263,191 +1347,6 @@
             </summary>
             <param name="document">As instance of <see cref="T:Telerik.WinControls.UI.RadPrintDocument"/> used to control the print process.</param>
         </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.DocumentLoaded">
-            <summary>
-            Fires when the document has finished loading.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.DataError">
-            <summary>
-            Fires when an internal exception in during loading parts of the document occurs.
-            If the event is not handled, a default error message box will be shown,
-            otherwise the message box will not show and handling the error should be done in the 
-            event handler.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.AnnotationClicked">
-            <summary>
-            Fires when a link or a bookmark was clicked.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.FitToWidthChanged">
-            <summary>
-            Fires when the FitToWidth property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.FitFullPageChanged">
-            <summary>
-            Fires when the FitFullPage property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.ScaleFactorChanged">
-            <summary>
-            Fires when the ScaleFactor property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.CaretPositionChanged">
-            <summary>
-            Fires when the caret changes its position.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.SelectionChanged">
-            <summary>
-            Fires when the text selection has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PageElementCreating">
-            <summary>
-            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is being created. Allows for replacing it with custom page element.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.CurrentPageChanged">
-            <summary>
-            Fires after the current <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> has been changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.ViewerModeChanged">
-            <summary>
-            Fires when the ViewerMode property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PageRenderStarted">
-            <summary>
-            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is about to be asynchronously rendered.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PageRenderCompleted">
-            <summary>
-            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> has been asynchronously rendered.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.HorizontalScrollState">
-            <summary>
-            Gets or sets the display state of the horizontal scrollbar.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.VerticalScrollState">
-            <summary>
-            Gets or sets the display state of the vertical scrollbar.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.EnableThumbnails">
-            <summary>
-            Gets or sets whether the thumbnail element is visible.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ContainerElement">
-            <summary>
-            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerContainer"/> which represents the elements container of the control.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.PdfViewerElement">
-            <summary>
-            Gets the <see cref="T:Telerik.WinControls.UI.RadPdfViewerElement"/> which represents the main element of the control.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.AnnotationsColor">
-            <summary>
-            Gets or sets the background color of the annotations when they are pressed.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.FitToWidth">
-            <summary>
-            Fit to window width
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.FitFullPage">
-            <summary>
-            Fit one full page to control
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.SelectionColor">
-            <summary>
-            Gets or sets the color that highlights the current selection.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ScaleFactor">
-            <summary>
-            Gets or sets the factor by which the document is scaled.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.Document">
-            <summary>
-            Gets the currently loaded <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedDocument"/>
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ReadingMode">
-            <summary>
-            Gets or sets whether the entire document is loaded at the begining or pages are loaded on demand.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.RadContextMenu">
-            <summary>
-            Gets or sets the associated <see cref="P:Telerik.WinControls.UI.RadPdfViewer.RadContextMenu"/>. By default this is <see cref="T:Telerik.WinControls.UI.PdfViewerContextMenu"/>.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ViewerMode">
-            <summary>
-            Gets or sets the current viewer mode - Pan, TextSelection or None.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.BackColor">
-            <summary>
-            RadPdfViewer consists of multiple visual elements and separate settings are provided to customize their appearance.
-            Current BackColor property might be ignored.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ForeColor">
-            <summary>
-            RadPdfViewer consists of multiple visual elements and separate settings are provided to customize their appearance.
-            Current ForeColor property might be ignored.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.Text">
-            <summary>
-            This property is not relevant for this class.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.RotationAngle">
-            <summary>
-            Gets or Sets the angle for pages rotation
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewer.PdfSignaturePanelVisibilityChanged">
-            <summary>
-            Fires when SignaturePanel hides or shows
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.ThumbnailListWidth">
-            <summary>
-            Get or Set the width of the Thumbnail list
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.PrintScalePageToPaperSize">
-            <summary>
-            Scale page when printing to fit the paper size without keeping the aspect ratio.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewer.PrintOrientation">
-            <summary>
-            Set or get the page orientation when printing.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.PdfExceptionEventArgs.Exception">
-            <summary>
-            Gets the exception that represents the error.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.PrintOrientation">
             <summary>
             Determines the RadPdfViewer page orientation when printing.
@@ -1471,6 +1370,71 @@
         <member name="T:Telerik.WinControls.UI.RadPdfViewerElement">
             <summary>
             Represents the main element of the <see cref="T:Telerik.WinControls.UI.RadPdfViewer"/> control.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.FitToWidthChanged">
+            <summary>
+            Fires when the FitToWidth property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.FitFullPageChanged">
+            <summary>
+            Fires when the FitFullPage property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.DocumentLoaded">
+            <summary>
+            Fires when the document finishes loading.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.DocumentUnloaded">
+            <summary>
+            Fires when the document is unloaded.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.AnnotationClicked">
+            <summary>
+            Fires when a link or a bookmark was clicked.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.ScaleFactorChanged">
+            <summary>
+            Fires when the ScaleFactor property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.CaretPositionChanged">
+            <summary>
+            Fires when the caret changes its position.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.SelectionChanged">
+            <summary>
+            Fires when the text selection has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.PageElementCreating">
+            <summary>
+            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is being created. Allows for replacing it with custom page element.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.CurrentPageChanged">
+            <summary>
+            Fires after the current <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> has been changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.ViewerModeChanged">
+            <summary>
+            Fires when the ViewerMode property has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.PageRenderStarted">
+            <summary>
+            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is about to be asynchronously rendered.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.PageRenderCompleted">
+            <summary>
+            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> has been asynchronously rendered.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewerElement.OnDocumentLoaded">
@@ -1531,6 +1495,51 @@
         <member name="M:Telerik.WinControls.UI.RadPdfViewerElement.OnViewerModeChanged">
             <summary>
             Fires the ViewerModeChanged event.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.HorizontalScrollState">
+            <summary>
+            Gets or sets the display state of the horizontal scrollbar.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.VerticalScrollState">
+            <summary>
+            Gets or sets the display state of the vertical scrollbar.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.ContextMenu">
+            <summary>
+            Gets or sets the associated <see cref="T:Telerik.WinControls.UI.RadContextMenu"/>. By default this is <see cref="T:Telerik.WinControls.UI.PdfViewerContextMenu"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.AnnotationsColor">
+            <summary>
+            Gets or sets the background color of the annotations when they are pressed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.SelectionColor">
+            <summary>
+            Gets or sets the color that highlights the current selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseController">
+            <summary>
+            Gets the <see cref="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseHandlersController"/> which handles and manages the mouse input.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.ScaleFactor">
+            <summary>
+            Gets or sets the factor by which the document is scaled.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.Document">
+            <summary>
+            Gets the currently loaded <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedDocument"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.ReadingMode">
+            <summary>
+            Gets or sets whether the entire document is loaded at the beginning or pages are loaded on demand.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewerElement.GetFocusedPage">
@@ -1799,6 +1808,39 @@
             Called when a document is being loaded to wire to its events.
             </summary>
         </member>
+        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.DataError">
+            <summary>
+            Fires when an internal exception in during loading parts of the document occurs.
+            If the event is not handled, a default error message box will be shown,
+            otherwise the message box will not show and handling the error should be done in the 
+            event handler.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseHandlersController">
+            <summary>
+            Gets the <see cref="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseHandlersController"/> which handles and manages the mouse input.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.Mode">
+            <summary>
+            Gets or sets the current viewer mode - Pan, TextSelection or None.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.CanScrollHorizontally">
+            <summary>
+            [true] if the horizontal scroll is visible, [false] otherwise.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.CanScrollVertically">
+            <summary>
+            [true] if the vertical scroll is visible, [false] otherwise.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.CurrentPage">
+            <summary>
+            Gets the current page.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.RadPdfViewerElement.ShowCaret">
             <summary>
             Shows the caret indicator.
@@ -1893,155 +1935,6 @@
             </summary>
             <param name="document">As instance of <see cref="T:Telerik.WinControls.UI.RadPrintDocument"/> used to control the print process.</param>
         </member>
-        <member name="M:Telerik.WinControls.UI.RadPdfViewerElement.Rotate(Telerik.WinControls.UI.RotationAngle)">
-            <summary>
-            Rotate page with
-            </summary>
-            <param name="angle"></param>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.FitToWidthChanged">
-            <summary>
-            Fires when the FitToWidth property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.FitFullPageChanged">
-            <summary>
-            Fires when the FitFullPage property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.DocumentLoaded">
-            <summary>
-            Fires when the document finishes loading.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.DocumentUnloaded">
-            <summary>
-            Fires when the document is unloaded.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.AnnotationClicked">
-            <summary>
-            Fires when a link or a bookmark was clicked.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.ScaleFactorChanged">
-            <summary>
-            Fires when the ScaleFactor property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.CaretPositionChanged">
-            <summary>
-            Fires when the caret changes its position.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.SelectionChanged">
-            <summary>
-            Fires when the text selection has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.PageElementCreating">
-            <summary>
-            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is being created. Allows for replacing it with custom page element.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.CurrentPageChanged">
-            <summary>
-            Fires after the current <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedPage"/> has been changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.ViewerModeChanged">
-            <summary>
-            Fires when the ViewerMode property has changed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.PageRenderStarted">
-            <summary>
-            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> is about to be asynchronously rendered.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.PageRenderCompleted">
-            <summary>
-            Fires when a <see cref="T:Telerik.WinControls.UI.RadFixedPageElement"/> has been asynchronously rendered.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.HorizontalScrollState">
-            <summary>
-            Gets or sets the display state of the horizontal scrollbar.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.VerticalScrollState">
-            <summary>
-            Gets or sets the display state of the vertical scrollbar.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.ContextMenu">
-            <summary>
-            Gets or sets the associated <see cref="T:Telerik.WinControls.UI.RadContextMenu"/>. By default this is <see cref="T:Telerik.WinControls.UI.PdfViewerContextMenu"/>.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.AnnotationsColor">
-            <summary>
-            Gets or sets the background color of the annotations when they are pressed.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.SelectionColor">
-            <summary>
-            Gets or sets the color that highlights the current selection.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseController">
-            <summary>
-            Gets the <see cref="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseHandlersController"/> which handles and manages the mouse input.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.ScaleFactor">
-            <summary>
-            Gets or sets the factor by which the document is scaled.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.Document">
-            <summary>
-            Gets the currently loaded <see cref="T:Telerik.Windows.Documents.Fixed.Model.RadFixedDocument"/>
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.ReadingMode">
-            <summary>
-            Gets or sets whether the entire document is loaded at the beginning or pages are loaded on demand.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadPdfViewerElement.DataError">
-            <summary>
-            Fires when an internal exception in during loading parts of the document occurs.
-            If the event is not handled, a default error message box will be shown,
-            otherwise the message box will not show and handling the error should be done in the 
-            event handler.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseHandlersController">
-            <summary>
-            Gets the <see cref="P:Telerik.WinControls.UI.RadPdfViewerElement.MouseHandlersController"/> which handles and manages the mouse input.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.Mode">
-            <summary>
-            Gets or sets the current viewer mode - Pan, TextSelection or None.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.CanScrollHorizontally">
-            <summary>
-            [true] if the horizontal scroll is visible, [false] otherwise.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.CanScrollVertically">
-            <summary>
-            [true] if the vertical scroll is visible, [false] otherwise.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.CurrentPage">
-            <summary>
-            Gets the current page.
-            </summary>
-        </member>
         <member name="P:Telerik.WinControls.UI.RadPdfViewerElement.RotateAngle">
             <summary>
             Gets or Sets the angle for pages rotation
@@ -2051,6 +1944,12 @@
             <summary>
             Gets or Sets SignatureValidationProperties
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPdfViewerElement.Rotate(Telerik.WinControls.UI.RotationAngle)">
+            <summary>
+            Rotate page with
+            </summary>
+            <param name="angle"></param>
         </member>
         <member name="T:Telerik.WinControls.UI.ReadingMode">
             <summary>
@@ -2163,6 +2062,113 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.PdfViewer.PdfItemScroller.UpdateScrollStep">
+            <summary>
+            Updates the scroll step.
+            </summary>
+        </member>
+        <member name="T:Telerik.Fixed.Legacy.HashSet`1">
+            <summary>
+            Represents a set of items. The set does not preserve the order of items and does not allow items to
+            be added twice.
+            It is cloned by sharing the underlying data structure and delaying the actual copy until the next change.
+            </summary>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.#ctor">
+            <summary>
+            Creates a new, empty set.
+            </summary>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Add(`0)">
+            <summary>
+            Adds the item to the set.
+            Trying to add <c>null</c> will return false without changing the collection.
+            </summary>
+            <returns>True when the item was added, false when it was not added because it already is in the set</returns>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adds a list of items to the set. This is equivalent to calling <see cref="M:Telerik.Fixed.Legacy.HashSet`1.Add(`0)"/> for each item in <paramref name="items"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Clear">
+            <summary>
+            Removes all items from the set.
+            </summary>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Contains(`0)">
+            <summary>
+            Tests if this set contains the specified item.
+            Checking for <c>null</c> always returns false.
+            </summary>
+        </member>
+        <member name="P:Telerik.Fixed.Legacy.HashSet`1.Count">
+            <summary>
+            Gets the number of items in the collection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.Remove(`0)">
+            <summary>
+            Removes an item from the set.
+            Trying to remove <c>null</c> will return false without changing the collection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)">
+            <summary>
+            Copy all items to the specified array.
+            </summary>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.HashSet`1.GetEnumerator">
+            <summary>
+            Gets an enumerator to enumerate the items in the set.
+            </summary>
+        </member>
+        <member name="P:Telerik.Fixed.Legacy.Thickness.Bottom">
+            <summary>Gets or sets the width, in pixels, of the lower side of the bounding rectangle.</summary>
+            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the lower side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</returns>
+        </member>
+        <member name="P:Telerik.Fixed.Legacy.Thickness.Left">
+            <summary>Gets or sets the width, in pixels, of the left side of the bounding rectangle. </summary>
+            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the left side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. a pixel is equal to 1/96 on an inch. The default is 0.</returns>
+        </member>
+        <member name="P:Telerik.Fixed.Legacy.Thickness.Right">
+            <summary>Gets or sets the width, in pixels, of the right side of the bounding rectangle. </summary>
+            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the right side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</returns>
+        </member>
+        <member name="P:Telerik.Fixed.Legacy.Thickness.Top">
+            <summary>Gets or sets the width, in pixels, of the upper side of the bounding rectangle.</summary>
+            <returns>A <see cref="T:System.Double" /> that represents the width, in pixels, of the upper side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</returns>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.Thickness.#ctor(System.Double)">
+            <summary>Initializes a new instance of the <see cref="T:System.Windows.Thickness" /> structure that has the specified uniform length on each side. </summary>
+            <param name="uniformLength">The uniform length applied to all four sides of the bounding rectangle.</param>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.Thickness.Equals(System.Object)">
+            <summary>Compares this <see cref="T:System.Windows.Thickness" /> structure to another <see cref="T:System.Object" /> for equality.</summary>
+            <returns>true if the two objects are equal; otherwise, false.</returns>
+            <param name="obj">The object to compare.</param>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.Thickness.Equals(Telerik.Fixed.Legacy.Thickness)">
+            <summary>Compares this <see cref="T:System.Windows.Thickness" /> structure to another <see cref="T:System.Windows.Thickness" /> structure for equality.</summary>
+            <returns>true if the two instances of <see cref="T:System.Windows.Thickness" /> are equal; otherwise, false.</returns>
+            <param name="thickness">An instance of <see cref="T:System.Windows.Thickness" /> to compare for equality.</param>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.Thickness.GetHashCode">
+            <summary>Returns the hash code of the structure.</summary>
+            <returns>A hash code for this instance of <see cref="T:System.Windows.Thickness" />.</returns>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.Thickness.op_Equality(Telerik.Fixed.Legacy.Thickness,Telerik.Fixed.Legacy.Thickness)">
+            <summary>Compares the value of two <see cref="T:System.Windows.Thickness" /> structures for equality.</summary>
+            <returns>true if the two instances of <see cref="T:System.Windows.Thickness" /> are equal; otherwise, false.</returns>
+            <param name="t1">The first structure to compare.</param>
+            <param name="t2">The other structure to compare.</param>
+        </member>
+        <member name="M:Telerik.Fixed.Legacy.Thickness.op_Inequality(Telerik.Fixed.Legacy.Thickness,Telerik.Fixed.Legacy.Thickness)">
+            <summary>Compares two <see cref="T:System.Windows.Thickness" /> structures for inequality. </summary>
+            <returns>true if the two instances of <see cref="T:System.Windows.Thickness" /> are not equal; otherwise, false.</returns>
+            <param name="t1">The first structure to compare.</param>
+            <param name="t2">The other structure to compare.</param>
         </member>
     </members>
 </doc>

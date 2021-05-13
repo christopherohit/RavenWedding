@@ -986,6 +986,11 @@
             Represents constants for deflate compression.
             </summary>
         </member>
+        <member name="F:Telerik.Windows.Zip.DeflateConstants.NoCompression">
+            <summary>
+            The file is stored (no compression).
+            </summary>
+        </member>
         <member name="F:Telerik.Windows.Zip.DeflateConstants.HeaderDeflated">
             <summary>
             Z-lib header: the deflate compression method.

@@ -1,0 +1,94 @@
+﻿namespace Telerik.Examples.WinControls.Spreadsheet.FirstLook
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.radSpreadsheetRibbonBar1 = new Telerik.WinControls.UI.RadSpreadsheetRibbonBar();
+            this.radSpreadsheet1 = new Telerik.WinControls.UI.RadSpreadsheet();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radSpreadsheetRibbonBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radSpreadsheet1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // settingsPanel
+            // 
+            this.settingsPanel.Location = new System.Drawing.Point(1090, 249);
+            // 
+            // radSpreadsheetRibbonBar1
+            // 
+            this.radSpreadsheetRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle.BackstageView;
+            this.radSpreadsheetRibbonBar1.AssociatedSpreadsheet = this.radSpreadsheet1;
+            // 
+            // 
+            // 
+            this.radSpreadsheetRibbonBar1.ExitButton.Text = "Exit";
+            this.radSpreadsheetRibbonBar1.Location = new System.Drawing.Point(0, 0);
+            this.radSpreadsheetRibbonBar1.Name = "radSpreadsheetRibbonBar1";
+            // 
+            // 
+            // 
+            this.radSpreadsheetRibbonBar1.OptionsButton.Text = "Options";
+            this.radSpreadsheetRibbonBar1.Size = new System.Drawing.Size(1453, 168);
+            this.radSpreadsheetRibbonBar1.TabIndex = 0;
+            this.radSpreadsheetRibbonBar1.Text = "First Look";
+            // 
+            // radSpreadsheet1
+            // 
+            this.radSpreadsheet1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radSpreadsheet1.Location = new System.Drawing.Point(0, 186);
+            this.radSpreadsheet1.Name = "radSpreadsheet1";
+            this.radSpreadsheet1.Size = new System.Drawing.Size(1453, 804);
+            this.radSpreadsheet1.TabIndex = 3;
+            this.radSpreadsheet1.Text = "radSpreadsheet1";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.radSpreadsheet1);
+            this.Controls.Add(this.radSpreadsheetRibbonBar1);
+            this.Name = "Form1";
+            this.Size = new System.Drawing.Size(1463, 1000);
+            this.Controls.SetChildIndex(this.settingsPanel, 0);
+            this.Controls.SetChildIndex(this.radSpreadsheetRibbonBar1, 0);
+            this.Controls.SetChildIndex(this.radSpreadsheet1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPanel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radSpreadsheetRibbonBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radSpreadsheet1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Telerik.WinControls.UI.RadSpreadsheetRibbonBar radSpreadsheetRibbonBar1;
+        private Telerik.WinControls.UI.RadSpreadsheet radSpreadsheet1;
+
+    }
+}

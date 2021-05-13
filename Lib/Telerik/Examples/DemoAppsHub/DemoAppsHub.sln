@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAppsHub", "DemoAppsHub.csproj", "{EBFB4D06-0BB7-4771-8EC2-68D7BE0948C4}"
+EndProject
+Global	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBFB4D06-0BB7-4771-8EC2-68D7BE0948C4}.Debug|x86.ActiveCfg = Debug|x86
+		{EBFB4D06-0BB7-4771-8EC2-68D7BE0948C4}.Debug|x86.Build.0 = Debug|x86
+		{EBFB4D06-0BB7-4771-8EC2-68D7BE0948C4}.Release|x86.ActiveCfg = Release|x86
+		{EBFB4D06-0BB7-4771-8EC2-68D7BE0948C4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

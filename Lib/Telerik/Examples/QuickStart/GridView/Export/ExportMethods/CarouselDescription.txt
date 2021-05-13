@@ -1,0 +1,1 @@
+﻿RadGridView can easily export data to Microsoft Excel, CSV, PDF and HTML formats. Export to Excel is handled either through Primary Interop Assemblies or the ExcelML format.

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SaveLoadClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DocWindows>
+    <DocWindow>
+      <Feeds />
+      <Text>Miscellaneous</Text>
+    </DocWindow>
+    <DocWindow>
+      <Feeds>
+        <Feed>
+          <Link>https://www.youtube.com/feeds/videos.xml?channel_id=UCo-utdNlq6HvjCX0SduL4bA</Link>
+        </Feed>
+        <Feed>
+          <Link>https://www.youtube.com/feeds/videos.xml?playlist_id=PLvmaC-XMqeBaRgdM2nVNSM-0SSG_xbjSN</Link>
+        </Feed>
+        <Feed>
+          <Link>http://feeds.telerik.com/blogs</Link>
+        </Feed>
+      </Feeds>
+      <Text>Telerik</Text>
+    </DocWindow>
+    <DocWindow>
+      <Feeds>
+        <Feed>
+          <Link>http://rss.cnn.com/rss/edition.rss</Link>
+        </Feed>
+        <Feed>
+          <Link>http://www.cnbc.com/id/19789731/device/rss/rss.html</Link>
+        </Feed>
+        <Feed>
+          <Link>http://rss.cnn.com/rss/edition_world.rss</Link>
+        </Feed>
+        <Feed>
+          <Link>http://www.cnbc.com/id/19811193/device/rss/rss.html</Link>
+        </Feed>
+        <Feed>
+          <Link>http://feeds.nytimes.com/nyt/rss/HomePage</Link>
+        </Feed>
+      </Feeds>
+      <Text>News</Text>
+    </DocWindow>
+  </DocWindows>
+</SaveLoadClass>

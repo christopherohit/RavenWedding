@@ -8549,6 +8549,306 @@
             Occurs after changing a property value.
             </summary>
         </member>
+        <member name="T:Telerik.WinForms.Documents.Model.DrawingFloatingBlock">
+            <summary>
+            Represents a floating block for DrawingML floating objects.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinForms.Documents.Model.DrawingInline">
+            <summary>
+            Represents an inline-level element that describes DrawingML objects.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.DrawingInline.Width">
+            <summary>
+            Gets or sets the width.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.DrawingInline.Height">
+            <summary>
+            Gets or sets the height.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.DrawingInline.RotateAngle">
+            <summary>
+            Gets or sets the angle at which the object should be rotated.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.DrawingInline.Size">
+            <summary>
+            Gets or sets the size.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinForms.Documents.Model.FloatingImageBlock">
+            <summary>
+            Defines a floating block which contains an image.
+            </summary>
+            <seealso cref="T:Telerik.WinForms.Documents.Model.FloatingBlock" />
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.FloatingImageBlock.ImageInline">
+            <summary>
+            Represents the image inside the floating block.
+            </summary>
+            <value>
+            The image.
+            </value>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.#ctor(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class.
+            </summary>
+            <param name="inputStream">The stream from which to obtain the image source for the image inside the block.</param>
+            <param name="size">The size of the element.</param>
+            <param name="extension">The extension of the image.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.Init(System.IO.Stream,System.String)">
+            <summary>
+            Initializes the element.
+            </summary>
+            <param name="inputStream">The stream from which to obtain the image source.</param>
+            <param name="extension">The extension of the image.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.Init(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
+            <summary>
+            Initializes the element.
+            </summary>
+            <param name="inputStream">The stream from which to obtain the image source.</param>
+            <param name="size">The size of the element.</param>
+            <param name="extension">The extension of the image.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.#ctor(Telerik.WinForms.Documents.Model.FloatingImageBlock)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class using a copy of another <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/>.
+            </summary>
+            <param name="other">The other.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.CreateNewElementInstance">
+            <summary>
+            Creates a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class.
+            </summary>
+            <returns>The new instance.</returns>
+        </member>
+        <member name="T:Telerik.WinForms.Documents.Model.FloatingShapeBlock">
+            <summary>
+            Defines a floating block which contains a shape.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingShapeBlock.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingShapeBlock"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.FloatingShapeBlock.ShapeInline">
+            <summary>
+            Gets or sets the shape inside the floating block.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingShapeBlock.#ctor(Telerik.WinForms.Documents.Model.FloatingShapeBlock)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingShapeBlock"/> class using a copy of another <see cref="T:Telerik.WinForms.Documents.Model.FloatingShapeBlock"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.FloatingShapeBlock.CreateNewElementInstance">
+            <summary>
+            Creates a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingShapeBlock"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinForms.Documents.Model.ImageInline">
+            <summary>
+            An inline-level document element which contains image.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.UriSource">
+            <summary>
+            Gets or sets the URI which is used to obtain the image source.
+            </summary>
+            <value>
+            The URI source.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.ImageSource">
+            <summary>
+            Gets the image source last used to visualize the image.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Width">
+            <summary>
+            Gets or sets the width.
+            </summary>
+            <value>
+            The width.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Height">
+            <summary>
+            Gets or sets the height.
+            </summary>
+            <value>
+            The height.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.RotateAngle">
+            <summary>
+            Gets or sets the angle at which the image should be rotated.
+            </summary>
+            <value>
+            The rotate angle.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Size">
+            <summary>
+            Gets or sets the size.
+            </summary>
+            <value>
+            The size.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Extension">
+            <summary>
+            Gets or sets the file extension.
+            </summary>
+            <value>
+            The extension.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.RawData">
+            <summary>
+            Gets or sets the image bytes in Base64 format. This property is used for serialization.
+            </summary>
+            <value>
+            The raw data.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Alt">
+            <summary>
+            Gets or sets the alternative text for the image.
+            </summary>
+            <value>
+            The alt.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+            <value>
+            The title.
+            </value>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(System.Uri)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
+            </summary>
+            <param name="uriSource">The URI from which to obtain the image source.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
+            </summary>
+            <param name="inputStream">The stream from which to obtain the image source.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
+            </summary>
+            <param name="inputStream">The stream from which to obtain the image source.</param>
+            <param name="size">The size of the element.</param>
+            <param name="extension">The extension of the image.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(Telerik.WinControls.RichTextEditor.UI.WriteableBitmap)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
+            </summary>
+            <param name="writableBitmap">The writable bitmap which will be used to create the image.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(Telerik.WinForms.Documents.Model.ImageInline)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
+            </summary>
+            <param name="originalImage">The <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" /> which will be cloned.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.Init(System.IO.Stream,System.String)">
+            <summary>
+            Initializes the element.
+            </summary>
+            <param name="inputStream">The stream from which to obtain the image source.</param>
+            <param name="extension">The extension of the image.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.Init(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
+            <summary>
+            Initializes the element.
+            </summary>
+            <param name="inputStream">The stream from which to obtain the image source.</param>
+            <param name="size">The size of the element.</param>
+            <param name="extension">The extension of the image.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.GetBytes">
+            <summary>
+            Gets the byte array used to create the image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CreateNewElementInstance">
+            <summary>
+            Creates a new instance of this element.
+            </summary>
+            <returns>
+            The new instance.
+            </returns>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CopyPropertiesFromOverride(Telerik.WinForms.Documents.Model.DocumentElement)">
+            <summary>
+            Copies the properties from another document element to the current instance.
+            </summary>
+            <param name="fromElement">The <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" /> to copy the properties from.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CopyContentFromOverride(Telerik.WinForms.Documents.Model.DocumentElement)">
+            <summary>
+            Copies the source from another <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" />.
+            </summary>
+            <param name="fromElement">The <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" /> to copy the source from.</param>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CreateLayoutBox(Telerik.WinForms.Documents.DocumentStructure.DocumentStructureCollection)">
+            <summary>
+            Creates a <see cref="T:Telerik.WinForms.Documents.Layout.LayoutBox" /> for the element.
+            </summary>
+            <param name="documentCollection">The document collection.</param>
+            <returns>An <see cref="T:Telerik.WinForms.Documents.Layout.ImageLayoutBox"/> object representing the layout box for the current instance.</returns>
+        </member>
+        <member name="T:Telerik.WinForms.Documents.Model.ShapeInline">
+            <summary>
+            Represents an inline-level document element, which contains a DrawingML shape.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ShapeInline.Width">
+            <summary>
+            Gets or sets the width.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ShapeInline.Height">
+            <summary>
+            Gets or sets the height.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ShapeInline.RotateAngle">
+            <summary>
+            Gets or sets the angle at which the object should be rotated.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Model.ShapeInline.Size">
+            <summary>
+            Gets or sets the size.
+            </summary>
+        </member>
         <member name="T:Telerik.WinForms.Documents.Model.FieldRangeEndBase">
             <summary>
             Represents the end marker for a field range in a <see cref="T:Telerik.WinForms.Documents.Model.RadDocument"/>.
@@ -10073,60 +10373,6 @@
             </summary>
             <param name="relativeFrom">The vertical object or edge the position should be relative from.</param>
             <param name="alignment">The alignment.</param>
-        </member>
-        <member name="T:Telerik.WinForms.Documents.Model.FloatingImageBlock">
-            <summary>
-            Defines a floating block which contains an image.
-            </summary>
-            <seealso cref="T:Telerik.WinForms.Documents.Model.FloatingBlock" />
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.FloatingImageBlock.ImageInline">
-            <summary>
-            Represents the image inside the floating block.
-            </summary>
-            <value>
-            The image.
-            </value>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.#ctor(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class.
-            </summary>
-            <param name="inputStream">The stream from which to obtain the image source for the image inside the block.</param>
-            <param name="size">The size of the element.</param>
-            <param name="extension">The extension of the image.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.Init(System.IO.Stream,System.String)">
-            <summary>
-            Initializes the element.
-            </summary>
-            <param name="inputStream">The stream from which to obtain the image source.</param>
-            <param name="extension">The extension of the image.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.Init(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
-            <summary>
-            Initializes the element.
-            </summary>
-            <param name="inputStream">The stream from which to obtain the image source.</param>
-            <param name="size">The size of the element.</param>
-            <param name="extension">The extension of the image.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.#ctor(Telerik.WinForms.Documents.Model.FloatingImageBlock)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class using a copy of another <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/>.
-            </summary>
-            <param name="other">The other.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.FloatingImageBlock.CreateNewElementInstance">
-            <summary>
-            Creates a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.FloatingImageBlock"/> class.
-            </summary>
-            <returns>The new instance.</returns>
         </member>
         <member name="T:Telerik.WinForms.Documents.Model.FloatingUIContainer">
             <summary>
@@ -11809,172 +12055,6 @@
             Deletes a code block.
             </summary>
             <param name="rangeStart">The <see cref="T:Telerik.WinForms.Documents.Model.CodeAnnotationRangeStart"/> of the block to delete.</param>
-        </member>
-        <member name="T:Telerik.WinForms.Documents.Model.ImageInline">
-            <summary>
-            An inline-level document element which contains image.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.UriSource">
-            <summary>
-            Gets or sets the URI which is used to obtain the image source.
-            </summary>
-            <value>
-            The URI source.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.ImageSource">
-            <summary>
-            Gets the image source last used to visualize the image.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Width">
-            <summary>
-            Gets or sets the width.
-            </summary>
-            <value>
-            The width.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Height">
-            <summary>
-            Gets or sets the height.
-            </summary>
-            <value>
-            The height.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.RotateAngle">
-            <summary>
-            Gets or sets the angle at which the image should be rotated.
-            </summary>
-            <value>
-            The rotate angle.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Size">
-            <summary>
-            Gets or sets the size.
-            </summary>
-            <value>
-            The size.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Extension">
-            <summary>
-            Gets or sets the file extension.
-            </summary>
-            <value>
-            The extension.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.RawData">
-            <summary>
-            Gets or sets the image bytes in Base64 format. This property is used for serialization.
-            </summary>
-            <value>
-            The raw data.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Alt">
-            <summary>
-            Gets or sets the alternative text for the image.
-            </summary>
-            <value>
-            The alt.
-            </value>
-        </member>
-        <member name="P:Telerik.WinForms.Documents.Model.ImageInline.Title">
-            <summary>
-            Gets or sets the title.
-            </summary>
-            <value>
-            The title.
-            </value>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(System.Uri)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
-            </summary>
-            <param name="uriSource">The URI from which to obtain the image source.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(System.IO.Stream)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
-            </summary>
-            <param name="inputStream">The stream from which to obtain the image source.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
-            </summary>
-            <param name="inputStream">The stream from which to obtain the image source.</param>
-            <param name="size">The size of the element.</param>
-            <param name="extension">The extension of the image.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(Telerik.WinControls.RichTextEditor.UI.WriteableBitmap)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
-            </summary>
-            <param name="writableBitmap">The writable bitmap which will be used to create the image.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.#ctor(Telerik.WinForms.Documents.Model.ImageInline)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinForms.Documents.Model.ImageInline"/> class.
-            </summary>
-            <param name="originalImage">The <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" /> which will be cloned.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.Init(System.IO.Stream,System.String)">
-            <summary>
-            Initializes the element.
-            </summary>
-            <param name="inputStream">The stream from which to obtain the image source.</param>
-            <param name="extension">The extension of the image.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.Init(System.IO.Stream,Telerik.WinControls.RichTextEditor.UI.Size,System.String)">
-            <summary>
-            Initializes the element.
-            </summary>
-            <param name="inputStream">The stream from which to obtain the image source.</param>
-            <param name="size">The size of the element.</param>
-            <param name="extension">The extension of the image.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.GetBytes">
-            <summary>
-            Gets the byte array used to create the image.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CreateNewElementInstance">
-            <summary>
-            Creates a new instance of this element.
-            </summary>
-            <returns>
-            The new instance.
-            </returns>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CopyPropertiesFromOverride(Telerik.WinForms.Documents.Model.DocumentElement)">
-            <summary>
-            Copies the properties from another document element to the current instance.
-            </summary>
-            <param name="fromElement">The <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" /> to copy the properties from.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CopyContentFromOverride(Telerik.WinForms.Documents.Model.DocumentElement)">
-            <summary>
-            Copies the source from another <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" />.
-            </summary>
-            <param name="fromElement">The <see cref="T:Telerik.WinForms.Documents.Model.ImageInline" /> to copy the source from.</param>
-        </member>
-        <member name="M:Telerik.WinForms.Documents.Model.ImageInline.CreateLayoutBox(Telerik.WinForms.Documents.DocumentStructure.DocumentStructureCollection)">
-            <summary>
-            Creates a <see cref="T:Telerik.WinForms.Documents.Layout.LayoutBox" /> for the element.
-            </summary>
-            <param name="documentCollection">The document collection.</param>
-            <returns>An <see cref="T:Telerik.WinForms.Documents.Layout.ImageLayoutBox"/> object representing the layout box for the current instance.</returns>
         </member>
         <member name="T:Telerik.WinForms.Documents.Model.Inline">
             <summary>
@@ -23754,6 +23834,26 @@
             Represents a format provider that can import and export DOCX documents from/to <see cref="T:Telerik.WinForms.Documents.Model.RadDocument"/>.
             </summary>
         </member>
+        <member name="P:Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx.Import.DrawingML.DrawingInlineInfo.Width">
+            <summary>
+            Gets or sets the width.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx.Import.DrawingML.DrawingInlineInfo.Height">
+            <summary>
+            Gets or sets the height.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx.Import.DrawingML.DrawingInlineInfo.RotateAngle">
+            <summary>
+            Gets or sets the angle at which the object should be rotated.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx.Import.DrawingML.DrawingInlineInfo.Size">
+            <summary>
+            Gets or sets the size.
+            </summary>
+        </member>
         <member name="P:Telerik.WinForms.Documents.FormatProviders.OpenXml.DocxDataProvider.Docx">
             <summary>
             Gets or sets the current document as HTML
@@ -30985,6 +31085,116 @@
             <param name="matrix">Transform matrix</param>
             <returns>the bounding rectangle around <paramref name="rect"/>
             that is transformed with <paramref name="matrix"/>.</returns>
+        </member>
+        <member name="T:Telerik.WinForms.Documents.Lists.DefaultListStyles">
+            <summary>
+            Class responsible for generating and keeping the default list styles.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.None">
+            <summary>
+            No list is being applied.
+            </summary>
+            <value>
+            The definition for no list style.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.Bulleted">
+            <summary>
+            Gets the default bulleted list style.
+            </summary>
+            <value>
+            The definition for bulleted list style.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.Numbered">
+            <summary>
+            Gets the default numbered list style.
+            </summary>
+            <value>
+            The definition for numbered list style.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.NumberedParenthesis">
+            <summary>
+            Gets the default numbered list style with parenthesis after the number.
+            </summary>
+            <value>
+            The definition for numbered list style with parenthesis after the number.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.NumberedHierarchical">
+            <summary>
+            Gets the default hierarchical numbered list style.
+            </summary>
+            <value>
+            The definition for hierarchical numbered list style.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.UpperRoman">
+            <summary>
+            Gets the list style that uses upper roman numbering.
+            </summary>
+            <value>
+            The definition for the list style that uses upper roman numbering.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.LowerRoman">
+            <summary>
+            Gets the list style that uses lower roman numbering.
+            </summary>
+            <value>
+            The definition for the list style that uses lower roman numbering.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.UpperLetter">
+            <summary>
+            Gets the list style that uses upper letters.
+            </summary>
+            <value>
+            The definition for the list style that uses upper letters.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.LowerLetter">
+            <summary>
+            Gets the list style that uses lower letters.
+            </summary>
+            <value>
+            The definition for the list style that uses lower letters.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.LowerLetterParentheses">
+            <summary>
+            Gets the list style that uses lower letters with parenthesis after the letter.
+            </summary>
+            <value>
+            The definition for the list style that uses lower letters with parenthesis after the letter.
+            </value>
+        </member>
+        <member name="P:Telerik.WinForms.Documents.Lists.DefaultListStyles.RegisteredStyles">
+            <summary>
+            Gets the styles that have been registered.
+            </summary>
+            <value>
+            The registered styles.
+            </value>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Lists.DefaultListStyles.#cctor">
+            <summary>
+            Initializes the <see cref="T:Telerik.WinForms.Documents.Lists.DefaultListStyles"/> class. Generates all default list styles.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Lists.DefaultListStyles.CreateDefaultNumberedListStyle">
+            <summary>
+            Creates the default numbered list style.
+            </summary>
+            <returns>A <see cref="T:Telerik.WinForms.Documents.Model.ListStyle"/> definition representing the numbered list style.</returns>
+        </member>
+        <member name="M:Telerik.WinForms.Documents.Lists.DefaultListStyles.CreateDefaultBulletedListStyle">
+            <summary>
+            Creates the default bulleted list style.
+            </summary>
+            <returns>A <see cref="T:Telerik.WinForms.Documents.Model.ListStyle"/> definition representing the bulleted list style.</returns>
         </member>
         <member name="M:Telerik.WinForms.Documents.Lists.ListItemStringFormatter.GetListItemString(Telerik.WinForms.Documents.Model.Paragraph,System.Boolean)">
             <summary>

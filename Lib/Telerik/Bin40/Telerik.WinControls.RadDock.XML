@@ -4,6 +4,31 @@
         <name>Telerik.WinControls.RadDock</name>
     </assembly>
     <members>
+        <member name="T:Telerik.WinControls.UI.Docking.PredefinedCommandNames">
+            <summary>
+            Contains the names of all predefined commands available in a RadDock instance.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.DisplayQuickNavigator">
+            <summary>
+            The name for the command that displays the QuickNavigator in a RadDock instance.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.CloseActiveDocument">
+            <summary>
+            The command that closes the active document in a RadDock instance.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.NextDocument">
+            <summary>
+            The command that activates the next document in a RadDock instance.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.PreviousDocument">
+            <summary>
+            The command that activates the previous document in a RadDock instance.
+            </summary>
+        </member>
         <member name="T:Telerik.WinControls.UI.Docking.RadDockCommand">
             <summary>
             Represents base command that is associated with a RadDock instance.
@@ -51,31 +76,6 @@
         <member name="P:Telerik.WinControls.UI.Docking.RadDockCommand.Shortcuts">
             <summary>
             Gets a list with all the <see cref="T:Telerik.WinControls.RadShortcut">Shortcuts</see> registered for this command.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.PredefinedCommandNames">
-            <summary>
-            Contains the names of all predefined commands available in a RadDock instance.
-            </summary>
-        </member>
-        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.DisplayQuickNavigator">
-            <summary>
-            The name for the command that displays the QuickNavigator in a RadDock instance.
-            </summary>
-        </member>
-        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.CloseActiveDocument">
-            <summary>
-            The command that closes the active document in a RadDock instance.
-            </summary>
-        </member>
-        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.NextDocument">
-            <summary>
-            The command that activates the next document in a RadDock instance.
-            </summary>
-        </member>
-        <member name="F:Telerik.WinControls.UI.Docking.PredefinedCommandNames.PreviousDocument">
-            <summary>
-            The command that activates the previous document in a RadDock instance.
             </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.RadDockCommandManager">
@@ -166,22 +166,6 @@
             
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Docking.DockWindowEventArgs">
-            <summary>
-            Represents the arguments associated with all <see cref="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">DockWindow</see> events.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindowEventArgs.#ctor(Telerik.WinControls.UI.Docking.DockWindow)">
-            <summary>
-            Constructs a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.DockWindowEventArgs">DockWindowEventArgs</see> class.
-            </summary>
-            <param name="dockWindow">The <see cref="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">DockWindow</see> instance associated with the event.</param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">
-            <summary>
-            Gets the <see cref="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">DockWindow</see> instance associated with the event.
-            </summary>
-        </member>
         <member name="P:Telerik.WinControls.UI.Docking.ContextMenuItemClickEventArgs.Item">
             <summary>
             Gets the <see cref="T:Telerik.WinControls.UI.RadMenuItemBase">RadMenuItemBase</see> instance, that is clicked.
@@ -197,46 +181,39 @@
             Provides methods for displaying a context menu for a document or tool window.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Docking.RadDockService">
+        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.AllowToolContextMenu">
             <summary>
-            Defines base for all services registered with a RadDock instance.
+            Determines whether context menus, associated with a tool window may be displayed.
             </summary>
         </member>
-        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.#ctor">
+        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.AllowDocumentContextMenu">
             <summary>
-            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.RadDockService">RadDockService</see> instance.
+            Determines whether context menus, associated with a document window may be displayed.
             </summary>
         </member>
-        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.OnDockManagerChanged">
+        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.AllowActiveWindowListContextMenu">
             <summary>
-            The service gets notified that its current dock manager has changed.
+            Determines whether a context menu, listing all opened documents within a document strip, may be displayed.
             </summary>
         </member>
-        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.OnEnabledChanged">
+        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.IsMenuDisplayed">
             <summary>
-            Notifies for a change in the Enabled state.
+            Determines whether a context menu is currently displayed.
             </summary>
         </member>
-        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.CanOperate">
+        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.DisplayedMenu">
             <summary>
-            Determines whether the service is operational and may perform actions.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockService.DockManagerDesignMode">
-            <summary>
-            Determines whether the associated RadDock instance (if any) is in design mode.
+            Gets the currently displayed menu.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockService.DockManager">
+        <member name="E:Telerik.WinControls.UI.Docking.ContextMenuService.ContextMenuDisplaying">
             <summary>
-            Gets the RadDock instance this service is registered with.
+            Notifies that a context menu is about to be displayed.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockService.Enabled">
+        <member name="E:Telerik.WinControls.UI.Docking.ContextMenuService.ContextMenuItemClicked">
             <summary>
-            Determines whether the Service is enabled (may be started).
-            If the Service is working and its is disabled, it will end its current operation.
+            Notifies that a context menu item has been clicked.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.ContextMenuService.DisplayContextMenu(Telerik.WinControls.UI.Docking.DockWindow,System.Drawing.Point)">
@@ -346,41 +323,6 @@
             </summary>
             <param name="window"></param>
             <param name="items"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.AllowToolContextMenu">
-            <summary>
-            Determines whether context menus, associated with a tool window may be displayed.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.AllowDocumentContextMenu">
-            <summary>
-            Determines whether context menus, associated with a document window may be displayed.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.AllowActiveWindowListContextMenu">
-            <summary>
-            Determines whether a context menu, listing all opened documents within a document strip, may be displayed.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.IsMenuDisplayed">
-            <summary>
-            Determines whether a context menu is currently displayed.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ContextMenuService.DisplayedMenu">
-            <summary>
-            Gets the currently displayed menu.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.ContextMenuService.ContextMenuDisplaying">
-            <summary>
-            Notifies that a context menu is about to be displayed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.ContextMenuService.ContextMenuItemClicked">
-            <summary>
-            Notifies that a context menu item has been clicked.
-            </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.ContextMenuDisplayingEventArgs">
             <summary>
@@ -520,299 +462,6 @@
             A predefined <see cref="T:Telerik.WinControls.UI.Docking.ToolTabStrip">ToolTabStrip</see> instance that resides within an <see cref="T:Telerik.WinControls.UI.Docking.AutoHidePopup">AutoHidePopup</see> and is used to display auto-hidden dock windows.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Docking.ToolTabStrip">
-            <summary>
-            A predefined <see cref="T:Telerik.WinControls.UI.Docking.DockTabStrip">DockTabStrip</see> instance that is used to store ToolWindow instances.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.DockTabStrip">
-            <summary>
-            Base class for a <see cref="T:Telerik.WinControls.UI.TabStripPanel">TabStripPanel</see> instance that resides on a <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> scene.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.#ctor(Telerik.WinControls.UI.Docking.RadDock)">
-            <summary>
-            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.DockTabStrip">DockTabStrip</see> instance and associates it with the specified RadDock instance.
-            </summary>
-            <param name="dockManager"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnMouseCaptureChanged(System.EventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnDragInitialized(System.Drawing.Point)">
-            <summary>
-            Overrides the method to provide support for instanciating a DragDropService operation.
-            </summary>
-            <param name="mouse"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnDockManagerChanged">
-            <summary>
-            Allows inheritors to provide additional functionality upon owning RadDock instance change.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnTabCloseButtonClicked(Telerik.WinControls.UI.TabStripItem)">
-            <summary>
-            Closes the corresponding <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
-            </summary>
-            <param name="item"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.CheckCollapseOrDispose">
-            <summary>
-            Provides routine which allows the strip to decide whether it should be collapsed or disposed.
-            Internally used by the docking framework to defragment the dock tree.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateButtons">
-            <summary>
-            Updates the additional buttons, associated with the strip.
-            E.g. a ToolTabStrip will have caption buttons, while a DocumentTabStrip will have strip buttons.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateAfterTransaction">
-            <summary>
-            Allows an affected strip to perform additional update after a transaction completion.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateActiveWindow(Telerik.WinControls.UI.Docking.DockWindow,System.Boolean)">
-            <summary>
-            Allows a DockTabStrip to perform some additional operations upon activation of an owned DockWindow.
-            For example a ToolTabStrip will update its Caption with Active or Inactive state correspondingly.
-            </summary>
-            <param name="window"></param>
-            <param name="active">True if the window is currently active, false otherwise.</param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateTabSelection(System.Boolean)">
-            <summary>
-            this method is used internally.
-            </summary>
-            <param name="updateFocus"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.CopyTo(Telerik.WinControls.UI.Docking.DockTabStrip)">
-            <summary>
-            Copies the settings of the current strip to the target one. Currently the SizeInfo member is copied.
-            </summary>
-            <param name="clone"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.GetCollapsed">
-            <summary>
-            Determines whether the strip should be collapsed. E.g. it may not have child panels but should not be disposed as it may be a redock target.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.IsDragAllowed(System.Drawing.Point)">
-            <summary>
-            Determines whether a drag operation is currently allowed.
-            </summary>
-            <param name="location">The location to examine, in client coordinates.</param>
-            <returns></returns>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.IsRedockTarget">
-            <summary>
-            Determines whether this tabstrip is referenced for the RedockService as a target of Redock operation.
-            This flag is used to determine whether a RadSplitContainer may be freely cleaned-up or should be reserved.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.BackColor">
-            <summary>
-            Gets or sets the BackColor of the strip.
-            Transparent BackColor is a special case, further controlled by the <see cref="P:Telerik.WinControls.UI.Docking.DockTabStrip.AllowTransparentBackColor">AllowTransparentBackColor</see> property.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.AllowTransparentBackColor">
-            <summary>
-            Determines whether the control accepts Color.Transparent as its BackColor.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.DockType">
-            <summary>
-            Gets the <see cref="P:Telerik.WinControls.UI.Docking.DockTabStrip.DockType">DockType</see> member of this instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.Collapsed">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.TabPanels">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.DockManager">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.ActiveWindow">
-            <summary>
-            Gets or sets the currently active <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
-            </summary>
-        </member>
-        <member name="F:Telerik.WinControls.UI.Docking.ToolTabStrip.window">
-            <summary>
-            The root element which describes the layout of this instance.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.#ctor">
-            <summary>
-            Initializes a default instance of the <see cref="T:Telerik.WinControls.UI.Docking.ToolTabStrip">ToolTabStrip</see> class.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.#ctor(Telerik.WinControls.UI.Docking.RadDock)">
-            <summary>
-            Initializes a default instance of the <see cref="T:Telerik.WinControls.UI.Docking.ToolTabStrip">ToolTabStrip</see> class and associates it with the provided RadDock instance.
-            </summary>
-            <param name="dockManager"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.CreateChildItems(Telerik.WinControls.RadElement)">
-            <summary>
-            
-            </summary>
-            <param name="parent"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.Dispose(System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="disposing"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.ControlDefinesThemeForElement(Telerik.WinControls.RadElement)">
-            <summary>
-            Checks whether the <paramref name="element"/>'s theme is defined by the control.
-            </summary>
-            <remarks>
-            If true is returned the ThemeResolutionService would not not set any theme to the element 
-            to avoid duplicating the style settings of the element.
-            </remarks>
-            <param name="element">The element to should be checked.</param>
-            <returns>true if the control defines theme for this element, false otherwise.</returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.OnLayout(System.Windows.Forms.LayoutEventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.UpdateButtons">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.UpdateActiveWindow(Telerik.WinControls.UI.Docking.DockWindow,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="window"></param>
-            <param name="active"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.ShouldHandleDoubleClick">
-            <summary>
-            Determines whether a mouse double-click event should be handled.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.IsDragAllowed(System.Drawing.Point)">
-            <summary>
-            
-            </summary>
-            <param name="location"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.GetTabStripVisible">
-            <summary>
-            Determines whether the tabstrip element is visible.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.GetAutoHideButtonChecked">
-            <summary>
-            Determines whether the auto-hide button is checked.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.UpdateCaptionText">
-            <summary>
-            Updates the caption text, depending on the currently selected dock window.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.ThemeClassName">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.TabPanelBounds">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CaptionElement">
-            <summary>
-            Gets the ToolWindowCaptionElement that appears as titlebar of ToolTabStrip
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CaptionLayoutPanel">
-            <summary>
-            Gets an instance of the <see cref="T:Telerik.WinControls.Layouts.DockLayoutPanel"/>class
-            that represents the layout panel that holds the caption.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CloseButton">
-            <summary>
-            Gets the close RadButtonElement that appears as titlebar of ToolTabStrip
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.ActionMenuButton">
-            <summary>
-            Gets the system menu RadDropDownButtonElement that appears as titlebar of ToolTabStrip
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.AutoHideButton">
-            <summary>
-            Gets the auto-hide RadButtonElement that appears as titlebar of ToolTabStrip
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.AutoHidePosition">
-            <summary>
-            Gets or sets the auto-hide position for the strip.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.DockType">
-            <summary>
-            Returns <see cref="F:Telerik.WinControls.UI.Docking.DockType.ToolWindow">ToolWindow</see> dock type.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CaptionVisible">
-            <summary>
-            Determines whether the Caption element of the strip is visible.
-            </summary>
-        </member>
         <member name="M:Telerik.WinControls.UI.Docking.AutoHideTabStrip.#ctor">
             <summary>
             Default constructor.
@@ -823,6 +472,21 @@
             Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.AutoHideTabStrip">AutoHideTabStrip</see> instance and associates it with the provided RadDock instance.
             </summary>
             <param name="dockManager"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.ThemeClassName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.SplitterWidth">
+            <summary>
+            Gets or sets the width of the splitter.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.FixedSplitter">
+            <summary>
+            Determines whether the splitter is fixed (may be used to resize the owning popup).
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.AutoHideTabStrip.CreateChildItems(Telerik.WinControls.RadElement)">
             <summary>
@@ -835,6 +499,16 @@
             Do not handle the mouse double-click event.
             </summary>
             <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.TabPanelBounds">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.AutoHideDock">
+            <summary>
+            Gets the DockStyle which determines the edge at which the owning auto-hide popup is displayed.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.AutoHideTabStrip.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
             <summary>
@@ -878,31 +552,6 @@
             </summary>
             <param name="e"></param>
         </member>
-        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.ThemeClassName">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.SplitterWidth">
-            <summary>
-            Gets or sets the width of the splitter.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.FixedSplitter">
-            <summary>
-            Determines whether the splitter is fixed (may be used to resize the owning popup).
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.TabPanelBounds">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.AutoHideTabStrip.AutoHideDock">
-            <summary>
-            Gets the DockStyle which determines the edge at which the owning auto-hide popup is displayed.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.Docking.AutoHideGroupCollection">
             <summary>
             A collection that containes instances of type <see cref="T:Telerik.WinControls.UI.Docking.AutoHideGroup">AutoHideGroup</see>.
@@ -920,6 +569,18 @@
             </summary>
             <param name="array"></param>
             <param name="index"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.AutoHideGroupCollection.Count">
+            <summary>
+            Gets the number of AutoHideGroup instances currently contained.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.AutoHideGroupCollection.Item(System.Int32)">
+            <summary>
+            Gets the AutoHideGroup instance at the specified index in the collection
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.AutoHideGroupCollection.Clear">
             <summary>
@@ -944,18 +605,6 @@
             Removes the specified instance from the collection.
             </summary>
             <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.AutoHideGroupCollection.Count">
-            <summary>
-            Gets the number of AutoHideGroup instances currently contained.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.AutoHideGroupCollection.Item(System.Int32)">
-            <summary>
-            Gets the AutoHideGroup instance at the specified index in the collection
-            </summary>
-            <param name="index"></param>
             <returns></returns>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.AutoHideTabStripElement">
@@ -1388,61 +1037,9 @@
             Encapsulates the data associated with the <see cref="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowDisplaying">AutoHideWindowDisplaying</see> event.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs">
-            <summary>
-            Represents the arguments associated with all cancelable events, associated with a <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.#ctor(Telerik.WinControls.UI.Docking.DockWindow)">
-            <summary>
-            Constructs a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs">DockWindowCancelEventArgs</see> class.
-            </summary>
-            <param name="dockWindow"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.#ctor(Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockWindow)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs"/> class.
-            </summary>
-            <param name="oldWindow">The old dock window.</param>
-            <param name="newWindow">The new dock window.</param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.OldWindow">
-            <summary>
-            Gets the old window.
-            </summary>
-            <value>The old window.</value>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.NewWindow">
-            <summary>
-            Gets the new window.
-            </summary>
-            <value>The new window.</value>
-        </member>
         <member name="P:Telerik.WinControls.UI.Docking.AutoHideWindowDisplayingEventArgs.DisplayReason">
             <summary>
             Gets the reason for the display request.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.RadDockEvents">
-            <summary>
-            Provides static events for RadDock instances for cases where subscribing to the event
-            cannot happen before they actually need to fire.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadDockEvents.PageViewInstanceCreated">
-            <summary>
-            Fires after RadPageViewElement is created.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadDockEvents.TabStripItemCreating">
-            <summary>
-            Fired when a new <see cref="T:Telerik.WinControls.UI.TabStripItem"/> is being created. Allows for replacing the tab items with custom ones.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.RadDockEvents.SplitContainerNeeded">
-            <summary>
-            Raised whenever a new <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> instance is needed internally by the framework.
-            Allows for providing custom <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> implementation.
             </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockStateChangingEventHandler">
@@ -1532,12 +1129,58 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="T:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs">
+            <summary>
+            Represents the arguments associated with all cancelable events, associated with a <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.#ctor(Telerik.WinControls.UI.Docking.DockWindow)">
+            <summary>
+            Constructs a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs">DockWindowCancelEventArgs</see> class.
+            </summary>
+            <param name="dockWindow"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.#ctor(Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockWindow)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs"/> class.
+            </summary>
+            <param name="oldWindow">The old dock window.</param>
+            <param name="newWindow">The new dock window.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.OldWindow">
+            <summary>
+            Gets the old window.
+            </summary>
+            <value>The old window.</value>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs.NewWindow">
+            <summary>
+            Gets the new window.
+            </summary>
+            <value>The new window.</value>
+        </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockWindowEventHandler">
             <summary>
             A method template that is used to handle all <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> events.
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.DockWindowEventArgs">
+            <summary>
+            Represents the arguments associated with all <see cref="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">DockWindow</see> events.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindowEventArgs.#ctor(Telerik.WinControls.UI.Docking.DockWindow)">
+            <summary>
+            Constructs a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.DockWindowEventArgs">DockWindowEventArgs</see> class.
+            </summary>
+            <param name="dockWindow">The <see cref="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">DockWindow</see> instance associated with the event.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">
+            <summary>
+            Gets the <see cref="P:Telerik.WinControls.UI.Docking.DockWindowEventArgs.DockWindow">DockWindow</see> instance associated with the event.
+            </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockWindowSnapshotEventHandler">
             <summary>
@@ -1591,22 +1234,6 @@
             Represents the arguments associated with a <see cref="E:Telerik.WinControls.UI.Docking.RadDock.TransactionCommitting">TransactionCommitting</see> event.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs">
-            <summary>
-            Represents the arguments associated with all <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransaction">Transaction</see> related events.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs.#ctor(Telerik.WinControls.UI.Docking.RadDockTransaction)">
-            <summary>
-            Constructs a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs">RadDockTransactionEventArgs</see> class.
-            </summary>
-            <param name="transaction"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs.Transaction">
-            <summary>
-            Gets the associated <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransaction">Transaction</see> instance associated with the event.
-            </summary>
-        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDockTransactionCancelEventArgs.#ctor(Telerik.WinControls.UI.Docking.RadDockTransaction)">
             <summary>
             
@@ -1624,6 +1251,22 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs">
+            <summary>
+            Represents the arguments associated with all <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransaction">Transaction</see> related events.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs.#ctor(Telerik.WinControls.UI.Docking.RadDockTransaction)">
+            <summary>
+            Constructs a new instance of the <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs">RadDockTransactionEventArgs</see> class.
+            </summary>
+            <param name="transaction"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs.Transaction">
+            <summary>
+            Gets the associated <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransaction">Transaction</see> instance associated with the event.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.SelectedTabChangedEventArgs.#ctor(Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockWindow)">
             <summary>
@@ -1738,26 +1381,6 @@
             Gets or sets the <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> instance to be used.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.TabStripItemCreatingEventArgs">
-            <summary>
-            Provides event arguments for the <see cref="E:Telerik.WinControls.UI.RadDockEvents.TabStripItemCreating"/> event.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.TabStripItemCreatingEventArgs.TabItem">
-            <summary>
-            Gets or sets the instance that is going to be used.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.TabStripItemCreatingEventArgs.Window">
-            <summary>
-            The window associated with the tab item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.TabStripItemCreatingEventArgs.AutoHide">
-            <summary>
-            [true] if the tab item is going to be used in the auto-hide tab strip, [false] otherwise.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.Docking.FloatingWindowCollection">
             <summary>
             An ICollection implementation to store all <see cref="T:Telerik.WinControls.UI.Docking.FloatingWindow">floating windows</see> associated with a RadDock instance.
@@ -1869,37 +1492,6 @@
             Manages the standard MDI functionality available in .NET.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.OverflowDropDownButtonElement">
-            <summary>
-            Represents a drop-down button element with support for an additional overflow image.
-            </summary>
-        </member>
-        <member name="F:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowImageProperty">
-            <summary>
-            A property to specify an additional image to be displayed when <see cref="P:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowMode">OverflowMode</see> is true.
-            </summary>
-        </member>
-        <member name="F:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowModeProperty">
-            <summary>
-            A property to determine whether a <see cref="T:Telerik.WinControls.UI.OverflowDropDownButtonElement">OverflowDropDownButtonElement</see> instance is currently in overflow mode.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.OverflowDropDownButtonElement.OnPropertyChanged(Telerik.WinControls.RadPropertyChangedEventArgs)">
-            <summary>
-            Provides additional logic for synchronizing the overflow image.
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowImage">
-            <summary>
-             Gets or sets the overflow image that is displayed on a button element.
-             </summary>		
-        </member>
-        <member name="P:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowMode">
-            <summary>
-            Gets or sets the drop down button is in overflow mode
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.Docking.SerializableFloatingWindow">
             <summary>
             Represents a serializable version of a <see cref="T:Telerik.WinControls.UI.Docking.FloatingWindow">FloatingWindow</see> instance.
@@ -1944,49 +1536,6 @@
         <member name="T:Telerik.WinControls.UI.Docking.AutoHideTransaction">
             <summary>
             Implements a transaction that is associated with a successful AutoHideWindow request.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.RadDockTransaction">
-            <summary>
-            A logical representation of a RadDock operation.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.RadDockTransaction.#ctor(Telerik.WinControls.UI.Docking.DockState,System.Collections.Generic.IEnumerable{Telerik.WinControls.UI.Docking.DockWindow})">
-            <summary>
-            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransaction">RadDockTransaction</see> instance.
-            </summary>
-            <param name="state">The target state of the transaction.</param>
-            <param name="windows">The associated <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instances.</param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.TransactionType">
-            <summary>
-            Gets the type of this transaction.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.AssociatedWindows">
-            <summary>
-            Gets all the windows associated with this transaction.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.AddedWindows">
-            <summary>
-            Gets all the windows that are new to the manager and are registered by the transaction.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.RemovedWindows">
-            <summary>
-            Gets all the windows that are removed from the manager by the transaction.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.TargetState">
-            <summary>
-            Gets the state, which is targeted by this transaction.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.RestoreState">
-            <summary>
-            Determines whether the transaction will try to first restore
-            the state of all associated windows before any other action is performed.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.AutoHideTransaction.#ctor(System.Collections.Generic.IEnumerable{Telerik.WinControls.UI.Docking.DockWindow},Telerik.WinControls.UI.Docking.AutoHidePosition)">
@@ -2060,31 +1609,6 @@
         <member name="T:Telerik.WinControls.UI.Docking.DockWindowTransaction">
             <summary>
             Implements a transaction that is associated with a DockWindow request.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.PerformDockTransaction">
-            <summary>
-            Implements a base transaction that is associated with a successful DockWindow request.
-            Concrete inheritors are <see cref="T:Telerik.WinControls.UI.Docking.DockWindowTransaction">DockWindowTransaction</see> and <see cref="T:Telerik.WinControls.UI.Docking.DragDropTransaction">DragDropTransaction</see>.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.PerformDockTransaction.#ctor(Telerik.WinControls.UI.Docking.DockState,System.Collections.Generic.IEnumerable{Telerik.WinControls.UI.Docking.DockWindow},Telerik.WinControls.UI.SplitPanel,Telerik.WinControls.UI.Docking.DockPosition)">
-            <summary>
-            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.PerformDockTransaction">PerformDockTransaction</see> instance.
-            </summary>
-            <param name="state">The target state for the transaction.</param>
-            <param name="windows">The associated DockWindow instances</param>
-            <param name="anchor">The SplitPanel instance, which will be treated as a DockAnchor.</param>
-            <param name="position">The DockPosition to be used when performing the DockWindow operation.</param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.PerformDockTransaction.Position">
-            <summary>
-            Gets the DockPosition to be used when performing the DockWindow operation.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.PerformDockTransaction.DockAnchor">
-            <summary>
-            Gets the SplitPanel instance, which will be treated as a DockAnchor.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.DockWindowTransaction.#ctor(Telerik.WinControls.UI.Docking.DockState,Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.SplitPanel,Telerik.WinControls.UI.Docking.DockPosition)">
@@ -2193,6 +1717,74 @@
         <member name="P:Telerik.WinControls.UI.Docking.FloatTransaction.TransactionType">
             <summary>
             Returns the <see cref="F:Telerik.WinControls.UI.Docking.DockTransactionType.Float">Float</see> dock transaction type.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.PerformDockTransaction">
+            <summary>
+            Implements a base transaction that is associated with a successful DockWindow request.
+            Concrete inheritors are <see cref="T:Telerik.WinControls.UI.Docking.DockWindowTransaction">DockWindowTransaction</see> and <see cref="T:Telerik.WinControls.UI.Docking.DragDropTransaction">DragDropTransaction</see>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.PerformDockTransaction.#ctor(Telerik.WinControls.UI.Docking.DockState,System.Collections.Generic.IEnumerable{Telerik.WinControls.UI.Docking.DockWindow},Telerik.WinControls.UI.SplitPanel,Telerik.WinControls.UI.Docking.DockPosition)">
+            <summary>
+            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.PerformDockTransaction">PerformDockTransaction</see> instance.
+            </summary>
+            <param name="state">The target state for the transaction.</param>
+            <param name="windows">The associated DockWindow instances</param>
+            <param name="anchor">The SplitPanel instance, which will be treated as a DockAnchor.</param>
+            <param name="position">The DockPosition to be used when performing the DockWindow operation.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.PerformDockTransaction.Position">
+            <summary>
+            Gets the DockPosition to be used when performing the DockWindow operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.PerformDockTransaction.DockAnchor">
+            <summary>
+            Gets the SplitPanel instance, which will be treated as a DockAnchor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.RadDockTransaction">
+            <summary>
+            A logical representation of a RadDock operation.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.RadDockTransaction.#ctor(Telerik.WinControls.UI.Docking.DockState,System.Collections.Generic.IEnumerable{Telerik.WinControls.UI.Docking.DockWindow})">
+            <summary>
+            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.RadDockTransaction">RadDockTransaction</see> instance.
+            </summary>
+            <param name="state">The target state of the transaction.</param>
+            <param name="windows">The associated <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instances.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.TransactionType">
+            <summary>
+            Gets the type of this transaction.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.AssociatedWindows">
+            <summary>
+            Gets all the windows associated with this transaction.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.AddedWindows">
+            <summary>
+            Gets all the windows that are new to the manager and are registered by the transaction.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.RemovedWindows">
+            <summary>
+            Gets all the windows that are removed from the manager by the transaction.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.TargetState">
+            <summary>
+            Gets the state, which is targeted by this transaction.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockTransaction.RestoreState">
+            <summary>
+            Determines whether the transaction will try to first restore
+            the state of all associated windows before any other action is performed.
             </summary>
         </member>
         <member name="F:Telerik.WinControls.UI.Docking.RedockTransactionReason.ToolTabStripCaptionDoubleClick">
@@ -2445,11 +2037,6 @@
             A property to determine whether the element is currently active (associated with the <see cref="P:Telerik.WinControls.UI.Docking.RadDock.ActiveWindow">ActiveWindow</see> instance within a RadDock).
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Docking.PredefinedDockingGuidesTemplate">
-            <summary>
-            Represents a DockingGuidesTemplate which uses embedded images and may not be modified by the user.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockingGuidesTemplate">
             <summary>
             Defines settings for the Docking Guides used by the DragDropService.
@@ -2538,6 +2125,11 @@
         <member name="P:Telerik.WinControls.UI.Docking.DockingGuidesTemplate.CenterBackgroundImage">
             <summary>
             Gets the DockingGuideImage instance that represents center guide's background image.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.PredefinedDockingGuidesTemplate">
+            <summary>
+            Represents a DockingGuidesTemplate which uses embedded images and may not be modified by the user.
             </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockHelper">
@@ -2692,55 +2284,9 @@
             Default minimum size.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Localization.RadDockLocalizationProvider">
-            <summary>
-            Provides localization services for RadDock
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Localization.RadDockLocalizationProvider.GetLocalizedString(System.String)">
-            <summary>
-            Gets the string corresponding to the given ID.
-            </summary>
-            <param name="id">String ID</param>
-            <returns>The string corresponding to the given ID.</returns>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Localization.RadDockStringId">
-            <summary>
-            Contains the predefined Ids to be used by the Localization Provider.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.Docking.AutoHidePopup">
             <summary>
             Represents a popup Form that is used to display auto-hidden windows.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.DockPopupForm">
-            <summary>
-            Base class for all Popup Forms that are used with a RadDock instance.
-            Such Forms are <see cref="T:Telerik.WinControls.UI.Docking.FloatingWindow"/> and <see cref="T:Telerik.WinControls.UI.Docking.AutoHidePopup"/> classes.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockPopupForm.#ctor(Telerik.WinControls.UI.Docking.RadDock)">
-            <summary>
-            Constructs new DockPopupForm instance, associated with the specified RadDock instance.
-            </summary>
-            <param name="dockManager">The RadDock instance this Popup is attached to.</param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockPopupForm.Dispose(System.Boolean)">
-            <summary>
-            Releases the resources used by this instance.
-            </summary>
-            <param name="disposing"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockPopupForm.OnClosed(System.EventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockPopupForm.DockManager">
-            <summary>
-            Gets the RadDock instance this Popup Form is associated with.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.Docking.AutoHidePopup.AutoHideDock">
@@ -2799,19 +2345,6 @@
             <param name="predicate"></param>
             <returns></returns>
         </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCollection.CopyTo(System.Array,System.Int32)">
-            <summary>
-            Copies the collection to the destination Array, starting from the specified index.
-            </summary>
-            <param name="array"></param>
-            <param name="index"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCollection.GetEnumerator">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
         <member name="P:Telerik.WinControls.UI.Docking.DockWindowCollection.ToolWindows">
             <summary>
             Gets all the ToolWindow instances available.
@@ -2837,10 +2370,23 @@
             <param name="name"></param>
             <returns></returns>
         </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCollection.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the collection to the destination Array, starting from the specified index.
+            </summary>
+            <param name="array"></param>
+            <param name="index"></param>
+        </member>
         <member name="P:Telerik.WinControls.UI.Docking.DockWindowCollection.Count">
             <summary>
             Gest the number of DockWindow instances registered with the owning RadDock.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindowCollection.GetEnumerator">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockingGuideHitTest">
             <summary>
@@ -2941,48 +2487,6 @@
         <member name="T:Telerik.WinControls.UI.Docking.RedockAutoHideState">
             <summary>
             A predefined <see cref="T:Telerik.WinControls.UI.Docking.RedockState">RedockState</see>, used by a <see cref="T:Telerik.WinControls.UI.Docking.RedockService">RedockService</see> to restore an auto-hide state.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.RedockState">
-            <summary>
-            Represents an object that stores information about what was a docking window's previous state.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.RedockState.#ctor(Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockState)">
-            <summary>
-            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.RedockState">RedockState</see> for the specified window and desired DockState.
-            </summary>
-            <param name="window"></param>
-            <param name="state"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RedockState.IsValid">
-            <summary>
-            Determines whether the state is valid (the information needed for the state to be restored later on is valid).
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RedockState.TargetState">
-            <summary>
-            Gets the redock position this state targets.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RedockState.DockWindow">
-            <summary>
-            Gets the redock state provider.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RedockState.TargetStrip">
-            <summary>
-            Gets the target strip for the redock operation.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RedockState.SizeInfo">
-            <summary>
-            Gets the recorded size info.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RedockState.TabIndex">
-            <summary>
-            Gets the index of the state provider on the redock target TabStrip.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RedockAutoHideState.#ctor(Telerik.WinControls.UI.Docking.DockWindow)">
@@ -3148,215 +2652,51 @@
             Gets an array with all the states that are currently marked for clean-up.
             </summary>
         </member>
+        <member name="T:Telerik.WinControls.UI.Docking.RedockState">
+            <summary>
+            Represents an object that stores information about what was a docking window's previous state.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.RedockState.#ctor(Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockState)">
+            <summary>
+            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.RedockState">RedockState</see> for the specified window and desired DockState.
+            </summary>
+            <param name="window"></param>
+            <param name="state"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RedockState.IsValid">
+            <summary>
+            Determines whether the state is valid (the information needed for the state to be restored later on is valid).
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RedockState.TargetState">
+            <summary>
+            Gets the redock position this state targets.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RedockState.DockWindow">
+            <summary>
+            Gets the redock state provider.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RedockState.TargetStrip">
+            <summary>
+            Gets the target strip for the redock operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RedockState.SizeInfo">
+            <summary>
+            Gets the recorded size info.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RedockState.TabIndex">
+            <summary>
+            Gets the index of the state provider on the redock target TabStrip.
+            </summary>
+        </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockWindowPlaceholder">
             <summary>
             A serializable placeholder, used primarily during RadDock's serialization process.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.DockWindow">
-            <summary>
-            Base class for all tool and document windows available per <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> instance.
-            Implements the IDockWindow interface.
-            </summary>
-        </member>
-        <member name="T:Telerik.WinControls.UI.Docking.IDockWindow">
-            <summary>
-            Defines the common properties for a RadDock-related object such as DockWindow, FloatingWindow, AutoHidePopup, etc.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.IDockWindow.Name">
-            <summary>
-            Gets the unique name of this instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.IDockWindow.Text">
-            <summary>
-            Gets or sets the text associated with this instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.IDockWindow.DockManager">
-            <summary>
-            Gets the RadDock instance this object is associated with.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.#ctor">
-            <summary>
-            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.WndProc(System.Windows.Forms.Message@)">
-            <summary>
-            Provides special handling for the WM_SETFOCUS notification.
-            </summary>
-            <param name="m"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Close">
-            <summary>
-            Asks the current <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockManager">DockManager</see> instance (if any) to close the window.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.EnsureVisible">
-            <summary>
-            Ensures that the window is currently visible on its hosting <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockTabStrip">DockTabStrip</see>.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.EnsureVisible(System.Boolean)">
-            <summary>
-            Ensures that the window is currently visible on its hosting <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockTabStrip">DockTabStrip</see>.
-            </summary>
-            <param name="suspendShowAutoHide">Indicates whether showing autohide windows should be suspended.</param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.DockTo(Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockPosition)">
-            <summary>
-            Asks the current <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockManager">DockManager</see> instance (if any) to dock the window to the specified target, using the desired position.
-            </summary>
-            <param name="target"></param>
-            <param name="position"></param>
-        </member>
-        <member name="F:Telerik.WinControls.UI.Docking.DockWindow.forceDesiredDockStateSerialization">
-            <summary>
-            This field is used internally.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Hide">
-            <summary>
-            Hide the ToolWindow from RadDock manager
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Show">
-            <summary>
-            Display the ToolWindow if was previously hidden.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.OnNameChanged(System.String)">
-            <summary>
-            Notifies the owning <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> instance for a change in the Name value.
-            </summary>
-            <param name="oldName"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.UpdateOnTextChanged">
-            <summary>
-            Updates all associated UI - such as TabItems, Captions, etc. upon TextChanged event.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.ToString">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Dispose(System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="disposing"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.OnClosing(Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs)">
-            <summary>
-            Called by the owning RadDock instance when this window is about to close.
-            Allows specific DockWindow implementations to optionally cancel the operation and/or perform additional actions.
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.OnClosed(Telerik.WinControls.UI.Docking.DockWindowEventArgs)">
-            <summary>
-            Called by the owning RadDock instance when the window has been successfully closed.
-            Depending on the current CloseAction, the window will be either hidden, removed or both plus disposed when entering this method.
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DefaultDockState">
-            <summary>
-            Retrieves the default DockState for this instance. Will be <see cref="F:Telerik.WinControls.UI.Docking.DockState.Docked">Docked</see> for <see cref="T:Telerik.WinControls.UI.Docking.ToolWindow">ToolWindow</see> instances
-            and <see cref="F:Telerik.WinControls.UI.Docking.DockState.TabbedDocument">TabbedDocument</see> for <see cref="T:Telerik.WinControls.UI.Docking.DocumentWindow">DocumentWindow</see> instances.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DefaultCloseAction">
-            <summary>
-            Retrieves the default <see cref="T:Telerik.WinControls.UI.Docking.DockWindowCloseAction">CloseAction</see> for this instance. Will be <see cref="F:Telerik.WinControls.UI.Docking.DockWindowCloseAction.Hide">Hide</see> for <see cref="T:Telerik.WinControls.UI.Docking.ToolWindow">ToolWindow</see> instances
-            and <see cref="F:Telerik.WinControls.UI.Docking.DockWindowCloseAction.CloseAndDispose">CloseAndDispose</see> for <see cref="T:Telerik.WinControls.UI.Docking.DocumentWindow">DocumentWindow</see> instances.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.ToolCaptionButtons">
-            <summary>
-            Gets or sets the visibility of the associated command buttons when the window resides in a ToolTabStrip instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DocumentButtons">
-            <summary>
-            Gets or sets the visibility of the associated command buttons when the window resides in a DocumentTabStrip instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockTabStrip">
-            <summary>
-            Gets the DockTabStrip which hosts this window.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DefaultFloatingSize">
-            <summary>
-            Gets or sets the size to be used when the window is floated for the first time and does not have previous floating state saved.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.AutoHideSize">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.AllowedDockState">
-            <summary>
-            Get or set allowed dock states for DockWindow instance
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.CloseAction">
-            <summary>
-            Gets or sets the action to be used when a Close request occurs for this window.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DesiredDockState">
-            <summary>
-            Gets or sets the DockState which is desired for the window
-            and will be applied when the RadDock instance this window is attached to is completely initialized.
-            This property is used internally by the framework and is not intended to be used directly by code.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.FloatingParent">
-            <summary>
-            Get the parent floating window when the window is in floating mode
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockState">
-            <summary>
-            Gets the current dock state of the window.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.IsInFloatingMode">
-            <summary>
-            Get the floating status of window
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.Site">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.Name">
-            <summary>
-            Gets or sets value representing unique Name of the DockWindow
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockManager">
-            <summary>
-            Gets the current <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> instance this window is associated with.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.Padding">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockType">
-            <summary>
-            Gets the <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockType">DockType</see> of this instance.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.DockWindowPlaceholder.#ctor">
@@ -3411,165 +2751,34 @@
             What RadDock does is to start and stop the service when drag operation is instanciated.
             </summary>
         </member>
-        <member name="T:Telerik.WinControls.UI.Docking.StateService">
-            <summary>
-            Represents a service that is state-based. E.g. it may start, perform some action and stop.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.#ctor">
-            <summary>
-            Default constructor.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.Start(System.Object)">
-            <summary>
-            Starts the Service.
-            If the service was previously paused, it should be re-started with the Resume method.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.Stop(System.Boolean)">
-            <summary>
-            Stops currently working or previously stopped service.
-            </summary>
-            <param name="commit">True to indicate that current operation ended successfully, false otherwise.</param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.Pause">
-            <summary>
-            Pauses a currently running operation.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.Resume">
-            <summary>
-            Resumes previously paused operation.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnEnabledChanged">
-            <summary>
-            Provides additional processing for a change in the Enabled state.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnDockManagerChanged">
-            <summary>
-            Provides additional processing when a change in the owning RadDock instance occurs.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.CanStart(System.Object)">
-            <summary>
-            Determines whether the service may be started.
-            Validation is as follows:
-            1. Check whether Enabled is true.
-            2. Check the context through IsContextValid method. An exception is thrown if context is invalid.
-            3. Checks the current state - it should be Initial or Stopped.
-            </summary>
-            <param name="context"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStarted">
-            <summary>
-            Notifies that the service has been successfully started.
-            Allows inheritors to perform some additional logic upon start.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStarting(Telerik.WinControls.UI.Docking.StateServiceStartingEventArgs)">
-            <summary>
-            Notifies that a start request has occured. Cancelable.
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStopped">
-            <summary>
-            Notifies that a running operation has stopped.
-            Allows inheritors to perform some additional logic upon stop.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStopping(Telerik.WinControls.UI.Docking.StateServiceStoppingEventArgs)">
-            <summary>
-            Notifies that a stop request has occured. Cancelable.
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.IsContextValid(System.Object)">
-            <summary>
-            Evaluates the provided context. Some services may not operate without certain context provided.
-            </summary>
-            <param name="context"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformStart">
-            <summary>
-            Performs the core Start logic.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformStop">
-            <summary>
-            Stops the service. Performs the core logic.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.Abort">
-            <summary>
-            Aborts the current operation without applying any changes.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.Commit">
-            <summary>
-            Ends the current operation and applies all changes.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformResume">
-            <summary>
-            Performs the core Resume logic.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformPause">
-            <summary>
-            Performs the core Pause logic.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.StateService.SetContext(System.Object)">
-            <summary>
-            Sets the provided object as the current context.
-            </summary>
-            <param name="context"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.StateService.Context">
-            <summary>
-            Gets the context associated with the current operation.
-            This member is valid only while the Service is started or paused.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.StateService.Starting">
-            <summary>
-            Raised when the service is about to be started.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.StateService.Started">
-            <summary>
-            Raised right after the service is started.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.StateService.Stopping">
-            <summary>
-            Raised when the service is about to be stopped.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.StateService.Stopped">
-            <summary>
-            Raised when the service is stopped.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.StateService.AvailableAtDesignTime">
-            <summary>
-            Determines whether the service is available at design-time. False by default.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.StateService.State">
-            <summary>
-            Gets the current state of the service.
-            </summary>
-        </member>
         <member name="M:Telerik.WinControls.UI.Docking.DragDropService.#ctor">
             <summary>
             Default constructor.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.Dragging">
+            <summary>
+            Notifies for a Drag event of the service. While working, this notification will be raised upon each mouse move event.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.PreviewHitTest">
+            <summary>
+            Allows listeners to preview and optionally change the current hit-test result generated by the service upon a drag operation.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.PreviewDropTarget">
+            <summary>
+            Allows listeners to preview and optionally change the currently hit-tested drop target.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.PreviewDockPosition">
+            <summary>
+            Allows listeners to preview and optionally modify the allowed dock position for the hit-tested drop target.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DragDropService.AvailableAtDesignTime">
+            <summary>
+            Drag-and-drop service is available at design-time (in preview mode only).
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.DragDropService.DisposeManagedResources">
@@ -3679,39 +2888,14 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Telerik.WinControls.UI.Docking.DragDropService.UpdateDragPreview">
-            <summary>
-            Updates the drag preview popup when the drag mode is DragDropMode.Preview
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.Dragging">
-            <summary>
-            Notifies for a Drag event of the service. While working, this notification will be raised upon each mouse move event.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.PreviewHitTest">
-            <summary>
-            Allows listeners to preview and optionally change the current hit-test result generated by the service upon a drag operation.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.PreviewDropTarget">
-            <summary>
-            Allows listeners to preview and optionally change the currently hit-tested drop target.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.DragDropService.PreviewDockPosition">
-            <summary>
-            Allows listeners to preview and optionally modify the allowed dock position for the hit-tested drop target.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DragDropService.AvailableAtDesignTime">
-            <summary>
-            Drag-and-drop service is available at design-time (in preview mode only).
-            </summary>
-        </member>
         <member name="E:Telerik.WinControls.UI.Docking.DragDropService.GuidesRecreated">
             <summary>
             Internal event, used for testing purposes.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DragDropService.UpdateDragPreview">
+            <summary>
+            Updates the drag preview popup when the drag mode is DragDropMode.Preview
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.Docking.DragDropService.AllowedDockManagerEdges">
@@ -3785,6 +2969,241 @@
         <member name="F:Telerik.WinControls.UI.Docking.DockingGuidesPosition.Center">
             <summary>
             Indicates central position of the docking guides.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.IDockWindow">
+            <summary>
+            Defines the common properties for a RadDock-related object such as DockWindow, FloatingWindow, AutoHidePopup, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.IDockWindow.Name">
+            <summary>
+            Gets the unique name of this instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.IDockWindow.Text">
+            <summary>
+            Gets or sets the text associated with this instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.IDockWindow.DockManager">
+            <summary>
+            Gets the RadDock instance this object is associated with.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.DockWindow">
+            <summary>
+            Base class for all tool and document windows available per <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> instance.
+            Implements the IDockWindow interface.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.#ctor">
+            <summary>
+            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DefaultDockState">
+            <summary>
+            Retrieves the default DockState for this instance. Will be <see cref="F:Telerik.WinControls.UI.Docking.DockState.Docked">Docked</see> for <see cref="T:Telerik.WinControls.UI.Docking.ToolWindow">ToolWindow</see> instances
+            and <see cref="F:Telerik.WinControls.UI.Docking.DockState.TabbedDocument">TabbedDocument</see> for <see cref="T:Telerik.WinControls.UI.Docking.DocumentWindow">DocumentWindow</see> instances.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DefaultCloseAction">
+            <summary>
+            Retrieves the default <see cref="T:Telerik.WinControls.UI.Docking.DockWindowCloseAction">CloseAction</see> for this instance. Will be <see cref="F:Telerik.WinControls.UI.Docking.DockWindowCloseAction.Hide">Hide</see> for <see cref="T:Telerik.WinControls.UI.Docking.ToolWindow">ToolWindow</see> instances
+            and <see cref="F:Telerik.WinControls.UI.Docking.DockWindowCloseAction.CloseAndDispose">CloseAndDispose</see> for <see cref="T:Telerik.WinControls.UI.Docking.DocumentWindow">DocumentWindow</see> instances.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Provides special handling for the WM_SETFOCUS notification.
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.ToolCaptionButtons">
+            <summary>
+            Gets or sets the visibility of the associated command buttons when the window resides in a ToolTabStrip instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DocumentButtons">
+            <summary>
+            Gets or sets the visibility of the associated command buttons when the window resides in a DocumentTabStrip instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockTabStrip">
+            <summary>
+            Gets the DockTabStrip which hosts this window.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DefaultFloatingSize">
+            <summary>
+            Gets or sets the size to be used when the window is floated for the first time and does not have previous floating state saved.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.AutoHideSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Close">
+            <summary>
+            Asks the current <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockManager">DockManager</see> instance (if any) to close the window.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.EnsureVisible">
+            <summary>
+            Ensures that the window is currently visible on its hosting <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockTabStrip">DockTabStrip</see>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.EnsureVisible(System.Boolean)">
+            <summary>
+            Ensures that the window is currently visible on its hosting <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockTabStrip">DockTabStrip</see>.
+            </summary>
+            <param name="suspendShowAutoHide">Indicates whether showing autohide windows should be suspended.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.AllowedDockState">
+            <summary>
+            Get or set allowed dock states for DockWindow instance
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.CloseAction">
+            <summary>
+            Gets or sets the action to be used when a Close request occurs for this window.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.DockTo(Telerik.WinControls.UI.Docking.DockWindow,Telerik.WinControls.UI.Docking.DockPosition)">
+            <summary>
+            Asks the current <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockManager">DockManager</see> instance (if any) to dock the window to the specified target, using the desired position.
+            </summary>
+            <param name="target"></param>
+            <param name="position"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DesiredDockState">
+            <summary>
+            Gets or sets the DockState which is desired for the window
+            and will be applied when the RadDock instance this window is attached to is completely initialized.
+            This property is used internally by the framework and is not intended to be used directly by code.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.FloatingParent">
+            <summary>
+            Get the parent floating window when the window is in floating mode
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Docking.DockWindow.forceDesiredDockStateSerialization">
+            <summary>
+            This field is used internally.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockState">
+            <summary>
+            Gets the current dock state of the window.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Hide">
+            <summary>
+            Hide the ToolWindow from RadDock manager
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Show">
+            <summary>
+            Display the ToolWindow if was previously hidden.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.IsInFloatingMode">
+            <summary>
+            Get the floating status of window
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.Site">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.Name">
+            <summary>
+            Gets or sets value representing unique Name of the DockWindow
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.OnNameChanged(System.String)">
+            <summary>
+            Notifies the owning <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> instance for a change in the Name value.
+            </summary>
+            <param name="oldName"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.UpdateOnTextChanged">
+            <summary>
+            Updates all associated UI - such as TabItems, Captions, etc. upon TextChanged event.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.OnClosing(Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs)">
+            <summary>
+            Called by the owning RadDock instance when this window is about to close.
+            Allows specific DockWindow implementations to optionally cancel the operation and/or perform additional actions.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockWindow.OnClosed(Telerik.WinControls.UI.Docking.DockWindowEventArgs)">
+            <summary>
+            Called by the owning RadDock instance when the window has been successfully closed.
+            Depending on the current CloseAction, the window will be either hidden, removed or both plus disposed when entering this method.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockManager">
+            <summary>
+            Gets the current <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> instance this window is associated with.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.Padding">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockWindow.DockType">
+            <summary>
+            Gets the <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockType">DockType</see> of this instance.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.DockPopupForm">
+            <summary>
+            Base class for all Popup Forms that are used with a RadDock instance.
+            Such Forms are <see cref="T:Telerik.WinControls.UI.Docking.FloatingWindow"/> and <see cref="T:Telerik.WinControls.UI.Docking.AutoHidePopup"/> classes.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockPopupForm.#ctor(Telerik.WinControls.UI.Docking.RadDock)">
+            <summary>
+            Constructs new DockPopupForm instance, associated with the specified RadDock instance.
+            </summary>
+            <param name="dockManager">The RadDock instance this Popup is attached to.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockPopupForm.Dispose(System.Boolean)">
+            <summary>
+            Releases the resources used by this instance.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockPopupForm.OnClosed(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockPopupForm.DockManager">
+            <summary>
+            Gets the RadDock instance this Popup Form is associated with.
             </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockPosition">
@@ -3882,6 +3301,144 @@
             All dock states are defined.
             </summary>
         </member>
+        <member name="T:Telerik.WinControls.UI.Docking.DockTabStrip">
+            <summary>
+            Base class for a <see cref="T:Telerik.WinControls.UI.TabStripPanel">TabStripPanel</see> instance that resides on a <see cref="T:Telerik.WinControls.UI.Docking.RadDock">RadDock</see> scene.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.#ctor(Telerik.WinControls.UI.Docking.RadDock)">
+            <summary>
+            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.DockTabStrip">DockTabStrip</see> instance and associates it with the specified RadDock instance.
+            </summary>
+            <param name="dockManager"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.IsRedockTarget">
+            <summary>
+            Determines whether this tabstrip is referenced for the RedockService as a target of Redock operation.
+            This flag is used to determine whether a RadSplitContainer may be freely cleaned-up or should be reserved.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.BackColor">
+            <summary>
+            Gets or sets the BackColor of the strip.
+            Transparent BackColor is a special case, further controlled by the <see cref="P:Telerik.WinControls.UI.Docking.DockTabStrip.AllowTransparentBackColor">AllowTransparentBackColor</see> property.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.AllowTransparentBackColor">
+            <summary>
+            Determines whether the control accepts Color.Transparent as its BackColor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.DockType">
+            <summary>
+            Gets the <see cref="P:Telerik.WinControls.UI.Docking.DockTabStrip.DockType">DockType</see> member of this instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.Collapsed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.TabPanels">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.DockManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DockTabStrip.ActiveWindow">
+            <summary>
+            Gets or sets the currently active <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnMouseCaptureChanged(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnDragInitialized(System.Drawing.Point)">
+            <summary>
+            Overrides the method to provide support for instanciating a DragDropService operation.
+            </summary>
+            <param name="mouse"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnDockManagerChanged">
+            <summary>
+            Allows inheritors to provide additional functionality upon owning RadDock instance change.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.OnTabCloseButtonClicked(Telerik.WinControls.UI.TabStripItem)">
+            <summary>
+            Closes the corresponding <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instance.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.CheckCollapseOrDispose">
+            <summary>
+            Provides routine which allows the strip to decide whether it should be collapsed or disposed.
+            Internally used by the docking framework to defragment the dock tree.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateButtons">
+            <summary>
+            Updates the additional buttons, associated with the strip.
+            E.g. a ToolTabStrip will have caption buttons, while a DocumentTabStrip will have strip buttons.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateAfterTransaction">
+            <summary>
+            Allows an affected strip to perform additional update after a transaction completion.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateActiveWindow(Telerik.WinControls.UI.Docking.DockWindow,System.Boolean)">
+            <summary>
+            Allows a DockTabStrip to perform some additional operations upon activation of an owned DockWindow.
+            For example a ToolTabStrip will update its Caption with Active or Inactive state correspondingly.
+            </summary>
+            <param name="window"></param>
+            <param name="active">True if the window is currently active, false otherwise.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.UpdateTabSelection(System.Boolean)">
+            <summary>
+            this method is used internally.
+            </summary>
+            <param name="updateFocus"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.CopyTo(Telerik.WinControls.UI.Docking.DockTabStrip)">
+            <summary>
+            Copies the settings of the current strip to the target one. Currently the SizeInfo member is copied.
+            </summary>
+            <param name="clone"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.GetCollapsed">
+            <summary>
+            Determines whether the strip should be collapsed. E.g. it may not have child panels but should not be disposed as it may be a redock target.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.DockTabStrip.IsDragAllowed(System.Drawing.Point)">
+            <summary>
+            Determines whether a drag operation is currently allowed.
+            </summary>
+            <param name="location">The location to examine, in client coordinates.</param>
+            <returns></returns>
+        </member>
         <member name="T:Telerik.WinControls.UI.Docking.DockType">
             <summary>
             Defines the possible valid types for IDockable instances.
@@ -3962,6 +3519,31 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.DocumentButtonsLayout">
+            <summary>
+            Gets the document buttons layout element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.OverflowMenuButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.DockType">
+            <summary>
+            Returns <see cref="F:Telerik.WinControls.UI.Docking.DockType.Document">Document</see> dock type.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.DefaultTabStripAlignment">
+            <summary>
+            The default tabstrip alignment is Top.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.IsRedockTarget">
+            <summary>
+            This predefined instance is never a redock target.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.DocumentTabStrip.OnLayout(System.Windows.Forms.LayoutEventArgs)">
             <summary>
             
@@ -4023,31 +3605,6 @@
             <param name="element"></param>
             <returns></returns>
         </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.DocumentButtonsLayout">
-            <summary>
-            Gets the document buttons layout element.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.OverflowMenuButton">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.DockType">
-            <summary>
-            Returns <see cref="F:Telerik.WinControls.UI.Docking.DockType.Document">Document</see> dock type.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.DefaultTabStripAlignment">
-            <summary>
-            The default tabstrip alignment is Top.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.DocumentTabStrip.IsRedockTarget">
-            <summary>
-            This predefined instance is never a redock target.
-            </summary>
-        </member>
         <member name="T:Telerik.WinControls.UI.Docking.FloatingWindow">
             <summary>
             Represents a popup form that is used to host floating <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instances.
@@ -4067,26 +3624,6 @@
             <summary>
             Creates a new FloatingWindow instance passing an owner RadDock instance as a parameter
             </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.FloatingWindow.OnThemeChanged">
-            <summary>
-            Delegate the event to all nested ToolTabStrip instances.
-            </summary>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.FloatingWindow.OnActivated(System.EventArgs)">
-            <summary>
-            Provides support for z-ordering of all popup-forms of the owning Form.
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Telerik.WinControls.UI.Docking.FloatingWindow.GetSnappedBounds(System.Drawing.Rectangle,Telerik.WinControls.UI.ResizeDirection,System.Boolean)">
-            <summary>
-            Gets the target bounds when the window snaps to another one.
-            </summary>
-            <param name="desired">The original window bounds.</param>
-            <param name="direction">The direction in which the window is being resized/moved.</param>
-            <param name="resize">[true] if this is a resize operation, [false] otherwise.</param>
-            <returns>The bounds of the window after snapping.</returns>
         </member>
         <member name="P:Telerik.WinControls.UI.Docking.FloatingWindow.DockContainer">
             <summary>
@@ -4124,9 +3661,34 @@
             Indicates the threshold between edges before the window snaps.
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.UI.Docking.FloatingWindow.OnThemeChanged">
+            <summary>
+            Delegate the event to all nested ToolTabStrip instances.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.FloatingWindow.OnActivated(System.EventArgs)">
+            <summary>
+            Provides support for z-ordering of all popup-forms of the owning Form.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.FloatingWindow.GetSnappedBounds(System.Drawing.Rectangle,Telerik.WinControls.UI.ResizeDirection,System.Boolean)">
+            <summary>
+            Gets the target bounds when the window snaps to another one.
+            </summary>
+            <param name="desired">The original window bounds.</param>
+            <param name="direction">The direction in which the window is being resized/moved.</param>
+            <param name="resize">[true] if this is a resize operation, [false] otherwise.</param>
+            <returns>The bounds of the window after snapping.</returns>
+        </member>
         <member name="T:Telerik.WinControls.UI.Docking.HostWindow">
             <summary>
             Represents a special type of DockWindow, which is used internally by RadDock to wrap custom controls as part of the docking framework.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.HostWindow.Content">
+            <summary>
+            Gets the Control instance that is hosted on this window.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.HostWindow.#ctor">
@@ -4163,11 +3725,6 @@
             
             </summary>
             <param name="e"></param>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.HostWindow.Content">
-            <summary>
-            Gets the Control instance that is hosted on this window.
-            </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.Docking.HostWindow.MdiChild">
             <summary>
@@ -4231,6 +3788,61 @@
             </summary>
             <param name="parent"></param>
         </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.EnableFloatingWindowSnapping">
+            <summary>
+            Determines whether all floating windows' will snap to their edges.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.EnableFloatingWindowTheming">
+            <summary>
+            Determines whether all floating windows' frames within the framework will be themed using Telerik's TPF or will be let with their system appearance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Collapsed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SplitContainer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.RootContainer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SizeInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoScroll">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AllowDrop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoScrollMargin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoScrollMinSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SplitPanels">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.OnLoad(System.Drawing.Size)">
             <summary>
             Called when control's creation is complete.
@@ -4256,6 +3868,59 @@
             <summary>
             Delegates the ThemeChanged event to all owned controls and elements.
             </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoDetectMdiChildren">
+            <summary>
+            Gets or sets a value indicating whether [auto detect MDI child].
+            </summary>
+            <value><c>true</c> if [auto detect MDI child]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SingleScreen">
+            <summary>
+            Gets or sets a value indicating whether the RadDock control behavior and layout apply only to primary screen.
+            </summary>\
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MdiChildrenDockType">
+            <summary>
+            Gets or sets a value indicating dock type of MDI child host windows added to RadDock.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MdiChildren">
+            <summary>
+            Gets an array with all the standard Forms added as TabbedDocument to this RadDock instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MdiController">
+            <summary>
+            Gets the MdiController instance that listens for added MDI children and wraps them into a HostWindow.
+            Exposed for the sake of tests.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowDisplaying">
+            <summary>
+            Notifies that an auto-hidden window is about to be displayed. Cancelable.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowDisplayed">
+            <summary>
+            Notifies that an auto-hidden window is about to be displayed. Cancelable.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowHiding">
+            <summary>
+            Notifies that a window with AutoHide DockState is hiding.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowHidden">
+            <summary>
+            Notifies that a window which DockState is AutoHide has been hidden.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoHideAnimationDuration">
+            <summary>
+            Gets or sets the duration of the auto hide window animation. The default value is 200 milliseconds.
+            </summary>
+            <value>The duration of the auto hide window animation. The default value is 200 milliseconds.</value>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.OnParentChanged(System.EventArgs)">
             <summary>
@@ -4306,17 +3971,65 @@
             </summary>
             <param name="e"></param>
         </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.QuickNavigatorSnapshotNeeded">
+            <summary>
+            Raised when the QuickNavigator is displayed and a preview snapshot for the currently selected window is needed.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.DisplayQuickNavigator">
             <summary>
             Visualizes the QuickNavigator control allowing for active tool windows and documents browsing.
             </summary>
             <returns>The <see cref="T:Telerik.WinControls.UI.Docking.QuickNavigator">QuickNavigator</see> instance that is currently displayed. May return null if operation was unsuccessful.</returns>
         </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.QuickNavigatorSettings">
+            <summary>
+            Gets the object which controls the appearance of the QuickNavigator control.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.OnQuickNavigatorSnapshotNeeded(Telerik.WinControls.UI.Docking.DockWindowSnapshotEventArgs)">
             <summary>
             Raises the <see cref="E:Telerik.WinControls.UI.Docking.RadDock.QuickNavigatorSnapshotNeeded"/> event.
             </summary>
             <param name="e"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoSize">
+            <summary>
+            Gets or sets whether the edit control is auto-sized
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolWindowInsertOrder">
+            <summary>
+            Gets or sets the insert order to be used when adding dock windows to a ToolTabStrip.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoHideAnimation">
+            <summary>
+            Determines what animation will be used when displaying/hiding auto-hidden windows.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ContentRectangle">
+            <summary>
+            Overrides the content rectangle to add any visible auto-hide tabstrips to the calculations.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.LayoutStrategyType">
+            <summary>
+            Gets or sets the Type to be used when a new RadSplitContainer instance is internally created and a layout strategy is initialized for it.
+            Allows plugging of completely custom layout behavior.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Item(System.String)">
+            <summary>
+            Gets DockWindow instance with the corresponding Name.
+            </summary>
+            <param name="dockWindowName"></param>
+            <returns>DockWindow instance with matching Name. Null (Nothing in VB.NET) otherwise.</returns>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.GetWindow``1(System.String)">
             <summary>
@@ -4339,6 +4052,61 @@
             </summary>
             <param name="types">The types of the windows to get.</param>
             <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DockWindows">
+            <summary>
+            Gets a collection with all the currently attached <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instances.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Text">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ShowDocumentCloseButton">
+            <summary>
+            Determines whether DocumentTabStrip instances will display a Close Button next to each item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ShowDocumentPinButton">
+            <summary>
+            Determines whether DocumentTabStrip instances will display a Pin Button next to each item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ShowToolCloseButton">
+            <summary>
+            Determines whether ToolTabStrip instances will display Close Button next to each item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentTabsTextOrientation">
+            <summary>
+            Gets or sets the text orientation of the TabStripElement in all ToolTabStrip instances.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolTabsTextOrientation">
+            <summary>
+            Gets or sets the text orientation of the TabStripElement in all ToolTabStrip instances.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolTabsAlignment">
+            <summary>
+            Gets or sets the alignment of the TabStripElement in all ToolTabStrip instances.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentTabsAlignment">
+            <summary>
+            Gets or sets the alignment of the TabStripElement in all DocumentTabStrip instances.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentTabsVisible">
+            <summary>
+            Determines whether the TabStripElement in DocumentTabStrip instances is visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolTabsVisible">
+            <summary>
+            Determines whether the TabStripElement in ToolTabStrip instances is visible.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.BeginUpdate">
             <summary>
@@ -4387,6 +4155,11 @@
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.FlushTransactions">
             <summary>
             Commits all pending transactions without exitting the transaction block.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.IsInTransactionBlock">
+            <summary>
+            Determines whether the RadDock is currently in a transaction (internal operation).
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.EndTransactionBlock">
@@ -4484,6 +4257,101 @@
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.EnsureActiveWindow(System.Boolean)">
             <summary>
             Ensures that any previously saved active window is re-activated after transaction commitment
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockTabStripNeeded">
+            <summary>
+            Raised whenever a new <see cref="T:Telerik.WinControls.UI.Docking.DockTabStrip">DockTabStrip</see> instance is needed internally by the framework.
+            Allows for providing custom <see cref="T:Telerik.WinControls.UI.Docking.ToolTabStrip">ToolTabStrip</see> and <see cref="T:Telerik.WinControls.UI.Docking.DocumentTabStrip">DocumentTabStrip</see> implementations.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.PageViewInstanceCreated">
+            <summary>
+            Fires after RadPageViewElement is created.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SplitContainerNeeded">
+            <summary>
+            Raised whenever a new <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> instance is needed internally by the framework.
+            Allows for providing custom <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> implementation.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionBlockStarted">
+            <summary>
+            Notifies for a successful BeginTransactionBlock operation.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionBlockEnded">
+            <summary>
+            Notifies for a successful EndTransactionBlock operation, when all transactions are committed, the DockTree is cleaned, and updates are resumed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionCommitted">
+            <summary>
+            Raised when a RadDockTransaction is successfully committed.
+            Allows listeners to perform some additional operations.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionCommitting">
+            <summary>
+            Raised when a RadDockTransaction is about to be committed.
+            Allows listeners to investigate the transaction, perform some additional actions and/or cancel it.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowAdded">
+            <summary>
+            Notifies for a new DockWindow registered with this RadDock instance.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowRemoved">
+            <summary>
+            Notifies for a DockWindow removed from this RadDock instance. This event will not be raised for hidden windows.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowClosing">
+            <summary>
+            Raised before a DockWindow.Close method is called.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowClosed">
+            <summary>
+            Raised after a DockWindow has been closed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockStateChanging">
+            <summary>
+            Notifies for an upcomming change in the DockState of the associated window. Cancelable.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockStateChanged">
+            <summary>
+            Notifies for a change in the DockState of the associated window.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.ActiveWindowChanging">
+            <summary>
+            Notifies for an upcomming change of the ActiveWindow property. Cancelable.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SelectedTabChanging">
+            <summary>
+            Occurs when selected tab changing in currently manipulated DockTabStrip.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SelectedTabChanged">
+            <summary>
+            Occurs when selected tab changed in currently manipulated DockTabStrip.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.ActiveWindowChanged">
+            <summary>
+            Notifies for an actual change of the ActiveWindow property.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.FloatingWindowCreated">
+            <summary>
+            Notifies that a FloatingWindow instance is internally created by the framework.
+            Allows listeners to examine and optionally change the window itself.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.OnFloatingWindowCreated(Telerik.WinControls.UI.Docking.FloatingWindowEventArgs)">
@@ -4827,6 +4695,11 @@
             </summary>
             <returns>[true] if all windows were successfully closed, [false] otherwise</returns>
         </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.InnerList">
+            <summary>
+            Gets the internal sorted list, which stores 
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.GetDefaultDocumentTabStrip(System.Boolean)">
             <summary>
             Gets the default DocumentTabStrip instance, used to add documents without explicitly specified dock target.
@@ -4995,6 +4868,11 @@
             <param name="window"></param>
             <param name="state"></param>
         </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.CommandManager">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.Docking.RadDockCommandManager">CommandManager</see> registered with this RadDock instance.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.OnHandleCreated(System.EventArgs)">
             <summary>
             
@@ -5012,6 +4890,23 @@
             
             </summary>
             <param name="e"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentManager">
+            <summary>
+            Gets the <see cref="P:Telerik.WinControls.UI.Docking.RadDock.DocumentManager">DocumentManager</see> instance that manages all the DockWindow instances which are parented <see cref="P:Telerik.WinControls.UI.Docking.RadDock.MainDocumentContainer">MainDocumentContainer</see>.
+            For a Document is considered either a DocumentWindow instance or a ToolWindow, which current <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockState">DockState</see> is <see cref="F:Telerik.WinControls.UI.Docking.DockState.TabbedDocument">TabbedDocument</see>.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MainDocumentContainer">
+            <summary>
+            Gets or sets the document container for this RadDock instance.
+            This property is used primarily for serialization purposes and is not intended to be used directly by code.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MainDocumentContainerVisible">
+            <summary>
+            Determines whether the main document container is visible.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.RegisterService(System.Int32,Telerik.WinControls.UI.Docking.RadDockService)">
             <summary>
@@ -5035,6 +4930,48 @@
             <typeparam name="T"></typeparam>
             <param name="key"></param>
             <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DockingGuidesTemplate">
+            <summary>
+            Gets or sets the template, which defines the appearance of the guides displayed upon drag-and-drop operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.IsDragging">
+            <summary>
+            Determines whether the DragDropService is currently working (a drag-and-drop operation is running).
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DragDropMode">
+            <summary>
+            Gets or sets the mode used by the DragDropService when a drag-and-drop request is made.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DragDropAllowedDockStates">
+            <summary>
+            Gets or sets the allowed dock states for a committing drag-and-drop operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.TreatTabbedDocumentsAsToolWindows">
+            <summary>
+            Determines whether tabbed documents will have special behavior that differs from a ToolWindow's one.
+            For example if this is true, a tabbed document will be allowed to become floating by a drag-and-drop operation.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.LoadedFromXml">
+            <summary>
+            Notifies that manager's state has been loaded from an external XML source.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SavedToXml">
+            <summary>
+            Notifies that manager's state has been saved to an external XML source.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowSerializing">
+            <summary>
+            Fired when a dock window is being serialized. Allows excluding some windows
+            from serialization.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.OnDockWindowSerializing(Telerik.WinControls.UI.Docking.DockWindow)">
             <summary>
@@ -5118,15 +5055,60 @@
             </remarks>
              <returns></returns>
         </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.XmlSerializationInfo">
+            <summary>
+            Gets the serialization info for RadDock used by Save/Load loyout methods to persist grid settings to/from XML.
+            By default, or when set to null the ComponentXmlSerializationInfo provided by GetDefaultXmlSerializationInfo() will be used.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.SaveToXmlCore(System.Xml.XmlWriter)">
             <summary>
             Performs the core save logic.
             </summary>
             <param name="writer"></param>
         </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.GuidToNameMappings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SerializableAutoHideContainer">
+            <summary>
+            Gets an instance of DockAutoHideSerializationContainer that contains information about auto-hidden windows which have been 
+            set up through designer or xml file. This nethod is no intended for use directly from your code.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SerializableFloatingWindows">
+            <summary>
+            Gets an instance of FloatingWindowList that contains information about floating windows which have been 
+            set up through designer or xml file. This nethod is no intended for use directly from your code.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.LoadDeserializedFloatingAndAutoHideWindows">
             <summary>
             The method is intended fot use within RadDcok and Advanced Layout Designer, to float windows after loading radDock layout from designer
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ThemeClassName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.BackColor">
+            <summary>
+            RadDock consists of multiple visual elements and separate settings are provided to customize their appearance.
+            Current BackColor property might be ignored.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ForeColor">
+            <summary>
+            RadDock consists of multiple visual elements and separate settings are provided to customize their appearance.
+            Current ForeColor property might be ignored.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ActiveWindow">
+            <summary>
+            Gets or sets the DockWindow instance, which is currently active (meaning it contains the Keyboard focus).
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.RadDock.SetDefaultActiveWindow">
@@ -5151,431 +5133,6 @@
             Sometimes a transaction may change the current active window several times and the method needs to know when to raise the notifications.
             </param>
             <returns></returns>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.EnableFloatingWindowSnapping">
-            <summary>
-            Determines whether all floating windows' will snap to their edges.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.EnableFloatingWindowTheming">
-            <summary>
-            Determines whether all floating windows' frames within the framework will be themed using Telerik's TPF or will be let with their system appearance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Collapsed">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SplitContainer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.RootContainer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SizeInfo">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoScroll">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AllowDrop">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoScrollMargin">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoScrollMinSize">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SplitPanels">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoDetectMdiChildren">
-            <summary>
-            Gets or sets a value indicating whether [auto detect MDI child].
-            </summary>
-            <value><c>true</c> if [auto detect MDI child]; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SingleScreen">
-            <summary>
-            Gets or sets a value indicating whether the RadDock control behavior and layout apply only to primary screen.
-            </summary>\
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MdiChildrenDockType">
-            <summary>
-            Gets or sets a value indicating dock type of MDI child host windows added to RadDock.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MdiChildren">
-            <summary>
-            Gets an array with all the standard Forms added as TabbedDocument to this RadDock instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MdiController">
-            <summary>
-            Gets the MdiController instance that listens for added MDI children and wraps them into a HostWindow.
-            Exposed for the sake of tests.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowDisplaying">
-            <summary>
-            Notifies that an auto-hidden window is about to be displayed. Cancelable.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowDisplayed">
-            <summary>
-            Notifies that an auto-hidden window is about to be displayed. Cancelable.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowHiding">
-            <summary>
-            Notifies that a window with AutoHide DockState is hiding.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.AutoHideWindowHidden">
-            <summary>
-            Notifies that a window which DockState is AutoHide has been hidden.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoHideAnimationDuration">
-            <summary>
-            Gets or sets the duration of the auto hide window animation. The default value is 200 milliseconds.
-            </summary>
-            <value>The duration of the auto hide window animation. The default value is 200 milliseconds.</value>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.QuickNavigatorSnapshotNeeded">
-            <summary>
-            Raised when the QuickNavigator is displayed and a preview snapshot for the currently selected window is needed.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.QuickNavigatorSettings">
-            <summary>
-            Gets the object which controls the appearance of the QuickNavigator control.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoSize">
-            <summary>
-            Gets or sets whether the edit control is auto-sized
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolWindowInsertOrder">
-            <summary>
-            Gets or sets the insert order to be used when adding dock windows to a ToolTabStrip.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.AutoHideAnimation">
-            <summary>
-            Determines what animation will be used when displaying/hiding auto-hidden windows.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ContentRectangle">
-            <summary>
-            Overrides the content rectangle to add any visible auto-hide tabstrips to the calculations.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.LayoutStrategyType">
-            <summary>
-            Gets or sets the Type to be used when a new RadSplitContainer instance is internally created and a layout strategy is initialized for it.
-            Allows plugging of completely custom layout behavior.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Enabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Item(System.String)">
-            <summary>
-            Gets DockWindow instance with the corresponding Name.
-            </summary>
-            <param name="dockWindowName"></param>
-            <returns>DockWindow instance with matching Name. Null (Nothing in VB.NET) otherwise.</returns>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DockWindows">
-            <summary>
-            Gets a collection with all the currently attached <see cref="T:Telerik.WinControls.UI.Docking.DockWindow">DockWindow</see> instances.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.Text">
-            <summary>
-            This property is not relevant for this class.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ShowDocumentCloseButton">
-            <summary>
-            Determines whether DocumentTabStrip instances will display a Close Button next to each item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ShowDocumentPinButton">
-            <summary>
-            Determines whether DocumentTabStrip instances will display a Pin Button next to each item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ShowToolCloseButton">
-            <summary>
-            Determines whether ToolTabStrip instances will display Close Button next to each item.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentTabsTextOrientation">
-            <summary>
-            Gets or sets the text orientation of the TabStripElement in all ToolTabStrip instances.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolTabsTextOrientation">
-            <summary>
-            Gets or sets the text orientation of the TabStripElement in all ToolTabStrip instances.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolTabsAlignment">
-            <summary>
-            Gets or sets the alignment of the TabStripElement in all ToolTabStrip instances.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentTabsAlignment">
-            <summary>
-            Gets or sets the alignment of the TabStripElement in all DocumentTabStrip instances.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentTabsVisible">
-            <summary>
-            Determines whether the TabStripElement in DocumentTabStrip instances is visible.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ToolTabsVisible">
-            <summary>
-            Determines whether the TabStripElement in ToolTabStrip instances is visible.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.IsInTransactionBlock">
-            <summary>
-            Determines whether the RadDock is currently in a transaction (internal operation).
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockTabStripNeeded">
-            <summary>
-            Raised whenever a new <see cref="T:Telerik.WinControls.UI.Docking.DockTabStrip">DockTabStrip</see> instance is needed internally by the framework.
-            Allows for providing custom <see cref="T:Telerik.WinControls.UI.Docking.ToolTabStrip">ToolTabStrip</see> and <see cref="T:Telerik.WinControls.UI.Docking.DocumentTabStrip">DocumentTabStrip</see> implementations.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.PageViewInstanceCreated">
-            <summary>
-            Fires after RadPageViewElement is created.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SplitContainerNeeded">
-            <summary>
-            Raised whenever a new <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> instance is needed internally by the framework.
-            Allows for providing custom <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> implementation.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionBlockStarted">
-            <summary>
-            Notifies for a successful BeginTransactionBlock operation.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionBlockEnded">
-            <summary>
-            Notifies for a successful EndTransactionBlock operation, when all transactions are committed, the DockTree is cleaned, and updates are resumed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionCommitted">
-            <summary>
-            Raised when a RadDockTransaction is successfully committed.
-            Allows listeners to perform some additional operations.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.TransactionCommitting">
-            <summary>
-            Raised when a RadDockTransaction is about to be committed.
-            Allows listeners to investigate the transaction, perform some additional actions and/or cancel it.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowAdded">
-            <summary>
-            Notifies for a new DockWindow registered with this RadDock instance.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowRemoved">
-            <summary>
-            Notifies for a DockWindow removed from this RadDock instance. This event will not be raised for hidden windows.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowClosing">
-            <summary>
-            Raised before a DockWindow.Close method is called.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowClosed">
-            <summary>
-            Raised after a DockWindow has been closed.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockStateChanging">
-            <summary>
-            Notifies for an upcomming change in the DockState of the associated window. Cancelable.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockStateChanged">
-            <summary>
-            Notifies for a change in the DockState of the associated window.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.ActiveWindowChanging">
-            <summary>
-            Notifies for an upcomming change of the ActiveWindow property. Cancelable.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SelectedTabChanging">
-            <summary>
-            Occurs when selected tab changing in currently manipulated DockTabStrip.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SelectedTabChanged">
-            <summary>
-            Occurs when selected tab changed in currently manipulated DockTabStrip.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.ActiveWindowChanged">
-            <summary>
-            Notifies for an actual change of the ActiveWindow property.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.FloatingWindowCreated">
-            <summary>
-            Notifies that a FloatingWindow instance is internally created by the framework.
-            Allows listeners to examine and optionally change the window itself.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.InnerList">
-            <summary>
-            Gets the internal sorted list, which stores 
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.CommandManager">
-            <summary>
-            Gets the <see cref="T:Telerik.WinControls.UI.Docking.RadDockCommandManager">CommandManager</see> registered with this RadDock instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DocumentManager">
-            <summary>
-            Gets the <see cref="P:Telerik.WinControls.UI.Docking.RadDock.DocumentManager">DocumentManager</see> instance that manages all the DockWindow instances which are parented <see cref="P:Telerik.WinControls.UI.Docking.RadDock.MainDocumentContainer">MainDocumentContainer</see>.
-            For a Document is considered either a DocumentWindow instance or a ToolWindow, which current <see cref="P:Telerik.WinControls.UI.Docking.DockWindow.DockState">DockState</see> is <see cref="F:Telerik.WinControls.UI.Docking.DockState.TabbedDocument">TabbedDocument</see>.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MainDocumentContainer">
-            <summary>
-            Gets or sets the document container for this RadDock instance.
-            This property is used primarily for serialization purposes and is not intended to be used directly by code.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.MainDocumentContainerVisible">
-            <summary>
-            Determines whether the main document container is visible.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DockingGuidesTemplate">
-            <summary>
-            Gets or sets the template, which defines the appearance of the guides displayed upon drag-and-drop operation.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.IsDragging">
-            <summary>
-            Determines whether the DragDropService is currently working (a drag-and-drop operation is running).
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DragDropMode">
-            <summary>
-            Gets or sets the mode used by the DragDropService when a drag-and-drop request is made.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.DragDropAllowedDockStates">
-            <summary>
-            Gets or sets the allowed dock states for a committing drag-and-drop operation.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.TreatTabbedDocumentsAsToolWindows">
-            <summary>
-            Determines whether tabbed documents will have special behavior that differs from a ToolWindow's one.
-            For example if this is true, a tabbed document will be allowed to become floating by a drag-and-drop operation.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.LoadedFromXml">
-            <summary>
-            Notifies that manager's state has been loaded from an external XML source.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.SavedToXml">
-            <summary>
-            Notifies that manager's state has been saved to an external XML source.
-            </summary>
-        </member>
-        <member name="E:Telerik.WinControls.UI.Docking.RadDock.DockWindowSerializing">
-            <summary>
-            Fired when a dock window is being serialized. Allows excluding some windows
-            from serialization.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.XmlSerializationInfo">
-            <summary>
-            Gets the serialization info for RadDock used by Save/Load loyout methods to persist grid settings to/from XML.
-            By default, or when set to null the ComponentXmlSerializationInfo provided by GetDefaultXmlSerializationInfo() will be used.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.GuidToNameMappings">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SerializableAutoHideContainer">
-            <summary>
-            Gets an instance of DockAutoHideSerializationContainer that contains information about auto-hidden windows which have been 
-            set up through designer or xml file. This nethod is no intended for use directly from your code.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.SerializableFloatingWindows">
-            <summary>
-            Gets an instance of FloatingWindowList that contains information about floating windows which have been 
-            set up through designer or xml file. This nethod is no intended for use directly from your code.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ThemeClassName">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.BackColor">
-            <summary>
-            RadDock consists of multiple visual elements and separate settings are provided to customize their appearance.
-            Current BackColor property might be ignored.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ForeColor">
-            <summary>
-            RadDock consists of multiple visual elements and separate settings are provided to customize their appearance.
-            Current ForeColor property might be ignored.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.RadDock.ActiveWindow">
-            <summary>
-            Gets or sets the DockWindow instance, which is currently active (meaning it contains the Keyboard focus).
-            </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.Docking.RadDock.FloatingWindows">
             <summary>
@@ -5627,6 +5184,161 @@
             
             </summary>
         </member>
+        <member name="T:Telerik.WinControls.UI.Docking.ToolTabStrip">
+            <summary>
+            A predefined <see cref="T:Telerik.WinControls.UI.Docking.DockTabStrip">DockTabStrip</see> instance that is used to store ToolWindow instances.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Docking.ToolTabStrip.window">
+            <summary>
+            The root element which describes the layout of this instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.#ctor">
+            <summary>
+            Initializes a default instance of the <see cref="T:Telerik.WinControls.UI.Docking.ToolTabStrip">ToolTabStrip</see> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.#ctor(Telerik.WinControls.UI.Docking.RadDock)">
+            <summary>
+            Initializes a default instance of the <see cref="T:Telerik.WinControls.UI.Docking.ToolTabStrip">ToolTabStrip</see> class and associates it with the provided RadDock instance.
+            </summary>
+            <param name="dockManager"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.CreateChildItems(Telerik.WinControls.RadElement)">
+            <summary>
+            
+            </summary>
+            <param name="parent"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.ControlDefinesThemeForElement(Telerik.WinControls.RadElement)">
+            <summary>
+            Checks whether the <paramref name="element"/>'s theme is defined by the control.
+            </summary>
+            <remarks>
+            If true is returned the ThemeResolutionService would not not set any theme to the element 
+            to avoid duplicating the style settings of the element.
+            </remarks>
+            <param name="element">The element to should be checked.</param>
+            <returns>true if the control defines theme for this element, false otherwise.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.ThemeClassName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.TabPanelBounds">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CaptionElement">
+            <summary>
+            Gets the ToolWindowCaptionElement that appears as titlebar of ToolTabStrip
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CaptionLayoutPanel">
+            <summary>
+            Gets an instance of the <see cref="T:Telerik.WinControls.Layouts.DockLayoutPanel"/>class
+            that represents the layout panel that holds the caption.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CloseButton">
+            <summary>
+            Gets the close RadButtonElement that appears as titlebar of ToolTabStrip
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.ActionMenuButton">
+            <summary>
+            Gets the system menu RadDropDownButtonElement that appears as titlebar of ToolTabStrip
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.AutoHideButton">
+            <summary>
+            Gets the auto-hide RadButtonElement that appears as titlebar of ToolTabStrip
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.AutoHidePosition">
+            <summary>
+            Gets or sets the auto-hide position for the strip.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.DockType">
+            <summary>
+            Returns <see cref="F:Telerik.WinControls.UI.Docking.DockType.ToolWindow">ToolWindow</see> dock type.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.ToolTabStrip.CaptionVisible">
+            <summary>
+            Determines whether the Caption element of the strip is visible.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.UpdateButtons">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.UpdateActiveWindow(Telerik.WinControls.UI.Docking.DockWindow,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="window"></param>
+            <param name="active"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.ShouldHandleDoubleClick">
+            <summary>
+            Determines whether a mouse double-click event should be handled.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.IsDragAllowed(System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="location"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.GetTabStripVisible">
+            <summary>
+            Determines whether the tabstrip element is visible.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.GetAutoHideButtonChecked">
+            <summary>
+            Determines whether the auto-hide button is checked.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.ToolTabStrip.UpdateCaptionText">
+            <summary>
+            Updates the caption text, depending on the currently selected dock window.
+            </summary>
+        </member>
         <member name="T:Telerik.WinControls.UI.Docking.Properties.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -5652,6 +5364,11 @@
             <summary>
             Default constructor used by the VisualStyleBuilder to allow for control's styling.
             Internally mock dock windows are created and displayed in the navigator.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.QuickNavigator.ThemeClassName">
+            <summary>
+            
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.Docking.QuickNavigator.Dispose(System.Boolean)">
@@ -5713,11 +5430,6 @@
         <member name="M:Telerik.WinControls.UI.Docking.QuickNavigator.NavigateDown">
             <summary>
             Moves the current selection downwards.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.UI.Docking.QuickNavigator.ThemeClassName">
-            <summary>
-            
             </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.Docking.QuickNavigatorList">
@@ -5920,6 +5632,204 @@
             update the selected DockWindow's bounds, so that a preview snapshot may be taken.
             </summary>
         </member>
+        <member name="T:Telerik.WinControls.UI.Docking.RadDockService">
+            <summary>
+            Defines base for all services registered with a RadDock instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.#ctor">
+            <summary>
+            Initializes a new <see cref="T:Telerik.WinControls.UI.Docking.RadDockService">RadDockService</see> instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.OnDockManagerChanged">
+            <summary>
+            The service gets notified that its current dock manager has changed.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.OnEnabledChanged">
+            <summary>
+            Notifies for a change in the Enabled state.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.RadDockService.CanOperate">
+            <summary>
+            Determines whether the service is operational and may perform actions.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockService.DockManagerDesignMode">
+            <summary>
+            Determines whether the associated RadDock instance (if any) is in design mode.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockService.DockManager">
+            <summary>
+            Gets the RadDock instance this service is registered with.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.RadDockService.Enabled">
+            <summary>
+            Determines whether the Service is enabled (may be started).
+            If the Service is working and its is disabled, it will end its current operation.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Docking.StateService">
+            <summary>
+            Represents a service that is state-based. E.g. it may start, perform some action and stop.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.Start(System.Object)">
+            <summary>
+            Starts the Service.
+            If the service was previously paused, it should be re-started with the Resume method.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.Stop(System.Boolean)">
+            <summary>
+            Stops currently working or previously stopped service.
+            </summary>
+            <param name="commit">True to indicate that current operation ended successfully, false otherwise.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.Pause">
+            <summary>
+            Pauses a currently running operation.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.Resume">
+            <summary>
+            Resumes previously paused operation.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnEnabledChanged">
+            <summary>
+            Provides additional processing for a change in the Enabled state.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnDockManagerChanged">
+            <summary>
+            Provides additional processing when a change in the owning RadDock instance occurs.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.CanStart(System.Object)">
+            <summary>
+            Determines whether the service may be started.
+            Validation is as follows:
+            1. Check whether Enabled is true.
+            2. Check the context through IsContextValid method. An exception is thrown if context is invalid.
+            3. Checks the current state - it should be Initial or Stopped.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStarted">
+            <summary>
+            Notifies that the service has been successfully started.
+            Allows inheritors to perform some additional logic upon start.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStarting(Telerik.WinControls.UI.Docking.StateServiceStartingEventArgs)">
+            <summary>
+            Notifies that a start request has occured. Cancelable.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStopped">
+            <summary>
+            Notifies that a running operation has stopped.
+            Allows inheritors to perform some additional logic upon stop.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.OnStopping(Telerik.WinControls.UI.Docking.StateServiceStoppingEventArgs)">
+            <summary>
+            Notifies that a stop request has occured. Cancelable.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.IsContextValid(System.Object)">
+            <summary>
+            Evaluates the provided context. Some services may not operate without certain context provided.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformStart">
+            <summary>
+            Performs the core Start logic.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformStop">
+            <summary>
+            Stops the service. Performs the core logic.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.Abort">
+            <summary>
+            Aborts the current operation without applying any changes.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.Commit">
+            <summary>
+            Ends the current operation and applies all changes.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformResume">
+            <summary>
+            Performs the core Resume logic.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.PerformPause">
+            <summary>
+            Performs the core Pause logic.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Docking.StateService.SetContext(System.Object)">
+            <summary>
+            Sets the provided object as the current context.
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.StateService.Context">
+            <summary>
+            Gets the context associated with the current operation.
+            This member is valid only while the Service is started or paused.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.StateService.Starting">
+            <summary>
+            Raised when the service is about to be started.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.StateService.Started">
+            <summary>
+            Raised right after the service is started.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.StateService.Stopping">
+            <summary>
+            Raised when the service is about to be stopped.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Docking.StateService.Stopped">
+            <summary>
+            Raised when the service is stopped.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.StateService.AvailableAtDesignTime">
+            <summary>
+            Determines whether the service is available at design-time. False by default.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Docking.StateService.State">
+            <summary>
+            Gets the current state of the service.
+            </summary>
+        </member>
         <member name="T:Telerik.WinControls.UI.Docking.XmlDockable">
             <exclude/>
         </member>
@@ -6021,6 +5931,96 @@
         <member name="P:Telerik.WinControls.UI.Docking.StateServiceStoppingEventArgs.Commit">
             <summary>
             Gets or sets the Commit parameter of the Stop request.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.RadDockEvents">
+            <summary>
+            Provides static events for RadDock instances for cases where subscribing to the event
+            cannot happen before they actually need to fire.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadDockEvents.PageViewInstanceCreated">
+            <summary>
+            Fires after RadPageViewElement is created.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadDockEvents.TabStripItemCreating">
+            <summary>
+            Fired when a new <see cref="T:Telerik.WinControls.UI.TabStripItem"/> is being created. Allows for replacing the tab items with custom ones.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadDockEvents.SplitContainerNeeded">
+            <summary>
+            Raised whenever a new <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> instance is needed internally by the framework.
+            Allows for providing custom <see cref="T:Telerik.WinControls.UI.RadSplitContainer">RadSplitContainer</see> implementation.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.TabStripItemCreatingEventArgs">
+            <summary>
+            Provides event arguments for the <see cref="E:Telerik.WinControls.UI.RadDockEvents.TabStripItemCreating"/> event.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.TabStripItemCreatingEventArgs.TabItem">
+            <summary>
+            Gets or sets the instance that is going to be used.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.TabStripItemCreatingEventArgs.Window">
+            <summary>
+            The window associated with the tab item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.TabStripItemCreatingEventArgs.AutoHide">
+            <summary>
+            [true] if the tab item is going to be used in the auto-hide tab strip, [false] otherwise.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.OverflowDropDownButtonElement">
+            <summary>
+            Represents a drop-down button element with support for an additional overflow image.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowImageProperty">
+            <summary>
+            A property to specify an additional image to be displayed when <see cref="P:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowMode">OverflowMode</see> is true.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowModeProperty">
+            <summary>
+            A property to determine whether a <see cref="T:Telerik.WinControls.UI.OverflowDropDownButtonElement">OverflowDropDownButtonElement</see> instance is currently in overflow mode.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowImage">
+            <summary>
+             Gets or sets the overflow image that is displayed on a button element.
+             </summary>		
+        </member>
+        <member name="P:Telerik.WinControls.UI.OverflowDropDownButtonElement.OverflowMode">
+            <summary>
+            Gets or sets the drop down button is in overflow mode
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.OverflowDropDownButtonElement.OnPropertyChanged(Telerik.WinControls.RadPropertyChangedEventArgs)">
+            <summary>
+            Provides additional logic for synchronizing the overflow image.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Localization.RadDockLocalizationProvider">
+            <summary>
+            Provides localization services for RadDock
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Localization.RadDockLocalizationProvider.GetLocalizedString(System.String)">
+            <summary>
+            Gets the string corresponding to the given ID.
+            </summary>
+            <param name="id">String ID</param>
+            <returns>The string corresponding to the given ID.</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Localization.RadDockStringId">
+            <summary>
+            Contains the predefined Ids to be used by the Localization Provider.
             </summary>
         </member>
     </members>

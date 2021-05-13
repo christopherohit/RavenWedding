@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--QuickStart.xml Conventions - Follow them or things will break!
+
+***** Defining control with examples *****
+1. Create a parent <control> tag with the following attributes
+   -> text: The text which will be displayed in the ListView on the left, does not matter what it will be but can be used as a parent of other examples, see below
+   -> ImageName: The name of the image which will be displayed in the ListView and in the header of each example. Images are located in QuickStart -> Resources -> ControlsListImages as Embeded Resources
+   
+2. For each example create an <example> tag with the following properties
+   -> name: Usually in the format "Control/Example". All the examples should be with the same control. A valid example:
+   <control text="Buttons" ImageName="Button.png">
+    <example path="Buttons/Button" text="Button" row="0" column="0"/>
+    <example path="Buttons/CheckBoxes" text="Check Box" row="1" column="0"/>
+   </control>
+   
+   Sometimes you would want to reuse an example. E.g. an example can be defined in RadGanttView and RadScheduler can reuse it:
+   <control text="GanttView" ImageName="GanttView.png">
+    <example path="GanttView/SchedulerIntegration" text="Scheduler Integration" row="2" column="0" colspan="2">
+      <tileImage>gantt-scheduler-integration</tileImage>
+    </example>
+   </control>
+   
+   <control text="Scheduler" ImageName="Scheduler.png">
+    <example path="GanttView/SchedulerIntegration" text="GanttView Integration" row="0" column="7" colspan="2"/>
+   </control>
+   
+   In this case the example the example will be loaded from RadGanttView, however in order to allow the navigation between examples to work the example must know in which control it currently is.
+   The ControlName attribute should be used in this case:
+   <control text="Scheduler" ImageName="Scheduler.png">
+    <example path="GanttView/SchedulerIntegration" text="GanttView Integration" row="0" column="7" colspan="2" ControlName="Scheduler"/>
+   </control>
+   
+   NOTE: The ControlName property can be used no matter if the example is reused. It can be used for backwards compatibility where the Control is not properly defined in the name attribute.
+   
+   -> The "Home" page contains some standalone examples. These examples are like the other examples, however they have no parent control. Such example is the "Bubble bar".
+      It also conflicts with the first example of the "Panorama" control and the navigation will be confused. In this case you must explicitly specify that this example has no parent control
+      by setting the ControlName attribute to an empty string.
+   
+3. Examples can have images for their tiles. The images are located in the folder of the example and can be defined as follows:
+    <example path="GanttView/SchedulerIntegration" text="Scheduler Integration" row="2" column="0" colspan="2">
+      <tileImage>gantt-scheduler-integration</tileImage>
+    </example>
+    
+   Adding multiple <tileImage> tags will change the images with an animation
+   
+4. Examples can have a category which will be displayed as a group in RadPanorama. Each category can contain multiple examples and can have a text.
+   The text must be unique within the control since it is used to distinguish examples with the same text.
+   <control text="ChartView" ImageName="Chart.png" updated="true">
+    <category text="Chart Types" update="true">
+      <example path="ChartView/ChartTypes/Bar" text="Bar" row="0" column="0"/>
+      <example path="ChartView/ChartTypes/LineAndArea" text="Line, Stepline &amp; Area" row="1" column="0"/>
+    </category>
+   </control>
+   
+5. How to directly navigate to an example from the HomeScreen(set the name attribute to the exact path of the form):
+      <example type="control" path="GridView/Export/ExportWithDpl" text="Export with DPL" row="1" column="2" CodeFilesPath ="..\..\ExamplesProjects\ExportWithDpl\GridView\" >
+        <tileImage>grid-spreadexport</tileImage>
+      </example>
+6. When an example(control) is listed in all controls screen or highlighted and you want to
+directly open the corresponding example set the SkipControlScreen attribute of the node to true.
+-->
+
+<examples Type="controls" Title="Telerik® UI for Winforms">
+
+  <special text="NewAndHighlightedExamples">
+    <category text="New">
+      <!--  <example type="control" controlPath="FileDialogs" path="FileDialogs/FirstLook" text="File Dialogs" row="0" column="0" rowspan="2" colspan="2" new="true" >
+        <tileImage>filedialogs-01</tileImage>
+        <tileImage>filedialogs-02</tileImage>
+      </example>
+    </category>
+
+    <category text="New">
+      <example type="control" controlPath="Editors/DomainUpDown" path="Editors/DomainUpDown" text="DomainUpDown" row="0" column="2" colspan="2" new="true" >
+        <tileImage>domainupdown-01</tileImage>
+        <tileImage>domainupdown-02</tileImage>      </example>
+    </category>-->
+      <!--<category text="New">
+      <example  type="control" controlPath="Forms/TaskDialog" path="Forms/TaskDialog/FirstLook" text ="TaskDialog" row="0" column="0" rowspan="2" colspan="2" new="true">
+        <tileImage>task-dialog-first-look</tileImage>
+      </example>-->
+
+      <example  type="control" controlPath="PictureBoxExamples" path="PictureBoxExamples/FirstLook" text="Picture Box" ControlName="Picture Box" row="0" column="0" rowspan="2" colspan="2" new="true">
+        <tileImage>picture-box-big</tileImage>
+      </example>
+
+      <example type="control" controlPath="ToastNotificationManager" path="ToastNotificationManager/FirstLook" SkipControlScreen="true" text="Toast Notification" row="0" column="2" rowspan="2" colspan="2" new="true">
+        <tileImage>toast-notification-big</tileImage>
+      </example>
+    </category>
+
+    <category text="Highlighted">
+
+      <example type="control" path="Barcode" text="Barcode" row="0" column="0" updated="true">
+        <tileImage>barcode-1</tileImage>
+        <tileImage>barcode-2</tileImage>
+      </example>
+
+      <example type="control" path="PdfViewer/FirstLook" text="PDF Viewer" row="1" column="0" updated="true">
+        <tileImage>pdfviewer-first-look</tileImage>
+      </example>
+
+      <example type="control" path="Forms/TaskDialog/FirstLook" text="Task Dialog" row="0" column="1" >
+        <tileImage>task-dialog-first-look</tileImage>
+      </example>
+
+      <example type="control" path="VirtualKeyboard" text="Virtual Keyboard" row="1" column="1" >
+        <tileImage>virtual-keyboard</tileImage>
+      </example>
+
+      <example type="control" path="Editors/ValidationProvider" text ="Validation Provider" row="1" column="2">
+        <tileImage>validation-provider-small</tileImage>
+      </example>
+
+      <example type="control" path="SyntaxEditor" text="Syntax Editor" row="0" column="2" >
+        <tileImage>syntax-editor-1</tileImage>
+        <tileImage>syntax-editor-2</tileImage>
+      </example>
+
+      <example type="control" path="Chat" text="Conversational UI" ControlName="Conversational UI" row="1" column="3" >
+        <tileImage>chat</tileImage>
+      </example>
+
+      <example type="control" path="Sparkline" text="Sparkline" row="0" column="3" >
+        <tileImage>sparkline</tileImage>
+      </example>
+
+      <example type="control" path="Forms/TabbedForm/FirstLook" text="Tabbed Form" row="1" column="4" >
+        <tileImage>tabbed-form-first-look</tileImage>
+      </example>
+
+      <example type="control" path="Tools/SvgImages" text="SVG Images" row="0" column="4" >
+        <tileImage>svg-images</tileImage>
+      </example>
+
+      <example type="control" path="FileDialogs" text="File Dialogs" row="1" column="5" >
+        <tileImage>file-dialogs</tileImage>
+      </example>
+
+      <example type="control" path="GridView" text="Grid View" row="0" column="5" >
+        <tileImage>grid-1</tileImage>
+        <tileImage>grid-2</tileImage>
+        <tileImage>grid-3</tileImage>
+      </example>
+
+      <example type="control" path="ChartView" text="Chart View" row="0" column="6" >
+        <tileImage>chart-1</tileImage>
+        <tileImage>chart-2</tileImage>
+        <tileImage>chart-3</tileImage>
+      </example>
+
+      <example type="control" path="Diagram" text="Diagram" row="1" column="6"  >
+        <tileImage>diagram</tileImage>
+      </example>
+
+      <example type="control" path="RichTextEditor" text="Rich Text Editor" row="0" column="7" >
+        <tileImage>rich-text-editor</tileImage>
+      </example>
+
+      <!--<example type="control" path="Map" text="Map" row="1" column="7" >
+        <tileImage>map-1</tileImage>
+        <tileImage>map-2</tileImage>
+        <tileImage>map-3</tileImage>
+      </example>-->
+
+      <example type="control" path="Scheduler/FirstLook" text="Scheduler" row="1" column="7" updated ="true">
+        <tileImage>scheduler-first-look-1</tileImage>
+        <tileImage>scheduler-first-look-2</tileImage>
+        <tileImage>scheduler-first-look-3</tileImage>
+      </example>
+
+    </category>
+  </special>
+
+
+  <special text="FeaturedExamples">
+    <category text="Featured">
+
+      <example type="product" path="Tools/ThemeViewer" text="Theme Viewer" row="0" column="0" colspan="2" new="true">
+        <tileImage>theme-viewer</tileImage>
+      </example>
+
+      <example type="product" path="Tools/VisualStyleBuilder" text="Visual Style Builder" row="1" column="0" colspan="2">
+        <tileImage>visual-style-builder</tileImage>
+      </example>
+
+      <example path="Integration/HotelApp" text="Hotel App" row="0" column="0" rowspan="1" colspan="2" ControlName="">
+        <titleImage>hotel-app</titleImage>
+      </example>
+
+      <example path="Integration/ERP" text="ERP" row="1" column="0" colspan="2" ControlName="">
+        <titleImage>erp</titleImage>
+      </example>
+
+      <example path="Integration/MedicalApp" text="Medical App" row="2" column="0" rowspan="1" colspan="2" ControlName="" >
+        <titleImage>medical-app</titleImage>
+      </example>
+
+      <example path="Integration/DemoHub" text="Demo Apps Hub" row="0" column="2" ControlName="Panorama">
+        <tileImage>demo-hub</tileImage>
+      </example>
+
+      <example path="Integration/BookShelf" text="Bookshelf" row="1" column="2" ControlName="">
+        <tileImage>bookshelf</tileImage>
+      </example>
+
+      <example path="Integration/RssReader" text="RSS Reader" row="2" column="2" ControlName="">
+        <tileImage>rss-reader</tileImage>
+      </example>
+
+      <example path="Integration/PhotoAlbum" text="Photo Album" row="1" column="3" ControlName="">
+        <tileImage>photo-album</tileImage>
+      </example>
+
+      <example path="Integration/BugTracker" text="Bug Tracker" row="1" column="4" ControlName="">
+        <tileImage>bug-tracker</tileImage>
+      </example>
+
+      <example path="Integration/FileExplorer" text="File Explorer" row="2" column="4" ControlName="">
+        <tileImage>file-explorer</tileImage>
+      </example>
+    </category>
+  </special>
+
+
+  <!--END SPECIAL HOME-->
+
+
+  <control text="Barcode" ImageName="Barcode.png" ControlCategory="Data Visualization" updated="true">
+    <example path="Barcode/FirstLook" text="First Look" row="0" column ="0" rowspan="2" colspan="2" >
+      <tileImage>barcode-first-look</tileImage>
+    </example>
+    <example path="Barcode/PDF417" text="Pdf 417" row="2" column="0" />
+    <example path="Barcode/QrSettings" text="QR Settings" row="2" column="1" />
+    <example path="Barcode/Barcodes1D" text="1D Barcodes" row="0" column="2" />
+    <example path="Barcode/DataMatrix" text="Data Matrix" row="1" column="2" new ="true"/>
+  </control>
+
+
+  <example path="Breadcrumb/FirstLook" text="Breadcrumb" SkipControlScreen="true" ControlCategory="Interactivity &amp; UX" />
+
+
+  <control text="Browse Editor" path="Editors/BrowseEditor" ControlCategory="Editors" >
+    <example path="Editors/BrowseEditor/FirstLook" text="First Look" row="0" column="0" rowspan ="2" colspan="2" >
+      <tileImage>browse-editor-first-look</tileImage>
+    </example>
+    <example path="Editors/BrowseEditor/Settings" text ="Settings" row="2" column="0" colspan="2" />
+  </control>
+
+
+  <control text="Buttons" ImageName="Button.png" ControlCategory="Interactivity &amp; UX" >
+    <example path="Buttons/Button" text="Button" row="0" column="0"/>
+    <example path="Buttons/CheckBoxes" text="Check Box" row="1" column="0"/>
+    <example path="Buttons/DropDownButton" text="DropDown Button" row="2" column="0"/>
+    <example path="Buttons/RadioButtons" text="Radio Button" row="0" column="1" colspan="2" rowspan="2">
+      <tileImage>buttons-radio-buttons</tileImage>
+    </example>
+    <example path="Buttons/SplitButton" text="Split Button" row="2" column="1"/>
+    <example path="Buttons/ToggleButton" text="Toggle Button" row="2" column="2"/>
+    <example path="Buttons/RepeatButton" text="Repeat Button" row="0" column="3"/>
+    <example path="Buttons/ToggleSwitch" text="ToggleSwitch Button" row="1" column="3" />
+  </control>
+
+
+  <control text="Calendar" ImageName="Calendar.png" ControlCategory="Scheduling">
+    <example path="Calendar/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>calendar-first-look</tileImage>
+    </example>
+    <example path="Calendar/ElementRenderEvent" text="ElementRender Event" row="2" column="0"/>
+    <example path="Calendar/Events" text="Events" row="2" column="1"/>
+    <example path="Calendar/SingleMonthView" text="SingleMonth View" row="0" column="2"/>
+    <example path="Calendar/LayoutCustomization" text="Layout customization" row="1" column="2"/>
+    <example path="Calendar/Globalization" text="Globalization" row="2" column="2"/>
+    <example path="Calendar/ReadOnlyView" text="Read Only View" row="0" column="3"/>
+    <example path="Calendar/Navigation" text="Navigation" row="1" column="3" colspan="2" >
+      <tileImage>calendar-navigation</tileImage>
+    </example>
+    <example path="Calendar/MultiMonthView" text ="MultiMonth View" row="2" column="3"/>
+    <example path="Calendar/SpecialDays" text="Special days" row="0" column="4"/>
+    <example path="Calendar/Selection" text="Selection" row="2" column="4"/>
+  </control>
+
+
+  <control text="Card View" ImageName="CardView.png" ControlCategory="Data Management" >
+    <example path="CardView/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>cardview-first-look</tileImage>
+    </example>
+    <example path="CardView/Settings" text="Settings" row ="2" column="0" ></example>
+    <example path="CardView/CustomItems" text="Custom Items" row="2" column="1" ></example>
+  </control>
+
+
+  <control text="Carousel" ImageName="Carousel.png" ControlCategory="Interactivity &amp; UX" >
+    <example path="Carousel/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>carousel-first-look</tileImage>
+    </example>
+    <example path="Carousel/Events" text="Events" row="2" column="0"/>
+    <example path="Carousel/CarouselSettings" text="Carousel Settings" row="2" column="1"/>
+  </control>
+
+
+  <control text="Chart View" ImageName="Chart.png" ControlCategory="Data Visualization">
+    <example path="ChartView/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>chartview-first-look</tileImage>
+    </example>
+
+    <example path="ChartView/Appearance" text="Appearance" row="2" column="0" rowspan="1" colspan="2">
+      <tileImage>chartview-appearance</tileImage>
+    </example>
+
+    <example path="ChartView/LabelFormatting" text="Label Formatting" row="0" column="2" rowspan="1" colspan="2">
+      <tileImage>chart-label-formatting</tileImage>
+    </example>
+
+    <example path="ChartView/LiveData" text="Live Data" row="0" column="5" />
+
+    <example path="ChartView/Printing" text="Printing &amp; Export" row="1" column="2" />
+
+    <example path="ChartView/MultiAxes" text="Multi-axes" row="2" column="2" rowspan="1" colspan="2">
+      <tileImage>chart-multi-axes</tileImage>
+    </example>
+
+    <example path="ChartView/SmartLabels" text="Smart labels" row="1" column="3" rowspan="1" colspan="2">
+      <tileImage>chart-smart-labels</tileImage>
+    </example>
+
+    <example path="ChartView/TitleAndLegend" text="Title and Legend" row="0" column="4" />
+
+    <example path="ChartView/DrillDown" text="Drill-down" row="2" column="4" />
+
+    <example path="ChartView/NullValues" text="Null Values support" row="2" column="5" />
+
+    <example path="ChartView/InverseAxes" text="Inverse Axes" row="1" column="5" />
+
+    <example path="ChartView/RadarAnnotations" text="Radar Annotations" row="0" column="6" />
+
+    <example path="ChartView/CartesianAnnotations" text="Cartesian Annotations" row="1" column="6" />
+
+    <example path="ChartView/ScaleBreaks" text="Scale Breaks" row="2" column="6" />
+
+    <category text="Chart Types" >
+      <example path="ChartView/ChartTypes/Bar" text="Bar" row="0" column="0"/>
+
+      <example path="ChartView/ChartTypes/LineAndArea" text="Line, Stepline &amp; Area" row="1" column="0"/>
+
+      <example path="ChartView/ChartTypes/Spline" text="Spline &amp; Spline Area" row="2" column="0"/>
+
+      <example path="ChartView/ChartTypes/Scatter" text="Scatter" row="0" column="1" />
+
+      <example path="ChartView/ChartTypes/Pie" text="Pie" row="1" column="1" />
+
+      <example path="ChartView/ChartTypes/Radar" text="Radar" row="0" column="2"/>
+
+      <example path="ChartView/ChartTypes/StockSeries" text="Stock Series \ Indicators" row="2" column="1" rowspan="1" colspan="2" >
+        <tileImage>chart-stock-series-indicators</tileImage>
+      </example>
+
+      <example path="ChartView/ChartTypes/Polar" text="Polar" row="1" column="2"/>
+
+      <example path="ChartView/ChartTypes/Bezier" text="Bezier" row="0" column="3" />
+
+      <example path="ChartView/ChartTypes/Bubble" text="Bubble" row="1" column="3" />
+
+      <example path="ChartView/ChartTypes/Range" text="Range" row="2" column="3" />
+
+      <example path="ChartView/ChartTypes/Funnel" text="Funnel" row="0" column="4" />
+
+      <example path="ChartView/ChartTypes/Waterfall" text="Waterfall" row="1" column="4" />
+
+      <example path="ChartView/ChartTypes/RadarColumn" text="RadarColumn" row="2" column="4" />
+    </category>
+  </control>
+
+
+  <example path="CheckedListBox/FirstLook" text="Checked ListBox" SkipControlScreen="true" ControlCategory="Data Management" />
+
+
+  <control text="Conversational UI" ImageName="Chat.png" ControlCategory="Interactivity &amp; UX">
+    <example path="Chat/FirstLook" text="Travel Assistance" row="0" column="0" rowspan="2" colspan="2" CodeFilesPath ="..\..\ExamplesProjects\RadChatExamples\FirstLook\">
+      <tileImage>chat-travel-assistance-1</tileImage>
+      <tileImage>chat-travel-assistance-2</tileImage>
+    </example>
+    <example path="Chat/CarInsurance" text="Insurance Assistance" row="1" column="2" rowspan="2" colspan="2" CodeFilesPath ="..\..\ExamplesProjects\RadChatExamples\CarInsurance\">
+      <tileImage>chat-insurance-assistant</tileImage>
+    </example>
+    <example path="Chat/Healthcare" text="HealthCare Assistance" row="0" column="2" colspan="2" CodeFilesPath ="..\..\ExamplesProjects\RadChatExamples\Healthcare\">
+    </example>
+    <example path="Chat/Settings" text="Settings" row="2" column="0" colspan="2">
+    </example>
+  </control>
+
+
+  <control text="Command Bar" ImageName="CommandBar.png" ControlCategory="Navigation">
+    <example path="CommandBar/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>command-bar-first-look</tileImage>
+    </example>
+    <example path="CommandBar/TextPad" text="Text Pad" row="2" column="0" colspan="2">
+      <tileImage>command-bar-textpad</tileImage>
+    </example>
+  </control>
+
+
+  <control text="Data Entry" ImageName="DataEntry.png" ControlCategory="Data Visualization">
+    <example path="DataEntry/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>data-entry-first-look</tileImage>
+    </example>
+    <example path="DataEntry/Validation" text="Validation" row="2" column="0" />
+    <example path="DataEntry/Customization" text="Customization" row="2" column="1" />
+  </control>
+
+
+  <control text="Data Filter" ImageName="DataFilter.png" ControlCategory="Data Management" >
+    <example path="DataFilter/FirstLook" text="First Look" row="0" column ="0" rowspan="2" colspan="2">
+      <tileImage>data-filter-first-look</tileImage>
+    </example>
+    <example path="DataFilter/VirtualGrid" text="Filtering Virtual Grid" row="0" column ="2" />
+    <example path="DataFilter/Settings" text="Settings" row="1" column ="2" />
+  </control>
+
+
+  <example path="DataLayout/FirstLook" text="Data Layout" SkipControlScreen="true" ControlCategory="Data Visualization" />
+
+
+  <control text="Desktop Alert" ImageName="DesktopAlert.png" ControlCategory="Forms &amp; Dialogs" >
+    <example path="DesktopAlert/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>desktop-alert-first-look</tileImage>
+    </example>
+    <example path="DesktopAlert/Settings" text="Settings" row="2" column="0" />
+  </control>
+
+
+  <control text="Diagram" ImageName="Diagram.png" ControlCategory="Data Visualization"  >
+    <example path="Diagram/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" ControlName="Diagram" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook\"  >
+      <tileImage>diagram-first-look</tileImage>
+    </example>
+
+    <example path="Diagram/Routing" text="Connections Routing" SourceFilesPath="..\Diagram\Routing" row="0" column="2" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook" />
+
+    <example path="Diagram/CycleDiagram" text="Cycle Diagram" SourceFilesPath="..\Diagram\Routing" row="0" column="4" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook" >
+      <tileImage>cycle-diagram</tileImage>
+    </example>
+
+    <example path="Diagram/LinearProcess" text="Linear Process" SourceFilesPath="..\Diagram\LinearProcess" row="1" column="4" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook" />
+
+    <example path="Diagram/Gap" text="Connections Gap" SourceFilesPath="..\Diagram\Gap" row="1" column="2" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook" />
+
+    <example path="Diagram/Databinding" text="Data Binding" SourceFilesPath="..\Diagram\Databinding" row="0" column="3" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook" />
+
+    <example path="Diagram/OrgChart" text="Organization Chart" SourceFilesPath="..\Diagram\OrgChart" row="1" column="3" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook" >
+      <tileImage>diagram-orgchart</tileImage>
+    </example>
+
+    <example path="Diagram/FloorPlan" text="Floor Plan" SourceFilesPath="..\Diagram\FloorPlan" row="0" column="5" CodeFilesPath ="..\..\ExamplesProjects\Diagram\DiagramFirstLook" />
+
+  </control>
+
+
+  <control text="Dock" ImageName="Dock.png" ControlCategory="Layout" >
+    <example path="Docking/DragDropAutomation" text="DragDrop Automation" row="0" column="0"/>
+    <example path="Docking/TabStripProperties" text="TabStrip Properties" row="1" column="0" />
+    <example path="Docking/AutoHide" text="Auto Hide" row="2" column="0" />
+    <example path="Docking/Serialization" text="Serialization" row="0" column="1" colspan="2" >
+      <tileImage>dock-serialization</tileImage>
+    </example>
+    <example path="Docking/Programming" text="Programming" row="1" column="1"/>
+    <example path="Docking/TabbedDocument" text="Tabbed Document" row="2" column="1" colspan="2" >
+      <tileImage>dock-tabbed-document</tileImage>
+    </example>
+    <example path="Docking/DragDrop" text="DragDrop Service" row="1" column="2" />
+    <example path="Docking/CommandManager" text="Command Manager" row="0" column="3"/>
+    <example path="Docking/VisualStudioIDE" text="Visual Studio IDE" row="1" column="3" />
+    <example path="Docking/DocumentManager" text="Document Manager" row="2" column="3"/>
+    <example path="Docking/MDI" text="MDI" row="0" column="4"/>
+  </control>
+
+
+  <control text="Drop Down List" path="DropDownListAndListControl" ImageName="DropDownAndList.png" ControlCategory="Editors" >
+    <example path="DropDownListAndListControl/Performance" text="Performance" row="0" column="0" />
+    <example path="DropDownListAndListControl/CreatingNewItems" text="Creating New Items" row="1" column="0"/>
+    <example path="DropDownListAndListControl/ItemFormatting" text="Item Formatting" row="2" column="0" rowspan="2" colspan="2">
+      <tileImage>drop-down-list-item-formatting</tileImage>
+    </example>
+    <category text="DropDownList" >
+      <example path="DropDownListAndListControl/DropDownList/FirstLook" text="First Look" row="0" column="0"/>
+      <example path="DropDownListAndListControl/DropDownList/AutoComplete" text="Auto complete" row="0" column="1" rowspan="1" colspan="2">
+        <tileImage>drop-down-list-auto-complete</tileImage>
+      </example>
+      <example path="DropDownListAndListControl/DropDownList/Sorting" text="Sorting" row="1" column="0"/>
+      <example path="DropDownListAndListControl/DropDownList/DropDownAnimation" text="DropDown Animation" row="1" column="1"/>
+      <example path="DropDownListAndListControl/DropDownList/DropDownResizing" text="DropDown Resizing" row="2" column="0">
+        <tileImage>drop-down-list-resizing</tileImage>
+      </example>
+      <example path="DropDownListAndListControl/DropDownList/Events" text="Events" row="2" column="1"/>
+      <example path="DropDownListAndListControl/DropDownList/Binding" text="Data Binding" row="1" column="2"/>
+    </category>
+  </control>
+
+
+  <example path="DropDownListAndListControl/CheckedDropDownList" text ="Checked Drop Down List" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <example path="DropDownListAndListControl/PopupEditor" text ="Popup Editor" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <example path="DropDownListAndListControl/FontDropDownList" text ="Font Drop Down List" SkipControlScreen="true" ControlCategory="Editors" />
+
+  <example path="Editors/MaskedEditBox" text ="Masked Edit Box" SkipControlScreen="true" ControlCategory="Data Management" />
+
+  <control text="List Control" ControlCategory="Data Management" path="ListControl">
+    <example path="DropDownListAndListControl/Performance" text="Performance" ControlName="List Control" row="0" column="0" />
+    <example path="DropDownListAndListControl/CreatingNewItems" text="Creating New Items" ControlName="List Control" row="1" column="0"/>
+    <example path="DropDownListAndListControl/ItemFormatting" text="Item Formatting" ControlName="List Control" row="2" column="0" rowspan="2" colspan="2"/>
+
+    <category text="List Control" >
+      <example path="ListControl/DragAndDrop" text="Drag &amp; Drop" row="0" column="0" rowspan="2" colspan="2" />
+      <example path="ListControl/DataBinding" text="Data Binding" row="0" column="2"/>
+      <example path="ListControl/Settings" text="Settings" row="1" column="2" />
+    </category>
+  </control>
+
+
+  <example path="Editors/TextBox" text="Text Box" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <example path="Editors/TextBoxControl" text="Text Box Control" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <example path="Editors/SpellChecker" text="Spell Checker" SkipControlScreen="true" CodeFilesPath ="..\..\ExamplesProjects\SpellCheckAsYouType\" ControlCategory="Document Management" />
+
+
+  <example path="Editors/SpinEditor" text="Spin Editor" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <example path="Editors/AutoCompleteBox" text="Auto Complete Box" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <example path="Editors/TimePicker" text="Time Picker" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <control text="Date Time Picker" path="Editors/DateTimePicker" ControlCategory="Editors">
+    <example path="Editors/DateTimePicker/FirstLook" text="DateTime Picker" row="0" column="0" />
+    <example path="Editors/DateTimePicker/FreeFormatDateInput" text ="Free Format Date Input" row="1" column="0"  />
+  </control>
+
+
+  <example path="Editors/CalculatorDropDown" text="Calculator Drop Down" SkipControlScreen="true" ControlCategory="Interactivity &amp; UX" />
+
+
+  <example path="Editors/ButtonTextBox" text ="Button Text Box" SkipControlScreen="true" ControlCategory="Editors" />
+
+
+  <example path="Editors/DomainUpDown" text ="Domain UpDown" SkipControlScreen="true" ControlCategory="Editors" />
+
+  <example path="Editors/ValidationProvider" text ="Validation Provider" SkipControlScreen="true" ControlCategory="Editors">
+    <tileImage>validation-provider-big</tileImage>
+  </example>
+
+  <control text="TimeSpan Picker" path="Editors/TimeSpanPicker" ControlCategory="Editors">
+    <example path="Editors/TimeSpanPicker/FirstLook" text ="First Look" row="0" column="0" />
+    <example path="Editors/TimeSpanPicker/Settings" text ="Settings" row="1" column="0" />
+  </control>
+
+
+  <control text="File Dialogs" ControlCategory="Forms &amp; Dialogs" >
+    <example path="FileDialogs/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>filedialogs-01</tileImage>
+      <tileImage>filedialogs-02</tileImage>
+    </example>
+    <example path="FileDialogs/FileExplorer" text="File Explorer" row="0" column="2"/>
+    <example path="FileDialogs/Theming" text="Theming" row="1" column="2"/>
+  </control>
+
+
+  <control text="Form" ImageName="Form.png" ControlCategory="Forms &amp; Dialogs">
+    <example path="Forms/FormTitleBarStatusStrip" text="Form, TitleBar, StatusStrip" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>forms-first-look</tileImage>
+    </example>
+    <example path="Forms/MDIMenuMerge" text="MDI &amp; Menu Merge" row="2" column="0"/>
+  </control>
+
+
+  <example path="Forms/ShapedForm" text="Shaped Form" SkipControlScreen="true" ControlCategory="Forms &amp; Dialogs" />
+
+
+  <example path="Forms/MessageBox" text="Message Box" SkipControlScreen="true" ControlCategory="Forms &amp; Dialogs" />
+
+
+  <example path="Forms/StatusStrip" text="Status Strip" SkipControlScreen="true" ControlCategory="Forms &amp; Dialogs" />
+
+
+  <example path="Forms/ColorSelector" text="Color Dialog" SkipControlScreen="true" ControlCategory="Forms &amp; Dialogs" />
+
+
+  <example path="Forms/AboutBox" text="About Box" SkipControlScreen="true" ControlCategory="Forms &amp; Dialogs" />
+
+
+  <control text="Tabbed Form" path="Forms/TabbedForm" ControlCategory="Forms &amp; Dialogs">
+    <example path="Forms/TabbedForm/FirstLook" text ="First Look" row="0" column="0" >
+      <tileImage>tabbed-form-first-look</tileImage>
+    </example>
+    <example path="Forms/TabbedForm/Settings" text ="Settings" row="1" column="0" />
+  </control>
+
+  <control text="Task Dialog" path="Forms/TaskDialog" ControlCategory="Forms &amp; Dialogs" >
+    <example path="Forms/TaskDialog/FirstLook" text ="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>task-dialog-first-look</tileImage>
+    </example>
+    <example path="Forms/TaskDialog/Settings" text ="Settings" row="0" column="2" />
+  </control>
+
+
+  <control text="Gantt View" ImageName="GanttView.png" ControlCategory="Scheduling" >
+    <example path="GanttView/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>ganttview-first-look</tileImage>
+    </example>
+    <example path="GanttView/SchedulerIntegration" text="Scheduler Integration" row="2" column="0" colspan="2">
+      <tileImage>gantt-scheduler-integration</tileImage>
+    </example>
+    <example path="GanttView/Settings" text="Settings" row="0" column="2"/>
+    <example path="GanttView/MSProjectImport" text="MS Project Import" row="1" column="2"/>
+    <example path="GanttView/CustomPainting" text="Custom Painting" row="2" column="2"/>
+    <example path="GanttView/CustomTimeline" text="Custom Timeline" row="0" column="3" />
+    <example path="GanttView/AutomaticTimeline" text="Automatic Timeline" row="1" column="3" />
+    <example path="GanttView/Printing" text="Printing" row="2" column="3"/>
+  </control>
+
+
+  <control text ="Gauges" ImageName="Gauges.png" ControlCategory="Data Visualization" >
+    <example path="Gauges/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>gauges-first-look</tileImage>
+    </example>
+    <example path="Gauges/Gallery" text="Gauge Gallery" row="2" column="0" >
+      <tileImage>gauge-gallery-1</tileImage>
+      <tileImage>gauge-gallery-2</tileImage>
+    </example>
+    <example path="Gauges/Settings" text="Gauge Settings" row="2" column="1" />
+    <example path="Gauges/Weather" text="Weather" row="0" column="2" />
+    <example path="Gauges/LinearGallery" text="Linear Gauge Gallery" row="1" column="2" />
+  </control>
+
+
+  <control text="Grid View" ImageName="GridView.png" ControlCategory="Data Management" >
+    <example path="GridView/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>grid-first-look</tileImage>
+    </example>
+    <example path="GridView/Events" text="Events" row="2" column="0"/>
+    <example path="GridView/Spreadsheet" text="Spreadsheet" row="2" column="1" rowspan="1" colspan="2">
+      <tileImage>grid-spreadsheet</tileImage>
+    </example>
+    <example path="GridView/SplitView" text="Split View" row="1" column="2"/>
+    <example path="GridView/PinnedItems" text="Pinned Items" row="0" column="2" />
+    <example path="GridView/CustomViews" text="Custom Views" row="0" column="3" />
+    <example path="GridView/Printing" text="Printing" row="1" column="3"/>
+
+    <category text="Performance" >
+      <example path="GridView/Performance/HighRefresh" text="High Refresh" row="0" column="0" />
+      <example path="GridView/Performance/Load50000Rows" text="Load 50,000 Rows" row="1" column="0"/>
+    </category>
+
+    <category text="Populate with data">
+      <example path="GridView/PopulateWithData/DataBinding" text="Data Binding" row="0" column="0" />
+      <example path="GridView/PopulateWithData/UnboundMode" text="Unbound Mode" row="1" column="0" />
+    </category>
+
+    <category text="Manipulate data">
+      <example path="GridView/ManipulateData/Expressions" text="Expressions" row="0" column="0" />
+      <example path="GridView/ManipulateData/ConvertValues" text="Convert Values" row="1" column="0" />
+      <example path="GridView/ManipulateData/ValidateChanges" text="Validate Changes" row="2" column="0" />
+      <example path="GridView/ManipulateData/IndicateErrors" text="Indicate Errors" row="0" column="1" />
+      <example path="GridView/ManipulateData/UseCustomEditors" text="Use Custom Editors" row="1" column="1" />
+      <example path="GridView/ManipulateData/Paging" text="Paging" row="2" column="1"/>
+    </category>
+
+    <category text="Customize">
+      <example path="GridView/Customize/Basics" text="Basics" row="0" column="0"/>
+      <example path="GridView/Customize/StyleCells" text="Style Cells" row="1" column="0" colspan="2">
+        <tileImage>grid-style-cells</tileImage>
+      </example>
+      <example path="GridView/Customize/FormatValues" text="Format Values" row="2" column="0"/>
+      <example path="GridView/Customize/ConditionalFormatting" text="Conditional Formatting" row="0" column="1"/>
+      <example path="GridView/Customize/CustomPainting" text="Custom Painting" row="2" column="1" colspan="2">
+        <tileImage>grid-custom-painting</tileImage>
+      </example>
+      <example path="GridView/Customize/Tooltips" text="Tooltips" row="0" column="2"/>
+      <example path="GridView/Customize/ScreenTips" text="ScreenTips" row="1" column="2"/>
+      <example path="GridView/Customize/FormattingWithCode" text="Formatting with Code" row="0" column="3"/>
+    </category>
+
+    <category text="Columns" >
+      <example path="GridView/Columns/ColumnTypes" text="Column Types" row="0" column="0" />
+      <example path="GridView/Columns/GridViews" text="Grid Views" row="1" column="0"/>
+      <example path="GridView/Columns/ColumnRowOperations" text="Column/Row Operations" row="2" column="0"/>
+      <example path="GridView/Columns/ColumnChooser" text="Column Chooser" row="0" column="1"/>
+    </category>
+
+    <category text="Rows">
+      <example path="GridView/Rows/AddNewRow" text="Add New Row" row="0" column="0"/>
+      <example path="GridView/Rows/Selection" text="Selection" row="1" column="0"/>
+      <example path="GridView/Rows/RowDetails" text="Row Details" row="2" column="0" colspan="2">
+        <tileImage>grid-row-details</tileImage>
+      </example>
+      <example path="GridView/Rows/RowsReorder" text="Rows Reorder" row="0" column="1"/>
+      <example path="GridView/Rows/RowsDragDrop" text="Rows Drag &amp; Drop" row="1" column="1"/>
+      <example path="GridView/Rows/SearchRow" text="Search Row" row="0" column="2"  />
+    </category>
+
+    <category text="Filtering">
+      <example path="GridView/Filtering/Filtering" text="Filtering" row="0" column="0"/>
+      <example path="GridView/Filtering/ExcelLikeFiltering" text="Excel Like Filtering" row="1" column="0" colspan="2">
+        <tileImage>grid-excel-like-filtering</tileImage>
+      </example>
+      <example path="GridView/Filtering/CustomFiltering" text="Custom Filtering" row="2" column="0"/>
+      <example path="GridView/Filtering/CustomFilterRow" text="Custom Filter Row" row="0" column="1"/>
+      <example path="DataFilter/FirstLook" text="Filtering with DataFilter" row="2" column="1" ControlName="GridView" />
+    </category>
+
+    <category text="Grouping" >
+      <example path="GridView/Grouping/Grouping" text="Grouping" row="0" column="0" colspan="2">
+        <tileImage>grid-grouping</tileImage>
+      </example>
+      <example path="GridView/Grouping/CustomGrouping" text="Custom Grouping" row="1" column="0"/>
+      <example path="GridView/Grouping/GroupSummaries" text="Group Summaries" row="1" column="1"/>
+    </category>
+
+    <category text="Sorting" >
+      <example path="GridView/Sorting/Sorting" text="Sorting" row="0" column="0"/>
+      <example path="GridView/Sorting/CustomSorting" text="Custom Sorting" row="1" column="0"/>
+    </category>
+
+    <category text="Hierarchy">
+      <example path="GridView/Hierarchy/Hierarchy" text="Hierarchy First Look" row="0" column="0" colspan="2">
+        <tileImage>grid-hierarchy-first-look</tileImage>
+      </example>
+      <example path="GridView/Hierarchy/LoadOnDemandHierarchy" text="Load On Demand" row="2" column="0"/>
+      <example path="GridView/Hierarchy/FolderTree" text="Self-Reference" row="2" column="1"/>
+      <example path="GridView/Hierarchy/TabbedChildViews" text="Tabbed Views" row="1" column="0" colspan="2">
+        <tileImage>grid-tabbed-views</tileImage>
+      </example>
+      <example path="GridView/Hierarchy/ObjectRelationalHierarchy" text="Object-Relational" row="0" column="2"/>
+    </category>
+
+    <category text="Export" >
+      <example path="GridView/Export/ExportMethods" text="Export Methods" row="0" column="0"/>
+      <example path="GridView/Export/SaveLoadLayout" text="Save/Load Layout" row="0" column="1"/>
+      <example path="GridView/Export/SpreadsheetStreaming" text="Export with SpreadStreamProcessing" row="0" column="2" ExternalPath="..\ExportWithDpl\bin\ExportWithDpl.exe" CodeFilesPath ="..\..\ExamplesProjects\ExportWithDpl\SpreadsheetStreaming\" />
+      <example path="GridView/Export/ExportHierarchy" text="Export Hierarchy" row="1" column="0"/>
+      <example path="GridView/Export/ExportMLWithEvents" text="ExcelML with Events" row="1" column="1"/>
+      <example path="GridView/Export/ExportWithDpl" text="Export with Document Processing Libraries" row="2" column="0" rowspan="1" colspan="2" ExternalPath="..\ExportWithDpl\bin\ExportWithDpl.exe" CodeFilesPath ="..\..\ExamplesProjects\ExportWithDpl\GridView\" >
+        <tileImage>grid-spreadexport</tileImage>
+      </example>
+      <example path="GridView/Export/SpreadExportImages" text="Export Image Columns" row="1" column="2" />
+    </category>
+
+    <category text="Globalization" >
+      <example path="GridView/Globalization/Localization" text="Localization Support" row="0" column="0" />
+      <example path="GridView/Globalization/RTL" text="Right to Left Support" row="1" column="0" />
+    </category>
+  </control>
+
+
+  <control text="Image Editor" ImageName="ImageEditor.png" ControlCategory="Media" >
+    <example path="ImageEditor/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>image-editor-first-look</tileImage>
+    </example>
+  </control>
+
+  <control text="Web Cam" ControlCategory="Media"  >
+    <example path="WebCam/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>webcam-first-look-1</tileImage>
+      <tileImage>webcam-first-look-2</tileImage>
+    </example>
+    <example path="WebCam/Settings" text="Settings" row="2" column="0" rowspan="1" colspan="1" />
+  </control>
+
+  <control text="Layout Control" ImageName="LayoutControl.png" ControlCategory="Layout" >
+    <example path="LayoutControl/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>layoutcontrol-first-look</tileImage>
+    </example>
+    <example path="LayoutControl/Settings" text="Settings" row="0" column="2" rowspan="1" colspan="1" />
+  </control>
+
+
+  <control text="List View" ImageName="ListView.png" ControlCategory="Data Management" >
+    <example path="ListView/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>list-view-first-look</tileImage>
+    </example>
+    <example path="ListView/CustomItems" text="Custom Items" row="0" column="2"/>
+    <example path="ListView/Settings" text="Settings" row="1" column="2" />
+    <example path="ListView/ExportWithDpl" text="Export with Document Processing Libraries" row="0" column="3" ExternalPath="..\ExportWithDpl\bin\ExportWithDpl.exe" CodeFilesPath ="..\..\ExamplesProjects\ExportWithDpl\ListView\" />
+    <example path="ListView/AutoSizeColumnsMode" text="AutoSize Columns Mode" row="1" column="3">
+      <tileImage>list-view-auto-size-columns-mode-small</tileImage>
+    </example>
+  </control>
+
+
+  <control text="Map" ImageName="Map.png" ControlCategory="Data Visualization" >
+    <example path="Map/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>map-first-look</tileImage>
+    </example>
+    <example path="Map/OpenStreetMaps" text="Open Street Maps" row="2" column="0" rowspan="1" colspan="2" >
+      <tileImage>map-open-street</tileImage>
+    </example>
+    <example path="Map/Shapefile" text="ESRI Shapefile" row="0" column="2" colspan="2">
+      <tileImage>map-esri-file</tileImage>
+    </example>
+    <example path="Map/Layers" text="Layers" row="1" column="2" colspan="2">
+      <tileImage>map-layers</tileImage>
+    </example>
+    <example path="Map/Settings" text="Settings" row="2" column="2" />
+    <example path="Map/KML" text="KML" row="2" column="3" />
+
+    <category text="Bing Maps services">
+      <example path="Map/BingSearch" text="Search" row="0" column="0" />
+      <example path="Map/BingRoute" text="Route" row="1" column="0" />
+      <example path="Map/BingElevation" text="Elevation" row="2" column="0" />
+    </category>
+  </control>
+
+
+  <control text="Menus" ImageName="Menu.png" ControlCategory="Navigation" >
+    <example path="MenuStrip/FirstLook" text="Menu First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>menu-first-look</tileImage>
+    </example>
+    <example path="MenuStrip/MenuOrientation" text="Menu Orientation" row="2" column="0"/>
+    <example path="MenuStrip/MenuItemsWithImages" text="Menu Items with Images" row="2" column="1"/>
+    <example path="MenuStrip/NestedRadControls" text="Nested RadControls" row="0" column="2" />
+    <example path="MenuStrip/EmbeddedCustomElements" text="Embedded Custom Elements" row="1" column="2"/>
+    <example path="MenuStrip/MenuWithHeaderColumn" text="Menu with Header Column" row="2" column="2"/>
+    <example path="MenuStrip/Animation" text="Animations" row="0" column="3"/>
+    <example path="MenuStrip/ControllingBasicStates" text="Controlling Basic States" row="2" column="3" />
+    <example path="MenuStrip/MultilineTextSupport" text="Multiline Text Support" row="0" column="4"/>
+  </control>
+
+
+  <example path="MenuStrip/ApplicationMenu" text="Application Menu" SkipControlScreen="true" ControlCategory="Navigation"/>
+
+
+  <control text="Multi-Column ComboBox" ImageName="MultiColumnComboBox.png" ControlCategory="Editors" >
+    <example path="MultiColumnComboBox/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>mccb-first-look</tileImage>
+    </example>
+    <example path="MultiColumnComboBox/Settings" text="Settings" row="0" column="2" rowspan="1" colspan="1" >
+      <tileImage>mccb-settings</tileImage>
+    </example>
+  </control>
+
+
+  <control text="Page View" ImageName="PageView.png" ControlCategory="Navigation">
+    <example path="PageView/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>page-view-first-look</tileImage>
+    </example>
+    <example path="PageView/ViewModes" text="View Modes" row="2" column="0" colspan="2">
+      <tileImage>page-view-view-modes-1</tileImage>
+      <tileImage>page-view-view-modes-2</tileImage>
+      <tileImage>page-view-view-modes-3</tileImage>
+      <tileImage>page-view-view-modes-4</tileImage>
+    </example>
+
+    <category text="Navigation View" >
+      <example path="PageView/NavigationView/FirstLook" text="Hamburger" row="0" column="0" >
+        <tileImage>page-view-nav-view</tileImage>
+      </example>
+    </category>
+
+    <category text="Strip View">
+      <example path="PageView/StripView/FirstLook" text="First Look" row="0" column="0"/>
+      <example path="PageView/StripView/Settings" text="Settings" row="1" column="0" />
+      <example path="PageView/StripView/StripButtons" text="Strip Buttons" row="2" column="0"/>
+      <example path="PageView/StripView/ItemDragDrop" text="Item Drag Drop" row="0" column="1" />
+      <example path="PageView/StripView/HTMLItemText" text="HTML Item Text" row="1" column="1"/>
+      <example path="PageView/StripView/ItemButtons" text="Item Close Button" row="2" column="1" />
+      <example path="PageView/StripView/AddNewItem" text="Add New Item" row="0" column="2"/>
+      <example path="PageView/StripView/CustomTheme" text="Custom Theme" row="1" column="2" />
+    </category>
+
+    <category text="Outlook View" >
+      <example path="PageView/OutlookView/FirstLook" text="First Look" row="0" column="0" />
+    </category>
+
+    <category text="Stack View" >
+      <example path="PageView/StackView/FirstLook" text="First Look" row="0" column="0" />
+      <example path="PageView/StackView/CarSelection" text="Car Selection" row="1" column="0" colspan="2">
+        <tileImage>page-view-stack-view-car-selection</tileImage>
+      </example>
+    </category>
+  </control>
+
+
+  <example path="PanelsLabels/GroupBox" text="Group Box" SkipControlScreen="true" ControlCategory="Layout"/>
+
+
+  <example path="PanelsLabels/Panel" text="Panel" SkipControlScreen="true" ControlCategory="Layout"/>
+
+
+  <example path="PanelsLabels/Label" text="Label" SkipControlScreen="true" ControlCategory="Interactivity &amp; UX" />
+
+
+  <example path="PanelsLabels/CollapsiblePanel" text="Collapsible Panel" SkipControlScreen="true" ControlCategory="Layout" />
+
+
+  <example path="Integration/DemoHub" text="Panorama" DescriptionPath ="..\Integration\DemoHub\" CodeFilesPath = "..\..\ExamplesProjects\DemoAppsHub\" SkipControlScreen="true" ControlCategory="Navigation" />
+
+
+  <control text="PDF Processing" ControlCategory="Document Management">
+    <example path="PdfProcessing/PdfChartIntegration" text="BarChart Generation" row="0" column="0" />
+    <example path="PdfProcessing/PdfProcessing" text="Document Processing" row="1" column="0" />
+    <example path="PdfProcessing/PdfMergeSplitAddContent" text="Merge, Split or Add Content" row="0" column="1" />
+    <example path="PdfProcessing/ReadAndWriteFromFields" text="Read and Write from Fields" row="1" column="1" />
+    <example path="PdfProcessing/PdfValidateSignature" text="Validate Documents" row="0" column="2" />
+    <example path="PdfProcessing/PdfSignDocuments" text="Sign Documents" row="1" column="2" />
+    <example path="PdfProcessing/PdfWordIntegration" text="Word Processing Integration" row="2" column="0" />
+  </control>
+
+
+  <control text="PDF Viewer" ImageName="PdfViewer.png" ControlCategory="Document Management" updated="true">
+    <example path="PdfViewer/FirstLook" text="PDF Viewer" row="0" column="0" rowspan="2" colspan="2"  >
+      <tileImage>pdfviewer-first-look</tileImage>
+    </example>
+    <example path="PdfViewer/DigitalSignatures" text="Validate Digital Signatures" row="0" column="2" />
+    <example path="PdfViewer/InteractiveForms" text="Interactive Forms" row="0" column="3" />
+    <example path="PdfViewer/DigitallySignDocument" text="Digitally Sign Document" row="1" column="2" />
+  </control>
+
+
+  <control text="Pivot Grid" ImageName="PivotGrid.png" ControlCategory="Data Management" >
+    <example path="PivotGrid/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>pivot-first-look</tileImage>
+    </example>
+    <example path="PivotGrid/Settings" text="Settings" row="2" column="0"/>
+    <example path="PivotGrid/BindingWithChartView" text="Binding with RadChartView" row="2" column="1" colspan="2">
+      <tileImage>pivot-grid-binding-with-chartview</tileImage>
+    </example>
+    <example path="PivotGrid/FieldList" text="Field List" row="0" column="2" colspan="2" >
+      <tileImage>pivot-grid-field-list</tileImage>
+    </example>
+    <example path="PivotGrid/LayoutTypes" text="Layout Types" row="1" column="2" />
+    <example path="PivotGrid/Printing" text="Printing" row="1" column="3" />
+    <example path="PivotGrid/KPIs" text="KPI" row="2" column="3" />
+    <example path="PivotGrid/OLAP" text="OLAP Browser" row="0" column="4" />
+    <example path="PivotGrid/UnderlyingData" text="Underlying Data" row="0" column="5" />
+    <example path="PivotGrid/ExportToExcelML" text="Export To Excel" row="1" column="4" />
+    <example path="PivotGrid/ExportWithDPL" text="Export with Document Processing Libraries" row="2" column="4" CodeFilesPath="..\..\ExamplesProjects\ExportWithDpl\PivotGrid\" />
+  </control>
+
+
+  <control text="Property Grid" ImageName="PropertyGrid.png" ControlCategory="Data Management" >
+    <example path="PropertyGrid/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>property-grid-first-look</tileImage>
+    </example>
+    <example path="PropertyGrid/Settings" text="Settings" row="2" column="0" />
+    <example path="PropertyGrid/Validation" text="Validation" row="2" column="1" />
+    <example path="PropertyGrid/PropertyStore" text="Property Store" row="0" column="2"/>
+    <example path="PropertyGrid/ExportWithDpl" text="Export with Document Processing Libraries" row="1" column="2" ExternalPath="..\ExportWithDpl\bin\ExportWithDpl.exe" CodeFilesPath ="..\..\ExamplesProjects\ExportWithDpl\PropertyGrid\" />
+  </control>
+
+
+  <control text="Picture Box" ControlCategory="Media" new="true">
+    <example path="PictureBoxExamples/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>picture-box-big</tileImage>
+    </example>
+    <example path="PictureBoxExamples/Settings" text="Settings" row="2" column="0" />
+  </control>
+
+
+  <control text="Range Selector" ImageName="RangeSelector.png" ControlCategory="Data Visualization" >
+    <example path="RangeSelector/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>range-first-look</tileImage>
+    </example>
+    <example path="RangeSelector/MultipleAxes" text="Multiple axes" row="0" column="2" />
+    <example path="RangeSelector/MSFTStocks" text="MSFT Stocks" row="2" column="0" colspan="2" >
+      <tileImage>range-selector-stocks</tileImage>
+    </example>
+  </control>
+
+
+  <control text="Ribbon Bar" ImageName="RibbonBar.png" ControlCategory="Navigation" >
+    <example path="RibbonBar/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>ribbon-bar-first-look</tileImage>
+    </example>
+    <example path="RibbonBar/SimplifiedLayout" text="Simplified Layout" row="0" column="2" colspan="2" rowspan = "1" >
+      <tileImage>ribbonbar</tileImage>
+    </example>
+    <example path="RibbonBar/ResizingDemo" text="Resizing Demo" row="2" column="0"/>
+    <example path="RibbonBar/MDILayout" text="MDI Layout" row="2" column="1"/>
+  </control>
+
+
+  <control text="Rich Text Editor" ImageName="RichTextEditor.png" ControlCategory="Document Management" >
+    <example path="RichTextEditor/Editor" text="First Look" SourceFilesPath="..\RichTextEditor\FirstLook" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="0" column="0" colspan="2" rowspan="2" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\FirstLook" >
+      <tileImage>rte-first-look</tileImage>
+    </example>
+
+    <example path="RichTextEditor/CodeBlocks" text="Code Blocks" SourceFilesPath="..\RichTextEditor\CodeBlocks" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="0" column="3" colspan="2" rowspan="1" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\CodeBlocks" >
+      <tileImage>rte-code-blocks</tileImage>
+    </example>
+
+    <example path="RichTextEditor/SyntaxHighlight" text="Syntax Highlight" SourceFilesPath="..\RichTextEditor\SyntaxHighlight" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="1" column="2" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\SyntaxHighlight" >
+      <tileImage>rte-syntax-highlight</tileImage>
+    </example>
+
+    <example path="RichTextEditor/DocumentAPI" text="Document API" SourceFilesPath="..\RichTextEditor\DocumentAPI" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="1" column="4" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\DocumentAPI" >
+    </example>
+
+    <example path="RichTextEditor/DocumentProtection" text="Document Protection" SourceFilesPath="..\RichTextEditor\DocumentProtection" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="1" column="3" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\DocumentProtection" >
+    </example>
+
+    <example path="RichTextEditor/SearchHighlight" text="Search Highlight" SourceFilesPath="..\RichTextEditor\SearchHighlight" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="0" column="2" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\SearchHighlight" >
+    </example>
+
+    <example path="RichTextEditor/MailMerge" text="Mail Merge" SourceFilesPath="..\RichTextEditor\MailMerge" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="2" column="2" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\MailMerge" >
+    </example>
+
+    <example path="RichTextEditor/References" text="References" SourceFilesPath="..\RichTextEditor\References" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="2" column="3" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\References" >
+    </example>
+
+    <example path="RichTextEditor/TableStyles" text="Table Styles" SourceFilesPath="..\RichTextEditor\TableStyles" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="2" column="4" colspan="2" rowspan="1" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\TableStyles" >
+      <tileImage>rte-table-styles</tileImage>
+    </example>
+
+    <example path="RichTextEditor/DragDrop" text="Drag Drop" SourceFilesPath="..\RichTextEditor\DragDrop" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="0" column="5" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\DragDrop" >
+    </example>
+
+    <example path="RichTextEditor/MergeDocuments" text="Merge Documents" SourceFilesPath="..\RichTextEditor\MergeDocuments" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="1" column="5" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\MergeDocuments" >
+    </example>
+
+    <example path="RichTextEditor/StructuredContent" text="Structured Content" SourceFilesPath="..\RichTextEditor\StructuredContent" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="2" column="0" colspan="2" rowspan="1" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\StructuredContent" >
+      <tileImage>rte-structured-content</tileImage>
+    </example>
+
+    <example path="RichTextEditor/StyleSheets" text="Style Sheets" SourceFilesPath="..\RichTextEditor\StyleSheets" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="1" column="6" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\StyleSheets" >
+    </example>
+
+    <example path="RichTextEditor/CommandBarUI" text="Command Bar UI" SourceFilesPath="..\RichTextEditor\CommandBarUI" ExternalPath="..\RichTextEditor\bin\RichTextEditor.exe" row="0" column="6" colspan="2" rowspan="1" CodeFilesPath ="..\..\ExamplesProjects\RichTextEditor\CommandBarUI" >
+      <tileImage>rte-commandbar-ui</tileImage>
+    </example>
+
+    <example path="RichTextEditor/SectionColumns" text="Section Columns" SourceFilesPath="..\RichTextEditor\SectionColumns" row="1" column="7" >
+    </example>
+    <example path="RichTextEditor/RepeatHeaderRows" text="Repeat Header Rows" SourceFilesPath="..\RichTextEditor\RepeatHeaderRows" row="2" column="6" >
+    </example>
+  </control>
+
+
+  <example path="Rotator" text="Rotator" SkipControlScreen="true" ControlCategory="Interactivity &amp; UX" />
+
+
+  <control text="Scheduler" ImageName="Scheduler.png" ControlCategory="Scheduling" updated="true">
+    <example path="Scheduler/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>scheduler-first-look-1</tileImage>
+      <tileImage>scheduler-first-look-2</tileImage>
+      <tileImage>scheduler-first-look-3</tileImage>
+    </example>
+    <example path="Scheduler/AgendaView" text="Agenda View" row="2" column="0">
+      <tileImage>scheduler-agenda-view</tileImage>
+    </example>
+    <example path="Scheduler/MonthView" text="Month View" row="1" column="7" />
+    <example path="Scheduler/Reminder" text="Reminder" row="2" column="1" colspan="2">
+      <tileImage>scheduler-reminder</tileImage>
+    </example>
+    <example path="Scheduler/Grouping" text="Grouping" row="0" column="2" colspan="2" >
+      <tileImage>scheduler-grouping</tileImage>
+    </example>
+    <example path="Scheduler/DragAndDrop" text="Drag&amp;Drop and Resize" row="1" column="2" />
+    <example path="Scheduler/DayView" text="Day View &amp; Week View" row="1" column="3" />
+    <example path="Scheduler/Printing" text="Printing" row="2" column="3" colspan="2" >
+      <tileImage>scheduler-printing</tileImage>
+    </example>
+    <example path="Scheduler/NavigatorSteps" text="Navigator Steps" row="0" column="4"/>
+    <example path="Scheduler/TimeZones" text="Time Zones" row="1" column="4" colspan="2">
+      <tileImage>scheduler-time-zones</tileImage>
+    </example>
+    <example path="Scheduler/DataBinding" text="Data Binding" row="0" column="5"/>
+    <example path="Scheduler/CustomWorkTime" text="Custom Work Time" row="2" column="5" />
+    <example path="Scheduler/CustomAppointmentDialog" text="Custom Appointment Dialog" row="0" column="6"/>
+    <example path="Scheduler/ICalImportExport" text="iCal Import/Export" row="1" column="6"/>
+    <example path="Scheduler/Events" text="Events" row="2" column="6" />
+    <example path="GanttView/SchedulerIntegration" text="GanttView Integration" row="0" column="7" colspan="2" ControlName="Scheduler" />
+    <example path="Scheduler/CustomElements" text="Custom Elements" row="2" column="7" />
+    <example path="Scheduler/Holidays" text="Holidays" row="1" column="8" />
+    <example path="Scheduler/Timeline" text="Timeline View" row="2" column="8" />
+  </control>
+
+
+  <control text="Sparkline" ImageName="Sparkline.png" ControlCategory="Data Visualization" >
+    <example path="Sparkline/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>sparkline-first-look</tileImage>
+    </example>
+    <example path="Sparkline/Settings" text="Settings" row="0" column="2" colspan ="2"/>
+    <example path="Sparkline/Gallery" text="Gallery" row="1" column="2" colspan ="2"/>
+  </control>
+
+
+  <control text="Split Container" ImageName="SplitContainer.png" ControlCategory="Layout" >
+    <example path="SplitContainer/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>split-container-first-look</tileImage>
+    </example>
+    <example path="SplitContainer/Layouts" text="Layouts" row="2" column="0"/>
+    <example path="SplitContainer/CollapsingPanels" text="Collapsing Panels" row="2" column="1" />
+  </control>
+
+
+  <control text="Spread Processing" ControlCategory="Document Management" >
+    <example path="SpreadProcessing/SpreadConvertion" text="Documents Convertion" row="0" column="0" />
+    <example path="SpreadProcessing/SpreadGeneration" text="Documents Generation" row="1" column="0" />
+    <example path="SpreadProcessing/SpreadGridIntegration" text="Grid Integration" row="0" column="1" />
+  </control>
+
+
+  <control text="Spreadsheet" ImageName="Spreadsheet.png" ControlCategory="Document Management" >
+    <example path="Spreadsheet/FirstLook" text="First Look" row ="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>spreadsheet-first-look-1</tileImage>
+      <tileImage>spreadsheet-first-look-2</tileImage>
+    </example>
+    <example path="Spreadsheet/SortingAndFiltering" text="Sorting and Filtering" row="2" column="0" />
+    <example path="Spreadsheet/Protection" text="Protection" row="2" column="1" />
+    <example path="Spreadsheet/FreezePanes" text="Freeze Panes" row="0" column="2" />
+    <example path="Spreadsheet/Printing" text="Printing" row="1" column="2" />
+    <example path="Spreadsheet/DataValidation" text="Data Validation" row="2" column="2" />
+  </control>
+
+
+  <example path="SpreadStreamProcessing/LargeDocumentExport" text="SpreadStream Processing" row="0" column="1" ExternalPath="..\ExportWithDpl\bin\ExportWithDpl.exe" CodeFilesPath ="..\..\ExamplesProjects\ExportWithDpl\SpreadsheetStreamingExport\" SkipControlScreen="true" ControlCategory="Document Management" />
+
+  <control text="Syntax Editor" ImageName="SyntaxEditor.png" ControlCategory="Document Management" >
+    <example path="SyntaxEditor/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>syntax-editor-first-look</tileImage>
+    </example>
+    <example path="SyntaxEditor/CustomLanguage" text="Custom Language" row="0" column="2" />
+  </control>
+
+  <control text="Waiting Bar" path="TrackStatusControls/WaitingBar" ImageName="TrackAndStatus.png" ControlCategory="Interactivity &amp; UX" >
+    <example path="TrackStatusControls/WaitingBar/Conventional" text="Conventional Waiting Bars" row="0" column="0"/>
+    <example path="TrackStatusControls/WaitingBar/Modern" text="Modern Waiting Bars" row="1" column="0" />
+    <example path="TrackStatusControls/WaitingBar/Settings" text="Waiting Bar Settings" row="0" column="1" />
+  </control>
+
+  <control text="Scroll Bar" path="TrackStatusControls/ScrollBars" ControlCategory="Forms &amp; Dialogs" >
+    <example path="TrackStatusControls/ScrollBars/FirstLook" text="First Look" row="0" column="0"/>
+    <example path="TrackStatusControls/ScrollBars/Events" text="Events" row="0" column="1"/>
+  </control>
+
+  <example path="Tools/SvgImages" text="SVG Images" SkipControlScreen="true" ControlCategory="Tools">
+    <tileImage>svg-images</tileImage>
+  </example>
+  <example path="Tools/ShapeEditor" text="Shape Editor" SkipControlScreen="true" ControlCategory="Tools">
+    <tileImage>shape-editor</tileImage>
+  </example>
+  <example path="Integration/Magnifier" text="Magnifier Demo" SkipControlScreen="true" ControlCategory="Tools">
+    <tileImage>magnifier</tileImage>
+  </example>
+  <example path="Integration/BubbleBar" text="Bubble Bar" SkipControlScreen="true" ControlCategory="Tools">
+    <tileImage>bubble-bar</tileImage>
+  </example>
+
+  <example path="Integration/HTMLFormatting" text="HTML-like Formatting" SkipControlScreen="true" ControlCategory="Tools">
+    <tileImage>HTML-like-formatting</tileImage>
+  </example>
+  
+  <example path="ToastNotificationManager/FirstLook" text="Toast Notification" ControlCategory="Forms &amp; Dialogs" SkipControlScreen="true" CodeFilesPath ="..\..\ExamplesProjects\ToastNotificationManagerExamples\FirstLook\" new="true" />
+
+  <example path="TrackStatusControls/ProgressBar" text="Progress Bar" SkipControlScreen="true" ControlCategory="Interactivity &amp; UX" />
+  <example path="TrackStatusControls/TrackBar" text="Track Bar" SkipControlScreen="true" ControlCategory="Interactivity &amp; UX" />
+  <example path="TrackStatusControls/Rating" text="Rating" SkipControlScreen="true" ControlCategory="Interactivity &amp; UX" />
+
+
+  <control text="Tree View" ImageName="TreeView.png" ControlCategory="Data Management" >
+    <example path="TreeView/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>treeview-first-look</tileImage>
+    </example>
+    <example path="TreeView/Selection" text="Selection" row="2" column="0" />
+    <example path="TreeView/DragDrop" text="Drag &amp; Drop" row="2" column="1"/>
+    <example path="TreeView/Events" text="Events" row="0" column="2" />
+    <example path="TreeView/XMLSerialization" text="XML Serialization" row="1" column="2" />
+    <example path="TreeView/ExportWithDpl" text="Export with Document Processing Libraries" row="2" column="2" ExternalPath="..\ExportWithDpl\bin\ExportWithDpl.exe" CodeFilesPath ="..\..\ExamplesProjects\ExportWithDpl\TreeView\" />
+
+    <category text="Populate with data">
+      <example path="TreeView/PopulateWithData/SelfReference" text="Self-Reference" row="0" column="0" />
+      <example path="TreeView/PopulateWithData/DataRelation" text="Data Relation" row="1" column="0" />
+      <example path="TreeView/PopulateWithData/ObjectRelational" text="Object-Relational" row="2" column="0"/>
+      <example path="TreeView/PopulateWithData/LoadOnDemand" text="Load on Demand" row="0" column="1"/>
+      <example path="TreeView/PopulateWithData/Performance" text="Performance" row="1" column="1"/>
+    </category>
+
+    <category text="Customize">
+      <example path="TreeView/Customize/Basics" text="General settings" row="0" column="0"/>
+      <example path="TreeView/Customize/NodeFormatting" text="Node Formatting" row="1" column="0"/>
+      <example path="TreeView/Customize/CustomNodes" text="Custom Nodes" row="2" column="0"/>
+      <example path="TreeView/Customize/ContextMenus" text="Context Menus" row="0" column="1"/>
+    </category>
+
+    <category text="Manipulate data">
+      <example path="TreeView/ManipulateData/Editing" text="Editing" row="0" column="0"/>
+      <example path="TreeView/ManipulateData/OptionsTree" text="Options Tree" row="1" column="0"/>
+    </category>
+
+    <category text="Globalization">
+      <example path="TreeView/Globalization/RightToLeft" text="Right-to-Left Support" row="0" column="0"/>
+      <example path="TreeView/Globalization/Localization" text="Localization" row="1" column="0"/>
+    </category>
+  </control>
+
+
+  <control text="Virtual Keyboard" ImageName="VirtualKeyboard.png" ControlCategory="Interactivity &amp; UX" >
+    <example path="VirtualKeyboard/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>virtual-keyboard-first-look</tileImage>
+    </example>
+    <example path="VirtualKeyboard/Settings" text="Settings" row="0" column="2" />
+  </control>
+
+  
+  <control text="Virtual Grid" ImageName="VirtualGrid.png" ControlCategory="Data Management" >
+    <example path="VirtualGrid/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2" >
+      <tileImage>virtual-grid-first-look</tileImage>
+    </example>
+    <example path="VirtualGrid/Paging" text="Paging" row="0" column="3" />
+    <example path="VirtualGrid/Performance" text="Performance" row="2" column="0" />
+    <example path="VirtualGrid/WebService" text="Web Service" row="2" column="1" colspan="2" >
+      <tileImage>virtual-grid-web-service</tileImage>
+    </example>
+    <example path="VirtualGrid/Editors" text="Editors" row="0" column="2" />
+    <example path="VirtualGrid/Hierarchy" text="Hierarchy" row="1" column="2" colspan="2">
+      <tileImage>virtual-grid-hierarchy</tileImage>
+    </example>
+    <example path="VirtualGrid/SaveLoadLayout" text="Save/Load Layout" row="2" column="3" />
+    <example path="VirtualGrid/Validation" text="Data Validation" row="0" column="4" />
+    <example path="DataFilter/VirtualGrid" text="Filtering with DataFilter" row="1" column="4" ControlName="VirtualGrid" />
+
+    <category text="Customize">
+      <example path="VirtualGrid/Settings" text="Settings" row="0" column="0" />
+      <example path="VirtualGrid/CustomCell" text="Custom Cell" row="0" column="1" />
+      <example path="VirtualGrid/Formatting" text="Formatting" row="1" column="0" colspan="2">
+        <tileImage>virtual-grid-formatting</tileImage>
+      </example>
+    </category>
+
+    <category text="Globalization">
+      <example path="VirtualGrid/Globalization/RightToLeft" text="Right to Left Support" row="0" column="0" />
+      <example path="VirtualGrid/Globalization/Localization" text="Localization Support" row="1" column="0" />
+    </category>
+  </control>
+
+
+  <control text="Wizard" ImageName="Wizard.png" ControlCategory="Forms &amp; Dialogs" >
+    <example path="Wizard/FirstLook" text="First Look" row="0" column="0" rowspan="2" colspan="2">
+      <tileImage>wizard-first-look</tileImage>
+    </example>
+    <example path="Wizard/Modes" text="Modes" row="2" column="0" colspan="2">
+      <tileImage>wizard-modes-1</tileImage>
+      <tileImage>wizard-modes-2</tileImage>
+    </example>
+  </control>
+
+
+  <control text="Words Processing" ControlCategory="Document Management">
+    <example path="WordsProcessing/WordGridIntegration" text="Grid Integration" row="0" column="0" />
+    <example path="WordsProcessing/WordConvertion" text="Documents Convertion" row="1" column="0" />
+    <example path="WordsProcessing/WordGeneration" text="Documents Generation" row="0" column="1" />
+    <example path="WordsProcessing/WordMailMerge" text="Mail Merge" row="1" column="1" />
+    <example path="WordsProcessing/WordReplace" text="Replace" row="0" column="2" />
+  </control>
+
+
+  <control text="Zip Library" ImageName="ZipLibrary.png" ControlCategory="Document Management" >
+    <example path="ZipLibrary/FirstLook" text="First Look" row="0" column="0" rowspan="1" colspan="1">
+    </example>
+    <example path="ZipLibrary/CompressStream" text="Compress Stream" row="0" column="1" colspan="1">
+    </example>
+  </control>
+
+</examples>

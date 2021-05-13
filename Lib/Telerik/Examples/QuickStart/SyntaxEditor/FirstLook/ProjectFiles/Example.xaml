@@ -1,0 +1,163 @@
+<examples:GridViewExample x:Class="Telerik.Windows.Examples.GridView.FirstLook.Example"
+						  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						  xmlns:examples="clr-namespace:Telerik.Windows.Examples"
+						  xmlns:local="clr-namespace:Telerik.Windows.Examples.GridView.FirstLook"
+						  xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+						  xmlns:telerikQuickStart="clr-namespace:Telerik.Windows.Controls.QuickStart;assembly=QuickStart.Common">
+	<telerikQuickStart:QuickStart.ExampleHeader>
+		<TextBlock Text="Corporate Directory" Margin="8" />
+	</telerikQuickStart:QuickStart.ExampleHeader>
+	<Grid>
+		<Grid.Resources>
+			<telerik:BinaryImageConverter x:Key="converter" />
+			<local:RowStyleSelector x:Key="rowStyleSelector" />
+		</Grid.Resources>
+		<telerik:RadGridView x:Name="RadGridView1"
+							 ItemsSource="{Binding Employees}"
+							 RowStyleSelector="{StaticResource rowStyleSelector}"
+							 Margin="0" GroupRenderMode="Flat"
+							 RowIndicatorVisibility="Collapsed"
+							 IsReadOnly="True"
+                             ShowColumnSortIndexes="True"
+							 AutoGenerateColumns="False"
+							 CanUserFreezeColumns="False"
+							 CanUserResizeColumns="False">
+			<telerik:RadGridView.Columns>
+				<telerik:GridViewToggleRowDetailsColumn />
+				<telerik:GridViewImageColumn Header="Photo"
+											 DataMemberBinding="{Binding Picture}"
+                                             RenderOptions.BitmapScalingMode="HighQuality"
+											 ImageHeight="35"
+											 ImageWidth="35"
+											 Width="60" />
+				<telerik:GridViewDataColumn Header="First Name"
+											DataMemberBinding="{Binding FirstName}" />
+				<telerik:GridViewDataColumn Header="Last Name"
+											DataMemberBinding="{Binding LastName}" />
+				<telerik:GridViewDataColumn Header="Title"
+											DataMemberBinding="{Binding Title}" />
+				<telerik:GridViewDataColumn Header="City"
+											DataMemberBinding="{Binding City}" />
+				<telerik:GridViewDataColumn Header="Country"
+											DataMemberBinding="{Binding Country}" />
+				<telerik:GridViewDataColumn Header="Phone"
+											DataMemberBinding="{Binding HomePhone}"
+											Width="*" />
+			</telerik:RadGridView.Columns>
+			<telerik:RadGridView.RowDetailsTemplate>
+				<DataTemplate>
+					<telerik:RadTabControl x:Name="RadTabControl1"
+										   Width="702"
+										   HorizontalAlignment="Center"
+										   Margin="8"
+										   VerticalAlignment="Center">
+						<telerik:RadTabItem Header="Details"
+											DataContext="{Binding}">
+							<Grid Width="Auto"
+								  HorizontalAlignment="Stretch">
+								<Grid.RowDefinitions>
+									<RowDefinition />
+									<RowDefinition />
+									<RowDefinition />
+									<RowDefinition />
+									<RowDefinition />
+									<RowDefinition />
+									<RowDefinition />
+									<RowDefinition Height="15" />
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto" />
+									<ColumnDefinition Width="Auto" />
+									<ColumnDefinition Width="Auto" />
+								</Grid.ColumnDefinitions>
+								<Border Grid.Column="0"
+										Grid.RowSpan="6"
+										Grid.Row="0"
+										VerticalAlignment="Top"
+										HorizontalAlignment="Stretch"
+										Height="115"
+										Width="115"
+										Margin="15"
+										BorderThickness="1"
+										BorderBrush="#FFD6D4D4">
+                                    <Image Source="{Binding Picture, Converter={StaticResource converter}}"
+										   HorizontalAlignment="Center"
+										   VerticalAlignment="Center" RenderOptions.BitmapScalingMode="HighQuality"
+										   Height="96"
+										   Width="96" />
+                                </Border>
+								<TextBlock Text="Last Name: "
+										   Margin="5,10,0,0"
+										   FontWeight="Bold"
+										   Grid.Row="0"
+										   Grid.Column="1" />
+								<TextBlock Text="{Binding LastName}"
+										   Margin="5,10,0,0"
+										   Grid.Row="0"
+										   Grid.Column="2" />
+								<TextBlock Text="First Name: "
+										   Margin="5,0,0,0"
+										   FontWeight="Bold"
+										   Grid.Row="1"
+										   Grid.Column="1" />
+								<TextBlock Text="{Binding FirstName}"
+										   Margin="5,0,0,0"
+										   Grid.Row="1"
+										   Grid.Column="2" />
+								<TextBlock Text="Title: "
+										   Margin="5,0,0,0"
+										   FontWeight="Bold"
+										   Grid.Row="2"
+										   Grid.Column="1" />
+								<TextBlock Text="{Binding Title}"
+										   Margin="5,0,0,0"
+										   Grid.Row="2"
+										   Grid.Column="2" />
+								<TextBlock Text="Address: "
+										   Margin="5,0,0,0"
+										   FontWeight="Bold"
+										   Grid.Row="3"
+										   Grid.Column="1" />
+								<StackPanel Orientation="Horizontal"
+											Grid.Row="3"
+											Grid.Column="2">
+									<TextBlock Text="{Binding Address}"
+											   Margin="5,0,0,0" />
+									<TextBlock Text=", " />
+									<TextBlock Text="{Binding PostalCode}" />
+								</StackPanel>
+								<TextBlock Text="City: "
+										   Margin="5,0,0,0"
+										   FontWeight="Bold"
+										   Grid.Row="4"
+										   Grid.Column="1" />
+								<TextBlock Text="{Binding City}"
+										   Margin="5,0,0,0"
+										   Grid.Row="4"
+										   Grid.Column="2" />
+								<TextBlock Text="Phone: "
+										   Margin="5,0,0,0"
+										   FontWeight="Bold"
+										   Grid.Row="5"
+										   Grid.Column="1" />
+								<TextBlock Text="{Binding HomePhone}"
+										   Margin="5,0,0,0"
+										   Grid.Row="5"
+										   Grid.Column="2" />
+							</Grid>
+						</telerik:RadTabItem>
+						<telerik:RadTabItem Header="Orders">
+							<local:OrdersView/>
+						</telerik:RadTabItem>
+						<telerik:RadTabItem Header="Performance Chart"
+											HorizontalContentAlignment="Stretch"
+											HorizontalAlignment="Left">
+							<local:PerformanceChart />
+						</telerik:RadTabItem>
+					</telerik:RadTabControl>
+				</DataTemplate>
+			</telerik:RadGridView.RowDetailsTemplate>
+		</telerik:RadGridView>
+	</Grid>
+</examples:GridViewExample>

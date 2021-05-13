@@ -1,0 +1,170 @@
+<t:RadDocument 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:t="clr-namespace:Telerik.WinForms.Documents.Model;assembly=Telerik.WinControls.RichTextEditor" 
+    xmlns:s="clr-namespace:Telerik.WinForms.Documents.Model.Styles;assembly=Telerik.WinControls.RichTextEditor" 
+    xmlns:r="clr-namespace:Telerik.WinForms.Documents.Model.Revisions;assembly=Telerik.WinControls.RichTextEditor" 
+    xmlns:n="clr-namespace:Telerik.WinForms.Documents.Model.Notes;assembly=Telerik.WinControls.RichTextEditor" 
+    xmlns:th="clr-namespace:Telerik.WinForms.Documents.Model.Themes;assembly=Telerik.WinControls.RichTextEditor" 
+    LayoutMode="Paged" LineSpacing="1.15" LineSpacingType="Auto" ParagraphDefaultSpacingAfter="12" ParagraphDefaultSpacingBefore="0" SectionDefaultPageSize="832,1116" SelectedBibliographicStyleName="\APA.XSL" StyleName="defaultDocumentStyle">
+  <t:RadDocument.Captions>
+    <t:CaptionDefinition IsDefault="True" IsLinkedToHeading="False" Label="Figure" LinkedHeadingLevel="0" NumberingFormat="Arabic" SeparatorType="Hyphen" />
+    <t:CaptionDefinition IsDefault="True" IsLinkedToHeading="False" Label="Table" LinkedHeadingLevel="0" NumberingFormat="Arabic" SeparatorType="Hyphen" />
+  </t:RadDocument.Captions>
+  <t:RadDocument.Lists>
+    <t:ListSerializationData ID="1" StyleID="1" />
+    <t:ListSerializationData ID="2" StyleID="2" />
+  </t:RadDocument.Lists>
+  <t:RadDocument.ListStyles>
+    <t:ListStyle ID="1" IsDefault="False">
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{0}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{1}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{2}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{3}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{4}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{5}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{6}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{7}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="0" LevelText="{}{8}." NumberingFormat="LowerRoman" StartingIndex="1" />
+    </t:ListStyle>
+    <t:ListStyle ID="2" IsDefault="True">
+      <t:ListLevelStyle HangingIndent="24" Indent="48" LevelText="{}{0}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="72" LevelText="{}{1}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="96" LevelText="{}{2}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="120" LevelText="{}{3}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="144" LevelText="{}{4}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="168" LevelText="{}{5}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="192" LevelText="{}{6}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="216" LevelText="{}{7}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="240" LevelText="{}{8}." NumberingFormat="LowerRoman" StartingIndex="1" />
+    </t:ListStyle>
+  </t:RadDocument.ListStyles>
+  <t:RadDocument.ProtectionSettings>
+    <t:DocumentProtectionSettings EnableDocumentProtection="True" Enforce="True" HashingAlgorithm="SHA1" HashingSpinCount="100000" PasswordHash="sWlbefj6Xd110KffwwBw9frq//g=" ProtectionMode="ReadOnly" Salt="rmweyMPx70gUbQVz1AXrvw==" />
+  </t:RadDocument.ProtectionSettings>
+  <t:RadDocument.Styles>
+    <s:StyleDefinition DisplayName="Document Default Style" IsCustom="False" IsDefault="False" IsPrimary="True" Name="defaultDocumentStyle" Type="Default">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1.14999997615814" LineSpacingType="Auto" SpacingAfter="13.3333330154419" SpacingBefore="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontSize="14.6666669845581" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Normal" IsCustom="False" IsDefault="True" IsPrimary="True" Name="Normal" Type="Paragraph" />
+    <s:StyleDefinition DisplayName="TableNormal" IsCustom="False" IsDefault="True" IsPrimary="True" Name="TableNormal" Type="Table">
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties CellPadding="5,0,5,0" />
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Title" IsCustom="True" IsDefault="False" IsPrimary="True" Name="Title" Type="Paragraph">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontFamily="Calibri" FontSize="37.3333320617676" ForeColor="#FF1F497D" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+  </t:RadDocument.Styles>
+  <t:Section PageMargin="96,96,96,96">
+    <t:Section.Footers>
+      <t:Footers>
+        <t:Footers.Default>
+          <t:Footer IsLinkedToPrevious="False" />
+        </t:Footers.Default>
+      </t:Footers>
+    </t:Section.Footers>
+    <t:Section.Headers>
+      <t:Headers>
+        <t:Headers.Default>
+          <t:Header IsLinkedToPrevious="False">
+            <t:Header.WatermarkSettings>
+              <t:DocumentWatermarkSettings Type="NoWatermark" />
+            </t:Header.WatermarkSettings>
+          </t:Header>
+        </t:Headers.Default>
+      </t:Headers>
+    </t:Section.Headers>
+    <t:Paragraph FontSize="25.3333339691162" LineSpacing="1" StyleName="Title">
+      <t:Paragraph.ParagraphSymbolPropertiesStyle>
+        <s:SpanProperties FontSize="25.3333339691162" />
+      </t:Paragraph.ParagraphSymbolPropertiesStyle>
+      <t:Span Text="Document Protection" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1">
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="One of the new features of RadRichTextBox introduced in Q3 2011 is " UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Bold" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Document Protection" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph FontSize="14.6666669845581" LineSpacing="1" TextAlignment="Justify">
+      <t:Paragraph.ParagraphSymbolPropertiesStyle>
+        <s:SpanProperties FontSize="14.6666669845581" />
+      </t:Paragraph.ParagraphSymbolPropertiesStyle>
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="It allows defining and enforcing different editing restrictions in the document for a set of users and groups." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph FontSize="14.6666669845581" LineSpacing="1" TextAlignment="Justify">
+      <t:Paragraph.ParagraphSymbolPropertiesStyle>
+        <s:SpanProperties FontSize="14.6666669845581" />
+      </t:Paragraph.ParagraphSymbolPropertiesStyle>
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="For example, the paragraph below can only be edited by" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF932320" HighlightColor="#00FFFFFF" Text=" James Miller" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph FontSize="14.6666669845581" LineSpacing="1" TextAlignment="Justify">
+      <t:Paragraph.ParagraphSymbolPropertiesStyle>
+        <s:SpanProperties FontSize="14.6666669845581" />
+      </t:Paragraph.ParagraphSymbolPropertiesStyle>
+      <t:PermissionRangeStart AnnotationID="1">
+        <t:PermissionRangeInfo Name="jmiller" Type="Individual" />
+      </t:PermissionRangeStart>
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:PermissionRangeEnd AnnotationID="1" />
+    </t:Paragraph>
+    <t:Paragraph FontSize="14.6666669845581" LineSpacing="1" TextAlignment="Justify">
+      <t:Paragraph.ParagraphSymbolPropertiesStyle>
+        <s:SpanProperties FontSize="14.6666669845581" />
+      </t:Paragraph.ParagraphSymbolPropertiesStyle>
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="The following part of the document, on the other hand, can be edited by a group - " UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF396BA7" HighlightColor="#00FFFFFF" Text="Admin Team" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text=", which includes" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF396BA7" HighlightColor="#00FFFFFF" Text=" John Smith" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text=" and" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF396BA7" HighlightColor="#00FFFFFF" Text=" Robert Brown" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" TextAlignment="Justify">
+      <t:PermissionRangeStart AnnotationID="2">
+        <t:PermissionRangeInfo Name="Administrators" Type="Group" />
+      </t:PermissionRangeStart>
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" TextAlignment="Justify">
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+      <t:PermissionRangeEnd AnnotationID="2" />
+    </t:Paragraph>
+    <t:Paragraph FontSize="14.6666669845581" LineSpacing="1" TextAlignment="Justify">
+      <t:Paragraph.ParagraphSymbolPropertiesStyle>
+        <s:SpanProperties FontSize="14.6666669845581" />
+      </t:Paragraph.ParagraphSymbolPropertiesStyle>
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="The steps for declaring different permissions in the document are:" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" ListId="2" TextAlignment="Justify">
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Lift the protection of the document using the Protect Document button from the RibbonUI;" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" ListId="2" RightIndent="0" TextAlignment="Justify">
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Select part of the document;" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" ListId="2" RightIndent="0" TextAlignment="Justify">
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Click on Editing Restrictions in the Review Tab;" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" ListId="2" RightIndent="0" TextAlignment="Justify">
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="Choose the users and groups that should be granted editing rights for the selected part of the document;" UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" ListId="2" RightIndent="0" TextAlignment="Justify">
+      <t:Span FontFamily="Verdana" FontStyle="Normal" FontWeight="Normal" ForeColor="#FF000000" HighlightColor="#00FFFFFF" Text="When you turn protection on (through the Protect Document button), the restrictions will be effectively applied. At this point, you can set a password for better protection of the document." UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph LineSpacing="1" TextAlignment="Justify" />
+    <t:Paragraph FontSize="14.6666669845581" LineSpacing="1" TextAlignment="Justify">
+      <t:Paragraph.ParagraphSymbolPropertiesStyle>
+        <s:SpanProperties FontSize="14.6666669845581" />
+      </t:Paragraph.ParagraphSymbolPropertiesStyle>
+      <t:Span Text="The protected documents can be persisted in XAML and docx." />
+    </t:Paragraph>
+  </t:Section>
+</t:RadDocument>

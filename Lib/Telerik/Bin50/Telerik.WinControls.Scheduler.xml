@@ -739,6 +739,12 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog.CanHaveMultipleResources">
+            <summary>
+            In unbound mode, all apointments support multiple resources. With data binding we need to check 
+            if we have One-to-Many or Many-to-Many relationship between the Appointments and Resources entities. 
+            </summary>
+        </member>
         <member name="F:Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog.components">
             <summary>
             Required designer variable.

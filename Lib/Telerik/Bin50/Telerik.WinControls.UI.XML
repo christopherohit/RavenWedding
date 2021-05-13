@@ -1254,6 +1254,11 @@
             Gets or sets the Svg Image.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.UI.RadDropDownButton.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
+            </summary>
+        </member>
         <member name="P:Telerik.WinControls.UI.RadDropDownButton.Image">
             <commentsfrom cref="P:Telerik.WinControls.UI.RadDropDownButtonElement.Image" filter=""/>
         </member>
@@ -1375,6 +1380,11 @@
         <member name="P:Telerik.WinControls.UI.RadDropDownButtonElement.SvgImage">
             <summary>
             Gets or sets the vector image that is displayed on a button element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadDropDownButtonElement.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.RadDropDownButtonElement.Image">
@@ -8511,6 +8521,11 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.UI.Properties.Resources.image60x60">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:Telerik.WinControls.UI.Properties.Resources.italic">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
@@ -8557,6 +8572,16 @@
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.Properties.Resources.nextButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Properties.Resources.no_image_Svg">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Properties.Resources.no_image32x32">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
@@ -17244,7 +17269,8 @@
         </member>
         <member name="P:Telerik.WinControls.UI.CalendarNavigationElement.FastNavigationItemsCount">
             <summary>
-            Gets or sets the count of the items in the fast navigation drop down
+            Gets or sets the count of the items in the fast navigation drop down.
+            Note that only 3, 7, 11 and 13 values can be accepted.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.CalendarNavigationElement.FastBackwardButton">
@@ -26670,12 +26696,12 @@
         </member>
         <member name="P:Telerik.WinControls.UI.RadDateTimePickerElement.MaximumDateTime">
             <summary>
-            Gets the maximum date value allowed for the DateTimePicker control.
+            Gets or sets the maximum date value allowed for the DateTimePicker control.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.RadDateTimePickerElement.MinimumDateTime">
             <summary>
-            Gets the minimum date value allowed for the DateTimePicker control.
+            Gets or sets the minimum date value allowed for the DateTimePicker control.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.RadDateTimePickerElement.MinDate">
@@ -36538,7 +36564,7 @@
         </member>
         <member name="P:Telerik.WinControls.UI.RadImageEditorElement.ZoomElement">
             <summary>
-            Gets the element continaing the zooming controls.
+            Gets the element containing the zooming controls.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.RadImageEditorElement.ScrollViewer">
@@ -36603,12 +36629,12 @@
         </member>
         <member name="E:Telerik.WinControls.UI.RadImageEditorElement.ImageSaved">
             <summary>
-            Ocurs whent the image is saved.
+            Occurs when the image is saved.
             </summary>
         </member>
         <member name="E:Telerik.WinControls.UI.RadImageEditorElement.CurrentImageChanged">
             <summary>
-            Occurs when a spesific operation is performed over the current bitmap
+            Occurs when a specific operation is performed over the current bitmap
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadImageEditorElement.OnCurrentImageChanged(Telerik.WinControls.UI.ImageChangedEventArgs)">
@@ -40516,6 +40542,12 @@
             Occurs when an item is removed using the Delete key.
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.UI.RadListViewElement.OnCurrecntItemChanged(Telerik.WinControls.UI.ListViewItemEventArgs)">
+            <summary>
+            Obsolete. The name of the method has a typo. Use the OnCurrentItemChanged(ListViewItemEventArgs args) method instead.
+            </summary>
+            <param name="args"></param>
+        </member>
         <member name="P:Telerik.WinControls.UI.RadListViewElement.CaseSensitiveColumnNames">
             <summary>
             Gets or sets a value indicating whether column names which differ only in the casing are allowed.
@@ -43654,6 +43686,1269 @@
         <member name="M:Telerik.WinControls.UI.TileGroupElement.UpdateCellCount">
             <summary>
             Updates the number of rows and columns before each layout update.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxImageEditedEventHandler">
+            <summary>
+            The event handler for the <see cref="E:Telerik.WinControls.UI.RadPictureBoxElement.ImageEdited"/> event. Handleable.
+            </summary>
+            <param name="sender">The sender. Usually this is the <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs">
+            <summary>
+            Contains information about the original, the edited image and the editing dialog.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs.#ctor(System.Drawing.Image,Telerik.WinControls.UI.PictureBoxImageEditorDialog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs"/> class.
+            </summary>
+            <param name="unmodifiedImage">The unmodified image.</param>
+            <param name="dialog">The image editor dialog.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs.UnmodifiedImage">
+            <summary>
+            Gets the unmodified image that was displayed in the <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/> before the editing dialog was shown.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs.NewImage">
+            <summary>
+            Gets or sets the modified image that will be applied to the <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs.Dialog">
+            <summary>
+            Gets the image editor dialog.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs.ImageEditor">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.RadImageEditor"/> that is responsible for image editing.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs.Handled">
+            <summary>
+            If [true] the image will not be changed after the event(the unmodified image will remain) and you should manually update the image applying to <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.
+            If [false] the <see cref="P:Telerik.WinControls.UI.PictureBoxImageEditedEventArgs.NewImage"/> will be applied to <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventHandler">
+            <summary>
+            The event handler for the <see cref="E:Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorOpening"/> event. Cancellable.
+            </summary>
+            <param name="sender">The sender. Usually this is the <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventArgs">
+            <summary>
+            Contains information about the dialog, image editor and the image that will be edited.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventArgs.#ctor(Telerik.WinControls.UI.PictureBoxImageEditorDialog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventArgs"/> class.
+            </summary>
+            <param name="dialog">The image editor dialog.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventArgs.Dialog">
+            <summary>
+            Gets the image editor dialog.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventArgs.ImageEditor">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.RadImageEditor"/> that is responsible for image editing.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventArgs.EditingImage">
+            <summary>
+            Gets or sets the image that is about to be edited.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditorOpeningEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether to cancel the image editing operation.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventHandler">
+            <summary>
+            The event handler for the AnimationStarting event. Cancellable.
+            </summary>
+            <param name="sender">The object that will be animated.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs">
+            <summary>
+            Contains information about the animated object and the animation settings.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.#ctor(Telerik.WinControls.RadElement,Telerik.WinControls.AnimatedPropertySetting,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs"/> class.
+            </summary>
+            <param name="animatedObject">The object that is about to be animated.</param>
+            <param name="animation">The <see cref="T:Telerik.WinControls.AnimatedPropertySetting"/> that is responsible for the animation.</param>
+            <param name="isPanelShowing">A value that indicates whether the panel is showing or hiding.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.IsPanelShowing">
+            <summary>
+            Gets a value that indicates whether the panel is showing.
+            If [true] the panel is about to be shown.
+            If [false] the panel will be hidden.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether to cancel the animation.
+            Note that if you cancel the event, you still need to provide a valid <see cref="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.AnimatedProperty"/> and <see cref="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.EndValue"/>. They will be applied to the <see cref="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.AnimatedObject"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.AnimatedObject">
+            <summary>
+            Gets the object that is about to be animated.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.Animation">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.AnimatedPropertySetting"/> that is responsible for the animation.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.AnimatedProperty">
+            <summary>
+            Gets or sets the property that will be animated.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.StartValue">
+            <summary>
+            Gets or sets the start value for the animation.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.EndValue">
+            <summary>
+            Gets or sets the end value for the animation.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.AnimationFrames">
+            <summary>
+            Gets or sets the number of frames in which the animation will run.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxPanelAnimationStartingEventArgs.AnimationInterval">
+            <summary>
+            Gets or sets the interval between animation frames.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditorDialog.ImageEditor">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.UI.RadImageEditor"/> control responsible for the image editing.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditorDialog.OkButton">
+            <summary>
+            Gets the OK button.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxImageEditorDialog.CancelButton">
+            <summary>
+            Gets the Cancel button.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.PictureBoxImageEditorDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxImageEditorDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxImageEditorDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxBasePanelElement">
+            <summary>
+            base class used to hold items three panels of elements - Near, Center and Far.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.PictureBoxBasePanelElement"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.InitializeFields">
+            <summary>
+            Initializes member fields to their default values.
+            This method is called prior the CreateChildItems one and allows for initialization of members on which child elements depend.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CreateChildElements">
+            <summary>
+            Called by the element when constructed. Allows inheritors to build the element tree.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CreateNearItemsCollection">
+            <summary>
+            Creates a new items collection positioned in the near end. 
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Horizontal the position is left.
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Vertical the position is top.
+            </summary>
+            <returns>The items collection.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CreateCenterItemsCollection">
+            <summary>
+            Creates a new items collection positioned in the center.
+            </summary>
+            <returns>The items collection.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CreateFarItemsCollection">
+            <summary>
+            Creates a new items collection positioned in the far end. 
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Horizontal the position is right.
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Vertical the position is bottom.
+            </summary>
+            <returns>The items collection.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CreateNearElementsStack">
+            <summary>
+            Creates an element stack positioned in the near end.
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Horizontal the position is left.
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Vertical the position is top.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CreateCenterElementsStack">
+            <summary>
+            Creates an element stack positioned in the center.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CreateFarElementsStack">
+            <summary>
+            Creates an element stack positioned in the far end.
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Horizontal the position is right.
+            When the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.Orientation"/> is Vertical the position is bottom.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.AllowAnimation">
+            <summary>
+            Gets or sets a value indicating whether to use animation when changing its state.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationInterval">
+            <summary>
+            Gets or sets the animation interval.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationFrames">
+            <summary>
+            Gets or sets the animation frames.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.IsAnimating">
+            <summary>
+            Gets a value indicating whether the control is currently animating.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.DisplayProperty">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.WinControls.RadProperty"/> which is changed when the panel is Shown or Hidden.
+            Note that when this property is changed the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.VisibleValue"/> and <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.HiddenValue"/> must also be updated accordingly.
+            Note that if the animation property is changed in the <see cref="E:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationStarting"/> event, it will affect this property.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.VisibleValue">
+            <summary>
+            Gets or sets the value applied to the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.DisplayProperty"/> when the panel is displayed.
+            Note that if the animation property is changed in the <see cref="E:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationStarting"/> event, it will affect this property.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.HiddenValue">
+            <summary>
+            Gets or sets the value applied to the <see cref="P:Telerik.WinControls.UI.PictureBoxBasePanelElement.DisplayProperty"/> when the panel is hidden.
+            Note that if the animation property is changed in the <see cref="E:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationStarting"/> event, it will affect this property.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.Show(System.Boolean)">
+            <summary>
+            Shows the panel.
+            </summary>
+            <param name="animate"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.Hide(System.Boolean)">
+            <summary>
+            Hides the panel.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.ChangeState(System.Boolean,System.Boolean)">
+            <summary>
+            Changes the state of this object by setting a new value to a specified RadProperty and applies animation.
+            If animation is not allowed only applies the new value to the object.
+            </summary>
+            <param name="isPanelShowing">If [true] shows the panel, otherwise hides it.</param>
+            <param name="animate">Whether to apply animation.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.CancelAnimation">
+            <summary>
+            Cancels the currently running animation.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationStarting">
+            <summary>
+            Occurs before the start of the animation. Suitable to change any animation property(for example the animated property) or cancel the animation.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationStarted">
+            <summary>
+            Occurs when the animation is started.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.PictureBoxBasePanelElement.AnimationFinished">
+            <summary>
+            Occurs when the animation is finished.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.ShouldMeasureChild(Telerik.WinControls.RadElement)">
+            <summary>
+            Gets a value indicating, whether a child will be measured during the MeasureOverride.
+            </summary>
+            <param name="child">The child.</param>
+            <returns>Whether the child will be measured in MeasureOverride.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.MeasureOverride(System.Drawing.SizeF)">
+            <summary>
+            Measures the space required by the <see cref="T:Telerik.WinControls.UI.PictureBoxBasePanelElement"/>
+            
+            Used by the layout system.
+            </summary>
+            <param name="availableSize">The size that is available to the <see cref="T:Telerik.WinControls.UI.PictureBoxBasePanelElement"/>. The available size can be infinity (to take the full size of the element)</param>
+            <returns>The minimum size required by the element to be completely visible. Cannot be infinity.</returns>
+            <remarks>In this method call to the Measure method of each child must be made.</remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.ShouldArrangeChild(Telerik.WinControls.RadElement)">
+            <summary>
+            Determines whether a given child should be arranged. For example when base.ArrangeOverride() is called, but we have custom layout logic for current element.
+            </summary>
+            <param name="child">The child that is going to be arranged.</param>
+            <returns>A value indicating whether the base class layout will be executed for the given child.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxBasePanelElement.ArrangeOverride(System.Drawing.SizeF)">
+            <summary>
+            Arranges the <see cref="T:Telerik.WinControls.UI.PictureBoxBasePanelElement"/> to its final location.
+            The element must call the Arrange method of each of its children.
+            </summary>
+            <param name="finalSize">The size that is available for element.</param>
+            <returns>The rectangle occupied by the element. Usually <paramref name="finalSize"/>. Should you return different size, the Layout system will restart measuring and rearranging the items. That could lead to infinite recursion.</returns>
+            <remarks>In this method call to the Arrange method of each child must be made.</remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxHorizontalPanelElement.InitializeFields">
+            <summary>
+            Initializes member fields to their default values.
+            This method is called prior the CreateChildItems one and allows for initialization of members on which child elements depend.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxHorizontalPanelElement.LeftElementsStack">
+            <summary>
+            Gets the left elements stack.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxHorizontalPanelElement.CenterElementsStack">
+            <summary>
+            Gets the center elements stack.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxHorizontalPanelElement.RightElementsStack">
+            <summary>
+            Gets the right elements stack.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxHorizontalPanelElement.LeftItems">
+            <summary>
+            Gets the left items collection.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxHorizontalPanelElement.CenterItems">
+            <summary>
+            Gets the center items collection.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxHorizontalPanelElement.RightItems">
+            <summary>
+            Gets the right items collection.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxPanelDisplayMode">
+            <summary>
+            An enumeration which indicates how the panels of <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/> will be displayed.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.PictureBoxPanelDisplayMode.Always">
+            <summary>
+            The panels will be displayed always.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.PictureBoxPanelDisplayMode.OnMouseHover">
+            <summary>
+            The panels will be displayed only when the mouse is over the picture box.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.PictureBoxPanelDisplayMode.None">
+            <summary>
+            The panels will not be displayed. Suitable to manually manage when the panels will be displayed.
+            In order to show/hide use the ShowPanels(bool animate) and HidePanels(bool animate) of <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxPanelOverflowMode">
+            <summary>
+            An enumeration which indicates how the panels of <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/> will be positioned.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.PictureBoxPanelOverflowMode.HorizontalOverVertical">
+            <summary>
+            The horizontal panels will occupy the full width of the element/control and the vertical ones will be placed into the rest space between the horizontal panels.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.PictureBoxPanelOverflowMode.VerticalOverHorizontal">
+            <summary>
+            The vertical panels will occupy the full height of the element/control and the horizontal ones will be placed into the rest space between the vertical panels.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxVerticalPanelElement.InitializeFields">
+            <summary>
+            Initializes member fields to their default values.
+            This method is called prior the CreateChildItems one and allows for initialization of members on which child elements depend.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxVerticalPanelElement.TopElementsStack">
+            <summary>
+            Gets the top elements stack.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxVerticalPanelElement.CenterElementsStack">
+            <summary>
+            Gets the center elements stack.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxVerticalPanelElement.BottomElementsStack">
+            <summary>
+            Gets the bottom elements stack.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxVerticalPanelElement.TopItems">
+            <summary>
+            Gets the top items collection.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxVerticalPanelElement.CenterItems">
+            <summary>
+            Gets the center items collection.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxVerticalPanelElement.BottomItems">
+            <summary>
+            Gets the bottom items collection.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.StackLayoutElementLite">
+            <summary>
+            Represents a stack layout element that arranges its children horizontally or vertically. Is also offers ElementSpacing property and respects the element's alignment.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.StackLayoutElementLite.InitializeFields">
+            <summary>
+            Initializes member fields to their default values.
+            This method is called prior the CreateChildItems one and allows for initialization of members on which child elements depend.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.StackLayoutElementLite.Orientation">
+            <summary>
+            Gets or sets the item orientation.
+            </summary>
+            <value>
+            The orientation.
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.UI.StackLayoutElementLite.ElementSpacing">
+            <summary>
+            Gets or sets the element spacing between items.
+            </summary>
+            <value>
+            The element spacing.
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.UI.StackLayoutElementLite.RightToLeftMode">
+            <summary>
+            Gets or sets the right to left mode.
+            </summary>
+            <value>
+            The right to left mode.
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.UI.StackLayoutElementLite.Comparer">
+            <summary>
+            Gets or sets a comparer to be used for defining the order of the child elements.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.StackLayoutElementLite.MeasureOverride(System.Drawing.SizeF)">
+            <summary>
+            Measures the space required by the <see cref="T:Telerik.WinControls.UI.StackLayoutElementLite"/>
+            
+            Used by the layout system.
+            </summary>
+            <param name="availableSize">The size that is available to the <see cref="T:Telerik.WinControls.UI.StackLayoutElementLite"/>. The available size can be infinity (to take the full size of the element)</param>
+            <returns>The minimum size required by the element to be completely visible. Cannot be infinity.</returns>
+            <remarks>In this method call to the Measure method of each child must be made.</remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.StackLayoutElementLite.MeasureElement(Telerik.WinControls.RadElement,System.Drawing.SizeF@,System.Drawing.SizeF@)">
+            <summary>
+            Measures the element.
+            </summary>
+            <param name="element">The element to measure.</param>
+            <param name="availableSize">The available size.</param>
+            <param name="parentDesiredSize">The desired size of its parent.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.StackLayoutElementLite.ArrangeOverride(System.Drawing.SizeF)">
+            <summary>
+            Arranges the <see cref="T:Telerik.WinControls.UI.StackLayoutElementLite"/> to its final location.
+            The element must call the Arrange method of each of its children.
+            </summary>
+            <param name="finalSize">The size that is available for element.</param>
+            <returns>The rectangle occupied by the element. Usually <paramref name="finalSize"/>. Should you return different size, the Layout system will restart measuring and rearranging the items. That could lead to infinite recursion.</returns>
+            <remarks>In this method call to the Arrange method of each child must be made.</remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.StackLayoutElementLite.ArrangeElement(Telerik.WinControls.RadElement,System.Drawing.RectangleF,System.Drawing.RectangleF,System.Drawing.SizeF)">
+            <summary>
+            Arranges the element.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="clientRect">The client rect.</param>
+            <param name="finalRect">The final rect.</param>
+            <param name="finalSize">The final size.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.StackLayoutElementLite.AlignRect(Telerik.WinControls.RadElement,System.Drawing.RectangleF)">
+            <summary>
+            Aligns the rectangle according to orientation and element's alignment.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="arrangeRect">The arrange rect.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxCanvasElement.AllowBasePaint">
+            <summary>
+            Gets or sets a value indicating whether to paint the border, background, background image, text and other children.
+            If false only the image/svg image/ of the owner element will be painted.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxContextMenuProperties">
+            <summary>
+            A class that defines the properties that are related to the context menu in <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxContextMenuProperties.#ctor(Telerik.WinControls.UI.RadPictureBoxElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.PictureBoxZoomProperties"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxContextMenuProperties.OpenItem">
+            <summary>
+            Gets the open menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxContextMenuProperties.SaveItem">
+            <summary>
+            Gets the save menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxContextMenuProperties.RemoveItem">
+            <summary>
+            Gets the remove menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxContextMenuProperties.CutItem">
+            <summary>
+            Gets the cut menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxContextMenuProperties.CopyItem">
+            <summary>
+            Gets the copy menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxContextMenuProperties.PasteItem">
+            <summary>
+            Gets the paste menu item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxContextMenuProperties.EditItem">
+            <summary>
+            Gets the edit menu item.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.PictureBoxZoomProperties">
+            <summary>
+            A class that defines the properties that are related to the zoom operations in <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxZoomProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.PictureBoxZoomProperties"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxZoomProperties.AllowZoom">
+            <summary>
+            Gets or sets a value indicating whether the zoom operations are allowed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxZoomProperties.MinZoomFactor">
+            <summary>
+            Gets or sets the minimal zoom factor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxZoomProperties.MaxZoomFactor">
+            <summary>
+            Gets or sets the maximal zoom factor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxZoomProperties.ZoomFactor">
+            <summary>
+            Gets or sets the current zoom factor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxZoomProperties.ZoomStep">
+            <summary>
+            Gets or sets the step that increments or decrements the element during a zoom operation with the mouse.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.PictureBoxZoomProperties.TouchZoomStep">
+            <summary>
+            Gets or sets the step that increments or decrements the element during a zoom operation with touch gesture.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxZoomProperties.Zoom(System.Int32)">
+            <summary>
+            Performs a zoom operation by given steps count.
+            </summary>
+            <param name="step">Number of steps to zoom. Positive value will zoom-in, while a negative value will zoom-out.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxZoomProperties.ZoomIn">
+            <summary>
+            Performs a zoom-in operation with one step, according to the ZoomStep value.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxZoomProperties.ZoomIn(System.Int32)">
+            <summary>
+            Performs a zoom-in operation with several steps, according to the ZoomStep value.
+            </summary>
+            <param name="steps">The count of steps to zoom in.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxZoomProperties.ZoomOut">
+            <summary>
+            Performs a zoom-out operation with one step, according to the ZoomStep value.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxZoomProperties.ZoomOut(System.Int32)">
+            <summary>
+            Performs a zoom-out operation with several steps, according to the ZoomStep value.
+            </summary>
+            <param name="steps">The count of steps to zoom-out.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.PictureBoxZoomProperties.ResetZoom">
+            <summary>
+            Resets the zoom to the default value.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.PictureBoxZoomProperties.PropertyChanged">
+            <summary>
+            An event that is raised when a property is changed.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.RadImageLayout">
+            <summary>
+            Represents an enumeration that specifies the position of the image on the control/element.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadImageLayout.None">
+            <summary>
+            The image is aligned according to the ImageAlignment property value.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadImageLayout.Tile">
+            <summary>
+            The image is tiled across the element's client rectangle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadImageLayout.Center">
+            <summary>
+            The image is centered within the element's client rectangle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadImageLayout.Stretch">
+            <summary>
+            The image is stretched across the element's client rectangle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadImageLayout.Zoom">
+            <summary>
+            The image is enlarged within the element's client rectangle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadImageLayout.FitIntoBounds">
+            <summary>
+            If the image is smaller than the control's client rectangle it is centered, otherwise the image is enlarged within the control's client rectangle.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.RadPictureBoxLocalizationProvider">
+            <summary>
+            Provides localization services for RadPictureBox.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxLocalizationProvider.GetLocalizedString(System.String)">
+            <summary>
+            Gets the string corresponding to the given ID.
+            </summary>
+            <param name="id">String ID.</param>
+            <returns>The string corresponding to the given ID.</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.RadPictureBoxStringId">
+            <summary>
+            RadPictureBox localization strings.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.RadPictureBox"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.CreateImageEditorElement">
+            <summary>
+            Creates a new instance of the <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/> class used as main element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.DefaultSize">
+            <summary>
+            Gets the default size of the <see cref="T:Telerik.WinControls.UI.RadPictureBox"/> when a new instance is initialized.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.Image">
+            <summary>
+            Gets or sets the image.
+            Note if the <see cref="P:Telerik.WinControls.UI.RadPictureBox.Image"/> and <see cref="P:Telerik.WinControls.UI.RadPictureBox.SvgImage"/> have both values - the <see cref="P:Telerik.WinControls.UI.RadPictureBox.SvgImage"/> will be displayed with a higher precedence.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.SvgImage">
+            <summary>
+            Gets or sets the vector image.
+            Note if the <see cref="P:Telerik.WinControls.UI.RadPictureBox.Image"/> and <see cref="P:Telerik.WinControls.UI.RadPictureBox.SvgImage"/> have both values - the <see cref="P:Telerik.WinControls.UI.RadPictureBox.SvgImage"/> will be displayed with a higher precedence.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ImageAlignment">
+            <summary>
+            Gets or sets the alignment of the image on the drawing surface. Default is TopLeft.
+            Note that this property is respected only when the ImageLayout is set to None.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ImageLayout">
+            <summary>
+            Specifies how the image is positioned on the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ShowBorder">
+            <summary>
+            Gets or sets a value indicating whether to display control border.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ShowBackground">
+            <summary>
+            Gets or sets a value indicating whether to display control background(fill).
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.DefaultText">
+            <summary>
+            Gets or sets the text which is displayed when the <see cref="P:Telerik.WinControls.UI.LightVisualElement.Image"/> and <see cref="P:Telerik.WinControls.UI.LightVisualElement.SvgImage"/> properties are not specified.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.DefaultImage">
+            <summary>
+            Gets or sets the raster image which is displayed when the <see cref="P:Telerik.WinControls.UI.LightVisualElement.Image"/> and <see cref="P:Telerik.WinControls.UI.LightVisualElement.SvgImage"/> properties are not specified.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.DefaultSvgImage">
+            <summary>
+            Gets or sets the vector image which is displayed when the <see cref="P:Telerik.WinControls.UI.LightVisualElement.Image"/> and <see cref="P:Telerik.WinControls.UI.LightVisualElement.SvgImage"/> properties are not specified.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.TopPanel">
+            <summary>
+            Gets the top panel element. This panel allows adding buttons label and other elements in three collections - left, center and right items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.BottomPanel">
+            <summary>
+            Gets the bottom panel element. This panel allows adding buttons label and other elements in three collections - left, center and right items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.LeftPanel">
+            <summary>
+            Gets the left panel element. This panel allows adding buttons label and other elements in three collections - top, center and bottom items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.RightPanel">
+            <summary>
+            Gets the right panel element. This panel allows adding buttons label and other elements in three collections - top, center and bottom items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.PanelOverflowMode">
+            <summary>
+            Gets or sets a value indicating how the panels are positioned.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.PanelDisplayMode">
+            <summary>
+            Gets or sets a value indicating how the panels are displayed. The possible options are: always or on mouse hover.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.AllowPanelAnimations">
+            <summary>
+            Gets or sets a value indicating whether to show animations when showing and hiding panels.
+            Note that animations are applied only when PanelDisplayMode is set to OnMouseHover.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ShowScrollBars">
+            <summary>
+            Gets or sets a value indicating whether to display scrollbars when the displayed image is larger than the control, 
+            or when the user zooms-in and the zoomed image size exceeds the size of the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ImageEditorDialog">
+            <summary>
+            Gets or sets the dialog responsible for image editing.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ZoomProperties">
+            <summary>
+            Gets the properties responsible for the zoom operations.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ContextMenuEnabled">
+            <summary>
+            Gets or sets a value indicating whether to display context menu on right mouse click.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ContextMenuDropDown">
+            <summary>
+            Gets the context menu.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.ContextMenuProperties">
+            <summary>
+            Gets the context menu related properties.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBox.Text">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.CutImage">
+            <summary>
+            Copies the displayed image into the clipboard and clears the displayed image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.CopyImage">
+            <summary>
+            Copies the displayed image into the clipboard.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.PasteImage">
+            <summary>
+            Pastes an image from the clipboard.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.LoadImage">
+            <summary>
+            Opens an OpenFileDialog which allows the user to choose an image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.SaveImage">
+            <summary>
+            Opens a SaveFileDialog which allows the user to save the displayed image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBox.ClearImage">
+            <summary>
+            Removes the image and/or svg image.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ImageLoaded">
+            <summary>
+            Occurs when a raster or vector(SVG) image has been loaded by the user.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ImageSaved">
+            <summary>
+            Occurs when the displayed image has been saved by the user.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ZoomChanged">
+            <summary>
+            Occurs when the ZoomFactor has changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ContextMenuItemClick">
+            <summary>
+            Occurs when an item in the context menu is clicked.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ContextMenuOpening">
+            <summary>
+            Occurs when the context menu is opening.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ContextMenuClosing">
+            <summary>
+            Occurs when the context menu is closing.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ContextMenuOpened">
+            <summary>
+            Occurs when the context menu is opened.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ContextMenuClosed">
+            <summary>
+            Occurs when the context menu is closed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ImageEditorOpening">
+            <summary>
+            Occurs when the image is about to be edited in the <see cref="P:Telerik.WinControls.UI.RadPictureBox.ImageEditorDialog"/>. Cancellable.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBox.ImageEdited">
+            <summary>
+            Occurs when the image has been edited by the <see cref="P:Telerik.WinControls.UI.RadPictureBox.ImageEditorDialog"/> and the user has accepted the changes. Can be handled.
+            Note that this event fill be fired always when the user clicks the OK button of the dialog, even if there are no changes in the image.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.RadPictureBoxElement">
+            <summary>
+            This class is used to display raster or vector images. It allows image scrolling as well as pan, zoom, image editing and many more.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.InitializeFields">
+            <summary>
+            Initializes member fields to their default values.
+            This method is called prior the CreateChildItems one and allows for initialization of members on which child elements depend.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.CreateChildElements">
+            <summary>
+            Called by the element when constructed. Allows inheritors to build the element tree.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.CanvasElement">
+            <summary>
+            Gets the element that is responsible for painting the image.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.TopPanel">
+            <summary>
+            Gets the top panel element. This panel allows adding buttons label and other elements in three collections - left, center and right items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.BottomPanel">
+            <summary>
+            Gets the bottom panel element. This panel allows adding buttons label and other elements in three collections - left, center and right items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.LeftPanel">
+            <summary>
+            Gets the left panel element. This panel allows adding buttons label and other elements in three collections - top, center and bottom items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.RightPanel">
+            <summary>
+            Gets the right panel element. This panel allows adding buttons label and other elements in three collections - top, center and bottom items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.PanelOverflowMode">
+            <summary>
+            Gets or sets a value indicating how the panels are positioned.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.PanelDisplayMode">
+            <summary>
+            Gets or sets a value indicating how the panels are displayed. The possible options are: always or on mouse hover.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.AllowPanelAnimations">
+            <summary>
+            Gets or sets a value indicating whether to show animations when showing and hiding panels.
+            Note that animations are applied only when PanelDisplayMode is set to OnMouseHover.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.ZoomProperties">
+            <summary>
+            Gets the properties responsible for the zoom operations.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.NoPictureStack">
+            <summary>
+            Gets the <see cref="T:Telerik.WinControls.Layouts.StackLayoutPanel"/> that is displayed when there is no image(raster or vector) assigned.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.NoPictureImageElement">
+            <summary>
+            Gets the element that holds the image visible when there is no image(raster or vector) assigned.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.NoPictureTextElement">
+            <summary>
+            Gets the element that holds the text visible when there is no image(raster or vector) assigned.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.HorizontalScrollBar">
+            <summary>
+            Gets the horizontal scrollbar element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.VerticalScrollBar">
+            <summary>
+            Gets the vertical scrollbar element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.ShowScrollBars">
+            <summary>
+            Gets or sets a value indicating whether to display scrollbars when the displayed image is larger than the element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.DefaultText">
+            <summary>
+            Gets or sets the text which is displayed when the <see cref="P:Telerik.WinControls.UI.LightVisualElement.Image"/> and <see cref="P:Telerik.WinControls.UI.LightVisualElement.SvgImage"/> properties are not specified.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.DefaultImage">
+            <summary>
+            Gets or sets the raster image which is displayed when the <see cref="P:Telerik.WinControls.UI.LightVisualElement.Image"/> and <see cref="P:Telerik.WinControls.UI.LightVisualElement.SvgImage"/> properties are not specified.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.DefaultSvgImage">
+            <summary>
+            Gets or sets the vector image which is displayed when the <see cref="P:Telerik.WinControls.UI.LightVisualElement.Image"/> and <see cref="P:Telerik.WinControls.UI.LightVisualElement.SvgImage"/> properties are not specified.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.RadImageLayout">
+            <summary>
+            Specifies how the image is positioned on the element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.ImageAlignment">
+            <summary>
+            Gets or sets the alignment of the image on the drawing surface. Default is TopLeft.
+            Note that this property is respected only when the ImageLayout is set to None.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenuEnabled">
+            <summary>
+            Gets or sets a value indicating whether to display context menu on right mouse click.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenu">
+            <summary>
+            Gets the context menu.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenuProperties">
+            <summary>
+            Gets the context menu related properties.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorDialog">
+            <summary>
+            Gets or sets the dialog responsible for image editing.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadPictureBoxElement.HasImage">
+            <summary>
+            Returns a value indicating whether the element has assigned Image or SvgImage.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.Zoom(System.Int32)">
+            <summary>
+            Performs a zoom operation by given steps count.
+            </summary>
+            <param name="step">Number of steps to zoom. Positive value will zoom-in, while a negative value will zoom-out.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ZoomIn">
+            <summary>
+            Performs a zoom-in operation with one step, according to the ZoomProperties.ZoomStep value.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ZoomIn(System.Int32)">
+            <summary>
+            Performs a zoom-in operation with several steps, according to the ZoomProperties.ZoomStep value.
+            </summary>
+            <param name="steps">The count of steps to zoom in.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ZoomOut">
+            <summary>
+            Performs a zoom-out operation with one step, according to the ZoomProperties.ZoomStep value.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ZoomOut(System.Int32)">
+            <summary>
+            Performs a zoom-out operation with several steps, according to the ZoomProperties.ZoomStep value.
+            </summary>
+            <param name="steps">The count of steps to zoom-out.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ShouldArrangeChild(Telerik.WinControls.RadElement)">
+            <summary>
+            Gets a value indicating, whether a child will be arranged during the ArrangeOverride.
+            </summary>
+            <param name="child">The child.</param>
+            <returns>Whether the child will be arranged in ArrangeOverride.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ArrangeOverride(System.Drawing.SizeF)">
+            <summary>
+            Arranges the <see cref="T:Telerik.WinControls.UI.RadPictureBoxElement"/> to its final location.
+            The element must call the Arrange method of each of its children.
+            </summary>
+            <param name="finalSize">The size that is available for element.</param>
+            <returns>The rectangle occupied by the element. Usually <paramref name="finalSize"/>. Should you return different size, the Layout system will restart measuring and rearranging the items. That could lead to infinite recursion.</returns>
+            <remarks>In this method call to the Arrange method of each child must be made.</remarks>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ZoomChanged">
+            <summary>
+            Raised after the ZoomFactor is changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenuItemClick">
+            <summary>
+            Occurs when an item in the context menu is clicked.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenuOpening">
+            <summary>
+            Occurs when the context menu is opening.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenuClosing">
+            <summary>
+            Occurs when the context menu is closing.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenuOpened">
+            <summary>
+            Occurs when the context menu is opened.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ContextMenuClosed">
+            <summary>
+            Occurs when the context menu is closed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorOpening">
+            <summary>
+            Occurs when the image is about to be edited in the <see cref="P:Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorDialog"/>. Cancellable.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ImageEdited">
+            <summary>
+            Occurs when the image has been edited by the <see cref="P:Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorDialog"/> and the user has accepted the changes. Can be handled.
+            Note that this event fill be fired always when the user clicks the OK button of the dialog, even if there are no changes in the image.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ImageLoaded">
+            <summary>
+            Occurs when a raster or vector(SVG) image has been loaded by the user.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadPictureBoxElement.ImageSaved">
+            <summary>
+            Occurs when the displayed image has been saved by the user.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ShowPanels(System.Boolean)">
+            <summary>
+            Shows the panels.
+            </summary>
+            <param name="animate">A value indicating whether to use animation.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.HidePanels(System.Boolean)">
+            <summary>
+            Hides the panels.
+            </summary>
+            <param name="animate">A value indicating whether to use animation.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.CutImage">
+            <summary>
+            Copies the displayed image into the clipboard and clears the displayed image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.CopyImage">
+            <summary>
+            Copies the displayed image into the clipboard.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.PasteImage">
+            <summary>
+            Pastes an image from the clipboard.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.LoadImage">
+            <summary>
+            Opens an OpenFileDialog which allows the user to choose an image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.SaveImage">
+            <summary>
+            Opens a SaveFileDialog which allows the user to save the displayed image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.ClearImage">
+            <summary>
+            Removes the image and/or svg image.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.EditImage">
+            <summary>
+            Edits the image using a <see cref="T:Telerik.WinControls.UI.RadImageEditor"/> displayed in a <see cref="T:Telerik.WinControls.UI.PictureBoxImageEditorDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.OnContextMenuOpening(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the ContextMenuOpening event.
+            </summary>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.OnContextMenuOpened">
+            <summary>
+            Raises the ContextMenuOpened event.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.OnContextMenuClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the ContextMenuClosing event.
+            </summary>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadPictureBoxElement.OnContextMenuClosed">
+            <summary>
+            Raises the ContextMenuClosed event.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadRating.#ctor">
@@ -49430,6 +50725,12 @@
             <param name="client"></param>
             <returns></returns>
         </member>
+        <member name="M:Telerik.WinControls.UI.RadTabbedFormControlElement.BringIntoView(Telerik.WinControls.UI.RadTabbedFormControlItem)">
+            <summary>
+            Scrolls the <see cref="T:Telerik.WinControls.UI.RadTabbedFormControlTabsElement"/> so that the passed item is visible and centered.
+            </summary>
+            <param name="item"></param>
+        </member>
         <member name="M:Telerik.WinControls.UI.RadTabbedFormControlElement.SelectNextItem">
             <summary>
             Selects the next available item.
@@ -49704,6 +51005,11 @@
         <member name="P:Telerik.WinControls.UI.RadTabbedFormControlTabsElement.PinnedItems">
             <summary>
             Gets an observable collection holding the pinned items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadTabbedFormControlTabsElement.VisibleItems">
+            <summary>
+            Gets an read only collection holding the visible items.
             </summary>
         </member>
         <member name="T:Telerik.WinControls.UI.TaskDialog.RadItemOwnerGenericCollection`1">
@@ -50286,6 +51592,29 @@
             Gets or sets the focused state of the element.
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.InitializeFields">
+            <summary>
+            Initializes member fields to their default values.
+            This method is called prior the CreateChildItems one and allows for initialization of members on which child elements depend.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.CreateChildElements">
+            <summary>
+            Called by the element when constructed. Allows inheritors to build the element tree.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.CreateHorizontalScrollBarElement">
+            <summary>
+            Creates a horizontal scrollbar element.
+            </summary>
+            <returns>The scrollbar.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.CreateVerticalScrollBarElement">
+            <summary>
+            Creates a vertical scrollbar element.
+            </summary>
+            <returns>The scrollbar.</returns>
+        </member>
         <member name="P:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.PageDefaultWidth">
             <summary>
             Gets or sets the default width of the page used when <see cref="P:Telerik.WinControls.UI.RadTaskDialogPage.SizeToContent"/> is [false].
@@ -50307,10 +51636,63 @@
             Get or sets the <see cref="T:Telerik.WinControls.UI.RadTaskDialogPage"/>, which is used to display the information and interaction.
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.ProcessKeyDown(System.Windows.Forms.PreviewKeyDownEventArgs)">
+            <summary>
+            Called when a ProcessKeyDown event is raised in the parent <see cref="T:Telerik.WinControls.UI.RadTaskDialogControl"/> control.
+            </summary>
+            <param name="e">The event arguments.</param>
+            <returns>Whether the page has handled the event.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.ProcessHelpRequested(System.Windows.Forms.HelpEventArgs)">
+            <summary>
+            Called when a HelpRequested event is raised in the parent <see cref="T:Telerik.WinControls.UI.RadTaskDialogControl"/> control.
+            </summary>
+            <param name="hevent">The event arguments.</param>
+            <returns>Whether the page has handled the event.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.OnDesiredSizeChanged(System.Drawing.SizeF)">
+            <summary>
+            Called when the DesiredSize of the page is changed.
+            </summary>
+            <param name="desiredSize">The desired size.</param>
+        </member>
         <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.UpdateScrollbars">
             <summary>
             Updates the visual state of the scrollbars.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.ShouldMeasureChild(Telerik.WinControls.RadElement)">
+            <summary>
+            Gets a value indicating, whether a child will be measured during the MeasureOverride.
+            </summary>
+            <param name="child">The child.</param>
+            <returns>Whether the child will be measured in MeasureOverride.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.MeasureOverride(System.Drawing.SizeF)">
+            <summary>
+            Measures the space required by the <see cref="T:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement"/>
+            
+            Used by the layout system.
+            </summary>
+            <param name="availableSize">The size that is available to the <see cref="T:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement"/>. The available size can be infinity (to take the full size of the element)</param>
+            <returns>The minimum size required by the element to be completely visible. Cannot be infinity.</returns>
+            <remarks>In this method call to the Measure method of each child must be made.</remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.ShouldArrangeChild(Telerik.WinControls.RadElement)">
+            <summary>
+            Gets a value indicating, whether a child will be arranged during the ArrangeOverride.
+            </summary>
+            <param name="child">The child.</param>
+            <returns>Whether the child will be arranged in ArrangeOverride.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement.ArrangeOverride(System.Drawing.SizeF)">
+            <summary>
+            Arranges the <see cref="T:Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement"/> to its final location.
+            The element must call the Arrange method of each of its children.
+            </summary>
+            <param name="finalSize">The size that is available for element.</param>
+            <returns>The rectangle occupied by the element. Usually <paramref name="finalSize"/>. Should you return different size, the Layout system will restart measuring and rearranging the items. That could lead to infinite recursion.</returns>
+            <remarks>In this method call to the Arrange method of each child must be made.</remarks>
         </member>
         <member name="M:Telerik.WinControls.UI.TaskDialog.RadTaskDialogForm.#ctor">
             <summary>
@@ -56055,6 +57437,17 @@
             <summary>
             Gets the collection of the controls whose values are validated.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadValidationProvider.ClearErrorStatus">
+            <summary>
+            Clear the visual indication for the validation error.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadValidationProvider.ClearErrorStatus(Telerik.WinControls.RadControl)">
+            <summary>
+            Clear the visual indication for the validation error.
+            </summary>
+            <param name="associatedControl">A RadEditorControl descendant</param>
         </member>
         <member name="M:Telerik.WinControls.UI.RadValidationProvider.CanExtend(System.Object)">
             <summary>
@@ -65091,6 +66484,11 @@
             Gets or sets the Svg Image.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.UI.RadButtonBase.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
+            </summary>
+        </member>
         <member name="P:Telerik.WinControls.UI.RadButtonBase.Image">
             <commentsfrom cref="P:Telerik.WinControls.UI.RadButtonItem.Image" filter=""/>        
         </member>
@@ -65267,6 +66665,11 @@
         <member name="P:Telerik.WinControls.UI.RadButtonItem.SvgImage">
             <summary>
             Gets or sets the vector image that is displayed on a button element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadButtonItem.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.RadButtonItem.Image">
@@ -66887,6 +68290,11 @@
             Gets or sets the Svg Image.
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.UI.RadLabel.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
+            </summary>
+        </member>
         <member name="P:Telerik.WinControls.UI.RadLabel.Image">
             <commentsfrom cref="P:Telerik.WinControls.UI.RadButtonItem.Image" filter=""/>        
         </member>
@@ -66923,6 +68331,11 @@
         <member name="P:Telerik.WinControls.UI.RadLabelElement.SvgImage">
             <summary>
             Gets or sets the vector image that is displayed on a button element.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadLabelElement.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.RadLabelElement.Image">
@@ -67213,6 +68626,11 @@
         <member name="P:Telerik.WinControls.UI.LightVisualElement.SvgImage">
             <summary>
             Gets or sets the Svg Image.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.LightVisualElement.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.LightVisualElement.ImageDrawType">
@@ -72639,6 +74057,9 @@
         <member name="P:Telerik.WinControls.FileDialogs.OpenFolderDialogViewModel.SelectedFileSystemInfoWrappers">
             <inheritdoc/>
         </member>
+        <member name="M:Telerik.WinControls.FileDialogs.OpenFolderDialogViewModel.InvokeSelectedFileSystemObjects">
+            <inheritdoc />
+        </member>
         <member name="M:Telerik.WinControls.FileDialogs.OpenFolderDialogViewModel.CanExecuteAccept">
             <inheritdoc/>
         </member>
@@ -73997,6 +75418,11 @@
         <member name="P:Telerik.WinControls.Export.TreeViewSpreadExport.ExportImages">
             <summary>
             Gets or sets a value indicating whether to export images.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Export.TreeViewSpreadExport.ExportCheckBoxes">
+            <summary>
+            Gets or sets a value indicating whether to export the check box values, when they are shown in tree nodes.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.Export.TreeViewSpreadExport.ExportChildNodesGrouped">

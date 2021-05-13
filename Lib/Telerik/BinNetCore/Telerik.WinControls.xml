@@ -4095,6 +4095,12 @@
                 right.</para>
             </summary>
         </member>
+        <member name="P:Telerik.WinControls.Primitives.ArrowPrimitive.UseSmoothPaint">
+            <summary>
+            Determines whether to paint the arrow using anti-aliasing.
+            Default value is false.
+            </summary>
+        </member>
         <member name="P:Telerik.WinControls.Primitives.ArrowPrimitive.Direction">
             <summary>
             Gets or sets the arrow direction. The possible values are contained in the
@@ -4506,6 +4512,11 @@
         </member>
         <member name="P:Telerik.WinControls.Primitives.ImagePrimitive.SvgImage">
             <summary>Gets or sets the image that is displayed.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Primitives.ImagePrimitive.SvgImageXml">
+            <summary>
+            Gets or sets the Svg Image as string.
+            </summary>
         </member>
         <member name="P:Telerik.WinControls.Primitives.ImagePrimitive.RenderImage">
             <summary>
@@ -14451,12 +14462,12 @@
         </member>
         <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.HtmlTag">
             <summary>
-            Get or sets HTML tag of the current text block
+            Get or sets HTML tag of the current text block.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.FontSize">
             <summary>
-            Get or sets FontSize  the current text block
+            Get or sets size of the font.
             Note: recreate the font
             </summary>
         </member>
@@ -14468,23 +14479,116 @@
         </member>
         <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.BlockSize">
             <summary>
-            Get or sets the Size the current text block
+            Get or sets the Size of current text block
             </summary>
         </member>
         <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.ContentAlignment">
             <summary>
-            current block content alignment
+            Gets or sets the content alignment.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.FontStyle">
+            <summary>
+            Gets or sets the font style.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.FontColor">
+            <summary>
+            Gets or sets the font color.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.FontName">
+            <summary>
+            Gets or sets the font name.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.BgColor">
+            <summary>
+            Gets or sets the background color.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.Text">
             <summary>
-            Get or set the text
+            Get or set the text.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.Link">
+            <summary>
+            Gets or sets the link that is opened when the item is clicked.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.Offset">
+            <summary>
+            Gets or sets the offset of the text.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.OffsetSize">
+            <summary>
+            Gest the offset size of the text.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.Number">
+            <summary>
+            Gets or sets the number used in ordered list with numbering.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.ShouldDisplayBullet">
+            <summary>
+            Gets or sets a value indicating whether to display a bullet.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.BulletFontName">
+            <summary>
+            Gets or sets the font name of the bullets.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.BulletFontStyle">
+            <summary>
+            Gets or sets the font style of the bullets.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.BulletFontSize">
+            <summary>
+            Gets or sets the font size of the bullets.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.ListType">
+            <summary>
+            Gets or sets the list type. 
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.StartNewLine">
+            <summary>
+            Gets or sets a value indicating whether to start a new line.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.BulletSize">
+            <summary>
+            Gets the size of bullets.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.IsClosingTag">
+            <summary>
+            Gets or sets a value indicating whether is closing tag.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.DrawingRectangle">
+            <summary>
+            Gets the drawing rectangle.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.TextPrimitiveUtils.FormattedText.BaseLine">
             <summary>
-            BaseLine Property
+            Gets or sets the baseline.
             </summary>
+        </member>
+        <member name="M:Telerik.WinControls.TextPrimitiveUtils.FormattedText.GetTextBlockSize(System.Boolean,System.Windows.Forms.TextFormatFlags)">
+            <summary>
+            Gets the size of the text block.
+            </summary>
+            <param name="useCompatibleTextRendering"></param>
+            <param name="textFormatFlags"></param>
+            <returns></returns>
         </member>
         <member name="M:Telerik.WinControls.TextPrimitiveUtils.FormattedText.GetBaseLineFromFont(System.Drawing.Font)">
             <summary>
@@ -14843,6 +14947,11 @@
             <param name="height">The height of the raster image.</param>
             <param name="cache">Determines whether to cache the raster image. Default value is true.</param>
             <returns>The raster image.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.RadSvgImage.ClearCache">
+            <summary>
+            Clears all cached raster images.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.RadSvgImage.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
@@ -17389,6 +17498,22 @@
                 themes by attributes like Name, certain relations, etc.</para>
             </remarks>
         </member>
+        <member name="M:Telerik.WinControls.ThemeResolutionService.GetFont(System.String,System.Single,System.Drawing.FontStyle)">
+            <summary>
+            Returns a font by given font name. The font can be custom(loaded in memory) or installed on the machine. 
+            </summary>
+            <param name="fontName">The name of the font or custom font.</param>
+            <param name="fontSize">The size of the font.</param>
+            <param name="fontStyle"></param>
+            <returns>The Font or the default font if font with given name is not valid.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.ThemeResolutionService.GetFontFamily(System.String)">
+            <summary>
+            Returns a FontFamily instance based on a given font name. If the name is not custom loaded font or installed one, this method will return a default one.
+            </summary>
+            <param name="fontName">The name of the font.</param>
+            <returns>The font family.</returns>
+        </member>
         <member name="M:Telerik.WinControls.ThemeResolutionService.GetCustomFont(System.String)">
             <summary>
             Returns a previously loaded font by given font name.
@@ -17591,6 +17716,13 @@
             from the dictionaries with registered style builders.
             </summary>
             <param name="builder">The instance to remove.</param>
+        </member>
+        <member name="P:Telerik.WinControls.ThemeSettingsService.AllThemes">
+            <summary>
+            Gets a dictionary with all the themes, where the key
+            is the theme name and the value is the theme assembly.
+            Does not include ControlDefault.
+            </summary>
         </member>
         <member name="T:Telerik.WinControls.PropertySettingCollection">
             <summary>
@@ -18574,6 +18706,11 @@
         <member name="T:Telerik.WinControls.Zip.DeflateConstants">
             <summary>
             Represents constants for deflate compression.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Zip.DeflateConstants.NoCompression">
+            <summary>
+            The file is stored (no compression).
             </summary>
         </member>
         <member name="F:Telerik.WinControls.Zip.DeflateConstants.HeaderDeflated">

@@ -16515,7 +16515,7 @@
         </member>
         <member name="T:Telerik.WinForms.Controls.Spreadsheet.Worksheets.Layers.DataValidationListUILayer">
             <summary>
-            Represents a calss responsible for showing the data validation list UI layer.
+            Represents a class responsible for showing the data validation list UI layer.
             </summary>
         </member>
         <member name="P:Telerik.WinForms.Controls.Spreadsheet.Worksheets.Layers.DataValidationListUILayer.Name">
@@ -20477,6 +20477,42 @@
             <param name="cellRange">The cell range.</param>
             <returns>The expanded cell range.</returns>
         </member>
+        <member name="T:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FillSelection">
+            <summary>
+            This class represents the fill selection of the Selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FillSelection.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether to enable or disable the Fill Handle feature.
+            </summary>
+            <value>The value indicating whether to enable or disable the Fill Handle feature.</value>
+        </member>
+        <member name="P:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FillSelection.IsStarted">
+            <summary>
+            Gets or sets a value indicating whether the fill selection is started or not.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FillSelection.SelectedRange">
+            <summary>
+            Gets a value returning the selected CellRange.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FillSelection.LastActivePosition">
+            <summary>
+            Gets a value returning the cell index of the last active position of the pointer.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FillSelection.FillSelectionChanged">
+            <summary>
+            Occurs when the FillSelection is changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FillSelection.IsEnabledChanged">
+            <summary>
+            Occurs when the IsEnabled is changed.
+            </summary>
+        </member>
         <member name="M:Telerik.WinForms.Controls.Spreadsheet.Worksheets.FormulaCellRangesSelection.ResetFormulaSelection(System.Boolean)">
             <summary>
             Called when the user changes the selection or the text of the cell editor and the currently selected
@@ -20635,6 +20671,11 @@
         <member name="E:Telerik.WinForms.Controls.Spreadsheet.Worksheets.Selection.SelectionTypeChanged">
             <summary>
             Occurs when the selection type is changed between cell selection and shape selection.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinForms.Controls.Spreadsheet.Worksheets.Selection.OnSelectionChanged">
+            <summary>
+            Called when the selection is changed.
             </summary>
         </member>
         <member name="T:Telerik.WinForms.Controls.Spreadsheet.Worksheets.SelectionBase">

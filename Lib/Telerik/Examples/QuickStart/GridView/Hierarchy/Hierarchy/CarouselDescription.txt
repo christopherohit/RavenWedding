@@ -1,0 +1,1 @@
+﻿This example shows the advanced hierarchy model of Telerik RadGridView. A three level hierarchy is demonstrated with Customers Master Table and two nested Detail Tables Orders and OrderDetails.

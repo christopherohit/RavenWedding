@@ -1,0 +1,16 @@
+<t:RadDocument 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:t="clr-namespace:Telerik.WinForms.Documents.Model;assembly=Telerik.WinControls.RichTextEditor" 
+    DefaultPageLayoutSettings="816,1056" LayoutMode="Flow" PageViewMargin="10,10">
+  <t:Section>
+    <t:Paragraph>
+      <t:Span FontFamily="Verdana" FontSize="16" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam felis, accumsan vitae fringilla a, dignissim at dui.  Integer imperdiet feugiat dui. Pellentesque faucibus interdum urna, eget iaculis turpis dapibus id. Proin sapien metus, mollis eu porttitor in, bibendum quis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam felis, accumsan vitae fringilla a, dignissim at dui. Vestibulum commodo ligula leo. In hac habitasse platea dictumst. Pellentesque faucibus interdum urna, eget iaculis turpis dapibus id. Integer imperdiet feugiat dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam felis, accumsan vitae fringilla a, dignissim at dui.  Integer imperdiet feugiat dui. Pellentesque faucibus interdum urna, eget iaculis turpis dapibus id. Proin sapien metus, mollis eu porttitor in, bibendum quis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam felis, accumsan vitae fringilla a, dignissim at dui. " UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span FontFamily="Verdana" FontSize="16" Text="Vestibulum commodo ligula leo. In hac habitasse platea dictumst. Pellentesque faucibus interdum urna, eget iaculis turpis dapibus id. Integer imperdiet feugiat dui. " UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span FontFamily="Verdana" FontSize="16" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam felis, accumsan vitae fringilla a, dignissim at dui. Vestibulum commodo ligula leo. In hac habitasse platea dictumst. Pellentesque faucibus interdum urna, eget iaculis turpis dapibus id. Integer imperdiet feugiat dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. " UnderlineColor="#FF000000" UnderlineDecoration="None" />
+    </t:Paragraph>
+  </t:Section>
+</t:RadDocument>

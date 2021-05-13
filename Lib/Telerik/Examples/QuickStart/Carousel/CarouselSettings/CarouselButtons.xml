@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="Telerik.WinControls.DefaultStyleBuilder">
+      <BuilderData xsi:type="XmlStyleSheet">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="200, 234, 241, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="100, 214, 231, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="100, 173, 199, 239" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.453258783" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="100, 222, 235, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.455207676" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="90" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="255, 251, 231" Property="Telerik.WinControls.VisualElement.BackColor" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="255, 223, 140" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="247, 195, 49" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="255, 233, 176" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="90" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.453258783" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.455207676" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition">
+                  <Condition1 xsi:type="XmlSimpleCondition">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator">
+                    <Setting Property="Telerik.WinControls.UI.RadButtonItem.IsPressed" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="50, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="50, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonBorder">
+                <Condition xsi:type="XmlSimpleCondition">
+                  <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="50, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.TextPrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="50, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.TextPrimitive">
+                <Condition xsi:type="XmlSimpleCondition">
+                  <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                </Condition>
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="1, 1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.TextPrimitive">
+                <Condition xsi:type="XmlSimpleCondition">
+                  <Setting Property="Telerik.WinControls.UI.RadButtonItem.IsPressed" Value="True" />
+                </Condition>
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="90" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.453258783" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.455207676" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="255, 242, 231" Property="Telerik.WinControls.VisualElement.BackColor" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="255, 184, 74" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="254, 162, 0" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="255, 204, 124" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition">
+                  <Condition1 xsi:type="XmlSimpleCondition">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition">
+                    <Setting Property="Telerik.WinControls.UI.RadButtonItem.IsPressed" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="200, 234, 241, 255" Property="Telerik.WinControls.VisualElement.BackColor" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="100, 214, 231, 255" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="100, 173, 199, 239" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" />
+              <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="100, 222, 235, 255" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonFill" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator">
+                  <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="1, 1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.ImagePrimitive">
+                <Condition xsi:type="XmlSimpleCondition">
+                  <Setting Property="Telerik.WinControls.UI.RadButtonItem.IsPressed" Value="True" />
+                </Condition>
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings />
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadCarousel" ElementType="Telerik.WinControls.UI.RadButtonElement" ControlName="" ElementName="" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+    <XmlStyleBuilderRegistration BuilderType="Telerik.WinControls.DefaultStyleBuilder">
+      <BuilderData xsi:type="XmlStyleSheet">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings />
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.TextPrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk0GEwAAAAAAADYAAAAoAAAAKwAAABwAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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mf8ucZn/LW6V/zBym/87fKP/R4Wo/0iHqv9Hhaj/TYus/0qIrP9Hhaj/SIeq/02LrP9Hhaj/RYWo/0qIrP9KiKz/QoOm/0WFqP9Hhaj/QYGm/0GBpv9Fhaj/QoOm/zh5oP8saY3/QmNy/wAAAABwiZb/QJy4/2yfu/92p8D/bqC8/1GNrf83eJ//L3Kb/zJ1nP8wcpv/LnGZ/y5xmf8ucZn/LnGZ/y5xmf8ucZn/LnGZ/y1ulf8ydZz/OHmg/zR3nv83eqD/NHee/zBym/8ydZz/NHee/y9ym/8ucZn/MnWc/zJ1nP8tbpX/LnGZ/zBym/8tcJf/LW6V/y9ym/8ucZn/LGyP/y1ulf8sa5T/J16C/z5keP8AAAAAeJKh/3l/mf95p8L/X5a2/z5/o/8ydZz/L3Kb/y9ym/8ucZn/LnGZ/y5xmf8ucZn/LXCX/y1wl/8ucZn/LXCX/y1ulf8tcJf/LGuU/yxqjv8qaI7/KmiO/ypojv8sao7/KWWK/ylmif8pZYr/KWaJ/yhjh/8pZon/KGOH/yhjhf8oX4P/KGOF/yhjhf8oX4P/KF+D/yhfg/8nX4P/J16C/yZefv85Ynr/AAAAAHuaq/9mm7f/RYWo/zJ1nP8vcpv/L3Kb/y5xmf8ucZn/LnGZ/y5xmf8tcJf/LXCX/y1ulf8tbpX/LGuU/yxrlP8tbpX/LGuU/yxsk/8sbI//LGyP/yxsj/8sbI//LGyP/yxqjv8qaI7/KWWK/ylliv8pZYr/KWWK/ylmif8pZon/KGOF/yhjhf8pZon/KGOF/yhjhf8oX4P/KF+D/yhfg/8nXoL/MmB3/wAAAABcf5L/P3eX/y5xmf8tbpX/LXCX/y1wl/8tcJf/LXCX/y1ulf8tbpX/LW6V/y1ulf8sa5T/LW6V/yxrlP8sbJP/LGuU/yxsk/8sao7/LGqO/yxqjv8sao7/KmiO/ylliv8pZYr/KWWK/ylmif8pZon/KWaJ/yhjh/8oY4X/KGOF/yhjhf8oX4P/KGOF/yhfg/8oX4P/KF+D/yhfg/8oX4P/Jl5+/z1ujf8AAAAAAAAAAFtzf/9Udoj/QnSR/yxklP8tbpX/LW6V/y1ulf8tbpX/LW6V/y1ulf8tbpX/LGuU/yxrlP8sbJP/LGyT/yxsk/8sbI//LGqO/yxqjv8qaI7/KWWK/ylliv8pZYr/KWWK/ylmif8pZon/KGOF/yhjhf8oY4X/KGOF/yhjhf8oX4P/KF+D/yhfg/8oX4P/KF+D/ydfg/8oX4P/J1+D/yVae/86cpT/AAAAAAAAAAAAAAAAAAAAAF1yfP9ddoL/TXiP/zhxk/8sZJj/LGuU/y1ulf8tbpX/LW6V/yxrlP8sbJP/LGyT/yxsk/8sbJP/LGqO/yxqjv8qaI7/KmiO/ylliv8pZYr/KWWK/ylmif8pZon/KWaJ/yhjhf8oX4P/KGOF/yhjhf8oX4P/KF+D/yhfg/8oX4P/KF+D/ydfg/8nXoL/J1+D/ydegv8jVnX/OXKV/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABccn7/VniJ/0d2kv81bY//KmiO/ypojv8sbI//LGyT/yxsj/8sbI//LGyP/yxqjv8qaI7/KWWK/ylliv8pZon/KWaJ/ylmif8oY4f/KF+D/yhfg/8oY4X/J1+D/yZefv8nX4P/KF+D/ydegv8mXn7/J16C/ydegv8mXn7/Jl5+/ydegv8mXn7/I1Vz/0B4l/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAV3KA/1d7j/9GeJb/JWmO/yxqjv8qaI7/LGqO/yxqjv8sao7/KWWK/ylliv8pZon/KWWK/ytmh/80ZoL/N2iH/ztwjv85bYv/NGKC/zRoh/85bor/M2aD/zJjgv82aIb/NWiH/zBigf8xYoL/NGiG/zBigf8uYXz/MmKC/y5gfP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXXN+/1ZxgP9Dbon/OHKU/yxkjv8qaI7/KWaJ/ylliv8pZYr/KGOF/y1ulf88cpP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF10f/9ScoP/P2uF/zVskf8qZX//KWaJ/yhfg/8sbJP/RHWS/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbdIH/TnGE/ztrhf8mZX//KWaJ/0t2jv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdc37/V3OB/0dvhv9TcoT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="PreviousButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk1aEgAAAAAAADYAAAAoAAAAKwAAABsAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATFxj/z1JT/9CTVP/T1th/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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uP9rnbr/aJ25/2WbuP9rnbr/bqC7/2uduv9voLv/aZ25/2GYtf9jmrf/Y5q3/2Oat/9jmrf/Y5q3/2Oat/9jmrf/ZZu4/2iduf9km7j/bZ+6/4iuwv+eusr/o77M/525yv+auL//k6Wu/wAAAABcfI//WIyn/1mNqf9Zjqr/W46q/1uOqv9bjqr/XJCs/1yQrP9bjqr/XJCs/1yRrf9dkq7/XJGt/12Srv9dkq//XZKu/12Sr/9flLD/XpOw/16TsP9ek7D/X5Sw/2CWtP9hmLX/YZi1/2GYtf9jmrf/YZi1/2GYtf9jmrf/Y5q3/2Oat/9jmrf/ZJu4/2SbuP9onbn/daO8/5S0x/+mv83/gZup/5qstf8AAAAAV32Q/1mNqf9bjqr/W46q/1uOqv9ckKz/XJCs/12Srv9ckKz/XJCs/12Srv9dkq7/XZKv/12Sr/9dkq//XZKv/16TsP9flLD/X5Wx/1+Vsf9flbH/X5Wx/1+Vsf9glrP/YJa0/2GYtf9glrT/YJa0/2GYtf9hmLX/YZi1/2GYtf9jmrf/Y5q3/2Oat/9jmrf/ZJu4/2SbuP9pnbn/fai//5i3yP+dsbz/AAAAAGCMo/9YjKf/W46q/1uOqv9bjqr/W46q/1uOqv9ckKz/W46q/1yQrP9ckKz/XJCs/1yRrf9dkq7/XZKu/12Srv9dkq//XZKv/12Sr/9ek7D/X5Sw/1+UsP9flLD/X5Sw/2CWs/9glrT/YJaz/2CWtP9hmLX/YJa0/2GYtf9hmLX/YZi1/2GYtf9hmLX/YZi1/2GYtf9hmLX/YZi1/2Oat/9xm7P/hJyq/wAAAABhkqv/V4ql/1mOqv9bjqr/WY6q/1uOqv9bjqr/W46q/1uOqv9bjqr/XJCs/1yQrP9ckKz/XJCs/1yQrP9dkq7/XZKu/12Sr/9dkq//XZKv/12Sr/9ek7D/X5Sw/1+UsP9flbH/YJaz/2CWs/9glrP/YJa0/2CWtP9hmLX/YZi1/2GYtf9hmLX/YZi1/2GYtf9hmLX/Ypi0/2+Yrf95lKP/epCb/wAAAAAAAAAAZpOt/1SHov9Zjan/WY6q/1mNqf9Zjqr/W46q/1uOqv9bjqr/W46q/1uOqv9ckKz/XJCs/1uOqv9ckKz/XZKu/12Srv9dkq7/XZKv/12Sr/9dkq//XpOw/16TsP9flLD/X5Sw/2CWs/9glrP/YJaz/2CWs/9glrT/YZi1/2GYtf9hmLX/YJa0/2Satv9omLH/eJmr/36Tn/8AAAAAAAAAAAAAAAAAAAAAAAAAAGqUrP9ThqH/WIyn/1mNqf9YjKf/WIyn/1mNqf9Zjan/WIyn/1mNqf9bjqr/WY6q/1iMp/9Zjqr/XJCs/1uOqv9bjqr/XJGt/12Srv9dkq7/XZKu/12Sr/9dkq//XpOw/1+UsP9flbH/X5Wx/1+Vsf9glrP/X5Wx/16TsP9ek7D/ZZex/3Warv99l6X/e5Gb/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWYeh/1qJov9Zh6H/WYqf/12Kov9aiaL/W4qi/12Mpf9diqT/W4mh/1yLo/9fjqT/X4uk/12Ko/9ijqf/ZZGo/2GOpv9ijqX/WZKm/12Sr/9dkq7/XZKv/12Sr/9flLD/X5Sw/1+UsP9ek7D/X5Sw/2CVrf92nLL/f5uq/3qUn/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGuYr/9hmLX/XJCs/12Sr/9dkq//XZKu/16TsP9hlbH/apmy/2+Vqv96k5//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAByl67/YJaz/1uOqv9dkq7/XoCv/2SUsP9rk6n/d5Wj/3+Un/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd5mr/12Srv9bjaf/apOp/3eVpv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="NextButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings />
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadCarousel" ElementType="Telerik.WinControls.RootRadElement" ControlName="" ElementName="" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

@@ -1,0 +1,260 @@
+<t:RadDocument
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:t="clr-namespace:Telerik.WinForms.Documents.Model;assembly=Telerik.WinControls.RichTextEditor"
+    xmlns:s="clr-namespace:Telerik.WinForms.Documents.Model.Styles;assembly=Telerik.WinControls.RichTextEditor"
+    xmlns:r="clr-namespace:Telerik.WinForms.Documents.Model.Revisions;assembly=Telerik.WinControls.RichTextEditor"
+    xmlns:n="clr-namespace:Telerik.WinForms.Documents.Model.Notes;assembly=Telerik.WinControls.RichTextEditor"
+    xmlns:th="clr-namespace:Telerik.WinForms.Documents.Model.Themes;assembly=Telerik.WinControls.RichTextEditor"
+    version="1.2"
+    LayoutMode="Paged" LineSpacing="1.14999997615814" LineSpacingType="Auto" ParagraphDefaultSpacingAfter="12" ParagraphDefaultSpacingBefore="0" SelectedBibliographicStyleName="\APA.XSL" StyleName="defaultDocumentStyle">
+  <t:RadDocument.Captions>
+    <t:CaptionDefinition IsDefault="True" IsLinkedToHeading="False" Label="Figure" LinkedHeadingLevel="0" NumberingFormat="Arabic" SeparatorType="Hyphen" />
+    <t:CaptionDefinition IsDefault="True" IsLinkedToHeading="False" Label="Table" LinkedHeadingLevel="0" NumberingFormat="Arabic" SeparatorType="Hyphen" />
+  </t:RadDocument.Captions>
+  <t:RadDocument.Lists>
+    <t:ListSerializationData ID="2" NewListOnInsert="True" StyleID="1" />
+    <t:ListSerializationData ID="3" NewListOnInsert="True" StyleID="2" />
+    <t:ListSerializationData ID="4" NewListOnInsert="True" StyleID="3" />
+  </t:RadDocument.Lists>
+  <t:RadDocument.ListStyles>
+    <t:ListStyle ID="1" IsDefault="False">
+      <t:ListLevelStyle HangingIndent="24" Indent="24" LevelText="{}{0}." NumberingFormat="Decimal" StartingIndex="1">
+        <t:ListLevelStyle.SpanStyle>
+          <s:SpanProperties FontFamily="Courier New" FontSize="13.3333330154419" />
+        </t:ListLevelStyle.SpanStyle>
+      </t:ListLevelStyle>
+      <t:ListLevelStyle HangingIndent="24" Indent="72" LevelText="{}{1}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="96" LevelText="{}{2}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="120" LevelText="{}{3}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="144" LevelText="{}{4}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="168" LevelText="{}{5}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="192" LevelText="{}{6}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="216" LevelText="{}{7}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="240" LevelText="{}{8}." NumberingFormat="LowerRoman" StartingIndex="1" />
+    </t:ListStyle>
+    <t:ListStyle ID="2" IsDefault="False">
+      <t:ListLevelStyle HangingIndent="24" Indent="24" LevelText="{}{0}." NumberingFormat="Decimal" StartingIndex="1">
+        <t:ListLevelStyle.SpanStyle>
+          <s:SpanProperties FontFamily="Courier New" FontSize="13.3333333333333" />
+        </t:ListLevelStyle.SpanStyle>
+      </t:ListLevelStyle>
+      <t:ListLevelStyle HangingIndent="24" Indent="72" LevelText="{}{1}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="96" LevelText="{}{2}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="120" LevelText="{}{3}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="144" LevelText="{}{4}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="168" LevelText="{}{5}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="192" LevelText="{}{6}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="216" LevelText="{}{7}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="240" LevelText="{}{8}." NumberingFormat="LowerRoman" StartingIndex="1" />
+    </t:ListStyle>
+    <t:ListStyle ID="3" IsDefault="False">
+      <t:ListLevelStyle HangingIndent="24" Indent="24" LevelText="{}{0}." NumberingFormat="Decimal" StartingIndex="1">
+        <t:ListLevelStyle.SpanStyle>
+          <s:SpanProperties FontFamily="Courier New" FontSize="13.3333333333333" />
+        </t:ListLevelStyle.SpanStyle>
+      </t:ListLevelStyle>
+      <t:ListLevelStyle HangingIndent="24" Indent="72" LevelText="{}{1}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="96" LevelText="{}{2}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="120" LevelText="{}{3}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="144" LevelText="{}{4}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="168" LevelText="{}{5}." NumberingFormat="LowerRoman" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="192" LevelText="{}{6}." NumberingFormat="Decimal" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="216" LevelText="{}{7}." NumberingFormat="LowerLetter" StartingIndex="1" />
+      <t:ListLevelStyle HangingIndent="24" Indent="240" LevelText="{}{8}." NumberingFormat="LowerRoman" StartingIndex="1" />
+    </t:ListStyle>
+  </t:RadDocument.ListStyles>
+  <t:RadDocument.ProtectionSettings>
+    <t:DocumentProtectionSettings EnableDocumentProtection="False" Enforce="False" HashingAlgorithm="None" HashingSpinCount="0" ProtectionMode="ReadOnly" />
+  </t:RadDocument.ProtectionSettings>
+  <t:RadDocument.Styles>
+    <s:StyleDefinition DisplayName="Code Block" IsCustom="False" IsDefault="False" IsPrimary="False" Name="CodeBlock" Type="Table" UIPriority="120">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LeftIndent="0" LineSpacing="1" LineSpacingType="AtLeast" SpacingAfter="0" SpacingBefore="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontFamily="Courier New" FontSize="13.3333330154419" />
+      </s:StyleDefinition.SpanStyle>
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties Borders="1,Single,#FF000000,none,," CellPadding="5,0,5,0">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Code Block Line" IsCustom="False" IsDefault="False" IsPrimary="False" Name="CodeBlockLine" Type="Paragraph" UIPriority="120">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LeftIndent="0" LineSpacing="1" LineSpacingType="AtLeast" SpacingAfter="0" SpacingBefore="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontFamily="Courier New" FontSize="13.3333330154419" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Code Block Alternating Line" IsCustom="False" IsDefault="False" IsPrimary="False" Name="CodeBlockLineAlt" Type="Paragraph" UIPriority="120">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties Background="#FFF2F2F2" LeftIndent="0" LineSpacing="1" LineSpacingType="AtLeast" SpacingAfter="0" SpacingBefore="0" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontFamily="Courier New" FontSize="13.3333330154419" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Comment" IsCustom="False" IsDefault="False" IsPrimary="False" Name="Comment" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF008200" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Document Default Style" IsCustom="False" IsDefault="False" IsPrimary="True" Name="defaultDocumentStyle" Type="Default">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LineSpacing="1.14999997615814" SpacingAfter="12" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontFamily="Verdana" FontSize="16" FontStyle="Normal" FontWeight="Normal" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Keyword" IsCustom="False" IsDefault="False" IsPrimary="False" Name="Keyword" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FF0000FF" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Normal" IsCustom="False" IsDefault="True" IsPrimary="True" Name="Normal" Type="Paragraph" UIPriority="0" />
+    <s:StyleDefinition DisplayName="StringLiteral" IsCustom="False" IsDefault="False" IsPrimary="False" Name="StringLiteral" Type="Character">
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties ForeColor="#FFA31515" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="TableNormal" IsCustom="False" IsDefault="True" IsPrimary="True" Name="TableNormal" Type="Table" UIPriority="59">
+      <s:StyleDefinition.TableStyle>
+        <s:TableProperties CellPadding="5,0,5,0">
+          <s:TableProperties.TableLook>
+            <t:TableLook />
+          </s:TableProperties.TableLook>
+        </s:TableProperties>
+      </s:StyleDefinition.TableStyle>
+    </s:StyleDefinition>
+    <s:StyleDefinition DisplayName="Title" IsCustom="True" IsDefault="False" IsPrimary="True" Name="Title" NextStyleName="Normal" Type="Paragraph" UIPriority="0">
+      <s:StyleDefinition.ParagraphStyle>
+        <s:ParagraphProperties LeftIndent="0" TextAlignment="Left" />
+      </s:StyleDefinition.ParagraphStyle>
+      <s:StyleDefinition.SpanStyle>
+        <s:SpanProperties FontFamily="Calibri" FontSize="37.3333320617676" ForeColor="#FF093367" UnderlineDecoration="None" />
+      </s:StyleDefinition.SpanStyle>
+    </s:StyleDefinition>
+  </t:RadDocument.Styles>
+  <t:Section>
+    <t:Paragraph StyleName="Title">
+      <t:Span Text="Code Blocks" />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span Text="This is a C# code block:" />
+    </t:Paragraph>
+    <t:Table GridColumnWidthsSerializationInfo="" HasFixedStructure="True" LayoutMode="AutoFit" PreferredWidth="Auto" StyleName="CodeBlock" TableIndent="0">
+      <t:Table.TableLook>
+        <t:TableLook />
+      </t:Table.TableLook>
+      <t:TableRow>
+        <t:TableCell ColumnSpan="1" RowSpan="1">
+          <t:Paragraph ListId="4" StyleName="CodeBlockLine">
+            <t:CodeAnnotationRangeStart AnnotationID="1" IsAlternatingLinesEnabled="True" IsLineNumberingEnabled="True" Language="C#" />
+            <t:Span StyleName="Keyword" Text="namespace" />
+            <t:Span Text=" ConsoleApplication" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLineAlt">
+            <t:Span Text="{}{" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLine">
+            <t:Span Text="    " />
+            <t:Span StyleName="Keyword" Text="class" />
+            <t:Span Text=" Program" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLineAlt">
+            <t:Span Text="    {" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLine">
+            <t:Span Text="        " />
+            <t:Span StyleName="Keyword" Text="static" />
+            <t:Span Text=" " />
+            <t:Span StyleName="Keyword" Text="void" />
+            <t:Span Text=" Main(" />
+            <t:Span StyleName="Keyword" Text="string" />
+            <t:Span Text="[] args)" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLineAlt">
+            <t:Span Text="        {" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLine">
+            <t:Span Text="            " />
+            <t:Span StyleName="Comment" Text="// Write something." />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLineAlt">
+            <t:Span Text="            " />
+            <t:Span StyleName="Keyword" Text="string" />
+            <t:Span Text=" message = " />
+            <t:Span StyleName="StringLiteral" Text="&quot;Hello World!&quot;" />
+            <t:Span Text=";" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLine">
+            <t:Span Text="            Console.WriteLine(message);" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLineAlt">
+            <t:Span Text="        }" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLine">
+            <t:Span Text="    }" />
+          </t:Paragraph>
+          <t:Paragraph ListId="4" RightIndent="0" StyleName="CodeBlockLineAlt">
+            <t:Span Text="}" />
+            <t:CodeAnnotationRangeEnd AnnotationID="1" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+    </t:Table>
+    <t:Paragraph />
+    <t:Paragraph>
+      <t:Span Text="And here is some JavaScript:" />
+    </t:Paragraph>
+    <t:Table GridColumnWidthsSerializationInfo="" HasFixedStructure="True" LayoutMode="AutoFit" PreferredWidth="Auto" StyleName="CodeBlock" TableIndent="0">
+      <t:Table.TableLook>
+        <t:TableLook />
+      </t:Table.TableLook>
+      <t:TableRow>
+        <t:TableCell ColumnSpan="1" RowSpan="1">
+          <t:Paragraph StyleName="CodeBlockLine">
+            <t:CodeAnnotationRangeStart AnnotationID="2" IsAlternatingLinesEnabled="True" IsLineNumberingEnabled="False" Language="JavaScript" />
+            <t:Span StyleName="Keyword" Text="function" />
+            <t:Span Text=" changeHeader()" />
+          </t:Paragraph>
+          <t:Paragraph StyleName="CodeBlockLineAlt">
+            <t:Span Text="{}{" />
+          </t:Paragraph>
+          <t:Paragraph StyleName="CodeBlockLine">
+            <t:Span Text="    " />
+            <t:Span StyleName="Comment" Text="// Find the header by id" />
+          </t:Paragraph>
+          <t:Paragraph StyleName="CodeBlockLineAlt">
+            <t:Span Text="    " />
+            <t:Span StyleName="Keyword" Text="var" />
+            <t:Span Text=" element=document.getElementById(" />
+            <t:Span StyleName="StringLiteral" Text="&quot;header&quot;" />
+            <t:Span Text=");" />
+          </t:Paragraph>
+          <t:Paragraph StyleName="CodeBlockLine">
+            <t:Span Text="    element.innerHTML=" />
+            <t:Span StyleName="StringLiteral" Text="&quot;New Header&quot;" />
+            <t:Span Text=";" />
+          </t:Paragraph>
+          <t:Paragraph StyleName="CodeBlockLineAlt">
+            <t:Span Text="}" />
+            <t:CodeAnnotationRangeEnd AnnotationID="2" />
+          </t:Paragraph>
+        </t:TableCell>
+      </t:TableRow>
+    </t:Table>
+    <t:Paragraph />
+    <t:Paragraph>
+      <t:Span Text="Now try inserting a VB code block from the Code button in the ribbon menu:" />
+    </t:Paragraph>
+    <t:Paragraph>
+      <t:Span Text=" " />
+    </t:Paragraph>
+  </t:Section>
+</t:RadDocument>

@@ -1,0 +1,145 @@
+<t:RadDocument 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:t="clr-namespace:Telerik.WinForms.Documents.Model;assembly=Telerik.WinControls.RichTextEditor"
+    xmlns:s="clr-namespace:Telerik.WinForms.Documents.Model.Styles;assembly=Telerik.WinControls.RichTextEditor" 
+    xmlns:custom1="clr-namespace:RichTextEditor.StructuredContent;assembly=RichTextEditor" 
+    version="1.2" DefaultPageLayoutSettings="816,1056" LayoutMode="Flow" LineSpacing="1.14999997615814" PageViewMargin="10,10" ParagraphDefaultSpacingAfter="13.3333330154419" StyleName="defaultDocumentStyle">
+    <t:RadDocument.Lists>
+        <t:ListSerializationData ID="1" StyleID="1" />
+        <t:ListSerializationData ID="2" StyleID="2" />
+    </t:RadDocument.Lists>
+    <t:RadDocument.ListStyles>
+        <t:ListStyle ID="1">
+            <t:ListLevelStyle FontFamily="Symbol" LevelText="" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Courier New" LevelText="o" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Wingdings" LevelText="" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Symbol" LevelText="" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Courier New" LevelText="o" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Wingdings" LevelText="" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Symbol" LevelText="" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Courier New" LevelText="o" NumberingFormat="Bullet" StartingIndex="1" />
+            <t:ListLevelStyle FontFamily="Wingdings" LevelText="" NumberingFormat="Bullet" StartingIndex="1" />
+        </t:ListStyle>
+        <t:ListStyle ID="2">
+            <t:ListLevelStyle LevelText="{}{0}." NumberingFormat="Decimal" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{1}." NumberingFormat="LowerLetter" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{2}." NumberingFormat="LowerRoman" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{3}." NumberingFormat="Decimal" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{4}." NumberingFormat="LowerLetter" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{5}." NumberingFormat="LowerRoman" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{6}." NumberingFormat="Decimal" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{7}." NumberingFormat="LowerLetter" StartingIndex="1" />
+            <t:ListLevelStyle LevelText="{}{8}." NumberingFormat="LowerRoman" StartingIndex="1" />
+        </t:ListStyle>
+    </t:RadDocument.ListStyles>
+    <t:RadDocument.ProtectionSettings>
+        <t:DocumentProtectionSettings EnableDocumentProtection="True" Enforce="True" HashingAlgorithm="SHA1" HashingSpinCount="100000" PasswordHash="vsq8EC3z5P2y5qG0MvUa+B++vrw=" ProtectionMode="ReadOnly" Salt="lPeNFTRtflurukFGeGFC8w==" />
+    </t:RadDocument.ProtectionSettings>
+     <t:Section PageMargin="94,94,94,94">
+        <t:Paragraph LineSpacing="1" StyleName="Heading1">
+            <t:PermissionRangeStart AnnotationID="1">
+                <t:PermissionRangeInfo Type="Everyone" />
+            </t:PermissionRangeStart>
+            <custom1:RecipeRangeStart AnnotationID="2" Name="fn" />
+            <t:Span Text="Italian Pasta Salad" />
+            <custom1:RecipeRangeEnd AnnotationID="2" />
+            <t:PermissionRangeEnd AnnotationID="1" />
+        </t:Paragraph>
+        <t:Paragraph LineSpacing="1">
+            <t:PermissionRangeStart AnnotationID="4">
+                <t:PermissionRangeInfo Type="Everyone" />
+            </t:PermissionRangeStart>
+            <custom1:RecipeRangeStart AnnotationID="3" Name="summary" />
+            <t:Span Text="Small pasta with provolone cheese, tomatoes and basil leaves"/>
+            <custom1:RecipeRangeEnd AnnotationID="3" />
+            <t:PermissionRangeEnd AnnotationID="4" />
+        </t:Paragraph>
+        <t:Paragraph LineSpacing="1">
+            <t:Span Text="Author: " />
+            <t:PermissionRangeStart AnnotationID="6">
+                <t:PermissionRangeInfo Type="Everyone" />
+            </t:PermissionRangeStart>
+            <custom1:RecipeRangeStart AnnotationID="5" Name="author" />
+            <t:Span Text="Adriano Ambrosini" />
+            <custom1:RecipeRangeEnd AnnotationID="5" />
+            <t:PermissionRangeEnd AnnotationID="6" />
+        </t:Paragraph>
+        <t:Paragraph LineSpacing="1">
+            <t:Span Text="Ingredients:" />
+        </t:Paragraph>
+        <t:Paragraph FirstLineIndent="-24" LeftIndent="48" LineSpacing="1" StyleName="ListParagraph">
+            <t:Paragraph.ListItemSerializationData>
+                <t:ListItemSerializationData ListID="1" ListLevel="0" />
+            </t:Paragraph.ListItemSerializationData>
+            <t:PermissionRangeStart AnnotationID="7">
+                <t:PermissionRangeInfo Type="Everyone" />
+            </t:PermissionRangeStart>
+            <custom1:RecipeRangeStart AnnotationID="8" Name="ingredient" />
+            <t:Span Text="5 oz.(140g.) any small pasta 6 oz.(170g.) provolone cheese, shredded" />
+        </t:Paragraph>
+        <t:Paragraph FirstLineIndent="-24" LeftIndent="48" LineSpacing="1" StyleName="ListParagraph">
+            <t:Paragraph.ListItemSerializationData>
+                <t:ListItemSerializationData ListID="1" ListLevel="0" />
+            </t:Paragraph.ListItemSerializationData>
+            <t:Span Text="4 thin sliced tomatoes 10 oz (280g.) Italian dressing" />
+        </t:Paragraph>
+        <t:Paragraph FirstLineIndent="-24" LeftIndent="48" LineSpacing="1" StyleName="ListParagraph">
+            <t:Paragraph.ListItemSerializationData>
+                <t:ListItemSerializationData ListID="1" ListLevel="0" />
+            </t:Paragraph.ListItemSerializationData>
+            <t:Span Text="1 small onion, chopped 1/2 red pepper" />
+            <custom1:RecipeRangeEnd AnnotationID="8" />
+            <t:PermissionRangeEnd AnnotationID="7" />
+        </t:Paragraph>
+        <t:Paragraph FirstLineIndent="-24" LeftIndent="24" LineSpacing="1" StyleName="ListParagraph">
+            <t:Span Text="Instructions:" />
+        </t:Paragraph>
+        <t:Paragraph FirstLineIndent="-24" LeftIndent="48" LineSpacing="1" StyleName="ListParagraph">
+            <t:Paragraph.ListItemSerializationData>
+                <t:ListItemSerializationData ListID="2" ListLevel="0" />
+            </t:Paragraph.ListItemSerializationData>
+            <t:PermissionRangeStart AnnotationID="9">
+                <t:PermissionRangeInfo Type="Everyone" />
+            </t:PermissionRangeStart>
+            <custom1:RecipeRangeStart AnnotationID="10" Name="instructions" />
+            <t:Span Text="Bring salted water to a boil. Add the pasta and cook until the pasta is al dente, or for 8-10 minutes. Drain the pasta, and rinse with cold water. Drain the pasta again." />
+        </t:Paragraph>
+        <t:Paragraph FirstLineIndent="-24" LeftIndent="48" LineSpacing="1" StyleName="ListParagraph">
+            <t:Paragraph.ListItemSerializationData>
+                <t:ListItemSerializationData ListID="2" ListLevel="0" />
+            </t:Paragraph.ListItemSerializationData>
+            <t:Span Text="Mix the pasta with one third of the dressing before placing in the bottom of a large salad bowl. Add layers of tomato, onion, red pepper, garlic, olives, and provolone cheese on top of the pasta before adding in the rest of the dressing." />
+        </t:Paragraph>
+        <t:Paragraph FirstLineIndent="-24" LeftIndent="48" LineSpacing="1" StyleName="ListParagraph">
+            <t:Paragraph.ListItemSerializationData>
+                <t:ListItemSerializationData ListID="2" ListLevel="0" />
+            </t:Paragraph.ListItemSerializationData>
+            <t:Span Text="Sprinkle basil leaves, parsley, and parmesan cheese, and salt for seasoning on top of the salad." />
+            <custom1:RecipeRangeEnd AnnotationID="10" />
+            <t:PermissionRangeEnd AnnotationID="9" />
+        </t:Paragraph>
+        <t:Paragraph LineSpacing="1">
+            <t:Span Text="Further details: " />
+            <t:Span Text="Cover the salad and refrigerate for three hours before tossing the salad." />
+        </t:Paragraph>
+        <t:Paragraph LineSpacing="1">
+            <t:PermissionRangeStart AnnotationID="11">
+                <t:PermissionRangeInfo Type="Everyone" />
+            </t:PermissionRangeStart>
+            <custom1:RecipeRangeStart AnnotationID="12" Name="yield" />
+            <t:Span Text="Good apptizer for 2 adults for dinner." />
+            <custom1:RecipeRangeEnd AnnotationID="12" />
+            <t:PermissionRangeEnd AnnotationID="11" />
+        </t:Paragraph>
+        <t:Paragraph LineSpacing="1">
+            <t:Span Text="Preparation time: " />
+            <t:PermissionRangeStart AnnotationID="14">
+                <t:PermissionRangeInfo Type="Everyone" />
+            </t:PermissionRangeStart>
+            <custom1:RecipeRangeStart AnnotationID="13" Name="duration" />
+            <t:Span Text="25 minutes." />
+            <custom1:RecipeRangeEnd AnnotationID="13" />
+            <t:PermissionRangeEnd AnnotationID="14" />
+        </t:Paragraph>
+    </t:Section>
+</t:RadDocument>

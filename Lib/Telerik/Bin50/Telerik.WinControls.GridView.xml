@@ -1358,6 +1358,36 @@
             Lists the available options for the DateTime filtering modes.
             </summary>
         </member>
+        <member name="T:Telerik.WinControls.UI.GridViewTimePrecisionMode">
+            <summary>
+            Given a DateTime value, the enum determines how the time part is evaluated.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.GridViewTimePrecisionMode.None">
+            <summary>
+            The time part is not taken into account.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.GridViewTimePrecisionMode.Hour">
+            <summary>
+            Only the Hour part is taken into account.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.GridViewTimePrecisionMode.Minute">
+            <summary>
+            Only the Minute part are taken into account.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.GridViewTimePrecisionMode.Second">
+            <summary>
+            Only the Second part are taken into account.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.GridViewTimePrecisionMode.All">
+            <summary>
+            The Hour, Minute, and Second parts are taken into account.
+            </summary>
+        </member>
         <member name="T:Telerik.WinControls.UI.GridViewAutoSizeColumnsMode">
             <summary>
             Defines columns auto size mode.
@@ -2694,6 +2724,13 @@
             Gets or sets the filtering mode.
             </summary>
             <value>The filtering mode.</value>
+        </member>
+        <member name="P:Telerik.WinControls.UI.GridViewDateTimeColumn.FilteringTimePrecision">
+            <summary>
+            Gets or sets the time part weight of the DateTime value while filtering.
+            Given a DateTime value, the property determines whether the Hour, Minute, and Second time parts are evaluated.
+            </summary>
+            <value>The time part weight.</value>
         </member>
         <member name="P:Telerik.WinControls.UI.GridViewDateTimeColumn.Format">
             <summary>
@@ -5112,6 +5149,78 @@
             </summary>
             <value>The row count.</value>
         </member>
+        <member name="T:Telerik.WinControls.UI.GridViewGroupSortChangedEventHandler">
+            <summary>
+            Represents the method that will handle the GridViewGroupSortChanging event of a RadGridView. 
+            </summary>
+            <param name="sender">The event sender</param>
+            <param name="e">Instance of GridViewGroupSortChangingEventArgs containing the data related with this event</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs">
+            <summary>
+            Provides data for the GridViewGroupSortChanging event. It can be canceled.
+            The event is fired upon chaning the sort order of a group by the end user.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs.#ctor(Telerik.WinControls.UI.GridViewTemplate,Telerik.WinControls.Data.GroupDescriptor,System.ComponentModel.ListSortDirection)">
+            <summary>
+            Initializes a new instance of the GridViewGroupSortChangingEventArgs class.
+            </summary>
+            <param name="template">The <see cref="T:Telerik.WinControls.UI.GridViewTemplate"/></param>
+            <param name="groupDescriptor">The <see cref="P:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs.GroupDescriptor"/></param>
+            <param name="direction">The <see cref="P:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs.Direction"/></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs.Template">
+            <summary>
+            Gets the GridViewTemplate where the event was fired.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs.GroupDescriptor">
+            <summary>
+            Gets the descriptor creating the group which is about the be changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs.Direction">
+            <summary>
+            Gets the changed group sort order.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.GridViewGroupSortChangingEventHandler">
+            <summary>
+            Represents the method that will handle the GridViewGroupSortChanging event of a RadGridView. 
+            </summary>
+            <param name="sender">The event sender</param>
+            <param name="e">Instance of GridViewGroupSortChangingEventArgs containing the data related with this event</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs">
+            <summary>
+            Provides data for the GridViewGroupSortChanging event. It can be canceled.
+            The event is fired upon chaning the sort order of a group by the end user.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs.#ctor(Telerik.WinControls.UI.GridViewTemplate,Telerik.WinControls.Data.GroupDescriptor,System.ComponentModel.ListSortDirection)">
+            <summary>
+            Initializes a new instance of the GridViewGroupSortChangingEventArgs class.
+            </summary>
+            <param name="template">The <see cref="T:Telerik.WinControls.UI.GridViewTemplate"/></param>
+            <param name="groupDescriptor">The <see cref="P:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs.GroupDescriptor"/></param>
+            <param name="direction">The <see cref="P:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs.NewDirection"/></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs.Template">
+            <summary>
+            Gets the GridViewTemplate where the event was fired.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs.GroupDescriptor">
+            <summary>
+            Gets the descriptor creating the group which is about the be changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs.NewDirection">
+            <summary>
+            Gets the new group sort order.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.UI.GridViewHeaderCellEventArgs.#ctor(Telerik.WinControls.UI.GridViewRowInfo,Telerik.WinControls.UI.GridViewColumn,Telerik.WinControls.Enumerations.ToggleState)">
             <summary>
             Initializes a new instance of the <see cref="T:Telerik.WinControls.UI.GridViewHeaderCellEventArgs" /> class.
@@ -5905,6 +6014,16 @@
             </summary>
             <param name="value">The value.</param>
             <param name="filteringMode">The filtering mode.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.GridViewHelper.ClampDateTime(System.DateTime,Telerik.WinControls.UI.GridViewTimeFilteringMode,Telerik.WinControls.UI.GridViewTimePrecisionMode)">
+            <summary>
+            Clamps the date time.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="filteringMode">The filtering mode.</param>
+            <param name="timePrecision">The time filtering precision. Determines which time parts will be taken into acount
+            when clamping the DateTime.</param>
             <returns></returns>
         </member>
         <member name="M:Telerik.WinControls.UI.GridViewHelper.GetCaption(System.ComponentModel.PropertyDescriptor)">
@@ -14405,6 +14524,30 @@
             </summary>        
             <param name="sender">The owner control.</param>
             <param name="e">An instance of <see cref="T:Telerik.WinControls.UI.GridViewCustomGroupingEventArgs"/> containing event data.</param>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadGridView.GroupSortChanging">
+            <summary>
+            Fires when the user changes the sorting of the group. The action can be canceled.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadGridView.OnGroupSortChanging(System.Object,Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs)">
+            <summary>
+            Fires when the user changes the sorting of the group. The action can be canceled.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:Telerik.WinControls.UI.GridViewGroupSortChangingEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="E:Telerik.WinControls.UI.RadGridView.GroupSortChanged">
+            <summary>
+            Fires after the user has changed the sorting of the group.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadGridView.OnGroupSortChanged(System.Object,Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs)">
+            <summary>
+            Fires after the user has changed the sorting of the group.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:Telerik.WinControls.UI.GridViewGroupSortChangedEventArgs" /> instance containing the event data.</param>
         </member>
         <member name="E:Telerik.WinControls.UI.RadGridView.CurrentViewChanged">
             <summary>
@@ -36198,6 +36341,13 @@
             <param name="availableSize">Size of the available.</param>
             <returns></returns>
         </member>
+        <member name="M:Telerik.WinControls.UI.VirtualGridCellElement.MeasureEditorElement(System.Drawing.SizeF,System.Single)">
+            <summary>
+            Measures the editor element.
+            </summary>
+            <param name="availableSize">The available size.</param>
+            <param name="width">The width of the element.</param>
+        </member>
         <member name="M:Telerik.WinControls.UI.VirtualGridCellElement.ArrangeOverride(System.Drawing.SizeF)">
             <summary>
             Arranges the elements in the final size.
@@ -40416,6 +40566,12 @@
             <param name="rowIndex">The row index of the cell.</param>
             <param name="columnIndex">The column index of the cell.</param>
             <param name="tableElement">The table element of the row.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadVirtualGridElement.SetScrollValue(Telerik.WinControls.UI.RadScrollBarElement,System.Int32)">
+            <summary>
+            Clamps the given new value of the scrollbar between the minimim and maximum possible.
+            <para>FIX 432393</para>
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.UI.RadVirtualGridElement.GetRowScrollOffset(System.Int32,Telerik.WinControls.UI.VirtualGridViewInfo)">
             <summary>

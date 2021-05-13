@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F278873-1874-4B3F-A1B4-FAC9A69F15F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookShelf</RootNamespace>
+    <AssemblyName>BookShelf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    
+    
+    
+    
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug40|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\BookShelf.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release40|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\BookShelf.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseTrial|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\BookShelf.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseTrial40|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\BookShelf.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom Elements\BaseTileElement.cs" />
+    <Compile Include="Custom Elements\CustomTextElement.cs" />
+    <Compile Include="Custom Elements\CustomTileGroupElement.cs" />
+    <Compile Include="Custom Elements\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomFindingService.cs" />
+    <Compile Include="Logic\PageID.cs" />
+    <Compile Include="Logic\BookShelfApp.cs" />
+    <Compile Include="Custom Elements\AllCategoriesGroupElement.cs" />
+    <Compile Include="Custom Elements\DetailsTileElement.cs" />
+    <Compile Include="Custom Elements\HorizontalTileElement.cs" />
+    <Compile Include="Logic\Book.cs" />
+    <Compile Include="Logic\Category.cs" />
+    <Compile Include="Custom Elements\VerticalTileElement.cs" />
+    <Compile Include="Custom Elements\CustomTitleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Logic\HistoryItem.cs" />
+    <Compile Include="Logic\Pages\BookShelfPageBase.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Elements\MyFormBehavior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Logic\Pages\AllCategoriesPage.cs" />
+    <Compile Include="Logic\Pages\AllCategoriesZoomOutPage.cs" />
+    <Compile Include="Logic\Pages\CategoryZoomOutPage.cs" />
+    <Compile Include="Logic\Pages\DetailsViewPage.cs" />
+    <Compile Include="Logic\Pages\IBookShelfPage.cs" />
+    <Compile Include="Logic\Pages\MainPage.cs" />
+    <Compile Include="Logic\Pages\SearchPage.cs" />
+    <Compile Include="Logic\Pages\SingleCategoryPage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\com.ebay.developer\Reference.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\com.ebay.developer\FindingService.wsdl" />
+    <None Include="Service References\com.ebay.developer\FindItemsAdvancedResponse.datasource" />
+    <None Include="Service References\com.ebay.developer\FindItemsByCategoryResponse.datasource" />
+    <None Include="Service References\com.ebay.developer\FindItemsByKeywordsResponse.datasource" />
+    <None Include="Service References\com.ebay.developer\FindItemsByProductResponse.datasource" />
+    <None Include="Service References\com.ebay.developer\FindItemsIneBayStoresResponse.datasource" />
+    <None Include="Service References\com.ebay.developer\GetHistogramsResponse.datasource" />
+    <None Include="Service References\com.ebay.developer\GetSearchKeywordsRecommendationResponse.datasource" />
+    <None Include="Service References\com.ebay.developer\Reference.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_pattern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_pattern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom-panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-btn-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-btn-tapped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fav-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fav-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-antiquarian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-audiobooks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-children.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-cookbooks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-fiction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-magazine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-nonfiction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sign-textbooks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-typo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-btn-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-btn-tapped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-btn-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-btn-tapped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore-btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore-btn-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore-btn-tapped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-btn-selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-all-items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slected-tab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title-bar-pattern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all-categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-drop-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-pattern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-hover.png" />
+    <None Include="Resources\back-pressed.png" />
+    <None Include="Resources\back-hover.png" />
+    <None Include="Resources\all-categories-pressed.png" />
+    <None Include="Resources\all-categories-hover.png" />
+    <None Include="Resources\home-pressed.png" />
+    <None Include="Resources\app-bar-bg.png" />
+    <None Include="Resources\BottomPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="RadControlSpy, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BackUp.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
