@@ -124,7 +124,7 @@ namespace Raven
 
             gp.Dispose();
         }
-        public void DrawRoundRect(Graphics g, Pen p, float X, float Y, float width, float height, float radius)
+        public void DrawRoundRect(Graphics g, Pen p, float X, float Y, float width, float height, float radius) // Create Shadow For Panel
         {
             GraphicsPath gp = new GraphicsPath();
             //Upper-right arc:
@@ -140,19 +140,34 @@ namespace Raven
             gp.Dispose();
         }
 
-        private void bunifuCustomLabel1_MouseHover(object sender, EventArgs e)
+        private void bunifuCustomLabel1_MouseHover(object sender, EventArgs e) // Create animation
         {
             bunifuCustomLabel1.Font = new Font(bunifuCustomLabel1.Font.Name, bunifuCustomLabel1.Font.SizeInPoints, FontStyle.Underline);
             bunifuCustomLabel1.BackColor = Color.BlueViolet;
         }
 
-        private void bunifuCustomLabel1_MouseLeave(object sender, EventArgs e)
+        private void bunifuCustomLabel1_MouseLeave(object sender, EventArgs e) // Create animation
         {
             bunifuCustomLabel1.Font = new Font(bunifuCustomLabel1.Font.Name, bunifuCustomLabel1.Font.SizeInPoints, FontStyle.Regular);
             bunifuCustomLabel1.BackColor = Color.Black;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radPanel1_Click(object sender, EventArgs e)
         {
 
         }
