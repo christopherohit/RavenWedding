@@ -1,10 +1,9 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="using:DevExpress.Core">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/CheckBox.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/CheckBox.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="DXCheckBoxTemplate" TargetType="CheckBox">
@@ -54,8 +53,8 @@
                                                Storyboard.TargetProperty="Foreground">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxContentForegroundDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="Foreground">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="Foreground">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxGlyphDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
@@ -118,8 +117,8 @@
                                                Storyboard.TargetProperty="Foreground">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxContentForegroundCheckedDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="Foreground">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="Foreground">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxGlyphCheckedDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation Storyboard.TargetName="CheckGlyph"
@@ -130,16 +129,16 @@
                     </VisualState>
                     <VisualState x:Name="IndeterminateNormal">
                         <Storyboard>
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="Glyph">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE73C;" />
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="Glyph">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation Storyboard.TargetName="CheckGlyph"
                                  Storyboard.TargetProperty="Opacity"
                                  To="1"
                                  Duration="0" />
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="FontWeight">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="FontWeight">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="Normal" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
@@ -154,16 +153,16 @@
                                                Storyboard.TargetProperty="Fill">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxBackgroundIndeterminateHoverBrush}" />
                             </ObjectAnimationUsingKeyFrames>
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="Glyph">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE73C;" />
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="Glyph">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation Storyboard.TargetName="CheckGlyph"
                                  Storyboard.TargetProperty="Opacity"
                                  To="1"
                                  Duration="0" />
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="FontWeight">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="FontWeight">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="Normal" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
@@ -182,16 +181,16 @@
                                                            Storyboard.TargetProperty="Foreground">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxGlyphIndeterminatePressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="Glyph">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE73C;" />
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="Glyph">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation Storyboard.TargetName="CheckGlyph"
                                  Storyboard.TargetProperty="Opacity"
                                  To="1"
                                  Duration="0" />
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="FontWeight">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="FontWeight">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="Normal" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
@@ -210,20 +209,20 @@
                                                Storyboard.TargetProperty="Foreground">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxContentForegroundIndeterminateDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="Foreground">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="Foreground">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXCheckBoxGlyphIndeterminateDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="Glyph">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE73C;" />
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="Glyph">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation Storyboard.TargetName="CheckGlyph"
                                  Storyboard.TargetProperty="Opacity"
                                  To="1"
                                  Duration="0" />
-                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph"
-                                               Storyboard.TargetProperty="FontWeight">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" 
+                                                           Storyboard.TargetProperty="FontWeight">
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="Normal" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
@@ -243,7 +242,7 @@
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Unfocused" />
-                    <VisualState x:Name="PointerFocused"/>
+                    <VisualState x:Name="PointerFocused" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
             <Grid.ColumnDefinitions>
@@ -275,8 +274,7 @@
                         Width="20" />
                 <FontIcon x:Name="CheckGlyph"
                         FontFamily="{ThemeResource SymbolThemeFontFamily}"
-                        Glyph="&#xE001;"
-                        FontWeight="ExtraBold"
+                        Glyph="" FontWeight="ExtraBold"
                         FontSize="16"
                         Foreground="{ThemeResource DXCheckBoxGlyphBrush}"
                         Opacity="0" />
@@ -298,12 +296,12 @@
     <Style TargetType="CheckBox" x:Key="SystemCheckBoxStyle">
         <Setter Property="Background" Value="{ThemeResource DXCheckBoxBackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{ThemeResource DXCheckBoxBorderBrush}" />
-        <Setter Property="Foreground" Value="{ThemeResource DXCheckBoxForegroundBrush}"/>
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
-        <Setter Property="Template" Value="{StaticResource DXCheckBoxTemplate}"/>
+        <Setter Property="Foreground" Value="{ThemeResource DXCheckBoxForegroundBrush}" />
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
+        <Setter Property="Template" Value="{StaticResource DXCheckBoxTemplate}" />
     </Style>
 
-    <Style TargetType="CheckBox" BasedOn="{StaticResource SystemCheckBoxStyle}"/>
+    <Style TargetType="CheckBox" BasedOn="{StaticResource SystemCheckBoxStyle}" />
 
 </ResourceDictionary>
 

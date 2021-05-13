@@ -1,0 +1,29 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevExpress.UI.Xaml.Charts">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Charts.v19.2/Themes/Axes/ChartsScrollBar.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="local:ScrollBarPresentation">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ScrollBarPresentation">
+                    <ScrollBar Visibility="Visible"
+                               IndicatorMode="{Binding IndicatorMode}"
+                               Orientation="{Binding Path=Orientation}"
+                               Minimum="{Binding Path=Minimum}"
+                               Maximum="{Binding Path=Maximum}"
+                               Value="{Binding Path=Value, Mode=TwoWay}"
+                               ViewportSize="{Binding Path=ViewportSize}"
+                               SmallChange="{Binding Path=SmallChange}"
+                               LargeChange="{Binding Path=LargeChange}"
+                               />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

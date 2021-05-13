@@ -1,5 +1,4 @@
-﻿<ResourceDictionary    
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="using:DevExpress.Core"
     xmlns:local="using:DevExpress.UI.Xaml.Layout"
@@ -7,11 +6,11 @@
     >
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/Tiles.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v20.2/Themes/NavigationElements/Tiles.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <dx:UnsetValueConverter x:Key="BorderBindingConverter"/>
-    <ve:BorderThicknessToDoubleConverter x:Key="BorderThicknessBindingConverter"/>
+    <dx:UnsetValueConverter x:Key="BorderBindingConverter" />
+    <ve:BorderThicknessToDoubleConverter x:Key="BorderThicknessBindingConverter" />
 
     <ControlTemplate x:Key="TileCheckTemplate" TargetType="local:TileCheck">
         <Grid x:Name="LayoutRoot">
@@ -25,8 +24,7 @@
                             >
                 <ve:BorderPresenter.Resources>
                     <DataTemplate x:Key="DefaultTemplate">
-                        <Ellipse
-                            Fill="{Binding Background, RelativeSource={RelativeSource TemplatedParent}}" 
+                        <Ellipse Fill="{Binding Background, RelativeSource={RelativeSource TemplatedParent}}" 
                             Stroke="{Binding BorderBrush, RelativeSource={RelativeSource TemplatedParent}}" 
                             StrokeThickness="{Binding BorderThickness, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BorderThicknessBindingConverter}}"
                             />
@@ -42,55 +40,55 @@
                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                             ShapeStyle="{TemplateBinding ContentShapeStyle}"
                             />
-            <Ellipse x:Name="FocusVisualWhite" Margin="-3" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="0.5" StrokeEndLineCap="Square" Stroke="{ThemeResource TileCheckFocusVisualWhiteStrokeThemeBrush}" StrokeDashArray="1,1"/>
-            <Ellipse x:Name="FocusVisualBlack" Margin="-3" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource TileCheckFocusVisualBlackStrokeThemeBrush}" StrokeDashArray="1,1"/>
+            <Ellipse x:Name="FocusVisualWhite" Margin="-3" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="0.5" StrokeEndLineCap="Square" Stroke="{ThemeResource TileCheckFocusVisualWhiteStrokeThemeBrush}" StrokeDashArray="1,1" />
+            <Ellipse x:Name="FocusVisualBlack" Margin="-3" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource TileCheckFocusVisualBlackStrokeThemeBrush}" StrokeDashArray="1,1" />
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="LayoutRoot">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="0.6"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="0.6" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="Pressed"/>
+                    <VisualState x:Name="Pressed" />
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TileCheckDisabledForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TileCheckDisabledForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="Checked"/>
+                    <VisualState x:Name="Checked" />
                     <VisualState x:Name="CheckedPointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="LayoutRoot">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="0.6"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="0.6" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="CheckedPressed"/>
+                    <VisualState x:Name="CheckedPressed" />
                     <VisualState x:Name="CheckedDisabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TileCheckDisabledForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TileCheckDisabledForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="Indeterminate"/>
+                    <VisualState x:Name="Indeterminate" />
                     <VisualState x:Name="IndeterminatePointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="LayoutRoot">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="0.6"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="0.6" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="IndeterminatePressed"/>
+                    <VisualState x:Name="IndeterminatePressed" />
                     <VisualState x:Name="IndeterminateDisabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TileCheckDisabledForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TileCheckDisabledForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -98,12 +96,12 @@
                 <VisualStateGroup x:Name="FocusStates">
                     <VisualState x:Name="Focused">
                         <Storyboard>
-                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualWhite"/>
-                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualBlack"/>
+                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualWhite" />
+                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualBlack" />
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="Unfocused"/>
-                    <VisualState x:Name="PointerFocused"/>
+                    <VisualState x:Name="Unfocused" />
+                    <VisualState x:Name="PointerFocused" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
         </Grid>
@@ -138,27 +136,27 @@
     </ControlTemplate>
 
     <Style TargetType="local:TileCheck">
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontWeight" Value="Light"/>
-        <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
-        <Setter Property="Padding" Value="5"/>
-        <Setter Property="Margin" Value="3"/>
-        <Setter Property="HorizontalAlignment" Value="Right"/>
-        <Setter Property="VerticalAlignment" Value="Top"/>
-        <Setter Property="Template" Value="{StaticResource TileCheckTemplate}"/>
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="FontFamily" Value="Segoe UI Symbol" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Template" Value="{StaticResource TileCheckTemplate}" />
     </Style>
     <Style TargetType="local:TileHeader">
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontWeight" Value="Light"/>
-        <Setter Property="Padding" Value="12"/>
-        <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Setter Property="VerticalContentAlignment" Value="Bottom"/>
-        <Setter Property="Template" Value="{StaticResource TileHeaderTemplate}"/>
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Padding" Value="12" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Bottom" />
+        <Setter Property="Template" Value="{StaticResource TileHeaderTemplate}" />
     </Style>
     <Style TargetType="local:TileNotificationHeader">
-        <Setter Property="FontSize" Value="11"/>
-        <Setter Property="FontWeight" Value="Bold"/>
-        <Setter Property="Padding" Value="12"/>
-        <Setter Property="Template" Value="{StaticResource TileNotificationHeaderTemplate}"/>
+        <Setter Property="FontSize" Value="11" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Padding" Value="12" />
+        <Setter Property="Template" Value="{StaticResource TileNotificationHeaderTemplate}" />
     </Style>
 </ResourceDictionary>

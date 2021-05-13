@@ -6,34 +6,34 @@
                     xmlns:dxght="using:DevExpress.UI.Xaml.Grid.HitTest">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/StandardStyles.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/Headers.Colors.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v19.2/Themes/DefaultGridViewStyles.Colors.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/CheckBox.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v20.2/Themes/StandardStyles.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v20.2/Themes/Headers.Colors.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Grid.v20.2/Themes/DefaultGridViewStyles.Colors.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/CheckBox.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
     <Style x:Key="FixedTotalSummaryValueFontStyle" TargetType="TextBlock">
-        <Setter Property="Foreground" Value="{ThemeResource GridControlFixedTotalSummaryValueForegroundThemeBrush}"/>
-        <Setter Property="FontSize" Value="30"/>
-        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="Foreground" Value="{ThemeResource GridControlFixedTotalSummaryValueForegroundThemeBrush}" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="FontWeight" Value="Light" />
     </Style>
     <Style x:Key="FixedTotalSummaryCaptionFontStyle" TargetType="TextBlock">
-        <Setter Property="Foreground" Value="{ThemeResource GridControlFixedTotalSummaryCaptionForegroundThemeBrush}"/>
-        <Setter Property="FontSize" Value="15"/>
-        <Setter Property="FontWeight" Value="SemiLight"/>
+        <Setter Property="Foreground" Value="{ThemeResource GridControlFixedTotalSummaryCaptionForegroundThemeBrush}" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="FontWeight" Value="SemiLight" />
     </Style>
 
     <DataTemplate x:Key="FixedTotalSummaryItemTemplate">
         <StackPanel Orientation="Vertical">
-            <TextBlock x:Name="PART_TotalSummaryCaption" Text="{Binding Path=Caption}" Style="{StaticResource FixedTotalSummaryCaptionFontStyle}" HorizontalAlignment="{Binding HorizontalAlignment, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
-            <TextBlock x:Name="PART_TotalSummaryValue" Text="{Binding Path=DisplayValue}" Style="{StaticResource FixedTotalSummaryValueFontStyle}" HorizontalAlignment="{Binding HorizontalAlignment, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+            <TextBlock x:Name="PART_TotalSummaryCaption" Text="{Binding Path=Caption}" Style="{StaticResource FixedTotalSummaryCaptionFontStyle}" HorizontalAlignment="{Binding HorizontalAlignment, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+            <TextBlock x:Name="PART_TotalSummaryValue" Text="{Binding Path=DisplayValue}" Style="{StaticResource FixedTotalSummaryValueFontStyle}" HorizontalAlignment="{Binding HorizontalAlignment, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
         </StackPanel>
     </DataTemplate>
     <DataTemplate x:Key="FixedTotalSummaryControlItemTemplate">
-        <ContentPresenter x:Name="PART_FixedTotalSummaryItem" ContentTemplate="{Binding FixedTotalSummaryItemTemplate}"/>
+        <ContentPresenter x:Name="PART_FixedTotalSummaryItem" ContentTemplate="{Binding FixedTotalSummaryItemTemplate}" />
     </DataTemplate>
     <Style TargetType="dxg:FixedTotalSummaryControl">
-        <Setter Property="Padding" Value="0,20,0,20"/>
+        <Setter Property="Padding" Value="0,20,0,20" />
         <Setter Property="BorderThickness" Value="0,1,0,0" />
         <Setter Property="BorderBrush" Value="{ThemeResource GridControlFixedTotalSummaryBorderThemeBrush}" />
         <Setter Property="Template">
@@ -44,8 +44,8 @@
                             <ItemsControl x:Name="PART_FixedTotalSummaryLeft" HorizontalAlignment="Left" HorizontalContentAlignment="Left" ItemTemplate="{StaticResource FixedTotalSummaryControlItemTemplate}">
                                 <ItemsControl.ItemContainerStyle>
                                     <Style TargetType="ContentPresenter">
-                                        <Setter Property="Margin" Value="25,0,0,0"/>
-                                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                                        <Setter Property="Margin" Value="25,0,0,0" />
+                                        <Setter Property="HorizontalAlignment" Value="Left" />
                                     </Style>
                                 </ItemsControl.ItemContainerStyle>
                                 <ItemsControl.ItemsPanel>
@@ -57,13 +57,13 @@
                             <ItemsControl x:Name="PART_FixedTotalSummaryRight" dx:DockPanel.Dock="Right" HorizontalAlignment="Right" ItemTemplate="{StaticResource FixedTotalSummaryControlItemTemplate}">
                                 <ItemsControl.ItemContainerStyle>
                                     <Style TargetType="ContentPresenter">
-                                        <Setter Property="Margin" Value="0,0,25,0"/>
+                                        <Setter Property="Margin" Value="0,0,25,0" />
                                         <Setter Property="HorizontalAlignment" Value="Right" />
                                     </Style>
                                 </ItemsControl.ItemContainerStyle>
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
-                                        <dxg:OverflowStackPanel Orientation="Horizontal"/>
+                                        <dxg:OverflowStackPanel Orientation="Horizontal" />
                                     </ItemsPanelTemplate>
                                 </ItemsControl.ItemsPanel>
                             </ItemsControl>

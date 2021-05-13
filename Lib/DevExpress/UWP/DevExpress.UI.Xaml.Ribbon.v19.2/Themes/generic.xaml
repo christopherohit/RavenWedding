@@ -1,32 +1,31 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:themes="using:DevExpress.Core.Native"
     xmlns:local="using:DevExpress.UI.Xaml.Ribbon"
     xmlns:dxcore="using:DevExpress.Core">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Separators.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/FlyoutItemsContentHost.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Flyout.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/HeaderItems.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Header.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/HelpPane.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/BackstageButtonItem.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Backstage.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/HelpPaneItems.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/DropDownItems.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/RibbonItems.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/RibbonGallery.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/RibbonComboBox.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Ribbon.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/RibbonToolbarControl.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/ContextToolbarItems.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/RibbonToolbarItems.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/ContextToolbarControl.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/ToolbarItems.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/ToolbarControl.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Separators.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/FlyoutItemsContentHost.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Flyout.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/HeaderItems.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Header.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/HelpPane.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/BackstageButtonItem.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Backstage.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/HelpPaneItems.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/DropDownItems.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/RibbonItems.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/RibbonGallery.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/RibbonComboBox.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Ribbon.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/RibbonToolbarControl.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/ContextToolbarItems.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/RibbonToolbarItems.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/ContextToolbarControl.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/ToolbarItems.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/ToolbarControl.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <dxcore:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader"/>
+    <dxcore:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader" />
 </ResourceDictionary>
 

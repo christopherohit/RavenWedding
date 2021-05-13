@@ -1,15 +1,14 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dxcip="using:DevExpress.UI.Xaml.Controls.Internal.Pdf"
     xmlns:dx="using:DevExpress.Core">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/Pdf/PdfViewerGeneric.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/Pdf/PdfViewerGeneric.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="ContinuousViewPageStyle" TargetType="dxcip:PdfPageControl">
-        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="dxcip:PdfPageControl">
@@ -20,14 +19,14 @@
                         <Border Width="{Binding Width}"
                                 Height="{Binding Height}">
                             <Image x:Name="PART_Image"
-                                   Source="{TemplateBinding ImageSource}"/>
+                                   Source="{TemplateBinding ImageSource}" />
                         </Border>
                         <Path x:Name="PART_TextHighlight"
                                   Data="{Binding TextHighlight.HighlightGeometry}"
-                                  Fill="{ThemeResource PdfTextSearchResultHighlightedBrush}"/>
+                                  Fill="{ThemeResource PdfTextSearchResultHighlightedBrush}" />
                         <Path x:Name="PART_TextSelection"
                                   Data="{Binding TextHighlight.SelectionGeometry}"
-                                  Fill="{ThemeResource PdfTextSearchResultSelectedBrush}"/>
+                                  Fill="{ThemeResource PdfTextSearchResultSelectedBrush}" />
                     </Canvas>
                 </ControlTemplate>
             </Setter.Value>
@@ -37,11 +36,11 @@
     <Style x:Key="ContinuousViewItemContainerStyle" TargetType="ListViewItem">
         <Setter Property="Margin" Value="0" />
         <Setter Property="Padding" Value="0" />
-        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <ContentPresenter Margin="{Binding PageMargin}"/>
+                    <ContentPresenter Margin="{Binding PageMargin}" />
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -50,34 +49,34 @@
     <DataTemplate x:Key="ContinuousViewItemTemplate">
         <dxcip:PdfPageControl Style="{StaticResource ContinuousViewPageStyle}"
                               Margin="{Binding PageSpacing}"
-                              ImageSourceDelayedSetter="True"/>
+                              ImageSourceDelayedSetter="True" />
     </DataTemplate>
 
     <Style TargetType="dxcip:PdfViewerListView">
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="SelectionMode" Value="None"/>
-        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
-        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
-        <Setter Property="ScrollViewer.VerticalScrollMode" Value="Auto"/>
-        <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Enabled"/>
-        <Setter Property="ScrollViewer.IsHorizontalRailEnabled" Value="True"/>
-        <Setter Property="ScrollViewer.IsVerticalRailEnabled" Value="True"/>
-        <Setter Property="ScrollViewer.IsHorizontalScrollChainingEnabled" Value="False"/>
-        <Setter Property="ScrollViewer.IsVerticalScrollChainingEnabled" Value="False"/>
-        <Setter Property="ScrollViewer.ZoomMode" Value="Enabled"/>
-        <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False"/>
-        <Setter Property="ScrollViewer.BringIntoViewOnFocusChange" Value="True"/>
-        <Setter Property="ShowsScrollingPlaceholders" Value="False"/>
-        <Setter Property="IsSwipeEnabled" Value="False"/>
-        <Setter Property="IsHoldingEnabled" Value="False"/>
-        <Setter Property="IsItemClickEnabled" Value="False"/>
-        <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling"/>
-        <Setter Property="ItemContainerStyle" Value="{StaticResource ContinuousViewItemContainerStyle}"/>
-        <Setter Property="ItemTemplate" Value="{StaticResource ContinuousViewItemTemplate}"/>
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="SelectionMode" Value="None" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+        <Setter Property="ScrollViewer.VerticalScrollMode" Value="Auto" />
+        <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Enabled" />
+        <Setter Property="ScrollViewer.IsHorizontalRailEnabled" Value="True" />
+        <Setter Property="ScrollViewer.IsVerticalRailEnabled" Value="True" />
+        <Setter Property="ScrollViewer.IsHorizontalScrollChainingEnabled" Value="False" />
+        <Setter Property="ScrollViewer.IsVerticalScrollChainingEnabled" Value="False" />
+        <Setter Property="ScrollViewer.ZoomMode" Value="Enabled" />
+        <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False" />
+        <Setter Property="ScrollViewer.BringIntoViewOnFocusChange" Value="True" />
+        <Setter Property="ShowsScrollingPlaceholders" Value="False" />
+        <Setter Property="IsSwipeEnabled" Value="False" />
+        <Setter Property="IsHoldingEnabled" Value="False" />
+        <Setter Property="IsItemClickEnabled" Value="False" />
+        <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling" />
+        <Setter Property="ItemContainerStyle" Value="{StaticResource ContinuousViewItemContainerStyle}" />
+        <Setter Property="ItemTemplate" Value="{StaticResource ContinuousViewItemTemplate}" />
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <VirtualizingStackPanel Orientation="Vertical"/>
+                    <VirtualizingStackPanel Orientation="Vertical" />
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
@@ -110,7 +109,7 @@
                                             Header="{TemplateBinding Header}"
                                             HeaderTransitions="{TemplateBinding HeaderTransitions}"
                                             Padding="{TemplateBinding Padding}"
-                                            HorizontalAlignment="Center"/>
+                                            HorizontalAlignment="Center" />
                         </ScrollViewer>
                     </Border>
                 </ControlTemplate>

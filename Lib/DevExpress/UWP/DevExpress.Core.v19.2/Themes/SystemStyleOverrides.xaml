@@ -4,20 +4,20 @@
     xmlns:Core="using:DevExpress.Core">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/Button.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/CheckBox.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ComboBox.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/RadioButton.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/Slider.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/TextBox.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ToggleButton.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ToggleSwitch.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ScrollBar.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/Button.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/CheckBox.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ComboBox.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/RadioButton.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/Slider.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/TextBox.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ToggleButton.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ToggleSwitch.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ScrollBar.xaml" />
         <!--<ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ScrollViewer.xaml"/>-->
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ProgressBar.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ProgressRing.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/HyperlinkButton.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ListBox.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ProgressBar.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ProgressRing.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/HyperlinkButton.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ListBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

@@ -1,0 +1,38 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="using:DevExpress.Core"
+    xmlns:local="using:DevExpress.UI.Xaml.Controls"
+    xmlns:native="using:DevExpress.UI.Xaml.Controls.Native">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/BarCodeControl.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="local:BarCodeControl">
+        <Setter Property="Foreground" Value="{ThemeResource BarCodeControlForegroundBrush}"/>
+        <Setter Property="Background" Value="{ThemeResource BarCodeControlBackgroundBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:BarCodeControl">
+                    <Grid Name="Part_RootGrid" Background="{TemplateBinding Background}">
+                        <native:BarCodePainter x:Name="Part_BarCodePainter" OwnerFlowDirection="{TemplateBinding FlowDirection}"
+                                               Foreground="{TemplateBinding Foreground}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="native:BarCodePainter">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="native:BarCodePainter">
+                    <Grid>
+                        <Grid Name="Part_Grid"/>
+                        <Canvas Name="Part_Canvas"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

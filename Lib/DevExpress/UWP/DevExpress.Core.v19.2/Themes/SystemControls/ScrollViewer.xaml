@@ -1,15 +1,14 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="using:DevExpress.Core">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ScrollBar.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ScrollBar.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="SystemScrollViewerStyle" TargetType="ScrollViewer">
-        <Setter Property="HorizontalScrollMode" Value="Enabled"/>
-        <Setter Property="HorizontalScrollBarVisibility" Value="Visible"/>
+        <Setter Property="HorizontalScrollMode" Value="Enabled" />
+        <Setter Property="HorizontalScrollBarVisibility" Value="Visible" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ScrollViewer">
@@ -137,7 +136,7 @@
                                        Value="{TemplateBinding VerticalOffset}"
                                        ViewportSize="{TemplateBinding ViewportHeight}"
                                        HorizontalAlignment="Right"
-                                       Style="{StaticResource SystemScrollBarStyle}"/>
+                                       Style="{StaticResource SystemScrollBarStyle}" />
                             <ScrollBar x:Name="HorizontalScrollBar"
                                        IsTabStop="False"
                                        Maximum="{TemplateBinding ScrollableWidth}"
@@ -146,7 +145,7 @@
                                        Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
                                        Value="{TemplateBinding HorizontalOffset}"
                                        ViewportSize="{TemplateBinding ViewportWidth}"
-                                       Style="{StaticResource SystemScrollBarStyle}"/>
+                                       Style="{StaticResource SystemScrollBarStyle}" />
                             <Border x:Name="ScrollBarSeparator"
                                     Grid.Row="1"
                                     Grid.Column="1"

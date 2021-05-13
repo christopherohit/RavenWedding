@@ -1,9 +1,8 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ProgressBar.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ProgressBar.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="DXProgressBarTemplate" TargetType="ProgressBar">
@@ -301,10 +300,10 @@
         <Setter Property="Foreground" Value="{ThemeResource ProgressBarForegroundBrush}" />
         <Setter Property="Background" Value="{ThemeResource ProgressBarBackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{ThemeResource ProgressBarBorderBrush}" />
-        <Setter Property="Template" Value="{StaticResource DXProgressBarTemplate}"/>
+        <Setter Property="Template" Value="{StaticResource DXProgressBarTemplate}" />
     </Style>
 
-    <Style TargetType="ProgressBar" BasedOn="{StaticResource SystemProgressBarStyle}"/>
+    <Style TargetType="ProgressBar" BasedOn="{StaticResource SystemProgressBarStyle}" />
 
 </ResourceDictionary>
 

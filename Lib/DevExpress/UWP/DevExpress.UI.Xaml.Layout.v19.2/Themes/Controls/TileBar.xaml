@@ -8,17 +8,18 @@
                     >
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v20.2/Themes/Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <!--#region TileBar-->
     <Core:BooleanToVisibilityConverter x:Key="boolToVisibilityConverter" />
 
     <ControlTemplate TargetType="LayoutInternal:TileBarItemArrowControl" x:Key="TileBarArrowTemplate">
-        <Grid Background="{TemplateBinding Background}">
+        <Grid Background="{TemplateBinding Background}"
+              >
             <Grid.RowDefinitions>
                 <RowDefinition />
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Border Background="{ThemeResource TileItemHoverBackground}" x:Name="hoverBorder" Opacity="0" />
             <Rectangle Fill="{ThemeResource TileItemBackgroundBrush}" Width="1" HorizontalAlignment="Left" />
@@ -26,12 +27,12 @@
                                       Data="F1 M 384,282L 391,282L 388,287L 387,287L 384,282 Z " RenderTransformOrigin="0.5,0.5"
                                       Width="7" Height="5">
                 <Path.RenderTransform>
-                    <RotateTransform x:Name="rotateTransform"/>
+                    <RotateTransform x:Name="rotateTransform" />
                 </Path.RenderTransform>
             </Path>
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <Storyboard>
                             <DoubleAnimation Storyboard.TargetName="hoverBorder" Storyboard.TargetProperty="Opacity" Duration="0" To="1" />
@@ -68,10 +69,10 @@
                                                      HorizontalAlignment="{TemplateBinding HorizontalGlyphAlignment}" 
                                                      VerticalAlignment="{TemplateBinding VerticalGlyphAlignment}"
                                                      LayoutInternal:ImageColorizer.Color="{Binding Path=(LayoutInternal:ImageColorizer.Color), RelativeSource={RelativeSource TemplatedParent}}"
-                                                     LayoutInternal:ImageColorizer.IsEnabled="{TemplateBinding AllowGlyphTheming}"/>
+                                                     LayoutInternal:ImageColorizer.IsEnabled="{TemplateBinding AllowGlyphTheming}" />
             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                              ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                              ContentTemplate="{TemplateBinding ContentTemplate}" />
 
 
             <VisualStateManager.VisualStateGroups>
@@ -79,12 +80,12 @@
                     <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Target="PART_Root.Background" Value="{ThemeResource TileItemHoverBackground}"/>
+                            <Setter Target="PART_Root.Background" Value="{ThemeResource TileItemHoverBackground}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Target="PART_Root.Background" Value="{ThemeResource TileItemHoverBackground}"/>
+                            <Setter Target="PART_Root.Background" Value="{ThemeResource TileItemHoverBackground}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="Disabled" />
@@ -122,7 +123,7 @@
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <LayoutInternal:TileBarItemsPanel Background="Transparent"/>
+                    <LayoutInternal:TileBarItemsPanel Background="Transparent" />
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
@@ -156,17 +157,17 @@
                 <LayoutInternal:TileBarItemArrowControl x:Name="PART_ArrowButton" Grid.Column="1" Width="31"
                     Visibility="{Binding Path=IsFlyoutButtonVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={ThemeResource boolToVisibilityConverter}}"
                     Background="{TemplateBinding CalculatedBackground}"
-                    Foreground="{TemplateBinding CalculatedForeground}"/>
+                    Foreground="{TemplateBinding CalculatedForeground}" />
             </Grid>
 
-            <Border BorderThickness="2" Opacity="0" x:Name="selection" IsHitTestVisible="False" BorderBrush="{TemplateBinding Background}"/>
+            <Border BorderThickness="2" Opacity="0" x:Name="selection" IsHitTestVisible="False" BorderBrush="{TemplateBinding Background}" />
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="PointerOver"/>
-                    <VisualState x:Name="Pressed"/>
+                    <VisualState x:Name="PointerOver" />
+                    <VisualState x:Name="Pressed" />
                     <VisualState x:Name="Disabled">
                         <Storyboard>
-                            <DoubleAnimation Storyboard.TargetName="Border" Storyboard.TargetProperty="Opacity" Duration="0" To="0.35"/>
+                            <DoubleAnimation Storyboard.TargetName="Border" Storyboard.TargetProperty="Opacity" Duration="0" To="0.35" />
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Normal" />
@@ -193,7 +194,7 @@
     </Style>
 
     <Style TargetType="LayoutInternal:TileBarItemArrowControl">
-        <Setter Property="Template" Value="{ThemeResource TileBarArrowTemplate}"/>
+        <Setter Property="Template" Value="{ThemeResource TileBarArrowTemplate}" />
         <Setter Property="Background" Value="Transparent" />
     </Style>
 
@@ -201,58 +202,59 @@
     </Style>
 
     <Style TargetType="LayoutInternal:TileButtonControl">
-        <Setter Property="Template" Value="{ThemeResource TileButtonControlTemplate}"/>
+        <Setter Property="Template" Value="{ThemeResource TileButtonControlTemplate}" />
         <Setter Property="Background" Value="Transparent" />
     </Style>
     <!--#endregion-->
 
     <!--#region ScrollableControl-->
     <ControlTemplate x:Key="ScrollableControlButtonTemplate" TargetType="LayoutInternal:ScrollableControlButton">
-        <Grid x:Name="Root" Background="{TemplateBinding Background}">
+        <Grid x:Name="Root" Background="{TemplateBinding Background}"
+              >
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="State">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ItemBackgroundHover}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ItemBackgroundHover}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="State">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathLeft">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathRight">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathUp">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathDown">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillHover}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="State">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ItemBackgroundPressed}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ItemBackgroundPressed}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="State">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ItemBackgroundPressed}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ItemBackgroundPressed}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathLeft">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathRight">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathUp">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PathDown">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource pathFillPressed}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -286,16 +288,16 @@
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
             <Border x:Name="State" CornerRadius="2" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" />
-            <Path x:Name="PathLeft"  Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 0 L 0 8 L 4 4 Z"  Width="6" Height="12" Margin="1,0,-1,0" Opacity="0" />
-            <Path x:Name="PathRight" Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 4 L 4 8 L 4 0 Z"  Width="6" Height="12" Margin="-1,0,1,0" Opacity="0" />
-            <Path x:Name="PathUp"    Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 4 L 7 4 L 3.5 0 Z" Width="12" Height="6" Margin="0,-1,0,1" Opacity="0" />
-            <Path x:Name="PathDown"  Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 0 L 3.5 4 L 7 0 Z" Width="12" Height="6" Margin="0,1,0,-1" Opacity="0" />
+            <Path x:Name="PathLeft" Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 0 L 0 8 L 4 4 Z" Width="6" Height="12" Margin="1,0,-1,0" Opacity="0" />
+            <Path x:Name="PathRight" Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 4 L 4 8 L 4 0 Z" Width="6" Height="12" Margin="-1,0,1,0" Opacity="0" />
+            <Path x:Name="PathUp" Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 4 L 7 4 L 3.5 0 Z" Width="12" Height="6" Margin="0,-1,0,1" Opacity="0" />
+            <Path x:Name="PathDown" Stretch="Fill" Fill="{ThemeResource pathFillDefault}" Data="M 0 0 L 3.5 4 L 7 0 Z" Width="12" Height="6" Margin="0,1,0,-1" Opacity="0" />
         </Grid>
     </ControlTemplate>
 
     <Style TargetType="LayoutInternal:ScrollableControlButton">
-        <Setter Property="Background" Value="{ThemeResource ScrollableControlButtonBackgroundBrush}"/>
-        <Setter Property="Template" Value="{StaticResource ScrollableControlButtonTemplate}"/>
+        <Setter Property="Background" Value="{ThemeResource ScrollableControlButtonBackgroundBrush}" />
+        <Setter Property="Template" Value="{StaticResource ScrollableControlButtonTemplate}" />
     </Style>
 
     <Style TargetType="LayoutInternal:ScrollableControl">
@@ -304,35 +306,35 @@
                 <ControlTemplate TargetType="LayoutInternal:ScrollableControl">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition/>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition />
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <ContentPresenter Grid.Column="1" Grid.Row="1"/>
-                        <LayoutInternal:ScrollableControlButton Visibility="Collapsed" Direction="Up" Command="{TemplateBinding ScrollPrev}" x:Name="PART_TopButton" Height="20" VerticalAlignment="Top" Grid.Column="1"/>
-                        <LayoutInternal:ScrollableControlButton Visibility="Collapsed" Direction="Down" Command="{TemplateBinding ScrollNext}" x:Name="PART_BottomButton" Height="20" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2"/>
-                        <LayoutInternal:ScrollableControlButton Direction="Right" Command="{TemplateBinding ScrollPrev}" x:Name="PART_LeftButton" Width="20" HorizontalAlignment="Left" Grid.Row="1"/>
-                        <LayoutInternal:ScrollableControlButton Direction="Left" Command="{TemplateBinding ScrollNext}" x:Name="PART_RightButton" Width="20" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="2"/>
+                        <ContentPresenter Grid.Column="1" Grid.Row="1" />
+                        <LayoutInternal:ScrollableControlButton Visibility="Collapsed" Direction="Up" Command="{TemplateBinding ScrollPrev}" x:Name="PART_TopButton" Height="20" VerticalAlignment="Top" Grid.Column="1" />
+                        <LayoutInternal:ScrollableControlButton Visibility="Collapsed" Direction="Down" Command="{TemplateBinding ScrollNext}" x:Name="PART_BottomButton" Height="20" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" />
+                        <LayoutInternal:ScrollableControlButton Direction="Right" Command="{TemplateBinding ScrollPrev}" x:Name="PART_LeftButton" Width="20" HorizontalAlignment="Left" Grid.Row="1" />
+                        <LayoutInternal:ScrollableControlButton Direction="Left" Command="{TemplateBinding ScrollNext}" x:Name="PART_RightButton" Width="20" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="2" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="OrientationStates">
-                                <VisualState x:Name="EmptyOrientationState"/>
-                                <VisualState x:Name="Horizontal"/>
+                                <VisualState x:Name="EmptyOrientationState" />
+                                <VisualState x:Name="Horizontal" />
                                 <VisualState x:Name="Vertical">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RightButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed"/>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_LeftButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed"/>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_TopButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Visible"/>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BottomButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Visible"/>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RightButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_LeftButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_TopButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Visible" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BottomButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Visible" />
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="ScrollStates">
-                                <VisualState x:Name="DefaultScroll"/>
+                                <VisualState x:Name="DefaultScroll" />
                                 <VisualState x:Name="OverlappedScroll">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RightButton" Storyboard.TargetProperty="(Grid.Column)">
@@ -367,10 +369,10 @@
                                 </VisualState>
                                 <VisualState x:Name="DisabledScroll">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RightButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed"/>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_LeftButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed"/>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_TopButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed"/>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BottomButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed"/>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RightButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_LeftButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_TopButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BottomButton" Storyboard.TargetProperty="Visibility" LayoutInternal:ValueSetter.Visibility="Collapsed" />
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>

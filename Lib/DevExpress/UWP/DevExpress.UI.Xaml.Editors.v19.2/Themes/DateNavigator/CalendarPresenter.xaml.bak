@@ -1,0 +1,58 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:calendar="using:DevExpress.UI.Xaml.Editors.Internal.Calendar"
+    xmlns:dx="using:DevExpress.Core">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/DateNavigator/CalendarView.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="calendar:CalendarPresenter">
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="calendar:CalendarPresenter">
+                    <calendar:CalendarPanel x:Name="PART_ItemsPanel"
+                                            Background="{TemplateBinding Background}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="dx:StyleHelper.BindableSetters">
+            <Setter.Value>
+                <dx:BindableSetterCollection>
+                    <dx:BindableSetter Property="SelectionMode" Binding="{Binding Owner.SelectionMode, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="ViewMode" Binding="{Binding Owner.ViewMode, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="DisplayDate" Binding="{Binding Owner.DisplayDate, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="DisplayDateRange" Binding="{Binding Owner.ActualDisplayDateRange, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="CellItemTemplateSelector" Binding="{Binding Owner.CellItemTemplateSelector, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="CellItemTemplate" Binding="{Binding Owner.CellItemTemplate, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="CellItemContainerStyle" Binding="{Binding Owner.CellItemContainerStyle, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="SelectedDates" Binding="{Binding Owner.SelectedDates, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="CalendarCulture" Binding="{Binding Owner.CalendarCulture, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="MonthCellFormat" Binding="{Binding Owner.MonthCellFormat, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="YearCellFormat" Binding="{Binding Owner.YearCellFormat, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="DecadeCellFormat" Binding="{Binding Owner.DecadeCellFormat, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="CenturyCellFormat" Binding="{Binding Owner.CenturyCellFormat, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="WeekNumberFormat" Binding="{Binding Owner.WeekNumberFormat, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="DayNameFormat" Binding="{Binding Owner.DayNameFormat, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="ShowDaysOfWeek" Binding="{Binding Owner.ShowDaysOfWeek, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="ShowWeekNumbers" Binding="{Binding Owner.ShowWeekNumbers, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="WeekNumberRule" Binding="{Binding Owner.WeekNumberRule, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="FirstDayOfWeek" Binding="{Binding Owner.FirstDayOfWeek, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="Workdays" Binding="{Binding Owner.Workdays, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="ExactWorkdays" Binding="{Binding Owner.ExactWorkdays, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="Holidays" Binding="{Binding Owner.Holidays, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="SpecialDates" Binding="{Binding Owner.SpecialDates, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="SelectedDate" Binding="{Binding Owner.SelectedDate, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="AnimationMode" Binding="{Binding Owner.AnimationMode, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="EnableMouseWheelDateScrolling" Binding="{Binding Owner.EnableMouseWheelDateScrolling, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="DayNameTemplate" Binding="{Binding Owner.DayNameTemplate, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <dx:BindableSetter Property="WeekNumberTemplate" Binding="{Binding Owner.WeekNumberTemplate, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                </dx:BindableSetterCollection>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

@@ -1,31 +1,30 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mvvmui="using:DevExpress.Mvvm.UI"
     xmlns:xaml="using:DevExpress.UI.Xaml"
     xmlns:internal="using:DevExpress.UI.Xaml.Internal">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/DialogButton.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v20.2/Themes/DialogButton.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="mvvmui:DialogButton">
-        <Setter Property="Background" Value="{ThemeResource DialogButtonBackgroundThemeBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource DialogButtonForegroundThemeBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource DialogButtonBorderThemeBrush}"/>
+        <Setter Property="Background" Value="{ThemeResource DialogButtonBackgroundThemeBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource DialogButtonForegroundThemeBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource DialogButtonBorderThemeBrush}" />
         <Setter Property="FocusVisualPrimaryBrush" Value="{ThemeResource DialogButtonOuterFocusVisualStroke}" />
         <Setter Property="FocusVisualSecondaryBrush" Value="{ThemeResource DialogButtonInnerFocusVisualStroke}" />
-        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="FontWeight" Value="Light" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Padding" Value="12,4,12,4"/>
-        <Setter Property="UseSystemFocusVisuals" Value="True"/>
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="12,4,12,4" />
+        <Setter Property="UseSystemFocusVisuals" Value="True" />
         <Setter Property="FocusVisualPrimaryThickness" Value="1" />
         <Setter Property="FocusVisualSecondaryThickness" Value="1" />
-        <Setter Property="FocusVisualMargin" Value="1"/>
-        <Setter Property="ClickMode" Value="Release"/>
+        <Setter Property="FocusVisualMargin" Value="1" />
+        <Setter Property="ClickMode" Value="Release" />
         <Setter Property="FontSize" Value="15" />
         <Setter Property="FontFamily" Value="Segoe UI" />
         <Setter Property="Spacing" Value="8" />
@@ -41,7 +40,7 @@
                                         Padding="{TemplateBinding Padding}"
                                         Orientation="Horizontal"
                                         Spacing="{TemplateBinding Spacing}">
-                        <internal:IconView x:Name="PART_Icon" UseIconPadding="False"/>
+                        <internal:IconView x:Name="PART_Icon" UseIconPadding="False" />
                         <ContentPresenter x:Name="ContentPresenter"
                                               AutomationProperties.AccessibilityView="Raw"
                                               internal:TrackPanel.HorizontalCellSize="*"
@@ -57,7 +56,7 @@
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal">
                                     <Storyboard>
-                                        <PointerUpThemeAnimation Storyboard.TargetName="RootPanel"/>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="RootPanel" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="PointerOver">
@@ -76,7 +75,7 @@
                                         <Setter Target="PART_Icon.Foreground" Value="{ThemeResource DialogButtonForegroundPressedBrush}" />
                                     </VisualState.Setters>
                                     <Storyboard>
-                                        <PointerDownThemeAnimation Storyboard.TargetName="RootPanel"/>
+                                        <PointerDownThemeAnimation Storyboard.TargetName="RootPanel" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">

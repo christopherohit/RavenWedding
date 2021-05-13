@@ -1,0 +1,404 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Ribbon="using:DevExpress.UI.Xaml.Ribbon"
+    xmlns:Editors="using:DevExpress.UI.Xaml.Editors"
+    xmlns:Xaml="using:DevExpress.UI.Xaml"
+    xmlns:Internal="using:DevExpress.UI.Xaml.Ribbon.Internal"
+    xmlns:XamlInternal="using:DevExpress.UI.Xaml.Internal">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/HelpPaneItems.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="Ribbon:HelpPaneButton">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="UseSystemFocusVisuals" Value="False"/>
+        <Setter Property="Background" Value="{ThemeResource HelpPaneButtonMobileBackgroundBrush}"/>
+        <Setter Property="Padding" Value="8"/>
+        <Setter Property="TemplateSelector">
+            <Setter.Value>
+                <Ribbon:HelpPaneItemTemplateSelector>
+                    <Ribbon:HelpPaneItemTemplateSelector.HeaderTemplate>
+                        <ControlTemplate TargetType="Ribbon:HelpPaneButton">
+                            <Border x:Name="PART_Background"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Padding="{TemplateBinding Padding}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonMobileBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonMobileIconForegroundHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonMobileBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonMobileIconForegroundPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="FocusStates">
+                                        <VisualState x:Name="Focused">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Unfocused" />
+                                        <VisualState x:Name="PointerFocused" />
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="False"
+                                               Foreground="{ThemeResource HelpPaneButtonMobileIconForegroundBrush}"
+                                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Ribbon:HelpPaneItemTemplateSelector.HeaderTemplate>
+                    <Ribbon:HelpPaneItemTemplateSelector.FooterTemplate>
+                        <ControlTemplate TargetType="Ribbon:HelpPaneButton">
+                            <Border x:Name="PART_Background"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Padding="{TemplateBinding Padding}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonMobileFooterBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonMobileFooterIconForegroundHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonMobileFooterBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonMobileFooterIconForegroundPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="FocusStates">
+                                        <VisualState x:Name="Focused">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Unfocused" />
+                                        <VisualState x:Name="PointerFocused" />
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="False"
+                                               Foreground="{ThemeResource HelpPaneButtonMobileFooterIconForegroundBrush}"
+                                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Ribbon:HelpPaneItemTemplateSelector.FooterTemplate>
+                </Ribbon:HelpPaneItemTemplateSelector>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:HelpPaneToggleButton">
+        <Setter Property="Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Padding" Value="8"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="TemplateSelector">
+            <Setter.Value>
+                <Ribbon:HelpPaneItemTemplateSelector>
+                    <Ribbon:HelpPaneItemTemplateSelector.HeaderTemplate>
+                        <ControlTemplate TargetType="Ribbon:HelpPaneToggleButton">
+                            <Border x:Name="PART_Background"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Padding="{TemplateBinding Padding}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="Disabled">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="CheckStates">
+                                        <VisualState x:Name="Checked">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundCheckedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileIconForegroundCheckedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="CheckedPointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundCheckedHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileIconForegroundCheckedHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="CheckedPressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundCheckedPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileIconForegroundCheckedPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Unchecked"/>
+                                        <VisualState x:Name="UncheckedPointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileIconForegroundHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="UncheckedPressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileIconForegroundPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Indeterminate"/>
+                                        <VisualState x:Name="IndeterminatePointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundIndeterminateHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileIconForegroundIndeterminateHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="IndeterminatePressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileBackgroundIndeterminatePressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileIconForegroundIndeterminatePressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="False"
+                                               Foreground="{ThemeResource HelpPaneToggleButtonMobileIconForegroundBrush}"
+                                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Ribbon:HelpPaneItemTemplateSelector.HeaderTemplate>
+                    <Ribbon:HelpPaneItemTemplateSelector.FooterTemplate>
+                        <ControlTemplate TargetType="Ribbon:HelpPaneToggleButton">
+                            <Border x:Name="PART_Background"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Padding="{TemplateBinding Padding}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="Disabled">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="CheckStates">
+                                        <VisualState x:Name="Checked">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileFooterBackgroundCheckedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundCheckedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="CheckedPointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileFooterBackgroundCheckedHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundCheckedHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="CheckedPressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileFooterBackgroundCheckedPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundCheckedPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Unchecked"/>
+                                        <VisualState x:Name="UncheckedPointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileFooterBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="UncheckedPressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileFooterBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Indeterminate"/>
+                                        <VisualState x:Name="IndeterminatePointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileFooterBackgroundIndeterminateHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundIndeterminateHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="IndeterminatePressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonMobileFooterBackgroundIndeterminatePressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundIndeterminatePressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <XamlInternal:IconView x:Name="PART_Icon"
+                                               UseIconPadding="False"
+                                               Foreground="{ThemeResource HelpPaneToggleButtonMobileFooterIconForegroundBrush}"
+                                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Ribbon:HelpPaneItemTemplateSelector.FooterTemplate>
+                </Ribbon:HelpPaneItemTemplateSelector>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Ribbon:HelpPaneRadioButton">
+        <Setter Property="UseSystemFocusVisuals" Value="False"/>
+        <Setter Property="Background" Value="{ThemeResource HelpPaneRadioButtonMobileBackgroundBrush}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Padding" Value="8"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="TemplateSelector">
+            <Setter.Value>
+                <Ribbon:HelpPaneItemTemplateSelector>
+                    <Ribbon:HelpPaneItemTemplateSelector.HeaderTemplate>
+                        <ControlTemplate TargetType="Ribbon:HelpPaneRadioButton">
+                            <Grid x:Name="PART_Grid"
+                                  BorderThickness="{TemplateBinding BorderThickness}"
+                                  BorderBrush="{TemplateBinding BorderBrush}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileSelectionBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonMobileIconForegroundHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileSelectionBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonMobileIconForegroundPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Grid.Opacity" Value="0.4"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="CheckStates">
+                                        <VisualState x:Name="Checked">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_SelectionBorder.Opacity" Value="1"/>
+                                                <Setter Target="PART_CommonBorder.Opacity" Value="0"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Unchecked"/>
+                                        <VisualState x:Name="Indeterminate"/>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Border x:Name="PART_CommonBorder" 
+                                        Opacity="1" 
+                                        Background="{TemplateBinding Background}"/>
+                                <Border x:Name="PART_SelectionBorder"
+                                        Opacity="0" 
+                                        Background="{ThemeResource HelpPaneRadioButtonMobileSelectionBackgroundBrush}"/>
+                                <XamlInternal:IconView x:Name="PART_Icon"
+                                                       UseIconPadding="False"
+                                                       Margin="{TemplateBinding Padding}"
+                                                       Background="{ThemeResource HelpPaneRadioButtonMobileIconForegroundBrush}"
+                                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Ribbon:HelpPaneItemTemplateSelector.HeaderTemplate>
+                    <Ribbon:HelpPaneItemTemplateSelector.FooterTemplate>
+                        <ControlTemplate TargetType="Ribbon:HelpPaneRadioButton">
+                            <Grid x:Name="PART_Grid"
+                                  BorderThickness="{TemplateBinding BorderThickness}"
+                                  BorderBrush="{TemplateBinding BorderBrush}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileFooterBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileFooterSelectionBackgroundHoverBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonMobileFooterIconForegroundHoverBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileFooterBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonMobileFooterSelectionBackgroundPressedBrush}"/>
+                                                <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonMobileFooterIconForegroundPressedBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_Grid.Opacity" Value="0.4"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="CheckStates">
+                                        <VisualState x:Name="Checked">
+                                            <VisualState.Setters>
+                                                <Setter Target="PART_SelectionBorder.Opacity" Value="1"/>
+                                                <Setter Target="PART_CommonBorder.Opacity" Value="0"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Unchecked"/>
+                                        <VisualState x:Name="Indeterminate"/>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Border x:Name="PART_CommonBorder" 
+                                        Opacity="1" 
+                                        Background="{TemplateBinding Background}"/>
+                                <Border x:Name="PART_SelectionBorder"
+                                        Opacity="0" 
+                                        Background="{ThemeResource HelpPaneRadioButtonMobileFooterSelectionBackgroundBrush}"/>
+                                <XamlInternal:IconView x:Name="PART_Icon"
+                                                       UseIconPadding="False"
+                                                       Margin="{TemplateBinding Padding}"
+                                                       Foreground="{ThemeResource HelpPaneRadioButtonMobileFooterIconForegroundBrush}"
+                                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Ribbon:HelpPaneItemTemplateSelector.FooterTemplate>
+                </Ribbon:HelpPaneItemTemplateSelector>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

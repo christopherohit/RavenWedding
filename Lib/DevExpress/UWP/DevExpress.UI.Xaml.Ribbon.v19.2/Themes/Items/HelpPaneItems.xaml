@@ -1,5 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Ribbon="using:DevExpress.UI.Xaml.Ribbon"
     xmlns:Editors="using:DevExpress.UI.Xaml.Editors"
@@ -9,20 +8,20 @@
     xmlns:XamlInternal="using:DevExpress.UI.Xaml.Internal">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/HelpPaneItems.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/HelpPaneItems.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Internal:ThicknessNegationConverter x:Key="ThicknessNegationConverter"/>
+    <Internal:ThicknessNegationConverter x:Key="ThicknessNegationConverter" />
     
     <Style TargetType="Ribbon:HelpPaneButton">
-        <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalAlignment" Value="Stretch"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
-        <Setter Property="Background" Value="{ThemeResource HelpPaneButtonBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource HelpPaneButtonForegroundBrush}"/>
-        <Setter Property="Padding" Value="8"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
+        <Setter Property="Background" Value="{ThemeResource HelpPaneButtonBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource HelpPaneButtonForegroundBrush}" />
+        <Setter Property="Padding" Value="8" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Ribbon:HelpPaneButton">
@@ -33,29 +32,29 @@
                           Padding="{TemplateBinding Padding}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonBackgroundHoverBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonBackgroundHoverBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonIconForegroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonBackgroundPressedBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneButtonBackgroundPressedBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneButtonIconForegroundPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="FocusStates">
                                 <VisualState x:Name="Focused">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Unfocused" />
@@ -65,14 +64,14 @@
                         <XamlInternal:IconView x:Name="PART_Icon"
                                                UseIconPadding="False"
                                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         <Rectangle x:Name="PART_FocusVisual"
                                    IsHitTestVisible="False"
                                    StrokeThickness="1"
                                    Opacity="0"
                                    Stroke="{ThemeResource HelpPaneButtonFocusVisualStrokeBrush}"
                                    Fill="{ThemeResource HelpPaneButtonFocusVisualBackgroundBrush}"
-                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -80,14 +79,14 @@
     </Style>
 
     <Style TargetType="Ribbon:HelpPaneToggleButton">
-        <Setter Property="Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource HelpPaneToggleButtonForegroundBrush}"/>
-        <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalAlignment" Value="Stretch"/>
-        <Setter Property="Padding" Value="8"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource HelpPaneToggleButtonForegroundBrush}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Ribbon:HelpPaneToggleButton">
@@ -98,63 +97,63 @@
                           Padding="{TemplateBinding Padding}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="CheckStates">
                                 <VisualState x:Name="Checked">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundCheckedBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundCheckedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundCheckedBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundCheckedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="CheckedPointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundCheckedHoverBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundCheckedHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundCheckedHoverBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundCheckedHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="CheckedPressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundCheckedPressedBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundCheckedPressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundCheckedPressedBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundCheckedPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
-                                <VisualState x:Name="Unchecked"/>
+                                <VisualState x:Name="Unchecked" />
                                 <VisualState x:Name="UncheckedPointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundHoverBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundHoverBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="UncheckedPressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundPressedBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundPressedBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
-                                <VisualState x:Name="Indeterminate"/>
+                                <VisualState x:Name="Indeterminate" />
                                 <VisualState x:Name="IndeterminatePointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundIndeterminateHoverBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundIndeterminateHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundIndeterminateHoverBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundIndeterminateHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="IndeterminatePressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundIndeterminatePressedBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundIndeterminatePressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource HelpPaneToggleButtonBackgroundIndeterminatePressedBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneToggleButtonIconForegroundIndeterminatePressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="FocusStates">
                                 <VisualState x:Name="Focused">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Unfocused" />
@@ -164,14 +163,14 @@
                         <XamlInternal:IconView x:Name="PART_Icon"
                                                UseIconPadding="False"
                                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        <Rectangle x:Name="PART_FocusVisual" 
-                                   IsHitTestVisible="False" 
-                                   StrokeThickness="1" 
-                                   Opacity="0" 
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        <Rectangle x:Name="PART_FocusVisual"
+                                   IsHitTestVisible="False"
+                                   StrokeThickness="1"
+                                   Opacity="0"
                                    Stroke="{ThemeResource HelpPaneToggleButtonFocusVisualStrokeBrush}" 
                                    Fill="{ThemeResource HelpPaneToggleButtonFocusVisualBackgroundBrush}"
-                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"/>
+                                   Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -179,56 +178,56 @@
     </Style>
 
     <Style TargetType="Ribbon:HelpPaneRadioButton">
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
-        <Setter Property="Background" Value="{ThemeResource HelpPaneRadioButtonBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource HelpPaneRadioButtonForegroundBrush}"/>
-        <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalAlignment" Value="Stretch"/>
-        <Setter Property="Padding" Value="8"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
+        <Setter Property="Background" Value="{ThemeResource HelpPaneRadioButtonBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource HelpPaneRadioButtonForegroundBrush}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Ribbon:HelpPaneRadioButton">
                     <Grid x:Name="PART_Grid">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonBackgroundHoverBrush}"/>
-                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonSelectionBackgroundHoverBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonIconForegroundHoverBrush}"/>
+                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonBackgroundHoverBrush}" />
+                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonSelectionBackgroundHoverBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonIconForegroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonBackgroundPressedBrush}"/>
-                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonSelectionBackgroundPressedBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonIconForegroundPressedBrush}"/>
+                                        <Setter Target="PART_CommonBorder.Background" Value="{ThemeResource HelpPaneRadioButtonBackgroundPressedBrush}" />
+                                        <Setter Target="PART_SelectionBorder.Background" Value="{ThemeResource HelpPaneRadioButtonSelectionBackgroundPressedBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource HelpPaneRadioButtonIconForegroundPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Grid.Opacity" Value="0.4"/>
+                                        <Setter Target="PART_Grid.Opacity" Value="0.4" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="CheckStates">
                                 <VisualState x:Name="Checked">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_SelectionBorder.Opacity" Value="1"/>
-                                        <Setter Target="PART_CommonBorder.Opacity" Value="0"/>
+                                        <Setter Target="PART_SelectionBorder.Opacity" Value="1" />
+                                        <Setter Target="PART_CommonBorder.Opacity" Value="0" />
                                     </VisualState.Setters>
                                 </VisualState>
-                                <VisualState x:Name="Unchecked"/>
-                                <VisualState x:Name="Indeterminate"/>
+                                <VisualState x:Name="Unchecked" />
+                                <VisualState x:Name="Indeterminate" />
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="FocusStates">
                                 <VisualState x:Name="Focused">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Unfocused" />
@@ -237,21 +236,21 @@
                         </VisualStateManager.VisualStateGroups>
                         <Border x:Name="PART_CommonBorder" 
                                 Opacity="1" 
-                                Background="{TemplateBinding Background}"/>
+                                Background="{TemplateBinding Background}" />
                         <Border x:Name="PART_SelectionBorder"
                                 Opacity="0" 
-                                Background="{ThemeResource HelpPaneRadioButtonSelectionBackgroundBrush}"/>
+                                Background="{ThemeResource HelpPaneRadioButtonSelectionBackgroundBrush}" />
                         <XamlInternal:IconView x:Name="PART_Icon"
                                                UseIconPadding="False"
                                                Margin="{TemplateBinding Padding}"
                                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        <Rectangle x:Name="PART_FocusVisual" 
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        <Rectangle x:Name="PART_FocusVisual"
                                    IsHitTestVisible="False"
                                    StrokeThickness="1"
                                    Opacity="0"
                                    Stroke="{ThemeResource HelpPaneRadioButtonFocusVisualStrokeBrush}" 
-                                   Fill="{ThemeResource HelpPaneRadioButtonFocusVisualBackgroundBrush}"/>
+                                   Fill="{ThemeResource HelpPaneRadioButtonFocusVisualBackgroundBrush}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

@@ -1,5 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:DevExpress.UI.Xaml.Editors.Native"
     xmlns:dxe="using:DevExpress.UI.Xaml.Editors"
@@ -9,7 +8,7 @@
     xmlns:system="using:System">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/ButtonEdit.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v20.2/Themes/ButtonEdit.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Thickness x:Key="ButtonEditThemeKey_ButtonEditPadding">1,0,0,0</Thickness>
@@ -23,13 +22,12 @@
     </Style>
 
     <DataTemplate x:Key="ButtonsThemeKey_DropDownGlyph">
-        <TextBlock
-            Margin="0"
+        <TextBlock Margin="0"
             FontWeight="ExtraBold"
             FontStyle="Normal"
             FontSize="{ThemeResource ComboBoxArrowThemeFontSize}"
             FontFamily="{ThemeResource SymbolThemeFontFamily}"
-            Text="&#xE0E5;"/>
+            Text="" />
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_RegularGlyph">
         <Grid Height="Auto" Margin="1,0,1,0" Style="{StaticResource ButtonEditButtonGlyphStyle}">
@@ -37,16 +35,16 @@
         </Grid>
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_UpGlyph">
-        <TextBlock Text="&#xe0e4;" 
-            FontStyle="Normal"
+        <TextBlock Text="" FontStyle="Normal"
             FontSize="{ThemeResource ComboBoxArrowThemeFontSize}"
-            FontFamily="{ThemeResource SymbolThemeFontFamily}"/>
+            FontFamily="{ThemeResource SymbolThemeFontFamily}"
+            />
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_DownGlyph">
-        <TextBlock Text="&#xe0e5;"
-            FontStyle="Normal"
+        <TextBlock Text="" FontStyle="Normal"
             FontSize="{ThemeResource ComboBoxArrowThemeFontSize}"
-            FontFamily="{ThemeResource SymbolThemeFontFamily}"/>
+            FontFamily="{ThemeResource SymbolThemeFontFamily}"
+            />
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_LeftGlyph">
         <Grid Height="Auto" Margin="5,0,5,0" UseLayoutRounding="True">
@@ -65,11 +63,10 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    FontStyle="Normal"
-                   FontWeight="ExtraBold"
-                   FontSize="9"
-                   FontFamily="{ThemeResource SymbolThemeFontFamily}"                       
-                   Text="&#xE106;"
-                   AutomationProperties.AccessibilityView="Raw"/>
+            FontWeight="ExtraBold"
+            FontSize="9"
+                   FontFamily="{ThemeResource SymbolThemeFontFamily}"
+            Text="" AutomationProperties.AccessibilityView="Raw" />
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_DeleteGlyph">
         <TextBlock x:Name="GlyphElement"
@@ -78,11 +75,10 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    FontStyle="Normal"
-                   FontWeight="ExtraBold"
-                   FontSize="9"
-                   FontFamily="{ThemeResource SymbolThemeFontFamily}"                       
-                   Text="&#xE106;"
-                   AutomationProperties.AccessibilityView="Raw"/>
+            FontWeight="ExtraBold"
+            FontSize="9"
+                   FontFamily="{ThemeResource SymbolThemeFontFamily}"
+            Text="" AutomationProperties.AccessibilityView="Raw" />
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_ApplyGlyph">
         <Grid Height="Auto" Margin="2,0,2,0" Style="{StaticResource ButtonEditButtonGlyphStyle}">
@@ -116,7 +112,8 @@
         </Grid>
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_SearchGlyph">
-        <TextBlock Text="&#xE094;" FontFamily="{ThemeResource SymbolThemeFontFamily}"/>
+        <TextBlock Text="" FontFamily="{ThemeResource SymbolThemeFontFamily}"
+            />
     </DataTemplate>
     <DataTemplate x:Key="ButtonsThemeKey_PrevPageGlyph">
         <Grid Width="Auto" Height="Auto" Margin="2,0,2,0" UseLayoutRounding="True">
@@ -172,12 +169,12 @@
         <Path Stretch="Fill" Fill="{ThemeResource ButtonGlyphForegroundThemeBrush}" Data="F1 M 586,471L 586,466L 589,468L 589,469L 586,471 Z" Width="3" Height="6" Margin="2,0,3,0" />
     </DataTemplate>
 
-    <dxe:TestConverter x:Key="TestConverter"/>
+    <dxe:TestConverter x:Key="TestConverter" />
     <dx:BoolToThicknessConverter x:Key="ButtonsButtonStyleMarginConverter" ThicknessTrue="{StaticResource ButtonsThemeKey_LeftButtonMargin}" ThicknessFalse="{StaticResource ButtonsThemeKey_RightButtonMargin}" />
     <dxi:EnumToObjectConverter x:Key="ButtonInfoGlyphKindToContentTemplateConverter">
         <dxi:EnumToObjectConverter.Values>
             <dxi:EnumObjectProvider Key="DropDown" Value="{StaticResource ButtonsThemeKey_DropDownGlyph}" />
-            <dxi:EnumObjectProvider Key="Delete" Value="{StaticResource ButtonsThemeKey_DeleteGlyph}"/>
+            <dxi:EnumObjectProvider Key="Delete" Value="{StaticResource ButtonsThemeKey_DeleteGlyph}" />
             <dxi:EnumObjectProvider Key="Regular" Value="{StaticResource ButtonsThemeKey_RegularGlyph}" />
             <dxi:EnumObjectProvider Key="Right" Value="{StaticResource ButtonsThemeKey_RightGlyph}" />
             <dxi:EnumObjectProvider Key="Left" Value="{StaticResource ButtonsThemeKey_LeftGlyph}" />
@@ -206,9 +203,9 @@
         <Setter Property="dx:StyleHelper.BindableSetters">
             <Setter.Value>
                 <dx:BindableSetterCollection>
-                    <dx:BindableSetter Property="ContentTemplate" Binding="{Binding Path=ActualTemplate}"/>
-                    <dx:BindableSetter Property="HorizontalAlignment" Binding="{Binding Path=HorizontalAlignment}"/>
-                    <dx:BindableSetter Property="VerticalAlignment" Binding="{Binding Path=VerticalAlignment}"/>
+                    <dx:BindableSetter Property="ContentTemplate" Binding="{Binding Path=ActualTemplate}" />
+                    <dx:BindableSetter Property="HorizontalAlignment" Binding="{Binding Path=HorizontalAlignment}" />
+                    <dx:BindableSetter Property="VerticalAlignment" Binding="{Binding Path=VerticalAlignment}" />
                 </dx:BindableSetterCollection>
             </Setter.Value>
         </Setter>
@@ -230,122 +227,122 @@
         <Grid>
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundHoverBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundHoverBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundHoverBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundHoverBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundPressedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundPressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundPressedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundPressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderDisabledBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundDisabledBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Checked">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderCheckedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderCheckedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="CheckedPointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedHoverBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedHoverBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderCheckedHoverBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderCheckedHoverBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="CheckedPressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedPressedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedPressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderCheckedPressedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderCheckedPressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedPressedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedPressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="CheckedDisabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedDisabledBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundCheckedDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderDisabledBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedDisabledBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundCheckedDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="Indeterminate"/>
+                    <VisualState x:Name="Indeterminate" />
                     <VisualState x:Name="IndeterminatePointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundHoverBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundHoverBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="IndeterminatePressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundPressedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBackgroundPressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundPressedBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundPressedBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="IndeterminateDisabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderDisabledBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditBorderDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundDisabledBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonEditForegroundDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
             <!--<Border x:Name="BorderElement" BorderBrush="{ThemeResource DXTextBoxButtonBorderThemeBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>-->
-            <Border x:Name="Border"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
-                <ContentPresenter x:Name="ContentPresenter" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+            <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                <ContentPresenter x:Name="ContentPresenter" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
             </Border>
         </Grid>
     </ControlTemplate>
@@ -383,37 +380,34 @@
             <Ellipse x:Name="GlyphBackgroundElement" 
                      Width="20"
                      Height="20"
-                     Fill="{ThemeResource DeleteButtonBackgroundBrush}"/>
-            <ContentPresenter x:Name="ContentPresenter" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                     Fill="{ThemeResource DeleteButtonBackgroundBrush}" />
+            <ContentPresenter x:Name="ContentPresenter" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
         </Grid>
     </ControlTemplate>
 
     <DataTemplate x:Key="ButtonContentTemplate">
         <Grid Margin="{Binding Path=Padding}">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <Image
-                x:Name="PART_Image"
+            <Image x:Name="PART_Image"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 Margin="{Binding Path=ActualImagePadding}"
                 NineGrid="{Binding Path=ImageNineGrid}"
                 Source="{Binding Path=ImageSource}"
-                Stretch="{Binding Path=ImageStretch}"/>
-            <ContentControl
-                x:Name="PART_Content"
+                Stretch="{Binding Path=ImageStretch}" />
+            <ContentControl x:Name="PART_Content"
                 Grid.Column="1"
                 IsTabStop="False"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Margin="{Binding Path=ActualContentPadding}"
                 Content="{Binding Path=Content}"
-                ContentTemplate="{Binding Path=ContentTemplate}"/>
-            <ContentPresenter
-                x:Name="PART_Glyph"
+                ContentTemplate="{Binding Path=ContentTemplate}" />
+            <ContentPresenter x:Name="PART_Glyph"
                 Grid.Column="2"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
@@ -422,38 +416,38 @@
         </Grid>
     </DataTemplate>
     <Style x:Key="ButtonsThemeKey_ButtonStyle" TargetType="ButtonBase">
-        <Setter Property="IsTabStop" Value="False"/>
-        <Setter Property="Foreground" Value="{ThemeResource ButtonEditForegroundBrush}"/>
-        <Setter Property="Template" Value="{StaticResource ButtonEdit_ButtonTemplate}"/>
-        <Setter Property="ContentTemplate" Value="{StaticResource ButtonContentTemplate}"/>
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Foreground" Value="{ThemeResource ButtonEditForegroundBrush}" />
+        <Setter Property="Template" Value="{StaticResource ButtonEdit_ButtonTemplate}" />
+        <Setter Property="ContentTemplate" Value="{StaticResource ButtonContentTemplate}" />
         <Setter Property="dx:StyleHelper.BindableSetters">
             <Setter.Value>
                 <dx:BindableSetterCollection>
-                    <dx:BindableSetter Property="Command" Binding="{Binding Path=InternalCommand}"/>
-                    <dx:BindableSetter Property="CommandParameter" Binding="{Binding Path=CommandParameter}"/>
-                    <dx:BindableSetter Property="Foreground" Binding="{Binding Path=Foreground}"/>
-                    <dx:BindableSetter Property="FontFamily" Binding="{Binding Path=FontFamily}"/>
-                    <dx:BindableSetter Property="FontStyle" Binding="{Binding Path=FontStyle}"/>
-                    <dx:BindableSetter Property="FontStretch" Binding="{Binding Path=FontStretch}"/>
-                    <dx:BindableSetter Property="FontWeight" Binding="{Binding Path=FontWeight}"/>
-                    <dx:BindableSetter Property="FontSize" Binding="{Binding Path=FontSize}"/>
-                    <dx:BindableSetter Property="Background" Binding="{Binding Path=Background}"/>
-                    <dx:BindableSetter Property="Margin" Binding="{Binding Path=IsLeft, Converter={StaticResource ButtonsButtonStyleMarginConverter}}"/>
-                    <dx:BindableSetter Property="Padding" Binding="{Binding Path=Padding}"/>
-                    <dx:BindableSetter Property="HorizontalAlignment" Binding="{Binding Path=HorizontalAlignment}"/>
-                    <dx:BindableSetter Property="VerticalAlignment" Binding="{Binding Path=VerticalAlignment}"/>
-                    <dx:BindableSetter Property="HorizontalContentAlignment" Binding="{Binding Path=HorizontalContentAlignment}"/>
-                    <dx:BindableSetter Property="VerticalContentAlignment" Binding="{Binding Path=VerticalContentAlignment}"/>
-                    <dx:BindableSetter Property="ClickMode" Binding="{Binding Path=ClickMode}"/>
-                    <dx:BindableSetter Property="Width" Binding="{Binding Path=Width}"/>
-                    <dx:BindableSetter Property="MinWidth" Binding="{Binding Path=MinWidth}"/>
-                    <dx:BindableSetter Property="MaxWidth" Binding="{Binding Path=MaxWidth}"/>
-                    <dx:BindableSetter Property="Height" Binding="{Binding Path=Height}"/>
-                    <dx:BindableSetter Property="MinHeight" Binding="{Binding Path=MinHeight}"/>
-                    <dx:BindableSetter Property="MaxHeight" Binding="{Binding Path=MaxHeight}"/>
-                    <dx:BindableSetter Property="Visibility" Binding="{Binding Path=Visibility}"/>
-                    <dx:BindableSetter Property="BorderBrush" Binding="{Binding Path=BorderBrush}"/>
-                    <dx:BindableSetter Property="BorderThickness" Binding="{Binding Path=BorderThickness}"/>
+                    <dx:BindableSetter Property="Command" Binding="{Binding Path=InternalCommand}" />
+                    <dx:BindableSetter Property="CommandParameter" Binding="{Binding Path=CommandParameter}" />
+                    <dx:BindableSetter Property="Foreground" Binding="{Binding Path=Foreground}" />
+                    <dx:BindableSetter Property="FontFamily" Binding="{Binding Path=FontFamily}" />
+                    <dx:BindableSetter Property="FontStyle" Binding="{Binding Path=FontStyle}" />
+                    <dx:BindableSetter Property="FontStretch" Binding="{Binding Path=FontStretch}" />
+                    <dx:BindableSetter Property="FontWeight" Binding="{Binding Path=FontWeight}" />
+                    <dx:BindableSetter Property="FontSize" Binding="{Binding Path=FontSize}" />
+                    <dx:BindableSetter Property="Background" Binding="{Binding Path=Background}" />
+                    <dx:BindableSetter Property="Margin" Binding="{Binding Path=IsLeft, Converter={StaticResource ButtonsButtonStyleMarginConverter}}" />
+                    <dx:BindableSetter Property="Padding" Binding="{Binding Path=Padding}" />
+                    <dx:BindableSetter Property="HorizontalAlignment" Binding="{Binding Path=HorizontalAlignment}" />
+                    <dx:BindableSetter Property="VerticalAlignment" Binding="{Binding Path=VerticalAlignment}" />
+                    <dx:BindableSetter Property="HorizontalContentAlignment" Binding="{Binding Path=HorizontalContentAlignment}" />
+                    <dx:BindableSetter Property="VerticalContentAlignment" Binding="{Binding Path=VerticalContentAlignment}" />
+                    <dx:BindableSetter Property="ClickMode" Binding="{Binding Path=ClickMode}" />
+                    <dx:BindableSetter Property="Width" Binding="{Binding Path=Width}" />
+                    <dx:BindableSetter Property="MinWidth" Binding="{Binding Path=MinWidth}" />
+                    <dx:BindableSetter Property="MaxWidth" Binding="{Binding Path=MaxWidth}" />
+                    <dx:BindableSetter Property="Height" Binding="{Binding Path=Height}" />
+                    <dx:BindableSetter Property="MinHeight" Binding="{Binding Path=MinHeight}" />
+                    <dx:BindableSetter Property="MaxHeight" Binding="{Binding Path=MaxHeight}" />
+                    <dx:BindableSetter Property="Visibility" Binding="{Binding Path=Visibility}" />
+                    <dx:BindableSetter Property="BorderBrush" Binding="{Binding Path=BorderBrush}" />
+                    <dx:BindableSetter Property="BorderThickness" Binding="{Binding Path=BorderThickness}" />
                 </dx:BindableSetterCollection>
             </Setter.Value>
         </Setter>
@@ -482,20 +476,20 @@
     </DataTemplate>
 
     <Style x:Key="ButtonInfoBaseStyle" TargetType="dxe:ButtonInfo">
-        <Setter Property="MinHeight" Value="28"/>
-        <Setter Property="MinWidth" Value="32"/>
-        <Setter Property="Padding" Value="6,4"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="ImagePadding" Value="0,0,2,0"/>
-        <Setter Property="ContentPadding" Value="2,0,0,0"/>
-        <Setter Property="Background" Value="{ThemeResource DXTextBoxButtonBackgroundThemeBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource DXTextBoxButtonForegroundThemeBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource DXTextBoxButtonBorderThemeBrush}"/>
+        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="MinWidth" Value="32" />
+        <Setter Property="Padding" Value="6,4" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="ImagePadding" Value="0,0,2,0" />
+        <Setter Property="ContentPadding" Value="2,0,0,0" />
+        <Setter Property="Background" Value="{ThemeResource DXTextBoxButtonBackgroundThemeBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource DXTextBoxButtonForegroundThemeBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource DXTextBoxButtonBorderThemeBrush}" />
         <!--<Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}"/>-->
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
-        <Setter Property="FontWeight" Value="Normal"/>
-        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
         <Setter Property="TemplateSimple" Value="{StaticResource ButtonsThemeKey_ButtonInfoTemplate}" />
         <Setter Property="TemplateRepeat" Value="{StaticResource ButtonsThemeKey_RepeatButtonInfoTemplate}" />
         <Setter Property="TemplateToggle" Value="{StaticResource ButtonsThemeKey_ToggleButtonInfoTemplate}" />
@@ -505,17 +499,17 @@
     <Style TargetType="dxe:ButtonInfo" BasedOn="{StaticResource ButtonInfoBaseStyle}">
     </Style>
     <Style TargetType="dxe:DeleteButtonInfo" BasedOn="{StaticResource ButtonInfoBaseStyle}">
-        <Setter Property="MinWidth" Value="28"/>
-        <Setter Property="Padding" Value="2,0"/>
+        <Setter Property="MinWidth" Value="28" />
+        <Setter Property="Padding" Value="2,0" />
         <Setter Property="ClickMode" Value="Release" />
         <Setter Property="ButtonKind" Value="Round" />
         <Setter Property="GlyphKind" Value="Delete" />
     </Style>
     <Style x:Key="PopupButtonInfoBaseStyle" TargetType="dxe:PopupButtonInfo" BasedOn="{StaticResource ButtonInfoBaseStyle}">
-        <Setter Property="Foreground" Value="{ThemeResource PopupButtonInfoForegroundBrush}"/>
-        <Setter Property="ButtonKind" Value="Toggle"/>
-        <Setter Property="GlyphKind" Value="DropDown"/>
-        <Setter Property="ClickMode" Value="Release"/>
+        <Setter Property="Foreground" Value="{ThemeResource PopupButtonInfoForegroundBrush}" />
+        <Setter Property="ButtonKind" Value="Toggle" />
+        <Setter Property="GlyphKind" Value="DropDown" />
+        <Setter Property="ClickMode" Value="Release" />
     </Style>
     <Style TargetType="dxe:PopupButtonInfo" BasedOn="{StaticResource PopupButtonInfoBaseStyle}">
     </Style>
@@ -524,8 +518,7 @@
             <Setter.Value>
                 <DataTemplate>
                     <Grid>
-                        <Path
-                            x:Name="Path"
+                        <Path x:Name="Path"
                             Width="18.9991"
                             Height="20.0002"
                             Canvas.Left="0"
@@ -535,20 +528,20 @@
                             <dxmvvmi:Interaction.BehaviorsTemplate>
                                 <DataTemplate>
                                     <ContentControl>
-                                        <dxe:BindToVisualParentBehavior
-                                            ParentName="ContentPresenter"
+                                        <dxe:BindToVisualParentBehavior ParentName="ContentPresenter"
                                             PropertyName="Fill"
-                                            Binding="{Binding Path=Foreground, Mode=OneWay}"/>
+                                            Binding="{Binding Path=Foreground, Mode=OneWay}" />
                                     </ContentControl>
                                 </DataTemplate>
                             </dxmvvmi:Interaction.BehaviorsTemplate>
                         </Path>
-                        <Path x:Name="Path_0" Width="14.9992" Height="10.999" Canvas.Left="2.00031" Canvas.Top="7.00119" Stretch="Fill" Fill="{ThemeResource DateEditPopupButtonForegroundThemeBrush}" Data="F1 M 2.00031,10.001L 2.00031,7.00119L 5.00015,7.00119L 5.00015,10.001L 2.00031,10.001 Z M 9.99982,18.0002L 9.99982,15.0003L 12.9997,15.0003L 12.9997,18.0002L 9.99982,18.0002 Z M 13.9997,18.0001L 13.9997,15.0003L 16.9995,15.0003L 16.9995,18.0001L 13.9997,18.0001 Z "/>
+                        <Path x:Name="Path_0" Width="14.9992" Height="10.999" Canvas.Left="2.00031" Canvas.Top="7.00119" Stretch="Fill"
+                            Fill="{ThemeResource DateEditPopupButtonForegroundThemeBrush}" Data="F1 M 2.00031,10.001L 2.00031,7.00119L 5.00015,7.00119L 5.00015,10.001L 2.00031,10.001 Z M 9.99982,18.0002L 9.99982,15.0003L 12.9997,15.0003L 12.9997,18.0002L 9.99982,18.0002 Z M 13.9997,18.0001L 13.9997,15.0003L 16.9995,15.0003L 16.9995,18.0001L 13.9997,18.0001 Z " />
                     </Grid>
                 </DataTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="GlyphKind" Value="None"/>
+        <Setter Property="GlyphKind" Value="None" />
     </Style>
 </ResourceDictionary>
 

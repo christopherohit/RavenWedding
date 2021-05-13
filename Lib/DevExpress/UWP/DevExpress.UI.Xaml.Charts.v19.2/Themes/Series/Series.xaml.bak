@@ -1,0 +1,122 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="using:DevExpress.Core"
+    xmlns:local="using:DevExpress.UI.Xaml.Charts">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Charts.v19.2/Themes/Series/Series.Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <DataTemplate x:Key="ToolTipTemplate">
+        <Grid x:Name="PART_ToolTip" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" 
+            UseLayoutRounding="True" >
+            <Grid x:Name="Shadow" 
+                Margin="0,4,0,-4" 
+                Opacity="0.1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="12"/>
+                </Grid.RowDefinitions>
+                <Path x:Name="Arrow" Stretch="Fill" Fill="{ThemeResource ChartsToolTipBackgroundBrush}" Data="F1 M 461,303L 474,316L 487,303L 461,303 Z " HorizontalAlignment="Center" Height="13" Grid.Row="1" Width="26" Margin="0,-1,0,0"/>
+                <Border x:Name="ContentBack" Background="{ThemeResource ChartsToolTipBackgroundBrush}"/>
+            </Grid>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Path x:Name="downArrow"
+                        Visibility="{Binding Path=DownArrowVisibility}"
+                        Stretch="Fill" 
+                        Fill="{Binding ToolTipBrush}" 
+                        Data="F1 M 461,303L 474,316L 487,303L 461,303 Z " 
+                        HorizontalAlignment="Center"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Height="13" 
+                        Width="26" 
+                        Margin="0,-1,0,0">
+                </Path>
+                <Path x:Name="leftArrow"
+                        Visibility="{Binding Path=LeftArrowVisibility}"
+                        Stretch="Fill" 
+                        Fill="{Binding ToolTipBrush}" 
+                        Data="F1 M 316,461L 303,474L 316,487L 316,461 Z " 
+                        HorizontalAlignment="Center" 
+                        Height="26" 
+                        Width="13" 
+                        Margin="0,0,0,-1">
+                </Path>
+                <Border x:Name="ContentBack1" 
+                    Background="{Binding ToolTipBrush}"
+                    Grid.Column="1">
+                    <TextBlock x:Name="Content1" 
+                        TextWrapping="Wrap" 
+                        Text="{Binding ToolTipText}" 
+                        Margin="20,15,20,18" 
+                        FontSize="21" 
+                        Foreground="{ThemeResource ChartSeriesTooltipForegroundBrush}"
+                        RenderTransformOrigin="0.5,0.5">
+                    </TextBlock>
+                </Border>
+            </Grid>
+        </Grid>
+    </DataTemplate>
+
+    <Style TargetType="local:SeriesLabelOptions">
+        <Setter Property="Foreground" Value="{ThemeResource ChartsToolTipForegroundBrush}" />
+        <Setter Property="ElementTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Border Background="{Binding PointColorBrush}" Padding="7,5,7,3">
+                        <TextBlock Text="{Binding Text}" Foreground="{Binding Element.Foreground}"/>
+                    </Border>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SeriesViewStyle" TargetType="local:SeriesView">
+        <Setter Property="ToolTipPointTemplate" Value="{StaticResource ToolTipTemplate}" />
+        <Setter Property="ToolTipSeriesTemplate" Value="{StaticResource ToolTipTemplate}" />
+        <Setter Property="LegendMarkerTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Rectangle Fill="{Binding Path=MarkerBrush}" Width="10" Height="10" />
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:PointSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+    <Style TargetType="local:ScatterLineSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+    <Style TargetType="local:LineSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+    <Style TargetType="local:StepLineSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+    <Style TargetType="local:StackedLineSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+    <Style TargetType="local:FullStackedLineSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+
+    <Style TargetType="local:FullStackedBarSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:SideBySideFullStackedBarSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:SideBySideBarSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:SideBySideStackedBarSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:StackedBarSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+
+    <Style TargetType="local:AreaSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:StackedAreaSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:FullStackedAreaSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:StepAreaSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+
+    <Style TargetType="local:PieSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+    <Style TargetType="local:DonutSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+    <Style TargetType="local:NestedDonutSeriesView" BasedOn="{StaticResource SeriesViewStyle}"/>
+
+    <Style TargetType="local:FunnelSeriesView" BasedOn="{StaticResource SeriesViewStyle}" />
+</ResourceDictionary>
+

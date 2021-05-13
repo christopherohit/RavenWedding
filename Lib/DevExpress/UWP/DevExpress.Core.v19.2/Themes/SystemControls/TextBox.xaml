@@ -1,10 +1,9 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="using:DevExpress.Core">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/TextBox.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/TextBox.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="DXDeleteButtonTemplate" TargetType="Button">
@@ -42,7 +41,7 @@
             <Ellipse x:Name="GlyphBackgroundElement"
                      Width="20"
                      Height="20"
-                     Fill="{TemplateBinding Background}"/>
+                     Fill="{TemplateBinding Background}" />
             <TextBlock x:Name="GlyphElement"
                        Foreground="{TemplateBinding Foreground}"
                        VerticalAlignment="Center"
@@ -51,8 +50,7 @@
                        FontWeight="ExtraBold"
                        FontSize="9"
                        FontFamily="{ThemeResource SymbolThemeFontFamily}"                       
-                       Text="&#xE106;"
-                       AutomationProperties.AccessibilityView="Raw"/>
+                       Text="" AutomationProperties.AccessibilityView="Raw" />
         </Grid>
     </ControlTemplate>
 
@@ -60,9 +58,9 @@
         <Grid>
             <Grid.Resources>
                 <Style x:Name="DXDeleteButtonStyle" TargetType="Button">
-                    <Setter Property="Background" Value="{ThemeResource DXTextBoxInnerButtonBackgroundBrush}"/>
-                    <Setter Property="Foreground" Value="{ThemeResource DXTextBoxInnerButtonForegroundBrush}"/>
-                    <Setter Property="Template" Value="{StaticResource DXDeleteButtonTemplate}"/>
+                    <Setter Property="Background" Value="{ThemeResource DXTextBoxInnerButtonBackgroundBrush}" />
+                    <Setter Property="Foreground" Value="{ThemeResource DXTextBoxInnerButtonForegroundBrush}" />
+                    <Setter Property="Template" Value="{StaticResource DXDeleteButtonTemplate}" />
                 </Style>
             </Grid.Resources>
             <VisualStateManager.VisualStateGroups>
@@ -84,7 +82,7 @@
                     <VisualState x:Name="PointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BorderElement" Storyboard.TargetProperty="BorderBrush">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXTextBoxBorderHoveredBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXTextBoxBorderHoveredBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -94,7 +92,7 @@
                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXTextBoxOuterFocusVisualStroke}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BorderElement" Storyboard.TargetProperty="BorderBrush">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXTextBoxInnerFocusVisualStroke}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DXTextBoxInnerFocusVisualStroke}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -132,14 +130,14 @@
                   BorderBrush="Transparent"
                   Background="{TemplateBinding Background}">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
                 <Border x:Name="BorderElement"
                         Grid.ColumnSpan="2"
                         BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}"/>
+                        BorderThickness="{TemplateBinding BorderThickness}" />
                 <ScrollViewer x:Name="ContentElement"
                               HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}"
                               HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
@@ -154,7 +152,7 @@
                               IsTabStop="False"
                               HorizontalAlignment="Stretch"
                               VerticalAlignment="Stretch"
-                              Foreground="{TemplateBinding Foreground}"/>
+                              Foreground="{TemplateBinding Foreground}" />
                 <ContentControl x:Name="PlaceholderTextContentPresenter"
                                 Foreground="{ThemeResource DXTextBoxPlaceholderForegroundBrush}"
                                 Margin="{TemplateBinding BorderThickness}"
@@ -163,7 +161,7 @@
                                 Content="{TemplateBinding PlaceholderText}"
                                 HorizontalAlignment="Stretch"
                                 VerticalAlignment="Stretch"
-                                IsHitTestVisible="False"/>
+                                IsHitTestVisible="False" />
                 <Button x:Name="DeleteButton"
                         Grid.Column="2"
                         Style="{StaticResource DXDeleteButtonStyle}"
@@ -174,21 +172,21 @@
                         FontSize="{TemplateBinding FontSize}"
                         MinWidth="34"                        
                         HorizontalAlignment="Right"
-                        VerticalAlignment="Stretch"/>
+                        VerticalAlignment="Stretch" />
             </Grid>
         </Grid>
     </ControlTemplate>
 
     <Style TargetType="TextBox" x:Key="SystemTextBoxStyle">
-        <Setter Property="BorderBrush" Value="{ThemeResource DXTextBoxBorderBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource DXTextBoxForegroundBrush}"/>
-        <Setter Property="Background" Value="{ThemeResource DXTextBoxBackgroundBrush}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
-        <Setter Property="Template" Value="{StaticResource DXTextBoxTemplate}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource DXTextBoxBorderBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource DXTextBoxForegroundBrush}" />
+        <Setter Property="Background" Value="{ThemeResource DXTextBoxBackgroundBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
+        <Setter Property="Template" Value="{StaticResource DXTextBoxTemplate}" />
     </Style>
 
-    <Style TargetType="TextBox" BasedOn="{StaticResource SystemTextBoxStyle}"/>
+    <Style TargetType="TextBox" BasedOn="{StaticResource SystemTextBoxStyle}" />
 
 </ResourceDictionary>
 

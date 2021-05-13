@@ -1,16 +1,15 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="using:DevExpress.Core"
     xmlns:local="using:DevExpress.UI.Xaml.Controls.Themes" 
     xmlns:controls="using:DevExpress.UI.Xaml.Controls">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/TransitionControl.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/TransitionControl.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <!--TransitionControlStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="DefaultStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -40,7 +39,7 @@
     </Style>
     <!--FadeInStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="FadeInStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -79,7 +78,7 @@
     </Style>
     <!--HorizontalRotateStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="HorizontalRotateStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -125,7 +124,7 @@
     </Style>
     <!--VerticalRotateStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="VerticalRotateStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -173,7 +172,7 @@
     </Style>
     <!--FlyStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="FlyStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -231,7 +230,7 @@
     </Style>
     <!--RotateStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="RotateStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -311,7 +310,7 @@
     </Style>
     <!--FadeStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="FadeStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -352,7 +351,7 @@
     </Style>
     <!--Vertical3DRotateStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="Vertical3DRotateStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -454,7 +453,7 @@
     </Style>
     <!--Horizontal3DRotateStyle-->
     <Style TargetType="controls:TransitionControl" x:Name="Horizontal3DRotateStyle">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="PreviousControlTemplate">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionContentControl">
@@ -555,8 +554,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style TargetType="controls:TransitionControl" >
-        <Setter Property="IsTabStop" Value="False"/>
+    <Style TargetType="controls:TransitionControl">
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TransitionControl">
@@ -570,7 +569,7 @@
     </Style>
     <!--TransitionContentControlStyle-->
     <Style TargetType="controls:TransitionContentControl">
-        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="Foreground" Value="{ThemeResource TransitionContentControlForegroundBrush}" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="VerticalContentAlignment" Value="Top" />

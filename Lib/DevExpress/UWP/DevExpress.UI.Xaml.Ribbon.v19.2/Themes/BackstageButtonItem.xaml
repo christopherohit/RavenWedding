@@ -1,22 +1,21 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:XamlInternal="using:DevExpress.UI.Xaml.Internal"
     xmlns:Ribbon="using:DevExpress.UI.Xaml.Ribbon"
     xmlns:Internal="using:DevExpress.UI.Xaml.Ribbon.Internal"
     xmlns:Core="using:DevExpress.Core">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/BackstageButtonItem.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/BackstageButtonItem.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Core:ObjectToBooleanConverter x:Key="ObjectToBooleanConverter"/>
-    <Internal:ThicknessNegationConverter x:Key="ThicknessNegationConverter"/>
+    <Core:ObjectToBooleanConverter x:Key="ObjectToBooleanConverter" />
+    <Internal:ThicknessNegationConverter x:Key="ThicknessNegationConverter" />
     <Style TargetType="Ribbon:BackstageButtonItem">
-        <Setter Property="Padding" Value="14,18,28,18"/>
-        <Setter Property="FontSize" Value="20"/>
-        <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Setter Property="Foreground" Value="{ThemeResource BackstageButtonItemForegroundBrush}"/>
-        <Setter Property="Background" Value="{ThemeResource BackstageButtonItemBackgroundBrush}"/>
-        <Setter Property="IconFill" Value="{ThemeResource BackstageButtonItemIconFillBrush}"/>
+        <Setter Property="Padding" Value="14,18,28,18" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Foreground" Value="{ThemeResource BackstageButtonItemForegroundBrush}" />
+        <Setter Property="Background" Value="{ThemeResource BackstageButtonItemBackgroundBrush}" />
+        <Setter Property="IconFill" Value="{ThemeResource BackstageButtonItemIconFillBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Ribbon:BackstageButtonItem">
@@ -27,31 +26,31 @@
                           Padding="{TemplateBinding Padding}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource BackstageButtonItemBackgroundHoverBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource BackstageButtonItemIconForegroundHoverBrush}"/>
-                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource BackstageButtonItemForegroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource BackstageButtonItemBackgroundHoverBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource BackstageButtonItemIconForegroundHoverBrush}" />
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource BackstageButtonItemForegroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource BackstageButtonItemBackgroundPressedBrush}"/>
-                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource BackstageButtonItemIconForegroundPressedBrush}"/>
-                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource BackstageButtonItemForegroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource BackstageButtonItemBackgroundPressedBrush}" />
+                                        <Setter Target="PART_Icon.Foreground" Value="{ThemeResource BackstageButtonItemIconForegroundPressedBrush}" />
+                                        <Setter Target="PART_Text.Foreground" Value="{ThemeResource BackstageButtonItemForegroundPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="FocusStates">
                                 <VisualState x:Name="Focused">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Unfocused" />
@@ -60,8 +59,8 @@
                         </VisualStateManager.VisualStateGroups>
 
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <Border x:Name="PART_FocusVisual"
                                 x:DeferLoadStrategy="Lazy"
@@ -71,17 +70,17 @@
                                 Grid.ColumnSpan="2"
                                 Margin="{Binding Padding, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ThicknessNegationConverter}}"
                                 BorderBrush="{ThemeResource BackstageButtonItemFocusVisualStrokeBrush}"
-                                Background="{ThemeResource BackstageButtonItemFocusVisualBackgroundBrush}"/>
+                                Background="{ThemeResource BackstageButtonItemFocusVisualBackgroundBrush}" />
                         <XamlInternal:IconView x:Name="PART_Icon"
                                                Owner="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                                Foreground="{TemplateBinding Foreground}"
-                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                                               UseIconPadding="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}" />
                         <ContentPresenter x:Name="PART_Text"
                                           Grid.Column="1"
                                           VerticalAlignment="Center" 
                                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                           Foreground="{TemplateBinding Foreground}"
-                                          Content="{TemplateBinding Content}"/>
+                                          Content="{TemplateBinding Content}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

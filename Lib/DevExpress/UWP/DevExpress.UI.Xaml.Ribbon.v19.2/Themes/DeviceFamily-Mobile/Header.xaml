@@ -1,5 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Ribbon="using:DevExpress.UI.Xaml.Ribbon"
     xmlns:Xaml="using:DevExpress.UI.Xaml"
@@ -11,12 +10,12 @@
     xmlns:Mvvmui="using:DevExpress.Mvvm.UI">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Header.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Header.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Internal:RibbonStateToBoolConverter x:Key="RibbonStateToBoolConverter"/>
-    <Core:ObjectToBooleanConverter x:Key="ObjectToBooleanInvertConverter" Invert="True"/>
-    <Core:ObjectToBooleanConverter x:Key="ObjectToBooleanConverter"/>
-    <Core:BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    <Internal:RibbonStateToBoolConverter x:Key="RibbonStateToBoolConverter" />
+    <Core:ObjectToBooleanConverter x:Key="ObjectToBooleanInvertConverter" Invert="True" />
+    <Core:ObjectToBooleanConverter x:Key="ObjectToBooleanConverter" />
+    <Core:BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     <ControlTemplate TargetType="ComboBox" x:Key="ComboboxTemplate">
         <Grid x:Name="PART_Root">
             <Grid.RowDefinitions>
@@ -32,36 +31,36 @@
                     <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Target="Background.Background" Value="{ThemeResource RibbonTabsControlMobileBackgroundHoverBrush}"/>
+                            <Setter Target="Background.Background" Value="{ThemeResource RibbonTabsControlMobileBackgroundHoverBrush}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Target="Background.Background" Value="{ThemeResource RibbonTabsControlMobileBackgroundPressedBrush}"/>
+                            <Setter Target="Background.Background" Value="{ThemeResource RibbonTabsControlMobileBackgroundPressedBrush}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="Disabled">
                         <VisualState.Setters>
-                            <Setter Target="PART_Root.Opacity" Value="0.4"/>
+                            <Setter Target="PART_Root.Opacity" Value="0.4" />
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>
                 <VisualStateGroup x:Name="FocusStates">
                     <VisualState x:Name="Focused">
                         <VisualState.Setters>
-                            <Setter Target="HighlightBackground.Opacity" Value="1"/>
+                            <Setter Target="HighlightBackground.Opacity" Value="1" />
                         </VisualState.Setters>
                     </VisualState>
-                    <VisualState x:Name="FocusedPressed" >
+                    <VisualState x:Name="FocusedPressed">
                         <VisualState.Setters>
-                            <Setter Target="HighlightBackground.Opacity" Value="1"/>
+                            <Setter Target="HighlightBackground.Opacity" Value="1" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="Unfocused" />
                     <VisualState x:Name="PointerFocused" />
                     <VisualState x:Name="FocusedDropDown">
                         <VisualState.Setters>
-                            <Setter Target="PopupBorder.Visibility" Value="Visible"/>
+                            <Setter Target="PopupBorder.Visibility" Value="Visible" />
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>
@@ -71,7 +70,7 @@
                             <SplitCloseThemeAnimation OpenedTargetName="ContentPresenter"
                                                       ClosedTargetName="PopupBorder"
                                                       OffsetFromCenter="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.DropDownOffset}"
-                                                      OpenedLength="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.DropDownOpenedHeight}"/>
+                                                      OpenedLength="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.DropDownOpenedHeight}" />
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Closed">
@@ -79,7 +78,7 @@
                             <SplitCloseThemeAnimation OpenedTargetName="PopupBorder"
                                                       ClosedTargetName="ContentPresenter"
                                                       OffsetFromCenter="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.DropDownOffset}"
-                                                      OpenedLength="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.DropDownOpenedHeight}"/>
+                                                      OpenedLength="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.DropDownOpenedHeight}" />
                         </Storyboard>
                     </VisualState>
                 </VisualStateGroup>
@@ -88,10 +87,11 @@
                                         Grid.ColumnSpan="2"
                                         Background="{ThemeResource RibbonTabsControlMobileBackgroundBrush}"
                                         BorderBrush="{TemplateBinding BorderBrush}"
-                                        BorderThickness="{TemplateBinding BorderThickness}"/>
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                                 />
             <Border x:Name="HighlightBackground" Grid.Row="1"
-                                                 Grid.ColumnSpan="2"
-                                                 Background="Transparent"
+                                        Grid.ColumnSpan="2"
+                                        Background="Transparent"
                                                  BorderThickness="{TemplateBinding BorderThickness}"
                                                  Opacity="0" />
 
@@ -104,7 +104,7 @@
                            TextTrimming="CharacterEllipsis"
                            Text="{TemplateBinding PlaceholderText}"
                            FontSize="20"
-                           Foreground="{ThemeResource RibbonTabsControlMobilePlaceholderForegroundBrush}"/>
+                           Foreground="{ThemeResource RibbonTabsControlMobilePlaceholderForegroundBrush}" />
             </ContentPresenter>
             <FontIcon x:Name="DropDownGlyph" 
                         Grid.Row="1"
@@ -113,8 +113,7 @@
                         Foreground="{ThemeResource RibbonTabsControlMobileDropDownGlyphForegroundBrush}"
                         FontFamily="{ThemeResource SymbolThemeFontFamily}"
                         FontSize="12"
-                        Glyph="&#xE0E5;"
-                        HorizontalAlignment="Center"
+                        Glyph="" HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         AutomationProperties.AccessibilityView="Raw" />
             <Popup x:Name="Popup">
@@ -144,96 +143,97 @@
     </ControlTemplate>
 
     <Style TargetType="Internal:RibbonHeaderControl">
-        <Setter Property="Background" Value="{ThemeResource RibbonFooterBackgroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource RibbonHeaderControlMobileBorderBrush}"/>
-        <Setter Property="BorderThickness" Value="0,1"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonFooterBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonHeaderControlMobileBorderBrush}" />
+        <Setter Property="BorderThickness" Value="0,1" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Internal:RibbonHeaderControl">
                     <Grid x:Name="PART_FooterBackground"
                           Background="{TemplateBinding Background}"
                           BorderBrush="{TemplateBinding BorderBrush}"
-                          BorderThickness="{TemplateBinding BorderThickness}">
+                          BorderThickness="{TemplateBinding BorderThickness}" 
+                          >
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup>
                                 <VisualState x:Name="Visible">
                                     <VisualState.StateTriggers>
-                                        <StateTrigger IsActive="{Binding Owner.State, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource RibbonStateToBoolConverter}, ConverterParameter=Footer}"/>
+                                        <StateTrigger IsActive="{Binding Owner.State, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource RibbonStateToBoolConverter}, ConverterParameter=Footer}" />
                                     </VisualState.StateTriggers>
                                     <VisualState.Setters>
-                                        <Setter Target="PART_ShowButton.(Grid.Column)" Value="2"/>
-                                        <Setter Target="PART_ShowButton.(Grid.ColumnSpan)" Value="1"/>
-                                        <Setter Target="PART_ShowButton.CommandParameter" Value="Normal"/>
-                                        <Setter Target="PART_ShowButton.HorizontalAlignment" Value="Right"/>
-                                        <Setter Target="PART_TabsContainer.Visibility" Value="Visible"/>
-                                        <Setter Target="PART_FooterHelpPane.Visibility" Value="Visible"/>
+                                        <Setter Target="PART_ShowButton.(Grid.Column)" Value="2" />
+                                        <Setter Target="PART_ShowButton.(Grid.ColumnSpan)" Value="1" />
+                                        <Setter Target="PART_ShowButton.CommandParameter" Value="Normal" />
+                                        <Setter Target="PART_ShowButton.HorizontalAlignment" Value="Right" />
+                                        <Setter Target="PART_TabsContainer.Visibility" Value="Visible" />
+                                        <Setter Target="PART_FooterHelpPane.Visibility" Value="Visible" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="Appearance">
                                 <VisualState x:Name="Header">
                                     <VisualState.StateTriggers>
-                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanInvertConverter}}"/>
+                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanInvertConverter}}" />
                                     </VisualState.StateTriggers>
                                     <VisualState.Setters>
-                                        <Setter Target="PART_TabsContainer.IsHitTestVisible" Value="True"/>
-                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="True"/>
-                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="False"/>
+                                        <Setter Target="PART_TabsContainer.IsHitTestVisible" Value="True" />
+                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="True" />
+                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="False" />
                                     </VisualState.Setters>
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Visibility" BeginTime="0:0:0.2">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfoTransform" Storyboard.TargetProperty="X" From="0" To="30" Duration="0:0:0.2">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseOut" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseOut" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Opacity" From="1" To="0" BeginTime="0:0:0.15" Duration="0:0:0.05">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseIn" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseIn" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                         <DoubleAnimation Storyboard.TargetName="PART_FooterHelpPane" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseOut" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseOut" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                         <DoubleAnimation Storyboard.TargetName="PART_TabsContainer" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseOut" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseOut" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Flyout">
                                     <VisualState.StateTriggers>
-                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}" />
                                     </VisualState.StateTriggers>
                                     <VisualState.Setters>
-                                        <Setter Target="PART_TabsContainer.Opacity" Value="0"/>
-                                        <Setter Target="PART_TabsContainer.IsHitTestVisible" Value="False"/>
-                                        <Setter Target="PART_FooterHelpPane.Opacity" Value="0"/>
-                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="False"/>
-                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="True"/>
+                                        <Setter Target="PART_TabsContainer.Opacity" Value="0" />
+                                        <Setter Target="PART_TabsContainer.IsHitTestVisible" Value="False" />
+                                        <Setter Target="PART_FooterHelpPane.Opacity" Value="0" />
+                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="False" />
+                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="True" />
                                     </VisualState.Setters>
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfoTransform" Storyboard.TargetProperty="X" From="30" To="0" Duration="0:0:0.2">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseIn" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseIn" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseOut" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseOut" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                     </Storyboard>
@@ -247,7 +247,7 @@
                                                     HeaderItemContainerStyle="{Binding Owner.HeaderItemContainerStyle, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                                     ContextualHeaderItemTemplate="{Binding Owner.ContextualHeaderItemTemplate, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                                     ContextualHeaderItemContainerStyle="{Binding Owner.ContextualHeaderItemContainerStyle, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                                                    Visibility="Collapsed"/>
+                                                    Visibility="Collapsed" />
                         <Internal:RibbonHelpPaneView x:Name="PART_FooterHelpPane"
                                                      AutomationProperties.Name="FooterHelpPaneView"
                                                HorizontalAlignment="Right"
@@ -255,7 +255,7 @@
                                                Grid.Column="1"
                                                HelpPane="{Binding Owner.HelpPane, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                                Placement="Footer"
-                                               Visibility="Collapsed"/>
+                                               Visibility="Collapsed" />
                         <XamlInternal:FlyoutHeaderControl x:Name="PART_FlyoutInfo"
                                                       Opacity="0"
 													  Visibility="Collapsed"
@@ -268,7 +268,7 @@
 													  Content="{Binding FlyoutHeaderInfo.HeaderContent, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                                       ContentTemplate="{Binding FlyoutHeaderInfo.HeaderContentTemplate, RelativeSource={RelativeSource Mode=TemplatedParent}}">
                             <Control.RenderTransform>
-                                <TranslateTransform x:Name="PART_FlyoutInfoTransform"/>
+                                <TranslateTransform x:Name="PART_FlyoutInfoTransform" />
                             </Control.RenderTransform>
                         </XamlInternal:FlyoutHeaderControl>
                         <Ribbon:HelpPaneButton x:Name="PART_ShowButton"
@@ -286,7 +286,7 @@
                                                VerticalContentAlignment="Top"
                                                CommandParameter="Footer"
                                                Command="{Binding Owner.ChangeRibbonStateCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                                               Grid.ColumnSpan="3"/>
+                                               Grid.ColumnSpan="3" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -318,7 +318,7 @@
                         </ComboBox.ItemContainerStyle>
                         <ComboBox.ItemsPanel>
                             <ItemsPanelTemplate>
-                                <StackPanel Orientation="Vertical"/>
+                                <StackPanel Orientation="Vertical" />
                             </ItemsPanelTemplate>
                         </ComboBox.ItemsPanel>
                     </ComboBox>
@@ -328,34 +328,34 @@
     </Style>
 
     <Style TargetType="Internal:RibbonFlyoutTitleControl">
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Internal:RibbonFlyoutTitleControl">
                     <Grid>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutTitleControlMobileBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutTitleControlMobileBackgroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutTitleControlMobileBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutTitleControlMobileBackgroundPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="FocusStates">
                                 <VisualState x:Name="Focused">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Unfocused" />
@@ -363,14 +363,14 @@
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                         <Border x:Name="PART_Background">
-                            <TextBlock Text="{TemplateBinding Title}" Foreground="{ThemeResource RibbonFlyoutTitleControlMobileForegroundBrush}" VerticalAlignment="Center" Padding="8,4"/>
+                            <TextBlock Text="{TemplateBinding Title}" Foreground="{ThemeResource RibbonFlyoutTitleControlMobileForegroundBrush}" VerticalAlignment="Center" Padding="8,4" />
                         </Border>
-                        <Border x:Name="PART_FocusVisual" IsHitTestVisible="False" BorderThickness="1" BorderBrush="{ThemeResource RibbonFlyoutTitleControlMobileFocusVisualStrokeBrush}" Opacity="0" Background="{ThemeResource RibbonFlyoutTitleControlMobileFocusVisualBackgroundBrush}"/>
+                        <Border x:Name="PART_FocusVisual" IsHitTestVisible="False" BorderThickness="1" BorderBrush="{ThemeResource RibbonFlyoutTitleControlMobileFocusVisualStrokeBrush}" Opacity="0" Background="{ThemeResource RibbonFlyoutTitleControlMobileFocusVisualBackgroundBrush}" />
                         <Internal:RibbonFlyoutTitlePopup x:Name="PART_EditorFlyout"
                                                       IsOpen="{Binding IsOpen, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}" 
                                                       PlacementTarget="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}">
                             <Internal:RibbonFlyoutTitlePopup.Settings>
-                                <Internal:RibbonHeaderFlyoutSettings x:Name="PART_TitleFlyoutSettings" TargetHorizontalAlignment="Center"/>
+                                <Internal:RibbonHeaderFlyoutSettings x:Name="PART_TitleFlyoutSettings" TargetHorizontalAlignment="Center" />
                             </Internal:RibbonFlyoutTitlePopup.Settings>
                             <Internal:RibbonFlyoutTitlePopup.Content>
                                 <Border Background="{ThemeResource RibbonFlyoutTitleControlMobilePopupContentBackgroundBrush}">
@@ -388,16 +388,16 @@
         </Setter>
     </Style>
     <Style x:Key="RibbonGlyphButtonStyle" TargetType="Ribbon:RibbonButton">
-        <Setter Property="Background" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonForegroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBorderBrush}"/>
-        <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Setter Property="Padding" Value="11"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="ClickMode" Value="Press"/>
-        <Setter Property="ClosePopupOnClick" Value="False"/>
-        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonForegroundBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBorderBrush}" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Padding" Value="11" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="ClickMode" Value="Press" />
+        <Setter Property="ClosePopupOnClick" Value="False" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Ribbon:RibbonButton">
@@ -405,40 +405,41 @@
                           VerticalAlignment="{TemplateBinding VerticalAlignment}"
                           Background="{TemplateBinding Background}"
                           BorderThickness="{TemplateBinding BorderThickness}" 
-                          BorderBrush="{TemplateBinding BorderBrush}">
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          >
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBackgroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonFlyoutHeaderMobileButtonBackgroundPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Opacity" Value="0.4"/>
+                                        <Setter Target="PART_Background.Opacity" Value="0.4" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="RibbonStates">
-                                <VisualState x:Name="GlyphWithText"/>
-                                <VisualState x:Name="Glyph"/>
+                                <VisualState x:Name="GlyphWithText" />
+                                <VisualState x:Name="Glyph" />
                                 <VisualState x:Name="Flyout">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.HorizontalAlignment" Value="Stretch"/>
-                                        <Setter Target="PART_Separator.Opacity" Value="1"/>
+                                        <Setter Target="PART_Background.HorizontalAlignment" Value="Stretch" />
+                                        <Setter Target="PART_Separator.Opacity" Value="1" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="FocusStates">
                                 <VisualState x:Name="Focused">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9"/>
+                                        <Setter Target="PART_FocusVisual.Opacity" Value="0.9" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Unfocused" />
@@ -452,60 +453,62 @@
                                    Margin="0,4"
                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                    Visibility="{Binding IsHitTestVisible, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource BoolToVisibilityConverter}}"
-                                   Opacity="0"/>
+                                   Opacity="0" 
+                                   />
                         <XamlInternal:IconView x:Name="PART_Icon"
                                                Margin="{TemplateBinding Padding}"
                                                Foreground="{TemplateBinding Foreground}"
-                                               Owner="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                                               Owner="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                         <Rectangle x:Name="PART_FocusVisual" 
                                    Grid.ColumnSpan="2" 
                                    IsHitTestVisible="False" 
                                    StrokeThickness="1" 
                                    Opacity="0" 
                                    Stroke="{ThemeResource RibbonFlyoutHeaderMobileFocusVisualStrokeBrush}" 
-                                   Fill="{ThemeResource RibbonFlyoutHeaderMobileFocusVisualBackgroundBrush}"/>
+                                   Fill="{ThemeResource RibbonFlyoutHeaderMobileFocusVisualBackgroundBrush}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
     <Style x:Key="RibbonToolbarFlyoutHeaderControlStyle" TargetType="XamlInternal:FlyoutHeaderControl">
-        <Setter Property="Orientation" Value="Vertical"/>
-        <Setter Property="Background" Value="{ThemeResource RibbonFlyoutHeaderMobileBackgroundBrush}"/>
-        <Setter Property="FontSize" Value="20"/>
-        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="Orientation" Value="Vertical" />
+        <Setter Property="Background" Value="{ThemeResource RibbonFlyoutHeaderMobileBackgroundBrush}" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="VerticalContentAlignment" Value="Stretch" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="XamlInternal:FlyoutHeaderControl">
-                    <Grid Background="{TemplateBinding Background}">
+                    <Grid Background="{TemplateBinding Background}"
+                          >
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="OrientationStates">
                                 <VisualState x:Name="Horizontal">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BackButton" Storyboard.TargetProperty="Padding">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="12,0"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="12,0" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_BackButton" Storyboard.TargetProperty="(Grid.RowSpan)">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="2"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="2" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_HSeparator" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Caption" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
-                                <VisualState x:Name="Vertical"/>
+                                <VisualState x:Name="Vertical" />
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition />
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <Ribbon:RibbonButton Style="{StaticResource RibbonGlyphButtonStyle}"
                                              x:Name="PART_BackButton"
@@ -517,7 +520,7 @@
                                              HorizontalContentAlignment="Right"
                                              VerticalAlignment="Stretch"
                                              Visibility="{Binding IsEnabled, RelativeSource={RelativeSource Mode=Self}, Converter={StaticResource BoolToVisibilityConverter}}"
-                                             Internal:RibbonStateExtensions.ItemState="Flyout"/>
+                                             Internal:RibbonStateExtensions.ItemState="Flyout" />
                         <!--<TextBlock Grid.Column="1"
                                    x:Name="PART_Caption"
                                    VerticalAlignment="Center"
@@ -528,13 +531,13 @@
                                    x:Name="PART_Caption"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="Left"
-                                   Margin="6"/>
+                                   Margin="6" />
                         <Internal:HorizontalItemSeparator Grid.Row="1"
                                                           x:Name="PART_HSeparator"
                                                           Grid.ColumnSpan="2"
                                                           Background="{ThemeResource RibbonFlyoutHeaderMobileHSeparatorBackgroundBrush}"
 														  Visibility="{TemplateBinding SeparatorVisibility}"
-                                                          Margin="0"/>
+                                                          Margin="0" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -543,82 +546,83 @@
 
 
     <Style TargetType="Internal:RibbonToolbarHeaderControl">
-        <Setter Property="Background" Value="{ThemeResource RibbonToolbarHeaderControlMobileBackgroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarHeaderControlMobileBorderBrush}"/>
-        <Setter Property="BorderThickness" Value="0,1"/>
+        <Setter Property="Background" Value="{ThemeResource RibbonToolbarHeaderControlMobileBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonToolbarHeaderControlMobileBorderBrush}" />
+        <Setter Property="BorderThickness" Value="0,1" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Internal:RibbonToolbarHeaderControl">
                     <Grid x:Name="PART_FooterBackground"
                           Background="{TemplateBinding Background}"
                           BorderBrush="{TemplateBinding BorderBrush}"
-                          BorderThickness="{TemplateBinding BorderThickness}">
+                          BorderThickness="{TemplateBinding BorderThickness}" 
+                          >
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup>
                                 <VisualState x:Name="Visible">
                                     <VisualState.StateTriggers>
-                                        <StateTrigger IsActive="{Binding Owner.State, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource RibbonStateToBoolConverter}, ConverterParameter=Footer}"/>
+                                        <StateTrigger IsActive="{Binding Owner.State, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource RibbonStateToBoolConverter}, ConverterParameter=Footer}" />
                                     </VisualState.StateTriggers>
                                     <VisualState.Setters>
-                                        <Setter Target="PART_ShowButton.CommandParameter" Value="Normal"/>
-                                        <Setter Target="PART_FooterHelpPane.IsExtended" Value="True"/>
+                                        <Setter Target="PART_ShowButton.CommandParameter" Value="Normal" />
+                                        <Setter Target="PART_FooterHelpPane.IsExtended" Value="True" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="Appearance">
                                 <VisualState x:Name="Header">
                                     <VisualState.StateTriggers>
-                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanInvertConverter}}"/>
+                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanInvertConverter}}" />
                                     </VisualState.StateTriggers>
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="True"/>
-                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="False"/>
+                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="True" />
+                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="False" />
                                     </VisualState.Setters>
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Visibility" BeginTime="0:0:0.1">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfoTransform" Storyboard.TargetProperty="X" From="0" To="30" Duration="0:0:0.1">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseOut" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseOut" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Opacity" From="1" To="0" BeginTime="0:0:0.075" Duration="0:0:0.025">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseIn" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseIn" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FooterHelpPane" Storyboard.TargetProperty="Opacity">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="1"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="1" />
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Flyout">
                                     <VisualState.StateTriggers>
-                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}"/>
+                                        <StateTrigger IsActive="{Binding FlyoutHeaderInfo, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBooleanConverter}}" />
                                     </VisualState.StateTriggers>
                                     <VisualState.Setters>
-                                        <Setter Target="PART_FooterHelpPane.Opacity" Value="0"/>
-                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="False"/>
-                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="True"/>
+                                        <Setter Target="PART_FooterHelpPane.Opacity" Value="0" />
+                                        <Setter Target="PART_FooterHelpPane.IsHitTestVisible" Value="False" />
+                                        <Setter Target="PART_FlyoutInfo.IsHitTestVisible" Value="True" />
                                     </VisualState.Setters>
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfoTransform" Storyboard.TargetProperty="X" From="30" To="0" Duration="0:0:0.1">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseIn" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseIn" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                         <DoubleAnimation Storyboard.TargetName="PART_FlyoutInfo" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.1">
                                             <DoubleAnimation.EasingFunction>
-                                                <ExponentialEase EasingMode="EaseOut" Exponent="4"/>
+                                                <ExponentialEase EasingMode="EaseOut" Exponent="4" />
                                             </DoubleAnimation.EasingFunction>
                                         </DoubleAnimation>
                                     </Storyboard>
@@ -632,7 +636,7 @@
                                                       VerticalAlignment="Stretch"
                                                       Grid.Column="1"
                                                       HelpPane="{Binding Owner.HelpPane, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                                                      Visibility="Visible"/>
+                                                      Visibility="Visible" />
                         <XamlInternal:FlyoutHeaderControl x:Name="PART_FlyoutInfo"
                                                       Style="{StaticResource RibbonToolbarFlyoutHeaderControlStyle}"
                                                       Opacity="0"
@@ -646,7 +650,7 @@
 													  Content="{Binding FlyoutHeaderInfo.HeaderContent, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                                       ContentTemplate="{Binding FlyoutHeaderInfo.HeaderContentTemplate, RelativeSource={RelativeSource Mode=TemplatedParent}}">
                             <Control.RenderTransform>
-                                <TranslateTransform x:Name="PART_FlyoutInfoTransform"/>
+                                <TranslateTransform x:Name="PART_FlyoutInfoTransform" />
                             </Control.RenderTransform>
                         </XamlInternal:FlyoutHeaderControl>
                         <Ribbon:ToolbarHelpPaneButton x:Name="PART_ShowButton"
@@ -663,7 +667,7 @@
                                                       VerticalContentAlignment="Top"
                                                       CommandParameter="Footer"
                                                       Command="{Binding Owner.ChangeRibbonStateCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                                                      Grid.Column="2"/>
+                                                      Grid.Column="2" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -692,7 +696,7 @@
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden" />
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden" />
         <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False" />
-        <Setter Property="Padding" Value="{ThemeResource TextControlThemePadding}"/>
+        <Setter Property="Padding" Value="{ThemeResource TextControlThemePadding}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Internal:TitleTextEdit">
@@ -711,18 +715,18 @@
                                                         <VisualState x:Name="Normal" />
                                                         <VisualState x:Name="PointerOver">
                                                             <VisualState.Setters>
-                                                                <Setter Target="GlyphElement.Foreground" Value="{ThemeResource RibbonTitleTextEditMobileHighlightBrush}"/>
+                                                                <Setter Target="GlyphElement.Foreground" Value="{ThemeResource RibbonTitleTextEditMobileHighlightBrush}" />
                                                             </VisualState.Setters>
                                                         </VisualState>
                                                         <VisualState x:Name="Pressed">
                                                             <VisualState.Setters>
                                                                 <Setter Target="ButtonLayoutGrid.Background" Value="{ThemeResource RibbonTitleTextEditMobileHighlightBrush}" />
-                                                                <Setter Target="GlyphElement.Foreground" Value="{ThemeResource RibbonTitleTextEditMobileDeleteButtonForegroundPressedBrush}"/>
+                                                                <Setter Target="GlyphElement.Foreground" Value="{ThemeResource RibbonTitleTextEditMobileDeleteButtonForegroundPressedBrush}" />
                                                             </VisualState.Setters>
                                                         </VisualState>
                                                         <VisualState x:Name="Disabled">
                                                             <VisualState.Setters>
-                                                                <Setter Target="ButtonLayoutGrid.Opacity" Value="0"/>
+                                                                <Setter Target="ButtonLayoutGrid.Opacity" Value="0" />
                                                             </VisualState.Setters>
                                                         </VisualState>
                                                     </VisualStateGroup>
@@ -733,9 +737,8 @@
                                                            HorizontalAlignment="Center"
                                                            FontStyle="Normal"
                                                            FontSize="12"
-                                                           Text="&#xE10A;"
-                                                           FontFamily="{ThemeResource SymbolThemeFontFamily}"
-                                                           AutomationProperties.AccessibilityView="Raw"/>
+                                                           Text="" FontFamily="{ThemeResource SymbolThemeFontFamily}"
+                                                           AutomationProperties.AccessibilityView="Raw" />
                                             </Grid>
                                         </ControlTemplate>
                                     </Setter.Value>
@@ -744,7 +747,7 @@
                         </Grid.Resources>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Disabled"/>
+                                <VisualState x:Name="Disabled" />
                                 <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
@@ -759,7 +762,7 @@
                                         <Setter Target="BackgroundElement.Opacity" Value="{ThemeResource TextControlBackgroundFocusedOpacity}" />
                                         <Setter Target="BorderElement.BorderBrush" Value="{ThemeResource RibbonTitleTextEditMobileHighlightBrush}" />
                                         <Setter Target="ContentElement.Foreground" Value="{ThemeResource RibbonTitleTextEditMobileForegroundFocusedBrush}" />
-                                        <Setter Target="ContentElement.RequestedTheme" Value="Light"/>
+                                        <Setter Target="ContentElement.RequestedTheme" Value="Light" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
@@ -767,7 +770,7 @@
                                 <VisualState x:Name="ButtonVisible">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DeleteButton" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -788,13 +791,13 @@
                                 Margin="{TemplateBinding BorderThickness}"
                                 Opacity="{ThemeResource TextControlBackgroundRestOpacity}"
                                 Grid.ColumnSpan="2"
-                                Grid.RowSpan="1"/>
+                                Grid.RowSpan="1" />
                         <Border x:Name="BorderElement"
                                 Grid.Row="1"
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Grid.ColumnSpan="2"
-                                Grid.RowSpan="1"/>
+                                Grid.RowSpan="1" />
                         <ContentPresenter x:Name="HeaderContentPresenter"
                                           x:DeferLoadStrategy="Lazy"
                                           Visibility="Collapsed"
@@ -827,7 +830,7 @@
                                         IsTabStop="False"
                                         Grid.ColumnSpan="2"
                                         Content="{TemplateBinding PlaceholderText}"
-                                        IsHitTestVisible="False"/>
+                                        IsHitTestVisible="False" />
                         <Button x:Name="DeleteButton"
                                 Grid.Row="1"
                                 Style="{StaticResource DeleteButtonStyle}"
@@ -838,7 +841,7 @@
                                 Visibility="Collapsed"
                                 FontSize="{TemplateBinding FontSize}"
                                 MinWidth="34"
-                                VerticalAlignment="Stretch"/>
+                                VerticalAlignment="Stretch" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

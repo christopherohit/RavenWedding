@@ -1,25 +1,24 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Controls="using:DevExpress.UI.Xaml.Controls" 
     xmlns:themes="using:DevExpress.Core.Native"
     xmlns:dxcore="using:DevExpress.Core"
     xmlns:native="using:DevExpress.UI.Xaml.Controls.Native">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/RangeControl.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/ComboBox.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/TransitionControl.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/RadialContextMenu.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/StackedBarControl.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/BarCodeControl.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/CodeViewControl.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/Pdf/PdfViewerControl.xaml"/>        
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/RangeControl.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/ComboBox.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/TransitionControl.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/RadialContextMenu.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/StackedBarControl.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/BarCodeControl.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/CodeViewControl.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/Pdf/PdfViewerControl.xaml" />        
     </ResourceDictionary.MergedDictionaries>
 
-    <dxcore:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader"/>
+    <dxcore:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader" />
     
     <themes:GlobalThemeResourceDictionaryHelper.IsAttached>
-        <native:ControlsResourceLoader/>
+        <native:ControlsResourceLoader />
     </themes:GlobalThemeResourceDictionaryHelper.IsAttached>
 
 </ResourceDictionary>

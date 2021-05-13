@@ -1,0 +1,42 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxcore="using:DevExpress.Core"
+    xmlns:local="using:DevExpress.UI.Xaml.Layout">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/SlideView.xaml"/>
+        <!--#region Navigation -->
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/Navigation.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/Tiles.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/HubTile.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/SwingHubTile.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/SlideHubTile.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/NavigationElements/MosaicHubTile.xaml"/>
+        <!--#endregion-->
+
+        <!--#region Buttons -->
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Buttons/ShapeButton.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Buttons/ShapeButtonThreeState.xaml"/>
+        <!--#endregion-->
+        <!--#region LayoutContainers -->
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/LayoutContainers/Containers.xaml"/>
+        <!--#endregion-->
+        <!--#region LayoutControl -->
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Controls/LayoutControl/LayoutItem.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Controls/LayoutControl/LayoutGroup.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Controls/LayoutControl/LayoutControl.xaml"/>
+        <!--#endregion-->
+        <!--#region TileBar -->
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Controls/TileBar.xaml"/>
+        <!--#endregion-->
+        <!--#region HamburgerMenu and DXFrame -->
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/HamburgerMenu/HamburgerMenu.xaml"/>
+        <!--#endregion-->        
+        <!--#region HeaderedPivot and HeaderedPageContent-->
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/PageContents/PageContents.xaml"/>
+        <!--#endregion-->        
+    </ResourceDictionary.MergedDictionaries>
+
+    <dxcore:SystemColorsSchemeDictionaryLoader x:Key="SystemColorsSchemeDictionaryLoader"/>
+</ResourceDictionary>
+

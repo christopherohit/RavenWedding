@@ -1,12 +1,11 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
 	xmlns:dx="using:DevExpress.Core"
     xmlns:controls="using:DevExpress.UI.Xaml.Controls">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/ButtonBase.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SettingsBar/Buttons.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v20.2/Themes/SettingsBar/ButtonBase.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v20.2/Themes/SettingsBar/Buttons.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <DataTemplate x:Key="SettingsBarImageButtonFlyoutItemTemplate">
@@ -26,69 +25,69 @@
                                       ImagePadding="{Binding Visual.ImagePadding}"
                                       Padding="{Binding Visual.Padding}"
                                       Visibility="{Binding Visual.Visibility}"
-                                      IsEnabled="{Binding Visual.IsEnabled}"/>
+                                      IsEnabled="{Binding Visual.IsEnabled}" />
     </DataTemplate>
 
     <Style TargetType="controls:SettingsBarImageButton">
         <Setter Property="controls:SettingsBarItem.FlyoutItemTemplate" Value="{StaticResource SettingsBarImageButtonFlyoutItemTemplate}" />
-        <Setter Property="Foreground" Value="{ThemeResource SettingsBarItemForegroundBrush}"/>
-        <Setter Property="ForegroundHover" Value="{ThemeResource SettingsBarItemForegroundBrushHover}"/>
-        <Setter Property="ForegroundPressed" Value="{ThemeResource SettingsBarItemForegroundBrushPressed}"/>
-        <Setter Property="Background" Value="{ThemeResource ButtonBackgroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource ButtonBorderBrush}"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="Padding" Value="3"/>
-        <Setter Property="ImagePadding" Value="3"/>
-        <Setter Property="HorizontalAlignment" Value="Left"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
-        <Setter Property="FontWeight" Value="SemiBold"/>
-        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+        <Setter Property="Foreground" Value="{ThemeResource SettingsBarItemForegroundBrush}" />
+        <Setter Property="ForegroundHover" Value="{ThemeResource SettingsBarItemForegroundBrushHover}" />
+        <Setter Property="ForegroundPressed" Value="{ThemeResource SettingsBarItemForegroundBrushPressed}" />
+        <Setter Property="Background" Value="{ThemeResource ButtonBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource ButtonBorderBrush}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Padding" Value="3" />
+        <Setter Property="ImagePadding" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:SettingsBarImageButton">
                     <Grid Margin="{TemplateBinding Padding}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Icon.Opacity" Value="0"/>
-                                        <Setter Target="PART_IconHover.Opacity" Value="1"/>
+                                        <Setter Target="PART_Icon.Opacity" Value="0" />
+                                        <Setter Target="PART_IconHover.Opacity" Value="1" />
                                     </VisualState.Setters>
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Caption">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ForegroundHover, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ForegroundHover, RelativeSource={RelativeSource TemplatedParent}}" />
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Icon.Opacity" Value="0"/>
-                                        <Setter Target="PART_IconPressed.Opacity" Value="1"/>
+                                        <Setter Target="PART_Icon.Opacity" Value="0" />
+                                        <Setter Target="PART_IconPressed.Opacity" Value="1" />
                                     </VisualState.Setters>
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Caption">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ForegroundPressed, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ForegroundPressed, RelativeSource={RelativeSource TemplatedParent}}" />
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="Border.Opacity" Value="0.35"/>
+                                        <Setter Target="Border.Opacity" Value="0.35" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="FocusStates">
                                 <VisualState x:Name="Focused">
                                     <Storyboard>
-                                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualWhite"/>
-                                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualBlack"/>
+                                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualWhite" />
+                                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualBlack" />
                                     </Storyboard>
                                 </VisualState>
-                                <VisualState x:Name="Unfocused"/>
-                                <VisualState x:Name="PointerFocused"/>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                         <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Margin="3">
@@ -101,19 +100,19 @@
                                                    Width="{TemplateBinding ImageWidth}"
                                                    Height="{TemplateBinding ImageHeight}"
                                                    Stretch="None" 
-                                                   Source="{Binding Image, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                                   Source="{Binding Image, RelativeSource={RelativeSource TemplatedParent}}" />
                                             <Image x:Name="PART_IconHover" 
                                                    Width="{TemplateBinding ImageWidth}"
                                                    Height="{TemplateBinding ImageHeight}"
                                                    Stretch="None" 
                                                    Source="{Binding ImageHover, RelativeSource={RelativeSource TemplatedParent}}"
-                                                   Opacity="0"/>
+                                                   Opacity="0" />
                                             <Image x:Name="PART_IconPressed" 
                                                    Width="{TemplateBinding ImageWidth}"
                                                    Height="{TemplateBinding ImageHeight}"
                                                    Stretch="None" 
                                                    Source="{Binding ImagePressed, RelativeSource={RelativeSource TemplatedParent}}"
-                                                   Opacity="0"/>
+                                                   Opacity="0" />
                                         </Grid>
                                     </Border>
                                     <TextBlock x:Name="PART_Caption"
@@ -122,12 +121,12 @@
                                                Text="{TemplateBinding Content}"
                                                FontFamily="{TemplateBinding FontFamily}"
                                                FontSize="{TemplateBinding FontSize}"
-                                               TextAlignment="Center"/>
+                                               TextAlignment="Center" />
                                 </StackPanel>
                             </ContentPresenter>
                         </Border>
-                        <Rectangle x:Name="FocusVisualWhite" IsHitTestVisible="False" Opacity="0" StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ButtonFocusVisualWhiteStrokeThemeBrush}" StrokeDashArray="1,1"/>
-                        <Rectangle x:Name="FocusVisualBlack" IsHitTestVisible="False" Opacity="0" StrokeDashOffset="0.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ButtonFocusVisualBlackStrokeThemeBrush}" StrokeDashArray="1,1"/>
+                        <Rectangle x:Name="FocusVisualWhite" IsHitTestVisible="False" Opacity="0" StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ButtonFocusVisualWhiteStrokeThemeBrush}" StrokeDashArray="1,1" />
+                        <Rectangle x:Name="FocusVisualBlack" IsHitTestVisible="False" Opacity="0" StrokeDashOffset="0.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ButtonFocusVisualBlackStrokeThemeBrush}" StrokeDashArray="1,1" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

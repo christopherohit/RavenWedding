@@ -1,5 +1,4 @@
-﻿<UserControl
-    x:Class="DevExpress.UI.Xaml.Scheduler.Internal.EditAppointmentDialog"
+﻿<UserControl x:Class="DevExpress.UI.Xaml.Scheduler.Internal.EditAppointmentDialog"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -19,11 +18,11 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Scheduler.v19.2/Visual/Dialogs/EditAppointmentDialog.Colors.xaml"/>
+                <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Scheduler.v20.2/Visual/Dialogs/EditAppointmentDialog.Colors.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <dx:EnumItemsSourceProvider x:Key="Frequencies" EnumInstance="{Binding RepeatPane.Frequency}"  />
-            <dx:EnumItemsSourceProvider x:Key="WeeksOfMonth" EnumInstance="{Binding RepeatPane.WeekOfMonth}"  />
-            <dx:EnumItemsSourceProvider x:Key="DaysOfWeek" EnumInstance="{Binding RepeatPane.DayOfWeek}"  />
+            <dx:EnumItemsSourceProvider x:Key="Frequencies" EnumInstance="{Binding RepeatPane.Frequency}" />
+            <dx:EnumItemsSourceProvider x:Key="WeeksOfMonth" EnumInstance="{Binding RepeatPane.WeekOfMonth}" />
+            <dx:EnumItemsSourceProvider x:Key="DaysOfWeek" EnumInstance="{Binding RepeatPane.DayOfWeek}" />
             <internal:MonthIndexToMonthNameConverter x:Key="MonthIndexToMonthNameConverter" />
             <Style x:Key="HeaderStyle" TargetType="TextBlock">
                 <Setter Property="Margin" Value="0,12,8,12" />
@@ -44,13 +43,13 @@
                 <Setter Property="BorderThickness" Value="1" />
                 <Setter Property="Background" Value="White" />
             </Style>
-            <Style x:Key="ComboBoxStyle" TargetType="ComboBox" BasedOn="{StaticResource ComboBoxStyleBase}"/>
-            <Style x:Key="DXComboBoxStyle" TargetType="dxc:DXComboBox" BasedOn="{StaticResource ComboBoxStyleBase}"/>
-            <dxsch:ResourceSelectionModeConverter x:Key="ResourceSelectionModeConverter"/>
-            <Storyboard x:ConnectionId='1' x:Name="ShowWarningStoryboard">
+            <Style x:Key="ComboBoxStyle" TargetType="ComboBox" BasedOn="{StaticResource ComboBoxStyleBase}" />
+            <Style x:Key="DXComboBoxStyle" TargetType="dxc:DXComboBox" BasedOn="{StaticResource ComboBoxStyleBase}" />
+            <dxsch:ResourceSelectionModeConverter x:Key="ResourceSelectionModeConverter" />
+            <Storyboard x:ConnectionId="1" x:Name="ShowWarningStoryboard">
                 <FadeOutThemeAnimation Storyboard.TargetName="WarningPane" />
             </Storyboard>
-            <Storyboard x:ConnectionId='2' x:Name="HideWarningStoryboard">
+            <Storyboard x:ConnectionId="2" x:Name="HideWarningStoryboard">
                 <FadeInThemeAnimation Storyboard.TargetName="WarningPane" />
             </Storyboard>
         </ResourceDictionary>
@@ -65,13 +64,13 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Edit appointment" VerticalAlignment="Center" FontSize="22" Foreground="{ThemeResource EditAppointmentDialogHeaderForegroundBrush}"/>
+            <TextBlock Text="Edit appointment" VerticalAlignment="Center" FontSize="22" Foreground="{ThemeResource EditAppointmentDialogHeaderForegroundBrush}" />
             <dxr:ToolbarControl Grid.Column="1" IsTabStop="False">
                 <dxr:ToolbarControl.Groups>
                     <dxr:ToolbarGroup>
                         <dxr:ToolbarButton Content="Delete" Command="{Binding DeleteCommand}" CommandParameter="{Binding}" Visibility="{Binding IsDeleteButtonVisible, Mode=OneWay}">
                             <dxr:ToolbarButton.Icon>
-                                <SymbolIcon Symbol="Delete"/>
+                                <SymbolIcon Symbol="Delete" />
                             </dxr:ToolbarButton.Icon>
                         </dxr:ToolbarButton>
                     </dxr:ToolbarGroup>
@@ -89,8 +88,8 @@
 
         <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" IsTabStop="True" UseSystemFocusVisuals="False" VerticalScrollBarVisibility="Auto" Padding="0,0,20,0" HorizontalContentAlignment="Stretch" Margin="0,0,-20,0">
             <StackPanel>
-                <uixamli:TrackPanel x:ConnectionId='3' x:Name="TrackPanel" Orientation="Horizontal" Spacing="24" VerticalAlignment="Top" HorizontalUniformSize="True">
-                    <Grid x:ConnectionId='4' x:Name="Details" uixamli:TrackPanel.HorizontalCellSize="*" MinWidth="550">
+                <uixamli:TrackPanel x:ConnectionId="3" x:Name="TrackPanel" Orientation="Horizontal" Spacing="24" VerticalAlignment="Top" HorizontalUniformSize="True">
+                    <Grid x:ConnectionId="4" x:Name="Details" uixamli:TrackPanel.HorizontalCellSize="*" MinWidth="550">
                         <Grid.RowDefinitions>
                             <RowDefinition />
                             <RowDefinition />
@@ -107,9 +106,10 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Details" Style="{StaticResource PaneHeaderStyle}"/>
-                        <TextBlock Grid.Row="1" Text="Calendar" Style="{StaticResource HeaderStyle}" Visibility="{Binding IsCalendarSelectorVisible, Mode=OneWay}"/>
-                        <ComboBox Grid.Row="1" Grid.Column="1" Style="{StaticResource ComboBoxStyle}"
+                        <TextBlock Text="Details" Style="{StaticResource PaneHeaderStyle}" />
+                        <TextBlock Grid.Row="1" Text="Calendar" Style="{StaticResource HeaderStyle}" Visibility="{Binding IsCalendarSelectorVisible, Mode=OneWay}" />
+                        <ComboBox Grid.Row="1" Grid.Column="1" 
+                              Style="{StaticResource ComboBoxStyle}"
                                   ItemsSource="{Binding Calendars}"
                                   SelectedValue="{Binding Calendar, Mode=TwoWay}"
                                   Visibility="{Binding IsCalendarSelectorVisible, Mode=TwoWay}">
@@ -119,9 +119,9 @@
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>
-                        <TextBlock Grid.Row="2" Text="Subject" Style="{StaticResource HeaderStyle}"/>
-                        <dxe:TextEdit x:ConnectionId='7' Grid.Row="2" Grid.Column="1" x:Name="Subject" VerticalAlignment="Center" Text="{Binding EditedItem.Subject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="1" Padding="5"/>
-                        <TextBlock Grid.Row="3" Text="Show As" Style="{StaticResource HeaderStyle}"/>
+                        <TextBlock Grid.Row="2" Text="Subject" Style="{StaticResource HeaderStyle}" />
+                        <dxe:TextEdit x:ConnectionId="7" Grid.Row="2" Grid.Column="1" x:Name="Subject" VerticalAlignment="Center" Text="{Binding EditedItem.Subject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="1" Padding="5" />
+                        <TextBlock Grid.Row="3" Text="Show As" Style="{StaticResource HeaderStyle}" />
                         <Grid Grid.Row="3" Grid.Column="1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
@@ -138,16 +138,17 @@
                                     <DataTemplate>
                                         <Grid>
                                             <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto" />
                                                 <ColumnDefinition Width="*" />
                                             </Grid.ColumnDefinitions>
                                             <Border Background="{Binding Style.Brush}" Width="20" Height="20" />
-                                            <TextBlock Grid.Column="1" Text="{Binding Caption}" Margin="12,0,0,0"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding Caption}" Margin="12,0,0,0" />
                                         </Grid>
                                     </DataTemplate>
                                 </ComboBox.ItemTemplate>
                             </ComboBox>
-                            <TextBlock Text="Label" Grid.Column="1" Style="{StaticResource HeaderStyle}" Margin="12,0,8,0"/>
+                            <TextBlock Text="Label" Grid.Column="1" 
+                                       Style="{StaticResource HeaderStyle}" Margin="12,0,8,0" />
                             <ComboBox Grid.Column="2"
                                   Style="{StaticResource ComboBoxStyle}"
                                   ItemsSource="{Binding Labels}"
@@ -157,20 +158,20 @@
                                     <DataTemplate>
                                         <Grid>
                                             <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto" />
                                                 <ColumnDefinition Width="*" />
                                             </Grid.ColumnDefinitions>
                                             <Border Background="{Binding Style.Brush}" Width="20" Height="20" />
-                                            <TextBlock Grid.Column="1" Text="{Binding Caption}" Margin="12,0,0,0"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding Caption}" Margin="12,0,0,0" />
                                         </Grid>
                                     </DataTemplate>
                                 </ComboBox.ItemTemplate>
                             </ComboBox>
                         </Grid>
                         <TextBlock Grid.Row="4" Text="Location" Style="{StaticResource HeaderStyle}" />
-                        <dxe:TextEdit Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Text="{Binding EditedItem.Location, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Padding="5"/>
+                        <dxe:TextEdit Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Text="{Binding EditedItem.Location, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Padding="5" />
 
-                        <TextBlock Grid.Row="5" Text="Resource" Style="{StaticResource HeaderStyle}" Visibility="{Binding IsResourceSelectorVisible}"/>
+                        <TextBlock Grid.Row="5" Text="Resource" Style="{StaticResource HeaderStyle}" Visibility="{Binding IsResourceSelectorVisible}" />
                         <dxc:DXComboBox Grid.Row="5" 
                                         Grid.Column="1" 
                                         Style="{StaticResource DXComboBoxStyle}"
@@ -187,23 +188,24 @@
                                 <DataTemplate>
                                     <Grid HorizontalAlignment="Stretch">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
                                         <Border Background="{Binding Style.Brush}" Width="20" Height="20" />
-                                        <TextBlock Grid.Column="1" Text="{Binding Caption}" Margin="12,0,0,0" HorizontalAlignment="Left"/>
+                                        <TextBlock Grid.Column="1" Text="{Binding Caption}" Margin="12,0,0,0" HorizontalAlignment="Left" />
                                     </Grid>
                                 </DataTemplate>
                             </dxc:DXComboBox.ItemTemplate>
                             <dxc:DXComboBox.ItemContainerStyle>
                                 <Style TargetType="uixaml:DXListViewItemContainer">
-                                    <Setter Property="Padding" Value="2,0"/>
+                                    <Setter Property="Padding" Value="2,0" />
                                 </Style>
                             </dxc:DXComboBox.ItemContainerStyle>
                         </dxc:DXComboBox>
                         
                         <TextBlock Grid.Row="6" Text="Time Zone" Style="{StaticResource HeaderStyle}" />
-                        <ComboBox Grid.Row="6" Grid.Column="1" Style="{StaticResource ComboBoxStyle}"
+                        <ComboBox Grid.Row="6" Grid.Column="1" 
+                              Style="{StaticResource ComboBoxStyle}"
                                   ItemsSource="{Binding TimeZones}"
                                   SelectedValue="{Binding EditedItem.TimeZone, Mode=TwoWay}">
                             <ComboBox.ItemTemplate>
@@ -221,12 +223,11 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
                             <uixamli:TrackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center">
-                                <dxe:DateEdit 
-                                      uixamli:TrackPanel.HorizontalCellSize="2*"
+                                <dxe:DateEdit uixamli:TrackPanel.HorizontalCellSize="2*"
                                       VerticalAlignment="Center"
                                       AllowSpinOnMouseWheel="False"
                                       IsTextEditable="True"
@@ -237,17 +238,17 @@
                                         <dxe:TextInputMaskSettings Mask="MMMM dd, yyyy" MaskType="DateTimeAdvancingCaret" />
                                     </dxe:DateEdit.TextInputSettings>
                                     <dxe:DateEdit.PopupSettings>
-                                        <dxe:DateNavigatorPopupSettings/>
+                                        <dxe:DateNavigatorPopupSettings />
                                     </dxe:DateEdit.PopupSettings>
                                 </dxe:DateEdit>
                                 <dxe:DateEdit Grid.Row="0"
                                   uixamli:TrackPanel.HorizontalCellSize="1*"
                                   AllowSpinOnMouseWheel="False"
-                                  VerticalAlignment="Center"
-                                  IsTextEditable="True"
-                                  ShowDefaultButtons="False"
+                                      VerticalAlignment="Center"
+                                      IsTextEditable="True"
+                                      ShowDefaultButtons="False"
                                   Padding="5"
-                                  IsEnabled="{Binding EditedItem.IsStartTimeEnabled}"
+                                      IsEnabled="{Binding EditedItem.IsStartTimeEnabled}"
                                   Visibility="{Binding EditedItem.IsStartTimeVisible}"
                                   EditValue="{Binding EditedItem.StartTime, Mode=TwoWay}">
                                     <dxe:DateEdit.TextInputSettings>
@@ -264,19 +265,19 @@
                                       IsEnabled="{Binding EditedItem.IsEndDateEnabled}"    
                                       EditValue="{Binding EditedItem.EndDate, Mode=TwoWay}">
                                     <dxe:DateEdit.TextInputSettings>
-                                        <dxe:TextInputMaskSettings Mask="MMMM dd, yyyy" MaskType="DateTimeAdvancingCaret"/>
+                                        <dxe:TextInputMaskSettings Mask="MMMM dd, yyyy" MaskType="DateTimeAdvancingCaret" />
                                     </dxe:DateEdit.TextInputSettings>
                                     <dxe:DateEdit.PopupSettings>
                                         <dxe:DateNavigatorPopupSettings />
                                     </dxe:DateEdit.PopupSettings>
                                 </dxe:DateEdit>
                                 <dxe:DateEdit ShowDefaultButtons="False"
-                                              VerticalAlignment="Center"
-                                              AllowSpinOnMouseWheel="False"
-                                              uixamli:TrackPanel.HorizontalCellSize="*"
+                                  VerticalAlignment="Center"
+                                      AllowSpinOnMouseWheel="False"
+                                      uixamli:TrackPanel.HorizontalCellSize="*"
                                   IsTextEditable="True"
-                                  Padding="5"
-                                  IsEnabled="{Binding EditedItem.IsEndTimeEnabled}"
+                                      Padding="5"
+                                      IsEnabled="{Binding EditedItem.IsEndTimeEnabled}"
                                   Visibility="{Binding EditedItem.IsEndTimeVisible}"                                  
                                   EditValue="{Binding EditedItem.EndTime, Mode=TwoWay}">
                                     <dxe:DateEdit.TextInputSettings>
@@ -284,11 +285,12 @@
                                     </dxe:DateEdit.TextInputSettings>
                                 </dxe:DateEdit>
                             </uixamli:TrackPanel>
-                            <CheckBox Content="All Day" Grid.Column="1" Grid.RowSpan="2" Margin="12,0,2,0" IsChecked="{Binding EditedItem.IsAllDay, Mode=TwoWay}" HorizontalAlignment="Right" MinWidth="0"/>
+                            <CheckBox Content="All Day" Grid.Column="1" Grid.RowSpan="2" Margin="12,0,2,0" IsChecked="{Binding EditedItem.IsAllDay, Mode=TwoWay}" HorizontalAlignment="Right" MinWidth="0" />
                         </Grid>
 
-                        <TextBlock Grid.Row="9" Text="Reminder" Style="{StaticResource HeaderStyle}" Visibility="{Binding IsRemindersSelectorVisible}"/>
-                        <ComboBox Grid.Row="9" Grid.Column="1" Style="{StaticResource ComboBoxStyle}"
+                        <TextBlock Grid.Row="9" Text="Reminder" Style="{StaticResource HeaderStyle}" Visibility="{Binding IsRemindersSelectorVisible}" />
+                        <ComboBox Grid.Row="9" Grid.Column="1" 
+                              Style="{StaticResource ComboBoxStyle}"
                                   Visibility="{Binding IsRemindersSelectorVisible}"
                                   ItemsSource="{Binding ReminderSpans}"
                                   SelectedValue="{Binding EditedItem.ReminderSpan, Mode=TwoWay}">
@@ -299,9 +301,8 @@
                             </ComboBox.ItemTemplate>
                         </ComboBox>
                     </Grid>
-                    <Grid x:ConnectionId='5' x:Name="Repeat" Visibility="{Binding EditedItem.IsRepeatPaneVisible}" uixamli:TrackPanel.HorizontalCellSize="*" >
+                    <Grid x:ConnectionId="5" x:Name="Repeat" Visibility="{Binding EditedItem.IsRepeatPaneVisible}" uixamli:TrackPanel.HorizontalCellSize="*">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
@@ -312,7 +313,8 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
-                            <RowDefinition/>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
@@ -326,12 +328,13 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <ComboBox Grid.Column="0" 
+                            <ComboBox Grid.Column="0"
                                   Style="{StaticResource ComboBoxStyle}"
                                   ItemsSource="{StaticResource Frequencies}"
                                   SelectedItem="{Binding RepeatPane.Frequency, Mode=TwoWay}">
                             </ComboBox>
-                            <TextBlock Grid.Column="1" Text="Interval" Style="{StaticResource HeaderStyle}" Margin="12,0,8,0" />
+                            <TextBlock Grid.Column="1" 
+                                       Text="Interval" Style="{StaticResource HeaderStyle}" Margin="12,0,8,0" />
                             <ComboBox Grid.Column="2"
                                   Style="{StaticResource ComboBoxStyle}"
                                   ItemsSource="{Binding Intervals}"
@@ -345,23 +348,23 @@
                         </Grid>
 
 
-                        <TextBlock Style="{StaticResource HeaderStyle}" Text="A" Grid.Row="4" Opacity="0" IsHitTestVisible="False" Visibility="{Binding RepeatPane.IsDaysOfWeekSelectorVisible}"/>
+                        <TextBlock Style="{StaticResource HeaderStyle}" Text="A" Grid.Row="4" Opacity="0" IsHitTestVisible="False" Visibility="{Binding RepeatPane.IsDaysOfWeekSelectorVisible}" />
                         <uixamli:TrackPanel Grid.Row="4" Grid.Column="1" Visibility="{Binding RepeatPane.IsDaysOfWeekSelectorVisible}" Orientation="Horizontal"
                                              Margin="2,2,2,2"
                                              VerticalAlignment="Center"                                             
                                              HorizontalUniformSize="True">
-                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsSundayChecked, Mode=TwoWay}" Content="Sun" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4"/>
-                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsMondayChecked, Mode=TwoWay}" Content="Mon"  uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4"/>
-                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsTuesdayChecked, Mode=TwoWay}" Content="Tue"  uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4"/>
-                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsWednesdayChecked, Mode=TwoWay}" Content="Wed"  uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4"/>
-                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsThursdayChecked, Mode=TwoWay}" Content="Thu"  uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4"/>
-                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsFridayChecked, Mode=TwoWay}" Content="Fri"  uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4"/>
-                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsSaturdayChecked, Mode=TwoWay}" Content="Sat"  uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4"/>
+                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsSundayChecked, Mode=TwoWay}" Content="Sun" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4" />
+                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsMondayChecked, Mode=TwoWay}" Content="Mon" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4" />
+                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsTuesdayChecked, Mode=TwoWay}" Content="Tue" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4" />
+                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsWednesdayChecked, Mode=TwoWay}" Content="Wed" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4" />
+                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsThursdayChecked, Mode=TwoWay}" Content="Thu" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4" />
+                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsFridayChecked, Mode=TwoWay}" Content="Fri" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4" />
+                            <dxr:RibbonToggleButton IsChecked="{Binding RepeatPane.IsSaturdayChecked, Mode=TwoWay}" Content="Sat" uixamli:TrackPanel.HorizontalCellSize="*" HorizontalContentAlignment="Center" Padding="4" />
                         </uixamli:TrackPanel>
-                        <TextBlock Grid.Row="5" Text="In" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsMonthSelectorVisible}"/>
+                        <TextBlock Grid.Row="5" Text="In" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsMonthSelectorVisible}" />
                         <ComboBox Grid.Row="5" Grid.Column="1" 
                               Style="{StaticResource ComboBoxStyle}"
-                              Visibility="{Binding RepeatPane.IsMonthSelectorVisible}"
+                                  Visibility="{Binding RepeatPane.IsMonthSelectorVisible}"
                               ItemsSource="{Binding Months}"
                               SelectedValue="{Binding RepeatPane.Month, Mode=TwoWay}">
                             <ComboBox.ItemTemplate>
@@ -370,20 +373,20 @@
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>
-                        <TextBlock Text="A" Opacity="0" IsHitTestVisible="False" Grid.Row="6" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsDaySelectionGroupVisible}"/>
+                        <TextBlock Text="A" Opacity="0" IsHitTestVisible="False" Grid.Row="6" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsDaySelectionGroupVisible}" />
                         <Grid Grid.Row="6" Grid.Column="1" Visibility="{Binding RepeatPane.IsDaySelectionGroupVisible}">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-                            <RadioButton Content="On day" IsChecked="{Binding RepeatPane.IsOnDayElementChecked, Mode=TwoWay}" HorizontalAlignment="Center"/>
-                            <RadioButton Content="On the" Grid.Column="1" IsChecked="{Binding RepeatPane.IsOnDayOfWeekPosElementChecked, Mode=TwoWay}" HorizontalAlignment="Center"/>
+                            <RadioButton Content="On day" IsChecked="{Binding RepeatPane.IsOnDayElementChecked, Mode=TwoWay}" HorizontalAlignment="Center" />
+                            <RadioButton Content="On the" Grid.Column="1" IsChecked="{Binding RepeatPane.IsOnDayOfWeekPosElementChecked, Mode=TwoWay}" HorizontalAlignment="Center" />
                         </Grid>
-                        <TextBlock Text="A" Opacity="0" IsHitTestVisible="False" Grid.Row="7" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsDaySelectorVisible}"/>
-                        <ComboBox Grid.Row="7" Grid.Column="1"
+                        <TextBlock Text="A" Opacity="0" IsHitTestVisible="False" Grid.Row="7" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsDaySelectorVisible}" />
+                        <ComboBox Grid.Row="7" Grid.Column="1" 
                               Style="{StaticResource ComboBoxStyle}"
-                              ItemsSource="{Binding RepeatPane.DaysOfMonth}"
+                                  ItemsSource="{Binding RepeatPane.DaysOfMonth}"
                               SelectedValue="{Binding RepeatPane.DayOfMonth, Mode=TwoWay}"
                               Visibility="{Binding RepeatPane.IsDaySelectorVisible}">
                             <ComboBox.ItemTemplate>
@@ -392,7 +395,7 @@
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>
-                        <TextBlock Text="A" Opacity="0" IsHitTestVisible="False" Grid.Row="8" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsDayOfWeekPosSelectorVisible}"/>
+                        <TextBlock Text="A" Opacity="0" IsHitTestVisible="False" Grid.Row="8" Style="{StaticResource HeaderStyle}" Visibility="{Binding RepeatPane.IsDayOfWeekPosSelectorVisible}" />
                         <Grid Grid.Row="8" Grid.Column="1" Visibility="{Binding RepeatPane.IsDayOfWeekPosSelectorVisible}">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
@@ -424,46 +427,46 @@
                                       MinValue="{Binding RepeatPane.AppointmentInterval.End}"
                                       IsTextEditable="True">
                             <dxe:DateEdit.TextInputSettings>
-                                <dxe:TextInputMaskSettings Mask="MMMM dd, yyyy" MaskType="DateTimeAdvancingCaret"/>
+                                <dxe:TextInputMaskSettings Mask="MMMM dd, yyyy" MaskType="DateTimeAdvancingCaret" />
                             </dxe:DateEdit.TextInputSettings>
                             <dxe:DateEdit.PopupSettings>
                                 <dxe:DateNavigatorPopupSettings />
                             </dxe:DateEdit.PopupSettings>
                         </dxe:DateEdit>
-                        <Grid x:ConnectionId='6' Grid.Row="11" 
+                        <Grid x:ConnectionId="6" Grid.Row="11" 
                               MaxWidth="550"
                               Grid.ColumnSpan="2" 
                               VerticalAlignment="Bottom"
                               x:Name="WarningPane"
                               Visibility="{Binding RepeatPane.IsEditingWarningVisible}">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition />
                             </Grid.ColumnDefinitions>
                             <uixamli:IconContentPresenter Foreground="{ThemeResource RecurrentRuleChangingWarningBackground}"
                                                           IconStretch="UniformToFill"
                                                           IconSource="F0 M12,0C5.4,0,0,5.4,0,12c0,6.6,5.4,12,12,12s12-5.4,12-12C24,5.4,18.6,0,12,0z M12,20c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C14,19.1,13.1,20,12,20z M14,12c0,1.1-0.9,2-2,2s-2-0.9-2-2V6c0-1.1,0.9-2,2-2s2,0.9,2,2V12z"
                                                           IconWidth="24" Margin="0,0,8,0"
-                                                          VerticalAlignment="Top"/>
+                                                          VerticalAlignment="Top" />
                             <TextBlock Grid.Column="1" 
                                        Foreground="{ThemeResource EditAppointmentDialogPaneHeaderForegroundBrush}"
                                        Text="If you modify the recurrence pattern, all changes to individual occurrences will be lost." 
-                                       FontSize="20" TextWrapping="WrapWholeWords"/>
+                                       FontSize="20" TextWrapping="WrapWholeWords" />
                         </Grid>
                     </Grid>
                 </uixamli:TrackPanel>
-                <TextBlock Text="Description:" Style="{StaticResource HeaderStyle}"/>
-                <TextBox Grid.ColumnSpan="4" MinHeight="150" Text="{Binding EditedItem.Description, Mode=TwoWay}" TextWrapping="Wrap"/>
+                <TextBlock Text="Description:" Style="{StaticResource HeaderStyle}" />
+                <TextBox Grid.ColumnSpan="4" MinHeight="150" Text="{Binding EditedItem.Description, Mode=TwoWay}" TextWrapping="Wrap" />
             </StackPanel>
         </ScrollViewer>
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='8' x:Name="Size">
-                <VisualState x:ConnectionId='9' x:Name="Large">
+            <VisualStateGroup x:ConnectionId="8" x:Name="Size">
+                <VisualState x:ConnectionId="9" x:Name="Large">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="1200" />
                     </VisualState.StateTriggers>
                 </VisualState>
-                <VisualState x:ConnectionId='10' x:Name="Medium">
+                <VisualState x:ConnectionId="10" x:Name="Medium">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>

@@ -1,5 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:themes="using:DevExpress.UI.Xaml.Scheduler.Themes"
     xmlns:sch="using:DevExpress.UI.Xaml.Scheduler"
@@ -10,41 +9,41 @@
     xmlns:ribbon="using:DevExpress.UI.Xaml.Ribbon">
     
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Scheduler.v19.2/Themes/Scheduler.Colors.xaml"/>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Scheduler.v19.2/Themes/AppointmentsFlyoutListView.xaml"/>
-        <themes:SchedulerContextMenuResourceDictionary/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Scheduler.v20.2/Themes/Scheduler.Colors.xaml" />
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Scheduler.v20.2/Themes/AppointmentsFlyoutListView.xaml" />
+        <themes:SchedulerContextMenuResourceDictionary />
     </ResourceDictionary.MergedDictionaries>
     
     <Style TargetType="sch:SchedulerControl">
         <Setter Property="RequestedTheme" Value="Light" />
-        <Setter Property="Foreground" Value="{ThemeResource SchedulerControlForegroundBrush}"/>
-        <Setter Property="Background" Value="{ThemeResource SchedulerControlBackgroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource SchedulerControlBorderBrush}"/>
-        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{ThemeResource SchedulerControlForegroundBrush}" />
+        <Setter Property="Background" Value="{ThemeResource SchedulerControlBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource SchedulerControlBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
         <Setter Property="AppointmentsFlyoutStyle" Value="{StaticResource DefaultAppointmentsFlyoutStyle}" />
         <Setter Property="EditAppointmentDialogSettingsTemplate">
             <Setter.Value>
                 <DataTemplate>
-                    <sch:EditAppointmentDialogSettings/>
+                    <sch:EditAppointmentDialogSettings />
                 </DataTemplate>
             </Setter.Value>
         </Setter>
         <Setter Property="HeaderSettingsTemplate">
             <Setter.Value>
                 <DataTemplate>
-                    <sch:SchedulerHeaderSettings/>
+                    <sch:SchedulerHeaderSettings />
                 </DataTemplate>
             </Setter.Value>
         </Setter>
         <Setter Property="DefaultCalendarStyleSettingsTemplate">
             <Setter.Value>
                 <DataTemplate>
-                    <sch:CalendarStyleSettings/>
+                    <sch:CalendarStyleSettings />
                 </DataTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="SchedulerMenu" Value="{StaticResource SchedulerContextMenuTemplate}"/>
-        <Setter Property="AppointmentMenu" Value="{StaticResource AppointmentContextMenuTemplate}"/>
+        <Setter Property="SchedulerMenu" Value="{StaticResource SchedulerContextMenuTemplate}" />
+        <Setter Property="AppointmentMenu" Value="{StaticResource AppointmentContextMenuTemplate}" />
         <Setter Property="mvvmi:Interaction.BehaviorsTemplate">
             <Setter.Value>
                 <DataTemplate>
@@ -59,7 +58,7 @@
                                     <Setter Property="ButtonTemplate">
                                         <Setter.Value>
                                             <DataTemplate>
-                                                <ribbon:ToolbarButton Content="{Binding Content}" Icon="{Binding Icon}" IsEnabled="{Binding CanExecute}" Command="{Binding}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                                <ribbon:ToolbarButton Content="{Binding Content}" Icon="{Binding Icon}" IsEnabled="{Binding CanExecute}" Command="{Binding}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
                                             </DataTemplate>
                                         </Setter.Value>
                                     </Setter>
@@ -67,11 +66,11 @@
                             </mvvmui:DialogService.DialogStyle>
                             <mvvmui:DialogService.ButtonContentModifiers>
                                 <mvvmui:DialogButtonContentModifier Id="OK" Content="{schi:SchedulerLocalizer StringId=ButtonCaption_Save}" Symbol="Save" />
-                                <mvvmui:DialogButtonContentModifier Id="Cancel" Content="{schi:SchedulerLocalizer StringId=ButtonCaption_Cancel}" Symbol="Cancel"/>
+                                <mvvmui:DialogButtonContentModifier Id="Cancel" Content="{schi:SchedulerLocalizer StringId=ButtonCaption_Cancel}" Symbol="Cancel" />
                             </mvvmui:DialogService.ButtonContentModifiers>
                             <mvvmui:DialogService.ViewTemplate>
                                 <DataTemplate>
-                                    <schi:EditAppointmentDialog/>
+                                    <schi:EditAppointmentDialog />
                                 </DataTemplate>
                             </mvvmui:DialogService.ViewTemplate>
                         </mvvmui:DialogService>
@@ -83,7 +82,7 @@
                                     <Setter Property="ButtonTemplate">
                                         <Setter.Value>
                                             <DataTemplate>
-                                                <ribbon:ToolbarButton Content="{Binding Content}" Icon="{Binding Icon}" IsEnabled="{Binding CanExecute}" Command="{Binding}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                                <ribbon:ToolbarButton Content="{Binding Content}" Icon="{Binding Icon}" IsEnabled="{Binding CanExecute}" Command="{Binding}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
                                             </DataTemplate>
                                         </Setter.Value>
                                     </Setter>
@@ -91,7 +90,7 @@
                             </mvvmui:DialogService.DialogStyle>
                             <mvvmui:DialogService.ViewTemplate>
                                 <DataTemplate>
-                                    <schi:RemindersDialogViewControl/>
+                                    <schi:RemindersDialogViewControl />
                                 </DataTemplate>
                             </mvvmui:DialogService.ViewTemplate>
                         </mvvmui:DialogService>
@@ -101,7 +100,7 @@
                                     <TextBlock Text="{schi:SchedulerLocalizer StringId=DeleteOccurrenceWindow_DeleteRecurrentAppointmentMessage}" />
                                 </DataTemplate>
                             </mvvmui:DialogService.ViewTemplate>
-                            <mvvmui:DialogService.DialogStyle >
+                            <mvvmui:DialogService.DialogStyle>
                                 <Style TargetType="mvvmui:DialogContentControl">
                                     <Setter Property="Title" Value="{Binding Source={schi:SchedulerLocalizer StringId=DeleteOccurrenceWindow_DeleteRecurrentAppointmentTitle}}" />
                                     <Setter Property="RequestedTheme" Value="Light" />
@@ -110,7 +109,7 @@
                             <mvvmui:DialogService.ButtonContentModifiers>
                                 <mvvmui:DialogButtonContentModifier Id="Yes" Content="{schi:SchedulerLocalizer StringId=DeleteOccurrenceWindow_DeleteOccurrence}" />
                                 <mvvmui:DialogButtonContentModifier Id="No" Content="{schi:SchedulerLocalizer StringId=DeleteOccurrenceWindow_DeleteSeries}" />
-                                <mvvmui:DialogButtonContentModifier Id="Cancel" Content="{schi:SchedulerLocalizer StringId=ButtonCaption_Cancel}"/>
+                                <mvvmui:DialogButtonContentModifier Id="Cancel" Content="{schi:SchedulerLocalizer StringId=ButtonCaption_Cancel}" />
                             </mvvmui:DialogService.ButtonContentModifiers>
                         </mvvmui:DialogService>
                     </ItemsControl>
@@ -127,17 +126,17 @@
                           Padding="{TemplateBinding Padding}">
 
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" />
                             <RowDefinition />
                         </Grid.RowDefinitions>
 
                         <schi:SchedulerHeaderControl Settings="{TemplateBinding ActualHeaderSettings}"
-                                                     VisibleInterval="{Binding VisibleIntervals.Interval, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                                                     VisibleInterval="{Binding VisibleIntervals.Interval, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                         <schi:SchedulerItemsPanel x:Name="PART_ViewsContainer"
                                                   HorizontalAlignment="Stretch"
                                                   VerticalAlignment="Stretch"
                                                   Grid.Row="1"
-                                                  ItemsSource="{Binding Views, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                                                  ItemsSource="{Binding Views, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                         <uixaml:FlyoutControl x:Name="PART_Flyout" Style="{TemplateBinding AppointmentsFlyoutStyle}" />
                     </Grid>
                 </ControlTemplate>
@@ -147,53 +146,53 @@
 
 
     <Style TargetType="sch:TimeIndicator">
-        <Setter Property="Fill" Value="{Binding Source={ThemeResource TimeIndicatorFillBrush}}"/>
+        <Setter Property="Fill" Value="{Binding Source={ThemeResource TimeIndicatorFillBrush}}" />
     </Style>
     <Style TargetType="sch:EditAppointmentDialogSettings">
-        <Setter Property="AllowMultipleResourceSelection" Value="True"/>
+        <Setter Property="AllowMultipleResourceSelection" Value="True" />
     </Style>
     <Style TargetType="sch:CalendarStyleSettings">
         <Setter Property="LabelItemFallbackStyle">
             <Setter.Value>
-                <sch:LabelItemStyle Brush="{ThemeResource LabelItemFallbackBrush}"/>
+                <sch:LabelItemStyle Brush="{ThemeResource LabelItemFallbackBrush}" />
             </Setter.Value>
         </Setter>
         <Setter Property="LabelItemStyles">
             <Setter.Value>
                 <sch:LabelItemStyleCollection>
-                    <sch:LabelItemStyle Id="0" Brush="{ThemeResource LabelItemNoneBrush}"/>
-                    <sch:LabelItemStyle Id="1" Brush="{ThemeResource LabelItemImportantBrush}"/>
-                    <sch:LabelItemStyle Id="2" Brush="{ThemeResource LabelItemBusinessBrush}"/>
-                    <sch:LabelItemStyle Id="3" Brush="{ThemeResource LabelItemPersonalBrush}"/>
-                    <sch:LabelItemStyle Id="4" Brush="{ThemeResource LabelItemVacationBrush}"/>
-                    <sch:LabelItemStyle Id="5" Brush="{ThemeResource LabelItemMustAttendBrush}"/>
-                    <sch:LabelItemStyle Id="6" Brush="{ThemeResource LabelItemTravelRequiredBrush}"/>
-                    <sch:LabelItemStyle Id="7" Brush="{ThemeResource LabelItemNeedsPreparationBrush}"/>
-                    <sch:LabelItemStyle Id="8" Brush="{ThemeResource LabelItemBirthdayBrush}"/>
-                    <sch:LabelItemStyle Id="9" Brush="{ThemeResource LabelItemAnniversaryBrush}"/>
-                    <sch:LabelItemStyle Id="10" Brush="{ThemeResource LabelItemPhoneCallBrush}"/>
+                    <sch:LabelItemStyle Id="0" Brush="{ThemeResource LabelItemNoneBrush}" />
+                    <sch:LabelItemStyle Id="1" Brush="{ThemeResource LabelItemImportantBrush}" />
+                    <sch:LabelItemStyle Id="2" Brush="{ThemeResource LabelItemBusinessBrush}" />
+                    <sch:LabelItemStyle Id="3" Brush="{ThemeResource LabelItemPersonalBrush}" />
+                    <sch:LabelItemStyle Id="4" Brush="{ThemeResource LabelItemVacationBrush}" />
+                    <sch:LabelItemStyle Id="5" Brush="{ThemeResource LabelItemMustAttendBrush}" />
+                    <sch:LabelItemStyle Id="6" Brush="{ThemeResource LabelItemTravelRequiredBrush}" />
+                    <sch:LabelItemStyle Id="7" Brush="{ThemeResource LabelItemNeedsPreparationBrush}" />
+                    <sch:LabelItemStyle Id="8" Brush="{ThemeResource LabelItemBirthdayBrush}" />
+                    <sch:LabelItemStyle Id="9" Brush="{ThemeResource LabelItemAnniversaryBrush}" />
+                    <sch:LabelItemStyle Id="10" Brush="{ThemeResource LabelItemPhoneCallBrush}" />
                 </sch:LabelItemStyleCollection>
             </Setter.Value>
         </Setter>
         <Setter Property="StatusItemFallbackStyle">
             <Setter.Value>
-                <sch:StatusItemStyle Brush="{ThemeResource StatusItemFallbackBrush}"/>
+                <sch:StatusItemStyle Brush="{ThemeResource StatusItemFallbackBrush}" />
             </Setter.Value>
         </Setter>
         <Setter Property="StatusItemStyles">
             <Setter.Value>
                 <sch:StatusItemStyleCollection>
-                    <sch:StatusItemStyle Id="0" Brush="{ThemeResource StatusItemFreeBrush}"/>
-                    <sch:StatusItemStyle Id="1" Brush="{ThemeResource StatusItemTentativeBrush}"/>
-                    <sch:StatusItemStyle Id="2" Brush="{ThemeResource StatusItemBusyBrush}"/>
-                    <sch:StatusItemStyle Id="3" Brush="{ThemeResource StatusItemOutOfOfficeBrush}"/>
-                    <sch:StatusItemStyle Id="4" Brush="{ThemeResource StatusItemWorkingElsewhereBrush}"/>
+                    <sch:StatusItemStyle Id="0" Brush="{ThemeResource StatusItemFreeBrush}" />
+                    <sch:StatusItemStyle Id="1" Brush="{ThemeResource StatusItemTentativeBrush}" />
+                    <sch:StatusItemStyle Id="2" Brush="{ThemeResource StatusItemBusyBrush}" />
+                    <sch:StatusItemStyle Id="3" Brush="{ThemeResource StatusItemOutOfOfficeBrush}" />
+                    <sch:StatusItemStyle Id="4" Brush="{ThemeResource StatusItemWorkingElsewhereBrush}" />
                 </sch:StatusItemStyleCollection>
             </Setter.Value>
         </Setter>
         <Setter Property="ResourceItemFallbackStyle">
             <Setter.Value>
-                <sch:ResourceItemStyle Brush="{ThemeResource ResourceItemFallbackBrush}"/>
+                <sch:ResourceItemStyle Brush="{ThemeResource ResourceItemFallbackBrush}" />
             </Setter.Value>
         </Setter>
     </Style>

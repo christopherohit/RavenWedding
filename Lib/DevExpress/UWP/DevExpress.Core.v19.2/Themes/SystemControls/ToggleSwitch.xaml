@@ -1,9 +1,8 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ToggleSwitch.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ToggleSwitch.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="DXToggleSwitchTemplate" TargetType="ToggleSwitch">
@@ -85,7 +84,7 @@
                                                  Storyboard.TargetName="InnerBackgroundElementOn"
                                                  Storyboard.TargetProperty="Opacity"
                                                  From="1"
-                                                 To="0"/>
+                                                 To="0" />
                             </Storyboard>
                         </VisualTransition>
                         <VisualTransition x:Name="OffToOnTransition"
@@ -98,11 +97,11 @@
                                                  Storyboard.TargetName="InnerBackgroundElementOn"
                                                  Storyboard.TargetProperty="Opacity"
                                                  From="0"
-                                                 To="1"/>
+                                                 To="1" />
                             </Storyboard>
                         </VisualTransition>
                     </VisualStateGroup.Transitions>
-                    <VisualState x:Name="Dragging" >
+                    <VisualState x:Name="Dragging">
                         <Storyboard>
                         </Storyboard>
                     </VisualState>
@@ -139,8 +138,8 @@
                         <Storyboard>
                             <DoubleAnimation Storyboard.TargetName="OnContentPresenter"
                                            Storyboard.TargetProperty="Opacity"
-                                           To="1"
-                                           Duration="0" />
+                               To="1"
+                               Duration="0" />
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="IsHitTestVisible" Storyboard.TargetName="OnContentPresenter">
                                 <DiscreteObjectKeyFrame KeyTime="0">
                                     <DiscreteObjectKeyFrame.Value>
@@ -208,16 +207,16 @@
                        StrokeThickness="1" />
             <Rectangle x:Name="SwitchKnobBounds"                       
                        Grid.Row="2"
-                       Opacity="0"/>
+                       Opacity="0" />
             <Rectangle x:Name="InnerBackgroundElement"
                        Margin="3"
                        Grid.Row="2"
-                       Fill="{StaticResource DXToggleSwitchInnerBackgroundOffBrush}"/>
+                       Fill="{StaticResource DXToggleSwitchInnerBackgroundOffBrush}" />
             <Rectangle x:Name="InnerBackgroundElementOn"
                        Margin="3"
                        Grid.Row="2"
                        Fill="{StaticResource DXToggleSwitchInnerBackgroundOnBrush}"
-                       Opacity="0"/>
+                       Opacity="0" />
             <Grid x:Name="SwitchKnob"
                   Grid.Row="2"
                   HorizontalAlignment="Left"
@@ -226,12 +225,12 @@
                 <Rectangle x:Name="SwitchKnobSlider"
                    Width="15"
                    Height="20"
-                   Fill="{ThemeResource DXToggleSwitchSliderBrush}"/>
+                   Fill="{ThemeResource DXToggleSwitchSliderBrush}" />
                 <Grid.RenderTransform>
                     <TranslateTransform x:Name="KnobTranslateTransform" />
                 </Grid.RenderTransform>
             </Grid>
-            <Thumb x:Name="SwitchThumb" AutomationProperties.AccessibilityView="Raw" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" >
+            <Thumb x:Name="SwitchThumb" AutomationProperties.AccessibilityView="Raw" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3">
                 <Thumb.Template>
                     <ControlTemplate TargetType="Thumb">
                         <Rectangle Fill="Transparent" />
@@ -243,14 +242,14 @@
 
     <Style TargetType="ToggleSwitch" x:Key="SystemToggleSwitchStyle">
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="{ThemeResource DXToggleSwitchForegroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource DXToggleSwitchForegroundBrush}" />
         <Setter Property="BorderBrush" Value="{ThemeResource DXToggleSwitchBorderBrush}" />
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
-        <Setter Property="Template" Value="{StaticResource DXToggleSwitchTemplate}"/>
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
+        <Setter Property="Template" Value="{StaticResource DXToggleSwitchTemplate}" />
     </Style>
 
-    <Style TargetType="ToggleSwitch" BasedOn="{StaticResource SystemToggleSwitchStyle}"/>
+    <Style TargetType="ToggleSwitch" BasedOn="{StaticResource SystemToggleSwitchStyle}" />
 
 </ResourceDictionary>
 

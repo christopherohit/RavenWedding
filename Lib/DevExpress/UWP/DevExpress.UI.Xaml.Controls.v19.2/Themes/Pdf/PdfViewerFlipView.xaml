@@ -1,11 +1,10 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dxcip="using:DevExpress.UI.Xaml.Controls.Internal.Pdf"
 	xmlns:dx="using:DevExpress.Core">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/Pdf/PdfViewerGeneric.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v20.2/Themes/Pdf/PdfViewerGeneric.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="FlipViewPageStyle" TargetType="dxcip:PdfPageControl">
@@ -28,14 +27,14 @@
                             <Border Width="{Binding Width}"
                                     Height="{Binding Height}">
                                 <Image x:Name="PART_Image"
-                                       Source="{Binding ImageSource}"/>
+                                       Source="{Binding ImageSource}" />
                             </Border>
                             <Path x:Name="PART_TextHighlight"
                                   Data="{Binding TextHighlight.HighlightGeometry}"
-                                  Fill="{ThemeResource PdfTextSearchResultHighlightedBrush}"/>
+                                  Fill="{ThemeResource PdfTextSearchResultHighlightedBrush}" />
                             <Path x:Name="PART_TextSelection"
                                   Data="{Binding TextHighlight.SelectionGeometry}"
-                                  Fill="{ThemeResource PdfTextSearchResultSelectedBrush}"/>
+                                  Fill="{ThemeResource PdfTextSearchResultSelectedBrush}" />
                         </Canvas>
                     </ScrollViewer>
                 </ControlTemplate>
@@ -49,7 +48,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="FlipViewItem">
-                    <dxcip:PdfPageControl Style="{StaticResource FlipViewPageStyle}"/>
+                    <dxcip:PdfPageControl Style="{StaticResource FlipViewPageStyle}" />
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -63,17 +62,17 @@
                 Height="80">
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Target="PART_Root.Background" Value="{ThemeResource PdfNavigationItemBackgroundHoverBrush}"/>
-                            <Setter Target="PART_Arrow.Fill" Value="{ThemeResource PdfNavigationItemForegroundHoverBrush}"/>
+                            <Setter Target="PART_Root.Background" Value="{ThemeResource PdfNavigationItemBackgroundHoverBrush}" />
+                            <Setter Target="PART_Arrow.Fill" Value="{ThemeResource PdfNavigationItemForegroundHoverBrush}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Target="PART_Root.Background" Value="{ThemeResource PdfNavigationItemBackgroundPressedBrush}"/>
-                            <Setter Target="PART_Arrow.Fill" Value="{ThemeResource PdfNavigationItemForegroundPressedBrush}"/>
+                            <Setter Target="PART_Root.Background" Value="{ThemeResource PdfNavigationItemBackgroundPressedBrush}" />
+                            <Setter Target="PART_Arrow.Fill" Value="{ThemeResource PdfNavigationItemForegroundPressedBrush}" />
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>
@@ -87,32 +86,32 @@
                   Margin="1,0,-1,0"
                   HorizontalAlignment="Center"
                   VerticalAlignment="Center"
-                  UseLayoutRounding="False"/>
+                  UseLayoutRounding="False" />
         </Border>
     </ControlTemplate>
 
     <Style TargetType="dxcip:PdfViewerFlipView">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="TabNavigation" Value="Once"/>
-        <Setter Property="IsTabStop" Value="False"/>
-        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
-        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
-        <Setter Property="ScrollViewer.IsHorizontalRailEnabled" Value="False"/>
-        <Setter Property="ScrollViewer.IsVerticalRailEnabled" Value="False"/>
-        <Setter Property="ScrollViewer.IsHorizontalScrollChainingEnabled" Value="True"/>
-        <Setter Property="ScrollViewer.IsVerticalScrollChainingEnabled" Value="True"/>
-        <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False"/>
-        <Setter Property="ScrollViewer.BringIntoViewOnFocusChange" Value="True"/>
-        <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling"/>
-        <Setter Property="ItemContainerStyle" Value="{StaticResource PdfFlipViewItemContainerStyle}"/>
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="TabNavigation" Value="Once" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden" />
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden" />
+        <Setter Property="ScrollViewer.IsHorizontalRailEnabled" Value="False" />
+        <Setter Property="ScrollViewer.IsVerticalRailEnabled" Value="False" />
+        <Setter Property="ScrollViewer.IsHorizontalScrollChainingEnabled" Value="True" />
+        <Setter Property="ScrollViewer.IsVerticalScrollChainingEnabled" Value="True" />
+        <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False" />
+        <Setter Property="ScrollViewer.BringIntoViewOnFocusChange" Value="True" />
+        <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling" />
+        <Setter Property="ItemContainerStyle" Value="{StaticResource PdfFlipViewItemContainerStyle}" />
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
                     <VirtualizingStackPanel AreScrollSnapPointsRegular="True" 
                                             Orientation="Horizontal"
-                                            VerticalAlignment="Top"/>
+                                            VerticalAlignment="Top" />
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
@@ -142,7 +141,7 @@
                                               VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}" 
                                               VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}" 
                                               ZoomMode="Disabled">
-                                    <ItemsPresenter/>
+                                    <ItemsPresenter />
                                 </ScrollViewer>
                                 <Button x:Name="PreviousButtonHorizontal" 
                                         Template="{StaticResource FlipViewNavigationButtonTemplate}"
@@ -157,7 +156,7 @@
                                 <Button x:Name="NextButtonHorizontal" 
                                         Template="{StaticResource FlipViewNavigationButtonTemplate}"
                                         HorizontalAlignment="Right" 
-                                        Height="80"
+                                        Height="80" 
                                         IsTabStop="False" 
                                         VerticalAlignment="Center" 
                                         Width="80"
@@ -168,18 +167,20 @@
                                         Template="{StaticResource FlipViewNavigationButtonTemplate}"
                                         HorizontalAlignment="Center" 
                                         Height="80" 
-                                        IsTabStop="False"
+                                        IsTabStop="False" 
                                         VerticalAlignment="Top" 
-                                        Width="80">
+                                        Width="80"
+                                        >
                                     <Geometry>M5.63,0 L11.11,5.55 L11.05,9.67 L5.64,4.12 L0.23,9.67 L0.17,5.55 z</Geometry>
                                 </Button>
                                 <Button x:Name="NextButtonVertical" 
                                         Template="{StaticResource FlipViewNavigationButtonTemplate}"
                                         HorizontalAlignment="Center" 
                                         Height="80" 
-                                        IsTabStop="False"
+                                        IsTabStop="False" 
                                         VerticalAlignment="Bottom" 
-                                        Width="80">
+                                        Width="80"
+                                        >
                                     <Geometry>M0.06,0 L5.47,5.56 L10.88,0 L10.94,4.12 L5.48,9.67 L0,4.12 z</Geometry>
                                 </Button>
                             </Grid>

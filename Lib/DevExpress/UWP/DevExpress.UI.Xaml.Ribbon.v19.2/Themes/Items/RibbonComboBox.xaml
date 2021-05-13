@@ -1,5 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dxr="using:DevExpress.UI.Xaml.Ribbon"
     xmlns:dxx="using:DevExpress.UI.Xaml"
@@ -10,26 +9,26 @@
     xmlns:Internal="using:DevExpress.UI.Xaml.Ribbon.Internal">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v19.2/Themes/Items/RibbonComboBox.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Ribbon.v20.2/Themes/Items/RibbonComboBox.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <Core:ObjectToVisibilityConverter x:Key="ObjectToVisibilityConverter"/>
+    <Core:ObjectToVisibilityConverter x:Key="ObjectToVisibilityConverter" />
 
     <!--#region RibbonComboBox-->
 
     <Style TargetType="dxx:DXListViewItemContainer" x:Key="RibbonComboBoxItemContainerStyle">
         <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
         <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
-        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundBrush}" />
-        <Setter Property="TabNavigation" Value="Local"/>
-        <Setter Property="IsHoldingEnabled" Value="True"/>
-        <Setter Property="Padding" Value="8, 12"/>
-        <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}"/>
-        <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}"/>
-        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="TabNavigation" Value="Local" />
+        <Setter Property="IsHoldingEnabled" Value="True" />
+        <Setter Property="Padding" Value="8, 12" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}" />
+        <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="dxx:DXListViewItemContainer">
@@ -37,39 +36,39 @@
                           Background="{TemplateBinding Background}"
                           IsHitTestVisible="True">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="SelectionStates">
-                                <VisualState x:Name="Unselected"/>
+                                <VisualState x:Name="Unselected" />
                                 <VisualState x:Name="UnselectedPointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundHoverBrush}"/>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundHoverBrush}" />
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="UnselectedPressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundPressedrBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundPressedrBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Selected">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundSelectedBrush}"/>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundSelectedBrush}"/>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundSelectedBrush}" />
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundSelectedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="SelectedPointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundSelectedBrush}"/>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundSelectedHoverBrush}"/>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundSelectedBrush}" />
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundSelectedHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="SelectedPressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundSelectedBrush}"/>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundSelectedPressedBrush}"/>
+                                        <Setter Target="PART_Content.Foreground" Value="{ThemeResource RibbonComboBoxItemForegroundSelectedBrush}" />
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxItemBackgroundSelectedPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
@@ -77,8 +76,9 @@
                         <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
                                   IsThreeState="False" 
                                   MinWidth="0"
-                                  Visibility="{Binding IsCheckable, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
-                        <ContentPresenter x:Name="PART_Content" Margin="{TemplateBinding Padding}" Grid.Column="1" VerticalContentAlignment="Center"/>
+                                  Visibility="{Binding IsCheckable, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                        <ContentPresenter x:Name="PART_Content"
+                                          Margin="{TemplateBinding Padding}" Grid.Column="1" VerticalContentAlignment="Center" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -86,20 +86,20 @@
     </Style>
 
     <Style TargetType="dxr:RibbonComboBox">
-        <Setter Property="ItemContainerStyle" Value="{StaticResource RibbonComboBoxItemContainerStyle}"/>
-        <Setter Property="Margin" Value="8,7"/>
-        <Setter Property="MinWidth" Value="{ThemeResource ComboBoxThemeMinWidth}"/>
-        <Setter Property="MinHeight" Value="32"/>
-        <Setter Property="Foreground" Value="{ThemeResource RibbonComboBoxForegroundBrush}"/>
-        <Setter Property="Background" Value="{ThemeResource RibbonComboBoxBackgroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource RibbonComboBoxBorderBrush}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="ItemContainerStyle" Value="{StaticResource RibbonComboBoxItemContainerStyle}"/>
-        <Setter Property="UseIndependentFlyout" Value="True"/>
+        <Setter Property="ItemContainerStyle" Value="{StaticResource RibbonComboBoxItemContainerStyle}" />
+        <Setter Property="Margin" Value="8,7" />
+        <Setter Property="MinWidth" Value="{ThemeResource ComboBoxThemeMinWidth}" />
+        <Setter Property="MinHeight" Value="32" />
+        <Setter Property="Foreground" Value="{ThemeResource RibbonComboBoxForegroundBrush}" />
+        <Setter Property="Background" Value="{ThemeResource RibbonComboBoxBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource RibbonComboBoxBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="ItemContainerStyle" Value="{StaticResource RibbonComboBoxItemContainerStyle}" />
+        <Setter Property="UseIndependentFlyout" Value="True" />
         <Setter Property="SelectedItemsTemplate">
             <Setter.Value>
                 <DataTemplate>
-                    <dxc:DXComboBoxSelectedItemsPresenter SelectedItemsSource="{Binding}"/>
+                    <dxc:DXComboBoxSelectedItemsPresenter SelectedItemsSource="{Binding}" />
                 </DataTemplate>
             </Setter.Value>
         </Setter>
@@ -109,21 +109,22 @@
                     <Grid BorderBrush="{TemplateBinding BorderBrush}"
                           BorderThickness="{TemplateBinding BorderThickness}"
                           Background="{TemplateBinding Background}"
-                          x:Name="PART_Background">
+                          x:Name="PART_Background"
+                          >
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="PointerOver">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxBackgroundHoverBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxBackgroundHoverBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <VisualState.Setters>
-                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxBackgroundPressedBrush}"/>
+                                        <Setter Target="PART_Background.Background" Value="{ThemeResource RibbonComboBoxBackgroundPressedBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
-                                <VisualState x:Name="Disabled"/>
+                                <VisualState x:Name="Disabled" />
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
 
@@ -131,12 +132,12 @@
                                           x:Name="PART_Content"
                                           Content="{TemplateBinding SelectedItem}"
                                           VerticalAlignment="Center" 
-                                          HorizontalAlignment="Left"/>
+                                          HorizontalAlignment="Left" />
                         <PathIcon Margin="4" Data="F0 M 0,0 l 1 0 7 7 7 -7 1 0 -8 8 -8 -8 z" 
                                     Width="16" Height="8" 
                                     HorizontalAlignment="Right" 
                                     VerticalAlignment="Center"
-                                    Foreground="{TemplateBinding Foreground}"/>
+                                    Foreground="{TemplateBinding Foreground}" />
                         <dxxi:NestedMenuFlyoutControl PlacementTarget="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                                       CloseOnTargetClick="{TemplateBinding XamlInternal:MenuFlyoutControl.CloseOnTargetClick}"
                                                       DataContext="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"
@@ -158,7 +159,7 @@
                                             ShowCheckBoxes="{Binding ShowCheckBoxes}"
                                             BorderThickness="1"
                                             BorderBrush="{TemplateBinding BorderBrush}"
-                                            MaxHeight="300"/>
+                                            MaxHeight="300" />
                         </dxxi:NestedMenuFlyoutControl>
                     </Grid>
                 </ControlTemplate>

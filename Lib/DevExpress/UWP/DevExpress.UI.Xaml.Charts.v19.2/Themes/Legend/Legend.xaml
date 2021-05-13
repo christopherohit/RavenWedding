@@ -1,25 +1,24 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="using:DevExpress.Core"
     xmlns:local="using:DevExpress.UI.Xaml.Charts">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Charts.v19.2/Themes/Legend/Legend.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Charts.v20.2/Themes/Legend/Legend.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="local:Legend">
         <Setter Property="Background" Value="{ThemeResource ChartLegendBackgroundThemeBrush}" />
-        <Setter Property="Foreground" Value="{ThemeResource ChartLegendForegroundThemeBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource ChartLegendBorderThemeBrush}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Padding" Value="8"/>
-        <Setter Property="Margin" Value="16"/>
+        <Setter Property="Foreground" Value="{ThemeResource ChartLegendForegroundThemeBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource ChartLegendBorderThemeBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="Margin" Value="16" />
         <Setter Property="ItemTemplate">
             <Setter.Value>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="6,2">
-                        <ContentPresenter Content="{Binding}" ContentTemplate="{Binding LegendMarkerTemplate}"/>
+                        <ContentPresenter Content="{Binding}" ContentTemplate="{Binding LegendMarkerTemplate}" />
                         <TextBlock VerticalAlignment="Center"
                                    Margin="6,2,0,0" 
                                    Text="{Binding Path=Text}"
@@ -28,7 +27,7 @@
                                    FontSize="{Binding Path=Legend.FontSize}"        
                                    FontStretch="{Binding Path=Legend.FontStretch}"
                                    FontStyle="{Binding Path=Legend.FontStyle}"
-                                   FontWeight="{Binding Path=Legend.FontWeight}"/>
+                                   FontWeight="{Binding Path=Legend.FontWeight}" />
                     </StackPanel>
                 </DataTemplate>
             </Setter.Value>

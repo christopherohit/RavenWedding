@@ -1,5 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Core="using:DevExpress.Core"
     xmlns:local="using:DevExpress.UI.Xaml.Layout"
@@ -7,11 +6,11 @@
     >
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v19.2/Themes/Buttons/ShapeButtonThreeState.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Layout.v20.2/Themes/Buttons/ShapeButtonThreeState.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <Core:UnsetValueConverter x:Key="BorderBindingConverter"/>
-    <ve:BorderThicknessToDoubleConverter x:Key="BorderThicknessBindingConverter"/>
+    <Core:UnsetValueConverter x:Key="BorderBindingConverter" />
+    <ve:BorderThicknessToDoubleConverter x:Key="BorderThicknessBindingConverter" />
     <ControlTemplate x:Key="ShapeButtonThreeStateTemplate" TargetType="local:ShapeButtonThreeState">
         <Grid>
             <ve:BorderPresenter x:Name="PART_Border"
@@ -24,8 +23,7 @@
                             >
                 <ve:BorderPresenter.Resources>
                     <DataTemplate x:Key="DefaultTemplate">
-                        <Rectangle
-                            Fill="{Binding Background, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
+                        <Rectangle Fill="{Binding Background, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
                             Stroke="{Binding BorderBrush, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
                             StrokeThickness="{Binding BorderThickness, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ResourceKey=BorderThicknessBindingConverter}}" 
                             />
@@ -41,115 +39,115 @@
                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                             ShapeStyle="{TemplateBinding ContentShapeStyle}"
                             />
-            <Rectangle x:Name="FocusVisualWhite" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="0.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ShapeButtonThreeStateFocusVisualWhiteStrokeThemeBrush}" StrokeDashArray="1,1"/>
-            <Rectangle x:Name="FocusVisualBlack" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ShapeButtonThreeStateFocusVisualBlackStrokeThemeBrush}" StrokeDashArray="1,1"/>
+            <Rectangle x:Name="FocusVisualWhite" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="0.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ShapeButtonThreeStateFocusVisualWhiteStrokeThemeBrush}" StrokeDashArray="1,1" />
+            <Rectangle x:Name="FocusVisualBlack" Opacity="0" IsHitTestVisible="False" StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource ShapeButtonThreeStateFocusVisualBlackStrokeThemeBrush}" StrokeDashArray="1,1" />
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="Normal" />
                     <VisualState x:Name="PointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePointerOverBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePointerOverBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledBorderThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledBorderThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Checked">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedBorderThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedBorderThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="CheckedPointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPointerOverBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPointerOverBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPointerOverBorderThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPointerOverBorderThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="CheckedPressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPressedBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPressedBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPressedBorderThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPressedBorderThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPressedForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedPressedForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="CheckedDisabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedDisabledBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedDisabledBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledBorderThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledBorderThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedDisabledForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateCheckedDisabledForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="Indeterminate"/>
+                    <VisualState x:Name="Indeterminate" />
                     <VisualState x:Name="IndeterminatePointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePointerOverBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePointerOverBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="IndeterminatePressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedBackgroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedBackgroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStatePressedForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="IndeterminateDisabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="PART_Border">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledBorderThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledBorderThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PART_Content">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledForegroundThemeBrush}"/>
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ShapeButtonThreeStateDisabledForegroundThemeBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -157,29 +155,29 @@
                 <VisualStateGroup x:Name="FocusStates">
                     <VisualState x:Name="Focused">
                         <Storyboard>
-                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualWhite"/>
-                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualBlack"/>
+                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualWhite" />
+                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualBlack" />
                         </Storyboard>
                     </VisualState>
-                    <VisualState x:Name="Unfocused"/>
-                    <VisualState x:Name="PointerFocused"/>
+                    <VisualState x:Name="Unfocused" />
+                    <VisualState x:Name="PointerFocused" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
         </Grid>
     </ControlTemplate>
 
     <Style TargetType="local:ShapeButtonThreeState">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{ThemeResource ShapeButtonThreeStateForegroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource ShapeButtonThreeStateBorderBrush}"/>
-        <Setter Property="BorderThickness" Value="{ThemeResource ToggleButtonBorderThemeThickness}"/>
-        <Setter Property="Padding" Value="17,9,17,9"/>
-        <Setter Property="HorizontalAlignment" Value="Left"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
-        <Setter Property="FontWeight" Value="SemiBold"/>
-        <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}"/>
-        <Setter Property="Template" Value="{StaticResource ResourceKey=ShapeButtonThreeStateTemplate}"/>
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{ThemeResource ShapeButtonThreeStateForegroundBrush}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource ShapeButtonThreeStateBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{ThemeResource ToggleButtonBorderThemeThickness}" />
+        <Setter Property="Padding" Value="17,9,17,9" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}" />
+        <Setter Property="Template" Value="{StaticResource ResourceKey=ShapeButtonThreeStateTemplate}" />
     </Style>
 </ResourceDictionary>
 

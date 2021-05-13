@@ -1,10 +1,9 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="using:DevExpress.Core">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/ToggleButton.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/ToggleButton.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="DXToggleButtonTemplate" TargetType="ToggleButton">
@@ -112,7 +111,7 @@
                         </Storyboard>
                     </VisualState>
 
-                    <VisualState x:Name="Indeterminate"/>
+                    <VisualState x:Name="Indeterminate" />
                     <VisualState x:Name="IndeterminatePointerOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
@@ -167,7 +166,7 @@
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Unfocused" />
-                    <VisualState x:Name="PointerFocused"/>
+                    <VisualState x:Name="PointerFocused" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
             <Border x:Name="FocusBorder"
@@ -184,10 +183,10 @@
                                       Padding="{TemplateBinding Padding}"
                                       HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
-                                      AutomationProperties.AccessibilityView="Raw"/>
+                                      AutomationProperties.AccessibilityView="Raw" />
                     <Rectangle x:Name="FocusRectangle" IsHitTestVisible="False" Opacity="0" StrokeDashOffset="1" 
                            StrokeEndLineCap="Square" Stroke="{ThemeResource DXToggleButtonInnerFocusVisualStroke}"
-                           StrokeDashArray="{TemplateBinding BorderThickness}"/>
+                           StrokeDashArray="{TemplateBinding BorderThickness}" />
                 </Grid>
             </Border>
         </Grid>
@@ -195,14 +194,14 @@
 
     <Style TargetType="ToggleButton" x:Key="SystemToggleButtonStyle">
         <Setter Property="Background" Value="{ThemeResource DXToggleButtonBackgroundBrush}" />
-        <Setter Property="Foreground" Value="{ThemeResource DXToggleButtonForegroundBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource DXToggleButtonForegroundBrush}" />
         <Setter Property="BorderBrush" Value="{ThemeResource DXToggleButtonBorderBrush}" />
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
-        <Setter Property="Template" Value="{StaticResource DXToggleButtonTemplate}"/>
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
+        <Setter Property="Template" Value="{StaticResource DXToggleButtonTemplate}" />
     </Style>
 
-    <Style TargetType="ToggleButton" BasedOn="{StaticResource SystemToggleButtonStyle}"/>
+    <Style TargetType="ToggleButton" BasedOn="{StaticResource SystemToggleButtonStyle}" />
 
 </ResourceDictionary>
 

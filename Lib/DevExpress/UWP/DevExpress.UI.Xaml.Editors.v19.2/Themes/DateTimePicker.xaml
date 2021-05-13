@@ -1,5 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:DevExpress.UI.Xaml.Editors.Native"
     xmlns:dxe="using:DevExpress.UI.Xaml.Editors" 
@@ -7,25 +6,23 @@
     xmlns:dxmvvm="using:DevExpress.Mvvm.UI">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v19.2/Themes/DateTimePicker.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Editors.v20.2/Themes/DateTimePicker.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <dx:BooleanToDoubleConverter ValueFalse="1" ValueTrue="0" x:Key="SelectedConverter"/>
-    <dxe:DateTimePickerItemTemplateSelector x:Key="DateTimePicker_ItemTemplateSelector"/>
+    <dx:BooleanToDoubleConverter ValueFalse="1" ValueTrue="0" x:Key="SelectedConverter" />
+    <dxe:DateTimePickerItemTemplateSelector x:Key="DateTimePicker_ItemTemplateSelector" />
     <dxmvvm:FormatStringConverter x:Key="DateTimePickerItemTemplate_MonthConverter" FormatString="MM" OutStringCaseFormat="Lower" />
     <dxmvvm:FormatStringConverter x:Key="DateTimePickerItemTemplate_DayConverter" FormatString="dddd" OutStringCaseFormat="Lower" />
 
     <DataTemplate x:Name="DateTimePickerItemTemplate_Year">
         <Grid>
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Transparent">
-                <TextBlock
-                    TextAlignment="Center"
+                <TextBlock TextAlignment="Center"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     FontSize="22"
                     Text="{Binding Path=Text}">
                 </TextBlock>
-                <TextBlock 
-                    TextAlignment="Center"
+                <TextBlock TextAlignment="Center"
                     FontSize="9" 
                     FontWeight="{Binding Path=ContentFontWeight}"
                     Grid.Row="2"
@@ -36,15 +33,13 @@
     </DataTemplate>
     <DataTemplate x:Name="DateTimePickerItemTemplate_Month">
         <Grid>
-            <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Bottom" Background="Transparent">
-                <TextBlock 
-                    TextAlignment="Center"
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Transparent">
+                <TextBlock TextAlignment="Center"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     FontSize="22"
                     Text="{Binding Path=Value, Converter={StaticResource DateTimePickerItemTemplate_MonthConverter}}">
                 </TextBlock>
-                <TextBlock 
-                    TextAlignment="Center"
+                <TextBlock TextAlignment="Center"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     FontSize="9" 
                     Text="{Binding Path=Text}">
@@ -54,15 +49,13 @@
     </DataTemplate>
     <DataTemplate x:Name="DateTimePickerItemTemplate_Day">
         <Grid>
-            <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Bottom" Background="Transparent">
-                <TextBlock 
-                    TextAlignment="Center"
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Transparent">
+                <TextBlock TextAlignment="Center"
                     FontWeight="{Binding Path=ContentFontWeight}"
-                    FontSize="22"                     
+                    FontSize="22"
                     Text="{Binding Path=Text}">
                 </TextBlock>
-                <TextBlock 
-                    TextAlignment="Center"
+                <TextBlock TextAlignment="Center"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     FontSize="9" 
                     Text="{Binding Path=Value, Converter={StaticResource DateTimePickerItemTemplate_DayConverter}}">
@@ -73,10 +66,9 @@
 
     <DataTemplate x:Name="DateTimePickerItemTemplate_Hour24">
         <Grid>
-            <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Center">
-                <TextBlock 
-                    TextAlignment="Center"
-                    FontSize="22"                     
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                <TextBlock TextAlignment="Center"
+                    FontSize="22"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     Text="{Binding Path=Text}">
                 </TextBlock>
@@ -85,10 +77,9 @@
     </DataTemplate>
     <DataTemplate x:Name="DateTimePickerItemTemplate_Hour12">
         <Grid>
-            <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Center">
-                <TextBlock 
-                    TextAlignment="Center"
-                    FontSize="22" 
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                <TextBlock TextAlignment="Center"
+                    FontSize="22"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     Text="{Binding Path=Text}">
                 </TextBlock>
@@ -97,10 +88,9 @@
     </DataTemplate>
     <DataTemplate x:Name="DateTimePickerItemTemplate_Minute">
         <Grid>
-            <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Center">
-                <TextBlock 
-                    TextAlignment="Center"
-                    FontSize="22" 
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                <TextBlock TextAlignment="Center"
+                    FontSize="22"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     Text="{Binding Path=Text}">
                 </TextBlock>
@@ -110,9 +100,8 @@
     <DataTemplate x:Name="DateTimePickerItemTemplate_Second">
         <Grid>
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
-                <TextBlock 
-                    TextAlignment="Center"
-                    FontSize="22" 
+                <TextBlock TextAlignment="Center"
+                    FontSize="22"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     Text="{Binding Path=Text}">
                 </TextBlock>
@@ -121,10 +110,9 @@
     </DataTemplate>
     <DataTemplate x:Name="DateTimePickerItemTemplate_Millisecond">
         <Grid>
-            <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Center">
-                <TextBlock 
-                    TextAlignment="Center"
-                    FontSize="22" 
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                <TextBlock TextAlignment="Center"
+                    FontSize="22"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     Text="{Binding Path=Text}">
                 </TextBlock>
@@ -133,10 +121,9 @@
     </DataTemplate>
     <DataTemplate x:Name="DateTimePickerItemTemplate_AmPm">
         <Grid>
-            <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Center">
-                <TextBlock 
-                    TextAlignment="Center"
-                    FontSize="22" 
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                <TextBlock TextAlignment="Center"
+                    FontSize="22"
                     FontWeight="{Binding Path=ContentFontWeight}"
                     Text="{Binding Path=Text}" FontFamily="Global User Interface">
                 </TextBlock>
@@ -155,8 +142,7 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <dxe:DateTimePickerSelector 
-                        ItemsSource="{Binding Path=Items}" 
+                    <dxe:DateTimePickerSelector ItemsSource="{Binding Path=Items}" 
                         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" 
                         IsAnimated="{Binding Path=IsAnimated, Mode=TwoWay}" 
                         IsExpanded="{Binding Path=IsExpanded, Mode=TwoWay}"
@@ -167,16 +153,15 @@
         </ItemsControl>
     </ControlTemplate>
     <Style x:Key="DateTimePickerItemBaseStyle" TargetType="dxe:DateTimePickerItem">
-        <Setter Property="Background" Value="{ThemeResource DateTimePickerItemUnselectedBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="{ThemeResource DateTimePickerItemUnselectedForegroundBrush}"/>
+        <Setter Property="Background" Value="{ThemeResource DateTimePickerItemUnselectedBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{ThemeResource DateTimePickerItemUnselectedForegroundBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="dxe:DateTimePickerItem">
                     <Grid Background="{TemplateBinding Background}"
                           Opacity="{Binding Path=IsFake, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource SelectedConverter}}"
                           Margin="1">
-                        <local:ContentContainer 
-                            Margin="{Binding Path=Padding, RelativeSource={RelativeSource TemplatedParent}}" 
+                        <local:ContentContainer Margin="{Binding Path=Padding, RelativeSource={RelativeSource TemplatedParent}}" 
                             VerticalContentAlignment="Stretch"
                             HorizontalContentAlignment="Stretch">
                             <ContentPresenter Margin="5"
@@ -190,12 +175,12 @@
         <Setter Property="IsTabStop" Value="False" />
     </Style>
     <Style TargetType="dxe:DateTimePickerItem" BasedOn="{StaticResource DateTimePickerItemBaseStyle}">
-        <Setter Property="Width" Value="76"/>
-        <Setter Property="Height" Value="76"/>
-        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Width" Value="76" />
+        <Setter Property="Height" Value="76" />
+        <Setter Property="Padding" Value="5" />
     </Style>
     <Style TargetType="dxe:DateTimePickerSelector">
-        <Setter Property="ItemTemplateSelector" Value="{StaticResource DateTimePicker_ItemTemplateSelector}"/>
+        <Setter Property="ItemTemplateSelector" Value="{StaticResource DateTimePicker_ItemTemplateSelector}" />
         <Setter Property="dx:FocusHelper2.Focusable" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
@@ -211,10 +196,10 @@
                                 <VisualState x:Name="Expanded">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="SelectedItem">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DateTimePickerItemSelectedBackgroundBrush}"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DateTimePickerItemSelectedBackgroundBrush}" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="SelectedItem">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DateTimePickerItemSelectedForegroundBrush}"/>
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource DateTimePickerItemSelectedForegroundBrush}" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <DoubleAnimation Duration="0:0:0.3" Storyboard.TargetName="pickerPanel" Storyboard.TargetProperty="Opacity" To="1" />
                                     </Storyboard>
@@ -233,7 +218,7 @@
                                                     Background="{ThemeResource DateTimePickerItemBackgroundBrush}"
                                                     Foreground="{ThemeResource DateTimePickerItemForegroundBrush}"
                                                     Orientation="Vertical"
-                                                    IsSelected="True"/>
+                                                    IsSelected="True" />
                         </Grid>
                         <local:MouseScrollingContainer IsLooped="{TemplateBinding IsLooped}" PanningDeceleration="0.005">
                             <ScrollViewer Height="Auto"
@@ -255,7 +240,7 @@
     </Style>
 
     <Style TargetType="dxe:DateTimePicker">
-        <Setter Property="Template" Value="{StaticResource DateTimePicker_Template}"/>
+        <Setter Property="Template" Value="{StaticResource DateTimePicker_Template}" />
     </Style>
 </ResourceDictionary>
 

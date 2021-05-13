@@ -1,0 +1,163 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxc="using:DevExpress.UI.Xaml.Controls"
+    xmlns:dxcip="using:DevExpress.UI.Xaml.Controls.Internal.Pdf"
+    xmlns:dxcis="using:DevExpress.UI.Xaml.Controls.Internal.SettingsBar"
+    xmlns:core="using:DevExpress.Core"
+    xmlns:mvvmui="using:DevExpress.Mvvm.UI"
+    xmlns:mvvmi="using:DevExpress.Mvvm.UI.Interactivity">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/Pdf/PdfViewerFlipView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/Pdf/SemanticZoomView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/Pdf/PdfContinuousView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.Controls.v19.2/Themes/Pdf/OverlayControl.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <core:NullToObjectConverter x:Key="ObjectToDoubleConverter" ValueNotNull="{StaticResource PdfViewerOverlayDefaultOpacity}" ValueNull="0" />
+
+    <ControlTemplate x:Key="PdfSinglePageViewTemplate" TargetType="dxcip:PdfSinglePageView">
+        <dxcip:PdfViewerFlipView x:Name="PART_ItemsContainer"
+                                 ItemsSource="{Binding Path=Pages, RelativeSource={RelativeSource Mode=TemplatedParent}}">
+        </dxcip:PdfViewerFlipView>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="PdfContinuousViewTemplate" TargetType="dxcip:PdfContinuousView">
+        <dxcip:PdfViewerListView x:Name="PART_ItemsContainer"
+                                 ItemsSource="{Binding Path=Pages, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                 MaxPageSize="{Binding MaxPageSize, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                 ContentMargin="{Binding ContentMargin, RelativeSource={RelativeSource Mode=TemplatedParent}}">
+        </dxcip:PdfViewerListView>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="PdfViewerControlTemplate" TargetType="dxc:PdfViewerControl">
+        <Border Background="{TemplateBinding Background}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                BorderBrush="{TemplateBinding BorderBrush}">
+            <Grid Margin="0">
+                <SemanticZoom x:Name="PART_SemanticZoom"
+                              Margin="0"
+                              Padding="0"
+                              ScrollViewer.ZoomMode="Enabled"
+                              IsZoomOutButtonEnabled="False"
+                              Opacity="{Binding ActualIsLoading, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource BoolToOpacityInvertConverter}}"
+                              ZoomedInView="{Binding CurrentView, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                              IsHitTestVisible="{Binding Document, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ObjectToBoolConverter}}">
+                    <SemanticZoom.ZoomedOutView>
+                        <dxcip:PdfThumbnailsView x:Name="PART_SemanticZoomItemsContainer"
+                                                 x:DeferLoadStrategy="Lazy"
+                                                 Style="{StaticResource SemanticZoomItemsContainerStyle}"
+                                                 ItemsSource="{Binding Path=CurrentView.Pages, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                 ThumbnailHeight="{Binding ThumbnailHeight, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                 ThumbnailSpacing="{Binding ThumbnailSpacing, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                 PrevailingPageSize="{Binding CurrentView.PrevailingPageSize, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                    </SemanticZoom.ZoomedOutView>
+                </SemanticZoom>
+                <dxcip:PdfErrorInfoBar VerticalAlignment="Center"
+                                       HorizontalAlignment="Center" 
+                                       ErrorInfo="{TemplateBinding ViewerError}"
+                                       OpenDocumentCommand="{Binding OpenFileCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       ShowOpenDocumentButton="{Binding ActualOverlaySettings.ShowOpenDocumentButton, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                <ProgressRing   Width="{ThemeResource PdfViewerProgressRingSize}"
+                                Height="{ThemeResource PdfViewerProgressRingSize}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Visibility="{Binding ActualIsLoading, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource BoolToVisibilityConverter}}"
+                                IsActive="{Binding ActualIsLoading, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                Foreground="{ThemeResource PdfLoadingIndicatorForegroundBrush}"/>
+
+                <dxcip:PdfOverlayControl x:Name="PART_PdfOverlay"
+                                         Owner="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                         Settings="{TemplateBinding ActualOverlaySettings}"/>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+
+    <Style x:Key="PdfViewerControlStyleBase" TargetType="dxc:PdfViewerControl">
+        <Setter Property="ThumbnailHeight" Value="{ThemeResource PdfViewerThumbnailHeight}"/>
+        <Setter Property="Background" Value="{ThemeResource PdfViewerControlBackground}"/>
+        <Setter Property="Foreground" Value="{ThemeResource PdfViewerControlForeground}"/>
+        <Setter Property="Template" Value="{StaticResource PdfViewerControlTemplate}"/>
+        <Setter Property="OverlaySettingsTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <dxc:SimpleSettingsBarOverlaySettings/>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="mvvmi:Interaction.BehaviorsTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <ItemsControl>
+                        <mvvmui:DialogService>
+                            <mvvmui:DialogService.ViewTemplate>
+                                <DataTemplate>
+                                    <dxcip:PdfPasswordDialog />
+                                </DataTemplate>
+                            </mvvmui:DialogService.ViewTemplate>
+                        </mvvmui:DialogService>
+                        <mvvmui:MessageBoxService />
+                    </ItemsControl>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="pdfViewBaseStyle" TargetType="dxcip:PdfViewBase">
+        <Setter Property="ScrollViewer.IsHorizontalScrollChainingEnabled" Value="False"/>
+        <Setter Property="core:StyleHelper.BindableSetters">
+            <Setter.Value>
+                <core:BindableSetterCollection>
+                    <core:BindableSetter Property="CurrentZoomFactor" Binding="{Binding Path=Owner.CurrentZoomFactor, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="CurrentPageIndex" Binding="{Binding Path=Owner.CurrentPageIndex, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="DefaultZoomFactor" Binding="{Binding Path=Owner.DefaultZoomFactor, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="MaxZoomFactor" Binding="{Binding Path=Owner.MaxZoomFactor, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="ZoomMode" Binding="{Binding Path=Owner.ZoomMode, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="PageMargin" Binding="{Binding Path=Owner.PageMargin, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="PageSpacing" Binding="{Binding Path=Owner.PageSpacing, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="ContentMargin" Binding="{Binding Path=Owner.ContentMargin, RelativeSource={RelativeSource Mode=Self}, Mode=TwoWay}"/>
+                    <core:BindableSetter Property="Document" Binding="{Binding Path=Owner.Document, RelativeSource={RelativeSource Mode=Self}}"/>
+                </core:BindableSetterCollection>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="dxcip:PdfSinglePageView" BasedOn="{StaticResource pdfViewBaseStyle}">
+        <Setter Property="Template" Value="{StaticResource PdfSinglePageViewTemplate}" />
+    </Style>
+
+    <Style TargetType="dxcip:PdfContinuousView" BasedOn="{StaticResource pdfViewBaseStyle}">
+        <Setter Property="Template" Value="{StaticResource PdfContinuousViewTemplate}" />
+    </Style>
+
+    <Style TargetType="dxcip:PdfPasswordDialog">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="dxcip:PdfPasswordDialog">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Please enter a Document Open password"
+                                   Margin="5"/>
+                        <PasswordBox Password="{Binding Password, Mode=TwoWay}" 
+                                     Grid.Row="1"
+                                     Margin="5"/>
+                        <TextBlock Text="The password is incorrect. Please make sure that Caps Lock is not enabled"
+                                   Grid.Row="2"
+                                   Margin="5"
+                                   Foreground="{ThemeResource PdfPasswordErrorBrush}"
+                                   Opacity="{Binding IsInvalidPassword, Converter={StaticResource BoolToOpacityConverter}}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+
+

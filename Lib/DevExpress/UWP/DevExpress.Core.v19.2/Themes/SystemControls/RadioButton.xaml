@@ -1,9 +1,8 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v19.2/Themes/SystemControls/RadioButton.Colors.xaml"/>
+        <ResourceDictionary Source="ms-appx:///DevExpress.Core.v20.2/Themes/SystemControls/RadioButton.Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="DXRadioButtonTemplate" TargetType="RadioButton">
@@ -74,7 +73,7 @@
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Unfocused" />
-                    <VisualState x:Name="PointerFocused"/>
+                    <VisualState x:Name="PointerFocused" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
             <Grid.ColumnDefinitions>
@@ -101,7 +100,7 @@
                           Height="20"
                           UseLayoutRounding="True"
                           Stroke="{ThemeResource DXRadioButtonInnerFocusVisualStroke}"
-                          Opacity="0"                          
+                          Opacity="0"
                           StrokeThickness="1" />
                 <Ellipse x:Name="CheckGlyph"
                           Width="10"
@@ -125,13 +124,13 @@
     </ControlTemplate>
 
     <Style TargetType="RadioButton" x:Key="SystemRadioButtonStyle">
-        <Setter Property="UseSystemFocusVisuals" Value="False"/>
-        <Setter Property="Foreground" Value="{ThemeResource DXRadioButtonForegroundBrush}"/>
+        <Setter Property="UseSystemFocusVisuals" Value="False" />
+        <Setter Property="Foreground" Value="{ThemeResource DXRadioButtonForegroundBrush}" />
         <Setter Property="Background" Value="{ThemeResource DXRadioButtonBackgroundBrush}" />
-        <Setter Property="Template" Value="{StaticResource DXRadioButtonTemplate}"/>
+        <Setter Property="Template" Value="{StaticResource DXRadioButtonTemplate}" />
     </Style>
 
-    <Style TargetType="RadioButton" BasedOn="{StaticResource SystemRadioButtonStyle}"/>
+    <Style TargetType="RadioButton" BasedOn="{StaticResource SystemRadioButtonStyle}" />
 
 </ResourceDictionary>
 

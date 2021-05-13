@@ -1,0 +1,34 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="using:DevExpress.Core"
+    xmlns:Internal="using:DevExpress.UI.Xaml.Internal"
+    xmlns:Controls="using:DevExpress.UI.Xaml.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///DevExpress.UI.Xaml.v19.2/Themes/SelectorControl.Common.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="Internal:SelectorItemEx" BasedOn="{StaticResource SelectorItemStyleBase}">
+        <Setter Property="Padding" Value="40,10,30,10"/>
+    </Style>
+
+    <Style TargetType="Internal:TreeNavigatorItem" BasedOn="{StaticResource TreeNavigatorItemStyleBase}">
+        <Setter Property="Padding" Value="40,10,0,10"/>
+        <Setter Property="IconPadding" Value="15,10"/>
+        <Setter Property="ArrowGlyph" Value="F0 M10,6 l5,5 h-10 v2 h10 l-5,5 h3 l6-6 l-6-6 z     
+                                             M0,12 a12,12 0 1 1 24,0 a12,12 0 1 1 -24,0 z
+                                             M2,12 a10,10 0 1 1 20,0 a10,10 0 1 1 -20,0 z"/>
+        <Setter Property="ArrowGlyphPressed" Value="F0 M10,6 l5,5 h-10 v2 h10 l-5,5 h3 l6-6 l-6-6 z     
+                                                    M0,12 a12,12 0 1 1 24,0 a12,12 0 1 1 -24,0 z"/>
+    </Style>
+
+    <Style TargetType="Internal:TreeNavigatorBackButton" BasedOn="{StaticResource TreeNavigatorHeaderButtonStyle}">
+        <Setter Property="Glyph" Value="F0 M11,6 l-6,6 l6,6 h3 l-5-5 h10 v-2 h-10 l5,-5 z     
+                                        M0,12 a12,12 0 1 1 24,0 a12,12 0 1 1 -24,0 z
+                                        M2,12 a10,10 0 1 1 20,0 a10,10 0 1 1 -20,0 z"/>
+        <Setter Property="GlyphPressed" Value="F0 M11,6 l-6,6 l6,6 h3 l-5-5 h10 v-2 h-10 l5,-5 z     
+                                               M0,12 a12,12 0 1 1 24,0 a12,12 0 1 1 -24,0 z"/>
+    </Style>
+</ResourceDictionary>
+
