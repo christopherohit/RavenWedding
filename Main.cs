@@ -60,6 +60,8 @@ namespace Raven
 
         private void Main_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'onYourWeddingDayDataSet1.DoanhThu' table. You can move, or remove it, as needed.
+            this.doanhThuTableAdapter.Fill(this.onYourWeddingDayDataSet1.DoanhThu);
             Opacity = 0;      //first the opacity is 0
 
             t1.Interval = 10;  //we'll increase the opacity every 10ms
@@ -149,25 +151,15 @@ namespace Raven
         private void bunifuCustomLabel1_MouseLeave(object sender, EventArgs e) // Create animation
         {
             bunifuCustomLabel1.Font = new Font(bunifuCustomLabel1.Font.Name, bunifuCustomLabel1.Font.SizeInPoints, FontStyle.Regular);
-            bunifuCustomLabel1.BackColor = Color.Black;
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            bunifuCustomLabel1.BackColor = Color.White;
         }
 
         private void radPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chartControl1_Click(object sender, EventArgs e)
         {
 
         }
