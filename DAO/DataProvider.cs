@@ -19,7 +19,7 @@ namespace Raven.DAO
             private set { DataProvider.instance = value; } 
         }
         private DataProvider() { }
-        private string cStr = "Data Source=DESKTOP-7CBSM7T;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
+        private string cStr = "Data Source=DESKTOP-F970216;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
 
         public DataTable ExecuteQuery (string query, object[] parameter = null)
         {
