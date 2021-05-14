@@ -1,15 +1,9 @@
-﻿using Raven.DTO;
+﻿using DevExpress.XtraEditors.Camera;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -26,9 +20,7 @@ namespace Raven
         {
             InitializeComponent();
             cameraControl1.Hide();
-            pictureBox3.Hide();
             button1.Hide();
-            pictureBox4.Hide();
             IsDirty = false;
         }
 
@@ -86,20 +78,60 @@ namespace Raven
         }
         #endregion
         
-        private void bunifuButton2_Click(object sender, EventArgs e) // Setup Button Require for Take a Photo
+        private void bunifuButton2_Click(object sender, EventArgs e) // Setup ANd Take a Photo
         {
+            int i = 0;
             var res = MessageBox.Show("This app will use your camera\nDo you accept ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (res == DialogResult.Yes)
             {
-                cameraControl1.Show();
-                pictureBox1.Hide();
-                pictureBox3.Show();
-                bunifuButton1.Visible = false;
-                bunifuButton2.Visible = false;
+                IsDirty = true;
+                using (var r= new MemoryStream())
+                {
+                    string path = FullSelect + @"Lesson\RIT\C #\WinForm\RavenWedding\Database\UserPic\" + ((Info)GetData).SetName.Text;
+                    string t = ((Info)GetData).SetName.Text;
+
+                    TakePictureDialog d = new TakePictureDialog();
+                    if (d.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        if (Directory.Exists(path))
+                        {
+                        sudunglai:
+                            i++;
+                            var ex = MessageBox.Show("The directory: " + path + i + " had exist\nDo you want to continue ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                            if (ex == DialogResult.Yes)
+                            {
+                                if (Directory.Exists(path + i))
+                                {
+                                    goto sudunglai;
+                                }
+                                else
+                                {
+                                    Directory.CreateDirectory(path + i);
+                                    Image ima = d.Image;
+                                    ima.Save(path + i + @"\" + t + ".jpg");
+                                }
+                            }
+                        }
+                        else
+                        {
+                            
+                            Directory.CreateDirectory(path);
+                            Image image = d.Image;
+                            image.Save(path + @"\" + t + ".jpg");
+                            pictureBox1.Image.Tag = image;
+                        }
+                    }
+                }
+                //cameraControl1.Show();
+                pictureBox1.Show();
+                button1.Show();
+                //pictureBox3.Show();
+                bunifuButton1.Visible = true;
+                bunifuButton2.Visible = true;
             }
             else
             {
-
+                IsDirty = false;
             }
 
             
@@ -148,72 +180,13 @@ namespace Raven
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e) // Take a picture, create a directory and save it into a folder which set name by member's name
-        {
-            IsDirty = true;
-            System.Windows.Forms.Form GetName = System.Windows.Forms.Application.OpenForms["Info"];
-            int i = 0;
-            try
-            {
-                Directory.CreateDirectory(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text) ;
-                if (Directory.Exists(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text))
-                {
-                sudunglai:
-                    i++;
-                    Directory.CreateDirectory(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i);
-                    if (Directory.Exists(FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i))
-                    {
-                        goto sudunglai;
-                    }
-                    else
-                    {
-                        string SetFull = FullSelect + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i;
-                        string SavePic = Path.Combine(SetFull, DateTime.Now.Year.ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Day.ToString() + "--" +
-                        DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-" + DateTime.Now.Second.ToString() +
-                        ".jpg");
-                        cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
-                        cameraControl1.Enabled = false;
-                    }
-                }
-                pictureBox4.Show();
-                button1.Show();
-
-            }
-            catch (Exception er)
-            {
-                MessageBox.Show(er.Message);
-                Directory.CreateDirectory(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text);
-                if (Directory.Exists(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text))
-                {
-                sudunglai:
-                    i++;
-                    Directory.CreateDirectory(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i);
-                    if (Directory.Exists(FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i))
-                    {
-                        goto sudunglai;
-                    }
-                    else
-                    {
-                        string SetFull = FullPath + @"Lesson\RIT\C #\Winform\Raven\Database\User_Data\" + ((Info)GetName).SetName.Text + i;
-                        string SavePic = Path.Combine(SetFull, DateTime.Now.Year.ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Day.ToString() + "--" +
-                        DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-" + DateTime.Now.Second.ToString() +
-                        ".jpg");
-                        cameraControl1.TakeSnapshot().Save(SavePic, ImageFormat.Jpeg);
-                        cameraControl1.Enabled = false;
-                    }
-                }
-                pictureBox4.Show();
-                button1.Show();
-                
-            }
-        }
-
-        protected void button1_Click(object sender, EventArgs e)
+        
+        private void button1_Click(object sender, EventArgs e) //Update Image
         {
             string cStr = "Data Source=DESKTOP-7CBSM7T;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(cStr))
             {
-                if(IsDirty == false)
+                if (IsDirty == false)
                 {
                     try
                     {
@@ -238,14 +211,16 @@ namespace Raven
                 }
                 else
                 {
-
+                    string file = pictureBox1.Image.Tag.ToString();
+                    byte[] bytes = File.ReadAllBytes(file);
+                    string UpSefl = "UPDATE nhanvien set Pic = @image where Phone = @phone";
+                    SqlCommand cm = new SqlCommand(UpSefl, con);
+                    cm.Parameters.AddWithValue("@phone", ((Info)GetData).GetPhone.Text);
+                    var binary = cm.Parameters.Add("@image", SqlDbType.VarBinary, -1);
+                    binary.Value = bytes;
                 }
             };
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
