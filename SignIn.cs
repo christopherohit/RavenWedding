@@ -12,6 +12,7 @@ namespace Raven
 {
     public partial class SignIn : Form
     {
+        bool IsDirty { get; set; }
         public Bunifu.Framework.UI.BunifuMaterialTextbox TextBox { get { return this.name; } }
         Authical form = new Authical();
         int i = 4;
@@ -46,6 +47,7 @@ namespace Raven
             pictureBox5.Visible = false;
             bunifuGradientPanel1.Hide();
             pictureBox7.Hide();
+            IsDirty = false;
         }
         #endregion
 
@@ -108,21 +110,25 @@ namespace Raven
 
         private void labelControl3_Click(object sender, EventArgs e) // Disable Form when open Authical
         {
+            IsDirty = true;
             form.Show();
             this.Enabled = false;
         }
 
         private void SignIn_Click(object sender, EventArgs e) //Check Form Sign Open? if yes disable it and say beep
-        {
+        { 
             panel2.Hide();
-            if (Application.OpenForms.OfType<Authical>().Count() == 1)
+            if (IsDirty == true)
             {
-                this.Enabled = false;
-                SystemSounds.Beep.Play();
-            }
-            else if (Application.OpenForms.OfType<Authical>().Count() < 1)
-            {
-                this.Enabled = true;
+                if (Application.OpenForms.OfType<Authical>().Count() == 1)
+                {
+                    this.Enabled = false;
+                    SystemSounds.Beep.Play();
+                }
+                else if (Application.OpenForms.OfType<Authical>().Count() < 1)
+                {
+                    this.Enabled = true;
+                }
             }
         }
 
@@ -173,6 +179,7 @@ namespace Raven
                 }
                 else
                 {
+                    // Add Feature avoid users Login into System 
                     var ez = MessageBox.Show("We recognize that you are't complete all your personal information \n Do you want to complete it", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (ez == DialogResult.Yes)
                     {
