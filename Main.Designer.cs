@@ -70,12 +70,16 @@ namespace Raven
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.DashPanel = new System.Windows.Forms.Panel();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.doanhThuTableAdapter = new Raven.OnYourWeddingDayDataSet1TableAdapters.DoanhThuTableAdapter();
+            this.doanhThuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.onYourWeddingDayDataSet1 = new Raven.OnYourWeddingDayDataSet1();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.bunifuButton8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -85,9 +89,6 @@ namespace Raven
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.onYourWeddingDayDataSet1 = new Raven.OnYourWeddingDayDataSet1();
-            this.doanhThuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.doanhThuTableAdapter = new Raven.OnYourWeddingDayDataSet1TableAdapters.DoanhThuTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -96,6 +97,8 @@ namespace Raven
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             this.radPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
@@ -105,8 +108,6 @@ namespace Raven
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -124,7 +125,6 @@ namespace Raven
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1362, 61);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
@@ -579,6 +579,20 @@ namespace Raven
             this.chartControl1.TabIndex = 7;
             this.chartControl1.Click += new System.EventHandler(this.chartControl1_Click);
             // 
+            // doanhThuTableAdapter
+            // 
+            this.doanhThuTableAdapter.ClearBeforeFill = true;
+            // 
+            // doanhThuBindingSource
+            // 
+            this.doanhThuBindingSource.DataMember = "DoanhThu";
+            this.doanhThuBindingSource.DataSource = this.onYourWeddingDayDataSet1;
+            // 
+            // onYourWeddingDayDataSet1
+            // 
+            this.onYourWeddingDayDataSet1.DataSetName = "OnYourWeddingDayDataSet1";
+            this.onYourWeddingDayDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // radPanel2
             // 
             this.radPanel2.BackColor = System.Drawing.Color.Transparent;
@@ -642,6 +656,7 @@ namespace Raven
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.labelControl1);
             this.panel3.Controls.Add(this.bunifuButton8);
             this.panel3.Controls.Add(this.bunifuButton7);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -654,6 +669,15 @@ namespace Raven
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(209, 601);
             this.panel3.TabIndex = 4;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(146, 585);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(63, 13);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "labelControl1";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // bunifuButton8
             // 
@@ -780,6 +804,7 @@ namespace Raven
             this.bunifuButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton7.TextMarginLeft = 10;
             this.bunifuButton7.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton7.Click += new System.EventHandler(this.bunifuButton7_Click);
             // 
             // pictureBox4
             // 
@@ -860,20 +885,6 @@ namespace Raven
             this.label1.TabIndex = 0;
             this.label1.Text = "New Order";
             // 
-            // onYourWeddingDayDataSet1
-            // 
-            this.onYourWeddingDayDataSet1.DataSetName = "OnYourWeddingDayDataSet1";
-            this.onYourWeddingDayDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // doanhThuBindingSource
-            // 
-            this.doanhThuBindingSource.DataMember = "DoanhThu";
-            this.doanhThuBindingSource.DataSource = this.onYourWeddingDayDataSet1;
-            // 
-            // doanhThuTableAdapter
-            // 
-            this.doanhThuTableAdapter.ClearBeforeFill = true;
-            // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -898,6 +909,8 @@ namespace Raven
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             this.radPanel2.ResumeLayout(false);
             this.radPanel2.PerformLayout();
@@ -905,12 +918,11 @@ namespace Raven
             this.radPanel1.ResumeLayout(false);
             this.radPanel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -948,5 +960,6 @@ namespace Raven
         private OnYourWeddingDayDataSet1TableAdapters.DoanhThuTableAdapter doanhThuTableAdapter;
         private OnYourWeddingDayDataSet1 onYourWeddingDayDataSet1;
         private System.Windows.Forms.BindingSource doanhThuBindingSource;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

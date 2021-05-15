@@ -11,12 +11,14 @@ using System.Threading.Tasks;
 using DevExpress.XtraBars.ToastNotifications;
 using DevExpress.Data;
 using System.Windows.Forms;
+using Raven.DAO;
 
 namespace Raven
 {
     public partial class Main : Form
     {
         public Label GetName { get { return this.bunifuCustomLabel1; } }
+        public DevExpress.XtraEditors.LabelControl GETID { get { return this.labelControl1; } }
         public Label GetCareer { get { return this.bunifuCustomLabel2; } }
         public Bunifu.UI.WinForms.BunifuPictureBox GetImage { get { return this.bunifuPictureBox1; } }
         Timer t1 = new Timer();
@@ -31,6 +33,7 @@ namespace Raven
             
 
         }
+
         #region
         private bool dragging = false;
         private Point dragCursorPoint;
@@ -73,6 +76,8 @@ namespace Raven
         {
             DashPanel.Show(); 
         }
+
+        #region Animation
         void fadeIn(object sender, EventArgs e) // FadeIn Animation
         {
             if (Opacity >= 1)
@@ -90,11 +95,7 @@ namespace Raven
             else
                 Opacity -= 0.05;
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        #endregion
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -160,6 +161,82 @@ namespace Raven
         }
 
         private void chartControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+            string ID = labelControl1.Text;
+            System.Windows.Forms.Form TakeEmails = System.Windows.Forms.Application.OpenForms["SignIn"];
+            string username = ((SignIn)TakeEmails).TextBox.Text;
+            
+            Profile Info = new Profile();
+            Info.GetBirth.Value = Convert.ToDateTime(GetDates(username).ToString());
+            Info.GetName.Text = Getame(username).ToString();
+            Info.GetRegency.Text = GetCareers(username).ToString();
+            Info.SetDes.Text = Des(username).ToString();
+            Info.GetPhone.Text = Phone(username).ToString();
+            Info.Geticm.Text = getICM(username).ToString();
+            Info.GetGender.Text = GetGender(username).ToString();
+            Info.GetMails.Text = GetMails(ID).ToString();
+            Info.GetAddress.Text = GetAddress(username).ToString();
+            Info.SetImage.Image = GetImages(username);
+            Info.ShowDialog();
+        }
+
+        #region Method
+        string GetMails(string ID)
+        {
+            return AccountDAO.Instance.Emails(ID);
+        }
+        string GetAddress(string username)
+        {
+            return AccountDAO.Instance.GetAddress(username);
+        }
+        string GetGender(string username)
+        {
+            return AccountDAO.Instance.GetGender(username);
+        }
+        string GetDates(string username)
+        {
+            return AccountDAO.Instance.GetDate(username);
+        }
+        bool GetPhone(string Phone)
+        {
+            return AccountDAO.Instance.GetPhone(Phone);
+        }
+        string Getame(string username)
+        {
+            return AccountDAO.Instance.Getame(username);
+        }
+        string GetCareers(string username)
+        {
+            return AccountDAO.Instance.GetCareer(username);
+        }
+        Image GetImages(string username)
+        {
+            return AccountDAO.Instance.Images(username);
+        }
+        string Phone(string username)
+        {
+            return AccountDAO.Instance.SetPhone(username);
+        }
+        string getICM(string username)
+        {
+            return AccountDAO.Instance.GetICM(username);
+        }
+        bool ChecKICM(string ICM)
+        {
+            return AccountDAO.Instance.ICMCheck(ICM);
+        }
+        string Des(string username)
+        {
+            return AccountDAO.Instance.GetDes(username);
+        }
+        #endregion
+
+        private void labelControl1_Click(object sender, EventArgs e)
         {
 
         }
