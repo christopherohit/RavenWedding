@@ -174,7 +174,8 @@ namespace Raven
                     this.Hide();
                     main.GetName.Text = GetName(username).ToString();
                     main.GetCareer.Text = GetCareer(username).ToString();
-                    /*main.GetImage.Image;*/
+                    main.GetImage.Image = GetImage(username);
+                    main.GETID.Text = GETID(username).ToString();
                     main.ShowDialog();
                 }
                 else
@@ -206,6 +207,10 @@ namespace Raven
         }
 
         #region Methoddddddddddddddddddddddddddddd
+        string GETID(string username)
+        {
+            return AccountDAO.Instance.GETID(username);
+        }
         bool Login(string username, string password)
         {
             return AccountDAO.Instance.Login(username , password);
@@ -223,9 +228,9 @@ namespace Raven
         {
             return AccountDAO.Instance.GetCareer(username);
         }
-        string GetImage(string username)
+        Image GetImage(string username)
         {
-            return AccountDAO.Instance.Image(username);
+            return AccountDAO.Instance.Images(username);
         }
         string GetName(string username)
         {
@@ -239,8 +244,6 @@ namespace Raven
         {
             return AccountDAO.Instance.ICMCheck(ICM);
         }
-        
-
         #endregion
 
         private void name_DoubleClick(object sender, EventArgs e) // //Enpty string when click on it
@@ -421,6 +424,7 @@ namespace Raven
                 }
             }
         }
+
         #region
 
         private void bunifuGradientPanel1_MouseDown(object sender, MouseEventArgs e)
