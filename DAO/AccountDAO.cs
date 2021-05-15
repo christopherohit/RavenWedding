@@ -12,8 +12,10 @@ namespace Raven.DAO
 {
     public class AccountDAO
     {
+        string username;
+        string password;
         private static AccountDAO instance;
-
+        
         public static AccountDAO Instance {
             get { if (instance == null) instance = new AccountDAO(); return instance; }
             private set => instance = value; 
@@ -48,6 +50,13 @@ namespace Raven.DAO
             return ICM;
 
         }
+        public string GETID (string username)
+        {
+            string Id = "SELECT * FROM nhanvien WHERE Email = N'" + username + "'";
+            DataTable exportID = DataProvider.Instance.ExecuteQuery(Id);
+            string GID = exportID.Rows[0].ItemArray[0].ToString();
+            return GID;
+        }
         public bool GetPhone(string Phone)
         {
             string getPhone = "Select Phone from nhanvien where Phone = N'" + Phone + "'";
@@ -61,14 +70,14 @@ namespace Raven.DAO
             string name = exportName.Rows[0].ItemArray[1].ToString();
             return name;
         }
-        public string Image(string username)
+        public Image Images(string username)
         {
             string getImage = "Select * From nhanvien where Email = N'" + username + "'";
             DataTable ExportImag = DataProvider.Instance.ExecuteQuery(getImage);
             var catchs = ExportImag.Rows[0].ItemArray[5];
-            var Image = (Byte[])(catchs);
-            var stream = new MemoryStream(Image);
-            return stream.ToString() ;
+            var Images = (Byte[])(catchs);
+            var stream = new MemoryStream(Images);
+            return Image.FromStream(stream);
         }
         public bool ICMCheck(string ICM)
         {
@@ -95,6 +104,48 @@ namespace Raven.DAO
         {
             int result = DataProvider.Instance.ExecuteNonQuery("EXEC InsertMember @name  , @email  , @pass ", new object[] { fullname, mails, pass });
             return result > 0;
+        }
+        public string GetDate(string username)
+        {
+            string GetDate = "Select * From nhanvien where Email = N'" + username + "'";
+            DataTable ExportDate = DataProvider.Instance.ExecuteQuery(GetDate);
+            string Date = ExportDate.Rows[0].ItemArray[9].ToString();
+            return Date;
+        }
+        public string GetDes(string username)
+        {
+            string GetDesc = "Select * From NhanVien where Email = N'" + username + "'";
+            DataTable ExportDesc = DataProvider.Instance.ExecuteQuery(GetDesc);
+            string Desc = ExportDesc.Rows[0].ItemArray[10].ToString();
+            return Desc;
+        }
+        public string GetGender(string username)
+        {
+            string Gender = "Select * from nhanvien where Email = N'" + username + "'";
+            DataTable ExportGender = DataProvider.Instance.ExecuteQuery(Gender);
+            string GetGender = ExportGender.Rows[0].ItemArray[4].ToString();
+            return GetGender;
+        }
+        public string GetAddress(string username)
+        {
+            string GetAddress = "SELECT * FROM nhanvien WHERE Email = N'" + username + "'";
+            DataTable ExportAddress = DataProvider.Instance.ExecuteQuery(GetAddress);
+            string OutAddress = ExportAddress.Rows[0].ItemArray[7].ToString();
+            return OutAddress;
+        }
+        public string Emails (string ID)
+        {
+            string GetEmails = "SELECt * FROM nhanvien WHERE ID = N'" + ID + "'";
+            DataTable ExportID = DataProvider.Instance.ExecuteQuery(GetEmails);
+            string GetEmail = ExportID.Rows[0].ItemArray[2].ToString();
+            return GetEmail;
+        }
+        public string SetPhone (string username)
+        {
+            string Phone = "SELECT * FROM nhanvien WHERE Email = N'" + username + "'";
+            DataTable ExportPhone = DataProvider.Instance.ExecuteQuery(Phone);
+            string OutPhone = ExportPhone.Rows[0].ItemArray[6].ToString();
+            return OutPhone;
         }
 
     }
