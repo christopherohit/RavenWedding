@@ -123,7 +123,7 @@ namespace Raven
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1362, 61);
+            this.panel1.Size = new System.Drawing.Size(1362, 80);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -161,9 +161,9 @@ namespace Raven
             this.panel2.Controls.Add(this.bunifuButton2);
             this.panel2.Controls.Add(this.bunifuButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 61);
+            this.panel2.Location = new System.Drawing.Point(0, 80);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 601);
+            this.panel2.Size = new System.Drawing.Size(186, 582);
             this.panel2.TabIndex = 1;
             // 
             // bunifuButton6
@@ -573,6 +573,7 @@ namespace Raven
             series1.ArgumentDataMember = "Thang";
             series1.FilterString = "[TongDoanhThu] = \'100000000000\'";
             series1.Name = "Series 1";
+            series1.ValueDataMembersSerializable = "TongDoanhThu";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chartControl1.Size = new System.Drawing.Size(959, 362);
