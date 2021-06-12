@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Raven.DAO;
+using Raven.Package;
 
 namespace Raven
 {
@@ -39,6 +40,7 @@ namespace Raven
             {
                 pass.isPassword = true;
             }
+            this.ActiveControl = bunifuButton1;
             this.carousel1.TransitionSpeed = 1.1f;
             panel2.Hide();
             pictureBox4.Hide();
@@ -48,6 +50,13 @@ namespace Raven
             bunifuGradientPanel1.Hide();
             pictureBox7.Hide();
             IsDirty = false;
+            name.ForeColor = SystemColors.GrayText;
+            name.Text = "Emails";
+            pass.Text = "Password";
+            pass.ForeColor = SystemColors.GrayText;
+            
+
+            
         }
         #endregion
 
@@ -77,20 +86,6 @@ namespace Raven
         }
         #endregion
 
-        private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e) //Change Color when type password or Emails
-        {
-            pass.isPassword = true;
-            pass.ForeColor = Color.Black;
-        }
-
-        private void bunifuMaterialTextbox2_Click(object sender, EventArgs e) //Enpty string when click on it
-        {
-            if (pass.Text == "Password") 
-            {
-                pass.Text = string.Empty;
-            }
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e) // Exit Form
         {
             var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -101,11 +96,6 @@ namespace Raven
             else
             {
             }
-        }
-
-        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e) // Change Color when type password or Emails
-        {
-            name.ForeColor = Color.Black;
         }
 
         private void labelControl3_Click(object sender, EventArgs e) // Disable Form when open Authical
@@ -495,6 +485,45 @@ namespace Raven
             else
             {
                 button1.Enabled = true;
+            }
+        }
+
+        private void name_Enter(object sender, EventArgs e)
+        {
+            if (name.Text == "Emails")
+            {
+                name.Text = "";
+                name.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void name_Leave(object sender, EventArgs e)
+        {
+            
+            if (name.Text.Length == 0)
+            {
+                name.Text = "Emails";
+                name.ForeColor = SystemColors.GrayText;
+            }
+        }
+
+        private void pass_Enter(object sender, EventArgs e)
+        {
+            if (pass.Text == "Password")
+            {
+                pass.Text = "";
+                pass.ForeColor = SystemColors.WindowText;
+                pass.isPassword = true;
+            }
+        }
+
+        private void pass_Leave(object sender, EventArgs e)
+        {
+            if (pass.Text.Length == 0)
+            {
+                pass.Text = "Password";
+                pass.ForeColor = SystemColors.GrayText;
+                pass.isPassword = false;
             }
         }
     }
