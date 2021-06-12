@@ -1,1 +1,0 @@
-﻿The example shows how to create a custom EditAppointmentDialog which is used instead of the default RadScheduler dialog. It consists of a RadRibbonBar with Actions and Options buttons and controls for different properties of the custom appointment.

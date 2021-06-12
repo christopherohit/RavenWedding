@@ -1,7 +1,0 @@
-﻿Telerik Editors are controls which can be used for editing content and data. These include:
-• RadColorSelector 
-• RadComboBox
-• RadDateTimePicker
-• RadMaskedEditBox
-• RadSpinEditor
-• RadTextBox
