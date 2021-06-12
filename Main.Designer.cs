@@ -125,6 +125,7 @@ namespace Raven
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1362, 80);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
@@ -673,6 +674,8 @@ namespace Raven
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(146, 585);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(63, 13);
@@ -956,11 +959,11 @@ namespace Raven
         private Telerik.WinControls.UI.RadPanel radPanel2;
         private System.Windows.Forms.Label label4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton8;
         private OnYourWeddingDayDataSet1TableAdapters.DoanhThuTableAdapter doanhThuTableAdapter;
         private OnYourWeddingDayDataSet1 onYourWeddingDayDataSet1;
         private System.Windows.Forms.BindingSource doanhThuBindingSource;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
     }
 }
