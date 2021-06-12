@@ -245,5 +245,10 @@ namespace Raven
         {
 
         }
+
+        private void pagerEvents1_CustomizePagerItem(object sender, DevExpress.Utils.CustomizePagerItemEventArgs e)
+        {
+
+        }
     }
 }
