@@ -21,6 +21,7 @@ namespace Raven
         public DevExpress.XtraEditors.LabelControl GETID { get { return this.labelControl1; } }
         public Label GetCareer { get { return this.bunifuCustomLabel2; } }
         public Bunifu.UI.WinForms.BunifuPictureBox GetImage { get { return this.bunifuPictureBox1; } }
+        public DevExpress.XtraEditors.LabelControl ID { get { return this.labelControl1; } }
         Timer t1 = new Timer();
 
         public Main()
@@ -29,8 +30,6 @@ namespace Raven
         }
         public Main(DataTable data)
         {
-            InitializeComponent();
-            
 
         }
 
@@ -72,7 +71,7 @@ namespace Raven
             t1.Start();
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void bunifuButton1_Click(object sender, EventArgs e) // Show Panel
         {
             DashPanel.Show(); 
         }
@@ -97,7 +96,7 @@ namespace Raven
         }
         #endregion
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e) // Exit Form
         {
             var res = MessageBox.Show("Do you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (res == DialogResult.Yes)
@@ -165,13 +164,13 @@ namespace Raven
 
         }
 
-        private void bunifuButton7_Click(object sender, EventArgs e)
+        private void bunifuButton7_Click(object sender, EventArgs e) // Tranfers to Profile
         {
             string ID = labelControl1.Text;
             System.Windows.Forms.Form TakeEmails = System.Windows.Forms.Application.OpenForms["SignIn"];
             string username = ((SignIn)TakeEmails).TextBox.Text;
             
-            Profile Info = new Profile();
+            Profill Info = new Profill();
             Info.GetBirth.Value = Convert.ToDateTime(GetDates(username).ToString());
             Info.GetName.Text = Getame(username).ToString();
             Info.GetRegency.Text = GetCareers(username).ToString();
@@ -182,7 +181,8 @@ namespace Raven
             Info.GetMails.Text = GetMails(ID).ToString();
             Info.GetAddress.Text = GetAddress(username).ToString();
             Info.SetImage.Image = GetImages(username);
-            Info.ShowDialog();
+            Info.Show();
+            this.Hide();
         }
 
         #region Method
@@ -247,6 +247,11 @@ namespace Raven
         }
 
         private void pagerEvents1_CustomizePagerItem(object sender, DevExpress.Utils.CustomizePagerItemEventArgs e)
+        {
+
+        }
+
+        private void radPanel1_Click_1(object sender, EventArgs e)
         {
 
         }
