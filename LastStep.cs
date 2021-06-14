@@ -38,7 +38,7 @@ namespace Raven
         }
 
         #region Method Select Image
-        public void GetImageInD()
+        public void GetImageInD() // Choose Image From D drive
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
             fileDialog.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
@@ -51,7 +51,7 @@ namespace Raven
             }
 
         }
-        public void GetImageInC()
+        public void GetImageInC() // Choose Image From C Drive
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
             fileDialog.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
@@ -63,7 +63,7 @@ namespace Raven
                 IsDirty = false;
             }
         }
-        public void ProcessImage()
+        public void ProcessImage() //Message Suggest to choose Drive
         {
             try
             {
@@ -87,7 +87,7 @@ namespace Raven
                 IsDirty = true;
                 using (var r= new MemoryStream())
                 {
-                    string path = FullSelect + @"Lesson\RIT\C #\WinForm\RavenWedding\Database\UserPic\" + ((Info)GetData).SetName.Text;
+                    string path = FullSelect + @"Lesson\RIT\C #\WinForm\RavenWedding\Database\User Pic\" + ((Info)GetData).SetName.Text;
                     string t = ((Info)GetData).SetName.Text;
 
                     TakePictureDialog d = new TakePictureDialog();
