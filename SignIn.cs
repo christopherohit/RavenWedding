@@ -53,10 +53,7 @@ namespace Raven
             name.ForeColor = SystemColors.GrayText;
             name.Text = "Emails";
             pass.Text = "Password";
-            pass.ForeColor = SystemColors.GrayText;
-            
-
-            
+            pass.ForeColor = SystemColors.GrayText;     
         }
         #endregion
 
@@ -488,7 +485,7 @@ namespace Raven
             }
         }
 
-        private void name_Enter(object sender, EventArgs e)
+        private void name_Enter(object sender, EventArgs e) // Get Hint Username
         {
             if (name.Text == "Emails")
             {
@@ -497,7 +494,7 @@ namespace Raven
             }
         }
 
-        private void name_Leave(object sender, EventArgs e)
+        private void name_Leave(object sender, EventArgs e) //Hide Hint Username
         {
             
             if (name.Text.Length == 0)
@@ -507,7 +504,7 @@ namespace Raven
             }
         }
 
-        private void pass_Enter(object sender, EventArgs e)
+        private void pass_Enter(object sender, EventArgs e) // Get Hint Pass
         {
             if (pass.Text == "Password")
             {
@@ -517,7 +514,7 @@ namespace Raven
             }
         }
 
-        private void pass_Leave(object sender, EventArgs e)
+        private void pass_Leave(object sender, EventArgs e) // Hide Hint Pass
         {
             if (pass.Text.Length == 0)
             {
