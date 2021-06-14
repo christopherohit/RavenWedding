@@ -356,6 +356,29 @@ BEGIN -- TRIGER AND STORE PROCDURE
 				SET  Gender = @gender , Phone = @phone , Addre = @Address, CMND = @ICM , Birth = @DOB , Descrip = @DES WHERE Email = @Emails
 			END --OK
 
+	drop proc UpdatePerson
+	Create proc UpdatePerson
+	@Emails varchar(100),
+	@name varchar(100),
+	@gender varchar(500),
+	@phone int ,
+	@Address varchar(150),
+	@ICM INT , 
+	@DOB DATE,
+	@DES VARCHAR(500),
+	@id int
+	as begin
+	update nhanvien
+	set Hoten = @name, Gender = @gender , Phone = @phone , Addre = @Address, CMND = @ICM , Birth = @DOB , Descrip = @DES , Email = @Emails where id = @id
+	end
+
+	EXEC UpdatePerson  @name = N'Emma Charlotte Duerre Watson' , @gender = N'Female'  , @phone = 0792361509 , @Address = N'Pa-ri, France'  , @ICM = 196461313  , @DOB = N'1990-04-15', @DES = N'I am a Good Girl', @Emails = N'Hermione.UST@Brown.inter.st.edu.com', @id = 1
+	create proc DeleteUser
+	@id int
+	as begin
+	delete from nhanvien where id = @id
+	end
+
 	CREATE PROC BlockAccount
 	@Emails varchar(100),
 	@isblock varchar(100)
