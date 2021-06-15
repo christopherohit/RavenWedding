@@ -27,6 +27,7 @@ namespace Raven
 
         System.Windows.Forms.Form sd = System.Windows.Forms.Application.OpenForms["Main"];
 
+        Point PanelMouseDownLocation;
 
         public PictureBox SetImage { get { return this.image; } }
 
@@ -61,7 +62,14 @@ namespace Raven
 
         #region Void
 
-        void CheckedSave()
+        void Reload() // This Function Reload All Information
+        {
+            string id = ((Main)sd).ID.Text;
+            ((Main)sd).GetName.Text = orname(id);
+            ((Main)sd).GetImage.Image = orpic(id);
+            ((Main)sd).GetCareer.Text = Regencys(id);
+        }
+        void CheckedSave() // Checked Unsave
         {
             string id = ((Main)sd).ID.Text;
             string nameFull = name.Text;
@@ -87,7 +95,7 @@ namespace Raven
         }
         void Reset() // Return the First Time
         {
-            int id = Convert.ToInt32(((Main)sd).ID.Text);
+            string id = ((Main)sd).ID.Text;
             name.Text = orname(id);
             mails.Text = ormail(id);
             icm.Text = oriden(id);
@@ -134,7 +142,7 @@ namespace Raven
 
         #region Catch
 
-        string Verify (int id)
+        string Verify (string id)
         {
             return UpdatePe.Instances.GetPass(id);
         }
@@ -142,49 +150,53 @@ namespace Raven
         {
             return UpdatePe.Instances.UpdateInfo(name, gender, phone, address, icm, DOB, Des, username, id);
         }
-        bool DeletePes(int id)
+        bool DeletePes(string id)
         {
             return UpdatePe.Instances.DeleteUser(id);
         }
-        string orname(int id)
+        string orname(string id)
         {
             return UpdatePe.Instances.name(id);
         }
-        string ormail(int id)
+        string ormail(string id)
         {
             return UpdatePe.Instances.Emails(id);
         }
-        string SaveOld(int id)
+        string SaveOld(string id)
         {
             return UpdatePe.Instances.OldMem(id);
         }
-        string orgen(int id)
+        string orgen(string id)
         {
             return UpdatePe.Instances.Gender(id);
         }
-        Image orpic(int id)
+        Image orpic(string id)
         {
             return UpdatePe.Instances.Pic(id);
         }
-        string orphone(int id)
+        string orphone(string id)
         {
             return UpdatePe.Instances.Phone(id);
         }
-        string oraddr(int id)
+        string oraddr(string id)
         {
             return UpdatePe.Instances.Address(id);
         }
-        string oriden(int id)
+        string oriden(string id)
         {
             return UpdatePe.Instances.Identity(id);
         }
-        string orbirth(int id)
+        string orbirth(string id)
         {
             return UpdatePe.Instances.Birthday(id);
         }
-        string ordesc(int id)
+        string ordesc(string id)
         {
             return UpdatePe.Instances.Desc(id);
+        }
+        string Regencys(string id)
+        {
+            return UpdatePe.Instances.Regency(id);
         }
 
         #endregion
@@ -192,7 +204,7 @@ namespace Raven
         private void windowsUIButtonPanelCloseButton_Click(object sender, EventArgs e)
         {
             CheckedSave();
-            sd.Show();
+            Reload();
         }
 
         #region UnSave Checked
@@ -310,9 +322,9 @@ namespace Raven
                         xma.DoNotShowAgainCheckBoxVisible = true;
                         XtraMessageBox.Show(xma);
                         IsDirty = true;
-                        IsDirtyImage = false;
+                        IsDirtyImage = true;
+                        Reload();
                         this.Hide();
-                        sd.Show(); 
                     }
                     break;
                 case "Reset Changes":
@@ -364,7 +376,7 @@ namespace Raven
         private void simpleButton1_Click(object sender, EventArgs e) // Save And Delete Information of Employee
         {
             XtraMessageBoxArgs xma = new XtraMessageBoxArgs();
-            int id = Convert.ToInt32(((Main)sd).ID.Text);
+            string id = ((Main)sd).ID.Text;
             if (textBox1.Text == Verify(id))
             {
                 string names = name.Text + "-" + mails.Text ;
@@ -401,6 +413,24 @@ namespace Raven
                 xma.Caption = "Error";
                 xma.Text = "Faild to delete account, Something was wrong\nPlease recheck your password";
                 XtraMessageBox.Show(xma);
+            }
+        }
+
+        private void panelControl1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) PanelMouseDownLocation = e.Location;
+        }
+
+        private void panelControl1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+
+            {
+
+                panelControl1.Left += e.X - PanelMouseDownLocation.X;
+
+                panelControl1.Top += e.Y - PanelMouseDownLocation.Y;
+
             }
         }
     }
