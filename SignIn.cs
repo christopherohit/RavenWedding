@@ -162,7 +162,7 @@ namespace Raven
                     main.GetName.Text = GetName(username).ToString();
                     main.GetCareer.Text = GetCareer(username).ToString();
                     main.GetImage.Image = GetImage(username);
-                    main.GETID.Text = GETID(username).ToString();
+                    main.ID.Text = GETID(username).ToString();
                     main.ShowDialog();
                 }
                 else

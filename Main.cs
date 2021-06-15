@@ -18,7 +18,6 @@ namespace Raven
     public partial class Main : Form
     {
         public Label GetName { get { return this.bunifuCustomLabel1; } }
-        public DevExpress.XtraEditors.LabelControl GETID { get { return this.labelControl1; } }
         public Label GetCareer { get { return this.bunifuCustomLabel2; } }
         public Bunifu.UI.WinForms.BunifuPictureBox GetImage { get { return this.bunifuPictureBox1; } }
         public DevExpress.XtraEditors.LabelControl ID { get { return this.labelControl1; } }
@@ -26,14 +25,30 @@ namespace Raven
 
         public Main()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            
         }
-        public Main(DataTable data)
+
+        #region Method
+
+        string OriginalName(string id)
         {
-
+            return UpdatePe.Instances.name(id);
+        }
+        
+        Image OriginalPic(string id)
+        {
+            return UpdatePe.Instances.Pic(id);
         }
 
-        #region
+        string OriginalRegency (string id)
+        {
+            return UpdatePe.Instances.Regency(id);
+        }
+
+        #endregion
+
+        #region Move Panel
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
@@ -182,7 +197,6 @@ namespace Raven
             Info.GetAddress.Text = GetAddress(username).ToString();
             Info.SetImage.Image = GetImages(username);
             Info.Show();
-            this.Hide();
         }
 
         #region Method
