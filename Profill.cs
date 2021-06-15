@@ -107,11 +107,12 @@ namespace Raven
             image.Image = orpic(id);
         }
 
-        void UpdateImage() // Update All Picture Change
+        void UpdateImage() // Update All Picture Change 
         {
-            string cStr = "Data Source=DESKTOP-7CBSM7T;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
+            string cStr = "Data Source=DESKTOP-F970216;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
             using (SqlConnection sql = new SqlConnection(cStr))
             {
+                sql.Open();
                 if (IsDirtyImage == false)
                 {
                     try
@@ -123,9 +124,11 @@ namespace Raven
                         command.Parameters.AddWithValue("@id", ((Main)sd).ID.Text);
                         var binary = command.Parameters.Add("@Pic", SqlDbType.VarBinary, -1);
                         binary.Value = bye;
+                        command.ExecuteNonQuery();                        
                     }
-                    catch (Exception)
+                    catch (Exception er)
                     {
+                        MessageBox.Show(er.Message);
                         string fileinC = Pathstring + image.Image.Tag.ToString();
                         byte[] bye = File.ReadAllBytes(fileinC);
                         string UpImage = "UPDATE nhanvien SET Pic = @Pic where id = @id";
@@ -133,8 +136,10 @@ namespace Raven
                         command.Parameters.AddWithValue("@id", ((Main)sd).ID.Text);
                         var binary = command.Parameters.Add("@Pic", SqlDbType.VarBinary, -1);
                         binary.Value = bye;
+                        command.ExecuteNonQuery();
                     }
                 }
+                sql.Close();
             }
         }
 
@@ -305,6 +310,7 @@ namespace Raven
                         XtraMessageBox.Show(xma);
                         IsDirty = true;
                         IsDirtyImage = true;
+                        Reload();
                     }
                     else
                     {
