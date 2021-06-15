@@ -25,40 +25,49 @@ namespace Raven.DAO
             int result = DataProvider.Instance.ExecuteNonQuery("EXEC UpdatePerson  @username , @name  , @gender  , @phone , @Address  , @ICM  , @DOB  , @DES , @id ",  new object[] { username , name , gender , phone , address , icm , DOB , Des , Convert.ToInt32(id) });
             return result > 0;
         }
-        public bool DeleteUser(int id)
+        public bool DeleteUser(string id)
         {
             int result = DataProvider.Instance.ExecuteNonQuery("EXEC DeleteUser @id", new object[] { id });
             return result > 0;
         }
-        public string name(int id)
+        public string name(string id)
         {
             string query = "Select * from nhanvien where id = N'" + id + "'";
             DataTable ExportName = DataProvider.Instance.ExecuteQuery(query);
             string Fullname = ExportName.Rows[0].ItemArray[1].ToString();
             return Fullname;
         }
-        public string Emails(int id)
+        public string Emails(string id)
         {
             string GetMails = " Select * from nhanvien where id = N'" + id + "'";
             DataTable ExportMails = DataProvider.Instance.ExecuteQuery(GetMails);
             string whatMails = ExportMails.Rows[0].ItemArray[2].ToString();
             return whatMails;
         }
-        public string OldMem(int id)
+        public string OldMem(string id)
         {
             string GetPass = " Select * from nhanvien where id = N' " + id + " ' ";
             DataTable ExportPass = DataProvider.Instance.ExecuteQuery(GetPass);
             string WhatPass = ExportPass.Rows[0].ToString();
             return WhatPass;
         }
-        public string Gender(int id)
+        public string Gender(string id)
         {
             string GetGen = "Select * from nhanvien where id = N'" + id + "'";
             DataTable ExportGen = DataProvider.Instance.ExecuteQuery(GetGen);
             string WhatGen = ExportGen.Rows[0].ItemArray[4].ToString();
             return WhatGen;
         }
-        public Image Pic(int id)
+
+        public string Regency(string id)
+        {
+            string query = "SELECT * FROM nhanvien WHERE id = N'" + id + "'";
+            DataTable ExportRegency = DataProvider.Instance.ExecuteQuery(query);
+            string GetRegency = ExportRegency.Rows[0].ItemArray[12].ToString();
+            return GetRegency;
+        }
+
+        public Image Pic(string id)
         {
             string getImage = "Select * From nhanvien where id = N'" + id + "'";
             DataTable ExportImag = DataProvider.Instance.ExecuteQuery(getImage);
@@ -67,42 +76,42 @@ namespace Raven.DAO
             var stream = new MemoryStream(Images);
             return Image.FromStream(stream);
         }
-        public string Phone(int id)
+        public string Phone(string id)
         {
             string GetPhone = "Select * from nhanvien where id = N'" + id + "'";
             DataTable ExportPhone = DataProvider.Instance.ExecuteQuery(GetPhone);
             string WhatPhone = ExportPhone.Rows[0].ItemArray[6].ToString();
             return WhatPhone;
         }
-        public string Address (int id)
+        public string Address (string id)
         {
             string GetAddress = "Select * From nhanvien where id = N'" + id + "'";
             DataTable ExportAddress = DataProvider.Instance.ExecuteQuery(GetAddress);
             string WhatAddress = ExportAddress.Rows[0].ItemArray[7].ToString();
             return WhatAddress;
         }
-        public string Identity(int id)
+        public string Identity(string id)
         {
             string GetIdentity = "Select * From nhanvien where id = N'" + id + "'";
             DataTable ExportIdentity = DataProvider.Instance.ExecuteQuery(GetIdentity);
             string WhatIdentity = ExportIdentity.Rows[0].ItemArray[8].ToString();
             return WhatIdentity;
         }
-        public string Birthday (int id)
+        public string Birthday (string id)
         {
             string GetBirthday = "Select * From nhanvien where id = N'" + id + "'";
             DataTable ExportBirthday = DataProvider.Instance.ExecuteQuery(GetBirthday);
             string WhatBirth = ExportBirthday.Rows[0].ItemArray[9].ToString();
             return WhatBirth;
         }
-        public string Desc(int id)
+        public string Desc(string id)
         {
             string GetDesc = "Select * From nhanvien where id = N'" + id + "'";
             DataTable ExportDesc = DataProvider.Instance.ExecuteQuery(GetDesc);
             string WhatDesc = ExportDesc.Rows[0].ItemArray[10].ToString();
             return WhatDesc;
         }
-        public string GetPass(int id)
+        public string GetPass(string id)
         {
             string GetPassword = " SELECT * FROM nhanvien WHERE id = N'" + id + "'";
             DataTable ExportPass = DataProvider.Instance.ExecuteQuery(GetPassword);
