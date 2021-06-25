@@ -106,7 +106,6 @@ namespace Raven
             address.Text = oraddr(id);
             image.Image = orpic(id);
         }
-
         void UpdateImage() // Update All Picture Change 
         {
             string cStr = "Data Source=DESKTOP-F970216;Initial Catalog=OnYourWeddingDay;Integrated Security=True";
@@ -205,12 +204,6 @@ namespace Raven
         }
 
         #endregion
-
-        private void windowsUIButtonPanelCloseButton_Click(object sender, EventArgs e)
-        {
-            CheckedSave();
-            Reload();
-        }
 
         #region UnSave Checked
         private void image_Click_1(object sender, EventArgs e)
@@ -417,10 +410,12 @@ namespace Raven
             else
             {
                 xma.Caption = "Error";
-                xma.Text = "Faild to delete account, Something was wrong\nPlease recheck your password";
+                xma.Text = "Failed to delete account, Something was wrong\nPlease recheck your password";
                 XtraMessageBox.Show(xma);
             }
         }
+
+        #region Move and close Verify
 
         private void panelControl1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -438,6 +433,32 @@ namespace Raven
                 panelControl1.Top += e.Y - PanelMouseDownLocation.Y;
 
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            panelControl1.Hide();
+        }
+
+        #endregion
+
+        private void windowsUIButtonPanelCloseButton_ButtonClick(object sender, ButtonEventArgs e) // Save before Leave
+        {
+            string tag = ((WindowsUIButton)e.Button).Caption.ToString();
+            switch (tag)
+            {
+                case "":
+                    CheckedSave();
+                    Reload();
+                    break;
+            }
+            
+        }
+
+        private void Profill_FormClosing(object sender, FormClosingEventArgs e) // Save before leave
+        {
+            CheckedSave();
+            Reload();
         }
     }
 }

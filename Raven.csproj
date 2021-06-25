@@ -266,6 +266,8 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="TelerikCommon, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
@@ -345,6 +347,12 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Authical.resx">
       <DependentUpon>Authical.cs</DependentUpon>
     </EmbeddedResource>
@@ -382,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="OnYourWeddingDayDataSet.xsc">
       <DependentUpon>OnYourWeddingDayDataSet.xsd</DependentUpon>

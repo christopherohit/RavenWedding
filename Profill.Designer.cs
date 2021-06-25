@@ -29,11 +29,11 @@ namespace Raven
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions16 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions17 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions18 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions19 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions20 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions2 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions3 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions4 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions5 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profill));
             this.windowsUIButtonPanelMain = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
             this.windowsUIButtonPanelCloseButton = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
@@ -61,14 +61,14 @@ namespace Raven
             this.group = new System.Windows.Forms.GroupBox();
             this.desc = new System.Windows.Forms.TextBox();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
@@ -85,9 +85,9 @@ namespace Raven
             this.group.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // windowsUIButtonPanelMain
@@ -107,15 +107,15 @@ namespace Raven
             this.windowsUIButtonPanelMain.AppearanceButton.Pressed.Options.UseFont = true;
             this.windowsUIButtonPanelMain.AppearanceButton.Pressed.Options.UseForeColor = true;
             this.windowsUIButtonPanelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            windowsUIButtonImageOptions16.ImageUri.Uri = "Save;Size32x32;GrayScaled";
-            windowsUIButtonImageOptions17.ImageUri.Uri = "SaveAndClose;Size32x32;GrayScaled";
-            windowsUIButtonImageOptions18.ImageUri.Uri = "Reset;Size32x32;GrayScaled";
-            windowsUIButtonImageOptions19.ImageUri.Uri = "Edit/Delete;Size32x32;GrayScaled";
+            windowsUIButtonImageOptions1.ImageUri.Uri = "Save;Size32x32;GrayScaled";
+            windowsUIButtonImageOptions2.ImageUri.Uri = "SaveAndClose;Size32x32;GrayScaled";
+            windowsUIButtonImageOptions3.ImageUri.Uri = "Reset;Size32x32;GrayScaled";
+            windowsUIButtonImageOptions4.ImageUri.Uri = "Edit/Delete;Size32x32;GrayScaled";
             this.windowsUIButtonPanelMain.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Save", true, windowsUIButtonImageOptions16, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false),
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Save And Close", true, windowsUIButtonImageOptions17, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false),
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Reset Changes", true, windowsUIButtonImageOptions18, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false),
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Delete", true, windowsUIButtonImageOptions19, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false)});
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Save", true, windowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Save And Close", true, windowsUIButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Reset Changes", true, windowsUIButtonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Delete", true, windowsUIButtonImageOptions4, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false)});
             this.windowsUIButtonPanelMain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.windowsUIButtonPanelMain.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.windowsUIButtonPanelMain.EnableImageTransparency = true;
@@ -134,9 +134,9 @@ namespace Raven
             // windowsUIButtonPanelCloseButton
             // 
             this.windowsUIButtonPanelCloseButton.ButtonInterval = 0;
-            windowsUIButtonImageOptions20.ImageUri.Uri = "Backward;Size32x32;GrayScaled";
+            windowsUIButtonImageOptions5.ImageUri.Uri = "Backward;Size32x32;GrayScaled";
             this.windowsUIButtonPanelCloseButton.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("", true, windowsUIButtonImageOptions20, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false)});
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("", true, windowsUIButtonImageOptions5, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false)});
             this.windowsUIButtonPanelCloseButton.ContentAlignment = System.Drawing.ContentAlignment.TopCenter;
             this.windowsUIButtonPanelCloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.windowsUIButtonPanelCloseButton.Dock = System.Windows.Forms.DockStyle.Left;
@@ -151,7 +151,7 @@ namespace Raven
             this.windowsUIButtonPanelCloseButton.TabIndex = 5;
             this.windowsUIButtonPanelCloseButton.Text = "windowsUIButtonPanel1";
             this.windowsUIButtonPanelCloseButton.UseButtonBackgroundImages = false;
-            this.windowsUIButtonPanelCloseButton.Click += new System.EventHandler(this.windowsUIButtonPanelCloseButton_Click);
+            this.windowsUIButtonPanelCloseButton.ButtonClick += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.windowsUIButtonPanelCloseButton_ButtonClick);
             // 
             // xtraTabControl1
             // 
@@ -383,33 +383,12 @@ namespace Raven
             this.panelControl1.Controls.Add(this.panelControl2);
             this.panelControl1.Controls.Add(this.pictureBox2);
             this.panelControl1.Controls.Add(this.labelControl12);
-            this.panelControl1.Location = new System.Drawing.Point(234, 105);
+            this.panelControl1.Location = new System.Drawing.Point(279, 133);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(399, 134);
             this.panelControl1.TabIndex = 16;
             this.panelControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelControl1_MouseDown);
             this.panelControl1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelControl1_MouseMove);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(366, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 18);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(5, 5);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(106, 16);
-            this.labelControl12.TabIndex = 1;
-            this.labelControl12.Text = "Verify Authority";
             // 
             // panelControl2
             // 
@@ -463,6 +442,28 @@ namespace Raven
             this.textBox1.Size = new System.Drawing.Size(196, 21);
             this.textBox1.TabIndex = 12;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(378, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(5, 5);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(106, 16);
+            this.labelControl12.TabIndex = 1;
+            this.labelControl12.Text = "Verify Authority";
+            // 
             // Profill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,6 +484,7 @@ namespace Raven
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Profill";
             this.Text = "Profile";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Profill_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
@@ -503,10 +505,10 @@ namespace Raven
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
