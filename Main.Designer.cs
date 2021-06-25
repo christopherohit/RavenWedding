@@ -30,39 +30,39 @@ namespace Raven
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -72,37 +72,47 @@ namespace Raven
             this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.DashPanel = new System.Windows.Forms.Panel();
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.doanhThuTableAdapter = new Raven.OnYourWeddingDayDataSet1TableAdapters.DoanhThuTableAdapter();
+            this.doanhThuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.onYourWeddingDayDataSet1 = new Raven.OnYourWeddingDayDataSet1();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.DashPanel = new System.Windows.Forms.Panel();
+            this.navigationFrame2 = new DevExpress.XtraBars.Navigation.NavigationFrame();
+            this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
-            this.label4 = new System.Windows.Forms.Label();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
+            this.navigationPage5 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.radPanel5 = new Telerik.WinControls.UI.RadPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.radPanel6 = new Telerik.WinControls.UI.RadPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.radPanel4 = new Telerik.WinControls.UI.RadPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.radPanel7 = new Telerik.WinControls.UI.RadPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.radPanel8 = new Telerik.WinControls.UI.RadPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.radPanel9 = new Telerik.WinControls.UI.RadPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
+            this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            this.doanhThuTableAdapter = new Raven.OnYourWeddingDayDataSet1TableAdapters.DoanhThuTableAdapter();
-            this.doanhThuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.onYourWeddingDayDataSet1 = new Raven.OnYourWeddingDayDataSet1();
             this.label2 = new System.Windows.Forms.Label();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.bunifuButton10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -114,49 +124,53 @@ namespace Raven
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.pagerEvents1 = new DevExpress.Utils.Behaviors.Common.PagerEvents(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            this.DashPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
-            this.navigationPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage1.SuspendLayout();
+            this.DashPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).BeginInit();
+            this.navigationFrame2.SuspendLayout();
+            this.navigationPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
-            this.radPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
-            this.radPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
-            this.radPanel1.SuspendLayout();
-            this.navigationPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
+            this.navigationPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel5)).BeginInit();
             this.radPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel6)).BeginInit();
             this.radPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).BeginInit();
             this.radPanel4.SuspendLayout();
-            this.navigationPage3.SuspendLayout();
+            this.navigationPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel7)).BeginInit();
             this.radPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel8)).BeginInit();
             this.radPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel9)).BeginInit();
             this.radPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -209,6 +223,7 @@ namespace Raven
             this.panel2.Controls.Add(this.bunifuButton5);
             this.panel2.Controls.Add(this.bunifuButton4);
             this.panel2.Controls.Add(this.bunifuButton3);
+            this.panel2.Controls.Add(this.navigationFrame1);
             this.panel2.Controls.Add(this.bunifuButton2);
             this.panel2.Controls.Add(this.bunifuButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -231,11 +246,11 @@ namespace Raven
             this.bunifuButton6.ColorContrastOnClick = 45;
             this.bunifuButton6.ColorContrastOnHover = 45;
             this.bunifuButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.bunifuButton6.CustomizableEdges = borderEdges5;
+            borderEdges15.BottomLeft = true;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = true;
+            borderEdges15.TopRight = true;
+            this.bunifuButton6.CustomizableEdges = borderEdges15;
             this.bunifuButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -256,29 +271,30 @@ namespace Raven
             this.bunifuButton6.IndicateFocus = false;
             this.bunifuButton6.Location = new System.Drawing.Point(0, 301);
             this.bunifuButton6.Name = "bunifuButton6";
-            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties9.BorderRadius = 3;
-            stateProperties9.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties9.BorderThickness = 1;
-            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties9.ForeColor = System.Drawing.Color.White;
-            stateProperties9.IconLeftImage = null;
-            stateProperties9.IconRightImage = null;
-            this.bunifuButton6.onHoverState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties10.BorderRadius = 3;
-            stateProperties10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties10.BorderThickness = 1;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties10.ForeColor = System.Drawing.Color.White;
-            stateProperties10.IconLeftImage = null;
-            stateProperties10.IconRightImage = null;
-            this.bunifuButton6.OnPressedState = stateProperties10;
+            stateProperties29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties29.BorderRadius = 3;
+            stateProperties29.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties29.BorderThickness = 1;
+            stateProperties29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties29.ForeColor = System.Drawing.Color.White;
+            stateProperties29.IconLeftImage = null;
+            stateProperties29.IconRightImage = null;
+            this.bunifuButton6.onHoverState = stateProperties29;
+            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties30.BorderRadius = 3;
+            stateProperties30.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties30.BorderThickness = 1;
+            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties30.ForeColor = System.Drawing.Color.White;
+            stateProperties30.IconLeftImage = null;
+            stateProperties30.IconRightImage = null;
+            this.bunifuButton6.OnPressedState = stateProperties30;
             this.bunifuButton6.Size = new System.Drawing.Size(189, 45);
             this.bunifuButton6.TabIndex = 2;
             this.bunifuButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton6.TextMarginLeft = 10;
             this.bunifuButton6.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton6.Click += new System.EventHandler(this.bunifuButton6_Click);
             // 
             // bunifuButton5
             // 
@@ -294,11 +310,11 @@ namespace Raven
             this.bunifuButton5.ColorContrastOnClick = 45;
             this.bunifuButton5.ColorContrastOnHover = 45;
             this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.bunifuButton5.CustomizableEdges = borderEdges6;
+            borderEdges16.BottomLeft = true;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = true;
+            borderEdges16.TopRight = true;
+            this.bunifuButton5.CustomizableEdges = borderEdges16;
             this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -319,29 +335,30 @@ namespace Raven
             this.bunifuButton5.IndicateFocus = false;
             this.bunifuButton5.Location = new System.Drawing.Point(0, 250);
             this.bunifuButton5.Name = "bunifuButton5";
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.BorderRadius = 3;
-            stateProperties11.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties11.BorderThickness = 1;
-            stateProperties11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.ForeColor = System.Drawing.Color.White;
-            stateProperties11.IconLeftImage = null;
-            stateProperties11.IconRightImage = null;
-            this.bunifuButton5.onHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties12.BorderRadius = 3;
-            stateProperties12.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties12.BorderThickness = 1;
-            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties12.ForeColor = System.Drawing.Color.White;
-            stateProperties12.IconLeftImage = null;
-            stateProperties12.IconRightImage = null;
-            this.bunifuButton5.OnPressedState = stateProperties12;
+            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties31.BorderRadius = 3;
+            stateProperties31.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties31.BorderThickness = 1;
+            stateProperties31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties31.ForeColor = System.Drawing.Color.White;
+            stateProperties31.IconLeftImage = null;
+            stateProperties31.IconRightImage = null;
+            this.bunifuButton5.onHoverState = stateProperties31;
+            stateProperties32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties32.BorderRadius = 3;
+            stateProperties32.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties32.BorderThickness = 1;
+            stateProperties32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties32.ForeColor = System.Drawing.Color.White;
+            stateProperties32.IconLeftImage = null;
+            stateProperties32.IconRightImage = null;
+            this.bunifuButton5.OnPressedState = stateProperties32;
             this.bunifuButton5.Size = new System.Drawing.Size(189, 45);
             this.bunifuButton5.TabIndex = 2;
             this.bunifuButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton5.TextMarginLeft = 10;
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton5.Click += new System.EventHandler(this.bunifuButton5_Click);
             // 
             // bunifuButton4
             // 
@@ -357,11 +374,11 @@ namespace Raven
             this.bunifuButton4.ColorContrastOnClick = 45;
             this.bunifuButton4.ColorContrastOnHover = 45;
             this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.bunifuButton4.CustomizableEdges = borderEdges7;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.bunifuButton4.CustomizableEdges = borderEdges17;
             this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -382,29 +399,30 @@ namespace Raven
             this.bunifuButton4.IndicateFocus = false;
             this.bunifuButton4.Location = new System.Drawing.Point(0, 199);
             this.bunifuButton4.Name = "bunifuButton4";
-            stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties13.BorderRadius = 3;
-            stateProperties13.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties13.BorderThickness = 1;
-            stateProperties13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties13.ForeColor = System.Drawing.Color.White;
-            stateProperties13.IconLeftImage = null;
-            stateProperties13.IconRightImage = null;
-            this.bunifuButton4.onHoverState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties14.BorderRadius = 3;
-            stateProperties14.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties14.BorderThickness = 1;
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties14.ForeColor = System.Drawing.Color.White;
-            stateProperties14.IconLeftImage = null;
-            stateProperties14.IconRightImage = null;
-            this.bunifuButton4.OnPressedState = stateProperties14;
+            stateProperties33.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties33.BorderRadius = 3;
+            stateProperties33.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties33.BorderThickness = 1;
+            stateProperties33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties33.ForeColor = System.Drawing.Color.White;
+            stateProperties33.IconLeftImage = null;
+            stateProperties33.IconRightImage = null;
+            this.bunifuButton4.onHoverState = stateProperties33;
+            stateProperties34.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties34.BorderRadius = 3;
+            stateProperties34.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties34.BorderThickness = 1;
+            stateProperties34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties34.ForeColor = System.Drawing.Color.White;
+            stateProperties34.IconLeftImage = null;
+            stateProperties34.IconRightImage = null;
+            this.bunifuButton4.OnPressedState = stateProperties34;
             this.bunifuButton4.Size = new System.Drawing.Size(189, 45);
             this.bunifuButton4.TabIndex = 2;
             this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton4.TextMarginLeft = 10;
             this.bunifuButton4.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton4.Click += new System.EventHandler(this.bunifuButton4_Click);
             // 
             // bunifuButton3
             // 
@@ -420,11 +438,11 @@ namespace Raven
             this.bunifuButton3.ColorContrastOnClick = 45;
             this.bunifuButton3.ColorContrastOnHover = 45;
             this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges8;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.bunifuButton3.CustomizableEdges = borderEdges18;
             this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -445,29 +463,48 @@ namespace Raven
             this.bunifuButton3.IndicateFocus = false;
             this.bunifuButton3.Location = new System.Drawing.Point(0, 148);
             this.bunifuButton3.Name = "bunifuButton3";
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.BorderRadius = 3;
-            stateProperties15.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties15.BorderThickness = 1;
-            stateProperties15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.ForeColor = System.Drawing.Color.White;
-            stateProperties15.IconLeftImage = null;
-            stateProperties15.IconRightImage = null;
-            this.bunifuButton3.onHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties16.BorderRadius = 3;
-            stateProperties16.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties16.BorderThickness = 1;
-            stateProperties16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties16.ForeColor = System.Drawing.Color.White;
-            stateProperties16.IconLeftImage = null;
-            stateProperties16.IconRightImage = null;
-            this.bunifuButton3.OnPressedState = stateProperties16;
+            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.BorderRadius = 3;
+            stateProperties35.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties35.BorderThickness = 1;
+            stateProperties35.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.ForeColor = System.Drawing.Color.White;
+            stateProperties35.IconLeftImage = null;
+            stateProperties35.IconRightImage = null;
+            this.bunifuButton3.onHoverState = stateProperties35;
+            stateProperties36.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties36.BorderRadius = 3;
+            stateProperties36.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties36.BorderThickness = 1;
+            stateProperties36.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties36.ForeColor = System.Drawing.Color.White;
+            stateProperties36.IconLeftImage = null;
+            stateProperties36.IconRightImage = null;
+            this.bunifuButton3.OnPressedState = stateProperties36;
             this.bunifuButton3.Size = new System.Drawing.Size(189, 45);
             this.bunifuButton3.TabIndex = 2;
             this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton3.TextMarginLeft = 10;
             this.bunifuButton3.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton3.Click += new System.EventHandler(this.bunifuButton3_Click);
+            // 
+            // navigationFrame1
+            // 
+            this.navigationFrame1.Controls.Add(this.navigationPage1);
+            this.navigationFrame1.Location = new System.Drawing.Point(187, 27);
+            this.navigationFrame1.Name = "navigationFrame1";
+            this.navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.navigationPage1});
+            this.navigationFrame1.SelectedPage = this.navigationPage1;
+            this.navigationFrame1.Size = new System.Drawing.Size(961, 150);
+            this.navigationFrame1.TabIndex = 13;
+            this.navigationFrame1.Text = "navigationFrame1";
+            // 
+            // navigationPage1
+            // 
+            this.navigationPage1.Caption = "navigationPage1";
+            this.navigationPage1.Name = "navigationPage1";
+            this.navigationPage1.Size = new System.Drawing.Size(961, 150);
             // 
             // bunifuButton2
             // 
@@ -483,11 +520,11 @@ namespace Raven
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges9;
+            borderEdges19.BottomLeft = true;
+            borderEdges19.BottomRight = true;
+            borderEdges19.TopLeft = true;
+            borderEdges19.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges19;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -508,29 +545,30 @@ namespace Raven
             this.bunifuButton2.IndicateFocus = false;
             this.bunifuButton2.Location = new System.Drawing.Point(0, 97);
             this.bunifuButton2.Name = "bunifuButton2";
-            stateProperties17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties17.BorderRadius = 3;
-            stateProperties17.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties17.BorderThickness = 1;
-            stateProperties17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties17.ForeColor = System.Drawing.Color.White;
-            stateProperties17.IconLeftImage = null;
-            stateProperties17.IconRightImage = null;
-            this.bunifuButton2.onHoverState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties18.BorderRadius = 3;
-            stateProperties18.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties18.BorderThickness = 1;
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties18.ForeColor = System.Drawing.Color.White;
-            stateProperties18.IconLeftImage = null;
-            stateProperties18.IconRightImage = null;
-            this.bunifuButton2.OnPressedState = stateProperties18;
+            stateProperties37.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties37.BorderRadius = 3;
+            stateProperties37.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties37.BorderThickness = 1;
+            stateProperties37.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties37.ForeColor = System.Drawing.Color.White;
+            stateProperties37.IconLeftImage = null;
+            stateProperties37.IconRightImage = null;
+            this.bunifuButton2.onHoverState = stateProperties37;
+            stateProperties38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties38.BorderRadius = 3;
+            stateProperties38.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties38.BorderThickness = 1;
+            stateProperties38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties38.ForeColor = System.Drawing.Color.White;
+            stateProperties38.IconLeftImage = null;
+            stateProperties38.IconRightImage = null;
+            this.bunifuButton2.OnPressedState = stateProperties38;
             this.bunifuButton2.Size = new System.Drawing.Size(189, 45);
             this.bunifuButton2.TabIndex = 2;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton2.TextMarginLeft = 10;
             this.bunifuButton2.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
             // 
             // bunifuButton1
             // 
@@ -546,11 +584,11 @@ namespace Raven
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges10;
+            borderEdges20.BottomLeft = true;
+            borderEdges20.BottomRight = true;
+            borderEdges20.TopLeft = true;
+            borderEdges20.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges20;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -571,24 +609,24 @@ namespace Raven
             this.bunifuButton1.IndicateFocus = false;
             this.bunifuButton1.Location = new System.Drawing.Point(0, 46);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.BorderRadius = 3;
-            stateProperties19.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties19.BorderThickness = 1;
-            stateProperties19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.ForeColor = System.Drawing.Color.White;
-            stateProperties19.IconLeftImage = null;
-            stateProperties19.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties20.BorderRadius = 3;
-            stateProperties20.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties20.BorderThickness = 1;
-            stateProperties20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties20.ForeColor = System.Drawing.Color.White;
-            stateProperties20.IconLeftImage = null;
-            stateProperties20.IconRightImage = null;
-            this.bunifuButton1.OnPressedState = stateProperties20;
+            stateProperties39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties39.BorderRadius = 3;
+            stateProperties39.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties39.BorderThickness = 1;
+            stateProperties39.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties39.ForeColor = System.Drawing.Color.White;
+            stateProperties39.IconLeftImage = null;
+            stateProperties39.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties39;
+            stateProperties40.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties40.BorderRadius = 3;
+            stateProperties40.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties40.BorderThickness = 1;
+            stateProperties40.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties40.ForeColor = System.Drawing.Color.White;
+            stateProperties40.IconLeftImage = null;
+            stateProperties40.IconRightImage = null;
+            this.bunifuButton1.OnPressedState = stateProperties40;
             this.bunifuButton1.Size = new System.Drawing.Size(186, 45);
             this.bunifuButton1.TabIndex = 2;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -596,130 +634,167 @@ namespace Raven
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
+            // doanhThuTableAdapter
+            // 
+            this.doanhThuTableAdapter.ClearBeforeFill = true;
+            // 
+            // doanhThuBindingSource
+            // 
+            this.doanhThuBindingSource.DataMember = "DoanhThu";
+            this.doanhThuBindingSource.DataSource = this.onYourWeddingDayDataSet1;
+            // 
+            // onYourWeddingDayDataSet1
+            // 
+            this.onYourWeddingDayDataSet1.DataSetName = "OnYourWeddingDayDataSet1";
+            this.onYourWeddingDayDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(236, 22);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(13, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "New Order";
+            // 
+            // radioGroup1
+            // 
+            this.radioGroup1.Location = new System.Drawing.Point(387, 217);
+            this.radioGroup1.Name = "radioGroup1";
+            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.radioGroup1.Properties.ItemHorzAlignment = DevExpress.XtraEditors.RadioItemHorzAlignment.Center;
+            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem()});
+            this.radioGroup1.Properties.ItemsLayout = DevExpress.XtraEditors.RadioGroupItemsLayout.Flow;
+            this.radioGroup1.Size = new System.Drawing.Size(210, 31);
+            this.radioGroup1.TabIndex = 12;
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Location = new System.Drawing.Point(185, 80);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(969, 582);
+            this.xtraTabControl1.TabIndex = 2;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1,
+            this.xtraTabPage2,
+            this.xtraTabPage3,
+            this.xtraTabPage4,
+            this.xtraTabPage5,
+            this.xtraTabPage6});
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Controls.Add(this.DashPanel);
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(967, 553);
+            this.xtraTabPage1.Text = "xtraTabPage1";
+            // 
             // DashPanel
             // 
             this.DashPanel.BackColor = System.Drawing.Color.Snow;
-            this.DashPanel.Controls.Add(this.navigationFrame1);
+            this.DashPanel.Controls.Add(this.navigationFrame2);
             this.DashPanel.Controls.Add(this.radioGroup1);
+            this.DashPanel.Controls.Add(this.navigationPage3);
             this.DashPanel.Controls.Add(this.chartControl1);
             this.DashPanel.Controls.Add(this.label2);
-            this.DashPanel.Controls.Add(this.panel3);
             this.DashPanel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashPanel.Location = new System.Drawing.Point(186, 61);
+            this.DashPanel.Location = new System.Drawing.Point(-1, -24);
             this.DashPanel.Name = "DashPanel";
-            this.DashPanel.Size = new System.Drawing.Size(1176, 601);
-            this.DashPanel.TabIndex = 2;
+            this.DashPanel.Size = new System.Drawing.Size(968, 601);
+            this.DashPanel.TabIndex = 4;
             // 
-            // navigationFrame1
+            // navigationFrame2
             // 
-            this.behaviorManager1.SetBehaviors(this.navigationFrame1, new DevExpress.Utils.Behaviors.Behavior[] {
+            this.behaviorManager1.SetBehaviors(this.navigationFrame2, new DevExpress.Utils.Behaviors.Behavior[] {
             ((DevExpress.Utils.Behaviors.Behavior)(((DevExpress.Utils.Behaviors.Common.PagerBehavior)(DevExpress.Utils.Behaviors.Behavior.Create(typeof(DevExpress.Utils.Behaviors.Common.PagerBehavior), typeof(DevExpress.XtraBars.Behaviors.PagerBehaviorSourceForNavigationFrame), new object[] {
                         ((object)(this.radioGroup1)),
                         ((object)(this.pagerEvents1))})))))});
-            this.navigationFrame1.Controls.Add(this.navigationPage1);
-            this.navigationFrame1.Controls.Add(this.navigationPage2);
-            this.navigationFrame1.Controls.Add(this.navigationPage3);
-            this.navigationFrame1.Location = new System.Drawing.Point(3, 3);
-            this.navigationFrame1.Name = "navigationFrame1";
-            this.navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
-            this.navigationPage1,
-            this.navigationPage2,
-            this.navigationPage3});
-            this.navigationFrame1.SelectedPage = this.navigationPage2;
-            this.navigationFrame1.Size = new System.Drawing.Size(961, 150);
-            this.navigationFrame1.TabIndex = 13;
-            this.navigationFrame1.Text = "navigationFrame1";
+            this.navigationFrame2.Controls.Add(this.navigationPage4);
+            this.navigationFrame2.Controls.Add(this.navigationPage5);
+            this.navigationFrame2.Controls.Add(this.navigationPage6);
+            this.navigationFrame2.Controls.Add(this.navigationPage7);
+            this.navigationFrame2.Location = new System.Drawing.Point(1, 26);
+            this.navigationFrame2.Name = "navigationFrame2";
+            this.navigationFrame2.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.navigationPage4,
+            this.navigationPage5,
+            this.navigationPage7});
+            this.navigationFrame2.SelectedPage = this.navigationPage7;
+            this.navigationFrame2.Size = new System.Drawing.Size(967, 185);
+            this.navigationFrame2.TabIndex = 21;
+            this.navigationFrame2.Text = "navigationFrame2";
             // 
-            // navigationPage1
+            // navigationPage4
             // 
-            this.navigationPage1.Caption = "navigationPage1";
-            this.navigationPage1.Controls.Add(this.radPanel3);
-            this.navigationPage1.Controls.Add(this.radPanel2);
-            this.navigationPage1.Controls.Add(this.radPanel1);
-            this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(961, 150);
+            this.navigationPage4.Caption = "navigationPage4";
+            this.navigationPage4.Controls.Add(this.radPanel3);
+            this.navigationPage4.Controls.Add(this.radPanel1);
+            this.navigationPage4.Controls.Add(this.radPanel2);
+            this.navigationPage4.Name = "navigationPage4";
+            this.navigationPage4.Size = new System.Drawing.Size(967, 185);
             // 
             // radPanel3
             // 
             this.radPanel3.BackColor = System.Drawing.Color.Transparent;
             this.radPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("radPanel3.BackgroundImage")));
             this.radPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radPanel3.Controls.Add(this.label5);
             this.radPanel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel3.Location = new System.Drawing.Point(652, 16);
+            this.radPanel3.Location = new System.Drawing.Point(663, 32);
             this.radPanel3.Name = "radPanel3";
             this.radPanel3.Size = new System.Drawing.Size(222, 120);
-            this.radPanel3.TabIndex = 16;
+            this.radPanel3.TabIndex = 23;
             this.radPanel3.ThemeName = "Fluent";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Employee";
-            // 
-            // radPanel2
-            // 
-            this.radPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.radPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("radPanel2.BackgroundImage")));
-            this.radPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radPanel2.Controls.Add(this.label4);
-            this.radPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel2.Location = new System.Drawing.Point(369, 16);
-            this.radPanel2.Name = "radPanel2";
-            this.radPanel2.Size = new System.Drawing.Size(222, 120);
-            this.radPanel2.TabIndex = 15;
-            this.radPanel2.ThemeName = "Fluent";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 21);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Revenue Statistics";
             // 
             // radPanel1
             // 
             this.radPanel1.BackColor = System.Drawing.Color.Transparent;
             this.radPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("radPanel1.BackgroundImage")));
             this.radPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radPanel1.Controls.Add(this.label3);
             this.radPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel1.Location = new System.Drawing.Point(77, 16);
+            this.radPanel1.Location = new System.Drawing.Point(88, 32);
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.Size = new System.Drawing.Size(222, 120);
-            this.radPanel1.TabIndex = 14;
+            this.radPanel1.TabIndex = 21;
             this.radPanel1.ThemeName = "Fluent";
-            this.radPanel1.Click += new System.EventHandler(this.radPanel1_Click_1);
             // 
-            // label3
+            // radPanel2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Celebrate";
+            this.radPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.radPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("radPanel2.BackgroundImage")));
+            this.radPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radPanel2.Location = new System.Drawing.Point(380, 32);
+            this.radPanel2.Name = "radPanel2";
+            this.radPanel2.Size = new System.Drawing.Size(222, 120);
+            this.radPanel2.TabIndex = 22;
+            this.radPanel2.ThemeName = "Fluent";
             // 
-            // navigationPage2
+            // navigationPage5
             // 
-            this.navigationPage2.Caption = "navigationPage2";
-            this.navigationPage2.Controls.Add(this.radPanel5);
-            this.navigationPage2.Controls.Add(this.radPanel6);
-            this.navigationPage2.Controls.Add(this.radPanel4);
-            this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(961, 150);
+            this.navigationPage5.Caption = "navigationPage5";
+            this.navigationPage5.Controls.Add(this.radPanel5);
+            this.navigationPage5.Controls.Add(this.radPanel6);
+            this.navigationPage5.Controls.Add(this.radPanel4);
+            this.navigationPage5.Name = "navigationPage5";
+            this.navigationPage5.Size = new System.Drawing.Size(967, 185);
             // 
             // radPanel5
             // 
@@ -728,10 +803,10 @@ namespace Raven
             this.radPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radPanel5.Controls.Add(this.label7);
             this.radPanel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel5.Location = new System.Drawing.Point(379, 16);
+            this.radPanel5.Location = new System.Drawing.Point(379, 32);
             this.radPanel5.Name = "radPanel5";
             this.radPanel5.Size = new System.Drawing.Size(222, 120);
-            this.radPanel5.TabIndex = 10;
+            this.radPanel5.TabIndex = 16;
             this.radPanel5.ThemeName = "Fluent";
             // 
             // label7
@@ -752,10 +827,10 @@ namespace Raven
             this.radPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radPanel6.Controls.Add(this.label8);
             this.radPanel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel6.Location = new System.Drawing.Point(87, 16);
+            this.radPanel6.Location = new System.Drawing.Point(87, 32);
             this.radPanel6.Name = "radPanel6";
             this.radPanel6.Size = new System.Drawing.Size(222, 120);
-            this.radPanel6.TabIndex = 9;
+            this.radPanel6.TabIndex = 15;
             this.radPanel6.ThemeName = "Fluent";
             // 
             // label8
@@ -776,10 +851,10 @@ namespace Raven
             this.radPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radPanel4.Controls.Add(this.label6);
             this.radPanel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel4.Location = new System.Drawing.Point(662, 16);
+            this.radPanel4.Location = new System.Drawing.Point(662, 32);
             this.radPanel4.Name = "radPanel4";
             this.radPanel4.Size = new System.Drawing.Size(222, 120);
-            this.radPanel4.TabIndex = 11;
+            this.radPanel4.TabIndex = 17;
             this.radPanel4.ThemeName = "Fluent";
             // 
             // label6
@@ -793,14 +868,20 @@ namespace Raven
             this.label6.TabIndex = 0;
             this.label6.Text = "Analysis";
             // 
-            // navigationPage3
+            // navigationPage6
             // 
-            this.navigationPage3.Caption = "navigationPage3";
-            this.navigationPage3.Controls.Add(this.radPanel7);
-            this.navigationPage3.Controls.Add(this.radPanel8);
-            this.navigationPage3.Controls.Add(this.radPanel9);
-            this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(961, 150);
+            this.navigationPage6.Caption = "navigationPage6";
+            this.navigationPage6.Name = "navigationPage6";
+            this.navigationPage6.Size = new System.Drawing.Size(968, 185);
+            // 
+            // navigationPage7
+            // 
+            this.navigationPage7.Caption = "navigationPage7";
+            this.navigationPage7.Controls.Add(this.radPanel7);
+            this.navigationPage7.Controls.Add(this.radPanel8);
+            this.navigationPage7.Controls.Add(this.radPanel9);
+            this.navigationPage7.Name = "navigationPage7";
+            this.navigationPage7.Size = new System.Drawing.Size(967, 185);
             // 
             // radPanel7
             // 
@@ -809,10 +890,10 @@ namespace Raven
             this.radPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radPanel7.Controls.Add(this.label9);
             this.radPanel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel7.Location = new System.Drawing.Point(374, 15);
+            this.radPanel7.Location = new System.Drawing.Point(379, 32);
             this.radPanel7.Name = "radPanel7";
             this.radPanel7.Size = new System.Drawing.Size(222, 120);
-            this.radPanel7.TabIndex = 13;
+            this.radPanel7.TabIndex = 20;
             this.radPanel7.ThemeName = "Fluent";
             // 
             // label9
@@ -833,10 +914,10 @@ namespace Raven
             this.radPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radPanel8.Controls.Add(this.label10);
             this.radPanel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel8.Location = new System.Drawing.Point(82, 15);
+            this.radPanel8.Location = new System.Drawing.Point(87, 32);
             this.radPanel8.Name = "radPanel8";
             this.radPanel8.Size = new System.Drawing.Size(222, 120);
-            this.radPanel8.TabIndex = 12;
+            this.radPanel8.TabIndex = 19;
             this.radPanel8.ThemeName = "Fluent";
             // 
             // label10
@@ -857,10 +938,10 @@ namespace Raven
             this.radPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radPanel9.Controls.Add(this.label11);
             this.radPanel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radPanel9.Location = new System.Drawing.Point(657, 15);
+            this.radPanel9.Location = new System.Drawing.Point(662, 32);
             this.radPanel9.Name = "radPanel9";
             this.radPanel9.Size = new System.Drawing.Size(222, 120);
-            this.radPanel9.TabIndex = 14;
+            this.radPanel9.TabIndex = 21;
             this.radPanel9.ThemeName = "Fluent";
             // 
             // label11
@@ -874,67 +955,72 @@ namespace Raven
             this.label11.TabIndex = 0;
             this.label11.Text = "Customer";
             // 
-            // radioGroup1
+            // navigationPage3
             // 
-            this.radioGroup1.Location = new System.Drawing.Point(387, 159);
-            this.radioGroup1.Name = "radioGroup1";
-            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
-            this.radioGroup1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.radioGroup1.Properties.ItemHorzAlignment = DevExpress.XtraEditors.RadioItemHorzAlignment.Center;
-            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem()});
-            this.radioGroup1.Properties.ItemsLayout = DevExpress.XtraEditors.RadioGroupItemsLayout.Flow;
-            this.radioGroup1.Size = new System.Drawing.Size(210, 31);
-            this.radioGroup1.TabIndex = 12;
+            this.navigationPage3.Caption = "navigationPage3";
+            this.navigationPage3.Name = "navigationPage3";
+            this.navigationPage3.Size = new System.Drawing.Size(961, 150);
             // 
             // chartControl1
             // 
             this.chartControl1.DataAdapter = this.doanhThuTableAdapter;
             this.chartControl1.DataSource = this.doanhThuBindingSource;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram2;
             this.chartControl1.IndicatorsPaletteName = "Blue";
             this.chartControl1.Legend.Name = "Default Legend";
-            this.chartControl1.Location = new System.Drawing.Point(2, 231);
+            this.chartControl1.Location = new System.Drawing.Point(1, 277);
             this.chartControl1.Name = "chartControl1";
-            series1.ArgumentDataMember = "Thang";
-            series1.FilterString = "[TongDoanhThu] = \'100000000000\'";
-            series1.Name = "Series 1";
-            series1.ValueDataMembersSerializable = "TongDoanhThu";
+            series2.ArgumentDataMember = "Thang";
+            series2.FilterString = "[TongDoanhThu] = \'100000000000\'";
+            series2.Name = "Series 1";
+            series2.ValueDataMembersSerializable = "TongDoanhThu";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chartControl1.Size = new System.Drawing.Size(962, 370);
+        series2};
+            this.chartControl1.Size = new System.Drawing.Size(965, 298);
             this.chartControl1.TabIndex = 7;
-            this.chartControl1.Click += new System.EventHandler(this.chartControl1_Click);
-            // 
-            // doanhThuTableAdapter
-            // 
-            this.doanhThuTableAdapter.ClearBeforeFill = true;
-            // 
-            // doanhThuBindingSource
-            // 
-            this.doanhThuBindingSource.DataMember = "DoanhThu";
-            this.doanhThuBindingSource.DataSource = this.onYourWeddingDayDataSet1;
-            // 
-            // onYourWeddingDayDataSet1
-            // 
-            this.onYourWeddingDayDataSet1.DataSetName = "OnYourWeddingDayDataSet1";
-            this.onYourWeddingDayDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(24, 199);
+            this.label2.Location = new System.Drawing.Point(10, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Statistic";
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(967, 553);
+            this.xtraTabPage2.Text = "xtraTabPage2";
+            // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(967, 553);
+            this.xtraTabPage3.Text = "xtraTabPage3";
+            // 
+            // xtraTabPage4
+            // 
+            this.xtraTabPage4.Name = "xtraTabPage4";
+            this.xtraTabPage4.Size = new System.Drawing.Size(967, 553);
+            this.xtraTabPage4.Text = "xtraTabPage4";
+            // 
+            // xtraTabPage5
+            // 
+            this.xtraTabPage5.Name = "xtraTabPage5";
+            this.xtraTabPage5.Size = new System.Drawing.Size(967, 553);
+            this.xtraTabPage5.Text = "xtraTabPage5";
+            // 
+            // xtraTabPage6
+            // 
+            this.xtraTabPage6.Name = "xtraTabPage6";
+            this.xtraTabPage6.Size = new System.Drawing.Size(967, 553);
+            this.xtraTabPage6.Text = "xtraTabPage6";
             // 
             // panel3
             // 
@@ -950,10 +1036,10 @@ namespace Raven
             this.panel3.Controls.Add(this.bunifuCustomLabel1);
             this.panel3.Controls.Add(this.bunifuPictureBox1);
             this.panel3.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(967, 0);
+            this.panel3.Location = new System.Drawing.Point(1153, 79);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(209, 601);
-            this.panel3.TabIndex = 4;
+            this.panel3.TabIndex = 5;
             // 
             // labelControl1
             // 
@@ -964,7 +1050,6 @@ namespace Raven
             this.labelControl1.Size = new System.Drawing.Size(63, 13);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "labelControl1";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // bunifuButton10
             // 
@@ -980,11 +1065,11 @@ namespace Raven
             this.bunifuButton10.ColorContrastOnClick = 45;
             this.bunifuButton10.ColorContrastOnHover = 45;
             this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton10.CustomizableEdges = borderEdges1;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.bunifuButton10.CustomizableEdges = borderEdges11;
             this.bunifuButton10.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton10.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton10.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1005,24 +1090,24 @@ namespace Raven
             this.bunifuButton10.IndicateFocus = false;
             this.bunifuButton10.Location = new System.Drawing.Point(2, 363);
             this.bunifuButton10.Name = "bunifuButton10";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.BorderRadius = 3;
-            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.ForeColor = System.Drawing.Color.White;
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.bunifuButton10.onHoverState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 3;
-            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.bunifuButton10.OnPressedState = stateProperties2;
+            stateProperties21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties21.BorderRadius = 3;
+            stateProperties21.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties21.BorderThickness = 1;
+            stateProperties21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties21.ForeColor = System.Drawing.Color.White;
+            stateProperties21.IconLeftImage = null;
+            stateProperties21.IconRightImage = null;
+            this.bunifuButton10.onHoverState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties22.BorderRadius = 3;
+            stateProperties22.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties22.BorderThickness = 1;
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties22.ForeColor = System.Drawing.Color.White;
+            stateProperties22.IconLeftImage = null;
+            stateProperties22.IconRightImage = null;
+            this.bunifuButton10.OnPressedState = stateProperties22;
             this.bunifuButton10.Size = new System.Drawing.Size(204, 45);
             this.bunifuButton10.TabIndex = 3;
             this.bunifuButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1043,11 +1128,11 @@ namespace Raven
             this.bunifuButton8.ColorContrastOnClick = 45;
             this.bunifuButton8.ColorContrastOnHover = 45;
             this.bunifuButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton8.CustomizableEdges = borderEdges2;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.bunifuButton8.CustomizableEdges = borderEdges12;
             this.bunifuButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton8.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1068,24 +1153,24 @@ namespace Raven
             this.bunifuButton8.IndicateFocus = false;
             this.bunifuButton8.Location = new System.Drawing.Point(3, 261);
             this.bunifuButton8.Name = "bunifuButton8";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.BorderRadius = 3;
-            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.ForeColor = System.Drawing.Color.White;
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.bunifuButton8.onHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.BorderRadius = 3;
-            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties4.BorderThickness = 1;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.bunifuButton8.OnPressedState = stateProperties4;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.BorderRadius = 3;
+            stateProperties23.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties23.BorderThickness = 1;
+            stateProperties23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.ForeColor = System.Drawing.Color.White;
+            stateProperties23.IconLeftImage = null;
+            stateProperties23.IconRightImage = null;
+            this.bunifuButton8.onHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties24.BorderRadius = 3;
+            stateProperties24.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties24.BorderThickness = 1;
+            stateProperties24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties24.ForeColor = System.Drawing.Color.White;
+            stateProperties24.IconLeftImage = null;
+            stateProperties24.IconRightImage = null;
+            this.bunifuButton8.OnPressedState = stateProperties24;
             this.bunifuButton8.Size = new System.Drawing.Size(204, 45);
             this.bunifuButton8.TabIndex = 3;
             this.bunifuButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1106,11 +1191,11 @@ namespace Raven
             this.bunifuButton9.ColorContrastOnClick = 45;
             this.bunifuButton9.ColorContrastOnHover = 45;
             this.bunifuButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton9.CustomizableEdges = borderEdges3;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.bunifuButton9.CustomizableEdges = borderEdges13;
             this.bunifuButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton9.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton9.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1131,30 +1216,29 @@ namespace Raven
             this.bunifuButton9.IndicateFocus = false;
             this.bunifuButton9.Location = new System.Drawing.Point(2, 312);
             this.bunifuButton9.Name = "bunifuButton9";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties5.BorderRadius = 3;
-            stateProperties5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties5.BorderThickness = 1;
-            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties5.ForeColor = System.Drawing.Color.White;
-            stateProperties5.IconLeftImage = null;
-            stateProperties5.IconRightImage = null;
-            this.bunifuButton9.onHoverState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.BorderRadius = 3;
-            stateProperties6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties6.BorderThickness = 1;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.ForeColor = System.Drawing.Color.White;
-            stateProperties6.IconLeftImage = null;
-            stateProperties6.IconRightImage = null;
-            this.bunifuButton9.OnPressedState = stateProperties6;
+            stateProperties25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties25.BorderRadius = 3;
+            stateProperties25.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties25.BorderThickness = 1;
+            stateProperties25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties25.ForeColor = System.Drawing.Color.White;
+            stateProperties25.IconLeftImage = null;
+            stateProperties25.IconRightImage = null;
+            this.bunifuButton9.onHoverState = stateProperties25;
+            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties26.BorderRadius = 3;
+            stateProperties26.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties26.BorderThickness = 1;
+            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties26.ForeColor = System.Drawing.Color.White;
+            stateProperties26.IconLeftImage = null;
+            stateProperties26.IconRightImage = null;
+            this.bunifuButton9.OnPressedState = stateProperties26;
             this.bunifuButton9.Size = new System.Drawing.Size(204, 45);
             this.bunifuButton9.TabIndex = 3;
             this.bunifuButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton9.TextMarginLeft = 10;
             this.bunifuButton9.UseDefaultRadiusAndThickness = true;
-            this.bunifuButton9.Click += new System.EventHandler(this.bunifuButton7_Click);
             // 
             // bunifuButton7
             // 
@@ -1170,11 +1254,11 @@ namespace Raven
             this.bunifuButton7.ColorContrastOnClick = 45;
             this.bunifuButton7.ColorContrastOnHover = 45;
             this.bunifuButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.bunifuButton7.CustomizableEdges = borderEdges4;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.bunifuButton7.CustomizableEdges = borderEdges14;
             this.bunifuButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton7.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bunifuButton7.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1195,30 +1279,29 @@ namespace Raven
             this.bunifuButton7.IndicateFocus = false;
             this.bunifuButton7.Location = new System.Drawing.Point(3, 210);
             this.bunifuButton7.Name = "bunifuButton7";
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.BorderRadius = 3;
-            stateProperties7.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties7.BorderThickness = 1;
-            stateProperties7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.ForeColor = System.Drawing.Color.White;
-            stateProperties7.IconLeftImage = null;
-            stateProperties7.IconRightImage = null;
-            this.bunifuButton7.onHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties8.BorderRadius = 3;
-            stateProperties8.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties8.BorderThickness = 1;
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties8.ForeColor = System.Drawing.Color.White;
-            stateProperties8.IconLeftImage = null;
-            stateProperties8.IconRightImage = null;
-            this.bunifuButton7.OnPressedState = stateProperties8;
+            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties27.BorderRadius = 3;
+            stateProperties27.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties27.BorderThickness = 1;
+            stateProperties27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties27.ForeColor = System.Drawing.Color.White;
+            stateProperties27.IconLeftImage = null;
+            stateProperties27.IconRightImage = null;
+            this.bunifuButton7.onHoverState = stateProperties27;
+            stateProperties28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties28.BorderRadius = 3;
+            stateProperties28.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties28.BorderThickness = 1;
+            stateProperties28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties28.ForeColor = System.Drawing.Color.White;
+            stateProperties28.IconLeftImage = null;
+            stateProperties28.IconRightImage = null;
+            this.bunifuButton7.OnPressedState = stateProperties28;
             this.bunifuButton7.Size = new System.Drawing.Size(204, 45);
             this.bunifuButton7.TabIndex = 3;
             this.bunifuButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton7.TextMarginLeft = 10;
             this.bunifuButton7.UseDefaultRadiusAndThickness = true;
-            this.bunifuButton7.Click += new System.EventHandler(this.bunifuButton7_Click);
             // 
             // pictureBox4
             // 
@@ -1278,26 +1361,41 @@ namespace Raven
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
-            // pictureBox5
+            // navigationPage2
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(236, 22);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
+            this.navigationPage2.Caption = "navigationPage2";
+            this.navigationPage2.Name = "navigationPage2";
+            this.navigationPage2.Size = new System.Drawing.Size(961, 150);
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "New Order";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 21);
+            this.label5.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(158, 21);
+            this.label4.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 21);
+            this.label3.TabIndex = 0;
             // 
             // pagerEvents1
             // 
@@ -1308,7 +1406,9 @@ namespace Raven
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1362, 662);
-            this.Controls.Add(this.DashPanel);
+            this.Controls.Add(this.navigationPage2);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1322,21 +1422,24 @@ namespace Raven
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.DashPanel.ResumeLayout(false);
-            this.DashPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).EndInit();
             this.navigationFrame1.ResumeLayout(false);
-            this.navigationPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage1.ResumeLayout(false);
+            this.DashPanel.ResumeLayout(false);
+            this.DashPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).EndInit();
+            this.navigationFrame2.ResumeLayout(false);
+            this.navigationPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
-            this.radPanel3.ResumeLayout(false);
-            this.radPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
-            this.radPanel2.ResumeLayout(false);
-            this.radPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
-            this.radPanel1.ResumeLayout(false);
-            this.radPanel1.PerformLayout();
-            this.navigationPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
+            this.navigationPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel5)).EndInit();
             this.radPanel5.ResumeLayout(false);
             this.radPanel5.PerformLayout();
@@ -1346,7 +1449,7 @@ namespace Raven
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).EndInit();
             this.radPanel4.ResumeLayout(false);
             this.radPanel4.PerformLayout();
-            this.navigationPage3.ResumeLayout(false);
+            this.navigationPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel7)).EndInit();
             this.radPanel7.ResumeLayout(false);
             this.radPanel7.PerformLayout();
@@ -1356,18 +1459,14 @@ namespace Raven
             ((System.ComponentModel.ISupportInitialize)(this.radPanel9)).EndInit();
             this.radPanel9.ResumeLayout(false);
             this.radPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doanhThuBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onYourWeddingDayDataSet1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1385,50 +1484,62 @@ namespace Raven
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton6;
-        private System.Windows.Forms.Panel DashPanel;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton8;
         private OnYourWeddingDayDataSet1TableAdapters.DoanhThuTableAdapter doanhThuTableAdapter;
         private OnYourWeddingDayDataSet1 onYourWeddingDayDataSet1;
         private System.Windows.Forms.BindingSource doanhThuBindingSource;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
+        private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private Telerik.WinControls.UI.RadPanel radPanel4;
-        private System.Windows.Forms.Label label6;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton10;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton8;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton9;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private System.Windows.Forms.Panel DashPanel;
+        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame2;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage4;
+        private Telerik.WinControls.UI.RadPanel radPanel3;
+        private Telerik.WinControls.UI.RadPanel radPanel1;
+        private Telerik.WinControls.UI.RadPanel radPanel2;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage5;
         private Telerik.WinControls.UI.RadPanel radPanel5;
         private System.Windows.Forms.Label label7;
         private Telerik.WinControls.UI.RadPanel radPanel6;
         private System.Windows.Forms.Label label8;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
-        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame1;
-        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
-        private DevExpress.XtraEditors.RadioGroup radioGroup1;
-        private DevExpress.Utils.Behaviors.Common.PagerEvents pagerEvents1;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
-        private Telerik.WinControls.UI.RadPanel radPanel3;
-        private System.Windows.Forms.Label label5;
-        private Telerik.WinControls.UI.RadPanel radPanel2;
-        private System.Windows.Forms.Label label4;
-        private Telerik.WinControls.UI.RadPanel radPanel1;
-        private System.Windows.Forms.Label label3;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage3;
+        private Telerik.WinControls.UI.RadPanel radPanel4;
+        private System.Windows.Forms.Label label6;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage6;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage7;
         private Telerik.WinControls.UI.RadPanel radPanel7;
         private System.Windows.Forms.Label label9;
         private Telerik.WinControls.UI.RadPanel radPanel8;
         private System.Windows.Forms.Label label10;
         private Telerik.WinControls.UI.RadPanel radPanel9;
         private System.Windows.Forms.Label label11;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton10;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton9;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private DevExpress.XtraEditors.RadioGroup radioGroup1;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage3;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
+        private System.Windows.Forms.Label label2;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
+        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame1;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage5;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage6;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.Utils.Behaviors.Common.PagerEvents pagerEvents1;
     }
 }

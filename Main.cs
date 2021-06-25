@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using DevExpress.XtraBars.ToastNotifications;
 using DevExpress.Data;
 using System.Windows.Forms;
+using DevExpress.XtraBars.Docking2010;
 using Raven.DAO;
 
 namespace Raven
@@ -88,7 +89,7 @@ namespace Raven
 
         private void bunifuButton1_Click(object sender, EventArgs e) // Show Panel
         {
-            DashPanel.Show(); 
+            xtraTabPage1.Show();
         }
 
         #region Animation
@@ -259,15 +260,53 @@ namespace Raven
         {
 
         }
+        private void radPanel1_Click_1(object sender, EventArgs e)
+        {
+            TaskForm ti = new TaskForm();
+            ti.Show();
+            this.Hide();
+        }
+
+        private void radPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        #region Move To
+        private void pagerEvents2_CustomizePagerItem(object sender, DevExpress.Utils.CustomizePagerItemEventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            xtraTabPage2.Show();
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            xtraTabPage3.Show();
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            xtraTabPage4.Show();
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            xtraTabPage5.Show();
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
+        {
+            xtraTabPage6.Show();
+        }
 
         private void pagerEvents1_CustomizePagerItem(object sender, DevExpress.Utils.CustomizePagerItemEventArgs e)
         {
 
         }
-
-        private void radPanel1_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }
