@@ -4,6 +4,28 @@ USE OnYourWeddingDay
 
 go
 
+create table Work(
+	id int identity (1,1) primary key,
+	NameOfWork varchar(500),
+	MaxTime datetime,
+	Prize varchar(500)
+)
+
+create table task(
+	id int identity (1,1) primary key,
+	NameTask varchar(100),
+	WorkFrom date , 
+	WorkTo date,
+	PeopleDo varchar(500),
+	workinclude int,
+	Describe varchar(500),
+	Exception varchar(500)
+
+	foreign key (workinclude) references Work(id)
+	
+)
+
+alter table nhanvien add column Id task int foreign key
 CREATE TABLE nhanvien(
 	id INT IDENTITY(1,1) PRIMARY KEY,
 	Hoten VARCHAR(100) NOT NULL,
