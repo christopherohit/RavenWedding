@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace Raven
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             bunifuFlatButton1.Enabled = false;
+            panel1.Hide();
         }
         #endregion
 
@@ -62,27 +64,47 @@ namespace Raven
         }
         #endregion
 
+        public static string GetCode() // Create Random Code to Send to user
+        {
+            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+            Random rand = new Random();
+            int num = rand.Next(8, 8);
+            return chars[num].ToString();
+        }
+
         SignIn zo = new SignIn();
         
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        private void bunifuFlatButton1_Click(object sender, EventArgs e) // Trigger For Register Emails
         {
-            string sname = name.Text;
-            string smail = Mailsbox.Text;
-            string spass = passbox.Text;
             if (string.IsNullOrEmpty(name.Text) || string.IsNullOrEmpty(passbox.Text) || string.IsNullOrEmpty(Mailsbox.Text))
             {
                 bunifuFlatButton1.Enabled = false;
             }
             else
             {
-                if (InsertUser(sname , smail , spass))
-                {
-                    Info StepForm = new Info();
-                    StepForm.Show();
-                    StepForm.SetName.Text = name.Text;
-                    this.Hide();
-                }
+                MailAddress from = new MailAddress("59510710666@st.utc2.edu.vn","Nathasiania");
+                MailAddress to = new MailAddress(Mailsbox.Text, "Customer");
+                SendEmail("Verify Your Emails", from, to);
+                panel1.Show();
+                ReturnOut();
+                
             }
+        }
+
+        protected void SendEmail(string _subbject , MailAddress _from , MailAddress _to) // Send Emails
+        {
+            string text = "";
+            SmtpClient smtpClient = new SmtpClient("Mailhost");
+            MailMessage mail;
+            Text = GetCode();
+            mail = new MailMessage();
+            mail.From = _from;
+            mail.To.Add(_to);
+            mail.Subject = _subbject;
+            mail.Body = Text;
+            mail.IsBodyHtml = true;
+            smtpClient.Send(mail);
+            mail.Dispose();
         }
 
         #region Method
@@ -197,5 +219,60 @@ namespace Raven
             }
         }
 
+        private void pictureBox3_Click(object sender, EventArgs e) // Refuse provide Code which was send to your mails
+        {
+            panel1.Hide();
+            ReturnIn();
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e) // Move to next Form
+        {
+            if (textEdit1.Text == GetCode())
+            {
+                string sname = name.Text;
+                string smail = Mailsbox.Text;
+                string spass = passbox.Text;
+                if (InsertUser(sname, smail, spass))
+                {
+                    Info StepForm = new Info();
+                    StepForm.Show();
+                    StepForm.SetName.Text = name.Text;
+                    this.Hide();
+                }
+            }
+        }
+        public void ReturnOut() // Disable everything not needed
+        {
+            name.Enabled = false;
+            Mailsbox.Enabled = false;
+            passbox.Enabled = false;
+            repassbox.Enabled = false;
+            checkBox1.Enabled = false;
+            pictureBox1.Enabled = false;
+            pictureBox2.Enabled = false;
+            bunifuFlatButton1.Enabled = false;
+        }
+
+        public void ReturnIn() // Enable Every thing to origin
+        {
+            name.Enabled = true;
+            Mailsbox.Enabled = true;
+            passbox.Enabled = true;
+            repassbox.Enabled = true;
+            checkBox1.Enabled = true;
+            bunifuFlatButton1.Enabled = true;
+            pictureBox1.Enabled = true;
+            pictureBox2.Enabled = true;
+        }
+
+        private void SignUp_Click(object sender, EventArgs e) // Check the system ensure that when you type the code of mails no anyone can active or Enable
+        {
+            if (panel1.Visible == true)
+            {
+                this.panel1.Hide();
+                panel1.Show();
+                ReturnOut();
+            }
+        }
     }
 }
