@@ -56,13 +56,13 @@ namespace Raven
         }
         #endregion
         const string passcode = "78Q21D3QDF1D12DFS3FSS";
-
-        private void labelControl4_Click(object sender, EventArgs e)
+        System.Windows.Forms.Form Out = System.Windows.Forms.Application.OpenForms["SignIn"];
+        private void labelControl4_Click(object sender, EventArgs e) // Redict to WebPage
         {
             System.Diagnostics.Process.Start("www.onyourweddingdays.com");
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void bunifuButton1_Click(object sender, EventArgs e) // Check Passcode if right cd to Sign Up Form, else message box for user
         {
             if (textBox1.Text != passcode || string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrEmpty(textBox1.Text))
             {
@@ -83,17 +83,18 @@ namespace Raven
             else if ( textBox1.Text == passcode)
             {
                 SignUp signUp = new SignUp();
+                Out.Hide();
                 signUp.Show();
                 this.Hide();
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e) // Return to sign In
         {
             this.Hide();
             System.Windows.Forms.Form io = System.Windows.Forms.Application.OpenForms["SignIn"];
             io.Enabled = true;
-
+            ((SignIn)io).carousel.RotateAlways = true;
         }
     }
 }

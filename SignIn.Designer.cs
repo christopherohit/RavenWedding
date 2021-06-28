@@ -753,7 +753,7 @@ namespace Raven
             this.bunifuTextBox4.IconRight = null;
             this.bunifuTextBox4.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox4.Lines = new string[0];
-            this.bunifuTextBox4.Location = new System.Drawing.Point(537, 34);
+            this.bunifuTextBox4.Location = new System.Drawing.Point(390, 192);
             this.bunifuTextBox4.MaxLength = 32767;
             this.bunifuTextBox4.MinimumSize = new System.Drawing.Size(100, 35);
             this.bunifuTextBox4.Modified = false;

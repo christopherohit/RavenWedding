@@ -13,7 +13,9 @@ namespace Raven
 {
     public partial class SignIn : Form
     {
+        
         bool IsDirty { get; set; }
+        public Syncfusion.Windows.Forms.Tools.Carousel carousel { get { return this.carousel1; } }
         public Bunifu.Framework.UI.BunifuMaterialTextbox TextBox { get { return this.name; } }
         Authical form = new Authical();
         int i = 4;
@@ -98,8 +100,10 @@ namespace Raven
         private void labelControl3_Click(object sender, EventArgs e) // Disable Form when open Authical
         {
             IsDirty = true;
-            form.Show();
+            LoadingSignUp custom = new LoadingSignUp();
+            custom.Show();
             this.Enabled = false;
+            carousel1.RotateAlways = false;
         }
 
         private void SignIn_Click(object sender, EventArgs e) //Check Form Sign Open? if yes disable it and say beep
@@ -261,12 +265,12 @@ namespace Raven
 
         #region Panel Move
         Point PanelMouseDownLocation;
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        private void panel2_MouseDown(object sender, MouseEventArgs e) // Move Panel
         {
             if (e.Button == MouseButtons.Left) PanelMouseDownLocation = e.Location;
         }
 
-        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        private void panel2_MouseMove(object sender, MouseEventArgs e) // Move Panel
         {
             if (e.Button == MouseButtons.Left)
 
@@ -414,12 +418,12 @@ namespace Raven
 
         #region
 
-        private void bunifuGradientPanel1_MouseDown(object sender, MouseEventArgs e)
+        private void bunifuGradientPanel1_MouseDown(object sender, MouseEventArgs e) // Move Panel
         {
             if (e.Button == MouseButtons.Left) PanelMouseDownLocation = e.Location;
         }
 
-        private void bunifuGradientPanel1_MouseMove(object sender, MouseEventArgs e)
+        private void bunifuGradientPanel1_MouseMove(object sender, MouseEventArgs e) // Move Panel
         {
             if (e.Button == MouseButtons.Left)
 

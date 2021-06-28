@@ -1,9 +1,11 @@
-﻿using Raven.DAO;
+﻿using DevExpress.XtraEditors;
+using Raven.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Mail;
 using System.Runtime.InteropServices;
@@ -15,6 +17,7 @@ namespace Raven
 {
     public partial class SignUp : Form
     {
+        string Paths = Path.GetFullPath(@"D:\");
         public Bunifu.Framework.UI.BunifuMetroTextbox Setname { get { return this.name; } }
         public Bunifu.Framework.UI.BunifuMetroTextbox SetMails { get { return this.Mailsbox; } }
         #region Round Corner
@@ -82,13 +85,16 @@ namespace Raven
             }
             else
             {
-                MailAddress from = new MailAddress("59510710666@st.utc2.edu.vn","Nathasiania");
-                MailAddress to = new MailAddress(Mailsbox.Text, "Customer");
-                SendEmail("Verify Your Emails", from, to);
+                Recycle();
                 panel1.Show();
                 ReturnOut();
-                
             }
+        }
+        public void Recycle()  // Divide Syntax code Send Emails
+        {
+            MailAddress from = new MailAddress("59510710666@st.utc2.edu.vn", "Nathasiania");
+            MailAddress to = new MailAddress(Mailsbox.Text, "Customer");
+            SendEmail("Verify Your Emails", from, to);
         }
 
         protected void SendEmail(string _subbject , MailAddress _from , MailAddress _to) // Send Emails
@@ -227,6 +233,8 @@ namespace Raven
 
         private void bunifuButton2_Click(object sender, EventArgs e) // Move to next Form
         {
+            XtraMessageBoxArgs mess = new XtraMessageBoxArgs();
+
             if (textEdit1.Text == GetCode())
             {
                 string sname = name.Text;
@@ -239,6 +247,17 @@ namespace Raven
                     StepForm.SetName.Text = name.Text;
                     this.Hide();
                 }
+            }
+            else
+            {
+                mess.Caption = "Error";
+                mess.Icon = new Icon(@"D:\Lesson\RIT\C #\WinForm\RavenWedding\Pic\Icon\error-7-xl.png");
+                mess.Text = "The code you just type has wrong\nPlease recheck your emails and ensure that it same with the code which you has receive.";
+                mess.Buttons = new DialogResult[]
+                {
+                    DialogResult.Yes, DialogResult.No
+                };
+                var x = XtraMessageBox.Show(mess);
             }
         }
         public void ReturnOut() // Disable everything not needed
@@ -273,6 +292,33 @@ namespace Raven
                 panel1.Show();
                 ReturnOut();
             }
+        }
+
+        #region Move Panel
+        Point PanelMouseDownLocation;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) PanelMouseDownLocation = e.Location;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+
+            {
+
+                panel1.Left += e.X - PanelMouseDownLocation.X;
+
+                panel1.Top += e.Y - PanelMouseDownLocation.Y;
+
+            }
+        }
+        #endregion
+
+        private void pictureBox4_Click(object sender, EventArgs e) // Resend code to Emails
+        {
+            GetCode();
+            Recycle();
         }
     }
 }
