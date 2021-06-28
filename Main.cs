@@ -127,12 +127,12 @@ namespace Raven
             }
         }
 
-        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
+        private void notifyIcon1_DoubleClick(object sender, EventArgs e) // Show Notification
         {
 
         }
 
-        private void bunifuShadowPanel2_Paint(object sender, PaintEventArgs e)
+        private void bunifuShadowPanel2_Paint(object sender, PaintEventArgs e) // Unknow Function
         {
             GraphicsPath gp = new GraphicsPath();
 

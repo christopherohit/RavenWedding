@@ -276,7 +276,7 @@ namespace Raven
 
         #endregion
 
-        private void windowsUIButtonPanelMain_ButtonClick(object sender, ButtonEventArgs e)
+        private void windowsUIButtonPanelMain_ButtonClick(object sender, ButtonEventArgs e) // Update Or Delete myseft out of system
         {
             XtraMessageBoxArgs xma = new XtraMessageBoxArgs();
             string id = ((Main)sd).ID.Text;
@@ -378,10 +378,10 @@ namespace Raven
             string id = ((Main)sd).ID.Text;
             if (textBox1.Text == Verify(id))
             {
-                string names = name.Text + "-" + mails.Text ;
+                string names = name.Text + "-" + mails.Text ; //EdwardCullen_cohota@icloud.com
                 using (var olded = new MemoryStream())
                 {
-                    string paths = Paths + @"Lesson\RIT\C #\WinForm\RavenWedding\Database\User Old" + names;
+                    string paths = Paths + @"Lesson\RIT\C #\WinForm\RavenWedding\Database\User Old\" + names;
                     Directory.CreateDirectory(paths);
                     string lines = SaveOld(id);
                     StreamWriter ter = new (names + ".txt" , append: true);

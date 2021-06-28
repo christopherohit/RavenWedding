@@ -304,6 +304,12 @@
     <Compile Include="LastStep.Designer.cs">
       <DependentUpon>LastStep.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadingSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingSignUp.Designer.cs">
+      <DependentUpon>LoadingSignUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +370,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LastStep.resx">
       <DependentUpon>LastStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingSignUp.resx">
+      <DependentUpon>LoadingSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
