@@ -48,7 +48,7 @@ namespace Raven
             Thread.Sleep(200);
             SignUp ui = new SignUp();
             ui.Show();
-            this..Hide();
+            this.Hide();
         }
     }
 }
