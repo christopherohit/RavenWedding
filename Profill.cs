@@ -206,7 +206,7 @@ namespace Raven
         #endregion
 
         #region UnSave Checked
-        private void image_Click_1(object sender, EventArgs e)
+        private void image_Click_1(object sender, EventArgs e) // Recognize user click into Picbox
         {
             OpenFileDialog rm = new OpenFileDialog();
             var r = rm.ShowDialog();
@@ -229,7 +229,7 @@ namespace Raven
             }
         }
 
-        private void birth_ValueChanged(object sender, EventArgs e)
+        private void birth_ValueChanged(object sender, EventArgs e) // Check Birthday user select
         {
             if (birth.Value > birth.MaxDate)
             {
@@ -238,37 +238,37 @@ namespace Raven
             }
         }
 
-        private void name_EditValueChanged(object sender, EventArgs e)
+        private void name_EditValueChanged(object sender, EventArgs e) // Check Name Was change ?
         {
             IsDirty = false;
         }
 
-        private void mails_EditValueChanged(object sender, EventArgs e)
+        private void mails_EditValueChanged(object sender, EventArgs e) // The system allow user change account name
         {
             IsDirty = false;
         }
 
-        private void gender_SelectedIndexChanged(object sender, EventArgs e)
+        private void gender_SelectedIndexChanged(object sender, EventArgs e) // Allow change Gender
         {
             IsDirty = false;
         }
 
-        private void address_EditValueChanged(object sender, EventArgs e)
+        private void address_EditValueChanged(object sender, EventArgs e) // Recognize change Address
         {
             IsDirty = false;
         }
 
-        private void phone_EditValueChanged(object sender, EventArgs e)
+        private void phone_EditValueChanged(object sender, EventArgs e) // Recognize change phone number
         {
             IsDirty = false;
         }
 
-        private void desc_TextChanged(object sender, EventArgs e)
+        private void desc_TextChanged(object sender, EventArgs e) // Recognize change Description
         {
             IsDirty = false;
         }
 
-        private void icm_EditValueChanged(object sender, EventArgs e)
+        private void icm_EditValueChanged(object sender, EventArgs e) // Recognize Change Identification Number
         {
             IsDirty = false;
         }
@@ -348,7 +348,7 @@ namespace Raven
         }
 
         #region Event Created by handle
-        private void Args_Showing(object sender , XtraMessageShowingArgs e)
+        private void Args_Showing(object sender , XtraMessageShowingArgs e) // This Event Show Special Message box
         {
             
             foreach (var control in e.Form.Controls)
