@@ -30,7 +30,7 @@ namespace Raven
                 int nWidthEllipse, // width of ellipse
                 int nHeightEllipse // height of ellipse
             );
-        public SignIn()
+        public SignIn() // Use to hide password and process about GUI
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
@@ -100,7 +100,7 @@ namespace Raven
         private void labelControl3_Click(object sender, EventArgs e) // Disable Form when open Authical
         {
             IsDirty = true;
-            LoadingSignUp custom = new LoadingSignUp();
+            Authical custom = new Authical();
             custom.Show();
             this.Enabled = false;
             carousel1.RotateAlways = false;
@@ -183,7 +183,7 @@ namespace Raven
                     }
                     else
                     {
-                        MessageBox.Show("it's a compulsory term");
+                        MessageBox.Show("Sorry, This is one of the mandatory terms that needs to be done for the purpose of identity verification\nand for the sake of the security and safety of the system.");
                         SignIn New = new SignIn();
                         New.Show();
                         this.Hide();
@@ -198,36 +198,36 @@ namespace Raven
         }
 
         #region Methoddddddddddddddddddddddddddddd
-        string GETID(string username)
+        public string GETID(string username)
         {
             return AccountDAO.Instance.GETID(username);
         }
-        bool Login(string username, string password)
+        public bool Login(string username, string password)
         {
             return AccountDAO.Instance.Login(username , password);
             
         }
-        bool GetPhone(string Phone)
+        public bool GetPhone(string Phone) // Get out the phone of user
         {
             return AccountDAO.Instance.GetPhone(Phone);
         }
-        string Getame(string username)
+        public string Getame(string username)
         {
             return AccountDAO.Instance.Getame(username);
         }
-        string GetCareer(string username)
+        public string GetCareer(string username)
         {
             return AccountDAO.Instance.GetCareer(username);
         }
-        Image GetImage(string username)
+        public Image GetImage(string username)
         {
             return AccountDAO.Instance.Images(username);
         }
-        string GetName(string username)
+        public string GetName(string username)
         {
             return AccountDAO.Instance.GetName(username);
         }
-        string getICM(string username)
+        public string getICM(string username)
         {
             return AccountDAO.Instance.GetICM(username);
         }
@@ -525,6 +525,14 @@ namespace Raven
                 pass.Text = "Password";
                 pass.ForeColor = SystemColors.GrayText;
                 pass.isPassword = false;
+            }
+        }
+
+        private void SignIn_KeyPress(object sender, KeyPressEventArgs e) // Event when user press Enter button it will go to next if the information which user just fill in correct
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                bunifuButton1_Click(sender, e);
             }
         }
     }

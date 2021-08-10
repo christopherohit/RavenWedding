@@ -948,6 +948,7 @@ namespace Raven
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign In";
             this.Click += new System.EventHandler(this.SignIn_Click);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SignIn_KeyPress);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SignIn_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SignIn_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SignIn_MouseUp);
