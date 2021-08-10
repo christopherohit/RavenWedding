@@ -168,8 +168,9 @@ namespace Raven
             if (res == DialogResult.Yes)
             {
                 this.Hide();
-                System.Windows.Forms.Form io = System.Windows.Forms.Application.OpenForms["SignIn"];
-                io.Enabled = true;
+                SignIn IU = new SignIn();
+                IU.Show();
+                this.Hide();
 
             }
             else
