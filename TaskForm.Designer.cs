@@ -54,7 +54,7 @@ namespace Raven
             this.radioGroup1.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioGroup1.Location = new System.Drawing.Point(0, 0);
             this.radioGroup1.Name = "radioGroup1";
-            this.radioGroup1.Size = new System.Drawing.Size(1013, 96);
+            this.radioGroup1.Size = new System.Drawing.Size(1013, 79);
             this.radioGroup1.TabIndex = 0;
             this.radioGroup1.SelectedIndexChanged += new System.EventHandler(this.radioGroup1_SelectedIndexChanged);
             // 
